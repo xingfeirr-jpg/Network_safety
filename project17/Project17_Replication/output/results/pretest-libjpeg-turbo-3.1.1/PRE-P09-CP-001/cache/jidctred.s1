@@ -1,0 +1,5 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+jpeg_idct_4x4
+jpeg_idct_2x2
+jpeg_idct_1x1

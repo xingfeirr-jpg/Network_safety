@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="10545289221213548058">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c" line="43" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/internal.h" line="110" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/expat.h" line="47" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c:134:22" call-funcname="externalSubset1" call-argnr="3" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c" line="384" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c:134:5" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c:134:22" call-funcname="externalSubset1" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c" line="384" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c:134:5" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c:134:22" call-funcname="externalSubset1" call-argnr="5" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c" line="384" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c:134:5" my-argnr="5"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c:127:35" call-funcname="internalSubset" call-argnr="3" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c" line="408" col="12" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c:134:22" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c:127:35" call-funcname="internalSubset" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c" line="408" col="12" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c:134:22" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c:127:35" call-funcname="internalSubset" call-argnr="5" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c" line="408" col="12" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c:134:22" my-argnr="5"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c:134:5" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c" line="381" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c:138:21" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c" line="1227" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.h:130:6" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c" line="1238" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.h:132:6" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c" line="1250" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c:138:21" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c" line="1227" col="9" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="prolog0" lineNumber="141"/>
+    <functiondecl functionName="prolog1" lineNumber="172"/>
+    <functiondecl functionName="prolog2" lineNumber="204"/>
+    <functiondecl functionName="doctype0" lineNumber="224"/>
+    <functiondecl functionName="doctype1" lineNumber="241"/>
+    <functiondecl functionName="doctype2" lineNumber="267"/>
+    <functiondecl functionName="doctype3" lineNumber="283"/>
+    <functiondecl functionName="doctype4" lineNumber="299"/>
+    <functiondecl functionName="doctype5" lineNumber="318"/>
+    <functiondecl functionName="internalSubset" lineNumber="334"/>
+    <functiondecl functionName="externalSubset0" lineNumber="379"/>
+    <functiondecl functionName="externalSubset1" lineNumber="388"/>
+    <functiondecl functionName="entity0" lineNumber="416"/>
+    <functiondecl functionName="entity1" lineNumber="435"/>
+    <functiondecl functionName="entity2" lineNumber="451"/>
+    <functiondecl functionName="entity3" lineNumber="475"/>
+    <functiondecl functionName="entity4" lineNumber="491"/>
+    <functiondecl functionName="entity5" lineNumber="507"/>
+    <functiondecl functionName="entity6" lineNumber="526"/>
+    <functiondecl functionName="entity7" lineNumber="543"/>
+    <functiondecl functionName="entity8" lineNumber="567"/>
+    <functiondecl functionName="entity9" lineNumber="583"/>
+    <functiondecl functionName="entity10" lineNumber="599"/>
+    <functiondecl functionName="notation0" lineNumber="615"/>
+    <functiondecl functionName="notation1" lineNumber="631"/>
+    <functiondecl functionName="notation2" lineNumber="651"/>
+    <functiondecl functionName="notation3" lineNumber="667"/>
+    <functiondecl functionName="notation4" lineNumber="684"/>
+    <functiondecl functionName="attlist0" lineNumber="704"/>
+    <functiondecl functionName="attlist1" lineNumber="721"/>
+    <functiondecl functionName="attlist2" lineNumber="741"/>
+    <functiondecl functionName="attlist3" lineNumber="771"/>
+    <functiondecl functionName="attlist4" lineNumber="789"/>
+    <functiondecl functionName="attlist5" lineNumber="808"/>
+    <functiondecl functionName="attlist6" lineNumber="824"/>
+    <functiondecl functionName="attlist7" lineNumber="840"/>
+    <functiondecl functionName="attlist8" lineNumber="860"/>
+    <functiondecl functionName="attlist9" lineNumber="890"/>
+    <functiondecl functionName="element0" lineNumber="906"/>
+    <functiondecl functionName="element1" lineNumber="923"/>
+    <functiondecl functionName="element2" lineNumber="949"/>
+    <functiondecl functionName="element3" lineNumber="983"/>
+    <functiondecl functionName="element4" lineNumber="1007"/>
+    <functiondecl functionName="element5" lineNumber="1024"/>
+    <functiondecl functionName="element6" lineNumber="1044"/>
+    <functiondecl functionName="element7" lineNumber="1073"/>
+    <functiondecl functionName="condSect0" lineNumber="1122"/>
+    <functiondecl functionName="condSect1" lineNumber="1142"/>
+    <functiondecl functionName="condSect2" lineNumber="1159"/>
+    <functiondecl functionName="declClose" lineNumber="1177"/>
+    <functiondecl functionName="error" lineNumber="1213"/>
+    <functiondecl functionName="common" lineNumber="1225"/>
+    <functiondecl functionName="XmlPrologStateInit" lineNumber="1237"/>
+    <functiondecl functionName="XmlPrologStateInitExternalEntity" lineNumber="1249"/>
+    <functioncall functionName="XML_ROLE_ATTLIST_ELEMENT_NAME"/>
+    <functioncall functionName="XML_ROLE_ATTLIST_NONE"/>
+    <functioncall functionName="XML_ROLE_ATTRIBUTE_ENUM_VALUE"/>
+    <functioncall functionName="XML_ROLE_ATTRIBUTE_NAME"/>
+    <functioncall functionName="XML_ROLE_ATTRIBUTE_NOTATION_VALUE"/>
+    <functioncall functionName="XML_ROLE_COMMENT"/>
+    <functioncall functionName="XML_ROLE_CONTENT_ANY"/>
+    <functioncall functionName="XML_ROLE_CONTENT_ELEMENT"/>
+    <functioncall functionName="XML_ROLE_CONTENT_ELEMENT_OPT"/>
+    <functioncall functionName="XML_ROLE_CONTENT_ELEMENT_PLUS"/>
+    <functioncall functionName="XML_ROLE_CONTENT_ELEMENT_REP"/>
+    <functioncall functionName="XML_ROLE_CONTENT_EMPTY"/>
+    <functioncall functionName="XML_ROLE_CONTENT_PCDATA"/>
+    <functioncall functionName="XML_ROLE_DEFAULT_ATTRIBUTE_VALUE"/>
+    <functioncall functionName="XML_ROLE_DOCTYPE_CLOSE"/>
+    <functioncall functionName="XML_ROLE_DOCTYPE_INTERNAL_SUBSET"/>
+    <functioncall functionName="XML_ROLE_DOCTYPE_NAME"/>
+    <functioncall functionName="XML_ROLE_DOCTYPE_NONE"/>
+    <functioncall functionName="XML_ROLE_DOCTYPE_PUBLIC_ID"/>
+    <functioncall functionName="XML_ROLE_DOCTYPE_SYSTEM_ID"/>
+    <functioncall functionName="XML_ROLE_ELEMENT_NAME"/>
+    <functioncall functionName="XML_ROLE_ELEMENT_NONE"/>
+    <functioncall functionName="XML_ROLE_ENTITY_COMPLETE"/>
+    <functioncall functionName="XML_ROLE_ENTITY_NONE"/>
+    <functioncall functionName="XML_ROLE_ENTITY_NOTATION_NAME"/>
+    <functioncall functionName="XML_ROLE_ENTITY_PUBLIC_ID"/>
+    <functioncall functionName="XML_ROLE_ENTITY_SYSTEM_ID"/>
+    <functioncall functionName="XML_ROLE_ENTITY_VALUE"/>
+    <functioncall functionName="XML_ROLE_ERROR"/>
+    <functioncall functionName="XML_ROLE_FIXED_ATTRIBUTE_VALUE"/>
+    <functioncall functionName="XML_ROLE_GENERAL_ENTITY_NAME"/>
+    <functioncall functionName="XML_ROLE_GROUP_CHOICE"/>
+    <functioncall functionName="XML_ROLE_GROUP_CLOSE"/>
+    <functioncall functionName="XML_ROLE_GROUP_CLOSE_OPT"/>
+    <functioncall functionName="XML_ROLE_GROUP_CLOSE_PLUS"/>
+    <functioncall functionName="XML_ROLE_GROUP_CLOSE_REP"/>
+    <functioncall functionName="XML_ROLE_GROUP_OPEN"/>
+    <functioncall functionName="XML_ROLE_GROUP_SEQUENCE"/>
+    <functioncall functionName="XML_ROLE_IGNORE_SECT"/>
+    <functioncall functionName="XML_ROLE_IMPLIED_ATTRIBUTE_VALUE"/>
+    <functioncall functionName="XML_ROLE_INNER_PARAM_ENTITY_REF"/>
+    <functioncall functionName="XML_ROLE_INSTANCE_START"/>
+    <functioncall functionName="XML_ROLE_NONE"/>
+    <functioncall functionName="XML_ROLE_NOTATION_NAME"/>
+    <functioncall functionName="XML_ROLE_NOTATION_NONE"/>
+    <functioncall functionName="XML_ROLE_NOTATION_NO_SYSTEM_ID"/>
+    <functioncall functionName="XML_ROLE_NOTATION_PUBLIC_ID"/>
+    <functioncall functionName="XML_ROLE_NOTATION_SYSTEM_ID"/>
+    <functioncall functionName="XML_ROLE_PARAM_ENTITY_NAME"/>
+    <functioncall functionName="XML_ROLE_PARAM_ENTITY_REF"/>
+    <functioncall functionName="XML_ROLE_PI"/>
+    <functioncall functionName="XML_ROLE_REQUIRED_ATTRIBUTE_VALUE"/>
+    <functioncall functionName="XML_ROLE_TEXT_DECL"/>
+    <functioncall functionName="XML_ROLE_XML_DECL"/>
+    <functioncall functionName="attlist0"/>
+    <functioncall functionName="attlist1"/>
+    <functioncall functionName="attlist2"/>
+    <functioncall functionName="attlist3"/>
+    <functioncall functionName="attlist4"/>
+    <functioncall functionName="attlist5"/>
+    <functioncall functionName="attlist6"/>
+    <functioncall functionName="attlist7"/>
+    <functioncall functionName="attlist8"/>
+    <functioncall functionName="attlist9"/>
+    <functioncall functionName="common"/>
+    <functioncall functionName="condSect0"/>
+    <functioncall functionName="condSect1"/>
+    <functioncall functionName="condSect2"/>
+    <functioncall functionName="declClose"/>
+    <functioncall functionName="doctype0"/>
+    <functioncall functionName="doctype1"/>
+    <functioncall functionName="doctype2"/>
+    <functioncall functionName="doctype3"/>
+    <functioncall functionName="doctype4"/>
+    <functioncall functionName="doctype5"/>
+    <functioncall functionName="element0"/>
+    <functioncall functionName="element1"/>
+    <functioncall functionName="element2"/>
+    <functioncall functionName="element3"/>
+    <functioncall functionName="element4"/>
+    <functioncall functionName="element5"/>
+    <functioncall functionName="element6"/>
+    <functioncall functionName="element7"/>
+    <functioncall functionName="entity0"/>
+    <functioncall functionName="entity1"/>
+    <functioncall functionName="entity10"/>
+    <functioncall functionName="entity2"/>
+    <functioncall functionName="entity3"/>
+    <functioncall functionName="entity4"/>
+    <functioncall functionName="entity5"/>
+    <functioncall functionName="entity6"/>
+    <functioncall functionName="entity7"/>
+    <functioncall functionName="entity8"/>
+    <functioncall functionName="entity9"/>
+    <functioncall functionName="error"/>
+    <functioncall functionName="externalSubset0"/>
+    <functioncall functionName="externalSubset1"/>
+    <functioncall functionName="internalSubset"/>
+    <functioncall functionName="notation0"/>
+    <functioncall functionName="notation1"/>
+    <functioncall functionName="notation2"/>
+    <functioncall functionName="notation3"/>
+    <functioncall functionName="notation4"/>
+    <functioncall functionName="prolog0"/>
+    <functioncall functionName="prolog1"/>
+    <functioncall functionName="prolog2"/>
+  </FileInfo>
+</analyzerinfo>

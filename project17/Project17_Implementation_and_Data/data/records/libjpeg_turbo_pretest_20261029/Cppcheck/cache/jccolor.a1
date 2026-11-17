@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="5259283948998252557">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="73" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="126" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" call-funcname="extrgb_ycc_convert_internal" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="259" col="5" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:254:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" call-funcname="extrgb_ycc_convert_internal" call-argnr="3" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="259" col="5" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:254:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" call-funcname="extrgb_gray_convert_internal" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="307" col="5" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:302:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" call-funcname="extrgb_gray_convert_internal" call-argnr="3" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="307" col="5" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:302:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" call-funcname="extrgb_rgb_convert_internal" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="352" col="5" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:347:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" call-funcname="extrgb_rgb_convert_internal" call-argnr="3" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="352" col="5" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:347:1" my-argnr="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="37" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="95" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="137" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="37" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="95" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="137" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="37" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="95" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="137" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="37" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="95" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="137" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="37" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="95" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="137" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="37" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="95" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="137" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="37" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="95" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="137" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:214:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="217" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:254:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="257" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:302:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="305" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:347:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="350" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:396:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="400" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:451:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="457" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:479:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="486" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:494:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="556" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="37" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="95" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="137" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="37" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="95" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="137" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="37" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="95" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="137" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="37" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="95" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="137" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="37" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="95" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="137" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="37" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="95" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="137" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:32:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="37" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:90:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="95" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c:130:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c" line="137" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:214:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="217" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:254:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="257" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:302:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="305" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:347:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="350" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:396:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="400" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:451:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="457" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c:479:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="486" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:494:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c" line="556" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GETENV_S" lineNumber="79"/>
+    <functiondecl functionName="PUTENV_S" lineNumber="132"/>
+    <functiondecl functionName="rgb_ycc_convert_internal" lineNumber="32"/>
+    <functiondecl functionName="rgb_gray_convert_internal" lineNumber="90"/>
+    <functiondecl functionName="rgb_rgb_convert_internal" lineNumber="130"/>
+    <functiondecl functionName="extrgb_ycc_convert_internal" lineNumber="32"/>
+    <functiondecl functionName="extrgb_gray_convert_internal" lineNumber="90"/>
+    <functiondecl functionName="extrgb_rgb_convert_internal" lineNumber="130"/>
+    <functiondecl functionName="extrgbx_ycc_convert_internal" lineNumber="32"/>
+    <functiondecl functionName="extrgbx_gray_convert_internal" lineNumber="90"/>
+    <functiondecl functionName="extrgbx_rgb_convert_internal" lineNumber="130"/>
+    <functiondecl functionName="extbgr_ycc_convert_internal" lineNumber="32"/>
+    <functiondecl functionName="extbgr_gray_convert_internal" lineNumber="90"/>
+    <functiondecl functionName="extbgr_rgb_convert_internal" lineNumber="130"/>
+    <functiondecl functionName="extbgrx_ycc_convert_internal" lineNumber="32"/>
+    <functiondecl functionName="extbgrx_gray_convert_internal" lineNumber="90"/>
+    <functiondecl functionName="extbgrx_rgb_convert_internal" lineNumber="130"/>
+    <functiondecl functionName="extxbgr_ycc_convert_internal" lineNumber="32"/>
+    <functiondecl functionName="extxbgr_gray_convert_internal" lineNumber="90"/>
+    <functiondecl functionName="extxbgr_rgb_convert_internal" lineNumber="130"/>
+    <functiondecl functionName="extxrgb_ycc_convert_internal" lineNumber="32"/>
+    <functiondecl functionName="extxrgb_gray_convert_internal" lineNumber="90"/>
+    <functiondecl functionName="extxrgb_rgb_convert_internal" lineNumber="130"/>
+    <functiondecl functionName="rgb_ycc_start" lineNumber="214"/>
+    <functiondecl functionName="rgb_ycc_convert" lineNumber="254"/>
+    <functiondecl functionName="rgb_gray_convert" lineNumber="302"/>
+    <functiondecl functionName="rgb_rgb_convert" lineNumber="347"/>
+    <functiondecl functionName="cmyk_ycck_convert" lineNumber="396"/>
+    <functiondecl functionName="grayscale_convert" lineNumber="451"/>
+    <functiondecl functionName="null_convert" lineNumber="479"/>
+    <functiondecl functionName="null_method" lineNumber="540"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ERANGE"/>
+    <functioncall functionName="JERR_BAD_IN_COLORSPACE"/>
+    <functioncall functionName="JERR_BAD_J_COLORSPACE"/>
+    <functioncall functionName="JERR_BAD_PRECISION"/>
+    <functioncall functionName="JERR_CONVERSION_NOTIMPL"/>
+    <functioncall functionName="cmyk_ycck_convert"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="extbgr_gray_convert_internal"/>
+    <functioncall functionName="extbgr_rgb_convert_internal"/>
+    <functioncall functionName="extbgr_ycc_convert_internal"/>
+    <functioncall functionName="extbgrx_gray_convert_internal"/>
+    <functioncall functionName="extbgrx_rgb_convert_internal"/>
+    <functioncall functionName="extbgrx_ycc_convert_internal"/>
+    <functioncall functionName="extrgb_gray_convert_internal"/>
+    <functioncall functionName="extrgb_rgb_convert_internal"/>
+    <functioncall functionName="extrgb_ycc_convert_internal"/>
+    <functioncall functionName="extrgbx_gray_convert_internal"/>
+    <functioncall functionName="extrgbx_rgb_convert_internal"/>
+    <functioncall functionName="extrgbx_ycc_convert_internal"/>
+    <functioncall functionName="extxbgr_gray_convert_internal"/>
+    <functioncall functionName="extxbgr_rgb_convert_internal"/>
+    <functioncall functionName="extxbgr_ycc_convert_internal"/>
+    <functioncall functionName="extxrgb_gray_convert_internal"/>
+    <functioncall functionName="extxrgb_rgb_convert_internal"/>
+    <functioncall functionName="extxrgb_ycc_convert_internal"/>
+    <functioncall functionName="getenv"/>
+    <functioncall functionName="grayscale_convert"/>
+    <functioncall functionName="null_convert"/>
+    <functioncall functionName="null_method"/>
+    <functioncall functionName="rgb_gray_convert"/>
+    <functioncall functionName="rgb_gray_convert_internal"/>
+    <functioncall functionName="rgb_rgb_convert"/>
+    <functioncall functionName="rgb_rgb_convert_internal"/>
+    <functioncall functionName="rgb_ycc_convert"/>
+    <functioncall functionName="rgb_ycc_convert_internal"/>
+    <functioncall functionName="rgb_ycc_start"/>
+    <functioncall functionName="setenv"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+  </FileInfo>
+</analyzerinfo>

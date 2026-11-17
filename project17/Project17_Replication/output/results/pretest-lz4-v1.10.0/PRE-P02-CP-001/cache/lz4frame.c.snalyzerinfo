@@ -1,0 +1,57 @@
+LZ4F_calloc call:[calloc,customAlloc,customCalloc,memset] noreturn:[calloc,customCalloc,memset]
+LZ4F_malloc call:[customAlloc,malloc] noreturn:[customAlloc,malloc]
+LZ4F_free call:[customFree,free] noreturn:[free]
+LZ4F_readLE32
+LZ4F_writeLE32
+LZ4F_readLE64
+LZ4F_writeLE64
+LZ4F_isError call:[return] noreturn:[return]
+LZ4F_getErrorName global:[LZ4F_errorStrings] call:[LZ4F_isError]
+LZ4F_getErrorCode call:[LZ4F_isError,return]
+LZ4F_returnErrorCode call:[return,sizeof]
+LZ4F_getVersion
+LZ4F_compressionLevel_max
+LZ4F_getBlockSize call:[LZ4F_returnErrorCode] noreturn:[LZ4F_returnErrorCode]
+LZ4F_headerChecksum call:[LZ4_XXH32,return]
+LZ4F_optimalBSID
+LZ4F_compressBound_internal global:[BFSize,BHSize] call:[LZ4F_getBlockSize,return]
+LZ4F_compressFrameBound global:[maxFHSize] call:[LZ4F_compressBound_internal,memset,sizeof] noreturn:[LZ4F_compressBound_internal,memset]
+LZ4F_compressFrame_usingCDict call:[LZ4F_compressBegin_usingCDict,LZ4F_compressEnd,LZ4F_compressFrameBound,LZ4F_compressUpdate,LZ4F_getBlockSize,LZ4F_isError,LZ4F_optimalBSID,LZ4F_returnErrorCode,memset,return,sizeof,while] noreturn:[LZ4F_returnErrorCode,memset,return]
+LZ4F_compressFrame call:[LZ4F_compressFrame_usingCDict,LZ4F_free,LZ4_initStream,memset,sizeof] noreturn:[LZ4F_free]
+LZ4F_createCDict_advanced call:[LZ4F_freeCDict,LZ4F_malloc,LZ4_initStream,LZ4_initStreamHC,LZ4_loadDictHC,LZ4_loadDictSlow,LZ4_setCompressionLevel,memcpy,sizeof]
+LZ4F_createCDict global:[LZ4F_defaultCMem] call:[LZ4F_createCDict_advanced] noreturn:[LZ4F_createCDict_advanced]
+LZ4F_freeCDict call:[LZ4F_free] noreturn:[LZ4F_free]
+LZ4F_createCompressionContext_advanced call:[LZ4F_calloc,sizeof]
+LZ4F_createCompressionContext global:[LZ4F_defaultCMem] call:[LZ4F_createCompressionContext_advanced,LZ4F_returnErrorCode,while] noreturn:[LZ4F_returnErrorCode]
+LZ4F_freeCompressionContext call:[LZ4F_free] noreturn:[LZ4F_free]
+LZ4F_initStream call:[LZ4_attach_HC_dictionary,LZ4_attach_dictionary,LZ4_resetStreamHC_fast,LZ4_resetStream_fast] noreturn:[LZ4_attach_HC_dictionary,LZ4_attach_dictionary]
+ctxTypeID_to_size call:[LZ4_sizeofState,LZ4_sizeofStateHC]
+LZ4F_compressBegin_internal global:[maxFHSize] call:[LZ4F_free,LZ4F_getBlockSize,LZ4F_headerChecksum,LZ4F_initStream,LZ4F_malloc,LZ4F_returnErrorCode,LZ4F_writeLE32,LZ4F_writeLE64,LZ4_XXH32_reset,LZ4_favorDecompressionSpeed,LZ4_initStream,LZ4_initStreamHC,LZ4_loadDict,LZ4_loadDictHC,LZ4_setCompressionLevel,ctxTypeID_to_size,return,sizeof,while] noreturn:[LZ4F_initStream,LZ4F_returnErrorCode,LZ4_favorDecompressionSpeed,LZ4_initStream,LZ4_initStreamHC,LZ4_loadDict,LZ4_loadDictHC,LZ4_setCompressionLevel]
+LZ4F_compressBegin call:[LZ4F_compressBegin_internal] noreturn:[LZ4F_compressBegin_internal]
+LZ4F_compressBegin_usingDictOnce call:[LZ4F_compressBegin_internal] noreturn:[LZ4F_compressBegin_internal]
+LZ4F_compressBegin_usingDict call:[LZ4F_compressBegin_usingDictOnce] noreturn:[LZ4F_compressBegin_usingDictOnce]
+LZ4F_compressBegin_usingCDict call:[LZ4F_compressBegin_internal] noreturn:[LZ4F_compressBegin_internal]
+LZ4F_compressBound call:[LZ4F_compressBound_internal] noreturn:[LZ4F_compressBound_internal]
+LZ4F_makeBlock global:[BFSize,BHSize] call:[LZ4F_writeLE32,LZ4_XXH32,compress,memcpy] noreturn:[LZ4F_writeLE32,memcpy]
+LZ4F_compressBlock call:[LZ4F_initStream,LZ4_compress_fast_continue,LZ4_compress_fast_extState_fastReset] noreturn:[LZ4_compress_fast_continue,LZ4_compress_fast_extState_fastReset]
+LZ4F_compressBlock_continue call:[LZ4_compress_fast_continue] noreturn:[LZ4_compress_fast_continue]
+LZ4F_compressBlockHC call:[LZ4F_initStream,LZ4_compress_HC_continue,LZ4_compress_HC_extStateHC_fastReset] noreturn:[LZ4_compress_HC_continue,LZ4_compress_HC_extStateHC_fastReset]
+LZ4F_compressBlockHC_continue call:[LZ4_compress_HC_continue] noreturn:[LZ4_compress_HC_continue]
+LZ4F_doNotCompressBlock
+LZ4F_selectCompression
+LZ4F_localSaveDict call:[LZ4_saveDict,LZ4_saveDictHC] noreturn:[LZ4_saveDict,LZ4_saveDictHC]
+LZ4F_compressUpdateImpl global:[k_cOptionsNull] call:[LZ4F_compressBound_internal,LZ4F_flush,LZ4F_localSaveDict,LZ4F_makeBlock,LZ4F_returnErrorCode,LZ4F_selectCompression,LZ4_XXH32_update,int,memcpy,return,while] noreturn:[LZ4F_returnErrorCode,LZ4_XXH32_update]
+LZ4F_compressUpdate call:[LZ4F_compressUpdateImpl] noreturn:[LZ4F_compressUpdateImpl]
+LZ4F_uncompressedUpdate call:[LZ4F_compressUpdateImpl] noreturn:[LZ4F_compressUpdateImpl]
+LZ4F_flush global:[BFSize,BHSize] call:[LZ4F_localSaveDict,LZ4F_makeBlock,LZ4F_returnErrorCode,LZ4F_selectCompression,int,return,while] noreturn:[LZ4F_returnErrorCode]
+LZ4F_compressEnd call:[LZ4F_flush,LZ4F_isError,LZ4F_returnErrorCode,LZ4F_writeLE32,LZ4_XXH32_digest,return,while] noreturn:[LZ4F_returnErrorCode,return]
+LZ4F_createDecompressionContext_advanced call:[LZ4F_calloc,sizeof]
+LZ4F_createDecompressionContext global:[LZ4F_defaultCMem] call:[LZ4F_createDecompressionContext_advanced,LZ4F_returnErrorCode,while] noreturn:[LZ4F_returnErrorCode]
+LZ4F_freeDecompressionContext call:[LZ4F_free] noreturn:[LZ4F_free]
+LZ4F_resetDecompressionContext
+LZ4F_decodeHeader global:[minFHSize] call:[LZ4F_getBlockSize,LZ4F_headerChecksum,LZ4F_readLE32,LZ4F_readLE64,LZ4F_returnErrorCode,memcpy,memset,sizeof,while] noreturn:[LZ4F_readLE32,LZ4F_readLE64,LZ4F_returnErrorCode,memcpy,while]
+LZ4F_headerSize global:[minFHSize] call:[LZ4F_readLE32,LZ4F_returnErrorCode,while] noreturn:[LZ4F_returnErrorCode]
+LZ4F_getFrameInfo global:[BHSize] call:[LZ4F_decodeHeader,LZ4F_decompress,LZ4F_headerSize,LZ4F_isError,LZ4F_returnErrorCode] noreturn:[LZ4F_decompress,LZ4F_returnErrorCode]
+LZ4F_updateDict call:[memcpy]
+LZ4F_decompress global:[BFSize,BHSize,maxFHSize,minFHSize] call:[LZ4F_decodeHeader,LZ4F_free,LZ4F_isError,LZ4F_malloc,LZ4F_readLE32,LZ4F_resetDecompressionContext,LZ4F_returnErrorCode,LZ4F_updateDict,LZ4_XXH32,LZ4_XXH32_digest,LZ4_XXH32_reset,LZ4_XXH32_update,LZ4_decompress_safe_usingDict,memcpy,memset,return,sizeof,while] noreturn:[LZ4F_returnErrorCode,LZ4F_updateDict,LZ4_XXH32_reset,LZ4_XXH32_update,return,while]
+LZ4F_decompress_usingDict call:[LZ4F_decompress] noreturn:[LZ4F_decompress]

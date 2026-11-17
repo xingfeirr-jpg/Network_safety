@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="7466455396319933776">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/strerror_override.h" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_inttypes.h" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object.h" line="30" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/strerror_override.h" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="17" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="21" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="22" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="25" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;sys/stat.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;sys/stat.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="29" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fcntl.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fcntl.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="33" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/snprintf_compat.h" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/debug.h" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h" line="20" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:58:33" call-funcname="json_object_from_fd_ex" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="81" col="31" call-argexpr="fd" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="148" col="38" info="Assuming that condition &apos;(fd=open(filename,O_RDONLY))&lt;0&apos; is not redundant"/>
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="154" col="28" info="Calling function &apos;json_object_from_fd&apos;, 1st argument &apos;fd&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="112" col="25" call-argexpr="buf" call-argvaluetype="7" call-argvalue="4096"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:66:33" call-funcname="json_object_from_fd" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="154" col="27" call-argexpr="fd" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="148" col="38" info="Assuming that condition &apos;(fd=open(filename,O_RDONLY))&lt;0&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.c:59:12" call-funcname="_json_object_to_fd" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="178" col="26" call-argexpr="fd" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="172" col="64" info="Assuming that condition &apos;(fd=open(filename,O_WRONLY|O_TRUNC|O_CREAT,0644))&lt;0&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.c:59:12" call-funcname="_json_object_to_fd" call-argnr="4" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="193" col="27" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:82:17" call-funcname="json_object_to_file_ext" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="230" col="32" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:231:25" call-funcname="json_object_to_json_string_ext" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="203" col="19" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.c:59:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:82:17" call-funcname="json_object_to_file_ext" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="230" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:74:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:82:17" call-funcname="json_object_to_file_ext" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="230" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:74:17" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:118:17" my-argnr="1" my-argname="buf" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="237" col="19" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:118:17" my-argnr="2" my-argname="retval" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="237" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:109:17" my-argnr="1" my-argname="buf" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="247" col="16" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:114:17" my-argnr="1" my-argname="buf" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="264" col="10" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:118:17" my-argnr="1" my-argname="buf" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="237" col="19" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:109:17" my-argnr="1" my-argname="buf" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="247" col="16" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:114:17" my-argnr="1" my-argname="buf" file="/home/yhong/comp5355/sources/json-c-0.18/json_util.c" line="264" col="10" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="_json_c_set_last_err" lineNumber="70"/>
+    <functiondecl functionName="_json_object_to_fd" lineNumber="195"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="O_CREAT"/>
+    <functioncall functionName="O_RDONLY"/>
+    <functioncall functionName="_json_c_set_last_err"/>
+    <functioncall functionName="_json_c_strerror"/>
+    <functioncall functionName="_json_object_to_fd"/>
+    <functioncall functionName="close"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="json_c_shallow_copy_default"/>
+    <functioncall functionName="json_object_free_userdata"/>
+    <functioncall functionName="json_object_from_fd"/>
+    <functioncall functionName="json_object_from_fd_ex"/>
+    <functioncall functionName="json_object_to_file_ext"/>
+    <functioncall functionName="json_object_to_json_string_ext"/>
+    <functioncall functionName="json_object_userdata_to_json_string"/>
+    <functioncall functionName="json_tokener_error_desc"/>
+    <functioncall functionName="json_tokener_free"/>
+    <functioncall functionName="json_tokener_get_error"/>
+    <functioncall functionName="json_tokener_new_ex"/>
+    <functioncall functionName="json_tokener_parse_ex"/>
+    <functioncall functionName="open"/>
+    <functioncall functionName="printbuf_free"/>
+    <functioncall functionName="printbuf_memappend"/>
+    <functioncall functionName="printbuf_new"/>
+    <functioncall functionName="read"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strtod"/>
+    <functioncall functionName="strtoll"/>
+    <functioncall functionName="strtoull"/>
+    <functioncall functionName="va_end"/>
+    <functioncall functionName="va_start"/>
+    <functioncall functionName="vsnprintf"/>
+    <functioncall functionName="write"/>
+  </FileInfo>
+</analyzerinfo>

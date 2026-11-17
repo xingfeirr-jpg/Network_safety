@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-27",
+  "status": "passed",
+  "project": "P02 LZ4",
+  "version": "1.10.0",
+  "tag": "v1.10.0",
+  "commit": "ebb370ca83af193212df4dcbadcc5d87bc0de2f0",
+  "sourceURL": "https://github.com/lz4/lz4/archive/ebb370ca83af193212df4dcbadcc5d87bc0de2f0.tar.gz",
+  "archiveFile": "lz4-v1.10.0.tar.gz",
+  "archiveBytes": 387536,
+  "archiveSHA256": "eb1a93e934d4fd29df6e2061ba0bf447568561764d758f4a5662c0e29370ffa9",
+  "checksumMeaning": "local downloaded archive identity; not an official publisher checksum",
+  "sourceReadMethod": "User executed download. Assistant read existing Linux archive and checksum via wsl base64, copied to project evidence, and compared SHA-256 with a separate Linux sha256sum call.",
+  "linuxSourceHashes": {
+    "lz4-v1.10.0.tar.gz": "eb1a93e934d4fd29df6e2061ba0bf447568561764d758f4a5662c0e29370ffa9",
+    "lz4-v1.10.0.tar.gz.sha256": "5cadb07dc14d73ce794993aa8b7afb043f23a77d3e4dfe694e3dfcfc0de014fa"
+  },
+  "checks": {
+    "archiveMatchesScreenshotAndLinuxSourceSHA256": true,
+    "checksumFileMatchesLinuxSourceSHA256": true,
+    "checksumRecordMatchesArchive": true,
+    "archiveBytes": true,
+    "singleExpectedCommitDirectory": true,
+    "relativePathsWithoutParentTraversal": true,
+    "uniqueMemberNames": true,
+    "regularFilesAndDirectoriesOnly": true,
+    "headerVersion1_10_0": true,
+    "libraryContainsExactlyFiveIntendedCFiles": true,
+    "cmakeIncludesLibraryCGlobAndStaticTarget": true,
+    "libraryLicenseContainsBSDTwoClauses": true
+  },
+  "targetSourcesInArchive": [
+    {
+      "file": "lib/lz4.c",
+      "bytes": 118145,
+      "sha256": "9396f7de527bc8435de9c7569fb7998e56545a84b4f3c2d808c0235c01774539"
+    },
+    {
+      "file": "lib/lz4hc.c",
+      "bytes": 93376,
+      "sha256": "126cafafdb91767e6e55238298a910903851b35b2cee27ce80ae2280469ee232"
+    },
+    {
+      "file": "lib/lz4frame.c",
+      "bytes": 91373,
+      "sha256": "44f421bea199c7f11da263c717f063228cd2c8c05a8384d327b49cc81ccfbac4"
+    },
+    {
+      "file": "lib/lz4file.c",
+      "bytes": 9359,
+      "sha256": "9c920fb21890bdce47d753bcd4a4dd3699ae75ac81ae7a999397c64fef012bec"
+    },
+    {
+      "file": "lib/xxhash.c",
+      "bytes": 34122,
+      "sha256": "b667033dc735fb5ea5648e0a61a2e065e5ef5bbda53669730063bd856c643c48"
+    }
+  ],
+  "licenseScope": "lib/ library BSD-2-Clause; not a statement that the whole repository has this license",
+  "sourceDirectoryExtraction": "pending user execution; selected archive members saved locally as identity evidence only",
+  "build": "not run",
+  "toolAnalysis": "not run",
+  "formalThirtyCells": "all not run",
+  "screenshot": "../screenshots/P02/FIG-P02-01_archive.png"
+}

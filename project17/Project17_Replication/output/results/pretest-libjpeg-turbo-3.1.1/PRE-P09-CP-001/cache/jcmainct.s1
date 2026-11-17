@@ -1,0 +1,5 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+start_pass_main
+process_data_simple_main
+jinit_c_main_controller call:[memset,sizeof]

@@ -1,0 +1,603 @@
+{
+  "accepted": true,
+  "accepted_date": "2026-10-30",
+  "run_id": "FORM-P03-FF-001",
+  "project": "P03 cJSON",
+  "version": "1.7.19",
+  "source_commit": "c859b25da02955fef659d658b8f324b5cde87be3",
+  "status": "accepted_complete_text_scan_single_cost_and_exact_old_finding_mapping",
+  "review_method": "用户执行Ubuntu；主助手读取回执并由同一助手体系子代理交叉核对；本次为新旧输出映射，不冒称新人工或独立源码审核",
+  "policy": "comparison-v1; measurement-v1",
+  "input_files_passed_before_and_after": 7,
+  "actual_text_inputs": [
+    "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+    "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h"
+  ],
+  "displayed_hits": 26,
+  "displayed_risk_level_counts": {
+    "1": 6,
+    "2": 19,
+    "4": 1
+  },
+  "filtered_level_zero_count": 1,
+  "cumulative_level_zero_plus": 27,
+  "lines_analyzed": 3497,
+  "sloc": 2674,
+  "tool_version": "2.0.20",
+  "rules": 222,
+  "analysis_exit_code": 0,
+  "stderr_bytes": 0,
+  "measurement": {
+    "wall_seconds": 0.05,
+    "user_seconds": 0.04,
+    "system_seconds": 0.0,
+    "maximum_rss_kib": 20492,
+    "tool_internal_seconds": 0.02,
+    "sample_count": 1,
+    "timing_boundary": "完整一次Flawfinder进程：启动、读取两文件、扫描、写原始输出",
+    "outside_timing": "版本、环境、输入哈希、摘要提取、旧核查映射及回执复制",
+    "os_page_cache": "natural_not_cleared",
+    "tool_cache_used": false
+  },
+  "old_new_mapping": {
+    "old_run": "PRE-P03-FF-001",
+    "exact_diagnostic_blocks": true,
+    "reused_false_positive_judgments": 26,
+    "new_candidates_requiring_review": 0,
+    "old_throughput_lines_per_second": 199376,
+    "new_throughput_lines_per_second": 194114,
+    "rows": [
+      {
+        "new_ordinal": 1,
+        "old_review_id": "P03-FF-001",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 456,
+        "column": 9,
+        "rule": "strcpy",
+        "risk_level": 4,
+        "raw_block_sha256": "89588cdabdadd3df3d42fd43ff648ff865c08b2cd4e92b1b812456f7b3478b3c",
+        "old_risk_scope_conclusion": "误报：第456行复制量不超过现有目标容量，证据为M+1<=N+1<=C",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 2,
+        "old_review_id": "P03-FF-002",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 126,
+        "column": 12,
+        "rule": "char",
+        "risk_level": 2,
+        "raw_block_sha256": "d9b7afe165debf1b7f6c3bd07301f7722f6bfae0171d2e106aaa654d439f3538",
+        "old_risk_scope_conclusion": "第 126 行的固定版本缓冲区容量风险为误报。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 3,
+        "old_review_id": "P03-FF-003",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 127,
+        "column": 5,
+        "rule": "sprintf",
+        "risk_level": 2,
+        "raw_block_sha256": "a69488d0f69afb97ff46f5337cfe841d9e0820a40ca0cfb385edf3d837d48b6c",
+        "old_risk_scope_conclusion": "第 127 行 sprintf 的 CWE-120 容量风险为误报。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 4,
+        "old_review_id": "P03-FF-004",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 204,
+        "column": 5,
+        "rule": "memcpy",
+        "risk_level": 2,
+        "raw_block_sha256": "f46864b5222dc609c995c1eff09b3aef1c9e813a555621ffc100dde6749f60d5",
+        "old_risk_scope_conclusion": "第 204 行 CWE-120 目标容量风险为误报；这个判断由同一 length 的分配和复制直接证明。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 5,
+        "old_review_id": "P03-FF-005",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 363,
+        "column": 5,
+        "rule": "memcpy",
+        "risk_level": 2,
+        "raw_block_sha256": "76b1fc7ae4583c17a492eaccccc7f0b4737b43bdb1e6bf911432703eae5b4373",
+        "old_risk_scope_conclusion": "第 363 行 CWE-120 目标容量风险为误报；未把畸形数字排除出核查。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 6,
+        "old_review_id": "P03-FF-006",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 561,
+        "column": 9,
+        "rule": "memcpy",
+        "risk_level": 2,
+        "raw_block_sha256": "38e7b0b95bf4e648a82e21ff7d8fead0aedf356606ae4bc6d28a93925beb624f",
+        "old_risk_scope_conclusion": "按原 CWE-120 写方向标为误报；附加观察 EXTRA-P03-ZERO-PREBUFFER-READ 是另一方向的问题，不能当作原 CWE-120 已证实真阳性，也不加入原42条计数。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 7,
+        "old_review_id": "P03-FF-007",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 597,
+        "column": 14,
+        "rule": "char",
+        "risk_level": 2,
+        "raw_block_sha256": "e04ad8512dac90c5d1c1140659a70c8cbfdec0b01749ee1d903c4aaf62177b86",
+        "old_risk_scope_conclusion": "第597行数组容量风险在记录的平台/locale模型下为误报。若以后扩展locale范围，令分隔符长L字节，17位格式含NUL最多24+L，需另核实L<=2；该扩展条件不计作本实验未决候选。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 8,
+        "old_review_id": "P03-FF-008",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 609,
+        "column": 18,
+        "rule": "sprintf",
+        "risk_level": 2,
+        "raw_block_sha256": "6472478b0c42cabcca0140d4c0279cd4fcb507ca85e226f67a61995e440a268f",
+        "old_risk_scope_conclusion": "第609行 sprintf 的 CWE-120容量风险为误报；与另两条浮点格式化分支分开判定。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 9,
+        "old_review_id": "P03-FF-009",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 613,
+        "column": 18,
+        "rule": "sprintf",
+        "risk_level": 2,
+        "raw_block_sha256": "3963ecaf7e27136ab74bf005f13a2b2d1abf0ef95522fd7452b6c01e7a41eac9",
+        "old_risk_scope_conclusion": "第613行 sprintf 的 CWE-120容量风险在实际目标平台为误报。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 10,
+        "old_review_id": "P03-FF-010",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 618,
+        "column": 18,
+        "rule": "sprintf",
+        "risk_level": 2,
+        "raw_block_sha256": "e98f31f025c5bd1ec36710441303a31fde5fc05c577aa9f31051a94f1e1b09ee",
+        "old_risk_scope_conclusion": "第618行CWE-120容量风险在记录的平台/locale模型下为误报。扩展locale时一般上界为22+L字节（含NUL），应核实L<=4；当前实际L=1。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 11,
+        "old_review_id": "P03-FF-011",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 624,
+        "column": 22,
+        "rule": "sprintf",
+        "risk_level": 2,
+        "raw_block_sha256": "5c779cd3384dadb16b7d8c9bc9132360abb3158422ab7453fcfd76ec4b7c840b",
+        "old_risk_scope_conclusion": "第624行CWE-120容量风险在记录的平台/locale模型下为误报。扩展locale时一般上界为24+L字节（含NUL），应核实L<=2；当前实际L=1。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 12,
+        "old_review_id": "P03-FF-012",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 971,
+        "column": 9,
+        "rule": "strcpy",
+        "risk_level": 2,
+        "raw_block_sha256": "007cde599ad3dfed5fbc6c1ba53d3d3649a62ea829c12844ba86f48cf12e2e14",
+        "old_risk_scope_conclusion": "971行CWE-120容量告警为误报，原因是常量写入前已有ensure容量检查。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 13,
+        "old_review_id": "P03-FF-013",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 1012,
+        "column": 9,
+        "rule": "memcpy",
+        "risk_level": 2,
+        "raw_block_sha256": "fa5624bc66d26e0e985f5f9a464642285b046f1deb541ebacc99adae1995b52a",
+        "old_risk_scope_conclusion": "1012行CWE-120容量告警为误报；证据来自同一函数的长度计数与ensure，而非仅因它是库代码。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 14,
+        "old_review_id": "P03-FF-014",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 1058,
+        "column": 21,
+        "rule": "sprintf",
+        "risk_level": 2,
+        "raw_block_sha256": "a33da8b845c19d374ef3213d4bf6cb8f19b89da427977b32f886988dbdaa6ee6",
+        "old_risk_scope_conclusion": "1058行CWE-120容量告警为误报；格式参数范围与预计算转义长度足以证明这次sprintf写入量有界。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 15,
+        "old_review_id": "P03-FF-015",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 1275,
+        "column": 9,
+        "rule": "memcpy",
+        "risk_level": 2,
+        "raw_block_sha256": "e5c206edc7667d21f947a43d6d19ad0f709c0ac822a4b1ebb34717bb80d26d26",
+        "old_risk_scope_conclusion": "1275行CWE-120容量告警为误报；n<=目标分配量且n<=源长度是直接代码关系。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 16,
+        "old_review_id": "P03-FF-016",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 1435,
+        "column": 13,
+        "rule": "strcpy",
+        "risk_level": 2,
+        "raw_block_sha256": "543af28a3715ab062870f3942d3c58ac52a4ffd7b895f8bc159408f5a5e72e02",
+        "old_risk_scope_conclusion": "1435行CWE-120容量告警为误报。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 17,
+        "old_review_id": "P03-FF-017",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 1444,
+        "column": 13,
+        "rule": "strcpy",
+        "risk_level": 2,
+        "raw_block_sha256": "7dd37b228cb66d630f8905bf36660af8e0de11e1d010dddba1737f69795a6568",
+        "old_risk_scope_conclusion": "1444行CWE-120容量告警为误报。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 18,
+        "old_review_id": "P03-FF-018",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 1453,
+        "column": 13,
+        "rule": "strcpy",
+        "risk_level": 2,
+        "raw_block_sha256": "7fa7804c5614b280a1a82f7e5374c0bda9325905742a623712ae0324ade20ce7",
+        "old_risk_scope_conclusion": "1453行CWE-120容量告警为误报。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 19,
+        "old_review_id": "P03-FF-019",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 1473,
+        "column": 13,
+        "rule": "memcpy",
+        "risk_level": 2,
+        "raw_block_sha256": "ebcdbb9bfdb45ab9000657eae0848a4e70887ef42dfe649389db792e6ea7f8d0",
+        "old_risk_scope_conclusion": "1473行CWE-120容量告警为误报；目标保证长度与实际memcpy长度相等。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 20,
+        "old_review_id": "P03-FF-020",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 2005,
+        "column": 5,
+        "rule": "memcpy",
+        "risk_level": 2,
+        "raw_block_sha256": "05b98d855010e14a08f544063273e9a410fb01e84b088d58afdc6c40b440df9d",
+        "old_risk_scope_conclusion": "2005行CWE-120容量告警为误报；sizeof目标分配量与复制量完全一致。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 21,
+        "old_review_id": "P03-FF-021",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 198,
+        "column": 14,
+        "rule": "strlen",
+        "risk_level": 1,
+        "raw_block_sha256": "7a3822eaa56ed80517dffe3663a71143d06b248853836571bc2017ac630bfd90",
+        "old_risk_scope_conclusion": "198行原CWE-126未终止串告警判误报；不把独立CWE-416生命周期观察计成该规则已识别的漏洞。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 22,
+        "old_review_id": "P03-FF-022",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 446,
+        "column": 14,
+        "rule": "strlen",
+        "risk_level": 1,
+        "raw_block_sha256": "71e83a5b1c07407410e10cbd721732d669224e126195a96b6ac63c94367a966c",
+        "old_risk_scope_conclusion": "446行CWE-126非终止串风险为误报；448之后的容量选择问题另有独立候选与证据。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 23,
+        "old_review_id": "P03-FF-023",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 447,
+        "column": 14,
+        "rule": "strlen",
+        "risk_level": 1,
+        "raw_block_sha256": "bd122ad2e2a7362884feb0b600f2799933dca35fc9a027ad78cc51b546139913",
+        "old_risk_scope_conclusion": "447行CWE-126非终止串告警为误报。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 24,
+        "old_review_id": "P03-FF-024",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 580,
+        "column": 23,
+        "rule": "strlen",
+        "risk_level": 1,
+        "raw_block_sha256": "502ff55dd5db3386091091d9d0f8b0e0cb6ff6c9ad5493169f8402f5bcf0d390",
+        "old_risk_scope_conclusion": "580行CWE-126非终止串告警为误报；所有实际调用点的先后顺序与终止符写入均已核对。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 25,
+        "old_review_id": "P03-FF-025",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 1136,
+        "column": 21,
+        "rule": "strlen",
+        "risk_level": 1,
+        "raw_block_sha256": "1d0a59e9816690debc9f07bb3d76a6e2abd640b331b1da3f5683ffb77f2fe2fc",
+        "old_risk_scope_conclusion": "1136行CWE-126非终止串告警为误报；没有NUL的输入应由已提供的WithLength入口确定读取边界。",
+        "reused_diagnostic_conclusion": "误报"
+      },
+      {
+        "new_ordinal": 26,
+        "old_review_id": "P03-FF-026",
+        "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "line": 1467,
+        "column": 26,
+        "rule": "strlen",
+        "risk_level": 1,
+        "raw_block_sha256": "a816dc52a2809d5617a024bd30137693e4555c8e3150b7d7cf00d7ac32dee9da",
+        "old_risk_scope_conclusion": "1467行CWE-126非终止串告警为误报。",
+        "reused_diagnostic_conclusion": "误报"
+      }
+    ]
+  },
+  "environment_association": {
+    "current_environment": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-FORM-P03-FF-001/environment",
+    "pre_analysis_checks": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-FORM-P03-FF-001",
+    "accepted_preflight": "review_evidence/cJSON_cost_supplement_20261030/Preflight_Acceptance.json",
+    "accepted_codechecker": "review_evidence/cJSON_cost_supplement_20261030/CodeChecker_Acceptance.json",
+    "execution_order": "P03 CC已验收后执行FF；CP尚未由本入口执行",
+    "tool_result_cache": "Flawfinder不使用工具结果缓存；记录器的通用空cache目录未用于本工具"
+  },
+  "run_meta": {
+    "measurement_schema": "measurement-v1",
+    "run_id": "FORM-P03-FF-001",
+    "purpose": "formal",
+    "working_directory": "/home/yhong/comp5355",
+    "locale": "C",
+    "application_cache_policy": "required_fresh_tool_cache",
+    "os_page_cache": "natural_not_cleared",
+    "created_empty_cache_directory": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-FF-001/cache",
+    "started_utc": "2026-10-30T14:45:40Z",
+    "ended_utc": "2026-10-30T14:45:40Z",
+    "timed_invocation_exit_code": "0",
+    "coverage_validation": "pending_tool_output_review"
+  },
+  "raw_receipt_count": 47,
+  "raw_receipt_bytes": 56264,
+  "raw_receipt_manifest": {
+    "execution_preparation/FORM-P03-FF-001/environment/recording-scripts.sha256": {
+      "bytes": 290,
+      "sha256": "f6f8d6294677df8df08f12a1c3530bfac21a5ea2fe38274ee9acc6a861a31de5"
+    },
+    "execution_preparation/FORM-P03-FF-001/environment/system.txt": {
+      "bytes": 6403,
+      "sha256": "7df15974c9cf18a4d2baebe6063d37b7f4d991596e642c21eef9a6a95075b04f"
+    },
+    "execution_preparation/FORM-P03-FF-001/environment/time-binary.sha256": {
+      "bytes": 80,
+      "sha256": "53657e86cac996a537975f1d42d31ff35e26d2eb8ec42bd97be2291124f2f840"
+    },
+    "execution_preparation/FORM-P03-FF-001/environment/time-package.txt": {
+      "bytes": 19,
+      "sha256": "49460f22ef48737103328d157c9a1bd442a70a329cd9035dee3e0061e37cf187"
+    },
+    "execution_preparation/FORM-P03-FF-001/environment/time-version.txt": {
+      "bytes": 336,
+      "sha256": "a3b64288a651d40a18a243c43c871f7ae2886baa58b7e3c64a1061bfd651245f"
+    },
+    "execution_preparation/FORM-P03-FF-001/environment/tool-versions.txt": {
+      "bytes": 2964,
+      "sha256": "4169255f29152f90d22a0d957c610ef6ca91bb3be54e236c372d5a8b42b40bee"
+    },
+    "execution_preparation/FORM-P03-FF-001/environment-command.txt": {
+      "bytes": 186,
+      "sha256": "5d868e8d9ab528f9b37b13c4e32832239ea3d25f089d4a83b0192c4ae542931b"
+    },
+    "execution_preparation/FORM-P03-FF-001/environment-exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "execution_preparation/FORM-P03-FF-001/environment-stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "execution_preparation/FORM-P03-FF-001/environment-stdout.txt": {
+      "bytes": 218,
+      "sha256": "1edadf50d9aba4d25e420c11db2aebc5be7836e2a5981a8299fdf714d90f1206"
+    },
+    "execution_preparation/FORM-P03-FF-001/Execution_Status.json": {
+      "bytes": 189,
+      "sha256": "a0f187f2267c9ad4da38e1d4a8cc4f6176f3eb0fcaa0888b85a3f50544572787"
+    },
+    "execution_preparation/FORM-P03-FF-001/flawfinder-version-command.txt": {
+      "bytes": 52,
+      "sha256": "a1192ff80d0bcd0913675d652c3ff553e871c7e485ebaff231f9bc0580324d00"
+    },
+    "execution_preparation/FORM-P03-FF-001/flawfinder-version-exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "execution_preparation/FORM-P03-FF-001/flawfinder-version-stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "execution_preparation/FORM-P03-FF-001/flawfinder-version-stdout.txt": {
+      "bytes": 7,
+      "sha256": "74290049d5ee2a1efcbbdf900f770f80a245aaa533db565fa4ac02e8aab04dd2"
+    },
+    "execution_preparation/FORM-P03-FF-001/Input_Check.json": {
+      "bytes": 2640,
+      "sha256": "39a407bb277d4b1701787af7afa88fbf03e7b93c71fbafb35c674b68f2cfd095"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-clang-command.txt": {
+      "bytes": 28,
+      "sha256": "01c27405830a1a01e0781623ef0fea785af7a598e9215998f992623fed15e852"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-clang-exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-clang-stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-clang-stdout.txt": {
+      "bytes": 110,
+      "sha256": "3635b8631d4ebcd8ed7586f4e01e7a6b44407de9d38db6e01daca9c242ed7a53"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-cppcheck-command.txt": {
+      "bytes": 28,
+      "sha256": "bb88258248f55f7d3e938b5bc30adcf27a3206017f1a275cae0dc9911e1ba9e4"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-cppcheck-exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-cppcheck-stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-cppcheck-stdout.txt": {
+      "bytes": 16,
+      "sha256": "e458f60048e8bafd7420b246d7a1e99dc5b9af74b7c0ad92ba3b5940508c5e63"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-cppcheck-ubuntu-package-command.txt": {
+      "bytes": 39,
+      "sha256": "899392de23300150d17ae967ef15386268b2dd9c07b3245491bf9e55ba90f141"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-cppcheck-ubuntu-package-exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-cppcheck-ubuntu-package-stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-cppcheck-ubuntu-package-stdout.txt": {
+      "bytes": 15,
+      "sha256": "2e60241fba42e44acc92262d5ddb35bc3bbd761e5cd7c34a04949cd18db49503"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-gnu-time-package-command.txt": {
+      "bytes": 35,
+      "sha256": "dfc671a5e029b2eac68009fd41bfb20ce0743846efe726cbe24b9a3252fc43b7"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-gnu-time-package-exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-gnu-time-package-stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "execution_preparation/FORM-P03-FF-001/version-gnu-time-package-stdout.txt": {
+      "bytes": 13,
+      "sha256": "eb3dfc5debb41ad81ede114b36ee089d5ae2298fefcc560e266db6ca780ef787"
+    },
+    "runs/FORM-P03-FF-001/command.txt": {
+      "bytes": 192,
+      "sha256": "d7802d2b52aea2fcc303bb11703fc9b8d338d10b1527eb802a1761838a7ece20"
+    },
+    "runs/FORM-P03-FF-001/control-manifest.sha256": {
+      "bytes": 1234,
+      "sha256": "cf972e103d6756c3e1e928f47c776242ba05c5e68bac197f810e29633e5eb85c"
+    },
+    "runs/FORM-P03-FF-001/Displayed_Findings.json": {
+      "bytes": 21071,
+      "sha256": "dca4cbb2996b823ed34f156dead6724e0a541dfa652a3970c7d2be21385f6ee2"
+    },
+    "runs/FORM-P03-FF-001/environment-start.txt": {
+      "bytes": 2525,
+      "sha256": "21d3a3d069be4f3f083bfc8f70b957b99fdb2a486d8e0f501fa4c5fbd992e0ea"
+    },
+    "runs/FORM-P03-FF-001/Environment_Association.json": {
+      "bytes": 640,
+      "sha256": "9a3dbb6bab0e33e42dd1feecf0eae325b82f98c3cf6a119431c9b76e87d02ff4"
+    },
+    "runs/FORM-P03-FF-001/exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "runs/FORM-P03-FF-001/input-files.sha256": {
+      "bytes": 234,
+      "sha256": "6213bae220029c8a0c0624faf2a7bf9ab9af6206bcf8b8b6be0a59e701f372c3"
+    },
+    "runs/FORM-P03-FF-001/input-files.txt": {
+      "bytes": 102,
+      "sha256": "1cb3e2f9ea035f8d836672769a791b659fb0e518bd14184ecd378f0def721a1d"
+    },
+    "runs/FORM-P03-FF-001/Input_After_Check.json": {
+      "bytes": 2510,
+      "sha256": "a091c3bb4ce963f188edbf0849d41e9b5425753b0734afadcf659df8b1768e1b"
+    },
+    "runs/FORM-P03-FF-001/prepared-profile.json": {
+      "bytes": 2737,
+      "sha256": "1616789c9da7451c9ede5a1ab46b044b5c554c3aacc82edb2b60154d1235c888"
+    },
+    "runs/FORM-P03-FF-001/Result_Summary_Pending.json": {
+      "bytes": 1018,
+      "sha256": "c448733d2095a8fffbe3acc2d7391844a75e6db3eadaa6f8fa6ff902678202ac"
+    },
+    "runs/FORM-P03-FF-001/run-meta.tsv": {
+      "bytes": 447,
+      "sha256": "9482fd2cdcb38c0f0d10f8d5a988f0f9a661f670d9449dac094f22701b4802ff"
+    },
+    "runs/FORM-P03-FF-001/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/FORM-P03-FF-001/stdout.txt": {
+      "bytes": 8967,
+      "sha256": "bae10edcd1f7cc3a7d38da445268a29fddffecbf5e3d0a7c6fdf01e0d4edfc62"
+    },
+    "runs/FORM-P03-FF-001/time.txt": {
+      "bytes": 905,
+      "sha256": "2d718a9f5b3607253e9badc1ceb8aa7631965add46cb6077af6cad53fbad196a"
+    }
+  },
+  "protected_old_files_verified": 1098,
+  "executed_control_hashes_verified": 10,
+  "figures": [
+    "FIG-P03-16",
+    "FIG-P03-17"
+  ],
+  "comparison_progress": {
+    "adopted_prior_result_combinations": 30,
+    "adopted_prior_cost_combinations": 27,
+    "new_form_analyses": 2,
+    "new_accepted_cost_combinations": 2,
+    "available_cost_combinations": 29,
+    "remaining_cost_runs": [
+      "FORM-P03-CP-001"
+    ],
+    "candidate_count_unchanged": 725
+  },
+  "limitations": [
+    "旧FF没有独立完整argv文件；原参数依据旧run-summary、报告和comparison-v1固定，不补造历史文件。",
+    "26仅为历史显示命中参考，不是新扫描的成功条件；新旧条目及诊断实质逐项核对后才复用既有判断。",
+    "等级0及累计0+单列；文本文件数不是编译动作或语义覆盖率，命中不是已确认漏洞。",
+    "新成本只属于本次FORM完整扫描，不倒填旧PRE；GNU time最大RSS为Linux KiB，不是整个进程树峰值之和。",
+    "本入口只执行FF完整扫描，不执行CodeChecker或Cppcheck分析、parse、配置或构建。"
+  ],
+  "raw_pending_labels_preserved": true
+}

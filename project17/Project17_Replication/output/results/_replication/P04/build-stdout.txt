@@ -1,0 +1,9 @@
+[1/9] Building C object CMakeFiles/yaml.dir/src/api.c.o
+[2/9] Building C object CMakeFiles/yaml.dir/src/dumper.c.o
+[3/9] Building C object CMakeFiles/yaml.dir/src/emitter.c.o
+[4/9] Building C object CMakeFiles/yaml.dir/src/loader.c.o
+[5/9] Building C object CMakeFiles/yaml.dir/src/parser.c.o
+[6/9] Building C object CMakeFiles/yaml.dir/src/reader.c.o
+[7/9] Building C object CMakeFiles/yaml.dir/src/scanner.c.o
+[8/9] Building C object CMakeFiles/yaml.dir/src/writer.c.o
+[9/9] Linking C static library libyaml.a

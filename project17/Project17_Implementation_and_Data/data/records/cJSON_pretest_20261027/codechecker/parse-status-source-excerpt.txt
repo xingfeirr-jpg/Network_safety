@@ -1,0 +1,57 @@
+301: 
+302:     report_dir_files = {os.fsdecode(e) for e in
+303:                         os.listdir(os.fsencode(report_dir))}
+304: 
+305:     for c in compile_commands:
+306:         for analyzer in supported_analyzers:
+307:             file, directory, cmd = c["file"], c["directory"], c["command"]
+308: 
+309:             filename = os.path.basename(file)
+310:             action_hash = analyzer_action_hash(file, directory, cmd)
+311: 
+312:             plist_file = f"{filename}_{analyzer}_{action_hash}.plist"
+313:             plist_err_file = plist_file + ".err"
+314: 
+315:             if plist_err_file in report_dir_files:
+316:                 analyzed_actions[cmd] = 1
+317:                 failed[analyzer][file] = 1
+318:             elif plist_file in report_dir_files:
+319:                 analyzed_actions[cmd] = 1
+320:                 plist_path = os.path.join(report_dir, plist_file)
+321: 
+322:                 try:
+323:                     if os.path.getmtime(plist_path) > os.path.getmtime(file):
+324:                         recent[analyzer][file] = 1
+325:                     else:
+326:                         old[analyzer][file] = 1
+327:                 except Exception:
+328:                     recent[analyzer][file] = 1
+329: 
+330:             else:
+331:                 missing[analyzer][file] = 1
+332: 
+333:     var_map = {
+334:         "up-to-date": recent,
+335:         "outdated": old,
+336:         "missing": missing,
+337:         "failed": failed
+513: 
+514:     context = analyzer_context.get_context()
+515: 
+516:     # To ensure the help message prints the default folder properly,
+517:     # the 'default' for 'args.input' is a string, not a list.
+518:     # But we need lists for the foreach here to work.
+519:     if isinstance(args.input, str):
+520:         args.input = [args.input]
+521: 
+522:     if 'status' in args:
+523:         print_status(args.input[0],
+524:                      getattr(args, 'detailed', False),
+525:                      getattr(args, 'files', None),
+526:                      getattr(args, 'export', None),
+527:                      getattr(args, 'output_path', None))
+528:         return
+529: 
+530:     if 'review_status' not in args:
+531:         if args.export == 'sarif':
+532:             args.review_status = REVIEW_STATUS_VALUES

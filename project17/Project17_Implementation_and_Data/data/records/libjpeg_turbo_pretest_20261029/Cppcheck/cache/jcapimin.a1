@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="1074763906447350447">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="73" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="126" column="0"/>
+        </error>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:974:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c" line="40" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1031:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c" line="177" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1046:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c" line="241" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1049:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c" line="260" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1051:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c" line="272" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1054:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c" line="300" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1031:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c" line="177" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1046:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c" line="241" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1049:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c" line="260" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1051:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c" line="272" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1054:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c" line="300" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GETENV_S" lineNumber="79"/>
+    <functiondecl functionName="PUTENV_S" lineNumber="132"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ERANGE"/>
+    <functioncall functionName="JERR_BAD_LIB_VERSION"/>
+    <functioncall functionName="JERR_BAD_PRECISION"/>
+    <functioncall functionName="JERR_BAD_STATE"/>
+    <functioncall functionName="JERR_BAD_STRUCT_SIZE"/>
+    <functioncall functionName="JERR_CANT_SUSPEND"/>
+    <functioncall functionName="JERR_TOO_LITTLE_DATA"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="getenv"/>
+    <functioncall functionName="jinit_marker_writer"/>
+    <functioncall functionName="jinit_memory_mgr"/>
+    <functioncall functionName="jpeg_abort"/>
+    <functioncall functionName="jpeg_destroy"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="setenv"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+  </FileInfo>
+</analyzerinfo>

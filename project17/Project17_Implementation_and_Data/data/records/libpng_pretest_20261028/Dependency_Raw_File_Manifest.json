@@ -1,0 +1,188 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/dependency-check.json",
+    "localRelative": "dependency/dependency-check.json",
+    "bytes": 1193,
+    "sha256": "6016da488d77413d18c7708951e70b9e6705d92457c47b9bd29ad4cf93985940"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/environment-start.txt",
+    "localRelative": "dependency/environment-start.txt",
+    "bytes": 1502,
+    "sha256": "f8527f83b04588f27a5abce935773f7fa1d9bd41081e9192de1597c626508c2c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/install-command.txt",
+    "localRelative": "dependency/install-command.txt",
+    "bytes": 142,
+    "sha256": "2c400bd542e8038d4a424c95e5745c0c09de3601cedd870780bbdf7903222fbe"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/install-exit-code.txt",
+    "localRelative": "dependency/install-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/install-stderr.txt",
+    "localRelative": "dependency/install-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/install-stdout.txt",
+    "localRelative": "dependency/install-stdout.txt",
+    "bytes": 276,
+    "sha256": "92a1347d62529e9efe120e9cc973ef8da0a4a881a3686abff5405195ccf9d9e9"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/install-time.txt",
+    "localRelative": "dependency/install-time.txt",
+    "bytes": 855,
+    "sha256": "d7f4f82073b89e0bfdf1e791114eb1b33c697fce9e7dfcc525bcc78c7af6640f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/install_manifest_Development.txt",
+    "localRelative": "dependency/install_manifest_Development.txt",
+    "bytes": 215,
+    "sha256": "e3f1fc5d9d0e44d079f12d8d14c039cc12e27c04e54eac838b2dde8b01b51491"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/installed-artifacts.sha256",
+    "localRelative": "dependency/installed-artifacts.sha256",
+    "bytes": 480,
+    "sha256": "76de1ee3ef18126e64b0fe2c36b5136313fc816c4ad86055740be369bc51cb67"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/preflight-check.json",
+    "localRelative": "dependency/preflight-check.json",
+    "bytes": 7827,
+    "sha256": "95b7b1de0c73b5cefba13a484acdb9bf30b3830a748789f520f4f9703bfe88fd"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/preflight-command.txt",
+    "localRelative": "dependency/preflight-command.txt",
+    "bytes": 226,
+    "sha256": "dbe202b10e12cea19e5dca3edc2e0cb23fe4478c06893ed28e5f6f607e438d49"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/preflight-exit-code.txt",
+    "localRelative": "dependency/preflight-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/preflight-stderr.txt",
+    "localRelative": "dependency/preflight-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/preflight-stdout.txt",
+    "localRelative": "dependency/preflight-stdout.txt",
+    "bytes": 109,
+    "sha256": "ceb5d8f85c397eea26fcd892e8d9cbe815874a14639edbf0989461b15fbedf26"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/preparation-inputs.sha256",
+    "localRelative": "dependency/preparation-inputs.sha256",
+    "bytes": 903,
+    "sha256": "83cb1e0a79244102a12bfe8a12cd26c6dc0296dad3c203afc813ae7d5fcf4b34"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/preparation-meta.txt",
+    "localRelative": "dependency/preparation-meta.txt",
+    "bytes": 283,
+    "sha256": "4db65cc6e94895c08823177ae626ce589d2aa21cd47f9af55acdc75a98e31a7c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/verify-command.txt",
+    "localRelative": "dependency/verify-command.txt",
+    "bytes": 320,
+    "sha256": "653b004f8bc9eb4b80b7a1dc14e3a45efd6a6f80a7c6806c541f8349aac90233"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/verify-exit-code.txt",
+    "localRelative": "dependency/verify-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/verify-stderr.txt",
+    "localRelative": "dependency/verify-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/DEP-P08-001/verify-stdout.txt",
+    "localRelative": "dependency/verify-stdout.txt",
+    "bytes": 206,
+    "sha256": "d46c0030fc1219c0c54c9e5fa34922274567fc747eff7a64400cb9ece745298f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/deps/zlib-v1.3.2/lib/libz.a",
+    "localRelative": "inputs/dependency/lib/libz.a",
+    "bytes": 353262,
+    "sha256": "27aca14bf635d1b62ec5cc82afbf643042accd993161ff513649a051be2229e5"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/deps/zlib-v1.3.2/include/zlib.h",
+    "localRelative": "inputs/dependency/include/zlib.h",
+    "bytes": 103848,
+    "sha256": "818667d6ab6a37fe7469cb06a7f0cb2c2cb2f2c948a03e5accf1a4a74bf3020a"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h",
+    "localRelative": "inputs/dependency/include/zconf.h",
+    "bytes": 17026,
+    "sha256": "f01d3d9b52603c88660ae89141f1e0ba61774c0718c8b3f77a2410d84b558421"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/deps/zlib-v1.3.2/lib/pkgconfig/zlib.pc",
+    "localRelative": "inputs/dependency/lib/pkgconfig/zlib.pc",
+    "bytes": 341,
+    "sha256": "27533ea58793055867e00abc58823bd1249e337622e4c5a4a6f247e680c03eb8"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/zlib-v1.3.2/install_manifest_Development.txt",
+    "localRelative": "inputs/zlib-build/install_manifest_Development.txt",
+    "bytes": 215,
+    "sha256": "e3f1fc5d9d0e44d079f12d8d14c039cc12e27c04e54eac838b2dde8b01b51491"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T122337-p08-22994/recording-scripts.sha256",
+    "localRelative": "environment/session-20261028T122337-p08-22994/recording-scripts.sha256",
+    "bytes": 290,
+    "sha256": "f6f8d6294677df8df08f12a1c3530bfac21a5ea2fe38274ee9acc6a861a31de5"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T122337-p08-22994/system.txt",
+    "localRelative": "environment/session-20261028T122337-p08-22994/system.txt",
+    "bytes": 6403,
+    "sha256": "8d82e54fc60563f36e216186e9d414e733c1f70c875a9fb85b8bb0218da1aad1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T122337-p08-22994/time-binary.sha256",
+    "localRelative": "environment/session-20261028T122337-p08-22994/time-binary.sha256",
+    "bytes": 80,
+    "sha256": "53657e86cac996a537975f1d42d31ff35e26d2eb8ec42bd97be2291124f2f840"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T122337-p08-22994/time-package.txt",
+    "localRelative": "environment/session-20261028T122337-p08-22994/time-package.txt",
+    "bytes": 19,
+    "sha256": "49460f22ef48737103328d157c9a1bd442a70a329cd9035dee3e0061e37cf187"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T122337-p08-22994/time-version.txt",
+    "localRelative": "environment/session-20261028T122337-p08-22994/time-version.txt",
+    "bytes": 336,
+    "sha256": "a3b64288a651d40a18a243c43c871f7ae2886baa58b7e3c64a1061bfd651245f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T122337-p08-22994/tool-versions.txt",
+    "localRelative": "environment/session-20261028T122337-p08-22994/tool-versions.txt",
+    "bytes": 2964,
+    "sha256": "e8ef61516af62bf3107f0bcc5640aac9cc0d55adf013c943bb172a6d466dc105"
+  }
+]

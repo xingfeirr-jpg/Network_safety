@@ -1,0 +1,1499 @@
+{
+  "profileId": "P09-FF-PRE-v1",
+  "plannedRunId": "PRE-P09-FF-001",
+  "preparedDate": "2026-10-29",
+  "status": "prepared;not executed",
+  "purpose": "functional pretest;not formal comparison",
+  "project": "P09 libjpeg-turbo",
+  "projectVersion": "3.1.1",
+  "commit": "7723f50f3f66b9da74376e6d8badb6162464212c",
+  "tool": "Flawfinder",
+  "version": "2.0.20",
+  "binary": "/home/yhong/comp5355/.venv/bin/flawfinder",
+  "arguments": [
+    "--minlevel=1",
+    "--neverignore",
+    "--columns",
+    "--context"
+  ],
+  "inputCount": 88,
+  "sourceCFiles": 64,
+  "independentCTranslationUnits": 58,
+  "includedCImplementationFiles": 6,
+  "sourceHeaders": 21,
+  "generatedHeaders": 3,
+  "inputKindCounts": {
+    "compiled_c": 58,
+    "included_c": 6,
+    "project_header": 21,
+    "generated_header": 3
+  },
+  "inputs": [
+    {
+      "file": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jconfig.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/build/jconfig.h",
+      "bytes": 2068,
+      "sha256": "647133bff7661b0fd15170f2b5559c3a438e59a4ababc51916a9495eb700d6d7",
+      "category": "generated_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jconfigint.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/build/jconfigint.h",
+      "bytes": 1821,
+      "sha256": "35fb57df8fd39839a43e555d69db7d967c999a82585a7cfa3a1456ca850799f3",
+      "category": "generated_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jversion.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/build/jversion.h",
+      "bytes": 1818,
+      "sha256": "7e1c15351d3a9bea7a0fef108e10f7d643bc5bb7f47c65195ef4730466c019ab",
+      "category": "generated_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jaricom.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jaricom.c",
+      "bytes": 5132,
+      "sha256": "fa144de494da46aa685379a8a0f6f59acaef7a2bb282cbf738a0a8070e1d527e",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcapimin.c",
+      "bytes": 10882,
+      "sha256": "083f4be634c2647026288db35eb824a0cd2f2ddf8d4931ac693fbad0698ec206",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapistd.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcapistd.c",
+      "bytes": 7145,
+      "sha256": "23c957f45c9d89ceae8fd61b0709469bb45f080b0ab9b795955870a31116ae9c",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcarith.c",
+      "bytes": 29668,
+      "sha256": "76b5a23029a6c44f063a35c29c4a5cadd13930e931e83c624d9e2d872e8ce750",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jccoefct.c",
+      "bytes": 17478,
+      "sha256": "58c1d893657b521987475ed9b819fc4f1e0b96dbe7b012239e7c598caf72fe8d",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jccolext.c",
+      "bytes": 4790,
+      "sha256": "7e4beaa374a165bf31637f58ce03694f39e30ea60f72c216be203a8008c06880",
+      "category": "included_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jccolor.c",
+      "bytes": 24431,
+      "sha256": "a0e0f2e965fb9c749d0d92297b7d079934f4f9dc4becbd1b9b262bcafa754f66",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdctmgr.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcdctmgr.c",
+      "bytes": 23029,
+      "sha256": "a4ac5eac6228148bb68e783332f1b9590231dcc34acb4439cc39ac57e39ee8bb",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdiffct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcdiffct.c",
+      "bytes": 15125,
+      "sha256": "b4f5817a8b4138ce6c7ceb323ea5dfc93bf756cee0ee5bb48dd154be04860ef4",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jchuff.c",
+      "bytes": 37246,
+      "sha256": "a7f6afcdf594ade29b3d53f98802fce33a5f086d1600927755d83b72ce000ea3",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jchuff.h",
+      "bytes": 1766,
+      "sha256": "2afdef6a3e99a1b42bd06454a5d3bac429b62e99410db377286d319afd51cac1",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcicc.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcicc.c",
+      "bytes": 4072,
+      "sha256": "021f073e040e474ea73e3b6785c0373cf289fd2faa87895832ae623d9c0e0b39",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcinit.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcinit.c",
+      "bytes": 5192,
+      "sha256": "ecc814abf5d51bf8d904ca7230acee1db50fd8671e50f4d7f26acbce0fc5366e",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclhuff.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jclhuff.c",
+      "bytes": 18635,
+      "sha256": "3c6a86413b3bee3ba95234b6446ed147033a08633ce55a03682adadfd6fbc18b",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jclossls.c",
+      "bytes": 9180,
+      "sha256": "4bb05c98f44f8be581078ae1c292f14a2d1ded10e0a00cf483e416d638a5c8d3",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmainct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcmainct.c",
+      "bytes": 6064,
+      "sha256": "af40fc22b948ca05ac24fae27d7aa3f9fcb1388a47d5fcdff5a9d37b989ba8eb",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcmarker.c",
+      "bytes": 17896,
+      "sha256": "713a3acfa3ae737b83a46ac0d5e176f2fb1bf83bf4d1868e8bd5c5f87b8f187e",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmaster.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcmaster.c",
+      "bytes": 28262,
+      "sha256": "290aa146bbec52182f39117355a3f29bd68d68da9ed2f5990cdff6a80d2400f4",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmaster.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcmaster.h",
+      "bytes": 1376,
+      "sha256": "c755ce4562022a93a756814727f9bf3c61606673d79233f8c6ae1bbef957083a",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcomapi.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcomapi.c",
+      "bytes": 3275,
+      "sha256": "b70d463fb2a29b01995e6fa307baee756dd97f83f9ffe0a4dcb2e9220e9c51af",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcparam.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcparam.c",
+      "bytes": 19640,
+      "sha256": "653c5dff550c3947e32f6702c8f2f650d490c6390867c108efef2042ec547fdd",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcphuff.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcphuff.c",
+      "bytes": 32790,
+      "sha256": "3417671676a8cab601daa31bd83b0018603002bb14eb5f1fd428d63ecc0eb8b1",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcprepct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcprepct.c",
+      "bytes": 13945,
+      "sha256": "8631576f649feca2fb09125f86db25c806244d1c2684370e6f451afe0cfcddaa",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcsample.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcsample.c",
+      "bytes": 20344,
+      "sha256": "fc76d3dad468ad36b86f8e0b1fcee3578cdb15f95a93d4e2b4034d971ee3b1d4",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jctrans.c",
+      "bytes": 15276,
+      "sha256": "a2abab67d3e603308235bfbc783ddc55bec9d80bc8091b232e2fc35501f3da1f",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapimin.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdapimin.c",
+      "bytes": 13680,
+      "sha256": "03c7c476f4cfc19fc0b7f53c6bef9f3122e682cbfd37410743fed4a1ecaecbc1",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdapistd.c",
+      "bytes": 28468,
+      "sha256": "80eb6917b11556e8d776a29876e7b06b29ac99a71367b4156b961a53e6a5f868",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdarith.c",
+      "bytes": 25539,
+      "sha256": "a0291db89f2a057eefcf234ccf02ad1ea385c00759af13fddec914bab0cfe0d1",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatadst.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdatadst.c",
+      "bytes": 9222,
+      "sha256": "34932074076fc60d9d9c2f95385f96baab8e7f98bfeabb3c6ee552f791f06878",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatasrc.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdatasrc.c",
+      "bytes": 10087,
+      "sha256": "25b8689e08ec083106e13a9c5a599b7d79dcf1f182d4565b1600eac014b874d1",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcoefct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdcoefct.c",
+      "bytes": 34407,
+      "sha256": "edfd068202a3e8350c1deab080800f285a12fbf1a5845c52baeb199be37b4450",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcoefct.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdcoefct.h",
+      "bytes": 2873,
+      "sha256": "a62860fa7914706e571ea12541bd235f1b320150df7c855a210afdc33047146a",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcol565.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdcol565.c",
+      "bytes": 11909,
+      "sha256": "fc5c3f16be4dbb4f42b6b378570263b56140485dfca3febdf8cd9c4db32565cc",
+      "category": "included_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcolext.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdcolext.c",
+      "bytes": 4514,
+      "sha256": "ec8b87b7a5c9574cb1da924b077c4df1622cfb2cbb356b3704407e5ddec7d62d",
+      "category": "included_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcolor.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdcolor.c",
+      "bytes": 30387,
+      "sha256": "b51cdf7f6dc93f8874fdfa82aaea7030cc70bf3408e7fcb60cf76017b07000cf",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdct.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdct.h",
+      "bytes": 10135,
+      "sha256": "dec739e58411e143e23041508f828d948d74bf670819aea770e52e6134024de5",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddctmgr.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jddctmgr.c",
+      "bytes": 11724,
+      "sha256": "3913f2b5d05f951d4429dbc664d91b832a285ddf922c4381c87abac9f12bb751",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddiffct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jddiffct.c",
+      "bytes": 13681,
+      "sha256": "3bf8fedd2b3b45607f23e93a65077b6fc4daa6ca56026853cbb7005225407205",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdhuff.c",
+      "bytes": 26826,
+      "sha256": "712ecd1b7e2b520ce0648cb742f1dad89f675ab8871dc054227cb28aed84b377",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdhuff.h",
+      "bytes": 9903,
+      "sha256": "59acd799211b415f821890e1947d7a7a4c9dfb7e15911cc8b413395d47881b43",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdicc.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdicc.c",
+      "bytes": 5409,
+      "sha256": "f605e2337afa011e020eb84f9c2f5a211f30d380621e97206d07216e4f78f661",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdinput.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdinput.c",
+      "bytes": 15218,
+      "sha256": "b3c155ed22ce4b49431d4900392f09354275daa59602450fafc6b9cd7adfcc13",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlhuff.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdlhuff.c",
+      "bytes": 10030,
+      "sha256": "ed965925b5961236b6fcd3a7870ea159386b93bbefbc97cd4fb465ad72446da8",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlossls.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdlossls.c",
+      "bytes": 8807,
+      "sha256": "e5f8ed3b123f1066c0649f88102623151ae3531c7e166b50cdf42db5fc190491",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmainct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmainct.c",
+      "bytes": 20602,
+      "sha256": "835c84e35f6494a35d05779dddbbec192845e59cdceff89c568188ce759d88d3",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmainct.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmainct.h",
+      "bytes": 2679,
+      "sha256": "a47728a202bac48caf2f38a8e99e23e3242ac580cf97606f3103c5025557e6a6",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmarker.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmarker.c",
+      "bytes": 42610,
+      "sha256": "1dd922aff8f92ece4f8f2b11eea08cd49b2e232de797ee98db9e331f6d0e3296",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmaster.c",
+      "bytes": 34517,
+      "sha256": "150a57d80a67b139c233ebaff1d7ded3677f07e3b6d6bd5859fc88e32f80c62d",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmaster.h",
+      "bytes": 788,
+      "sha256": "2ad7689d61273e464866be6b6b9ad227e70706379fd7b725b5c4535285fa29a4",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmerge.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmerge.c",
+      "bytes": 19979,
+      "sha256": "7a08564c3867c660623fac6c45b5eb894ce79616db2f101187bf9e045048cd4c",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmerge.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmerge.h",
+      "bytes": 1664,
+      "sha256": "4b5e10488c3d8ac982abda2e9e21563f75f25c6e0daa914cad32be9224b11d05",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmrg565.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmrg565.c",
+      "bytes": 11138,
+      "sha256": "576f1d8d1b02208029033fd5cb48a267875fed59b8c6513d4738a5a846200ac0",
+      "category": "included_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmrgext.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmrgext.c",
+      "bytes": 5895,
+      "sha256": "89310d9a437a86b4a29faf23cb0412c001662bc82dec6319db08286b868ed0ae",
+      "category": "included_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdphuff.c",
+      "bytes": 22244,
+      "sha256": "fdaf536fed994d433b08a2f0bc39b85bc100d81f465e1164c78caabcfface7d3",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdpostct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdpostct.c",
+      "bytes": 11992,
+      "sha256": "42feb659a302a4a1aab2af5fac37b000ec7640d34f4b306f656acd63ddca2315",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdsample.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdsample.c",
+      "bytes": 18964,
+      "sha256": "1b6a96862659baab0f0057aa20cd0e03f2b4419f686648e8b5dd1b146c63ebec",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdsample.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdsample.h",
+      "bytes": 1825,
+      "sha256": "d2449db79cfe8e08e5d6e530fd36e29938995212dc9ab1175cc875cda27e0514",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdtrans.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdtrans.c",
+      "bytes": 5624,
+      "sha256": "b624447657d4f01737efc0b846285a19974f478a21418af1f6c1143c24bcf16c",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jerror.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jerror.c",
+      "bytes": 7566,
+      "sha256": "1c3661997d30898f587a2765e934b23e706fabb7e4c316490348843f2003d0a0",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jerror.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jerror.h",
+      "bytes": 16159,
+      "sha256": "35354d148ea6da234bacd5435155d0ec1de9c05833602232a67f1cf184c04925",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctflt.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jfdctflt.c",
+      "bytes": 5588,
+      "sha256": "30098eb7e20b4ae42bc7ddc16552c6de59cb5cb045059d5a138c4b1b2b8f4739",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctfst.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jfdctfst.c",
+      "bytes": 7793,
+      "sha256": "eacf0404692455247cd836ff4e7de0c715edde4cd23c4434eb0028824e677c10",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctint.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jfdctint.c",
+      "bytes": 11515,
+      "sha256": "f438c4ef5b5ed70d67e324174059118395d822edc4b5a5c0c783857244b74fb0",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctflt.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jidctflt.c",
+      "bytes": 8754,
+      "sha256": "b6fc1d4f1333378cc67e77d436be910e5a114fc7711d60c35d484b760e1ebca0",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctfst.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jidctfst.c",
+      "bytes": 13565,
+      "sha256": "b524cdd2cbb30eef5e9878b290eb837033118338dd3583fc8302ed604e2c36d9",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctint.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jidctint.c",
+      "bytes": 106340,
+      "sha256": "099df3deff863d0cd36ac6cdface421ae22a0a34ac37ad9d0c2043a17ddbc207",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctred.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jidctred.c",
+      "bytes": 14555,
+      "sha256": "78e7ef58455dc634c9bfbd01fad0081611254fd6338f3336698b8f6173607942",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jinclude.h",
+      "bytes": 3188,
+      "sha256": "5b9f31bb7fb5bee3b7c8717ec801f2afe6e813272b502bc3bc96f6324fcfa3e2",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jlossls.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jlossls.h",
+      "bytes": 3235,
+      "sha256": "248616df72adcab8aaf8c1dd2cdf6d798bab96a91aea03945d2dea94837eaf18",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jmemmgr.c",
+      "bytes": 50051,
+      "sha256": "b98f08ee621c2882c0e2b584d38c5e614332c926285e5ce25958089a96c4f1b1",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemnobs.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jmemnobs.c",
+      "bytes": 2680,
+      "sha256": "328ff841f437fa7c2de846c4e295e9145cc628b9041aed718a06eb087c55786c",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemsys.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jmemsys.h",
+      "bytes": 6692,
+      "sha256": "441fd978684f5bb8f4b1a512221def17948aab73c507b98b8602cc0bda360d96",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmorecfg.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jmorecfg.h",
+      "bytes": 14386,
+      "sha256": "80a97f45ecb28d83310247eecec2a3865b5fd39ba0ecc490b48a36fac6318e26",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeg_nbits.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jpeg_nbits.c",
+      "bytes": 271113,
+      "sha256": "b79ca4826d23d3a9124fc7b28cce2eacc86a460fa351e3a05eb8378e9bb0f00d",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeg_nbits.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jpeg_nbits.h",
+      "bytes": 1701,
+      "sha256": "ffe3da5b765a7f94c49f2d3be1a15091d04ab428997a240cbfb1ba7027179978",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegapicomp.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jpegapicomp.h",
+      "bytes": 1133,
+      "sha256": "7ee0ac1b9307c03a6a715d46f89f611abd28c5795b9b9a410255df3a8d1db92d",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jpegint.h",
+      "bytes": 27226,
+      "sha256": "07a75eceaadf7fc986b3451a723c54e5193f3b4f6686b2fec2e93feeb1c9d509",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jpeglib.h",
+      "bytes": 55794,
+      "sha256": "dc3e8220f34b7e9f9e48620f5cb8dc070834feb3214bb12bbad78478ebb29e60",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant1.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jquant1.c",
+      "bytes": 32887,
+      "sha256": "c132b33829f8fa3806798e7783e64ee8e986a4ee04db3e8a100159675aae5eaf",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jquant2.c",
+      "bytes": 49272,
+      "sha256": "77ffa8a28129ded74b5de8d21925a3f7fef6c73e6f4fa6b87a693f5d40f7c927",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jsamplecomp.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jsamplecomp.h",
+      "bytes": 12702,
+      "sha256": "cbe390ba987549c89c7ac17ea4f8cea956d513f0b1e51efe3da83adfaaa85a03",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jsimd.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jsimd.h",
+      "bytes": 5909,
+      "sha256": "2faf44670d8d0862f547d83038dee513cc2d0b35e08107ecef6183e643e16165",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jsimddct.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jsimddct.h",
+      "bytes": 3085,
+      "sha256": "ed66000db7f841d37919da89ff8870262e719fecc3007d72e1cfcb91e86c8393",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jstdhuff.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jstdhuff.c",
+      "bytes": 5355,
+      "sha256": "79e2cbf605326ce6349a60f58695b97d574510662f8b089474f30c07bf06be28",
+      "category": "included_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jutils.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jutils.c",
+      "bytes": 4129,
+      "sha256": "70c0ba2953ca8f4abd6858d8ed71aa3266f37d529313b8e0cdfa0d1a43e31b2e",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    }
+  ],
+  "identityFiles": [
+    {
+      "file": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jconfig.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/build/jconfig.h",
+      "bytes": 2068,
+      "sha256": "647133bff7661b0fd15170f2b5559c3a438e59a4ababc51916a9495eb700d6d7",
+      "category": "generated_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jconfigint.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/build/jconfigint.h",
+      "bytes": 1821,
+      "sha256": "35fb57df8fd39839a43e555d69db7d967c999a82585a7cfa3a1456ca850799f3",
+      "category": "generated_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jversion.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/build/jversion.h",
+      "bytes": 1818,
+      "sha256": "7e1c15351d3a9bea7a0fef108e10f7d643bc5bb7f47c65195ef4730466c019ab",
+      "category": "generated_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jaricom.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jaricom.c",
+      "bytes": 5132,
+      "sha256": "fa144de494da46aa685379a8a0f6f59acaef7a2bb282cbf738a0a8070e1d527e",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcapimin.c",
+      "bytes": 10882,
+      "sha256": "083f4be634c2647026288db35eb824a0cd2f2ddf8d4931ac693fbad0698ec206",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapistd.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcapistd.c",
+      "bytes": 7145,
+      "sha256": "23c957f45c9d89ceae8fd61b0709469bb45f080b0ab9b795955870a31116ae9c",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcarith.c",
+      "bytes": 29668,
+      "sha256": "76b5a23029a6c44f063a35c29c4a5cadd13930e931e83c624d9e2d872e8ce750",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jccoefct.c",
+      "bytes": 17478,
+      "sha256": "58c1d893657b521987475ed9b819fc4f1e0b96dbe7b012239e7c598caf72fe8d",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jccolext.c",
+      "bytes": 4790,
+      "sha256": "7e4beaa374a165bf31637f58ce03694f39e30ea60f72c216be203a8008c06880",
+      "category": "included_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jccolor.c",
+      "bytes": 24431,
+      "sha256": "a0e0f2e965fb9c749d0d92297b7d079934f4f9dc4becbd1b9b262bcafa754f66",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdctmgr.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcdctmgr.c",
+      "bytes": 23029,
+      "sha256": "a4ac5eac6228148bb68e783332f1b9590231dcc34acb4439cc39ac57e39ee8bb",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdiffct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcdiffct.c",
+      "bytes": 15125,
+      "sha256": "b4f5817a8b4138ce6c7ceb323ea5dfc93bf756cee0ee5bb48dd154be04860ef4",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jchuff.c",
+      "bytes": 37246,
+      "sha256": "a7f6afcdf594ade29b3d53f98802fce33a5f086d1600927755d83b72ce000ea3",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jchuff.h",
+      "bytes": 1766,
+      "sha256": "2afdef6a3e99a1b42bd06454a5d3bac429b62e99410db377286d319afd51cac1",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcicc.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcicc.c",
+      "bytes": 4072,
+      "sha256": "021f073e040e474ea73e3b6785c0373cf289fd2faa87895832ae623d9c0e0b39",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcinit.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcinit.c",
+      "bytes": 5192,
+      "sha256": "ecc814abf5d51bf8d904ca7230acee1db50fd8671e50f4d7f26acbce0fc5366e",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclhuff.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jclhuff.c",
+      "bytes": 18635,
+      "sha256": "3c6a86413b3bee3ba95234b6446ed147033a08633ce55a03682adadfd6fbc18b",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jclossls.c",
+      "bytes": 9180,
+      "sha256": "4bb05c98f44f8be581078ae1c292f14a2d1ded10e0a00cf483e416d638a5c8d3",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmainct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcmainct.c",
+      "bytes": 6064,
+      "sha256": "af40fc22b948ca05ac24fae27d7aa3f9fcb1388a47d5fcdff5a9d37b989ba8eb",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcmarker.c",
+      "bytes": 17896,
+      "sha256": "713a3acfa3ae737b83a46ac0d5e176f2fb1bf83bf4d1868e8bd5c5f87b8f187e",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmaster.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcmaster.c",
+      "bytes": 28262,
+      "sha256": "290aa146bbec52182f39117355a3f29bd68d68da9ed2f5990cdff6a80d2400f4",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmaster.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcmaster.h",
+      "bytes": 1376,
+      "sha256": "c755ce4562022a93a756814727f9bf3c61606673d79233f8c6ae1bbef957083a",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcomapi.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcomapi.c",
+      "bytes": 3275,
+      "sha256": "b70d463fb2a29b01995e6fa307baee756dd97f83f9ffe0a4dcb2e9220e9c51af",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcparam.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcparam.c",
+      "bytes": 19640,
+      "sha256": "653c5dff550c3947e32f6702c8f2f650d490c6390867c108efef2042ec547fdd",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcphuff.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcphuff.c",
+      "bytes": 32790,
+      "sha256": "3417671676a8cab601daa31bd83b0018603002bb14eb5f1fd428d63ecc0eb8b1",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcprepct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcprepct.c",
+      "bytes": 13945,
+      "sha256": "8631576f649feca2fb09125f86db25c806244d1c2684370e6f451afe0cfcddaa",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcsample.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jcsample.c",
+      "bytes": 20344,
+      "sha256": "fc76d3dad468ad36b86f8e0b1fcee3578cdb15f95a93d4e2b4034d971ee3b1d4",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jctrans.c",
+      "bytes": 15276,
+      "sha256": "a2abab67d3e603308235bfbc783ddc55bec9d80bc8091b232e2fc35501f3da1f",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapimin.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdapimin.c",
+      "bytes": 13680,
+      "sha256": "03c7c476f4cfc19fc0b7f53c6bef9f3122e682cbfd37410743fed4a1ecaecbc1",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdapistd.c",
+      "bytes": 28468,
+      "sha256": "80eb6917b11556e8d776a29876e7b06b29ac99a71367b4156b961a53e6a5f868",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdarith.c",
+      "bytes": 25539,
+      "sha256": "a0291db89f2a057eefcf234ccf02ad1ea385c00759af13fddec914bab0cfe0d1",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatadst.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdatadst.c",
+      "bytes": 9222,
+      "sha256": "34932074076fc60d9d9c2f95385f96baab8e7f98bfeabb3c6ee552f791f06878",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatasrc.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdatasrc.c",
+      "bytes": 10087,
+      "sha256": "25b8689e08ec083106e13a9c5a599b7d79dcf1f182d4565b1600eac014b874d1",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcoefct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdcoefct.c",
+      "bytes": 34407,
+      "sha256": "edfd068202a3e8350c1deab080800f285a12fbf1a5845c52baeb199be37b4450",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcoefct.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdcoefct.h",
+      "bytes": 2873,
+      "sha256": "a62860fa7914706e571ea12541bd235f1b320150df7c855a210afdc33047146a",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcol565.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdcol565.c",
+      "bytes": 11909,
+      "sha256": "fc5c3f16be4dbb4f42b6b378570263b56140485dfca3febdf8cd9c4db32565cc",
+      "category": "included_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcolext.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdcolext.c",
+      "bytes": 4514,
+      "sha256": "ec8b87b7a5c9574cb1da924b077c4df1622cfb2cbb356b3704407e5ddec7d62d",
+      "category": "included_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcolor.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdcolor.c",
+      "bytes": 30387,
+      "sha256": "b51cdf7f6dc93f8874fdfa82aaea7030cc70bf3408e7fcb60cf76017b07000cf",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdct.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdct.h",
+      "bytes": 10135,
+      "sha256": "dec739e58411e143e23041508f828d948d74bf670819aea770e52e6134024de5",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddctmgr.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jddctmgr.c",
+      "bytes": 11724,
+      "sha256": "3913f2b5d05f951d4429dbc664d91b832a285ddf922c4381c87abac9f12bb751",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddiffct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jddiffct.c",
+      "bytes": 13681,
+      "sha256": "3bf8fedd2b3b45607f23e93a65077b6fc4daa6ca56026853cbb7005225407205",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdhuff.c",
+      "bytes": 26826,
+      "sha256": "712ecd1b7e2b520ce0648cb742f1dad89f675ab8871dc054227cb28aed84b377",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdhuff.h",
+      "bytes": 9903,
+      "sha256": "59acd799211b415f821890e1947d7a7a4c9dfb7e15911cc8b413395d47881b43",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdicc.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdicc.c",
+      "bytes": 5409,
+      "sha256": "f605e2337afa011e020eb84f9c2f5a211f30d380621e97206d07216e4f78f661",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdinput.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdinput.c",
+      "bytes": 15218,
+      "sha256": "b3c155ed22ce4b49431d4900392f09354275daa59602450fafc6b9cd7adfcc13",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlhuff.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdlhuff.c",
+      "bytes": 10030,
+      "sha256": "ed965925b5961236b6fcd3a7870ea159386b93bbefbc97cd4fb465ad72446da8",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlossls.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdlossls.c",
+      "bytes": 8807,
+      "sha256": "e5f8ed3b123f1066c0649f88102623151ae3531c7e166b50cdf42db5fc190491",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmainct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmainct.c",
+      "bytes": 20602,
+      "sha256": "835c84e35f6494a35d05779dddbbec192845e59cdceff89c568188ce759d88d3",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmainct.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmainct.h",
+      "bytes": 2679,
+      "sha256": "a47728a202bac48caf2f38a8e99e23e3242ac580cf97606f3103c5025557e6a6",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmarker.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmarker.c",
+      "bytes": 42610,
+      "sha256": "1dd922aff8f92ece4f8f2b11eea08cd49b2e232de797ee98db9e331f6d0e3296",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmaster.c",
+      "bytes": 34517,
+      "sha256": "150a57d80a67b139c233ebaff1d7ded3677f07e3b6d6bd5859fc88e32f80c62d",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmaster.h",
+      "bytes": 788,
+      "sha256": "2ad7689d61273e464866be6b6b9ad227e70706379fd7b725b5c4535285fa29a4",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmerge.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmerge.c",
+      "bytes": 19979,
+      "sha256": "7a08564c3867c660623fac6c45b5eb894ce79616db2f101187bf9e045048cd4c",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmerge.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmerge.h",
+      "bytes": 1664,
+      "sha256": "4b5e10488c3d8ac982abda2e9e21563f75f25c6e0daa914cad32be9224b11d05",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmrg565.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmrg565.c",
+      "bytes": 11138,
+      "sha256": "576f1d8d1b02208029033fd5cb48a267875fed59b8c6513d4738a5a846200ac0",
+      "category": "included_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmrgext.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdmrgext.c",
+      "bytes": 5895,
+      "sha256": "89310d9a437a86b4a29faf23cb0412c001662bc82dec6319db08286b868ed0ae",
+      "category": "included_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdphuff.c",
+      "bytes": 22244,
+      "sha256": "fdaf536fed994d433b08a2f0bc39b85bc100d81f465e1164c78caabcfface7d3",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdpostct.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdpostct.c",
+      "bytes": 11992,
+      "sha256": "42feb659a302a4a1aab2af5fac37b000ec7640d34f4b306f656acd63ddca2315",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdsample.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdsample.c",
+      "bytes": 18964,
+      "sha256": "1b6a96862659baab0f0057aa20cd0e03f2b4419f686648e8b5dd1b146c63ebec",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdsample.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdsample.h",
+      "bytes": 1825,
+      "sha256": "d2449db79cfe8e08e5d6e530fd36e29938995212dc9ab1175cc875cda27e0514",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdtrans.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jdtrans.c",
+      "bytes": 5624,
+      "sha256": "b624447657d4f01737efc0b846285a19974f478a21418af1f6c1143c24bcf16c",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jerror.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jerror.c",
+      "bytes": 7566,
+      "sha256": "1c3661997d30898f587a2765e934b23e706fabb7e4c316490348843f2003d0a0",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jerror.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jerror.h",
+      "bytes": 16159,
+      "sha256": "35354d148ea6da234bacd5435155d0ec1de9c05833602232a67f1cf184c04925",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctflt.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jfdctflt.c",
+      "bytes": 5588,
+      "sha256": "30098eb7e20b4ae42bc7ddc16552c6de59cb5cb045059d5a138c4b1b2b8f4739",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctfst.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jfdctfst.c",
+      "bytes": 7793,
+      "sha256": "eacf0404692455247cd836ff4e7de0c715edde4cd23c4434eb0028824e677c10",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctint.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jfdctint.c",
+      "bytes": 11515,
+      "sha256": "f438c4ef5b5ed70d67e324174059118395d822edc4b5a5c0c783857244b74fb0",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctflt.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jidctflt.c",
+      "bytes": 8754,
+      "sha256": "b6fc1d4f1333378cc67e77d436be910e5a114fc7711d60c35d484b760e1ebca0",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctfst.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jidctfst.c",
+      "bytes": 13565,
+      "sha256": "b524cdd2cbb30eef5e9878b290eb837033118338dd3583fc8302ed604e2c36d9",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctint.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jidctint.c",
+      "bytes": 106340,
+      "sha256": "099df3deff863d0cd36ac6cdface421ae22a0a34ac37ad9d0c2043a17ddbc207",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctred.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jidctred.c",
+      "bytes": 14555,
+      "sha256": "78e7ef58455dc634c9bfbd01fad0081611254fd6338f3336698b8f6173607942",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jinclude.h",
+      "bytes": 3188,
+      "sha256": "5b9f31bb7fb5bee3b7c8717ec801f2afe6e813272b502bc3bc96f6324fcfa3e2",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jlossls.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jlossls.h",
+      "bytes": 3235,
+      "sha256": "248616df72adcab8aaf8c1dd2cdf6d798bab96a91aea03945d2dea94837eaf18",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jmemmgr.c",
+      "bytes": 50051,
+      "sha256": "b98f08ee621c2882c0e2b584d38c5e614332c926285e5ce25958089a96c4f1b1",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemnobs.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jmemnobs.c",
+      "bytes": 2680,
+      "sha256": "328ff841f437fa7c2de846c4e295e9145cc628b9041aed718a06eb087c55786c",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemsys.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jmemsys.h",
+      "bytes": 6692,
+      "sha256": "441fd978684f5bb8f4b1a512221def17948aab73c507b98b8602cc0bda360d96",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmorecfg.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jmorecfg.h",
+      "bytes": 14386,
+      "sha256": "80a97f45ecb28d83310247eecec2a3865b5fd39ba0ecc490b48a36fac6318e26",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeg_nbits.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jpeg_nbits.c",
+      "bytes": 271113,
+      "sha256": "b79ca4826d23d3a9124fc7b28cce2eacc86a460fa351e3a05eb8378e9bb0f00d",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeg_nbits.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jpeg_nbits.h",
+      "bytes": 1701,
+      "sha256": "ffe3da5b765a7f94c49f2d3be1a15091d04ab428997a240cbfb1ba7027179978",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegapicomp.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jpegapicomp.h",
+      "bytes": 1133,
+      "sha256": "7ee0ac1b9307c03a6a715d46f89f611abd28c5795b9b9a410255df3a8d1db92d",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jpegint.h",
+      "bytes": 27226,
+      "sha256": "07a75eceaadf7fc986b3451a723c54e5193f3b4f6686b2fec2e93feeb1c9d509",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jpeglib.h",
+      "bytes": 55794,
+      "sha256": "dc3e8220f34b7e9f9e48620f5cb8dc070834feb3214bb12bbad78478ebb29e60",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant1.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jquant1.c",
+      "bytes": 32887,
+      "sha256": "c132b33829f8fa3806798e7783e64ee8e986a4ee04db3e8a100159675aae5eaf",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jquant2.c",
+      "bytes": 49272,
+      "sha256": "77ffa8a28129ded74b5de8d21925a3f7fef6c73e6f4fa6b87a693f5d40f7c927",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jsamplecomp.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jsamplecomp.h",
+      "bytes": 12702,
+      "sha256": "cbe390ba987549c89c7ac17ea4f8cea956d513f0b1e51efe3da83adfaaa85a03",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jsimd.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jsimd.h",
+      "bytes": 5909,
+      "sha256": "2faf44670d8d0862f547d83038dee513cc2d0b35e08107ecef6183e643e16165",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jsimddct.h",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jsimddct.h",
+      "bytes": 3085,
+      "sha256": "ed66000db7f841d37919da89ff8870262e719fecc3007d72e1cfcb91e86c8393",
+      "category": "project_header",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jstdhuff.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jstdhuff.c",
+      "bytes": 5355,
+      "sha256": "79e2cbf605326ce6349a60f58695b97d574510662f8b089474f30c07bf06be28",
+      "category": "included_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jutils.c",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/inputs/source/src/jutils.c",
+      "bytes": 4129,
+      "sha256": "70c0ba2953ca8f4abd6858d8ed71aa3266f37d529313b8e0cdfa0d1a43e31b2e",
+      "category": "compiled_c",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/compile_commands.json",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/build/compile_commands.json",
+      "bytes": 64616,
+      "sha256": "52ce69376478f38601873f1c95059c83a364cad388179adafe963c79397733ae",
+      "category": "raw_compilation_database",
+      "codeOwner": "P09 libjpeg-turbo"
+    },
+    {
+      "file": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_pretest_20261029/analysis_inputs/compile_commands.json",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/analysis_inputs/compile_commands.json",
+      "bytes": 48578,
+      "sha256": "b805ebf4e7eae4fe360e8a896c363107f9b0d501fade1a5f3933e1a6e9957d80",
+      "category": "selected_compilation_database",
+      "codeOwner": "P09 libjpeg-turbo"
+    }
+  ],
+  "identityCount": 90,
+  "sharedCodeCheckerProfile": "CodeChecker_Profile.json",
+  "sharedCodeCheckerProfileSHA256": "30e4954b3ec9b79e914c8c11120219196994d4dfe6b58d0ede15314d4c31dcdd",
+  "sharedCodeCheckerGuard": "Verify_CodeChecker_Inputs.py",
+  "sharedCodeCheckerGuardSHA256": "d9188541d751c1230e08d67d6cab5e39ad8f9efb9f3150a9c88e1ef178348162",
+  "sharedIdentityMeaning": "Reuse frozen90 input hashes and whole546-file POSIX source identity;this only reuses an input guard,not CodeChecker analysis or parse",
+  "textInputList": "review_evidence/libjpeg_turbo_pretest_20261029/analysis_inputs/text-inputs.txt",
+  "textInputListSHA256": "03c054d61c2e7f1fa204cdddcb74bbae7174a138454d8614d2a525527fd82168",
+  "textIdentityManifest": "review_evidence/libjpeg_turbo_pretest_20261029/analysis_inputs/project-inputs.sha256",
+  "textIdentityManifestSHA256": "8c44c250d111fdd509948814afbf9d3625fc3d4b194d0cb372b04c02a8164c5a",
+  "buildAcceptance": {
+    "file": "review_evidence/libjpeg_turbo_pretest_20261029/Build_Identity_Check.json",
+    "sha256": "a64ccef30ebad07bdf39d580c5571ba3853375d9f2674731254b272ba491e281"
+  },
+  "sourceScope": "actual88 project dependency files;64C text paths plus21 project headers and3 generated headers",
+  "databaseTreatment": "Original136-action and selected101-action DBs are identity/context evidence only;neither is passed to Flawfinder",
+  "systemDependencyTreatment": "84 system/compiler dependency paths are excluded from text scanning",
+  "bitDepthTreatment": "101 original8/12/16-bit semantic actions correspond to58 unique compiledC text paths;each of88 project text paths scanned once;Flawfinder does not preprocess each action",
+  "rulePolicy": "InstalledFlawfinder2.0.20 default rule database;minlevel1;neverignore project ignore annotations;column and context output;no additional suppression or custom rule set",
+  "parserPlatformLibraryModel": "Not applicable to lexical Flawfinder;no compiler macro expansion or semantic library model",
+  "jobs": "serial tool invocation;no -j option",
+  "ctu": "not applicable",
+  "timeout": "no extra whole-command timeout",
+  "measurement": "measurement-v1",
+  "locale": "C",
+  "cache": "new run directory;no result reuse;natural OS page cache not cleared",
+  "timingScope": "GNU time wraps complete Flawfinder command over all88 explicit files;startup,reads,lexical scan and output included",
+  "outsideTiming": "version,identity/whole-source checks,copying and terminal excerpts;not measured",
+  "costLimit": "one effective functional-pretest measurement;GNU time maxRSS is not entire process-tree peak or stable ranking",
+  "toolOrder": "CodeChecker/clangsa -> Flawfinder -> Cppcheck",
+  "runDirectory": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-FF-001",
+  "noOverwrite": "existing run directory or symlink stops;preserve originals and use new ID for retries",
+  "displayedHitPolicy": "minlevel1 displayed hits;level0 and cumulative0+ summary counted separately;not confirmed vulnerabilities",
+  "actualCoverage": "pending user execution and raw-output review",
+  "actualDisplayedHits": null,
+  "sourceReview": "not started;P09 Flawfinder not run",
+  "formalThirtyCells": "all not run",
+  "workflowGate": "Run after root accepts precedingPRE-P09-CC-001;this preparation does not assert acceptance of that result",
+  "preparationReview": "Flawfinder_Preparation_Review_20261029.md",
+  "preparationQA": "Flawfinder_Preparation_QA_20261029/Verification.json"
+}

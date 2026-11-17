@@ -1,0 +1,16 @@
+[1/16] Building C object CMakeFiles/png_static.dir/png.c.o
+[2/16] Building C object CMakeFiles/png_static.dir/pngerror.c.o
+[3/16] Building C object CMakeFiles/png_static.dir/pngget.c.o
+[4/16] Building C object CMakeFiles/png_static.dir/pngmem.c.o
+[5/16] Building C object CMakeFiles/png_static.dir/pngpread.c.o
+[6/16] Building C object CMakeFiles/png_static.dir/pngread.c.o
+[7/16] Building C object CMakeFiles/png_static.dir/pngrio.c.o
+[8/16] Building C object CMakeFiles/png_static.dir/pngrtran.c.o
+[9/16] Building C object CMakeFiles/png_static.dir/pngrutil.c.o
+[10/16] Building C object CMakeFiles/png_static.dir/pngset.c.o
+[11/16] Building C object CMakeFiles/png_static.dir/pngtrans.c.o
+[12/16] Building C object CMakeFiles/png_static.dir/pngwio.c.o
+[13/16] Building C object CMakeFiles/png_static.dir/pngwrite.c.o
+[14/16] Building C object CMakeFiles/png_static.dir/pngwtran.c.o
+[15/16] Building C object CMakeFiles/png_static.dir/pngwutil.c.o
+[16/16] Linking C static library libpng16d.a

@@ -1,0 +1,21 @@
+bi_reverse call:[while]
+bi_flush
+bi_windup
+gen_codes call:[bi_reverse] noreturn:[bi_reverse]
+tr_static_init
+init_block
+_tr_init global:[static_bl_desc,static_d_desc,static_l_desc] call:[init_block,tr_static_init] noreturn:[init_block]
+pqdownheap
+gen_bitlen call:[while]
+build_tree call:[gen_bitlen,gen_codes,pqdownheap,while] noreturn:[gen_codes,pqdownheap]
+scan_tree
+send_tree call:[while] noreturn:[while]
+build_bl_tree global:[bl_order] call:[build_tree,scan_tree]
+send_all_trees global:[bl_order] call:[send_tree] noreturn:[send_tree]
+_tr_stored_block call:[bi_windup,memcpy] noreturn:[memcpy]
+_tr_flush_bits call:[bi_flush] noreturn:[bi_flush]
+_tr_align global:[static_ltree] call:[bi_flush] noreturn:[bi_flush]
+compress_block global:[_dist_code,_length_code,base_dist,base_length,extra_dbits,extra_lbits] call:[while] noreturn:[while]
+detect_data_type
+_tr_flush_block global:[static_dtree,static_ltree] call:[_tr_stored_block,bi_windup,build_bl_tree,build_tree,compress_block,detect_data_type,init_block,send_all_trees] noreturn:[_tr_stored_block,bi_windup,compress_block,detect_data_type]
+_tr_tally global:[_dist_code,_length_code] call:[return] noreturn:[return]

@@ -1,0 +1,27 @@
+{
+  "runId": "PRE-P05-CC-001",
+  "purpose": "functional pretest",
+  "measurement": "measurement-v1",
+  "configurationProfile": "../json_c_setup/CodeChecker_Profile.json",
+  "orderWithinP05": 2,
+  "attempt": 1,
+  "metrics": {
+    "wall_seconds": 13.76,
+    "user_seconds": 10.71,
+    "system_seconds": 1.09,
+    "max_rss_kib": 197488
+  },
+  "selfTimeSecondsSeparate": 11.24,
+  "timedInvocationExitCode": 0,
+  "actions": {
+    "intended": 14,
+    "successful": 14,
+    "failed": 0,
+    "skipped": 0
+  },
+  "savedDiagnostics": 0,
+  "parseReports": 0,
+  "auxiliaryCost": "not measured;outside analysis timing",
+  "cachePolicy": "fresh reports;natural OS cache;no CTU reuse",
+  "validation": "CodeChecker_Validation.json"
+}

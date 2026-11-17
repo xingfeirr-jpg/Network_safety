@@ -1,0 +1,6 @@
+[1/6] Building C object CMakeFiles/lz4_static.dir/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c.o
+[2/6] Building C object CMakeFiles/lz4_static.dir/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c.o
+[3/6] Building C object CMakeFiles/lz4_static.dir/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c.o
+[4/6] Building C object CMakeFiles/lz4_static.dir/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c.o
+[5/6] Building C object CMakeFiles/lz4_static.dir/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c.o
+[6/6] Linking C static library liblz4.a

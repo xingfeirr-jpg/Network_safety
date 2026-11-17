@@ -1,0 +1,420 @@
+{
+  "date": "2026-10-27",
+  "status": "passed",
+  "project": "P04 libyaml",
+  "version": "0.2.5",
+  "commit": "2c891fc7a770e8ba2fec34fc6b545c672beb37e6",
+  "linuxSourceDirectory": "/home/yhong/comp5355/sources/libyaml-0.2.5",
+  "archiveSHA256": "77987051b6f5bee8ba472f1efbe0053663a58d8d3e7a2f0f4a27d178adbf8844",
+  "archiveEvidence": "Archive_Identity_Check.json",
+  "readOnlyEvidence": "Source_Read_Only_Linux_Evidence.json",
+  "checks": {
+    "regularFileSetExactlyMatchesArchive": true,
+    "allFileBytesAndSHA256MatchArchive": true,
+    "noSymlinksOrSpecialFiles": true,
+    "archiveUnchanged": true,
+    "checksumRecordMatchesArchive": true,
+    "eightCoreCFilesAndNecessaryHeadersPresent": true,
+    "localSelectedCopiesMatchLinuxAndArchive": true
+  },
+  "checkedRegularFiles": 62,
+  "targetTranslationUnits": 8,
+  "retainedSourceFiles": [
+    {
+      "file": "ReadMe.md",
+      "bytes": 1076,
+      "sha256": "2599eb83c4a5c2ae6f939344bc893ffd45b6761fd593e0f7630c850e23957a83"
+    },
+    {
+      "file": "License",
+      "bytes": 1101,
+      "sha256": "c40112449f254b9753045925248313e9270efa36d226b22d82d4cc6c43c57f29"
+    },
+    {
+      "file": "CMakeLists.txt",
+      "bytes": 3884,
+      "sha256": "319c78b8af1f84b8100dacdf2ca2219e3b1b24493c786ec65b2e184c6c28abc0"
+    },
+    {
+      "file": "yamlConfig.cmake.in",
+      "bytes": 343,
+      "sha256": "9cba0135361e62592c8ab10f75af74838fc941c14015a37f7a7559909a26fe08"
+    },
+    {
+      "file": "cmake/config.h.in",
+      "bytes": 196,
+      "sha256": "fa27ea6de8c26964a69221be6b8d4b6a96af3dcb9b444efd7e5590d648aeae45"
+    },
+    {
+      "file": "src/loader.c",
+      "bytes": 14091,
+      "sha256": "68424f0b29e16434e7f2c0838b26dd4b68e04b567ad40f4f4c1bc61cd8e93479"
+    },
+    {
+      "file": "src/yaml_private.h",
+      "bytes": 30504,
+      "sha256": "8dffe95c784665eba4ee88169456ebd41137a6d80ad13d536df6ad10d7a4d459"
+    },
+    {
+      "file": "src/parser.c",
+      "bytes": 45039,
+      "sha256": "b418ed8d6ef7e86dbd0e59c8dc7a00c8e48200b0252dd41e25d00d4616c7b2dc"
+    },
+    {
+      "file": "src/writer.c",
+      "bytes": 4044,
+      "sha256": "44a75c870a0b7039e37b457850b31748a69ce3bf1bf39950e7b855acef472de2"
+    },
+    {
+      "file": "src/api.c",
+      "bytes": 36609,
+      "sha256": "71f9263a2c77237762c8fa5e7c3d2bdd35723ecf1e2898222c7a603a5bf3f2db"
+    },
+    {
+      "file": "src/emitter.c",
+      "bytes": 66955,
+      "sha256": "fbec4f702153929ad1421636ab0f5ecded140f0f37014d5ab3c65dfecd7e0743"
+    },
+    {
+      "file": "src/scanner.c",
+      "bytes": 99234,
+      "sha256": "bc3b30ceec0c696925e9703845874d7fafefb42bfbd3006dc4a02fc6d646f2d1"
+    },
+    {
+      "file": "src/reader.c",
+      "bytes": 16680,
+      "sha256": "c428a44b177391557bdf49177c1dc0216edf2a2bbe0e24ca2ef2725ef7f01e9d"
+    },
+    {
+      "file": "src/dumper.c",
+      "bytes": 10067,
+      "sha256": "56fe41a1db73e1b9342b9381856e1fade8ea339a0b723bef90e7e1e8638bc441"
+    },
+    {
+      "file": "include/yaml.h",
+      "bytes": 54439,
+      "sha256": "de39c9fc2b2c8584775e6d0dc0f13c8e778ceba47d419cff9d85465ca35d6954"
+    }
+  ],
+  "files": [
+    {
+      "file": ".appveyor.yml",
+      "bytes": 1130,
+      "sha256": "1145187e9bddf18d852a98c5d7aa5d715259145d891a01f029de07699590a275"
+    },
+    {
+      "file": ".github/workflows/main.yml",
+      "bytes": 1239,
+      "sha256": "ccf1830e32b1adf5523a4a6106f5eb53686c8df743f512b1007bb8355206a833"
+    },
+    {
+      "file": ".gitignore",
+      "bytes": 614,
+      "sha256": "f4a00ae8bfb9e8292e9dcb05cdbd39ff3ea906d9b163173ee7c84334b6136622"
+    },
+    {
+      "file": ".indent.pro",
+      "bytes": 20,
+      "sha256": "99be360a6a44a4a02b0d5196c9254be3181bf9482399d62382495b9a76079223"
+    },
+    {
+      "file": ".makefile",
+      "bytes": 1359,
+      "sha256": "9d298ad424e0cd511dd639fef3352fadc699066db5ba3ba3059c8e1841e9d6d3"
+    },
+    {
+      "file": ".travis.yml",
+      "bytes": 536,
+      "sha256": "194d2900753b670b3d8f03febd12818979898ac41c660d828cc3638ff00715e7"
+    },
+    {
+      "file": "CMakeLists.txt",
+      "bytes": 3884,
+      "sha256": "319c78b8af1f84b8100dacdf2ca2219e3b1b24493c786ec65b2e184c6c28abc0"
+    },
+    {
+      "file": "Changes",
+      "bytes": 10875,
+      "sha256": "9b81db468ba6d1bf360a561e325260801b8c00dcc78708ef2fb72fd04a3138d5"
+    },
+    {
+      "file": "License",
+      "bytes": 1101,
+      "sha256": "c40112449f254b9753045925248313e9270efa36d226b22d82d4cc6c43c57f29"
+    },
+    {
+      "file": "Makefile.am",
+      "bytes": 1458,
+      "sha256": "7c47cd31174c23f6f54de0d65c8a8450d119b0bf1aa9db087ccc0f6946ab2c81"
+    },
+    {
+      "file": "ReadMe.md",
+      "bytes": 1076,
+      "sha256": "2599eb83c4a5c2ae6f939344bc893ffd45b6761fd593e0f7630c850e23957a83"
+    },
+    {
+      "file": "announcement.msg",
+      "bytes": 2412,
+      "sha256": "83aad6c0f87c261adb66fe526b4b3ec69b668ae12348053d2233b42c7e39cfae"
+    },
+    {
+      "file": "bootstrap",
+      "bytes": 32,
+      "sha256": "74f06aaeea63b5a49f12f425f1449c30392bf9560f23ef8e2128df208879e8ff"
+    },
+    {
+      "file": "cmake/config.h.in",
+      "bytes": 196,
+      "sha256": "fa27ea6de8c26964a69221be6b8d4b6a96af3dcb9b444efd7e5590d648aeae45"
+    },
+    {
+      "file": "configure.ac",
+      "bytes": 2292,
+      "sha256": "697009f2d6989fc94a1331b2ee52ee9bc5d4599f419e13cc35ed93451fce1fda"
+    },
+    {
+      "file": "doc/doxygen.cfg",
+      "bytes": 8390,
+      "sha256": "186718bea1952a7bd0b2cff0ec2898246e90b395e6ba6835e0818be3e7c4c775"
+    },
+    {
+      "file": "docker/README.mkd",
+      "bytes": 355,
+      "sha256": "8c2bd4d331006b361dfa6908a38e652fc572076a35e17fe2f08bec46faef3293"
+    },
+    {
+      "file": "docker/alpine-3.7",
+      "bytes": 421,
+      "sha256": "dd5e51e8ef28992aac08d453e04bfb2d5a296a7bde94cf8366ebd9813d6088d1"
+    },
+    {
+      "file": "docker/fedora-25",
+      "bytes": 509,
+      "sha256": "f4319606d7ee63c139f1f3cce3c998938bfa24323f1c0d88038198fce6753075"
+    },
+    {
+      "file": "docker/ubuntu-14.04",
+      "bytes": 612,
+      "sha256": "515db8ea39d6e7cd2450ab8753f38fd67fcb8e07717f7227f1556c6e4c39e1e2"
+    },
+    {
+      "file": "docker/ubuntu-16.04",
+      "bytes": 441,
+      "sha256": "4b4b62794e59959ac366ccaca356ec64f15f0b76f744ccf64a24f8d9a3bc1fd9"
+    },
+    {
+      "file": "examples/anchors.yaml",
+      "bytes": 119,
+      "sha256": "66a1164ba5bcc233e8b291d6bdf645dfa47455b85437305b565723388c22672e"
+    },
+    {
+      "file": "examples/array.yaml",
+      "bytes": 19,
+      "sha256": "1a99fb8f8b4241188f801a36fe3569dc6dfe666e36cce31d3bfca006687f6c01"
+    },
+    {
+      "file": "examples/global-tag.yaml",
+      "bytes": 298,
+      "sha256": "a26b06a007bba6af4a31fc98fb3bba587265d8c0cae3178d5f083a03cb25ff4d"
+    },
+    {
+      "file": "examples/json.yaml",
+      "bytes": 22,
+      "sha256": "bc17ba0c455d1aa373fd71f64e1cc7bbd5b3a588e3666d90161839c239947198"
+    },
+    {
+      "file": "examples/mapping.yaml",
+      "bytes": 34,
+      "sha256": "1b31c9feb9a4e9cc47141fe6977c7afb1c8fdf228d6b9ece956b82e8fc2d1abe"
+    },
+    {
+      "file": "examples/numbers.yaml",
+      "bytes": 26,
+      "sha256": "361af159ae99708023997264843d391c6465ea56e0d3f2edad82a57164a13172"
+    },
+    {
+      "file": "examples/strings.yaml",
+      "bytes": 289,
+      "sha256": "1b01805a79baf13f815254fa1fdaf42a1ececc5595e1d491b29ac4c374e5eb29"
+    },
+    {
+      "file": "examples/tags.yaml",
+      "bytes": 356,
+      "sha256": "ac90a8918c14ebe505a13525022eef7a947a5df6293a1cb5bcd61eca94267ed4"
+    },
+    {
+      "file": "examples/yaml-version.yaml",
+      "bytes": 24,
+      "sha256": "22a092e5da3c2d5fc797a9cde14afd16d7163a91306e94fca94f343c84a82caa"
+    },
+    {
+      "file": "include/Makefile.am",
+      "bytes": 405,
+      "sha256": "fcf7dc97c04172f44f927f1c9db7fe38eebb3645c389f4658ad2a61015d46413"
+    },
+    {
+      "file": "include/yaml.h",
+      "bytes": 54439,
+      "sha256": "de39c9fc2b2c8584775e6d0dc0f13c8e778ceba47d419cff9d85465ca35d6954"
+    },
+    {
+      "file": "regression-inputs/clusterfuzz-testcase-minimized-5607885063061504.yml",
+      "bytes": 5,
+      "sha256": "ac5561178c0fef86457a40f79ace383ed996f56d1d33137610e8829350643eda"
+    },
+    {
+      "file": "src/Makefile.am",
+      "bytes": 311,
+      "sha256": "0e83c10716d237374efeef9d50d1c4316b50de8e6133cf00841da2816f2cb65b"
+    },
+    {
+      "file": "src/api.c",
+      "bytes": 36609,
+      "sha256": "71f9263a2c77237762c8fa5e7c3d2bdd35723ecf1e2898222c7a603a5bf3f2db"
+    },
+    {
+      "file": "src/dumper.c",
+      "bytes": 10067,
+      "sha256": "56fe41a1db73e1b9342b9381856e1fade8ea339a0b723bef90e7e1e8638bc441"
+    },
+    {
+      "file": "src/emitter.c",
+      "bytes": 66955,
+      "sha256": "fbec4f702153929ad1421636ab0f5ecded140f0f37014d5ab3c65dfecd7e0743"
+    },
+    {
+      "file": "src/loader.c",
+      "bytes": 14091,
+      "sha256": "68424f0b29e16434e7f2c0838b26dd4b68e04b567ad40f4f4c1bc61cd8e93479"
+    },
+    {
+      "file": "src/parser.c",
+      "bytes": 45039,
+      "sha256": "b418ed8d6ef7e86dbd0e59c8dc7a00c8e48200b0252dd41e25d00d4616c7b2dc"
+    },
+    {
+      "file": "src/reader.c",
+      "bytes": 16680,
+      "sha256": "c428a44b177391557bdf49177c1dc0216edf2a2bbe0e24ca2ef2725ef7f01e9d"
+    },
+    {
+      "file": "src/scanner.c",
+      "bytes": 99234,
+      "sha256": "bc3b30ceec0c696925e9703845874d7fafefb42bfbd3006dc4a02fc6d646f2d1"
+    },
+    {
+      "file": "src/writer.c",
+      "bytes": 4044,
+      "sha256": "44a75c870a0b7039e37b457850b31748a69ce3bf1bf39950e7b855acef472de2"
+    },
+    {
+      "file": "src/yaml_private.h",
+      "bytes": 30504,
+      "sha256": "8dffe95c784665eba4ee88169456ebd41137a6d80ad13d536df6ad10d7a4d459"
+    },
+    {
+      "file": "tests/CMakeLists.txt",
+      "bytes": 528,
+      "sha256": "b94eda2bcbca8bf33778f245d3432d9c6e9df33a315078ec13798535c79d4c1e"
+    },
+    {
+      "file": "tests/Makefile.am",
+      "bytes": 425,
+      "sha256": "9952d7c6597f90f8448950c5a16447ea9d37d2e26d7d3b93f4c6cfdcb19e5d3b"
+    },
+    {
+      "file": "tests/ReadMe.md",
+      "bytes": 1239,
+      "sha256": "82bfbc99d8a944dd05a73e82992e169e18140f609b87a39a09555a14d9fbd37d"
+    },
+    {
+      "file": "tests/example-deconstructor-alt.c",
+      "bytes": 34137,
+      "sha256": "78e028539ce8963861c78598d9012eac44ec61e4c92cece2c6766de7429cfcd5"
+    },
+    {
+      "file": "tests/example-deconstructor.c",
+      "bytes": 45931,
+      "sha256": "5a6ae9c5ee90a59bf5de3bcc172ebff94644415249ed84992aee6de6856824a7"
+    },
+    {
+      "file": "tests/example-reformatter-alt.c",
+      "bytes": 6183,
+      "sha256": "d7753fc6c8838aa6d90271b155e4913d76cd89abaebfa3eb8d28340050342b17"
+    },
+    {
+      "file": "tests/example-reformatter.c",
+      "bytes": 5528,
+      "sha256": "0251aac69c4a72da3e768ddbbafbe46a20c793017f482d329c1963fbc873c633"
+    },
+    {
+      "file": "tests/run-all-tests.sh",
+      "bytes": 314,
+      "sha256": "64abec9b22458b64678ada72ba4613c2882f83ef3b7fb1d60a74fa31f39c536d"
+    },
+    {
+      "file": "tests/run-dumper.c",
+      "bytes": 10770,
+      "sha256": "a0e3d9fd53a6ccfaaac8fd6c4ce3d706c30b6127b1bda0c44349adc3a2705d00"
+    },
+    {
+      "file": "tests/run-emitter-test-suite.c",
+      "bytes": 8727,
+      "sha256": "355bcab9ff0ccc77c436a5385302a7e7582b5ff6108096d25d711ebf50b338da"
+    },
+    {
+      "file": "tests/run-emitter.c",
+      "bytes": 13175,
+      "sha256": "a3c36632281a0dc29b400d9d81d375b572a50f9d47b2b8e4d4afe69576df9581"
+    },
+    {
+      "file": "tests/run-loader.c",
+      "bytes": 1206,
+      "sha256": "a930c7a28a8cbdb8aa3928063e39ea308ee7f3ec3c32e3f33d0e1d4c2bfd5582"
+    },
+    {
+      "file": "tests/run-parser-test-suite.c",
+      "bytes": 5803,
+      "sha256": "4a64588531ac30a837fda5f307436ee4b59ef7623099f540e7746e56466d6428"
+    },
+    {
+      "file": "tests/run-parser.c",
+      "bytes": 1174,
+      "sha256": "5bfd46ef7b4ed0e4237f5d8f20661659a3f6b38a1de9bb1d314c196ef47cb294"
+    },
+    {
+      "file": "tests/run-scanner.c",
+      "bytes": 1174,
+      "sha256": "7fdb6a617ee19dde983b400005b0ea1c66d8b74d64e6170476229e8a67daa310"
+    },
+    {
+      "file": "tests/test-reader.c",
+      "bytes": 12399,
+      "sha256": "e0b6207e8636ba85df9e4c340dad192e5e1c70d681d6033656680af9a85dd4a4"
+    },
+    {
+      "file": "tests/test-version.c",
+      "bytes": 613,
+      "sha256": "8dfff239e1378ebd7ee96576390783f28fa7a3f6be455c45f1367090efcd6099"
+    },
+    {
+      "file": "yaml-0.1.pc.in",
+      "bytes": 217,
+      "sha256": "6c355aa1377d25d9dcf69abe2020cc2b2e804d256094e6a1c435a74943b04b6d"
+    },
+    {
+      "file": "yamlConfig.cmake.in",
+      "bytes": 343,
+      "sha256": "9cba0135361e62592c8ab10f75af74838fc941c14015a37f7a7559909a26fe08"
+    }
+  ],
+  "configurationHeader": "cmake/config.h.in is source template; build/include/config.h not generated yet",
+  "build": "not run",
+  "actualCompileActions": null,
+  "tools": "not run",
+  "nextStep": "user records environment session then runs scripts/libyaml_prepare_build.sh; verify actual outputs afterwards",
+  "screenshotFigures": [
+    "FIG-P04-02",
+    "FIG-P04-03"
+  ]
+}

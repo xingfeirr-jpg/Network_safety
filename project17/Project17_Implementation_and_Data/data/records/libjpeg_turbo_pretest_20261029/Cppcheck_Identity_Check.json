@@ -1,0 +1,171 @@
+{
+  "project": "P09 libjpeg-turbo",
+  "version": "3.1.1",
+  "runId": "PRE-P09-CP-001",
+  "purpose": "functional pretest",
+  "accepted": true,
+  "acceptedAtUTC": "2026-10-29T06:16:21.990076+00:00",
+  "rawFiles": 160,
+  "sharedIdentityFiles": 90,
+  "executedInputFiles": 6,
+  "completeSourceFilesPreserved": 546,
+  "databaseActions": 101,
+  "observedCompletedRequests": 101,
+  "observedFailedRequests": 0,
+  "observedSkippedRequests": 0,
+  "perActionExitCodeAvailability": "Cppcheck does not emit a separate exit code for each request;completion is supported jointly by orderedChecking/config/progress,XML andcheckers evidence",
+  "uniqueCompiledSourceFiles": 58,
+  "bitDepthRequests": {
+    "8": 58,
+    "12": 28,
+    "16": 15
+  },
+  "toolVersion": "2.13.0",
+  "analysisCStandard": "C11",
+  "actualBuildLanguage": "GNU C17",
+  "xmlElements": 104,
+  "sourceCandidates": 91,
+  "informationElements": 13,
+  "sourceSeverity": {
+    "warning": 57,
+    "portability": 28,
+    "error": 6
+  },
+  "sourceRules": {
+    "nullPointerRedundantCheck": 25,
+    "shiftNegativeLHS": 4,
+    "legacyUninitvar": 3,
+    "arrayIndexOutOfBoundsCond": 14,
+    "negativeIndex": 17,
+    "AssignmentIntegerToAddress": 4,
+    "zerodiv": 3,
+    "shiftTooManyBitsSigned": 20,
+    "nullPointerArithmeticRedundantCheck": 1
+  },
+  "informationRules": {
+    "missingIncludeSystem": 11,
+    "checkLevelNormal": 1,
+    "checkersReport": 1
+  },
+  "normalLimitation": "<error id=\"checkLevelNormal\" severity=\"information\" msg=\"Limiting ValueFlow analysis in function 'encode_one_block' since it is too complex. Please specify --check-level=exhaustive to perform full analysis.\" verbose=\"Limiting ValueFlow analysis in function 'encode_one_block' since it is too complex. Please specify --check-level=exhaustive to perform full analysis.\" file0=\"/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c\">\n            <location file=\"/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c\" line=\"564\" column=\"1\" />\n        </error>\n        ",
+  "cacheBoundary": {
+    "persistentAnalyzerInfoSlots": 58,
+    "mappedButAbsentA2A3Slots": 43,
+    "sourcePaths": 58,
+    "meaning": "101 primary analysis requests completed;do not claim101independent bit-depth contexts persisted for whole-program processing"
+  },
+  "measurement": {
+    "schema": "measurement-v1",
+    "wall_seconds": 12.97,
+    "user_seconds": 12.58,
+    "system_seconds": 0.24,
+    "max_rss_kib": 95784,
+    "exit_code": 0,
+    "boundary": "complete Cppcheck invocation;identity and XML summary outside timing",
+    "repetitions": 1,
+    "osCache": "natural_not_cleared"
+  },
+  "rawManifestSHA256": "b6cf87c204440282f2d78a389a68d7a093b9de090deeb6b390cf0cf1c897501f",
+  "sourceReview": "not started;all91candidates unreviewed",
+  "allToolRawCandidates": {
+    "CodeChecker": 48,
+    "Flawfinder": 42,
+    "Cppcheck": 91,
+    "total": 181,
+    "rootCauseGroups": "not determined"
+  },
+  "formalMatrix": "all30notrun",
+  "checks": [
+    {
+      "check": "160RawOriginalsSizeSHA",
+      "passed": true
+    },
+    {
+      "check": "160TransferredBytesExact",
+      "passed": true
+    },
+    {
+      "check": "90LiveInputsAnd546Sources",
+      "passed": true
+    },
+    {
+      "check": "SixExecutedHashesUnchanged",
+      "passed": true
+    },
+    {
+      "check": "ActualProfileAnd101DBUnchanged",
+      "passed": true
+    },
+    {
+      "check": "ActualCommandExactFixedPolicy",
+      "passed": true
+    },
+    {
+      "check": "XML2Cppcheck213Version",
+      "passed": true
+    },
+    {
+      "check": "104Equals91SourceCandidatesPlus13Info",
+      "passed": true
+    },
+    {
+      "check": "13InfoSeparated",
+      "passed": true
+    },
+    {
+      "check": "NoConfigurationOrSyntaxFailureRules",
+      "passed": true
+    },
+    {
+      "check": "ErrorSeveritySixAreSourceCandidates",
+      "passed": true
+    },
+    {
+      "check": "101ObservedRequestsNoCriticalBlocker",
+      "passed": true
+    },
+    {
+      "check": "Actual12And16BitMacroRequests",
+      "passed": true
+    },
+    {
+      "check": "CriticalReportAllFilesChecked",
+      "passed": true
+    },
+    {
+      "check": "ActualCacheBoundary58Slots43Absent",
+      "passed": true
+    },
+    {
+      "check": "707IndependentCountChecksPass",
+      "passed": true
+    },
+    {
+      "check": "91RawCandidatesRetainedUnreviewed",
+      "passed": true
+    },
+    {
+      "check": "SourceRulesExact",
+      "passed": true
+    },
+    {
+      "check": "ActualExitZero",
+      "passed": true
+    },
+    {
+      "check": "ActualGNUTimeCost",
+      "passed": true
+    },
+    {
+      "check": "OriginalPendingSummaryNotOverwritten",
+      "passed": true
+    },
+    {
+      "check": "NormalValueFlowLimitPreserved",
+      "passed": true
+    }
+  ],
+  "passedChecks": 22,
+  "failedChecks": 0,
+  "reviewer": "same assistant system;not human or independent vulnerability review"
+}

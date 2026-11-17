@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="6561047514921003366">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="73" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="126" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1051:14" call-funcname="jpeg_write_m_byte" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcicc.c" line="92" col="22" call-argexpr="0x0" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GETENV_S" lineNumber="79"/>
+    <functiondecl functionName="PUTENV_S" lineNumber="132"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ERANGE"/>
+    <functioncall functionName="JERR_BAD_STATE"/>
+    <functioncall functionName="JERR_BUFFER_SIZE"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="getenv"/>
+    <functioncall functionName="jpeg_write_m_byte"/>
+    <functioncall functionName="jpeg_write_m_header"/>
+    <functioncall functionName="setenv"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+  </FileInfo>
+</analyzerinfo>

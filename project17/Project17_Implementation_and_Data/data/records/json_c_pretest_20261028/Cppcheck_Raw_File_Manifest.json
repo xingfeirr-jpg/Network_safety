@@ -1,0 +1,282 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/arraylist.a1",
+    "relative": "cache/arraylist.a1",
+    "bytes": 9042,
+    "sha256": "6d4347371b7bc534b216d34994cebde1aeb32c6c17aadf200a25d852f6703da6",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/arraylist.a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/arraylist.c.snalyzerinfo",
+    "relative": "cache/arraylist.c.snalyzerinfo",
+    "bytes": 809,
+    "sha256": "5709fc32664dd07c54c9e38f083d6db1637a960fdd6841b7efd8c1c81df17dd1",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/arraylist.c.snalyzerinfo"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/debug.a1",
+    "relative": "cache/debug.a1",
+    "bytes": 4138,
+    "sha256": "6f0ade17bb2fe683f9a21a2f8a48f8bed99310fec720d57745e0d316d679cfaa",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/debug.a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/debug.c.snalyzerinfo",
+    "relative": "cache/debug.c.snalyzerinfo",
+    "bytes": 396,
+    "sha256": "e5c8e1fa9d0e8526de4f9d57a307ba5bb195dfc669b9131b745c571938091761",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/debug.c.snalyzerinfo"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/files.txt",
+    "relative": "cache/files.txt",
+    "bytes": 998,
+    "sha256": "abc6771f69b0d10f4430eb2265b69f6f9bf0bfc25fc568239e4e02b7583af43f",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/files.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_c_version.a1",
+    "relative": "cache/json_c_version.a1",
+    "bytes": 81,
+    "sha256": "6bb1f2b24251c96fa6fe66e91729deb959d83e348f05966a88d3b139eff833bc",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_c_version.a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_c_version.c.snalyzerinfo",
+    "relative": "cache/json_c_version.c.snalyzerinfo",
+    "bytes": 66,
+    "sha256": "cc780346be33b661ca831128d5e18729b2a19946ebbac3c5db1f77de7d8b9bc7",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_c_version.c.snalyzerinfo"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_object.a1",
+    "relative": "cache/json_object.a1",
+    "bytes": 52928,
+    "sha256": "b9634d67a63d72aa76d9fd757909b91d214b10824d530131197c395c0cfeb66c",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_object.a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_object.c.snalyzerinfo",
+    "relative": "cache/json_object.c.snalyzerinfo",
+    "bytes": 9612,
+    "sha256": "5c68f7292cf4f4efdb3838901ece8801e4b61b49f6cfeb08b9d446795201d3a8",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_object.c.snalyzerinfo"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_object_iterator.a1",
+    "relative": "cache/json_object_iterator.a1",
+    "bytes": 10195,
+    "sha256": "c3aedd4d0d09d14f9dc44d2993e1215ce13e9415a2e7fcab6bea7d8ef76a9062",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_object_iterator.a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_object_iterator.c.snalyzerinfo",
+    "relative": "cache/json_object_iterator.c.snalyzerinfo",
+    "bytes": 643,
+    "sha256": "b332cc159898a5e94c53f77f023ace0f927f76c6c5ab8eb3f8446afaf2194f27",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_object_iterator.c.snalyzerinfo"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_patch.a1",
+    "relative": "cache/json_patch.a1",
+    "bytes": 14887,
+    "sha256": "e1a1ffb1bd9b12ffc3756a7dba7449376024db9cdc273d8cdd47750310a528dc",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_patch.a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_patch.c.snalyzerinfo",
+    "relative": "cache/json_patch.c.snalyzerinfo",
+    "bytes": 1448,
+    "sha256": "4f4a0e029c4d9e7ec8a502b8c225446fb3a23864ae3002fe0a5145c738f72136",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_patch.c.snalyzerinfo"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_pointer.a1",
+    "relative": "cache/json_pointer.a1",
+    "bytes": 19147,
+    "sha256": "15e239154d164c932566d3effbdcec170b6772df60fb60f4d1fdbe05c3c6ed0c",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_pointer.a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_pointer.c.snalyzerinfo",
+    "relative": "cache/json_pointer.c.snalyzerinfo",
+    "bytes": 1520,
+    "sha256": "0b6789a13f012bbb5b6c2fd5bbbeddfced368d14f919b3eeccd814aff77c62c1",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_pointer.c.snalyzerinfo"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_tokener.a1",
+    "relative": "cache/json_tokener.a1",
+    "bytes": 22852,
+    "sha256": "e66197f316203bc308d52645266bd213421b75dd423a27b7dce8f1c39e4f3d9d",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_tokener.a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_tokener.c.snalyzerinfo",
+    "relative": "cache/json_tokener.c.snalyzerinfo",
+    "bytes": 1715,
+    "sha256": "4ba9555caf99cf965b978cc0abfbaa43edac7553679e4bc9341725e7d6a2138c",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_tokener.c.snalyzerinfo"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_util.a1",
+    "relative": "cache/json_util.a1",
+    "bytes": 14769,
+    "sha256": "4fe60ea9fc6153003c1086428d70cbd099b7eb567d4cbea13dc7e8e7dab8ffd1",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_util.a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_util.c.snalyzerinfo",
+    "relative": "cache/json_util.c.snalyzerinfo",
+    "bytes": 1150,
+    "sha256": "8009f7121bb22cbbc2017e91f04b4d12182c243bbe3de86c6401fb6ea4a07328",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_util.c.snalyzerinfo"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_visit.a1",
+    "relative": "cache/json_visit.a1",
+    "bytes": 9112,
+    "sha256": "0c82127b592c459b0fed50c180e81d52b146a9898cbb7915acb89ed0ec42a2ca",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_visit.a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/json_visit.c.snalyzerinfo",
+    "relative": "cache/json_visit.c.snalyzerinfo",
+    "bytes": 445,
+    "sha256": "c42b7f183819d734ee06ed776a112be58f268d4d10404f01f35d1843c7b7dfe8",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/json_visit.c.snalyzerinfo"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/linkhash.a1",
+    "relative": "cache/linkhash.a1",
+    "bytes": 17170,
+    "sha256": "0dfc82bb9388da2d2408f9d41dcf5e4b4ff0ffc18ae503f21b3e1ba073e19a7d",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/linkhash.a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/linkhash.c.snalyzerinfo",
+    "relative": "cache/linkhash.c.snalyzerinfo",
+    "bytes": 1390,
+    "sha256": "47ce35ca69aaa71e4c05edd443ba6081cb5986cefe61d2a48c30ff760e925e4a",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/linkhash.c.snalyzerinfo"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/printbuf.a1",
+    "relative": "cache/printbuf.a1",
+    "bytes": 8861,
+    "sha256": "ca252700000e2cdfa680d6ac311fecbecbf4ee78e450bffa7d6c994ad1e015bb",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/printbuf.a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/printbuf.c.snalyzerinfo",
+    "relative": "cache/printbuf.c.snalyzerinfo",
+    "bytes": 359,
+    "sha256": "0f5d206371f31a6fca9fbdedd853d69aa2e406c1ef8e0b2de3cae2f0cbfa464c",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/printbuf.c.snalyzerinfo"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/random_seed.a1",
+    "relative": "cache/random_seed.a1",
+    "bytes": 3134,
+    "sha256": "bb21564f9564379469ed5720ed57d7ab9e63a5b85791a9d518339948f7e64670",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/random_seed.a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/random_seed.c.snalyzerinfo",
+    "relative": "cache/random_seed.c.snalyzerinfo",
+    "bytes": 63,
+    "sha256": "f22a4fcd774e5e17f260ebd15a8de011091a7d42c8bed38e6fa79c332fecd399",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/random_seed.c.snalyzerinfo"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/strerror_override.a1",
+    "relative": "cache/strerror_override.a1",
+    "bytes": 3592,
+    "sha256": "399a5c9f9c7b1b61fe012c5b391a89701c24982852d6a63232f676fff4c76900",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/strerror_override.a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/cache/strerror_override.c.snalyzerinfo",
+    "relative": "cache/strerror_override.c.snalyzerinfo",
+    "bytes": 121,
+    "sha256": "a71f2c9bfc75eb4713d2c83ec83d0c663a6128c1723678151b55f430d6d844e1",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/cache/strerror_override.c.snalyzerinfo"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/checkers.txt",
+    "relative": "checkers.txt",
+    "bytes": 10920,
+    "sha256": "6531ca0de68eb5d6a4bbaa8099d89b622f574cd76477eb0148b8e7d91a4c6422",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/checkers.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/command.txt",
+    "relative": "command.txt",
+    "bytes": 408,
+    "sha256": "084ed80d817069e713c7b6fe39a7776ade1e4e77f35bd0f195e9c92a80ecacd4",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/command.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/environment-start.txt",
+    "relative": "environment-start.txt",
+    "bytes": 2525,
+    "sha256": "0f193b389b088929d66562e69d250c00a643b6b2543845a5054aad402f392013",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/environment-start.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/exit-code.txt",
+    "relative": "exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/exit-code.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/input-files.sha256",
+    "relative": "input-files.sha256",
+    "bytes": 4861,
+    "sha256": "1dee73fa776d2979c0460597fd2fbe7764519436669ab28056fdc34bb5095a8a",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/input-files.sha256"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/prepared-profile.json",
+    "relative": "prepared-profile.json",
+    "bytes": 10771,
+    "sha256": "69eeae70d5543cd888f7217ee9b37455573fdde6f359220a597c0870bb4a9e07",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/prepared-profile.json"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/run-meta.tsv",
+    "relative": "run-meta.tsv",
+    "bytes": 445,
+    "sha256": "2d3c756faaf963a97765668e7611a6ce82526570ef3fd6001f057e28282f698f",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/run-meta.tsv"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/stderr.txt",
+    "relative": "stderr.txt",
+    "bytes": 36844,
+    "sha256": "4deed4c13039ae68763cc9e40aefd1e467c8d05c94d676c8a8083cebc988e86d",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/stderr.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/stdout.txt",
+    "relative": "stdout.txt",
+    "bytes": 2973,
+    "sha256": "87eb5ab80520f36e58b532857d478867471b68737d7b272d50712260e8cb97ee",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/stdout.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/time.txt",
+    "relative": "time.txt",
+    "bytes": 1118,
+    "sha256": "c97175525eb240587579bb7d0688bbb5c7278640dbd0ca4ee56c3dd9e3149b25",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/time.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001/xml-summary.json",
+    "relative": "xml-summary.json",
+    "bytes": 453,
+    "sha256": "20b1536ed0d2f78061af384776af33cb92f5f90874b7b2e061da87c243f148ca",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Cppcheck/xml-summary.json"
+  }
+]

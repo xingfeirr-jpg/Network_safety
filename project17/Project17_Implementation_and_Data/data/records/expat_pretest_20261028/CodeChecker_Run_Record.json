@@ -1,0 +1,103 @@
+{
+  "status": "accepted",
+  "project": "P07 Expat 2.7.1",
+  "runId": "PRE-P07-CC-001",
+  "acceptedAtUTC": "2026-10-28T10:23:43.112378+00:00",
+  "purpose": "functional pretest",
+  "rawFiles": 30,
+  "actualSucceededActions": 3,
+  "failedActions": 0,
+  "skippedActions": 0,
+  "validPlists": 3,
+  "savedDiagnostics": 0,
+  "displayedReports": 0,
+  "actions": [
+    {
+      "source": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlparse.c",
+      "plist": "CodeChecker/reports/xmlparse.c_clangsa_daa1d20ca0763af2b6b1d7239c1af9c0.plist",
+      "savedDiagnostics": 0,
+      "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c",
+      "plist": "CodeChecker/reports/xmlrole.c_clangsa_426b9a3b08984505b620e9f55ce3a653.plist",
+      "savedDiagnostics": 0,
+      "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c",
+      "plist": "CodeChecker/reports/xmltok.c_clangsa_61ede1d2c3a69032a30a5b3dbec72695.plist",
+      "savedDiagnostics": 0,
+      "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+      "analyzer": "clangsa"
+    }
+  ],
+  "versions": {
+    "CodeChecker": "6.29.1",
+    "clangsa": "18.1.3"
+  },
+  "checkerCatalog": {
+    "enabled": 47,
+    "disabled": 99,
+    "meaning": "multi-language catalog, not C execution coverage"
+  },
+  "languageStandard": "explicit -std=c99 retained;compiler_info gnu17 is a default probe, not override",
+  "backendArgvCapture": "per-action final argv not separately dumped;fixed6.29.1 fallback source and original/derived DB checked",
+  "metrics": {
+    "wall_seconds": 16.49,
+    "user_seconds": 14.11,
+    "system_seconds": 0.77,
+    "max_rss_kib": 199476
+  },
+  "selfReportedAnalysisSeconds": 14.35,
+  "auxiliaryCost": "checkers/status/parse outside GNU analysis timing;not separately measured",
+  "exitCodes": {
+    "analyze": 0,
+    "checkers": 0,
+    "status": 0,
+    "parse": 0
+  },
+  "startedUTC": "2026-10-28T09:59:15Z",
+  "endedUTC": "2026-10-28T09:59:32Z",
+  "missingOtherBackends": "clang-tidy/cppcheck/gcc/infer not selected, not clangsa failures",
+  "zeroMeaning": "no diagnostics saved or displayed for this successful configuration;not a proof of no vulnerabilities",
+  "assistantReranAnalyzer": false,
+  "formalThirtyCells": "all not run",
+  "checks": {
+    "30RawFilesSizeAndHashExact": true,
+    "20ActualInputIdentitiesMatch": true,
+    "CurrentCompleteSourceMatchesAcceptedSource": true,
+    "AllThreeOriginalC99ActionsRetained": true,
+    "OnlyClangsaSelected": true,
+    "CommandMatchesPreparedPolicy": true,
+    "ClangsaThreeSuccessZeroFailureSkip": true,
+    "SuccessfulSourcesExactlyDatabaseSources": true,
+    "ActualCodeCheckerAndClangVersions": true,
+    "CheckerCatalogMatchesMetadata": true,
+    "CheckerCatalogMatchesPreparedReference": true,
+    "ThreeLegalPlistsExactlyMapToThreeSources": true,
+    "AllSavedPlistDiagnosticsEmpty": true,
+    "NoSavedFailureArtifacts": true,
+    "FourSeparateStatusesZero": true,
+    "FourStderrStreamsEmpty": true,
+    "OrdinaryParseProcessed3AndDisplayedZero": true,
+    "StatusHasThreeCurrentClangsaAndThreeAvailable": true,
+    "OtherMissingBackendsUnselected": true,
+    "EnvironmentUsesPinnedClangAndNoLabelsOverride": true,
+    "CompilerCacheKeyRecordsC99AndExpectedTarget": true,
+    "FixedVersionStandardFallbackOnlyWhenNoExplicitStd": true,
+    "GNUTimeMetricsAndExitMatch": true,
+    "SelfReportedTimeSeparately14_35": true,
+    "NoCTUOrExtraRulesInActualCommand": true,
+    "RootRecomputed30OriginalHashes": true,
+    "RootRecomputed20InputsAndExactPreparedSnapshots": true,
+    "RootRecomputedThreeSuccessSourcesAndCommand": true,
+    "RootRecomputedThreeLegalEmptyPlists": true,
+    "RootRecomputedCheckerFlagsAndFourExitCodes": true,
+    "RootRecomputedGNUTimeAndPurpose": true
+  },
+  "passedChecks": 31,
+  "totalChecks": 31
+}

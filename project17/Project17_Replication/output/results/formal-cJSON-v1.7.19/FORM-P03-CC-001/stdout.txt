@@ -1,0 +1,14 @@
+[INFO 2026-11-08 02:53:17] - Enabled checker list can be found in /home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-CC-001/reports/metadata.json
+[INFO 2026-11-08 02:53:17] - Starting static analysis ...
+[INFO 2026-11-08 02:53:30] - [1/1] clangsa analyzed cJSON.c successfully.
+[INFO 2026-11-08 02:53:30] - ----==== Summary ====----
+[INFO 2026-11-08 02:53:30] - Successfully analyzed
+[INFO 2026-11-08 02:53:30] -   clangsa: 1
+[INFO 2026-11-08 02:53:30] - Total analyzed compilation commands: 1
+[INFO 2026-11-08 02:53:30] - ----=================----
+[INFO 2026-11-08 02:53:30] - Analysis finished.
+[INFO 2026-11-08 02:53:30] - To view results in the terminal use the "CodeChecker parse" command.
+[INFO 2026-11-08 02:53:30] - To store results use the "CodeChecker store" command.
+[INFO 2026-11-08 02:53:30] - See --help and the user guide for further options about parsing and storing the reports.
+[INFO 2026-11-08 02:53:30] - ----=================----
+[INFO 2026-11-08 02:53:30] - Analysis length: 12.1 sec.

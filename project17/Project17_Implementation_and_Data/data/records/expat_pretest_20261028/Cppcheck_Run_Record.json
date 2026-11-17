@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "acceptedAtUTC": "2026-10-28T09:53:23.825873+00:00",
+  "project": "P07 Expat",
+  "version": "2.7.1",
+  "runId": "PRE-P07-CP-001",
+  "purpose": "functional pretest",
+  "rawFiles": 18,
+  "intendedActions": 3,
+  "checkedActions": 3,
+  "failedActions": 0,
+  "skippedActions": 0,
+  "coverageMeaning": "three files checked under normal policy;not exhaustive path analysis",
+  "xmlDiagnosticElements": 28,
+  "sourceCandidates": 2,
+  "informationElements": 26,
+  "bySeverity": {
+    "information": 26,
+    "portability": 2
+  },
+  "byRule": {
+    "missingIncludeSystem": 24,
+    "checkLevelNormal": 1,
+    "invalidPrintfArgType_sint": 1,
+    "shiftTooManyBitsSigned": 1,
+    "checkersReport": 1
+  },
+  "sourceCandidateRules": [
+    "invalidPrintfArgType_sint",
+    "shiftTooManyBitsSigned"
+  ],
+  "normalValueFlowLimit": {
+    "function": "doProlog",
+    "file": "expat/lib/xmlparse.c",
+    "line": 4831
+  },
+  "missingIncludeSystemInformation": 24,
+  "activeCheckersSelfReported": "79/592;not C coverage",
+  "metrics": {
+    "wall_seconds": 2.95,
+    "user_seconds": 2.9,
+    "system_seconds": 0.04,
+    "max_rss_kib": 49032
+  },
+  "exitCode": 0,
+  "startedUTC": "2026-10-28T09:45:13Z",
+  "endedUTC": "2026-10-28T09:45:16Z",
+  "sourceReviewed": 0,
+  "unreviewedCandidates": 2,
+  "knownRawCandidatesSoFar": 41,
+  "threeToolCandidateTotal": null,
+  "sourceRiskReviewPerformed": false,
+  "assistantReranAnalyzer": false,
+  "checks": {
+    "All18RawFilesMatchLinuxBytesAndHashes": true,
+    "ExecutedCommandAndPreparedSnapshotsMatchFixedProfile": true,
+    "All20ActualInputHashesMatch": true,
+    "Complete207FileOneLink20DirectorySourceUnchanged": true,
+    "OriginalXML2AndCppcheck2130Parse": true,
+    "28OriginalElementsEqual2PortabilityAnd26Information": true,
+    "OriginalRuleCountsMatch": true,
+    "AllThreeIntendedFilesCheckedAndNoCriticalErrors": true,
+    "NoFailureOrSkippedSourceDiagnostics": true,
+    "NormalDoPrologValueFlowLimitPreserved": true,
+    "ToolExit0": true,
+    "GNUTimeMetricsMatch": true,
+    "MeasurementV1AndFreshCacheMetadata": true,
+    "ClangsaNotRunYet": true
+  },
+  "passedChecks": 14,
+  "totalChecks": 14,
+  "formalThirtyCells": "all not run"
+}

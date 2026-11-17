@@ -1,0 +1,9 @@
+[
+ "cmake",
+ "--build",
+ "/home/yhong/comp5355/build/zlib-v1.3.2",
+ "--target",
+ "zlibstatic",
+ "--parallel",
+ "1"
+]

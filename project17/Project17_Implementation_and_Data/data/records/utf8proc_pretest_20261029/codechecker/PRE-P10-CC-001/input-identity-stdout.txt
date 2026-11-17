@@ -1,0 +1,4 @@
+/home/yhong/comp5355/build/utf8proc-2.10.0/compile_commands.json: OK
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c: OK
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h: OK
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc_data.c: OK

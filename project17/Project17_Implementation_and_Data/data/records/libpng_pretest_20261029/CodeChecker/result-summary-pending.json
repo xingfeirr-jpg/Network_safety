@@ -1,0 +1,100 @@
+{
+  "runId": "PRE-P08-CC-001",
+  "purpose": "functional pretest",
+  "coverageValidation": "pending_tool_output_review",
+  "sourceReview": "not performed",
+  "auxiliaryTiming": "checkers and both parse commands outside analysis timing; not measured",
+  "metadataTools": [
+    {
+      "actionNum": 15,
+      "clangsaStatistics": {
+        "failed": 0,
+        "failed_sources": [],
+        "successful": 15,
+        "successful_sources": [
+          "/home/yhong/comp5355/sources/libpng-1.6.50/png.c",
+          "/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c",
+          "/home/yhong/comp5355/sources/libpng-1.6.50/pngget.c",
+          "/home/yhong/comp5355/sources/libpng-1.6.50/pngmem.c",
+          "/home/yhong/comp5355/sources/libpng-1.6.50/pngpread.c",
+          "/home/yhong/comp5355/sources/libpng-1.6.50/pngread.c",
+          "/home/yhong/comp5355/sources/libpng-1.6.50/pngrio.c",
+          "/home/yhong/comp5355/sources/libpng-1.6.50/pngrtran.c",
+          "/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c",
+          "/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c",
+          "/home/yhong/comp5355/sources/libpng-1.6.50/pngtrans.c",
+          "/home/yhong/comp5355/sources/libpng-1.6.50/pngwio.c",
+          "/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c",
+          "/home/yhong/comp5355/sources/libpng-1.6.50/pngwtran.c",
+          "/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c"
+        ],
+        "version": "18.1.3"
+      },
+      "skipped": 0
+    }
+  ],
+  "plistResults": [
+    {
+      "file": "reports/png.c_clangsa_dd9cac3437c68049365e56e7cae0117f.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/pngerror.c_clangsa_8b763e8920e82e51d7164720163aaece.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/pngget.c_clangsa_851d73b460b04530cb74ce7438721049.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/pngmem.c_clangsa_8a57d4d65970aa2bd36b4ca5610fab3d.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/pngpread.c_clangsa_2f736fb712924f56b326bed2a0f21e14.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/pngread.c_clangsa_1f3b837466d429d6eef48657707d5e4f.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/pngrio.c_clangsa_000130759b63c519b55099df469783ba.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/pngrtran.c_clangsa_f5f38971c9269f35fe0ef87c127856d5.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/pngrutil.c_clangsa_694fd6258772f20ce68f8ae98a3f57fe.plist",
+      "savedDiagnostics": 9
+    },
+    {
+      "file": "reports/pngset.c_clangsa_e21e264f758e3597ca5b567d7238a209.plist",
+      "savedDiagnostics": 2
+    },
+    {
+      "file": "reports/pngtrans.c_clangsa_6e76f244f69d65abca929eb98e3d70f9.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/pngwio.c_clangsa_f7341068fe336927ef36d3d184bbef78.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/pngwrite.c_clangsa_e5c1f0d9517b98856f91d55255f77b94.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/pngwtran.c_clangsa_3eb7d4bfbbb3b0e4cf47ede8b0fb1eae.plist",
+      "savedDiagnostics": 3
+    },
+    {
+      "file": "reports/pngwutil.c_clangsa_7bc55f8cd6412b565c7ef9bb181fb00f.plist",
+      "savedDiagnostics": 0
+    }
+  ],
+  "plistFileCount": 15,
+  "savedPlistDiagnostics": 14
+}

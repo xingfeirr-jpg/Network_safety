@@ -1,0 +1,18 @@
+{
+  "purpose": "functional pretest",
+  "runId": "PRE-P02-CP-001",
+  "xmlValid": true,
+  "xmlDiagnosticElements": 25,
+  "bySeverity": {
+    "error": 1,
+    "information": 24
+  },
+  "byRule": {
+    "checkersReport": 1,
+    "missingIncludeSystem": 23,
+    "nullPointerArithmetic": 1
+  },
+  "coverageValidation": "pending_tool_output_review",
+  "sourceReview": "not performed",
+  "summaryTiming": "outside analysis measurement"
+}

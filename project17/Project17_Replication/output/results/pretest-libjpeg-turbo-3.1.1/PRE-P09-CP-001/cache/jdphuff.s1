@@ -1,0 +1,9 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+start_pass_phuff_decoder call:[jpeg_make_d_derived_tbl] noreturn:[jpeg_make_d_derived_tbl]
+process_restart
+decode_mcu_DC_first call:[jpeg_fill_bit_buffer,jpeg_huff_decode,process_restart,short]
+decode_mcu_AC_first global:[jpeg_natural_order] call:[jpeg_fill_bit_buffer,jpeg_huff_decode,process_restart,short]
+decode_mcu_DC_refine call:[jpeg_fill_bit_buffer,process_restart,short]
+decode_mcu_AC_refine global:[jpeg_natural_order] call:[jpeg_fill_bit_buffer,jpeg_huff_decode,process_restart,short,while]
+jinit_phuff_decoder call:[int,sizeof]

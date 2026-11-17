@@ -1,0 +1,52 @@
+{
+  "project": "P09 libjpeg-turbo",
+  "purpose": "functional pretest source download only",
+  "runId": "DL-P09-001",
+  "version": "3.1.1",
+  "tag": "3.1.1",
+  "commit": "7723f50f3f66b9da74376e6d8badb6162464212c",
+  "rootTree": "44cace4b53c0a88556e8ebd215adce65c6906939",
+  "releaseId": 224372990,
+  "assetId": 262668412,
+  "assetUrl": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.1/libjpeg-turbo-3.1.1.tar.gz",
+  "assetName": "libjpeg-turbo-3.1.1.tar.gz",
+  "expectedArchiveBytes": 2506010,
+  "expectedArchiveSHA256": "aadc97ea91f6ef078b0ae3a62bba69e008d9a7db19b34e4ac973b19b71b4217c",
+  "digestSource": "GitHub official release asset metadata digest;not local-only hash;GPG not verified",
+  "archiveRoot": "libjpeg-turbo-3.1.1",
+  "officialMetadata": "Official_Identity_Check_20261029/Metadata_Check.json",
+  "referenceFiles": [
+    {
+      "file": "CMakeLists.txt",
+      "url": "https://raw.githubusercontent.com/libjpeg-turbo/libjpeg-turbo/7723f50f3f66b9da74376e6d8badb6162464212c/CMakeLists.txt",
+      "bytes": 91155,
+      "sha256": "7ecd13a697bc2ad91b374bb5ad4c2d249169dade540d54f891ce686a44ecebc1",
+      "gitBlobSHA1": "352f67e94c3fc0e88386040d467d47f06da16cef"
+    },
+    {
+      "file": "BUILDING.md",
+      "url": "https://raw.githubusercontent.com/libjpeg-turbo/libjpeg-turbo/7723f50f3f66b9da74376e6d8badb6162464212c/BUILDING.md",
+      "bytes": 24841,
+      "sha256": "8d2c93157e3294e66e686ec133c704bc13ccfdb2895a85403198510e52ffffa9",
+      "gitBlobSHA1": "faec9c5bd52f59d7cdada4733a0c27a00acd3cde"
+    },
+    {
+      "file": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/libjpeg-turbo/libjpeg-turbo/7723f50f3f66b9da74376e6d8badb6162464212c/LICENSE.md",
+      "bytes": 5620,
+      "sha256": "96f5b328adbb78eeaaec6980d73fd558cb1e4d62560ed615646bc3cf5e532430",
+      "gitBlobSHA1": "a785258bcdaeb20de639c6a060a7e3d5df17ae8f"
+    },
+    {
+      "file": "README.ijg",
+      "url": "https://raw.githubusercontent.com/libjpeg-turbo/libjpeg-turbo/7723f50f3f66b9da74376e6d8badb6162464212c/README.ijg",
+      "bytes": 12799,
+      "sha256": "75815e3bf6484201a3c3d17a1bbf10f2e8e3237f84df10a2357ea896db2a81d6",
+      "gitBlobSHA1": "dbf8070cac812bcfd7eb4d407062919f69c777c8"
+    }
+  ],
+  "maxAttempts": 3,
+  "plannedArchive": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1.tar.gz",
+  "plannedRecord": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001",
+  "archiveExecuted": false
+}

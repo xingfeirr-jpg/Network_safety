@@ -1,0 +1,14 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+jpeg_undifference1
+jpeg_undifference2
+jpeg_undifference3
+jpeg_undifference4
+jpeg_undifference5
+jpeg_undifference6
+jpeg_undifference7
+jpeg_undifference_first_row
+simple_upscale call:[while] noreturn:[while]
+noscale call:[while] noreturn:[while]
+start_pass_lossless
+j16init_lossless_decompressor call:[sizeof]

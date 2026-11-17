@@ -1,0 +1,175 @@
+sip_tokey
+sip_round
+sip24_init
+sip24_update call:[sip_round,sizeof,while]
+sip24_final call:[sip_round]
+siphash24 call:[sip24_final,sip24_init,sip24_update] noreturn:[sip24_final]
+sip24_valid call:[sip_tokey,siphash24,sizeof]
+XML_ParserCreate call:[XML_ParserCreate_MM] noreturn:[XML_ParserCreate_MM]
+XML_ParserCreateNS call:[XML_ParserCreate_MM] noreturn:[XML_ParserCreate_MM]
+writeRandomBytes_getrandom_nonblock call:[getrandom,while]
+writeRandomBytes_dev_urandom call:[close,open,read,while]
+gather_time_entropy call:[assert,gettimeofday]
+ENTROPY_DEBUG call:[fprintf,getDebugLevel,sizeof] noreturn:[fprintf]
+generate_hash_secret_salt call:[ENTROPY_DEBUG,gather_time_entropy,getpid,sizeof,writeRandomBytes_dev_urandom,writeRandomBytes_getrandom_nonblock] noreturn:[ENTROPY_DEBUG]
+get_hash_secret_salt call:[get_hash_secret_salt] noreturn:[get_hash_secret_salt]
+callProcessor call:[m_processor]
+startParsing global:[implicitContext] call:[generate_hash_secret_salt,return,setContext] noreturn:[generate_hash_secret_salt,return,setContext]
+XML_ParserCreate_MM call:[parserCreate] noreturn:[parserCreate]
+parserCreate call:[XML_ParserFree,XmlGetUtf8InternalEncoding,XmlGetUtf8InternalEncodingNS,dtdCreate,free_fcn,malloc,malloc_fcn,parserInit,poolInit,sizeof] noreturn:[XmlGetUtf8InternalEncoding]
+parserInit global:[g_reparseDeferralEnabledDefault] call:[XmlInitEncoding,XmlPrologStateInit,copyString,getDebugLevel,memset,sizeof] noreturn:[copyString,getDebugLevel]
+moveToFreeBindingList
+XML_ParserReset call:[dtdReset,free_fcn,m_unknownEncodingRelease,moveToFreeBindingList,parserInit,poolClear,return] noreturn:[m_unknownEncodingRelease,return]
+parserBusy call:[return] noreturn:[return]
+XML_SetEncoding call:[copyString,free_fcn,parserBusy]
+XML_ExternalEntityParserCreate call:[XML_ParserFree,XmlPrologStateInitExternalEntity,dtdCopy,int,parserCreate,setContext,void] noreturn:[parserCreate]
+destroyBindings call:[free_fcn] noreturn:[free_fcn]
+XML_ParserFree call:[destroyBindings,dtdDestroy,free_fcn,m_unknownEncodingRelease,poolDestroy] noreturn:[dtdDestroy,free_fcn,m_unknownEncodingRelease]
+XML_UseParserAsHandlerArg
+XML_UseForeignDTD call:[parserBusy]
+XML_SetReturnNSTriplet call:[parserBusy]
+XML_SetUserData
+XML_SetBase call:[poolCopyString]
+XML_GetBase
+XML_GetSpecifiedAttributeCount
+XML_GetIdAttributeIndex
+XML_SetElementHandler
+XML_SetStartElementHandler
+XML_SetEndElementHandler
+XML_SetCharacterDataHandler
+XML_SetProcessingInstructionHandler
+XML_SetCommentHandler
+XML_SetCdataSectionHandler
+XML_SetStartCdataSectionHandler
+XML_SetEndCdataSectionHandler
+XML_SetDefaultHandler
+XML_SetDefaultHandlerExpand
+XML_SetDoctypeDeclHandler
+XML_SetStartDoctypeDeclHandler
+XML_SetEndDoctypeDeclHandler
+XML_SetUnparsedEntityDeclHandler
+XML_SetNotationDeclHandler
+XML_SetNamespaceDeclHandler
+XML_SetStartNamespaceDeclHandler
+XML_SetEndNamespaceDeclHandler
+XML_SetNotStandaloneHandler
+XML_SetExternalEntityRefHandler
+XML_SetExternalEntityRefHandlerArg
+XML_SetSkippedEntityHandler
+XML_SetUnknownEncodingHandler
+XML_SetElementDeclHandler
+XML_SetAttlistDeclHandler
+XML_SetEntityDeclHandler
+XML_SetXmlDeclHandler
+XML_SetParamEntityParsing call:[parserBusy]
+XML_SetHashSalt call:[XML_SetHashSalt,parserBusy] noreturn:[XML_SetHashSalt]
+XML_Parse call:[XML_GetBuffer,XML_ParseBuffer,assert,memcpy,startParsing] noreturn:[XML_ParseBuffer,memcpy]
+XML_ParseBuffer call:[callProcessor,startParsing,updatePosition]
+XML_GetBuffer call:[free_fcn,malloc_fcn,memcpy,memmove,while]
+triggerReenter
+XML_StopParser call:[assert] noreturn:[assert]
+XML_ResumeParser call:[callProcessor,updatePosition]
+XML_GetParsingStatus call:[assert]
+XML_GetErrorCode
+XML_GetCurrentByteIndex call:[return]
+XML_GetCurrentByteCount call:[return]
+XML_GetInputContext call:[return]
+XML_GetCurrentLineNumber call:[updatePosition]
+XML_GetCurrentColumnNumber call:[updatePosition]
+XML_FreeContentModel call:[free_fcn] noreturn:[free_fcn]
+XML_MemMalloc call:[malloc_fcn,return] noreturn:[return]
+XML_MemRealloc call:[realloc_fcn,return] noreturn:[return]
+XML_MemFree call:[free_fcn] noreturn:[free_fcn]
+XML_DefaultCurrent call:[reportDefault] noreturn:[reportDefault]
+XML_ErrorString
+XML_ExpatVersion
+XML_ExpatVersionInfo
+XML_GetFeatureList call:[sizeof]
+XML_SetBillionLaughsAttackProtectionMaximumAmplification call:[isnan,return] noreturn:[return]
+XML_SetBillionLaughsAttackProtectionActivationThreshold call:[return] noreturn:[return]
+XML_SetReparseDeferralEnabled call:[return] noreturn:[return]
+storeRawNames call:[memcpy,realloc_fcn,return,sizeof] noreturn:[return]
+contentProcessor call:[doContent,storeRawNames]
+externalEntityInitProcessor call:[externalEntityInitProcessor2,initializeEncoding] noreturn:[externalEntityInitProcessor2]
+externalEntityInitProcessor2 call:[accountingDiffTolerated,accountingOnAbort,externalEntityInitProcessor3] noreturn:[externalEntityInitProcessor3]
+externalEntityInitProcessor3 call:[externalEntityContentProcessor,processXmlDecl] noreturn:[externalEntityContentProcessor]
+externalEntityContentProcessor call:[doContent,storeRawNames]
+doContent call:[XmlUtf8Encode,accountingDiffTolerated,accountingOnAbort,charDataHandler,doCdataSection,epilogProcessor,freeBindings,free_fcn,getContext,lookup,m_characterDataHandler,m_endElementHandler,m_endNamespaceDeclHandler,m_externalEntityRefHandler,m_skippedEntityHandler,m_startCdataSectionHandler,m_startElementHandler,malloc_fcn,memcmp,poolClear,poolStoreString,processEntity,realloc_fcn,reportComment,reportDefault,reportProcessingInstruction,sizeof,storeAtts,void] noreturn:[charDataHandler,epilogProcessor,freeBindings,m_characterDataHandler,m_endElementHandler,m_endNamespaceDeclHandler,m_skippedEntityHandler,m_startCdataSectionHandler,m_startElementHandler,reportDefault]
+freeBindings call:[m_endNamespaceDeclHandler] noreturn:[m_endNamespaceDeclHandler]
+storeAtts call:[addBinding,copy_salt_to_sipkey,free_fcn,getAttributeId,keylen,lookup,malloc_fcn,memcpy,poolCopyString,poolGrow,poolStoreString,realloc_fcn,setElementTypePrefix,sip24_final,sip24_init,sip24_update,sizeof,storeAttributeValue,while] noreturn:[memcpy,while]
+is_rfc3986_uri_char call:[return] noreturn:[return]
+addBinding call:[free_fcn,is_rfc3986_uri_char,m_startNamespaceDeclHandler,malloc_fcn,memcpy,realloc_fcn,sizeof] noreturn:[m_startNamespaceDeclHandler]
+cdataSectionProcessor call:[contentProcessor,doCdataSection,externalEntityContentProcessor] noreturn:[contentProcessor,externalEntityContentProcessor]
+doCdataSection call:[accountingDiffTolerated,accountingOnAbort,charDataHandler,m_characterDataHandler,m_endCdataSectionHandler,reportDefault,void] noreturn:[charDataHandler,m_characterDataHandler,m_endCdataSectionHandler,reportDefault]
+ignoreSectionProcessor call:[doIgnoreSection,prologProcessor] noreturn:[prologProcessor]
+doIgnoreSection call:[accountingDiffTolerated,accountingOnAbort,reportDefault] noreturn:[reportDefault]
+initializeEncoding call:[handleUnknownEncoding] noreturn:[handleUnknownEncoding]
+processXmlDecl call:[accountingDiffTolerated,accountingOnAbort,handleUnknownEncoding,m_xmlDeclHandler,nameLength,poolClear,poolStoreString,reportDefault] noreturn:[m_xmlDeclHandler,poolClear,reportDefault]
+handleUnknownEncoding call:[XmlSizeOfUnknownEncoding,m_unknownEncodingHandler,malloc_fcn,release] noreturn:[release]
+prologInitProcessor call:[initializeEncoding,prologProcessor] noreturn:[prologProcessor]
+externalParEntInitProcessor call:[entityValueInitProcessor,externalParEntProcessor,initializeEncoding] noreturn:[entityValueInitProcessor,externalParEntProcessor]
+entityValueInitProcessor call:[accountingDiffTolerated,accountingOnAbort,entityValueProcessor,processXmlDecl,storeEntityValue] noreturn:[entityValueProcessor,storeEntityValue]
+externalParEntProcessor call:[accountingDiffTolerated,accountingOnAbort,doProlog] noreturn:[doProlog]
+entityValueProcessor call:[storeEntityValue] noreturn:[storeEntityValue]
+prologProcessor call:[doProlog] noreturn:[doProlog]
+doProlog call:[accountingDiffTolerated,accountingOnAbort,assert,build_model,callStoreEntityValue,contentProcessor,defineAttribute,doIgnoreSection,entityTrackingOnClose,entityTrackingOnOpen,getAttributeId,getElementType,lookup,m_attlistDeclHandler,m_elementDeclHandler,m_endDoctypeDeclHandler,m_entityDeclHandler,m_externalEntityRefHandler,m_notStandaloneHandler,m_notationDeclHandler,m_skippedEntityHandler,m_startDoctypeDeclHandler,m_unparsedEntityDeclHandler,malloc_fcn,nextScaffoldPart,normalizePublicId,poolAppend,poolAppendString,poolClear,poolGrow,poolStoreString,processEntity,processXmlDecl,realloc_fcn,reportComment,reportDefault,reportProcessingInstruction,sizeof,storeAttributeValue] noreturn:[m_elementDeclHandler,reportDefault]
+epilogProcessor call:[accountingDiffTolerated,accountingOnAbort,reportComment,reportDefault,reportProcessingInstruction] noreturn:[reportDefault]
+processEntity call:[assert,entityTrackingOnOpen,malloc_fcn,sizeof,triggerReenter] noreturn:[assert,triggerReenter]
+internalEntityProcessor call:[assert,doContent,doProlog,entityTrackingOnClose,triggerReenter] noreturn:[doContent,doProlog]
+errorProcessor
+storeAttributeValue call:[appendAttributeValue,assert,entityTrackingOnClose,poolGrow] noreturn:[appendAttributeValue]
+appendAttributeValue call:[XmlUtf8Encode,accountingDiffTolerated,accountingOnAbort,lookup,poolAppend,poolGrow,poolStoreString,processEntity,sizeof]
+storeEntityValue call:[XmlUtf8Encode,accountingDiffTolerated,accountingOnAbort,entityTrackingOnClose,entityTrackingOnOpen,lookup,m_externalEntityRefHandler,poolAppend,poolGrow,poolStoreString,processEntity]
+callStoreEntityValue call:[assert,entityTrackingOnClose,storeEntityValue] noreturn:[storeEntityValue]
+normalizeLines call:[while]
+reportProcessingInstruction call:[m_processingInstructionHandler,normalizeLines,poolClear,poolStoreString,reportDefault] noreturn:[reportDefault]
+reportComment call:[m_commentHandler,normalizeLines,poolClear,poolStoreString,reportDefault] noreturn:[reportDefault]
+reportDefault call:[m_defaultHandler,while] noreturn:[m_defaultHandler,while]
+defineAttribute call:[malloc_fcn,realloc_fcn,sizeof]
+setElementTypePrefix call:[lookup,poolGrow,sizeof]
+getAttributeId call:[lookup,poolGrow,poolStoreString,sizeof] noreturn:[lookup]
+getContext call:[hashTableIterInit,hashTableIterNext,poolGrow]
+setContext call:[addBinding,lookup,poolCopyString,poolGrow,return,sizeof] noreturn:[return]
+normalizePublicId
+dtdCreate call:[hashTableInit,malloc_fcn,poolInit,sizeof]
+dtdReset call:[free_fcn,hashTableClear,hashTableIterInit,hashTableIterNext,poolClear] noreturn:[free_fcn]
+dtdDestroy call:[free_fcn,hashTableDestroy,hashTableIterInit,hashTableIterNext,poolDestroy] noreturn:[free_fcn]
+dtdCopy call:[copyEntityTable,hashTableIterInit,hashTableIterNext,lookup,malloc_fcn,poolCopyString,poolGrow,sizeof] noreturn:[lookup]
+copyEntityTable call:[hashTableIterInit,hashTableIterNext,lookup,poolCopyString,poolCopyStringN,sizeof]
+keyeq call:[return] noreturn:[return]
+keylen
+copy_salt_to_sipkey call:[get_hash_secret_salt] noreturn:[get_hash_secret_salt]
+hash call:[copy_salt_to_sipkey,keylen,return,sip24_final,sip24_init,sip24_update,sizeof] noreturn:[sip24_final]
+lookup call:[free_fcn,hash,keyeq,malloc_fcn,memset,sizeof]
+hashTableClear call:[free_fcn]
+hashTableDestroy call:[free_fcn] noreturn:[free_fcn]
+hashTableInit
+hashTableIterInit
+hashTableIterNext
+poolInit
+poolClear
+poolDestroy call:[free_fcn]
+poolAppend call:[poolGrow]
+poolCopyString call:[poolGrow,while]
+poolCopyStringN call:[poolGrow]
+poolAppendString call:[poolGrow]
+poolStoreString call:[poolAppend,poolGrow]
+poolBytesToAllocateFor call:[offsetof,return,sizeof]
+poolGrow call:[malloc_fcn,memcpy,poolBytesToAllocateFor,realloc_fcn,return,sizeof] noreturn:[memcpy,return]
+nextScaffoldPart call:[malloc_fcn,realloc_fcn,sizeof]
+build_model call:[malloc_fcn,sizeof]
+getElementType call:[lookup,poolStoreString,setElementTypePrefix,sizeof]
+copyString call:[malloc_fcn,memcpy,sizeof]
+accountingGetCurrentAmplification call:[assert,sizeof]
+accountingReportStats call:[accountingGetCurrentAmplification,assert,fprintf,getRootParserOf] noreturn:[fprintf]
+accountingOnAbort call:[accountingReportStats] noreturn:[accountingReportStats]
+accountingReportDiff call:[assert,fprintf,sizeof,unsignedCharToPrintable] noreturn:[fprintf]
+accountingDiffTolerated call:[accountingGetCurrentAmplification,accountingReportDiff,accountingReportStats,assert,getRootParserOf,return] noreturn:[accountingReportDiff,return]
+testingAccountingGetCountBytesDirect
+testingAccountingGetCountBytesIndirect
+entityTrackingReportStats call:[assert,fprintf] noreturn:[fprintf]
+entityTrackingOnOpen call:[assert,entityTrackingReportStats,getRootParserOf] noreturn:[entityTrackingReportStats]
+entityTrackingOnClose call:[assert,entityTrackingReportStats,getRootParserOf]
+getRootParserOf call:[assert]
+unsignedCharToPrintable call:[assert] noreturn:[assert]
+getDebugLevel call:[getenv,strtoul]

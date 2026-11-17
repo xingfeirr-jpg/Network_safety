@@ -1,0 +1,8 @@
+api.a1::/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c
+dumper.a1::/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c
+emitter.a1::/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c
+loader.a1::/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c
+parser.a1::/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c
+reader.a1::/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c
+scanner.a1::/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c
+writer.a1::/home/yhong/comp5355/sources/libyaml-0.2.5/src/writer.c

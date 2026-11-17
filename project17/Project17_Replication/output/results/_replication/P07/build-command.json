@@ -1,0 +1,9 @@
+[
+ "cmake",
+ "--build",
+ "/home/yhong/comp5355/build/expat-2.7.1",
+ "--target",
+ "expat",
+ "--parallel",
+ "1"
+]

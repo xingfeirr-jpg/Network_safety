@@ -1,0 +1,37 @@
+utf8proc_version
+utf8proc_unicode_version
+utf8proc_errmsg
+utf8proc_iterate
+utf8proc_codepoint_valid call:[return]
+utf8proc_encode_char
+charbound_encode_char
+unsafe_get_property global:[utf8proc_properties,utf8proc_stage1table,utf8proc_stage2table]
+utf8proc_get_property global:[utf8proc_properties] call:[unsafe_get_property] noreturn:[unsafe_get_property]
+grapheme_break_simple call:[return]
+grapheme_break_extended call:[grapheme_break_simple] noreturn:[grapheme_break_simple]
+utf8proc_grapheme_break_stateful call:[grapheme_break_extended,utf8proc_get_property] noreturn:[grapheme_break_extended]
+utf8proc_grapheme_break call:[utf8proc_grapheme_break_stateful] noreturn:[utf8proc_grapheme_break_stateful]
+seqindex_decode_entry
+seqindex_decode_index global:[utf8proc_sequences] call:[seqindex_decode_entry] noreturn:[seqindex_decode_entry]
+seqindex_write_char_decomposed global:[utf8proc_sequences] call:[seqindex_decode_entry,utf8proc_decompose_char]
+utf8proc_tolower call:[seqindex_decode_index,utf8proc_get_property]
+utf8proc_toupper call:[seqindex_decode_index,utf8proc_get_property]
+utf8proc_totitle call:[seqindex_decode_index,utf8proc_get_property]
+utf8proc_islower call:[utf8proc_get_property]
+utf8proc_isupper call:[utf8proc_get_property]
+utf8proc_charwidth call:[utf8proc_get_property]
+utf8proc_charwidth_ambiguous call:[utf8proc_get_property]
+utf8proc_category call:[return,utf8proc_get_property]
+utf8proc_category_string call:[utf8proc_category]
+utf8proc_decompose_char call:[grapheme_break_extended,seqindex_write_char_decomposed,unsafe_get_property,utf8proc_decompose_char] noreturn:[seqindex_write_char_decomposed,utf8proc_decompose_char]
+utf8proc_decompose call:[utf8proc_decompose_custom] noreturn:[utf8proc_decompose_custom]
+utf8proc_decompose_custom call:[custom_func,sizeof,unsafe_get_property,utf8proc_decompose_char,utf8proc_iterate] noreturn:[custom_func]
+utf8proc_normalize_utf32 global:[utf8proc_combinations_combined,utf8proc_combinations_second] call:[unsafe_get_property] noreturn:[unsafe_get_property]
+utf8proc_reencode call:[charbound_encode_char,utf8proc_encode_char,utf8proc_normalize_utf32] noreturn:[charbound_encode_char,utf8proc_encode_char]
+utf8proc_map call:[utf8proc_map_custom] noreturn:[utf8proc_map_custom]
+utf8proc_map_custom call:[free,malloc,realloc,sizeof,utf8proc_decompose_custom,utf8proc_reencode]
+utf8proc_NFD call:[utf8proc_map]
+utf8proc_NFC call:[utf8proc_map]
+utf8proc_NFKD call:[utf8proc_map]
+utf8proc_NFKC call:[utf8proc_map]
+utf8proc_NFKC_Casefold call:[utf8proc_map]

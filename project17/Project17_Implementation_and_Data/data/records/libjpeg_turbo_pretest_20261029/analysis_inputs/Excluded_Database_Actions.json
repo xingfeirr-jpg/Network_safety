@@ -1,0 +1,387 @@
+[
+  {
+    "rawDatabaseIndex": 101,
+    "output": "CMakeFiles/cjpeg12-static.dir/src/rdppm.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdppm.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -DGIF_SUPPORTED -DPPM_SUPPORTED -o CMakeFiles/cjpeg12-static.dir/src/rdppm.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdppm.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdppm.c",
+      "output": "CMakeFiles/cjpeg12-static.dir/src/rdppm.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 102,
+    "output": "CMakeFiles/cjpeg16-static.dir/src/rdppm.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdppm.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -DGIF_SUPPORTED -DPPM_SUPPORTED -o CMakeFiles/cjpeg16-static.dir/src/rdppm.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdppm.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdppm.c",
+      "output": "CMakeFiles/cjpeg16-static.dir/src/rdppm.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 103,
+    "output": "CMakeFiles/cjpeg-static.dir/src/cjpeg.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/cjpeg.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBMP_SUPPORTED -DGIF_SUPPORTED -DPPM_SUPPORTED -DTARGA_SUPPORTED  -o CMakeFiles/cjpeg-static.dir/src/cjpeg.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/cjpeg.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/cjpeg.c",
+      "output": "CMakeFiles/cjpeg-static.dir/src/cjpeg.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 104,
+    "output": "CMakeFiles/cjpeg-static.dir/src/cdjpeg.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/cdjpeg.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBMP_SUPPORTED -DGIF_SUPPORTED -DPPM_SUPPORTED -DTARGA_SUPPORTED  -o CMakeFiles/cjpeg-static.dir/src/cdjpeg.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/cdjpeg.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/cdjpeg.c",
+      "output": "CMakeFiles/cjpeg-static.dir/src/cdjpeg.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 105,
+    "output": "CMakeFiles/cjpeg-static.dir/src/rdbmp.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdbmp.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBMP_SUPPORTED -DGIF_SUPPORTED -DPPM_SUPPORTED -DTARGA_SUPPORTED  -o CMakeFiles/cjpeg-static.dir/src/rdbmp.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdbmp.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdbmp.c",
+      "output": "CMakeFiles/cjpeg-static.dir/src/rdbmp.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 106,
+    "output": "CMakeFiles/cjpeg-static.dir/src/rdgif.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdgif.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBMP_SUPPORTED -DGIF_SUPPORTED -DPPM_SUPPORTED -DTARGA_SUPPORTED  -o CMakeFiles/cjpeg-static.dir/src/rdgif.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdgif.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdgif.c",
+      "output": "CMakeFiles/cjpeg-static.dir/src/rdgif.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 107,
+    "output": "CMakeFiles/cjpeg-static.dir/src/rdppm.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdppm.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBMP_SUPPORTED -DGIF_SUPPORTED -DPPM_SUPPORTED -DTARGA_SUPPORTED  -o CMakeFiles/cjpeg-static.dir/src/rdppm.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdppm.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdppm.c",
+      "output": "CMakeFiles/cjpeg-static.dir/src/rdppm.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 108,
+    "output": "CMakeFiles/cjpeg-static.dir/src/rdswitch.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdswitch.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBMP_SUPPORTED -DGIF_SUPPORTED -DPPM_SUPPORTED -DTARGA_SUPPORTED  -o CMakeFiles/cjpeg-static.dir/src/rdswitch.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdswitch.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdswitch.c",
+      "output": "CMakeFiles/cjpeg-static.dir/src/rdswitch.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 109,
+    "output": "CMakeFiles/cjpeg-static.dir/src/rdtarga.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdtarga.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBMP_SUPPORTED -DGIF_SUPPORTED -DPPM_SUPPORTED -DTARGA_SUPPORTED  -o CMakeFiles/cjpeg-static.dir/src/rdtarga.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdtarga.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdtarga.c",
+      "output": "CMakeFiles/cjpeg-static.dir/src/rdtarga.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 110,
+    "output": "CMakeFiles/djpeg12-static.dir/src/rdcolmap.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdcolmap.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -DGIF_SUPPORTED -DPPM_SUPPORTED -o CMakeFiles/djpeg12-static.dir/src/rdcolmap.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdcolmap.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdcolmap.c",
+      "output": "CMakeFiles/djpeg12-static.dir/src/rdcolmap.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 111,
+    "output": "CMakeFiles/djpeg12-static.dir/src/wrgif.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrgif.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -DGIF_SUPPORTED -DPPM_SUPPORTED -o CMakeFiles/djpeg12-static.dir/src/wrgif.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrgif.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrgif.c",
+      "output": "CMakeFiles/djpeg12-static.dir/src/wrgif.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 112,
+    "output": "CMakeFiles/djpeg12-static.dir/src/wrppm.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrppm.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -DGIF_SUPPORTED -DPPM_SUPPORTED -o CMakeFiles/djpeg12-static.dir/src/wrppm.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrppm.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrppm.c",
+      "output": "CMakeFiles/djpeg12-static.dir/src/wrppm.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 113,
+    "output": "CMakeFiles/djpeg16-static.dir/src/wrppm.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrppm.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -DPPM_SUPPORTED -o CMakeFiles/djpeg16-static.dir/src/wrppm.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrppm.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrppm.c",
+      "output": "CMakeFiles/djpeg16-static.dir/src/wrppm.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 114,
+    "output": "CMakeFiles/djpeg-static.dir/src/djpeg.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/djpeg.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBMP_SUPPORTED -DGIF_SUPPORTED -DPPM_SUPPORTED -DTARGA_SUPPORTED  -o CMakeFiles/djpeg-static.dir/src/djpeg.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/djpeg.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/djpeg.c",
+      "output": "CMakeFiles/djpeg-static.dir/src/djpeg.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 115,
+    "output": "CMakeFiles/djpeg-static.dir/src/cdjpeg.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/cdjpeg.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBMP_SUPPORTED -DGIF_SUPPORTED -DPPM_SUPPORTED -DTARGA_SUPPORTED  -o CMakeFiles/djpeg-static.dir/src/cdjpeg.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/cdjpeg.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/cdjpeg.c",
+      "output": "CMakeFiles/djpeg-static.dir/src/cdjpeg.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 116,
+    "output": "CMakeFiles/djpeg-static.dir/src/rdcolmap.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdcolmap.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBMP_SUPPORTED -DGIF_SUPPORTED -DPPM_SUPPORTED -DTARGA_SUPPORTED  -o CMakeFiles/djpeg-static.dir/src/rdcolmap.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdcolmap.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdcolmap.c",
+      "output": "CMakeFiles/djpeg-static.dir/src/rdcolmap.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 117,
+    "output": "CMakeFiles/djpeg-static.dir/src/rdswitch.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdswitch.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBMP_SUPPORTED -DGIF_SUPPORTED -DPPM_SUPPORTED -DTARGA_SUPPORTED  -o CMakeFiles/djpeg-static.dir/src/rdswitch.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdswitch.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdswitch.c",
+      "output": "CMakeFiles/djpeg-static.dir/src/rdswitch.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 118,
+    "output": "CMakeFiles/djpeg-static.dir/src/wrbmp.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrbmp.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBMP_SUPPORTED -DGIF_SUPPORTED -DPPM_SUPPORTED -DTARGA_SUPPORTED  -o CMakeFiles/djpeg-static.dir/src/wrbmp.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrbmp.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrbmp.c",
+      "output": "CMakeFiles/djpeg-static.dir/src/wrbmp.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 119,
+    "output": "CMakeFiles/djpeg-static.dir/src/wrgif.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrgif.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBMP_SUPPORTED -DGIF_SUPPORTED -DPPM_SUPPORTED -DTARGA_SUPPORTED  -o CMakeFiles/djpeg-static.dir/src/wrgif.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrgif.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrgif.c",
+      "output": "CMakeFiles/djpeg-static.dir/src/wrgif.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 120,
+    "output": "CMakeFiles/djpeg-static.dir/src/wrppm.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrppm.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBMP_SUPPORTED -DGIF_SUPPORTED -DPPM_SUPPORTED -DTARGA_SUPPORTED  -o CMakeFiles/djpeg-static.dir/src/wrppm.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrppm.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrppm.c",
+      "output": "CMakeFiles/djpeg-static.dir/src/wrppm.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 121,
+    "output": "CMakeFiles/djpeg-static.dir/src/wrtarga.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrtarga.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBMP_SUPPORTED -DGIF_SUPPORTED -DPPM_SUPPORTED -DTARGA_SUPPORTED  -o CMakeFiles/djpeg-static.dir/src/wrtarga.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrtarga.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrtarga.c",
+      "output": "CMakeFiles/djpeg-static.dir/src/wrtarga.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 122,
+    "output": "CMakeFiles/jpegtran-static.dir/src/jpegtran.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegtran.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpegtran-static.dir/src/jpegtran.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegtran.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegtran.c",
+      "output": "CMakeFiles/jpegtran-static.dir/src/jpegtran.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 123,
+    "output": "CMakeFiles/jpegtran-static.dir/src/cdjpeg.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/cdjpeg.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpegtran-static.dir/src/cdjpeg.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/cdjpeg.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/cdjpeg.c",
+      "output": "CMakeFiles/jpegtran-static.dir/src/cdjpeg.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 124,
+    "output": "CMakeFiles/jpegtran-static.dir/src/rdswitch.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdswitch.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpegtran-static.dir/src/rdswitch.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdswitch.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdswitch.c",
+      "output": "CMakeFiles/jpegtran-static.dir/src/rdswitch.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 125,
+    "output": "CMakeFiles/jpegtran-static.dir/src/transupp.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/transupp.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpegtran-static.dir/src/transupp.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/transupp.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/transupp.c",
+      "output": "CMakeFiles/jpegtran-static.dir/src/transupp.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 126,
+    "output": "CMakeFiles/example-static.dir/src/example.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/example.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/example-static.dir/src/example.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/example.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/example.c",
+      "output": "CMakeFiles/example-static.dir/src/example.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 127,
+    "output": "CMakeFiles/rdjpgcom.dir/src/rdjpgcom.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdjpgcom.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/rdjpgcom.dir/src/rdjpgcom.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdjpgcom.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/rdjpgcom.c",
+      "output": "CMakeFiles/rdjpgcom.dir/src/rdjpgcom.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 128,
+    "output": "CMakeFiles/wrjpgcom.dir/src/wrjpgcom.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrjpgcom.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/wrjpgcom.dir/src/wrjpgcom.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrjpgcom.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/wrjpgcom.c",
+      "output": "CMakeFiles/wrjpgcom.dir/src/wrjpgcom.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 129,
+    "output": "CMakeFiles/strtest.dir/src/strtest.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/strtest.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/strtest.dir/src/strtest.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/strtest.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/strtest.c",
+      "output": "CMakeFiles/strtest.dir/src/strtest.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 130,
+    "output": "src/md5/CMakeFiles/md5cmp.dir/md5cmp.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5cmp.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o src/md5/CMakeFiles/md5cmp.dir/md5cmp.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5cmp.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5cmp.c",
+      "output": "src/md5/CMakeFiles/md5cmp.dir/md5cmp.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 131,
+    "output": "src/md5/CMakeFiles/md5cmp.dir/md5.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o src/md5/CMakeFiles/md5cmp.dir/md5.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5.c",
+      "output": "src/md5/CMakeFiles/md5cmp.dir/md5.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 132,
+    "output": "src/md5/CMakeFiles/md5cmp.dir/md5hl.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5hl.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o src/md5/CMakeFiles/md5cmp.dir/md5hl.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5hl.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5hl.c",
+      "output": "src/md5/CMakeFiles/md5cmp.dir/md5hl.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 133,
+    "output": "src/md5/CMakeFiles/md5sum.dir/md5sum.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5sum.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o src/md5/CMakeFiles/md5sum.dir/md5sum.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5sum.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5sum.c",
+      "output": "src/md5/CMakeFiles/md5sum.dir/md5sum.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 134,
+    "output": "src/md5/CMakeFiles/md5sum.dir/md5.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o src/md5/CMakeFiles/md5sum.dir/md5.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5.c",
+      "output": "src/md5/CMakeFiles/md5sum.dir/md5.c.o"
+    }
+  },
+  {
+    "rawDatabaseIndex": 135,
+    "output": "src/md5/CMakeFiles/md5sum.dir/md5hl.c.o",
+    "source": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5hl.c",
+    "rawRow": {
+      "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o src/md5/CMakeFiles/md5sum.dir/md5hl.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5hl.c",
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/md5/md5hl.c",
+      "output": "src/md5/CMakeFiles/md5sum.dir/md5hl.c.o"
+    }
+  }
+]

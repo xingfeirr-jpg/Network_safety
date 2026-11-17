@@ -1,0 +1,12 @@
+﻿library,location,tool_rule_outcome
+LZ4,lib/lz4frame.c:1579,clangsa core.NonNullParamChecker (False positive); Flawfinder memcpy (False positive)
+LZ4,lib/lz4frame.c:1588,clangsa core.NonNullParamChecker (False positive); Flawfinder memcpy (False positive)
+libjpeg-turbo,src/jcmarker.c:207,clangsa core.NullDereference (False positive); Cppcheck nullPointerRedundantCheck (False positive)
+libjpeg-turbo,src/jdapistd.c:211,clangsa core.NullDereference (False positive); clangsa core.NullDereference (False positive); Cppcheck nullPointerRedundantCheck (False positive)
+libjpeg-turbo,src/jdatadst.c:134,clangsa core.NonNullParamChecker (False positive); Flawfinder memcpy (False positive); Cppcheck nullPointerRedundantCheck (False positive)
+libjpeg-turbo,src/jdinput.c:282,Flawfinder memcpy (False positive); Cppcheck arrayIndexOutOfBoundsCond (False positive); Cppcheck negativeIndex (False positive)
+libjpeg-turbo,src/jmemmgr.c:1234,clangsa core.NullDereference (False positive); Cppcheck nullPointerRedundantCheck (False positive)
+libjpeg-turbo,src/jmemmgr.c:401,clangsa core.NullDereference (False positive); Cppcheck nullPointerRedundantCheck (False positive)
+libjpeg-turbo,src/jquant2.c:513,clangsa core.DivideZero (False positive); clangsa core.DivideZero (False positive); Cppcheck zerodiv (False positive)
+libpng,pngset.c:1076,clangsa core.NonNullParamChecker (Supported); Flawfinder memcpy (False positive)
+libpng,pngset.c:1079,clangsa core.NonNullParamChecker (Supported); Flawfinder memcpy (False positive)

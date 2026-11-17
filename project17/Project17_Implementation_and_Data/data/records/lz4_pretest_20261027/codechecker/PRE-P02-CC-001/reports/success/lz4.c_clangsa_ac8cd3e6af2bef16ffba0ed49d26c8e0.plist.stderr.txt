@@ -1,0 +1,31 @@
+/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:1827:9: warning: Null pointer passed as 1st argument to memory copy function [unix.cstring.NullArg]
+ 1827 |         LZ4_memmove(safeBuffer, previousDictEnd - dictSize, (size_t)dictSize);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:357:25: note: expanded from macro 'LZ4_memmove'
+  357 | #    define LZ4_memmove __builtin_memmove
+      |                         ^
+/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:2179:21: warning: Null pointer passed as 2nd argument to memory copy function [unix.cstring.NullArg]
+ 2179 |                     LZ4_memmove(op, dictEnd - (lowPrefix-match), length);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:357:25: note: expanded from macro 'LZ4_memmove'
+  357 | #    define LZ4_memmove __builtin_memmove
+      |                         ^
+/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:2185:21: warning: Null pointer passed as 2nd argument to memory copy function [unix.cstring.NullArg]
+ 2185 |                     LZ4_memcpy(op, dictEnd - copySize, copySize);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:349:40: note: expanded from macro 'LZ4_memcpy'
+  349 | #    define LZ4_memcpy(dst, src, size) __builtin_memcpy(dst, src, size)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:2367:21: warning: Null pointer passed as 2nd argument to memory copy function [unix.cstring.NullArg]
+ 2367 |                     LZ4_memmove(op, dictEnd - (lowPrefix-match), length);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:357:25: note: expanded from macro 'LZ4_memmove'
+  357 | #    define LZ4_memmove __builtin_memmove
+      |                         ^
+/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:2373:21: warning: Null pointer passed as 2nd argument to memory copy function [unix.cstring.NullArg]
+ 2373 |                     LZ4_memcpy(op, dictEnd - copySize, copySize);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:349:40: note: expanded from macro 'LZ4_memcpy'
+  349 | #    define LZ4_memcpy(dst, src, size) __builtin_memcpy(dst, src, size)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.

@@ -1,0 +1,5 @@
+lz4.a1::/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c
+lz4file.a1::/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c
+lz4frame.a1::/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c
+lz4hc.a1::/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c
+xxhash.a1::/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c

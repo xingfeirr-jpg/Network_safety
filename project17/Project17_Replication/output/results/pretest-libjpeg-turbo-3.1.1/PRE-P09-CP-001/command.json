@@ -1,0 +1,14 @@
+[
+ "/usr/bin/cppcheck",
+ "--project=/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_pretest_20261029/analysis_inputs/compile_commands.json",
+ "--enable=warning,performance,portability,information",
+ "--check-level=normal",
+ "--platform=unix64",
+ "--std=c11",
+ "-j",
+ "1",
+ "--cppcheck-build-dir=/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-CP-001/cache",
+ "--checkers-report=/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-CP-001/checkers.txt",
+ "--xml",
+ "--xml-version=2"
+]

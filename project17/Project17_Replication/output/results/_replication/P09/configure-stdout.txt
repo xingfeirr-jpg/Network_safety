@@ -1,0 +1,60 @@
+-- The C compiler identification is Clang 18.1.3
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang-18 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- CMAKE_BUILD_TYPE = Debug
+-- VERSION = 3.1.1, BUILD = 20261029
+-- 64-bit build (x86_64)
+-- CMAKE_INSTALL_PREFIX = /home/yhong/comp5355/deps/libjpeg-turbo-3.1.1
+-- CMAKE_INSTALL_BINDIR = bin (/home/yhong/comp5355/deps/libjpeg-turbo-3.1.1/bin)
+-- CMAKE_INSTALL_DATAROOTDIR = share (/home/yhong/comp5355/deps/libjpeg-turbo-3.1.1/share)
+-- CMAKE_INSTALL_DOCDIR = share/doc/libjpeg-turbo (/home/yhong/comp5355/deps/libjpeg-turbo-3.1.1/share/doc/libjpeg-turbo)
+-- CMAKE_INSTALL_INCLUDEDIR = include (/home/yhong/comp5355/deps/libjpeg-turbo-3.1.1/include)
+-- CMAKE_INSTALL_LIBDIR = lib (/home/yhong/comp5355/deps/libjpeg-turbo-3.1.1/lib)
+-- CMAKE_INSTALL_MANDIR = share/man (/home/yhong/comp5355/deps/libjpeg-turbo-3.1.1/share/man)
+-- Shared libraries disabled (ENABLE_SHARED = 0)
+-- Static libraries enabled (ENABLE_STATIC = 1)
+-- Arithmetic decoding support enabled (WITH_ARITH_DEC = 1)
+-- Arithmetic encoding support enabled (WITH_ARITH_ENC = 1)
+-- TurboJPEG API library disabled (WITH_TURBOJPEG = 0)
+-- TurboJPEG Java wrapper disabled (WITH_JAVA = 0)
+-- Emulating libjpeg API/ABI v6.2 (WITH_JPEG7 = 0, WITH_JPEG8 = 0)
+-- libjpeg API shared library version = 62.4.0
+-- Compiler flags =  -g
+-- Linker flags =  
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of unsigned long
+-- Check size of unsigned long - done
+-- Performing Test HAVE_BUILTIN_CTZL
+-- Performing Test HAVE_BUILTIN_CTZL - Success
+-- Performing Test RIGHT_SHIFT_IS_UNSIGNED
+-- Performing Test RIGHT_SHIFT_IS_UNSIGNED - Failed
+-- Performing Test HIDDEN_WORKS
+-- Performing Test HIDDEN_WORKS - Success
+-- HIDDEN = __attribute__((visibility("hidden")))
+-- Performing Test INLINE_WORKS
+-- Performing Test INLINE_WORKS - Success
+-- INLINE = __inline__ __attribute__((always_inline)) (FORCE_INLINE = 1)
+-- Performing Test HAVE_THREAD_LOCAL
+-- Performing Test HAVE_THREAD_LOCAL - Success
+-- THREAD_LOCAL = __thread
+-- Performing Test HAVE_VERSION_SCRIPT
+-- Performing Test HAVE_VERSION_SCRIPT - Success
+-- Linker supports GNU-style version scripts
+-- CMAKE_EXECUTABLE_SUFFIX = 
+-- SIMD extensions: None (WITH_SIMD = 0)
+-- FLOATTEST8 = no-fp-contract
+-- FLOATTEST12 = no-fp-contract
+-- RPM architecture = x86_64, DEB architecture = amd64
+-- Configuring done (2.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/yhong/comp5355/build/libjpeg-turbo-3.1.1

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="2181122773390544837">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_inttypes.h" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object.h" line="30" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c:16:12" call-funcname="_json_c_visit" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c" line="21" col="25" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c:16:12" call-funcname="_json_c_visit" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c" line="21" col="25" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c:16:12" call-funcname="_json_c_visit" call-argnr="4" file="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c" line="21" col="25" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c:16:12" call-funcname="_json_c_visit" call-argnr="4" file="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c" line="62" col="27" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c:16:12" call-funcname="_json_c_visit" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c" line="85" col="27" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c:16:12" call-funcname="_json_c_visit" call-argnr="4" file="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c" line="85" col="27" call-argexpr="&amp;ii" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c:16:12" call-funcname="_json_c_visit" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c" line="21" col="12" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_visit.h:37:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c:16:12" call-funcname="_json_c_visit" call-argnr="5" file="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c" line="21" col="12" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_visit.h:37:17" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c:16:12" call-funcname="_json_c_visit" call-argnr="6" file="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c" line="21" col="12" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_visit.h:37:17" my-argnr="4"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:348:36" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="350" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:364:33" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="366" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:386:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="388" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:396:23" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="398" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:407:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="409" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:416:24" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="418" col="2" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:426:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="428" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:436:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="438" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c:16:12" my-argnr="5" my-argname="userfunc" file="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c" line="34" col="16" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:348:36" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="350" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:364:33" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="366" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:386:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="388" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:396:23" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="398" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:407:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="409" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:426:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="428" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:436:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="438" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c:16:12" my-argnr="5" my-argname="userfunc" file="/home/yhong/comp5355/sources/json-c-0.18/json_visit.c" line="34" col="16" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="lh_table_head" lineNumber="348"/>
+    <functiondecl functionName="lh_get_hash" lineNumber="364"/>
+    <functiondecl functionName="lh_entry_k" lineNumber="386"/>
+    <functiondecl functionName="lh_entry_k_is_constant" lineNumber="396"/>
+    <functiondecl functionName="lh_entry_v" lineNumber="407"/>
+    <functiondecl functionName="lh_entry_set_val" lineNumber="416"/>
+    <functiondecl functionName="lh_entry_next" lineNumber="426"/>
+    <functiondecl functionName="lh_entry_prev" lineNumber="436"/>
+    <functiondecl functionName="_json_c_visit" lineNumber="31"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="_json_c_visit"/>
+    <functioncall functionName="fprintf"/>
+    <functioncall functionName="hash_fn"/>
+    <functioncall functionName="json_c_shallow_copy_default"/>
+    <functioncall functionName="json_object_array_get_idx"/>
+    <functioncall functionName="json_object_array_length"/>
+    <functioncall functionName="json_object_free_userdata"/>
+    <functioncall functionName="json_object_get_object"/>
+    <functioncall functionName="json_object_get_type"/>
+    <functioncall functionName="json_object_userdata_to_json_string"/>
+    <functioncall functionName="lh_entry_k"/>
+    <functioncall functionName="lh_entry_next"/>
+    <functioncall functionName="lh_entry_v"/>
+    <functioncall functionName="lh_table_head"/>
+    <functioncall functionName="stderr"/>
+    <functioncall functionName="userfunc"/>
+  </FileInfo>
+</analyzerinfo>

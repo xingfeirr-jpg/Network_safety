@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "acceptanceStatus": "accepted_dependency_originals",
+  "acceptedAtUTC": "2026-10-28T12:38:03.098692+00:00",
+  "project": "P08 libpng",
+  "recordId": "DEP-P08-001",
+  "dependency": "P01 zlib 1.3.2",
+  "prefix": "/home/yhong/comp5355/deps/zlib-v1.3.2",
+  "component": "Development",
+  "installedFiles": {
+    "lib/libz.a": {
+      "bytes": 353262,
+      "sha256": "27aca14bf635d1b62ec5cc82afbf643042accd993161ff513649a051be2229e5"
+    },
+    "include/zlib.h": {
+      "bytes": 103848,
+      "sha256": "818667d6ab6a37fe7469cb06a7f0cb2c2cb2f2c948a03e5accf1a4a74bf3020a"
+    },
+    "include/zconf.h": {
+      "bytes": 17026,
+      "sha256": "f01d3d9b52603c88660ae89141f1e0ba61774c0718c8b3f77a2410d84b558421"
+    },
+    "lib/pkgconfig/zlib.pc": {
+      "bytes": 341,
+      "sha256": "27533ea58793055867e00abc58823bd1249e337622e4c5a4a6f247e680c03eb8"
+    }
+  },
+  "newP01BuildMetadata": {
+    "path": "/home/yhong/comp5355/build/zlib-v1.3.2/install_manifest_Development.txt",
+    "bytes": 215,
+    "sha256": "e3f1fc5d9d0e44d079f12d8d14c039cc12e27c04e54eac838b2dde8b01b51491"
+  },
+  "environmentSession": "/home/yhong/comp5355/environment/session-20261028T122337-p08-22994",
+  "environmentOriginalFiles": 6,
+  "rawCopiedFiles": 31,
+  "dependencyStageLogs": 20,
+  "checks": {
+    "31CopiedFilesMatchBytesAndSHA": true,
+    "20Logs4Installed1BuildManifest6Environment": true,
+    "UserResultMatchesFreshReadonlyInspection": true,
+    "39P01InputsPreserved": true,
+    "Exact4DevelopmentFiles": true,
+    "InstalledFilesMatchAcceptedP01Bytes": true,
+    "ThreePhasesExit0": true,
+    "ThreeStderrEmpty": true,
+    "ExistingBuildDevelopmentInstallOnly": true,
+    "InstallManifestCopyExact": true,
+    "ExecutedPreparationInputsUnchanged": true,
+    "PinnedVersionsInActualSession": true,
+    "P08FullSourceUnchanged": true,
+    "LibpngBuildAndPreparationStillAbsent": true,
+    "GNUTimeInstallExit0": true
+  },
+  "passedChecks": 15,
+  "timing": {
+    "user_seconds": 0.01,
+    "system_seconds": 0.0,
+    "wall_display": "0:00.01",
+    "max_rss_kib": 18148,
+    "wall_seconds": 0.01,
+    "scope": "dependency installation preparation only;not analyzer cost"
+  },
+  "libpngConfiguredOrBuilt": false,
+  "analyzersRun": false,
+  "meaning": "dependency ready only;not a new P01 build or vulnerability detection run",
+  "reviewMethod": "same assistant system readonly evidence reinspection;not independent or human validation"
+}

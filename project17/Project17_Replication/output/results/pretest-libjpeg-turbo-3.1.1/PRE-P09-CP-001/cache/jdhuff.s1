@@ -1,0 +1,13 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+add_huff_table call:[jpeg_alloc_huff_table,memcpy,memset,sizeof] noreturn:[jpeg_alloc_huff_table]
+std_huff_tables call:[add_huff_table] noreturn:[add_huff_table]
+start_pass_huff_decoder call:[jpeg_make_d_derived_tbl]
+jpeg_make_d_derived_tbl call:[sizeof]
+jpeg_fill_bit_buffer call:[while]
+jpeg_huff_decode call:[jpeg_fill_bit_buffer]
+process_restart
+decode_mcu_slow global:[jpeg_natural_order] call:[jpeg_fill_bit_buffer,jpeg_huff_decode,short]
+decode_mcu_fast global:[jpeg_natural_order] call:[short]
+decode_mcu call:[decode_mcu_fast,decode_mcu_slow,process_restart]
+jinit_huff_decoder call:[sizeof,std_huff_tables]

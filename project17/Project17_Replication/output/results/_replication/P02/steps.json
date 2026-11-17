@@ -1,0 +1,41 @@
+{
+  "id": "P02",
+  "name": "LZ4",
+  "version": "1.10.0",
+  "started_utc": "2026-11-08T02:52:20Z",
+  "S1": {
+    "archive": "/home/yhong/comp5355/downloads/lz4-v1.10.0.tar.gz",
+    "sha256": "eb1a93e934d4fd29df6e2061ba0bf447568561764d758f4a5662c0e29370ffa9",
+    "expected_sha256": "eb1a93e934d4fd29df6e2061ba0bf447568561764d758f4a5662c0e29370ffa9",
+    "matches_original": true
+  },
+  "S2": {
+    "source_dir": "/home/yhong/comp5355/sources/lz4-v1.10.0",
+    "regular_files": 208
+  },
+  "S3": {
+    "build_dir": "/home/yhong/comp5355/build/lz4-v1.10.0",
+    "compile_actions": 5
+  },
+  "S5": {
+    "FF": {
+      "run_id": "PRE-P02-FF-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:52:26Z",
+      "ended_utc": "2026-11-08T02:52:26Z"
+    },
+    "CP": {
+      "run_id": "PRE-P02-CP-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:52:26Z",
+      "ended_utc": "2026-11-08T02:52:34Z"
+    },
+    "CC": {
+      "run_id": "PRE-P02-CC-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:52:34Z",
+      "ended_utc": "2026-11-08T02:53:10Z"
+    }
+  },
+  "ended_utc": "2026-11-08T02:53:10Z"
+}

@@ -1,0 +1,50 @@
+{
+  "runId": "PRE-P02-CC-001",
+  "purpose": "functional pretest",
+  "coverageValidation": "pending_tool_output_review",
+  "sourceReview": "not performed",
+  "auxiliaryTiming": "checkers and both parse commands outside analysis timing; not measured",
+  "metadataTools": [
+    {
+      "actionNum": 5,
+      "clangsaStatistics": {
+        "failed": 0,
+        "failed_sources": [],
+        "successful": 5,
+        "successful_sources": [
+          "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c",
+          "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c",
+          "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c",
+          "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c",
+          "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c"
+        ],
+        "version": "18.1.3"
+      },
+      "skipped": 0
+    }
+  ],
+  "plistResults": [
+    {
+      "file": "reports/lz4.c_clangsa_ac8cd3e6af2bef16ffba0ed49d26c8e0.plist",
+      "savedDiagnostics": 5
+    },
+    {
+      "file": "reports/lz4file.c_clangsa_c86430196f92f65267196bdc39550346.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/lz4frame.c_clangsa_309b0320fa1eb9618da0cf3251375184.plist",
+      "savedDiagnostics": 2
+    },
+    {
+      "file": "reports/lz4hc.c_clangsa_6ab51a46fe71ae8355afe68f04cb0b10.plist",
+      "savedDiagnostics": 1
+    },
+    {
+      "file": "reports/xxhash.c_clangsa_a438a598fc2c89867ff4694a6f46cbab.plist",
+      "savedDiagnostics": 0
+    }
+  ],
+  "plistFileCount": 5,
+  "savedPlistDiagnostics": 8
+}

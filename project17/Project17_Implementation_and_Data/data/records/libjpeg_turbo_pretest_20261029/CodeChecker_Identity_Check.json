@@ -1,0 +1,251 @@
+{
+  "project": "P09 libjpeg-turbo",
+  "version": "3.1.1",
+  "commit": "7723f50f3f66b9da74376e6d8badb6162464212c",
+  "runId": "PRE-P09-CC-001",
+  "purpose": "functional pretest",
+  "accepted": true,
+  "acceptedAtUTC": "2026-10-29T04:15:33.543390+00:00",
+  "rawFiles": 154,
+  "inputIdentityFiles": 90,
+  "completeSourceFilesPreserved": 546,
+  "selectedActions": 101,
+  "successfulActions": 101,
+  "failedActions": 0,
+  "skippedActions": 0,
+  "uniqueSourcePaths": 58,
+  "targetActionCounts": {
+    "jpeg-static": 58,
+    "jpeg12-static": 28,
+    "jpeg16-static": 15
+  },
+  "legalPlistFiles": 101,
+  "nonemptyPlistFiles": 23,
+  "emptyPlistFiles": 78,
+  "rawSavedDiagnostics": 48,
+  "displayedReports": 46,
+  "diagnosticCountUnit": "raw diagnostics[] elements retained,including parse path duplicates;not confirmed bugs",
+  "rawRules": {
+    "core.NullDereference": 29,
+    "core.DivideZero": 4,
+    "deadcode.DeadStores": 10,
+    "core.UndefinedBinaryOperatorResult": 1,
+    "core.uninitialized.Branch": 1,
+    "core.NonNullParamChecker": 1,
+    "core.BitwiseShift": 2
+  },
+  "displayRules": {
+    "core.NullDereference": 28,
+    "core.DivideZero": 3,
+    "deadcode.DeadStores": 10,
+    "core.UndefinedBinaryOperatorResult": 1,
+    "core.uninitialized.Branch": 1,
+    "core.NonNullParamChecker": 1,
+    "core.BitwiseShift": 2
+  },
+  "parsePathDuplicateGroups": [
+    {
+      "group": "P09-CC-PATH-DUP-01",
+      "parsePathHash": "182a2d2a3981b21ac46feaaefdd20036",
+      "rawIds": [
+        "CC007",
+        "CC015"
+      ],
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c",
+      "line": 513,
+      "column": 41,
+      "checker": "core.DivideZero",
+      "issueHash": "2fcce382e3e9b111a065bfa0c85748cc",
+      "bitDepths": [
+        12,
+        8
+      ],
+      "retainedDisplayRows": 1,
+      "discardedDisplayRows": 1,
+      "meaning": "仅复现CodeChecker普通parse的路径去重，不是已核实根因组"
+    },
+    {
+      "group": "P09-CC-PATH-DUP-02",
+      "parsePathHash": "356ba295647a65d23693803618b23086",
+      "rawIds": [
+        "CC005",
+        "CC013"
+      ],
+      "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcoefct.c",
+      "line": 227,
+      "column": 24,
+      "checker": "core.NullDereference",
+      "issueHash": "c4af028b7490ca2f088f5847279e6398",
+      "bitDepths": [
+        12,
+        8
+      ],
+      "retainedDisplayRows": 1,
+      "discardedDisplayRows": 1,
+      "meaning": "仅复现CodeChecker普通parse的路径去重，不是已核实根因组"
+    }
+  ],
+  "distinctIssueHashes": 42,
+  "countExplanation": "普通parse按路径事件、位置、消息、checker和report_hash生成路径键合并两组跨8/12位重复；48原始条目保留。46展示键不等同已核实根因；42issue_hash不是展示计数。",
+  "sourceReview": "not performed;all48raw entries unreviewed",
+  "statusCountBoundary": "parse-status latest clangsa58按唯一路径计数；metadata成功101、日志101和逐动作报告101证明多位深动作未丢失。未选后端Missing各58不计clangsa失败。",
+  "checkerPolicy": {
+    "entries": 146,
+    "enabled": 47,
+    "disabled": 99,
+    "backend": "clangsa",
+    "version": "18.1.3",
+    "ctu": false,
+    "z3Refutation": false,
+    "jobs": 1,
+    "timeoutPerActionSeconds": 120,
+    "compileUniqueing": "none"
+  },
+  "measurement": {
+    "schema": "measurement-v1",
+    "wall_seconds": 121.59,
+    "user_seconds": 113.98,
+    "system_seconds": 5.58,
+    "max_rss_kib": 200416,
+    "toolSelfReportedSeconds": 118.75,
+    "boundary": "full CodeChecker analyze invocation;checkers/status/parse outside measured interval",
+    "repetitions": 1,
+    "osCache": "natural_not_cleared",
+    "rawTimeFile": "CodeChecker/time.txt"
+  },
+  "inputDatabaseSHA256": "b805ebf4e7eae4fe360e8a896c363107f9b0d501fade1a5f3933e1a6e9957d80",
+  "rawManifestSHA256": "76f918a4c5045a3e840f62dc2f9aafec2346f728dc699a5160947a03f6b78584",
+  "countCoverageEvidence": "review_evidence/libjpeg_turbo_setup/CodeChecker_Acceptance_20261029/Count_And_Coverage_Review.json",
+  "rawDiagnosticEvidence": "review_evidence/libjpeg_turbo_setup/CodeChecker_Acceptance_20261029/CodeChecker_Diagnostics_Raw.json",
+  "checks": [
+    {
+      "check": "154RawOriginalsSizeAndSHA",
+      "passed": true
+    },
+    {
+      "check": "154TransferBytesExact",
+      "passed": true
+    },
+    {
+      "check": "90LiveInputIdentitiesAnd546SourcesPreserved",
+      "passed": true
+    },
+    {
+      "check": "4ExecutedInputSHAsMatch",
+      "passed": true
+    },
+    {
+      "check": "PreparedProfileUnchanged",
+      "passed": true
+    },
+    {
+      "check": "UserPreScanIdentityPassed",
+      "passed": true
+    },
+    {
+      "check": "Selected101DatabasePreserved",
+      "passed": true
+    },
+    {
+      "check": "NoCompileActionCollapse",
+      "passed": true
+    },
+    {
+      "check": "101SuccessfulZeroFailedSkipped",
+      "passed": true
+    },
+    {
+      "check": "SuccessfulSourceMultiplicityMatches",
+      "passed": true
+    },
+    {
+      "check": "ActualCommandMatchesRecordedMetadata",
+      "passed": true
+    },
+    {
+      "check": "ClangsaOnlyFixedVersions",
+      "passed": true
+    },
+    {
+      "check": "ActualSingleJobTimeoutUniqueingZ3CTU",
+      "passed": true
+    },
+    {
+      "check": "Actual47Enabled99DisabledCheckers",
+      "passed": true
+    },
+    {
+      "check": "EffectiveGNU17Target",
+      "passed": true
+    },
+    {
+      "check": "468ActionAndCountChecksPass",
+      "passed": true
+    },
+    {
+      "check": "101ActionToPlistUniqueMapping",
+      "passed": true
+    },
+    {
+      "check": "101LegalPlistsAnd48RawDiagnostics",
+      "passed": true
+    },
+    {
+      "check": "46ActuallyDisplayedReports",
+      "passed": true
+    },
+    {
+      "check": "RawRuleCounts",
+      "passed": true
+    },
+    {
+      "check": "DisplayRuleCounts",
+      "passed": true
+    },
+    {
+      "check": "48OriginalIdsRemainUnreviewed",
+      "passed": true
+    },
+    {
+      "check": "TwoCrossBitDepthDisplayDuplicates",
+      "passed": true
+    },
+    {
+      "check": "RealExit exit-code.txt",
+      "passed": true
+    },
+    {
+      "check": "RealExit checkers-exit-code.txt",
+      "passed": true
+    },
+    {
+      "check": "RealExit parse-status-exit-code.txt",
+      "passed": true
+    },
+    {
+      "check": "RealExit findings-exit-code.txt",
+      "passed": true
+    },
+    {
+      "check": "AuxiliaryStderrEmpty",
+      "passed": true
+    },
+    {
+      "check": "GNUtimeActualCost",
+      "passed": true
+    },
+    {
+      "check": "RawSummaryPreservedNotUsedAsAcceptance",
+      "passed": true
+    },
+    {
+      "check": "NoOtherScannersRun",
+      "passed": true
+    }
+  ],
+  "passedChecks": 31,
+  "failedChecks": 0,
+  "reviewer": "same assistant system evidence check;not human or independent vulnerability review",
+  "otherTools": "Flawfinder and independent Cppcheck not run",
+  "formalMatrix": "all30notrun"
+}

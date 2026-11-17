@@ -1,0 +1,66 @@
+{
+  "checkedOn": "2026-10-26",
+  "sampleId": "P03",
+  "project": "cJSON",
+  "tag": "v1.7.19",
+  "commit": "c859b25da02955fef659d658b8f324b5cde87be3",
+  "sourceDirectory": "/home/yhong/comp5355/sources/cJSON-v1.7.19",
+  "buildDirectory": "/home/yhong/comp5355/build/cJSON-v1.7.19",
+  "target": "cjson",
+  "generator": "Ninja",
+  "databaseEntryCount": 1,
+  "database": [
+    {
+      "directory": "/home/yhong/comp5355/build/cJSON-v1.7.19",
+      "command": "/usr/bin/clang-18 -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wused-but-marked-unused -Wswitch-enum -fvisibility=hidden -g -o CMakeFiles/cjson.dir/cJSON.c.o -c /home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+      "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+      "output": "CMakeFiles/cjson.dir/cJSON.c.o"
+    }
+  ],
+  "cache": {
+    "BUILD_SHARED_AND_STATIC_LIBS": "OFF",
+    "BUILD_SHARED_LIBS": "OFF",
+    "CJSON_OVERRIDE_BUILD_SHARED_LIBS": "OFF",
+    "CMAKE_BUILD_TYPE": "Debug",
+    "CMAKE_C_COMPILER": "/usr/bin/clang-18",
+    "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+    "ENABLE_CJSON_TEST": "OFF",
+    "ENABLE_CJSON_UTILS": "OFF",
+    "ENABLE_CUSTOM_COMPILER_FLAGS": "ON",
+    "ENABLE_FUZZING": "OFF",
+    "ENABLE_LOCALES": "ON",
+    "ENABLE_SAFE_STACK": "OFF",
+    "ENABLE_SANITIZERS": "OFF"
+  },
+  "checks": {
+    "sourceFiles": {
+      "cJSON.c": {
+        "sha256": "298581a04a36c0165da4b0aade235c23088cb2faa58651d720ea2f3706ed0b0d",
+        "matchesArchive": true
+      },
+      "cJSON.h": {
+        "sha256": "25b0145150d500498e4d209cec69c18c42cf818bffcc54690be3b895a2a16dee",
+        "matchesArchive": true
+      },
+      "LICENSE": {
+        "sha256": "a36dda207c36db5818729c54e7ad4e8b0c6fba847491ba64f372c1a2037b6d5c",
+        "matchesArchive": true
+      },
+      "CMakeLists.txt": {
+        "sha256": "cdcb1302634cb81778130e9c30c2e952f80157bb9fee6b3f8489be8c15de9d34",
+        "matchesArchive": true
+      }
+    },
+    "library": {
+      "bytes": 88738,
+      "sha256": "8ea454e9b2f13ee80b23e1ed25366d6567611f89cf2375bc8af94736794b39e8"
+    }
+  },
+  "copiedSha256": {
+    "compile_commands.json": "ff6f0e4cfd162a124d934f8adde2ba96c029b75df634b0884614a965ec19dd9b",
+    "CMakeCache.txt": "a338bf89a1a1810ac248a4094c0f989dfdd2f29d82c393135618bbd862b71f66",
+    "LICENSE.cJSON.txt": "a36dda207c36db5818729c54e7ad4e8b0c6fba847491ba64f372c1a2037b6d5c"
+  },
+  "status": "User configuration and static-library build completed; source identity and one-entry real database verified read-only. No vulnerability tool has analyzed the target.",
+  "plannedFirstToolRun": "Flawfinder 2.0.20; --minlevel=1 --neverignore --columns --context; explicit cJSON.c and cJSON.h; pretest only, not yet executed."
+}

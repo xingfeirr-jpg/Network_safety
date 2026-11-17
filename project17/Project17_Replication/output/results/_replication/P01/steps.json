@@ -1,0 +1,41 @@
+{
+  "id": "P01",
+  "name": "zlib",
+  "version": "1.3.2",
+  "started_utc": "2026-11-08T02:51:25Z",
+  "S1": {
+    "archive": "/home/yhong/comp5355/downloads/zlib-v1.3.2.tar.gz",
+    "sha256": "b9258cf6254e7f7c37f1cd61dba943a1c5ea3cff5718c789834dac359094f5f7",
+    "expected_sha256": "b9258cf6254e7f7c37f1cd61dba943a1c5ea3cff5718c789834dac359094f5f7",
+    "matches_original": true
+  },
+  "S2": {
+    "source_dir": "/home/yhong/comp5355/sources/zlib-v1.3.2",
+    "regular_files": 262
+  },
+  "S3": {
+    "build_dir": "/home/yhong/comp5355/build/zlib-v1.3.2",
+    "compile_actions": 15
+  },
+  "S5": {
+    "FF": {
+      "run_id": "PRE-P01-FF-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:51:28Z",
+      "ended_utc": "2026-11-08T02:51:29Z"
+    },
+    "CP": {
+      "run_id": "PRE-P01-CP-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:51:29Z",
+      "ended_utc": "2026-11-08T02:51:37Z"
+    },
+    "CC": {
+      "run_id": "PRE-P01-CC-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:51:37Z",
+      "ended_utc": "2026-11-08T02:52:20Z"
+    }
+  },
+  "ended_utc": "2026-11-08T02:52:20Z"
+}

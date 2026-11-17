@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="9897352252331751766">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="51" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="52" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="53" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/internal.h" line="110" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/expat.h" line="47" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.h" line="74" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:231:1" call-funcname="normal_checkPiTarget" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="293" col="34" call-argexpr="&amp;tok" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:231:1" call-funcname="normal_checkPiTarget" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="316" col="34" call-argexpr="&amp;tok" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:544:1" call-funcname="normal_scanRef" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="651" col="36" call-argexpr="&amp;ptr" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/internal.h:159:6" call-funcname="_INTERNAL_trim_to_complete_utf8_characters" call-argnr="2" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="384" col="47" call-argexpr="&amp;fromLim" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:231:1" call-funcname="little2_checkPiTarget" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="293" col="34" call-argexpr="&amp;tok" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:231:1" call-funcname="little2_checkPiTarget" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="316" col="34" call-argexpr="&amp;tok" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:544:1" call-funcname="little2_scanRef" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="651" col="36" call-argexpr="&amp;ptr" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:231:1" call-funcname="big2_checkPiTarget" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="293" col="34" call-argexpr="&amp;tok" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:231:1" call-funcname="big2_checkPiTarget" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="316" col="34" call-argexpr="&amp;tok" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:544:1" call-funcname="big2_scanRef" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="651" col="36" call-argexpr="&amp;ptr" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1061:1" call-funcname="parsePseudoAttribute" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1163" col="29" call-argexpr="&amp;name" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1061:1" call-funcname="parsePseudoAttribute" call-argnr="5" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1163" col="29" call-argexpr="&amp;nameEnd" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1061:1" call-funcname="parsePseudoAttribute" call-argnr="6" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1163" col="29" call-argexpr="&amp;val" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1061:1" call-funcname="parsePseudoAttribute" call-argnr="7" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1163" col="29" call-argexpr="&amp;ptr" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1061:1" call-funcname="parsePseudoAttribute" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1178" col="31" call-argexpr="&amp;name" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1061:1" call-funcname="parsePseudoAttribute" call-argnr="5" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1178" col="31" call-argexpr="&amp;nameEnd" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1061:1" call-funcname="parsePseudoAttribute" call-argnr="6" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1178" col="31" call-argexpr="&amp;val" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1061:1" call-funcname="parsePseudoAttribute" call-argnr="7" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1178" col="31" call-argexpr="&amp;ptr" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1061:1" call-funcname="parsePseudoAttribute" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1201" col="31" call-argexpr="&amp;name" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1061:1" call-funcname="parsePseudoAttribute" call-argnr="5" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1201" col="31" call-argexpr="&amp;nameEnd" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1061:1" call-funcname="parsePseudoAttribute" call-argnr="6" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1201" col="31" call-argexpr="&amp;val" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1061:1" call-funcname="parsePseudoAttribute" call-argnr="7" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1201" col="31" call-argexpr="&amp;ptr" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:296:14" call-funcname="XmlUtf8Encode" call-argnr="2" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1363" col="24" call-argexpr="buf" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="67" col="18" call-argexpr="encodings" call-argvaluetype="7" call-argvalue="-1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="3" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="67" col="18" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="74" col="18" call-argexpr="encodings" call-argvaluetype="7" call-argvalue="-1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1007:1" call-funcname="streqci" call-argnr="1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="103" col="14" call-argexpr="buf" call-argvaluetype="7" call-argvalue="128"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1007:1" call-funcname="streqci" call-argnr="2" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="103" col="14" call-argexpr="KW_UTF_16" call-argvaluetype="7" call-argvalue="7"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1504:1" call-funcname="getEncodingIndex" call-argnr="1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="105" col="23" call-argexpr="buf" call-argvaluetype="7" call-argvalue="128"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="67" col="18" call-argexpr="encodingsNS" call-argvaluetype="7" call-argvalue="-1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="3" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="67" col="18" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="74" col="18" call-argexpr="encodingsNS" call-argvaluetype="7" call-argvalue="-1"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1007:1" call-funcname="streqci" call-argnr="1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="103" col="14" call-argexpr="buf" call-argvaluetype="7" call-argvalue="128"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1007:1" call-funcname="streqci" call-argnr="2" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="103" col="14" call-argexpr="KW_UTF_16" call-argvaluetype="7" call-argvalue="7"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1504:1" call-funcname="getEncodingIndex" call-argnr="1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="105" col="23" call-argexpr="buf" call-argvaluetype="7" call-argvalue="128"/><function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:145:1" call-funcname="normal_scanComment" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="187" col="12" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:182:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:482:1" call-funcname="normal_scanHexCharRef" call-argnr="1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="517" col="14" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:513:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:482:1" call-funcname="normal_scanHexCharRef" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="517" col="14" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:513:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:725:1" call-funcname="normal_scanLt" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="838" col="12" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:823:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:983:1" call-funcname="normal_scanLit" call-argnr="5" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1033" col="12" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1017:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:544:1" call-funcname="normal_scanRef" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1287" col="16" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1261:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:544:1" call-funcname="normal_scanRef" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1356" col="16" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1330:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:145:1" call-funcname="little2_scanComment" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="187" col="12" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:182:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:482:1" call-funcname="little2_scanHexCharRef" call-argnr="1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="517" col="14" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:513:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:482:1" call-funcname="little2_scanHexCharRef" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="517" col="14" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:513:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:725:1" call-funcname="little2_scanLt" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="838" col="12" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:823:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:983:1" call-funcname="little2_scanLit" call-argnr="5" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1033" col="12" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1017:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:544:1" call-funcname="little2_scanRef" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1287" col="16" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1261:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:544:1" call-funcname="little2_scanRef" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1356" col="16" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1330:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:145:1" call-funcname="big2_scanComment" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="187" col="12" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:182:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:482:1" call-funcname="big2_scanHexCharRef" call-argnr="1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="517" col="14" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:513:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:482:1" call-funcname="big2_scanHexCharRef" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="517" col="14" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:513:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:725:1" call-funcname="big2_scanLt" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="838" col="12" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:823:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:983:1" call-funcname="big2_scanLit" call-argnr="5" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1033" col="12" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1017:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:544:1" call-funcname="big2_scanRef" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1287" col="16" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1261:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:544:1" call-funcname="big2_scanRef" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1356" col="16" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1330:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1778:1" call-funcname="normal_updatePosition" call-argnr="2" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1031" col="3" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1028:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1778:1" call-funcname="normal_updatePosition" call-argnr="3" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1031" col="3" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1028:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1778:1" call-funcname="normal_updatePosition" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1031" col="3" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1028:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1035:1" call-funcname="toAscii" call-argnr="1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1070" col="17" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1061:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="67" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:65:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="5" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="67" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:65:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="6" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="67" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:65:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="74" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:72:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="5" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="74" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:72:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="6" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="74" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:72:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1504:1" call-funcname="getEncodingIndex" call-argnr="1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="81" col="11" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:292:5" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="3" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:286:5" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:286:5" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="5" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:286:5" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="6" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:286:5" my-argnr="5"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="7" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:286:5" my-argnr="6"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="8" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:286:5" my-argnr="7"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="9" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:286:5" my-argnr="8"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="10" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:286:5" my-argnr="9"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="11" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:286:5" my-argnr="10"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="67" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:65:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="5" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="67" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:65:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="6" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="67" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:65:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="74" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:72:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="5" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="74" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:72:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1532:1" call-funcname="initScan" call-argnr="6" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="74" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:72:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1504:1" call-funcname="getEncodingIndex" call-argnr="1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="81" col="11" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:311:5" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="3" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:305:5" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:305:5" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="5" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:305:5" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="6" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:305:5" my-argnr="5"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="7" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:305:5" my-argnr="6"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="8" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:305:5" my-argnr="7"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="9" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:305:5" my-argnr="8"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="10" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:305:5" my-argnr="9"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" call-funcname="doParseXmlDecl" call-argnr="11" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="117" col="10" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:305:5" my-argnr="10"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:302:11" call-funcname="XmlInitUnknownEncoding" call-argnr="1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1666" col="19" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:315:11" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:302:11" call-funcname="XmlInitUnknownEncoding" call-argnr="2" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1666" col="19" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:315:11" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:302:11" call-funcname="XmlInitUnknownEncoding" call-argnr="3" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1666" col="19" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:315:11" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:302:11" call-funcname="XmlInitUnknownEncoding" call-argnr="4" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1666" col="19" my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h:315:11" my-argnr="4"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:231:1" my-argnr="4" my-argname="tokPtr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="235" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1714:1" my-argnr="4" my-argname="ptr2" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1717" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/internal.h:159:6" my-argnr="2" my-argname="fromLimRef" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="330" col="26" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:367:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="373" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:367:1" my-argnr="4" my-argname="toP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="374" col="44" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:406:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="410" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:406:1" my-argnr="4" my-argname="toP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="409" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:527:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="530" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:562:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="565" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:723:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="723" col="1" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:724:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="724" col="1" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:724:1" my-argnr="4" my-argname="toP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="724" col="1" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:732:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="732" col="1" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:733:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="733" col="1" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:733:1" my-argnr="4" my-argname="toP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="733" col="1" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:231:1" my-argnr="4" my-argname="tokPtr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="235" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1714:1" my-argnr="4" my-argname="ptr2" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1717" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:231:1" my-argnr="4" my-argname="tokPtr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="235" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1714:1" my-argnr="4" my-argname="ptr2" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1717" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1035:1" my-argnr="1" my-argname="enc" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1038" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" my-argnr="3" my-argname="enc" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1161" col="14" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1380:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1383" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:94:1" my-argnr="1" my-argname="enc" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="99" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:94:1" my-argnr="1" my-argname="enc" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="99" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:142:1" my-argnr="2" my-argname="p" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="144" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:148:1" my-argnr="2" my-argname="p" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="150" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:156:1" my-argnr="2" my-argname="p" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="158" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:162:1" my-argnr="2" my-argname="p" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="164" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:170:1" my-argnr="2" my-argname="p" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="172" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:176:1" my-argnr="2" my-argname="p" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="178" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:182:1" my-argnr="2" my-argname="p" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="184" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1449:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1451" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1449:1" my-argnr="3" my-argname="end" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1452" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1509:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1516" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1602:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1606" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1660:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1663" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1660:1" my-argnr="3" my-argname="end" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1663" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1714:1" my-argnr="2" my-argname="ptr1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1717" col="17" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1714:1" my-argnr="4" my-argname="ptr2" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1717" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/internal.h:159:6" my-argnr="2" my-argname="fromLimRef" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="330" col="26" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:367:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="373" col="47" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:367:1" my-argnr="4" my-argname="toP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="374" col="44" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:406:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="410" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:406:1" my-argnr="4" my-argname="toP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="409" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:527:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="530" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:562:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="565" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:723:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="723" col="1" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:724:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="724" col="1" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:724:1" my-argnr="4" my-argname="toP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="724" col="1" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:724:1" my-argnr="5" my-argname="toLim" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="724" col="1" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:732:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="732" col="1" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:733:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="733" col="1" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:733:1" my-argnr="4" my-argname="toP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="733" col="1" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:733:1" my-argnr="5" my-argname="toLim" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="733" col="1" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1449:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1451" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1449:1" my-argnr="3" my-argname="end" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1452" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1509:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1516" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1602:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1606" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1660:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1663" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1660:1" my-argnr="3" my-argname="end" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1663" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1714:1" my-argnr="2" my-argname="ptr1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1717" col="17" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1714:1" my-argnr="4" my-argname="ptr2" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1717" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1449:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1451" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1449:1" my-argnr="3" my-argname="end" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1452" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1509:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1516" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1602:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1606" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1660:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1663" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1660:1" my-argnr="3" my-argname="end" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1663" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1714:1" my-argnr="2" my-argname="ptr1" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1717" col="17" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c:1714:1" my-argnr="4" my-argname="ptr2" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c" line="1717" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1035:1" my-argnr="1" my-argname="enc" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1038" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" my-argnr="3" my-argname="enc" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1161" col="14" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" my-argnr="4" my-argname="ptr" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1161" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1152:1" my-argnr="5" my-argname="end" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1162" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c:1380:1" my-argnr="2" my-argname="fromP" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c" line="1383" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:94:1" my-argnr="1" my-argname="enc" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="99" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c:94:1" my-argnr="1" my-argname="enc" file="/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c" line="99" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="isNever" lineNumber="135"/>
+    <functiondecl functionName="utf8_isName2" lineNumber="142"/>
+    <functiondecl functionName="utf8_isName3" lineNumber="148"/>
+    <functiondecl functionName="utf8_isNmstrt2" lineNumber="156"/>
+    <functiondecl functionName="utf8_isNmstrt3" lineNumber="162"/>
+    <functiondecl functionName="utf8_isInvalid2" lineNumber="170"/>
+    <functiondecl functionName="utf8_isInvalid3" lineNumber="176"/>
+    <functiondecl functionName="utf8_isInvalid4" lineNumber="182"/>
+    <functiondecl functionName="normal_scanComment" lineNumber="145"/>
+    <functiondecl functionName="normal_scanDecl" lineNumber="182"/>
+    <functiondecl functionName="normal_checkPiTarget" lineNumber="231"/>
+    <functiondecl functionName="normal_scanPi" lineNumber="276"/>
+    <functiondecl functionName="normal_scanCdataSection" lineNumber="336"/>
+    <functiondecl functionName="normal_cdataSectionTok" lineNumber="355"/>
+    <functiondecl functionName="normal_scanEndTag" lineNumber="431"/>
+    <functiondecl functionName="normal_scanHexCharRef" lineNumber="482"/>
+    <functiondecl functionName="normal_scanCharRef" lineNumber="513"/>
+    <functiondecl functionName="normal_scanRef" lineNumber="544"/>
+    <functiondecl functionName="normal_scanAtts" lineNumber="572"/>
+    <functiondecl functionName="normal_scanLt" lineNumber="725"/>
+    <functiondecl functionName="normal_contentTok" lineNumber="823"/>
+    <functiondecl functionName="normal_scanPercent" lineNumber="923"/>
+    <functiondecl functionName="normal_scanPoundName" lineNumber="953"/>
+    <functiondecl functionName="normal_scanLit" lineNumber="983"/>
+    <functiondecl functionName="normal_prologTok" lineNumber="1017"/>
+    <functiondecl functionName="normal_attributeValueTok" lineNumber="1261"/>
+    <functiondecl functionName="normal_entityValueTok" lineNumber="1330"/>
+    <functiondecl functionName="normal_ignoreSectionTok" lineNumber="1397"/>
+    <functiondecl functionName="normal_isPublicId" lineNumber="1449"/>
+    <functiondecl functionName="normal_getAtts" lineNumber="1509"/>
+    <functiondecl functionName="normal_charRefNumber" lineNumber="1602"/>
+    <functiondecl functionName="normal_predefinedEntityName" lineNumber="1660"/>
+    <functiondecl functionName="normal_nameMatchesAscii" lineNumber="1714"/>
+    <functiondecl functionName="normal_nameLength" lineNumber="1733"/>
+    <functiondecl functionName="normal_skipS" lineNumber="1763"/>
+    <functiondecl functionName="normal_updatePosition" lineNumber="1778"/>
+    <functiondecl functionName="_INTERNAL_trim_to_complete_utf8_characters" lineNumber="328"/>
+    <functiondecl functionName="utf8_toUtf8" lineNumber="367"/>
+    <functiondecl functionName="utf8_toUtf16" lineNumber="406"/>
+    <functiondecl functionName="latin1_toUtf8" lineNumber="504"/>
+    <functiondecl functionName="latin1_toUtf16" lineNumber="527"/>
+    <functiondecl functionName="ascii_toUtf8" lineNumber="562"/>
+    <functiondecl functionName="unicode_byte_type" lineNumber="597"/>
+    <functiondecl functionName="little2_toUtf8" lineNumber="723"/>
+    <functiondecl functionName="little2_toUtf16" lineNumber="724"/>
+    <functiondecl functionName="big2_toUtf8" lineNumber="732"/>
+    <functiondecl functionName="big2_toUtf16" lineNumber="733"/>
+    <functiondecl functionName="little2_scanComment" lineNumber="145"/>
+    <functiondecl functionName="little2_scanDecl" lineNumber="182"/>
+    <functiondecl functionName="little2_checkPiTarget" lineNumber="231"/>
+    <functiondecl functionName="little2_scanPi" lineNumber="276"/>
+    <functiondecl functionName="little2_scanCdataSection" lineNumber="336"/>
+    <functiondecl functionName="little2_cdataSectionTok" lineNumber="355"/>
+    <functiondecl functionName="little2_scanEndTag" lineNumber="431"/>
+    <functiondecl functionName="little2_scanHexCharRef" lineNumber="482"/>
+    <functiondecl functionName="little2_scanCharRef" lineNumber="513"/>
+    <functiondecl functionName="little2_scanRef" lineNumber="544"/>
+    <functiondecl functionName="little2_scanAtts" lineNumber="572"/>
+    <functiondecl functionName="little2_scanLt" lineNumber="725"/>
+    <functiondecl functionName="little2_contentTok" lineNumber="823"/>
+    <functiondecl functionName="little2_scanPercent" lineNumber="923"/>
+    <functiondecl functionName="little2_scanPoundName" lineNumber="953"/>
+    <functiondecl functionName="little2_scanLit" lineNumber="983"/>
+    <functiondecl functionName="little2_prologTok" lineNumber="1017"/>
+    <functiondecl functionName="little2_attributeValueTok" lineNumber="1261"/>
+    <functiondecl functionName="little2_entityValueTok" lineNumber="1330"/>
+    <functiondecl functionName="little2_ignoreSectionTok" lineNumber="1397"/>
+    <functiondecl functionName="little2_isPublicId" lineNumber="1449"/>
+    <functiondecl functionName="little2_getAtts" lineNumber="1509"/>
+    <functiondecl functionName="little2_charRefNumber" lineNumber="1602"/>
+    <functiondecl functionName="little2_predefinedEntityName" lineNumber="1660"/>
+    <functiondecl functionName="little2_nameMatchesAscii" lineNumber="1714"/>
+    <functiondecl functionName="little2_nameLength" lineNumber="1733"/>
+    <functiondecl functionName="little2_skipS" lineNumber="1763"/>
+    <functiondecl functionName="little2_updatePosition" lineNumber="1778"/>
+    <functiondecl functionName="big2_scanComment" lineNumber="145"/>
+    <functiondecl functionName="big2_scanDecl" lineNumber="182"/>
+    <functiondecl functionName="big2_checkPiTarget" lineNumber="231"/>
+    <functiondecl functionName="big2_scanPi" lineNumber="276"/>
+    <functiondecl functionName="big2_scanCdataSection" lineNumber="336"/>
+    <functiondecl functionName="big2_cdataSectionTok" lineNumber="355"/>
+    <functiondecl functionName="big2_scanEndTag" lineNumber="431"/>
+    <functiondecl functionName="big2_scanHexCharRef" lineNumber="482"/>
+    <functiondecl functionName="big2_scanCharRef" lineNumber="513"/>
+    <functiondecl functionName="big2_scanRef" lineNumber="544"/>
+    <functiondecl functionName="big2_scanAtts" lineNumber="572"/>
+    <functiondecl functionName="big2_scanLt" lineNumber="725"/>
+    <functiondecl functionName="big2_contentTok" lineNumber="823"/>
+    <functiondecl functionName="big2_scanPercent" lineNumber="923"/>
+    <functiondecl functionName="big2_scanPoundName" lineNumber="953"/>
+    <functiondecl functionName="big2_scanLit" lineNumber="983"/>
+    <functiondecl functionName="big2_prologTok" lineNumber="1017"/>
+    <functiondecl functionName="big2_attributeValueTok" lineNumber="1261"/>
+    <functiondecl functionName="big2_entityValueTok" lineNumber="1330"/>
+    <functiondecl functionName="big2_ignoreSectionTok" lineNumber="1397"/>
+    <functiondecl functionName="big2_isPublicId" lineNumber="1449"/>
+    <functiondecl functionName="big2_getAtts" lineNumber="1509"/>
+    <functiondecl functionName="big2_charRefNumber" lineNumber="1602"/>
+    <functiondecl functionName="big2_predefinedEntityName" lineNumber="1660"/>
+    <functiondecl functionName="big2_nameMatchesAscii" lineNumber="1714"/>
+    <functiondecl functionName="big2_nameLength" lineNumber="1733"/>
+    <functiondecl functionName="big2_skipS" lineNumber="1763"/>
+    <functiondecl functionName="big2_updatePosition" lineNumber="1778"/>
+    <functiondecl functionName="streqci" lineNumber="1007"/>
+    <functiondecl functionName="initUpdatePosition" lineNumber="1028"/>
+    <functiondecl functionName="toAscii" lineNumber="1035"/>
+    <functiondecl functionName="isSpace" lineNumber="1046"/>
+    <functiondecl functionName="parsePseudoAttribute" lineNumber="1061"/>
+    <functiondecl functionName="doParseXmlDecl" lineNumber="1152"/>
+    <functiondecl functionName="checkCharRefNumber" lineNumber="1233"/>
+    <functiondecl functionName="XmlUtf8Encode" lineNumber="1257"/>
+    <functiondecl functionName="XmlUtf16Encode" lineNumber="1293"/>
+    <functiondecl functionName="XmlSizeOfUnknownEncoding" lineNumber="1320"/>
+    <functiondecl functionName="unknown_isName" lineNumber="1325"/>
+    <functiondecl functionName="unknown_isNmstrt" lineNumber="1334"/>
+    <functiondecl functionName="unknown_isInvalid" lineNumber="1343"/>
+    <functiondecl functionName="unknown_toUtf8" lineNumber="1350"/>
+    <functiondecl functionName="unknown_toUtf16" lineNumber="1380"/>
+    <functiondecl functionName="XmlInitUnknownEncoding" lineNumber="1401"/>
+    <functiondecl functionName="getEncodingIndex" lineNumber="1504"/>
+    <functiondecl functionName="initScan" lineNumber="1532"/>
+    <functiondecl functionName="XmlGetUtf8InternalEncoding" lineNumber="40"/>
+    <functiondecl functionName="XmlGetUtf16InternalEncoding" lineNumber="45"/>
+    <functiondecl functionName="initScanProlog" lineNumber="65"/>
+    <functiondecl functionName="initScanContent" lineNumber="72"/>
+    <functiondecl functionName="XmlInitEncoding" lineNumber="79"/>
+    <functiondecl functionName="findEncoding" lineNumber="94"/>
+    <functiondecl functionName="XmlParseXmlDecl" lineNumber="112"/>
+    <functiondecl functionName="XmlGetUtf8InternalEncodingNS" lineNumber="40"/>
+    <functiondecl functionName="XmlGetUtf16InternalEncodingNS" lineNumber="45"/>
+    <functiondecl functionName="initScanPrologNS" lineNumber="65"/>
+    <functiondecl functionName="initScanContentNS" lineNumber="72"/>
+    <functiondecl functionName="XmlInitEncodingNS" lineNumber="79"/>
+    <functiondecl functionName="findEncodingNS" lineNumber="94"/>
+    <functiondecl functionName="XmlParseXmlDeclNS" lineNumber="112"/>
+    <functiondecl functionName="XmlInitUnknownEncodingNS" lineNumber="1664"/>
+    <functioncall functionName="BT_AMP"/>
+    <functioncall functionName="BT_APOS"/>
+    <functioncall functionName="BT_AST"/>
+    <functioncall functionName="BT_COLON"/>
+    <functioncall functionName="BT_COMMA"/>
+    <functioncall functionName="BT_CR"/>
+    <functioncall functionName="BT_DIGIT"/>
+    <functioncall functionName="BT_EQUALS"/>
+    <functioncall functionName="BT_EXCL"/>
+    <functioncall functionName="BT_GT"/>
+    <functioncall functionName="BT_HEX"/>
+    <functioncall functionName="BT_LEAD2"/>
+    <functioncall functionName="BT_LEAD3"/>
+    <functioncall functionName="BT_LEAD4"/>
+    <functioncall functionName="BT_LF"/>
+    <functioncall functionName="BT_LPAR"/>
+    <functioncall functionName="BT_LSQB"/>
+    <functioncall functionName="BT_LT"/>
+    <functioncall functionName="BT_MALFORM"/>
+    <functioncall functionName="BT_MINUS"/>
+    <functioncall functionName="BT_NAME"/>
+    <functioncall functionName="BT_NMSTRT"/>
+    <functioncall functionName="BT_NONASCII"/>
+    <functioncall functionName="BT_NONXML"/>
+    <functioncall functionName="BT_NUM"/>
+    <functioncall functionName="BT_OTHER"/>
+    <functioncall functionName="BT_PERCNT"/>
+    <functioncall functionName="BT_PLUS"/>
+    <functioncall functionName="BT_QUEST"/>
+    <functioncall functionName="BT_QUOT"/>
+    <functioncall functionName="BT_RPAR"/>
+    <functioncall functionName="BT_RSQB"/>
+    <functioncall functionName="BT_S"/>
+    <functioncall functionName="BT_SEMI"/>
+    <functioncall functionName="BT_SOL"/>
+    <functioncall functionName="BT_TRAIL"/>
+    <functioncall functionName="BT_VERBAR"/>
+    <functioncall functionName="NO_ENC"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="UNKNOWN_ENC"/>
+    <functioncall functionName="UTF8_cval1"/>
+    <functioncall functionName="UTF8_cval2"/>
+    <functioncall functionName="UTF8_cval3"/>
+    <functioncall functionName="UTF8_cval4"/>
+    <functioncall functionName="UTF_16BE_ENC"/>
+    <functioncall functionName="UTF_16LE_ENC"/>
+    <functioncall functionName="UTF_8_ENC"/>
+    <functioncall functionName="XML_CONVERT_COMPLETED"/>
+    <functioncall functionName="XML_CONVERT_INPUT_INCOMPLETE"/>
+    <functioncall functionName="XML_CONVERT_OUTPUT_EXHAUSTED"/>
+    <functioncall functionName="XmlInitUnknownEncoding"/>
+    <functioncall functionName="XmlUtf8Encode"/>
+    <functioncall functionName="_INTERNAL_trim_to_complete_utf8_characters"/>
+    <functioncall functionName="after"/>
+    <functioncall functionName="ascii_toUtf8"/>
+    <functioncall functionName="big2_attributeValueTok"/>
+    <functioncall functionName="big2_cdataSectionTok"/>
+    <functioncall functionName="big2_charRefNumber"/>
+    <functioncall functionName="big2_checkPiTarget"/>
+    <functioncall functionName="big2_contentTok"/>
+    <functioncall functionName="big2_entityValueTok"/>
+    <functioncall functionName="big2_getAtts"/>
+    <functioncall functionName="big2_ignoreSectionTok"/>
+    <functioncall functionName="big2_isPublicId"/>
+    <functioncall functionName="big2_nameLength"/>
+    <functioncall functionName="big2_nameMatchesAscii"/>
+    <functioncall functionName="big2_predefinedEntityName"/>
+    <functioncall functionName="big2_prologTok"/>
+    <functioncall functionName="big2_scanAtts"/>
+    <functioncall functionName="big2_scanCdataSection"/>
+    <functioncall functionName="big2_scanCharRef"/>
+    <functioncall functionName="big2_scanComment"/>
+    <functioncall functionName="big2_scanDecl"/>
+    <functioncall functionName="big2_scanEndTag"/>
+    <functioncall functionName="big2_scanHexCharRef"/>
+    <functioncall functionName="big2_scanLit"/>
+    <functioncall functionName="big2_scanLt"/>
+    <functioncall functionName="big2_scanPercent"/>
+    <functioncall functionName="big2_scanPi"/>
+    <functioncall functionName="big2_scanPoundName"/>
+    <functioncall functionName="big2_scanRef"/>
+    <functioncall functionName="big2_skipS"/>
+    <functioncall functionName="big2_toUtf16"/>
+    <functioncall functionName="big2_toUtf8"/>
+    <functioncall functionName="big2_updatePosition"/>
+    <functioncall functionName="checkCharRefNumber"/>
+    <functioncall functionName="convert"/>
+    <functioncall functionName="doParseXmlDecl"/>
+    <functioncall functionName="encodingFinder"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="findEncoding"/>
+    <functioncall functionName="findEncodingNS"/>
+    <functioncall functionName="getEncodingIndex"/>
+    <functioncall functionName="gt"/>
+    <functioncall functionName="inName"/>
+    <functioncall functionName="inValue"/>
+    <functioncall functionName="initScan"/>
+    <functioncall functionName="initScanContent"/>
+    <functioncall functionName="initScanContentNS"/>
+    <functioncall functionName="initScanProlog"/>
+    <functioncall functionName="initScanPrologNS"/>
+    <functioncall functionName="initUpdatePosition"/>
+    <functioncall functionName="isInvalid2"/>
+    <functioncall functionName="isInvalid3"/>
+    <functioncall functionName="isInvalid4"/>
+    <functioncall functionName="isName2"/>
+    <functioncall functionName="isName3"/>
+    <functioncall functionName="isName4"/>
+    <functioncall functionName="isNever"/>
+    <functioncall functionName="isNmstrt2"/>
+    <functioncall functionName="isNmstrt3"/>
+    <functioncall functionName="isNmstrt4"/>
+    <functioncall functionName="isSpace"/>
+    <functioncall functionName="latin1_toUtf16"/>
+    <functioncall functionName="latin1_toUtf8"/>
+    <functioncall functionName="little2_attributeValueTok"/>
+    <functioncall functionName="little2_cdataSectionTok"/>
+    <functioncall functionName="little2_charRefNumber"/>
+    <functioncall functionName="little2_checkPiTarget"/>
+    <functioncall functionName="little2_contentTok"/>
+    <functioncall functionName="little2_entityValueTok"/>
+    <functioncall functionName="little2_getAtts"/>
+    <functioncall functionName="little2_ignoreSectionTok"/>
+    <functioncall functionName="little2_isPublicId"/>
+    <functioncall functionName="little2_nameLength"/>
+    <functioncall functionName="little2_nameMatchesAscii"/>
+    <functioncall functionName="little2_predefinedEntityName"/>
+    <functioncall functionName="little2_prologTok"/>
+    <functioncall functionName="little2_scanAtts"/>
+    <functioncall functionName="little2_scanCdataSection"/>
+    <functioncall functionName="little2_scanCharRef"/>
+    <functioncall functionName="little2_scanComment"/>
+    <functioncall functionName="little2_scanDecl"/>
+    <functioncall functionName="little2_scanEndTag"/>
+    <functioncall functionName="little2_scanHexCharRef"/>
+    <functioncall functionName="little2_scanLit"/>
+    <functioncall functionName="little2_scanLt"/>
+    <functioncall functionName="little2_scanPercent"/>
+    <functioncall functionName="little2_scanPi"/>
+    <functioncall functionName="little2_scanPoundName"/>
+    <functioncall functionName="little2_scanRef"/>
+    <functioncall functionName="little2_skipS"/>
+    <functioncall functionName="little2_toUtf16"/>
+    <functioncall functionName="little2_toUtf8"/>
+    <functioncall functionName="little2_updatePosition"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="normal_attributeValueTok"/>
+    <functioncall functionName="normal_cdataSectionTok"/>
+    <functioncall functionName="normal_charRefNumber"/>
+    <functioncall functionName="normal_checkPiTarget"/>
+    <functioncall functionName="normal_contentTok"/>
+    <functioncall functionName="normal_entityValueTok"/>
+    <functioncall functionName="normal_getAtts"/>
+    <functioncall functionName="normal_ignoreSectionTok"/>
+    <functioncall functionName="normal_isPublicId"/>
+    <functioncall functionName="normal_nameLength"/>
+    <functioncall functionName="normal_nameMatchesAscii"/>
+    <functioncall functionName="normal_predefinedEntityName"/>
+    <functioncall functionName="normal_prologTok"/>
+    <functioncall functionName="normal_scanAtts"/>
+    <functioncall functionName="normal_scanCdataSection"/>
+    <functioncall functionName="normal_scanCharRef"/>
+    <functioncall functionName="normal_scanComment"/>
+    <functioncall functionName="normal_scanDecl"/>
+    <functioncall functionName="normal_scanEndTag"/>
+    <functioncall functionName="normal_scanHexCharRef"/>
+    <functioncall functionName="normal_scanLit"/>
+    <functioncall functionName="normal_scanLt"/>
+    <functioncall functionName="normal_scanPercent"/>
+    <functioncall functionName="normal_scanPi"/>
+    <functioncall functionName="normal_scanPoundName"/>
+    <functioncall functionName="normal_scanRef"/>
+    <functioncall functionName="normal_skipS"/>
+    <functioncall functionName="normal_updatePosition"/>
+    <functioncall functionName="other"/>
+    <functioncall functionName="parsePseudoAttribute"/>
+    <functioncall functionName="sol"/>
+    <functioncall functionName="streqci"/>
+    <functioncall functionName="toAscii"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="unicode_byte_type"/>
+    <functioncall functionName="unknown_isInvalid"/>
+    <functioncall functionName="unknown_isName"/>
+    <functioncall functionName="unknown_isNmstrt"/>
+    <functioncall functionName="unknown_toUtf16"/>
+    <functioncall functionName="unknown_toUtf8"/>
+    <functioncall functionName="utf8_isInvalid2"/>
+    <functioncall functionName="utf8_isInvalid3"/>
+    <functioncall functionName="utf8_isInvalid4"/>
+    <functioncall functionName="utf8_isName2"/>
+    <functioncall functionName="utf8_isName3"/>
+    <functioncall functionName="utf8_isNmstrt2"/>
+    <functioncall functionName="utf8_isNmstrt3"/>
+    <functioncall functionName="utf8_toUtf16"/>
+    <functioncall functionName="utf8_toUtf8"/>
+  </FileInfo>
+</analyzerinfo>

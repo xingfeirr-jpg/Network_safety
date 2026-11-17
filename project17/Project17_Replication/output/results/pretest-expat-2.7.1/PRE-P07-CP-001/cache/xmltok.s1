@@ -1,0 +1,136 @@
+isNever
+utf8_isName2 global:[namePages,namingBitmap] call:[return] noreturn:[return]
+utf8_isName3 global:[namePages,namingBitmap] call:[return] noreturn:[return]
+utf8_isNmstrt2 global:[namingBitmap,nmstrtPages] call:[return] noreturn:[return]
+utf8_isNmstrt3 global:[namingBitmap,nmstrtPages] call:[return] noreturn:[return]
+utf8_isInvalid2 call:[return] noreturn:[return]
+utf8_isInvalid3 call:[return] noreturn:[return]
+utf8_isInvalid4 call:[return] noreturn:[return]
+normal_scanComment call:[isInvalid2,isInvalid3,isInvalid4]
+normal_scanDecl call:[normal_scanComment]
+normal_checkPiTarget
+normal_scanPi call:[isInvalid2,isInvalid3,isInvalid4,isName2,isName3,isName4,isNmstrt2,isNmstrt3,isNmstrt4,normal_checkPiTarget]
+normal_scanCdataSection
+normal_cdataSectionTok call:[isInvalid2,isInvalid3,isInvalid4]
+normal_scanEndTag call:[isInvalid2,isInvalid3,isInvalid4,isName2,isName3,isName4,isNmstrt2,isNmstrt3,isNmstrt4]
+normal_scanHexCharRef
+normal_scanCharRef call:[normal_scanHexCharRef] noreturn:[normal_scanHexCharRef]
+normal_scanRef call:[isInvalid2,isInvalid3,isInvalid4,isName2,isName3,isName4,isNmstrt2,isNmstrt3,isNmstrt4,normal_scanCharRef]
+normal_scanAtts call:[isInvalid2,isInvalid3,isInvalid4,isName2,isName3,isName4,isNmstrt2,isNmstrt3,isNmstrt4,normal_scanRef]
+normal_scanLt call:[isInvalid2,isInvalid3,isInvalid4,isName2,isName3,isName4,isNmstrt2,isNmstrt3,isNmstrt4,normal_scanAtts,normal_scanCdataSection,normal_scanComment,normal_scanEndTag,normal_scanPi] noreturn:[normal_scanAtts,normal_scanCdataSection]
+normal_contentTok call:[isInvalid2,isInvalid3,isInvalid4,normal_scanLt,normal_scanRef]
+normal_scanPercent call:[isInvalid2,isInvalid3,isInvalid4,isName2,isName3,isName4,isNmstrt2,isNmstrt3,isNmstrt4]
+normal_scanPoundName call:[isInvalid2,isInvalid3,isInvalid4,isName2,isName3,isName4,isNmstrt2,isNmstrt3,isNmstrt4]
+normal_scanLit call:[isInvalid2,isInvalid3,isInvalid4]
+normal_prologTok call:[isInvalid2,isInvalid3,isInvalid4,isName2,isName3,isName4,isNmstrt2,isNmstrt3,isNmstrt4,normal_scanDecl,normal_scanLit,normal_scanPercent,normal_scanPi,normal_scanPoundName]
+normal_attributeValueTok call:[normal_scanRef] noreturn:[normal_scanRef]
+normal_entityValueTok call:[normal_scanPercent,normal_scanRef,return] noreturn:[normal_scanRef]
+normal_ignoreSectionTok call:[isInvalid2,isInvalid3,isInvalid4]
+normal_isPublicId
+normal_getAtts
+normal_charRefNumber call:[checkCharRefNumber] noreturn:[checkCharRefNumber]
+normal_predefinedEntityName
+normal_nameMatchesAscii
+normal_nameLength call:[return]
+normal_skipS
+normal_updatePosition
+_INTERNAL_trim_to_complete_utf8_characters
+utf8_toUtf8 call:[_INTERNAL_trim_to_complete_utf8_characters,memcpy]
+utf8_toUtf16
+latin1_toUtf8
+latin1_toUtf16
+ascii_toUtf8
+unicode_byte_type
+little2_toUtf8
+little2_toUtf16
+big2_toUtf8
+big2_toUtf16
+little2_scanComment call:[unicode_byte_type]
+little2_scanDecl call:[little2_scanComment,unicode_byte_type]
+little2_checkPiTarget
+little2_scanPi global:[namePages,namingBitmap,nmstrtPages] call:[little2_checkPiTarget,unicode_byte_type]
+little2_scanCdataSection
+little2_cdataSectionTok call:[unicode_byte_type]
+little2_scanEndTag global:[namePages,namingBitmap,nmstrtPages] call:[unicode_byte_type]
+little2_scanHexCharRef call:[unicode_byte_type]
+little2_scanCharRef call:[little2_scanHexCharRef,unicode_byte_type] noreturn:[little2_scanHexCharRef]
+little2_scanRef global:[namePages,namingBitmap,nmstrtPages] call:[little2_scanCharRef,unicode_byte_type]
+little2_scanAtts global:[namePages,namingBitmap,nmstrtPages] call:[little2_scanRef,unicode_byte_type]
+little2_scanLt global:[namePages,namingBitmap,nmstrtPages] call:[little2_scanAtts,little2_scanCdataSection,little2_scanComment,little2_scanEndTag,little2_scanPi,unicode_byte_type] noreturn:[little2_scanAtts,little2_scanCdataSection]
+little2_contentTok call:[little2_scanLt,little2_scanRef,unicode_byte_type]
+little2_scanPercent global:[namePages,namingBitmap,nmstrtPages] call:[unicode_byte_type]
+little2_scanPoundName global:[namePages,namingBitmap,nmstrtPages] call:[unicode_byte_type]
+little2_scanLit call:[unicode_byte_type]
+little2_prologTok global:[namePages,namingBitmap,nmstrtPages] call:[little2_scanDecl,little2_scanLit,little2_scanPercent,little2_scanPi,little2_scanPoundName,unicode_byte_type]
+little2_attributeValueTok call:[little2_scanRef,unicode_byte_type] noreturn:[little2_scanRef]
+little2_entityValueTok call:[little2_scanPercent,little2_scanRef,return,unicode_byte_type] noreturn:[little2_scanRef]
+little2_ignoreSectionTok call:[unicode_byte_type]
+little2_isPublicId call:[unicode_byte_type]
+little2_getAtts call:[unicode_byte_type]
+little2_charRefNumber call:[checkCharRefNumber] noreturn:[checkCharRefNumber]
+little2_predefinedEntityName
+little2_nameMatchesAscii
+little2_nameLength call:[return,unicode_byte_type]
+little2_skipS call:[unicode_byte_type]
+little2_updatePosition call:[unicode_byte_type]
+big2_scanComment call:[unicode_byte_type]
+big2_scanDecl call:[big2_scanComment,unicode_byte_type]
+big2_checkPiTarget
+big2_scanPi global:[namePages,namingBitmap,nmstrtPages] call:[big2_checkPiTarget,unicode_byte_type]
+big2_scanCdataSection
+big2_cdataSectionTok call:[unicode_byte_type]
+big2_scanEndTag global:[namePages,namingBitmap,nmstrtPages] call:[unicode_byte_type]
+big2_scanHexCharRef call:[unicode_byte_type]
+big2_scanCharRef call:[big2_scanHexCharRef,unicode_byte_type] noreturn:[big2_scanHexCharRef]
+big2_scanRef global:[namePages,namingBitmap,nmstrtPages] call:[big2_scanCharRef,unicode_byte_type]
+big2_scanAtts global:[namePages,namingBitmap,nmstrtPages] call:[big2_scanRef,unicode_byte_type]
+big2_scanLt global:[namePages,namingBitmap,nmstrtPages] call:[big2_scanAtts,big2_scanCdataSection,big2_scanComment,big2_scanEndTag,big2_scanPi,unicode_byte_type] noreturn:[big2_scanAtts,big2_scanCdataSection]
+big2_contentTok call:[big2_scanLt,big2_scanRef,unicode_byte_type]
+big2_scanPercent global:[namePages,namingBitmap,nmstrtPages] call:[unicode_byte_type]
+big2_scanPoundName global:[namePages,namingBitmap,nmstrtPages] call:[unicode_byte_type]
+big2_scanLit call:[unicode_byte_type]
+big2_prologTok global:[namePages,namingBitmap,nmstrtPages] call:[big2_scanDecl,big2_scanLit,big2_scanPercent,big2_scanPi,big2_scanPoundName,unicode_byte_type]
+big2_attributeValueTok call:[big2_scanRef,unicode_byte_type] noreturn:[big2_scanRef]
+big2_entityValueTok call:[big2_scanPercent,big2_scanRef,return,unicode_byte_type] noreturn:[big2_scanRef]
+big2_ignoreSectionTok call:[unicode_byte_type]
+big2_isPublicId call:[unicode_byte_type]
+big2_getAtts call:[unicode_byte_type]
+big2_charRefNumber call:[checkCharRefNumber] noreturn:[checkCharRefNumber]
+big2_predefinedEntityName
+big2_nameMatchesAscii
+big2_nameLength call:[return,unicode_byte_type]
+big2_skipS call:[unicode_byte_type]
+big2_updatePosition call:[unicode_byte_type]
+streqci
+initUpdatePosition global:[utf8_encoding] call:[normal_updatePosition] noreturn:[normal_updatePosition]
+toAscii
+isSpace
+parsePseudoAttribute call:[isSpace,toAscii,while] noreturn:[toAscii]
+doParseXmlDecl global:[KW_encoding,KW_no,KW_standalone,KW_version,KW_yes] call:[encodingFinder,isSpace,parsePseudoAttribute,toAscii] noreturn:[encodingFinder]
+checkCharRefNumber global:[latin1_encoding]
+XmlUtf8Encode
+XmlUtf16Encode
+XmlSizeOfUnknownEncoding call:[sizeof] noreturn:[sizeof]
+unknown_isName global:[namePages,namingBitmap] call:[convert,return] noreturn:[return]
+unknown_isNmstrt global:[namingBitmap,nmstrtPages] call:[convert,return] noreturn:[return]
+unknown_isInvalid call:[checkCharRefNumber,convert,return]
+unknown_toUtf8 call:[XmlUtf8Encode,convert,memcpy]
+unknown_toUtf16 call:[convert]
+XmlInitUnknownEncoding global:[latin1_encoding,namePages,namingBitmap,nmstrtPages] call:[XmlUtf8Encode,checkCharRefNumber,memcpy,sizeof]
+getEncodingIndex global:[KW_ISO_8859_1,KW_US_ASCII,KW_UTF_16,KW_UTF_16BE,KW_UTF_16LE,KW_UTF_8] call:[sizeof,streqci]
+initScan call:[return] noreturn:[return]
+XmlGetUtf8InternalEncoding global:[internal_utf8_encoding]
+XmlGetUtf16InternalEncoding global:[internal_little2_encoding]
+initScanProlog global:[encodings] call:[initScan] noreturn:[initScan]
+initScanContent global:[encodings] call:[initScan] noreturn:[initScan]
+XmlInitEncoding call:[getEncodingIndex]
+findEncoding global:[KW_UTF_16,encodings] call:[getEncodingIndex,streqci]
+XmlParseXmlDecl call:[doParseXmlDecl] noreturn:[doParseXmlDecl]
+XmlGetUtf8InternalEncodingNS global:[internal_utf8_encoding_ns]
+XmlGetUtf16InternalEncodingNS global:[internal_little2_encoding_ns]
+initScanPrologNS global:[encodingsNS] call:[initScan] noreturn:[initScan]
+initScanContentNS global:[encodingsNS] call:[initScan] noreturn:[initScan]
+XmlInitEncodingNS call:[getEncodingIndex]
+findEncodingNS global:[KW_UTF_16,encodingsNS] call:[getEncodingIndex,streqci]
+XmlParseXmlDeclNS call:[doParseXmlDecl] noreturn:[doParseXmlDecl]
+XmlInitUnknownEncodingNS call:[XmlInitUnknownEncoding]

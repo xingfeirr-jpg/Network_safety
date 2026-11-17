@@ -1,0 +1,14 @@
+[INFO 2026-10-28 17:59:33] - Using '/usr/bin/clang-18' for analyzer 'clangsa'
+[INFO 2026-10-28 17:59:34] - ----==== Summary ====----
+[INFO 2026-10-28 17:59:34] - Up-to-date analysis results
+[INFO 2026-10-28 17:59:34] -   clangsa: ['/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlparse.c', '/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c', '/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c'] (3)
+[INFO 2026-10-28 17:59:34] - Outdated analysis results
+[INFO 2026-10-28 17:59:34] - Failed to analyze
+[INFO 2026-10-28 17:59:34] - Missing analysis results
+[INFO 2026-10-28 17:59:34] -   clang-tidy: ['/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlparse.c', '/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c', '/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c'] (3)
+[INFO 2026-10-28 17:59:34] -   cppcheck: ['/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlparse.c', '/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c', '/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c'] (3)
+[INFO 2026-10-28 17:59:34] -   gcc: ['/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlparse.c', '/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c', '/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c'] (3)
+[INFO 2026-10-28 17:59:34] -   infer: ['/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlparse.c', '/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c', '/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c'] (3)
+[INFO 2026-10-28 17:59:34] - Total analyzed compilation commands: 3
+[INFO 2026-10-28 17:59:34] - Total available compilation commands: 3
+[INFO 2026-10-28 17:59:34] - ----=================----

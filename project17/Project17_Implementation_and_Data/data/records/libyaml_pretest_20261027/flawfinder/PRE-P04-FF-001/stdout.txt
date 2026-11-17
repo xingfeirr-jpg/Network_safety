@@ -1,0 +1,197 @@
+Flawfinder version 2.0.20, (C) 2001-2026 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 222
+Examining /home/yhong/comp5355/build/libyaml-0.2.5/include/config.h
+Examining /home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h
+Examining /home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c
+Examining /home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c
+Examining /home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c
+Examining /home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c
+Examining /home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c
+Examining /home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c
+Examining /home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c
+Examining /home/yhong/comp5355/sources/libyaml-0.2.5/src/writer.c
+Examining /home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h
+
+FINAL RESULTS:
+
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c:254:5:  [4] (format) sprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+    sprintf((char *)anchor, ANCHOR_TEMPLATE, anchor_id);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:108:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(*a_pointer, *b_start, *b_pointer - *b_start);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:264:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(buffer, parser->input.string.current, size);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:426:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(emitter->output.string.buffer
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:435:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(emitter->output.string.buffer
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:854:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(value_copy, value, length);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:1225:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(value_copy, value, length);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:2210:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char indent_hint[2];
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:613:25:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                        memcpy(tag, tag_directive->prefix, prefix_len);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:614:25:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                        memcpy(tag+prefix_len, tag_suffix, suffix_len);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:2595:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(string.start, head+1, length-1);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:741:25:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                        strlen((char *)tag_directive->handle)))
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:744:25:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                        strlen((char *)tag_directive->prefix)))
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:805:34:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    if (!yaml_check_utf8(anchor, strlen((char *)anchor))) return 0;
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:836:38:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        if (!yaml_check_utf8(anchor, strlen((char *)anchor))) goto error;
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:842:35:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:848:18:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        length = strlen((char *)value);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:886:38:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        if (!yaml_check_utf8(anchor, strlen((char *)anchor))) goto error;
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:892:35:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:941:38:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        if (!yaml_check_utf8(anchor, strlen((char *)anchor))) goto error;
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:947:35:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:1082:25:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                        strlen((char *)tag_directive->handle)))
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:1085:25:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                        strlen((char *)tag_directive->prefix)))
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:1214:31:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:1219:18:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        length = strlen((char *)value);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:1266:31:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:1311:31:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:628:29:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                            strlen((char *)tag_directive->handle)))
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:631:29:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                            strlen((char *)tag_directive->prefix), 1))
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:1379:21:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    handle_length = strlen((char *)tag_directive.handle);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:1380:21:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    prefix_length = strlen((char *)tag_directive.prefix);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:1428:21:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    anchor_length = strlen((char *)anchor);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:1465:18:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    tag_length = strlen((char *)tag);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:1475:32:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        size_t prefix_length = strlen((char *)tag_directive->prefix);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:1482:17:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                strlen((char *)tag_directive->handle);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:1815:24:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    indicator_length = strlen(indicator);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:606:45:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                        size_t prefix_len = strlen((char *)tag_directive->prefix);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:607:45:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                        size_t suffix_len = strlen((char *)tag_suffix);
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:2438:61:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        if (handle[0] == '!' && handle[1] != '\0' && handle[strlen((char *)handle)-1] == '!')
+/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:2574:28:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    size_t length = head ? strlen((char *)head) : 0;
+
+ANALYSIS SUMMARY:
+
+Hits = 40
+Lines analyzed = 12944 in approximately 0.06 seconds (225758 lines/second)
+Physical Source Lines of Code (SLOC) = 7450
+Hits@level = [0]   1 [1]  29 [2]  10 [3]   0 [4]   1 [5]   0
+Hits@level+ = [0+]  41 [1+]  40 [2+]  11 [3+]   1 [4+]   1 [5+]   0
+Hits/KSLOC@level+ = [0+] 5.50336 [1+] 5.36913 [2+] 1.47651 [3+] 0.134228 [4+] 0.134228 [5+]   0
+Minimum risk level = 1
+
+Not every hit is necessarily a security vulnerability.
+You can inhibit a report by adding a comment in this form:
+// flawfinder: ignore
+Make *sure* it's a false positive!
+You can use the option --neverignore to show these.
+
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(https://dwheeler.com/secure-programs) for more information.

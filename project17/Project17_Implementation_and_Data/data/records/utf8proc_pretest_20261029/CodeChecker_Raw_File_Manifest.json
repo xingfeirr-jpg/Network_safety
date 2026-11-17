@@ -1,0 +1,266 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/checkers-command.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/checkers-command.txt",
+    "bytes": 97,
+    "sha256": "aa4bbff26108260126a5f8f06b354b217d0143c0eb64f7578f9d077868792426"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/checkers-exit-code.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/checkers-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/checkers-stderr.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/checkers-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/checkers.json",
+    "localRelative": "codechecker/PRE-P10-CC-001/checkers.json",
+    "bytes": 55704,
+    "sha256": "0411fbf39b0a30e44f6dfe413248785f565c5d5ea370259818ba0a19336a44f4"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/clang-version-command.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/clang-version-command.txt",
+    "bytes": 29,
+    "sha256": "2734105d3963acc8da85345b089d91742127b224d4b2185de87665e35c8d9412"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/clang-version-exit-code.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/clang-version-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/clang-version.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/clang-version.txt",
+    "bytes": 110,
+    "sha256": "3635b8631d4ebcd8ed7586f4e01e7a6b44407de9d38db6e01daca9c242ed7a53"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/codechecker-version-command.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/codechecker-version-command.txt",
+    "bytes": 130,
+    "sha256": "4f2ee928a50cb092bed99588d33cb93729c6cbdbec914d7d12d3b46a81381a52"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/codechecker-version-exit-code.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/codechecker-version-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/codechecker-version.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/codechecker-version.txt",
+    "bytes": 7,
+    "sha256": "467cb40698f0522ac6f71389c69738aa5ccd57c9d9fdd43519007f2a164c2e1c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/command.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/command.txt",
+    "bytes": 306,
+    "sha256": "b8494721aae5235d5cf7792241b0911814d97b77c25a7080f4f45adddfbcbd73"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/compile_commands.input.json",
+    "localRelative": "codechecker/PRE-P10-CC-001/compile_commands.input.json",
+    "bytes": 445,
+    "sha256": "d8e3d8df230cdd37a42a8b05c6f0f98b7930a1c437454ca4f9af71cff20ef866"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/configuration-environment.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/configuration-environment.txt",
+    "bytes": 78,
+    "sha256": "ef8edb1a4296fec162e43cfc30897ded9a25d3c23efcd1565fbbd1c6ecb7c477"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/control-files.sha256",
+    "localRelative": "codechecker/PRE-P10-CC-001/control-files.sha256",
+    "bytes": 715,
+    "sha256": "da7df53d55625619404374de331a184e5be9503123a2cee258bb6656962d5bda"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/control-identity-exit-code.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/control-identity-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/control-identity-stdout.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/control-identity-stdout.txt",
+    "bytes": 343,
+    "sha256": "46329384d3b55c16a748d370d12154cdafa793e516bddfc085cdb6fe6cc203dc"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/control-manifest.sha256",
+    "localRelative": "codechecker/PRE-P10-CC-001/control-manifest.sha256",
+    "bytes": 176,
+    "sha256": "bd75abe991db83b98e0100c873f7143a8ba9b05ccc86475aadd88d00687183d4"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/environment-start.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/environment-start.txt",
+    "bytes": 2525,
+    "sha256": "d2524975c39ecb495791b1ede899abcd94e936e5b2a162a1b04621bf60bd8bcd"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/execution-environment.tsv",
+    "localRelative": "codechecker/PRE-P10-CC-001/execution-environment.tsv",
+    "bytes": 272,
+    "sha256": "8a8e9bc5fafc9c8ca76cadcec55b5224a0c2607a93851e1cb3401b67547082a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/exit-code.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/findings-command.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/findings-command.txt",
+    "bytes": 126,
+    "sha256": "73ff29ec739c83db2a0cd0fbd05d3ce8a155dbdbfe386685304b9be7d618ba72"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/findings-exit-code.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/findings-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/findings-stderr.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/findings-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/findings.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/findings.txt",
+    "bytes": 1394,
+    "sha256": "8120937e2dc5b8f77ebf1e0944d8dafd627a5b1cabbb8dd56a36fa494fb93f17"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/input-files.sha256",
+    "localRelative": "codechecker/PRE-P10-CC-001/input-files.sha256",
+    "bytes": 502,
+    "sha256": "c2b0725f5ddfa9cb6cdef42dc744d9e4c0f1a803f3250821746eb79d54edc31a"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/input-files.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/input-files.txt",
+    "bytes": 238,
+    "sha256": "e50ca99d17680dceca726c2dbd954f70a64ece97740561b8ed6253645038f047"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/input-identity-exit-code.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/input-identity-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/input-identity-stdout.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/input-identity-stdout.txt",
+    "bytes": 254,
+    "sha256": "0b35fd1e204c564911ed991cf3fc9bf27173d08646ad3c1fc3d960eb1b5589e7"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/parse-status-command.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/parse-status-command.txt",
+    "bytes": 146,
+    "sha256": "d0cf107cf4b65728bb2178cffd92b50163aa1ebc339cd52e896bf821e6424751"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/parse-status-exit-code.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/parse-status-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/parse-status-stderr.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/parse-status-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/parse-status.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/parse-status.txt",
+    "bytes": 1056,
+    "sha256": "d57930cb37bc0f2ee850f7622111173b74dbc5e2c3c4630f82b88febcfe16278"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/prepared-profile.json",
+    "localRelative": "codechecker/PRE-P10-CC-001/prepared-profile.json",
+    "bytes": 12505,
+    "sha256": "a25570a7a3d5e15e30d4ebf638f1313a577ca174944352fffe8fb5ebf0543b7c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/reports/compile_cmd.json",
+    "localRelative": "codechecker/PRE-P10-CC-001/reports/compile_cmd.json",
+    "bytes": 457,
+    "sha256": "4735560b1b41c2a338282d3098e2f80353fcc86e05de7ec7ccce90e04ac03e49"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/reports/compiler_info.json",
+    "localRelative": "codechecker/PRE-P10-CC-001/reports/compiler_info.json",
+    "bytes": 255,
+    "sha256": "b787c721bcb10977377e01be0da95365be2a4d112ca785f282b7f384e217361f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/reports/metadata.json",
+    "localRelative": "codechecker/PRE-P10-CC-001/reports/metadata.json",
+    "bytes": 6613,
+    "sha256": "903cc489068685989994c7c24c93d3bb0ea1f020c043c63c09cf3a5277030ce3"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/reports/unique_compile_commands.json",
+    "localRelative": "codechecker/PRE-P10-CC-001/reports/unique_compile_commands.json",
+    "bytes": 383,
+    "sha256": "6c9344e0419b118af6e71fc6190d2babaae9bdea4b759c540bb0010ba75bf215"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/reports/utf8proc.c_clangsa_e267b78e0ba22f7543be45a858e0e3a1.plist",
+    "localRelative": "codechecker/PRE-P10-CC-001/reports/utf8proc.c_clangsa_e267b78e0ba22f7543be45a858e0e3a1.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/result-summary-pending.json",
+    "localRelative": "codechecker/PRE-P10-CC-001/result-summary-pending.json",
+    "bytes": 1162,
+    "sha256": "07e27a90777f04c903f49696d10a33924aa51149e10158e4f20ed4409adacb7e"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/run-meta.tsv",
+    "localRelative": "codechecker/PRE-P10-CC-001/run-meta.tsv",
+    "bytes": 449,
+    "sha256": "a6c2fc9e4527680939c24fd5f04b45acdb4ee8760ac8f423b2b722c6e65e28ba"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/stderr.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/stdout.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/stdout.txt",
+    "bytes": 1020,
+    "sha256": "c29a173976e96f332b1d6ac4a1cb1dd86c5a2bf59a16e06c96a827f8abd6eb70"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/summary-exit-code.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/summary-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/time.txt",
+    "localRelative": "codechecker/PRE-P10-CC-001/time.txt",
+    "bytes": 1027,
+    "sha256": "de6b7b44777fa253e3f975ce7771ca9df2729daccbd28481001eb6b00d5bc81f"
+  }
+]

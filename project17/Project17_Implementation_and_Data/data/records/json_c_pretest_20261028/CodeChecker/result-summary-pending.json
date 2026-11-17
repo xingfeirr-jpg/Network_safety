@@ -1,0 +1,95 @@
+{
+  "runId": "PRE-P05-CC-001",
+  "purpose": "functional pretest",
+  "coverageValidation": "pending_tool_output_review",
+  "sourceReview": "not performed",
+  "auxiliaryTiming": "checkers and both parse commands outside analysis timing; not measured",
+  "metadataTools": [
+    {
+      "actionNum": 14,
+      "clangsaStatistics": {
+        "failed": 0,
+        "failed_sources": [],
+        "successful": 14,
+        "successful_sources": [
+          "/home/yhong/comp5355/sources/json-c-0.18/arraylist.c",
+          "/home/yhong/comp5355/sources/json-c-0.18/debug.c",
+          "/home/yhong/comp5355/sources/json-c-0.18/json_c_version.c",
+          "/home/yhong/comp5355/sources/json-c-0.18/json_object.c",
+          "/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c",
+          "/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c",
+          "/home/yhong/comp5355/sources/json-c-0.18/json_util.c",
+          "/home/yhong/comp5355/sources/json-c-0.18/json_visit.c",
+          "/home/yhong/comp5355/sources/json-c-0.18/linkhash.c",
+          "/home/yhong/comp5355/sources/json-c-0.18/printbuf.c",
+          "/home/yhong/comp5355/sources/json-c-0.18/random_seed.c",
+          "/home/yhong/comp5355/sources/json-c-0.18/strerror_override.c",
+          "/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c",
+          "/home/yhong/comp5355/sources/json-c-0.18/json_patch.c"
+        ],
+        "version": "18.1.3"
+      },
+      "skipped": 0
+    }
+  ],
+  "plistResults": [
+    {
+      "file": "reports/arraylist.c_clangsa_36e38d91a5412e621b486ace548dcded.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/debug.c_clangsa_b1bde3162345ecd4362789e9c14ad5f6.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/json_c_version.c_clangsa_bbce485230f3d0b361482a2886a54101.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/json_object.c_clangsa_fcd58b52d17b89c4424012a00cfcb75f.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/json_object_iterator.c_clangsa_ae33ee4b8728f4d0d6b6d49d3933b5bf.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/json_patch.c_clangsa_32c0933836bce2478d36cda606b25253.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/json_pointer.c_clangsa_96ee1912a12797f507c2083b768d59f4.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/json_tokener.c_clangsa_ffeafda92fe4597f9bcc421494981eb4.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/json_util.c_clangsa_34b8d31dd7f2ce23065ed1f5fa6c2a16.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/json_visit.c_clangsa_c92106d816b18f53071fc402fc5d44ff.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/linkhash.c_clangsa_7c4dd1e0cf7d29889eb5d32d35d4b2d8.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/printbuf.c_clangsa_2eb45adaa63443473dd59c67859a6da9.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/random_seed.c_clangsa_6d8a85a1a4a85306994e98e340e00860.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/strerror_override.c_clangsa_c580855a9e816f4a4938e8008774f853.plist",
+      "savedDiagnostics": 0
+    }
+  ],
+  "plistFileCount": 14,
+  "savedPlistDiagnostics": 0
+}

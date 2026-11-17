@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/home/yhong/comp5355/build/zlib-v1.3.2",
+  "command": "/usr/bin/clang-18 -DHAVE_HIDDEN -DNO_FSEEKO -DZLIB_BUILD -D_LARGEFILE64_SOURCE=1 -I/home/yhong/comp5355/build/zlib-v1.3.2 -I/home/yhong/comp5355/sources/zlib-v1.3.2 -g -o CMakeFiles/zlibstatic.dir/adler32.c.o -c /home/yhong/comp5355/sources/zlib-v1.3.2/adler32.c",
+  "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/adler32.c",
+  "output": "CMakeFiles/zlibstatic.dir/adler32.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/zlib-v1.3.2",
+  "command": "/usr/bin/clang-18 -DHAVE_HIDDEN -DNO_FSEEKO -DZLIB_BUILD -D_LARGEFILE64_SOURCE=1 -I/home/yhong/comp5355/build/zlib-v1.3.2 -I/home/yhong/comp5355/sources/zlib-v1.3.2 -g -o CMakeFiles/zlibstatic.dir/compress.c.o -c /home/yhong/comp5355/sources/zlib-v1.3.2/compress.c",
+  "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c",
+  "output": "CMakeFiles/zlibstatic.dir/compress.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/zlib-v1.3.2",
+  "command": "/usr/bin/clang-18 -DHAVE_HIDDEN -DNO_FSEEKO -DZLIB_BUILD -D_LARGEFILE64_SOURCE=1 -I/home/yhong/comp5355/build/zlib-v1.3.2 -I/home/yhong/comp5355/sources/zlib-v1.3.2 -g -o CMakeFiles/zlibstatic.dir/crc32.c.o -c /home/yhong/comp5355/sources/zlib-v1.3.2/crc32.c",
+  "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/crc32.c",
+  "output": "CMakeFiles/zlibstatic.dir/crc32.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/zlib-v1.3.2",
+  "command": "/usr/bin/clang-18 -DHAVE_HIDDEN -DNO_FSEEKO -DZLIB_BUILD -D_LARGEFILE64_SOURCE=1 -I/home/yhong/comp5355/build/zlib-v1.3.2 -I/home/yhong/comp5355/sources/zlib-v1.3.2 -g -o CMakeFiles/zlibstatic.dir/deflate.c.o -c /home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c",
+  "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c",
+  "output": "CMakeFiles/zlibstatic.dir/deflate.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/zlib-v1.3.2",
+  "command": "/usr/bin/clang-18 -DHAVE_HIDDEN -DNO_FSEEKO -DZLIB_BUILD -D_LARGEFILE64_SOURCE=1 -I/home/yhong/comp5355/build/zlib-v1.3.2 -I/home/yhong/comp5355/sources/zlib-v1.3.2 -g -o CMakeFiles/zlibstatic.dir/gzclose.c.o -c /home/yhong/comp5355/sources/zlib-v1.3.2/gzclose.c",
+  "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/gzclose.c",
+  "output": "CMakeFiles/zlibstatic.dir/gzclose.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/zlib-v1.3.2",
+  "command": "/usr/bin/clang-18 -DHAVE_HIDDEN -DNO_FSEEKO -DZLIB_BUILD -D_LARGEFILE64_SOURCE=1 -I/home/yhong/comp5355/build/zlib-v1.3.2 -I/home/yhong/comp5355/sources/zlib-v1.3.2 -g -o CMakeFiles/zlibstatic.dir/gzlib.c.o -c /home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c",
+  "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c",
+  "output": "CMakeFiles/zlibstatic.dir/gzlib.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/zlib-v1.3.2",
+  "command": "/usr/bin/clang-18 -DHAVE_HIDDEN -DNO_FSEEKO -DZLIB_BUILD -D_LARGEFILE64_SOURCE=1 -I/home/yhong/comp5355/build/zlib-v1.3.2 -I/home/yhong/comp5355/sources/zlib-v1.3.2 -g -o CMakeFiles/zlibstatic.dir/gzread.c.o -c /home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c",
+  "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c",
+  "output": "CMakeFiles/zlibstatic.dir/gzread.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/zlib-v1.3.2",
+  "command": "/usr/bin/clang-18 -DHAVE_HIDDEN -DNO_FSEEKO -DZLIB_BUILD -D_LARGEFILE64_SOURCE=1 -I/home/yhong/comp5355/build/zlib-v1.3.2 -I/home/yhong/comp5355/sources/zlib-v1.3.2 -g -o CMakeFiles/zlibstatic.dir/gzwrite.c.o -c /home/yhong/comp5355/sources/zlib-v1.3.2/gzwrite.c",
+  "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/gzwrite.c",
+  "output": "CMakeFiles/zlibstatic.dir/gzwrite.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/zlib-v1.3.2",
+  "command": "/usr/bin/clang-18 -DHAVE_HIDDEN -DNO_FSEEKO -DZLIB_BUILD -D_LARGEFILE64_SOURCE=1 -I/home/yhong/comp5355/build/zlib-v1.3.2 -I/home/yhong/comp5355/sources/zlib-v1.3.2 -g -o CMakeFiles/zlibstatic.dir/inflate.c.o -c /home/yhong/comp5355/sources/zlib-v1.3.2/inflate.c",
+  "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/inflate.c",
+  "output": "CMakeFiles/zlibstatic.dir/inflate.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/zlib-v1.3.2",
+  "command": "/usr/bin/clang-18 -DHAVE_HIDDEN -DNO_FSEEKO -DZLIB_BUILD -D_LARGEFILE64_SOURCE=1 -I/home/yhong/comp5355/build/zlib-v1.3.2 -I/home/yhong/comp5355/sources/zlib-v1.3.2 -g -o CMakeFiles/zlibstatic.dir/infback.c.o -c /home/yhong/comp5355/sources/zlib-v1.3.2/infback.c",
+  "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/infback.c",
+  "output": "CMakeFiles/zlibstatic.dir/infback.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/zlib-v1.3.2",
+  "command": "/usr/bin/clang-18 -DHAVE_HIDDEN -DNO_FSEEKO -DZLIB_BUILD -D_LARGEFILE64_SOURCE=1 -I/home/yhong/comp5355/build/zlib-v1.3.2 -I/home/yhong/comp5355/sources/zlib-v1.3.2 -g -o CMakeFiles/zlibstatic.dir/inftrees.c.o -c /home/yhong/comp5355/sources/zlib-v1.3.2/inftrees.c",
+  "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/inftrees.c",
+  "output": "CMakeFiles/zlibstatic.dir/inftrees.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/zlib-v1.3.2",
+  "command": "/usr/bin/clang-18 -DHAVE_HIDDEN -DNO_FSEEKO -DZLIB_BUILD -D_LARGEFILE64_SOURCE=1 -I/home/yhong/comp5355/build/zlib-v1.3.2 -I/home/yhong/comp5355/sources/zlib-v1.3.2 -g -o CMakeFiles/zlibstatic.dir/inffast.c.o -c /home/yhong/comp5355/sources/zlib-v1.3.2/inffast.c",
+  "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/inffast.c",
+  "output": "CMakeFiles/zlibstatic.dir/inffast.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/zlib-v1.3.2",
+  "command": "/usr/bin/clang-18 -DHAVE_HIDDEN -DNO_FSEEKO -DZLIB_BUILD -D_LARGEFILE64_SOURCE=1 -I/home/yhong/comp5355/build/zlib-v1.3.2 -I/home/yhong/comp5355/sources/zlib-v1.3.2 -g -o CMakeFiles/zlibstatic.dir/trees.c.o -c /home/yhong/comp5355/sources/zlib-v1.3.2/trees.c",
+  "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/trees.c",
+  "output": "CMakeFiles/zlibstatic.dir/trees.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/zlib-v1.3.2",
+  "command": "/usr/bin/clang-18 -DHAVE_HIDDEN -DNO_FSEEKO -DZLIB_BUILD -D_LARGEFILE64_SOURCE=1 -I/home/yhong/comp5355/build/zlib-v1.3.2 -I/home/yhong/comp5355/sources/zlib-v1.3.2 -g -o CMakeFiles/zlibstatic.dir/uncompr.c.o -c /home/yhong/comp5355/sources/zlib-v1.3.2/uncompr.c",
+  "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/uncompr.c",
+  "output": "CMakeFiles/zlibstatic.dir/uncompr.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/zlib-v1.3.2",
+  "command": "/usr/bin/clang-18 -DHAVE_HIDDEN -DNO_FSEEKO -DZLIB_BUILD -D_LARGEFILE64_SOURCE=1 -I/home/yhong/comp5355/build/zlib-v1.3.2 -I/home/yhong/comp5355/sources/zlib-v1.3.2 -g -o CMakeFiles/zlibstatic.dir/zutil.c.o -c /home/yhong/comp5355/sources/zlib-v1.3.2/zutil.c",
+  "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/zutil.c",
+  "output": "CMakeFiles/zlibstatic.dir/zutil.c.o"
+}
+]

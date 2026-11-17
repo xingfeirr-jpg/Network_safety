@@ -1,0 +1,7 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcparam.c:542:5: warning: Value stored to 'scanptr' is never read [deadcode.DeadStores]
+  542 |     scanptr = fill_a_scan(scanptr, 0, 1, 63, 1, 0);
+      |     ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcparam.c:553:5: warning: Value stored to 'scanptr' is never read [deadcode.DeadStores]
+  553 |     scanptr = fill_scans(scanptr, ncomps, 1, 63, 1, 0);
+      |     ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.

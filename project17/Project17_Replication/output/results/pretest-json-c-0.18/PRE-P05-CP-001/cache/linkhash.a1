@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="14501109402006909146">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="15" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="16" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="17" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="21" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;endian.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;endian.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="24" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_inttypes.h" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object.h" line="30" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:198:25" call-funcname="lh_table_new" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="540" col="22" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:257:12" call-funcname="lh_table_insert_w_hash" call-argnr="5" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="550" col="29" call-argexpr="opts" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="547" col="23" info="Assignment &apos;opts=0&apos;, assigned value is 0"/>
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="548" col="10" info="Assuming condition is false"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:257:12" call-funcname="lh_table_insert_w_hash" call-argnr="5" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="623" col="31" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:198:25" call-funcname="lh_table_new" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="527" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:209:25" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:198:25" call-funcname="lh_table_new" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="532" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:219:25" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:257:12" call-funcname="lh_table_insert_w_hash" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="623" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:241:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:257:12" call-funcname="lh_table_insert_w_hash" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="623" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:241:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:257:12" call-funcname="lh_table_insert_w_hash" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="623" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:241:12" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:281:25" call-funcname="lh_table_lookup_entry_w_hash" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="647" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:267:25" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:281:25" call-funcname="lh_table_lookup_entry_w_hash" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="647" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:267:25" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:267:25" call-funcname="lh_table_lookup_entry" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="652" col="23" my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:292:18" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:267:25" call-funcname="lh_table_lookup_entry" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="652" col="23" my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:292:18" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:267:25" call-funcname="lh_table_lookup_entry" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="707" col="23" my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:316:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:267:25" call-funcname="lh_table_lookup_entry" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="707" col="23" my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:316:12" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:348:36" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="350" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:364:33" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="366" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:386:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="388" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:396:23" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="398" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:407:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="409" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:416:24" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="418" col="2" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:426:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="428" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:436:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="438" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:332:5" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="540" col="39" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:229:13" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="569" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:257:12" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="583" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:281:25" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="629" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:304:12" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="667" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:321:12" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="715" col="9" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:348:36" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="350" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:364:33" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="366" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:386:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="388" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:396:23" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="398" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:407:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="409" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:426:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="428" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:436:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="438" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c:55:22" my-argnr="1" my-argname="k" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="58" col="38" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:229:13" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="569" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:257:12" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="583" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:281:25" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="629" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:304:12" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="667" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:321:12" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.c" line="715" col="9" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="lh_table_head" lineNumber="348"/>
+    <functiondecl functionName="lh_get_hash" lineNumber="364"/>
+    <functiondecl functionName="lh_entry_k" lineNumber="386"/>
+    <functiondecl functionName="lh_entry_k_is_constant" lineNumber="396"/>
+    <functiondecl functionName="lh_entry_v" lineNumber="407"/>
+    <functiondecl functionName="lh_entry_set_val" lineNumber="416"/>
+    <functiondecl functionName="lh_entry_next" lineNumber="426"/>
+    <functiondecl functionName="lh_entry_prev" lineNumber="436"/>
+    <functiondecl functionName="json_global_set_string_hash" lineNumber="44"/>
+    <functiondecl functionName="lh_ptr_hash" lineNumber="55"/>
+    <functiondecl functionName="lh_ptr_equal" lineNumber="61"/>
+    <functiondecl functionName="hashlittle" lineNumber="253"/>
+    <functiondecl functionName="lh_perllike_str_hash" lineNumber="445"/>
+    <functiondecl functionName="lh_char_hash" lineNumber="456"/>
+    <functiondecl functionName="lh_char_equal" lineNumber="492"/>
+    <functiondecl functionName="lh_table_resize" lineNumber="535"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="calloc"/>
+    <functioncall functionName="equal_fn"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="free_fn"/>
+    <functioncall functionName="hash_fn"/>
+    <functioncall functionName="hashlittle"/>
+    <functioncall functionName="json_c_get_random_seed"/>
+    <functioncall functionName="json_c_shallow_copy_default"/>
+    <functioncall functionName="json_object_free_userdata"/>
+    <functioncall functionName="json_object_userdata_to_json_string"/>
+    <functioncall functionName="lh_char_equal"/>
+    <functioncall functionName="lh_char_hash"/>
+    <functioncall functionName="lh_entry_v"/>
+    <functioncall functionName="lh_get_hash"/>
+    <functioncall functionName="lh_perllike_str_hash"/>
+    <functioncall functionName="lh_ptr_equal"/>
+    <functioncall functionName="lh_ptr_hash"/>
+    <functioncall functionName="lh_table_delete_entry"/>
+    <functioncall functionName="lh_table_free"/>
+    <functioncall functionName="lh_table_insert_w_hash"/>
+    <functioncall functionName="lh_table_lookup_entry"/>
+    <functioncall functionName="lh_table_lookup_entry_w_hash"/>
+    <functioncall functionName="lh_table_new"/>
+    <functioncall functionName="lh_table_resize"/>
+    <functioncall functionName="strcmp"/>
+    <functioncall functionName="strlen"/>
+  </FileInfo>
+</analyzerinfo>

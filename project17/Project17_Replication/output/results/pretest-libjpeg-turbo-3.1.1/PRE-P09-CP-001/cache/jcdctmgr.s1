@@ -1,0 +1,12 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+flss
+compute_reciprocal call:[flss,sizeof]
+start_pass_fdctmgr call:[compute_reciprocal,sizeof] noreturn:[compute_reciprocal]
+convsamp
+quantize call:[sizeof]
+forward_DCT call:[void]
+convsamp_float
+quantize_float
+forward_DCT_float call:[void]
+jinit_forward_dct call:[sizeof]

@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "label": "源码 cJSON.c",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+      "sha256": "298581a04a36c0165da4b0aade235c23088cb2faa58651d720ea2f3706ed0b0d",
+      "passed": true,
+      "actual_sha256": "298581a04a36c0165da4b0aade235c23088cb2faa58651d720ea2f3706ed0b0d",
+      "actual_bytes": 80399
+    },
+    {
+      "label": "源码 cJSON.h",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h",
+      "sha256": "25b0145150d500498e4d209cec69c18c42cf818bffcc54690be3b895a2a16dee",
+      "passed": true,
+      "actual_sha256": "25b0145150d500498e4d209cec69c18c42cf818bffcc54690be3b895a2a16dee",
+      "actual_bytes": 16394
+    },
+    {
+      "label": "源码 LICENSE",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/LICENSE",
+      "sha256": "a36dda207c36db5818729c54e7ad4e8b0c6fba847491ba64f372c1a2037b6d5c",
+      "passed": true,
+      "actual_sha256": "a36dda207c36db5818729c54e7ad4e8b0c6fba847491ba64f372c1a2037b6d5c",
+      "actual_bytes": 1084
+    },
+    {
+      "label": "源码 CMakeLists.txt",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/CMakeLists.txt",
+      "sha256": "cdcb1302634cb81778130e9c30c2e952f80157bb9fee6b3f8489be8c15de9d34",
+      "passed": true,
+      "actual_sha256": "cdcb1302634cb81778130e9c30c2e952f80157bb9fee6b3f8489be8c15de9d34",
+      "actual_bytes": 10205
+    },
+    {
+      "label": "构建上下文 compile_commands.json",
+      "path": "/home/yhong/comp5355/build/cJSON-v1.7.19/compile_commands.json",
+      "sha256": "ff6f0e4cfd162a124d934f8adde2ba96c029b75df634b0884614a965ec19dd9b",
+      "passed": true,
+      "actual_sha256": "ff6f0e4cfd162a124d934f8adde2ba96c029b75df634b0884614a965ec19dd9b",
+      "actual_bytes": 781
+    },
+    {
+      "label": "构建上下文 CMakeCache.txt",
+      "path": "/home/yhong/comp5355/build/cJSON-v1.7.19/CMakeCache.txt",
+      "sha256": "a338bf89a1a1810ac248a4094c0f989dfdd2f29d82c393135618bbd862b71f66",
+      "passed": true,
+      "actual_sha256": "a338bf89a1a1810ac248a4094c0f989dfdd2f29d82c393135618bbd862b71f66",
+      "actual_bytes": 19012
+    },
+    {
+      "label": "原静态库 libcjson.a",
+      "path": "/home/yhong/comp5355/build/cJSON-v1.7.19/libcjson.a",
+      "sha256": "8ea454e9b2f13ee80b23e1ed25366d6567611f89cf2375bc8af94736794b39e8",
+      "bytes": 88738,
+      "passed": true,
+      "actual_sha256": "8ea454e9b2f13ee80b23e1ed25366d6567611f89cf2375bc8af94736794b39e8",
+      "actual_bytes": 88738
+    }
+  ],
+  "packages": {
+    "flawfinder": "2.0.20",
+    "codechecker": "6.29.1"
+  },
+  "checked_utc": "2026-10-30T14:45:38.718482+00:00"
+}

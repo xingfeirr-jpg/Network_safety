@@ -1,0 +1,19 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c:491:11: warning: Although the value stored to 'v' is used in the enclosing expression, the value is never actually read from 'v' [deadcode.DeadStores]
+  491 |       if (v >>= cinfo->Al) break;
+      |           ^     ~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c:494:11: warning: Although the value stored to 'v' is used in the enclosing expression, the value is never actually read from 'v' [deadcode.DeadStores]
+  494 |       if (v >>= cinfo->Al) break;
+      |           ^     ~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c:625:11: warning: Although the value stored to 'v' is used in the enclosing expression, the value is never actually read from 'v' [deadcode.DeadStores]
+  625 |       if (v >>= cinfo->Al) break;
+      |           ^     ~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c:628:11: warning: Although the value stored to 'v' is used in the enclosing expression, the value is never actually read from 'v' [deadcode.DeadStores]
+  628 |       if (v >>= cinfo->Al) break;
+      |           ^     ~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c:634:11: warning: Although the value stored to 'v' is used in the enclosing expression, the value is never actually read from 'v' [deadcode.DeadStores]
+  634 |       if (v >>= cinfo->Ah) break;
+      |           ^     ~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c:637:11: warning: Although the value stored to 'v' is used in the enclosing expression, the value is never actually read from 'v' [deadcode.DeadStores]
+  637 |       if (v >>= cinfo->Ah) break;
+      |           ^     ~~~~~~~~~
+6 warnings generated.

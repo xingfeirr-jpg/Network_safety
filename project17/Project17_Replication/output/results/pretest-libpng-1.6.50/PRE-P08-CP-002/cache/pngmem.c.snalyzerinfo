@@ -1,0 +1,13 @@
+png_destroy_png_struct call:[memset,png_free,png_free_jmpbuf,sizeof] noreturn:[png_free_jmpbuf]
+png_calloc call:[memset,png_malloc] noreturn:[memset]
+png_malloc_base call:[malloc,malloc_fn] noreturn:[malloc,malloc_fn]
+png_malloc_array_checked call:[png_malloc_base] noreturn:[png_malloc_base]
+png_malloc_array call:[png_error,png_malloc_array_checked] noreturn:[png_error,png_malloc_array_checked]
+png_realloc_array call:[memcpy,memset,png_error,png_malloc_array_checked] noreturn:[memcpy,png_error]
+png_malloc call:[png_error,png_malloc_base] noreturn:[png_error]
+png_malloc_default call:[png_error,png_malloc_base] noreturn:[png_error]
+png_malloc_warn call:[png_malloc_base,png_warning] noreturn:[png_warning]
+png_free call:[free_fn,png_free_default] noreturn:[free_fn,png_free_default]
+png_free_default call:[free] noreturn:[free]
+png_set_mem_fn
+png_get_mem_ptr

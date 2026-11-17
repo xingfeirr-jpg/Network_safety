@@ -1,0 +1,266 @@
+[
+  {
+    "file": "checkers-command.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/checkers-command.txt",
+    "sha256": "aa4bbff26108260126a5f8f06b354b217d0143c0eb64f7578f9d077868792426",
+    "bytes": 97
+  },
+  {
+    "file": "checkers-exit-code.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/checkers-exit-code.txt",
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "bytes": 2
+  },
+  {
+    "file": "checkers-stderr.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/checkers-stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "file": "checkers.json",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/checkers.json",
+    "sha256": "0411fbf39b0a30e44f6dfe413248785f565c5d5ea370259818ba0a19336a44f4",
+    "bytes": 55704
+  },
+  {
+    "file": "command.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/command.txt",
+    "sha256": "8939664511dc317e2bdc203973bf965b294d541e372cfcf76ef58b3e390eeb9c",
+    "bytes": 298
+  },
+  {
+    "file": "configuration-environment.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/configuration-environment.txt",
+    "sha256": "f6eaa82a145f8c43ee16b694a674e9942a0461eff5ee9c7f982fc4ed52d9f37c",
+    "bytes": 42
+  },
+  {
+    "file": "environment-start.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/environment-start.txt",
+    "sha256": "532512cf7ae2f659934d4f225df354dcd6b79435a32ee53260fda5b92dda7eda",
+    "bytes": 2525
+  },
+  {
+    "file": "exit-code.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/exit-code.txt",
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "bytes": 2
+  },
+  {
+    "file": "findings-command.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/findings-command.txt",
+    "sha256": "3d1ff34b2fe8f857bd60c342bd1c47dca69db08d81581bf5d3c28a91309a6291",
+    "bytes": 122
+  },
+  {
+    "file": "findings-exit-code.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/findings-exit-code.txt",
+    "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+    "bytes": 2
+  },
+  {
+    "file": "findings-stderr.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/findings-stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "file": "findings.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/findings.txt",
+    "sha256": "9d1553c4ff23be80a892f39fabffe6e4a003e8fe91dfdf8e70828f46e10b8418",
+    "bytes": 4082
+  },
+  {
+    "file": "input-files.sha256",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/input-files.sha256",
+    "sha256": "451c8516d0016d54d9b877eb0524b013c941aa8c41e4b65156d6ea8686692f74",
+    "bytes": 3150
+  },
+  {
+    "file": "parse-status-command.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/parse-status-command.txt",
+    "sha256": "e2e526379c06a2da3bd66108d6453430e4f1c9a7d6a9babe4c8b6966aec2d8dd",
+    "bytes": 142
+  },
+  {
+    "file": "parse-status-exit-code.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/parse-status-exit-code.txt",
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "bytes": 2
+  },
+  {
+    "file": "parse-status-stderr.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/parse-status-stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "file": "parse-status.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/parse-status.txt",
+    "sha256": "d7df1cb33054001f5e859471dece2bf0ba0f1fd415b0f94e916532b0c6f157c7",
+    "bytes": 4783
+  },
+  {
+    "file": "prepared-profile.json",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/prepared-profile.json",
+    "sha256": "f6163a0d59da5900592232ee1afdcfee344d29578727b5c8d15328646790d363",
+    "bytes": 14620
+  },
+  {
+    "file": "reports/adler32.c_clangsa_81b5eb54ff157e97240655eeb78a9b9e.plist",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/adler32.c_clangsa_81b5eb54ff157e97240655eeb78a9b9e.plist",
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "bytes": 521
+  },
+  {
+    "file": "reports/compile_cmd.json",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/compile_cmd.json",
+    "sha256": "0b29c2aba486299d61913e804c1d9d9a3b95c5bc6c955aaad98075da098b7c48",
+    "bytes": 7009
+  },
+  {
+    "file": "reports/compiler_info.json",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/compiler_info.json",
+    "sha256": "74b923fb5a34a453fbd815eb22b1561c31b5c1a96f2fc54e162ce3be904876eb",
+    "bytes": 243
+  },
+  {
+    "file": "reports/compress.c_clangsa_14070b83727aae92dc813b462716130c.plist",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/compress.c_clangsa_14070b83727aae92dc813b462716130c.plist",
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "bytes": 521
+  },
+  {
+    "file": "reports/crc32.c_clangsa_c288f226214ec2c82d91e7a858d67f1a.plist",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/crc32.c_clangsa_c288f226214ec2c82d91e7a858d67f1a.plist",
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "bytes": 521
+  },
+  {
+    "file": "reports/deflate.c_clangsa_ea88c050d3bf20f2622d85221f8d31f0.plist",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/deflate.c_clangsa_ea88c050d3bf20f2622d85221f8d31f0.plist",
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "bytes": 521
+  },
+  {
+    "file": "reports/gzclose.c_clangsa_b89d2f105af38122815a90156116cca5.plist",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/gzclose.c_clangsa_b89d2f105af38122815a90156116cca5.plist",
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "bytes": 521
+  },
+  {
+    "file": "reports/gzlib.c_clangsa_7706fcd2dd185117f6dd4c0f301f2d11.plist",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/gzlib.c_clangsa_7706fcd2dd185117f6dd4c0f301f2d11.plist",
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "bytes": 521
+  },
+  {
+    "file": "reports/gzread.c_clangsa_479d573cdadb744e9d6b6415356ed4af.plist",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/gzread.c_clangsa_479d573cdadb744e9d6b6415356ed4af.plist",
+    "sha256": "46a265b2434eba24ec9c2de60fbcb4bb0aa08fa414c7a2c717b57beade7da6b7",
+    "bytes": 19875
+  },
+  {
+    "file": "reports/gzwrite.c_clangsa_53315e2272f08694c785b09b48b5f47d.plist",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/gzwrite.c_clangsa_53315e2272f08694c785b09b48b5f47d.plist",
+    "sha256": "00cd15f3696f5c59b5d1f71d0e0899c967cf59383d5ad960e51ac9ac2c249be5",
+    "bytes": 20242
+  },
+  {
+    "file": "reports/infback.c_clangsa_d32b797ecb427dd65f0e8362b34cc41f.plist",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/infback.c_clangsa_d32b797ecb427dd65f0e8362b34cc41f.plist",
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "bytes": 521
+  },
+  {
+    "file": "reports/inffast.c_clangsa_97d7ad0daa793940b2ace72aa6d699f7.plist",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/inffast.c_clangsa_97d7ad0daa793940b2ace72aa6d699f7.plist",
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "bytes": 521
+  },
+  {
+    "file": "reports/inflate.c_clangsa_78f7a566bd60465b639cfdbb5e141563.plist",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/inflate.c_clangsa_78f7a566bd60465b639cfdbb5e141563.plist",
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "bytes": 521
+  },
+  {
+    "file": "reports/inftrees.c_clangsa_1177ee4819b5ea22c103573eef11aff3.plist",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/inftrees.c_clangsa_1177ee4819b5ea22c103573eef11aff3.plist",
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "bytes": 521
+  },
+  {
+    "file": "reports/metadata.json",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/metadata.json",
+    "sha256": "209dfb3b5d67281048e8498fe2bf3e49a9e28495ebfb1c7f6cb2d4da9f3bcb31",
+    "bytes": 9927
+  },
+  {
+    "file": "reports/success/gzread.c_clangsa_479d573cdadb744e9d6b6415356ed4af.plist.stderr.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/success/gzread.c_clangsa_479d573cdadb744e9d6b6415356ed4af.plist.stderr.txt",
+    "sha256": "f52cbb69c1fcde48f15a9e79903b97c2010d381a0cb8b090209fb2c6dd0eea6e",
+    "bytes": 242
+  },
+  {
+    "file": "reports/success/gzwrite.c_clangsa_53315e2272f08694c785b09b48b5f47d.plist.stderr.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/success/gzwrite.c_clangsa_53315e2272f08694c785b09b48b5f47d.plist.stderr.txt",
+    "sha256": "3e6c72f120d3fe10fc570cd638b04b38a64ab8cc8dd93cd1d82264e290f3f064",
+    "bytes": 442
+  },
+  {
+    "file": "reports/trees.c_clangsa_cf0d1c159c9eb8d5d1cfbb501c4a8030.plist",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/trees.c_clangsa_cf0d1c159c9eb8d5d1cfbb501c4a8030.plist",
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "bytes": 521
+  },
+  {
+    "file": "reports/uncompr.c_clangsa_5a8566e7144290348a536b95bd8ccb6d.plist",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/uncompr.c_clangsa_5a8566e7144290348a536b95bd8ccb6d.plist",
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "bytes": 521
+  },
+  {
+    "file": "reports/unique_compile_commands.json",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/unique_compile_commands.json",
+    "sha256": "faa83f3ddc25bc9c6047e556009791b9e0248fe74bb4ad6f974182cd52453242",
+    "bytes": 5919
+  },
+  {
+    "file": "reports/zutil.c_clangsa_497051d11ed6bc56298221202de33d17.plist",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/reports/zutil.c_clangsa_497051d11ed6bc56298221202de33d17.plist",
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "bytes": 521
+  },
+  {
+    "file": "result-summary-pending.json",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/result-summary-pending.json",
+    "sha256": "751594fa118aeec26e59365bc4687cb234992087b00474fe7a5e9943e792376a",
+    "bytes": 3385
+  },
+  {
+    "file": "run-meta.tsv",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/run-meta.tsv",
+    "sha256": "60397d3c5a1e7d86dda1778418d87bcbb205e1836baba74ecd1a2566cb104a97",
+    "bytes": 445
+  },
+  {
+    "file": "stderr.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "file": "stdout.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/stdout.txt",
+    "sha256": "6e75533155a28c9486186d75823ec4a0de52a98cac06f0523bb8b517ddbc31fa",
+    "bytes": 2096
+  },
+  {
+    "file": "time.txt",
+    "linuxSource": "/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CC-001/time.txt",
+    "sha256": "0f045972f01d1558d23ca244a47e4ff3c7ce83a2186cd71ab983eaf681881c5d",
+    "bytes": 1020
+  }
+]

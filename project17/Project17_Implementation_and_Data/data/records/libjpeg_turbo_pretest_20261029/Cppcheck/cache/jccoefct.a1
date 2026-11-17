@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="2411729128502658531">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="73" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="126" column="0"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: buffer" verbose="Uninitialized variable: buffer" cwe="457" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c" line="359" column="5"/>
+            <symbol>buffer</symbol>
+        </error>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c:72:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c" line="75" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c:100:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c" line="102" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c:62:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c" line="145" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c:64:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c" line="249" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c:66:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c" line="345" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:490:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c" line="411" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c:72:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c" line="75" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c:100:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c" line="102" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c:62:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c" line="145" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c:64:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c" line="249" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c:66:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c" line="345" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:490:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c" line="411" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GETENV_S" lineNumber="79"/>
+    <functiondecl functionName="PUTENV_S" lineNumber="132"/>
+    <functiondecl functionName="start_iMCU_row" lineNumber="72"/>
+    <functiondecl functionName="start_pass_coef" lineNumber="100"/>
+    <functiondecl functionName="compress_data" lineNumber="143"/>
+    <functiondecl functionName="compress_first_pass" lineNumber="247"/>
+    <functiondecl functionName="compress_output" lineNumber="343"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ERANGE"/>
+    <functioncall functionName="JERR_BAD_BUFFER_MODE"/>
+    <functioncall functionName="JERR_BAD_PRECISION"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="compress_data"/>
+    <functioncall functionName="compress_first_pass"/>
+    <functioncall functionName="compress_output"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="getenv"/>
+    <functioncall functionName="jround_up"/>
+    <functioncall functionName="jzero_far"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="setenv"/>
+    <functioncall functionName="start_iMCU_row"/>
+    <functioncall functionName="start_pass_coef"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,13 @@
+byte_swap call:[return]
+multmodp
+x2nmodp global:[x2n_table] call:[multmodp] noreturn:[multmodp]
+get_crc_table global:[crc_table] call:[return]
+crc_word global:[crc_table] call:[return]
+crc_word_big global:[crc_big_table]
+crc32_z global:[crc_braid_big_table,crc_braid_table,crc_table] call:[byte_swap,crc_word,crc_word_big] noreturn:[byte_swap]
+crc32 call:[crc32_z] noreturn:[crc32_z]
+crc32_combine_gen64 call:[x2nmodp] noreturn:[x2nmodp]
+crc32_combine_gen call:[crc32_combine_gen64] noreturn:[crc32_combine_gen64]
+crc32_combine_op call:[multmodp]
+crc32_combine64 call:[crc32_combine_gen64,crc32_combine_op] noreturn:[crc32_combine_op]
+crc32_combine call:[crc32_combine64] noreturn:[crc32_combine64]

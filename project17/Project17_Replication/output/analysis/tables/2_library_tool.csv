@@ -1,0 +1,11 @@
+﻿library,Flawfinder_alerts,Cppcheck_alerts,clangsa_alerts,Flawfinder_supported,Cppcheck_supported,clangsa_supported
+zlib,49,0,3,1,0,1
+LZ4,42,1,8,0,1,2
+cJSON,26,16,0,0,15,0
+libyaml,40,0,0,0,0,0
+json-c,59,1,0,0,0,0
+yyjson,111,5,0,2,3,0
+Expat,39,2,0,0,0,0
+libpng,110,0,14,1,0,5
+libjpeg-turbo,42,91,48,1,20,10
+utf8proc,18,0,0,0,0,0

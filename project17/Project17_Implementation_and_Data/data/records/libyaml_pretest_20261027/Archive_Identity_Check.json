@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-27",
+  "status": "passed",
+  "project": "P04 libyaml",
+  "version": "0.2.5",
+  "tag": "0.2.5",
+  "commit": "2c891fc7a770e8ba2fec34fc6b545c672beb37e6",
+  "sourceURL": "https://github.com/yaml/libyaml/archive/2c891fc7a770e8ba2fec34fc6b545c672beb37e6.tar.gz",
+  "archiveFile": "libyaml-0.2.5.tar.gz",
+  "archiveBytes": 85286,
+  "archiveSHA256": "77987051b6f5bee8ba472f1efbe0053663a58d8d3e7a2f0f4a27d178adbf8844",
+  "checksumMeaning": "local downloaded archive identity, not an official publisher checksum",
+  "sourceReadMethod": "User executed download. Assistant read existing Linux archive/checksum without mutation, copied bytes to Windows evidence, and checked Linux-provided SHA-256 against local copies.",
+  "linuxSourceHashes": {
+    "libyaml-0.2.5.tar.gz": "77987051b6f5bee8ba472f1efbe0053663a58d8d3e7a2f0f4a27d178adbf8844",
+    "libyaml-0.2.5.tar.gz.sha256": "ab240d11b5d2882dfac7b3f4d323968a8b4c8b1cb48b4c8ced73da504343f14d"
+  },
+  "checks": {
+    "archiveMatchesScreenshotAndLinuxSHA256": true,
+    "checksumRecordMatchesArchive": true,
+    "singleExpectedCommitDirectory": true,
+    "relativePathsWithoutParentTraversal": true,
+    "uniqueMemberNames": true,
+    "regularFilesAndDirectoriesOnly": true,
+    "cmakeVersion0_2_5": true,
+    "sourceDirectoryContainsExactlyEightIntendedCFiles": true,
+    "cmakeSourcesMatchFixedScope": true,
+    "yamlTargetAndStaticConfigContext": true,
+    "configurationHeaderTemplateHasFourVersionMacros": true,
+    "libraryLicenseIsMIT": true
+  },
+  "archiveRegularFileCount": 62,
+  "targetSourcesInArchive": [
+    {
+      "file": "src/api.c",
+      "bytes": 36609,
+      "sha256": "71f9263a2c77237762c8fa5e7c3d2bdd35723ecf1e2898222c7a603a5bf3f2db"
+    },
+    {
+      "file": "src/dumper.c",
+      "bytes": 10067,
+      "sha256": "56fe41a1db73e1b9342b9381856e1fade8ea339a0b723bef90e7e1e8638bc441"
+    },
+    {
+      "file": "src/emitter.c",
+      "bytes": 66955,
+      "sha256": "fbec4f702153929ad1421636ab0f5ecded140f0f37014d5ab3c65dfecd7e0743"
+    },
+    {
+      "file": "src/loader.c",
+      "bytes": 14091,
+      "sha256": "68424f0b29e16434e7f2c0838b26dd4b68e04b567ad40f4f4c1bc61cd8e93479"
+    },
+    {
+      "file": "src/parser.c",
+      "bytes": 45039,
+      "sha256": "b418ed8d6ef7e86dbd0e59c8dc7a00c8e48200b0252dd41e25d00d4616c7b2dc"
+    },
+    {
+      "file": "src/reader.c",
+      "bytes": 16680,
+      "sha256": "c428a44b177391557bdf49177c1dc0216edf2a2bbe0e24ca2ef2725ef7f01e9d"
+    },
+    {
+      "file": "src/scanner.c",
+      "bytes": 99234,
+      "sha256": "bc3b30ceec0c696925e9703845874d7fafefb42bfbd3006dc4a02fc6d646f2d1"
+    },
+    {
+      "file": "src/writer.c",
+      "bytes": 4044,
+      "sha256": "44a75c870a0b7039e37b457850b31748a69ce3bf1bf39950e7b855acef472de2"
+    }
+  ],
+  "identityReferenceFiles": [
+    "src/api.c",
+    "src/dumper.c",
+    "src/emitter.c",
+    "src/loader.c",
+    "src/parser.c",
+    "src/reader.c",
+    "src/scanner.c",
+    "src/writer.c",
+    "CMakeLists.txt",
+    "cmake/config.h.in",
+    "include/yaml.h",
+    "src/yaml_private.h",
+    "License",
+    "yamlConfig.cmake.in",
+    "ReadMe.md"
+  ],
+  "licenseScope": "fixed repository License MIT; retained unchanged",
+  "sourceDirectoryExtraction": "pending user execution; selected archive members saved only as local identity evidence",
+  "build": "not run",
+  "toolAnalysis": "not run",
+  "formalThirtyCells": "all not run",
+  "screenshot": "../screenshots/P04/FIG-P04-01_archive.png"
+}

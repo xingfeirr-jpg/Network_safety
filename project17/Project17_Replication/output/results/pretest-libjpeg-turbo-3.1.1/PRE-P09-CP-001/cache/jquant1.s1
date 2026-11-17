@@ -1,0 +1,18 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+select_ncolors global:[rgb_blue,rgb_green,rgb_red] call:[while]
+output_value call:[return]
+largest_input_value call:[return]
+create_colormap call:[output_value,select_ncolors,while] noreturn:[while]
+create_colorindex call:[largest_input_value] noreturn:[largest_input_value]
+create_odither_tables call:[int,make_odither_array] noreturn:[make_odither_array]
+color_quantize
+color_quantize3
+quantize_ord_dither call:[jzero_far,sizeof]
+quantize3_ord_dither
+quantize_fs_dither call:[jzero_far,sizeof]
+alloc_fs_workspace call:[sizeof]
+start_pass_1_quant call:[alloc_fs_workspace,create_colorindex,create_odither_tables,jzero_far,sizeof] noreturn:[alloc_fs_workspace,create_colorindex,create_odither_tables,jzero_far]
+finish_pass_1_quant
+new_color_map_1_quant
+jinit_1pass_quantizer call:[alloc_fs_workspace,create_colorindex,create_colormap,sizeof] noreturn:[alloc_fs_workspace]

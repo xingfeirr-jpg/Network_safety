@@ -1,0 +1,1 @@
+/home/yhong/comp5355/.venv/bin/CodeChecker analyze /home/yhong/comp5355/build/libpng-1.6.50/compile_commands.json --analyzers clangsa -o /home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-CC-001/reports -j 1 --timeout 120 --compile-uniqueing none --capture-analysis-output --z3-refutation off 

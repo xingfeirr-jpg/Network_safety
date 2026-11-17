@@ -1,0 +1,14 @@
+[INFO 2026-10-27 09:51:06] - Enabled checker list can be found in /home/yhong/comp5355/results/pretest-cJSON-v1.7.19/codechecker/reports/metadata.json
+[INFO 2026-10-27 09:51:06] - Starting static analysis ...
+[INFO 2026-10-27 09:51:12] - [1/1] clangsa analyzed cJSON.c successfully.
+[INFO 2026-10-27 09:51:12] - ----==== Summary ====----
+[INFO 2026-10-27 09:51:12] - Successfully analyzed
+[INFO 2026-10-27 09:51:12] -   clangsa: 1
+[INFO 2026-10-27 09:51:12] - Total analyzed compilation commands: 1
+[INFO 2026-10-27 09:51:12] - ----=================----
+[INFO 2026-10-27 09:51:12] - Analysis finished.
+[INFO 2026-10-27 09:51:12] - To view results in the terminal use the "CodeChecker parse" command.
+[INFO 2026-10-27 09:51:12] - To store results use the "CodeChecker store" command.
+[INFO 2026-10-27 09:51:12] - See --help and the user guide for further options about parsing and storing the reports.
+[INFO 2026-10-27 09:51:12] - ----=================----
+[INFO 2026-10-27 09:51:12] - Analysis length: 5.94 sec.

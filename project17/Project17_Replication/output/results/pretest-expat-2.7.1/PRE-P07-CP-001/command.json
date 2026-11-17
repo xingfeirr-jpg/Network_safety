@@ -1,0 +1,14 @@
+[
+ "/usr/bin/cppcheck",
+ "--project=/home/yhong/comp5355/build/expat-2.7.1/compile_commands.json",
+ "--enable=warning,performance,portability,information",
+ "--check-level=normal",
+ "--platform=unix64",
+ "--std=c99",
+ "-j",
+ "1",
+ "--cppcheck-build-dir=/home/yhong/comp5355/results/pretest-expat-2.7.1/PRE-P07-CP-001/cache",
+ "--checkers-report=/home/yhong/comp5355/results/pretest-expat-2.7.1/PRE-P07-CP-001/checkers.txt",
+ "--xml",
+ "--xml-version=2"
+]

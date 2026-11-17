@@ -1,0 +1,608 @@
+[
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jcapistd.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapistd.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapistd.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jcapistd.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jccolor.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jccolor.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jcdiffct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdiffct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdiffct.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jcdiffct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jclossls.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jclossls.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jcmainct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmainct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmainct.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jcmainct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jcprepct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcprepct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcprepct.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jcprepct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jcsample.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcsample.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcsample.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jcsample.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jdapistd.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jdapistd.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jdcolor.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcolor.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcolor.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jdcolor.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jddiffct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddiffct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddiffct.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jddiffct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jdlossls.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlossls.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlossls.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jdlossls.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jdmainct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmainct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmainct.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jdmainct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jdpostct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdpostct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdpostct.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jdpostct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jdsample.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdsample.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdsample.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jdsample.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jutils.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jutils.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jutils.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jutils.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jccoefct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jccoefct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jcdctmgr.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdctmgr.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdctmgr.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jcdctmgr.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jdcoefct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcoefct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcoefct.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jdcoefct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jddctmgr.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddctmgr.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddctmgr.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jddctmgr.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jdmerge.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmerge.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmerge.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jdmerge.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jfdctfst.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctfst.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctfst.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jfdctfst.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jfdctint.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctint.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctint.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jfdctint.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jidctflt.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctflt.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctflt.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jidctflt.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jidctfst.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctfst.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctfst.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jidctfst.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jidctint.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctint.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctint.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jidctint.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jidctred.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctred.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctred.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jidctred.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jquant1.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant1.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant1.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jquant1.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=12 -o CMakeFiles/jpeg12-static.dir/src/jquant2.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c",
+    "output": "CMakeFiles/jpeg12-static.dir/src/jquant2.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -o CMakeFiles/jpeg16-static.dir/src/jcapistd.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapistd.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapistd.c",
+    "output": "CMakeFiles/jpeg16-static.dir/src/jcapistd.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -o CMakeFiles/jpeg16-static.dir/src/jccolor.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c",
+    "output": "CMakeFiles/jpeg16-static.dir/src/jccolor.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -o CMakeFiles/jpeg16-static.dir/src/jcdiffct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdiffct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdiffct.c",
+    "output": "CMakeFiles/jpeg16-static.dir/src/jcdiffct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -o CMakeFiles/jpeg16-static.dir/src/jclossls.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c",
+    "output": "CMakeFiles/jpeg16-static.dir/src/jclossls.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -o CMakeFiles/jpeg16-static.dir/src/jcmainct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmainct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmainct.c",
+    "output": "CMakeFiles/jpeg16-static.dir/src/jcmainct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -o CMakeFiles/jpeg16-static.dir/src/jcprepct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcprepct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcprepct.c",
+    "output": "CMakeFiles/jpeg16-static.dir/src/jcprepct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -o CMakeFiles/jpeg16-static.dir/src/jcsample.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcsample.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcsample.c",
+    "output": "CMakeFiles/jpeg16-static.dir/src/jcsample.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -o CMakeFiles/jpeg16-static.dir/src/jdapistd.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c",
+    "output": "CMakeFiles/jpeg16-static.dir/src/jdapistd.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -o CMakeFiles/jpeg16-static.dir/src/jdcolor.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcolor.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcolor.c",
+    "output": "CMakeFiles/jpeg16-static.dir/src/jdcolor.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -o CMakeFiles/jpeg16-static.dir/src/jddiffct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddiffct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddiffct.c",
+    "output": "CMakeFiles/jpeg16-static.dir/src/jddiffct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -o CMakeFiles/jpeg16-static.dir/src/jdlossls.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlossls.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlossls.c",
+    "output": "CMakeFiles/jpeg16-static.dir/src/jdlossls.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -o CMakeFiles/jpeg16-static.dir/src/jdmainct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmainct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmainct.c",
+    "output": "CMakeFiles/jpeg16-static.dir/src/jdmainct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -o CMakeFiles/jpeg16-static.dir/src/jdpostct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdpostct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdpostct.c",
+    "output": "CMakeFiles/jpeg16-static.dir/src/jdpostct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -o CMakeFiles/jpeg16-static.dir/src/jdsample.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdsample.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdsample.c",
+    "output": "CMakeFiles/jpeg16-static.dir/src/jdsample.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -DBITS_IN_JSAMPLE=16 -o CMakeFiles/jpeg16-static.dir/src/jutils.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jutils.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jutils.c",
+    "output": "CMakeFiles/jpeg16-static.dir/src/jutils.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jcapistd.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapistd.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapistd.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jcapistd.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jccolor.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jccolor.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jcdiffct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdiffct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdiffct.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jcdiffct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jclossls.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jclossls.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jcmainct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmainct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmainct.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jcmainct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jcprepct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcprepct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcprepct.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jcprepct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jcsample.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcsample.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcsample.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jcsample.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdapistd.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdapistd.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdcolor.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcolor.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcolor.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdcolor.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jddiffct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddiffct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddiffct.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jddiffct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdlossls.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlossls.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlossls.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdlossls.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdmainct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmainct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmainct.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdmainct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdpostct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdpostct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdpostct.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdpostct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdsample.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdsample.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdsample.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdsample.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jutils.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jutils.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jutils.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jutils.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jccoefct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jccoefct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jcdctmgr.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdctmgr.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdctmgr.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jcdctmgr.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdcoefct.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcoefct.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcoefct.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdcoefct.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jddctmgr.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddctmgr.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddctmgr.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jddctmgr.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdmerge.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmerge.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmerge.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdmerge.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jfdctfst.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctfst.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctfst.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jfdctfst.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jfdctint.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctint.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctint.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jfdctint.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jidctflt.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctflt.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctflt.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jidctflt.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jidctfst.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctfst.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctfst.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jidctfst.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jidctint.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctint.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctint.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jidctint.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jidctred.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctred.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctred.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jidctred.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jquant1.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant1.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant1.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jquant1.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jquant2.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jquant2.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jcapimin.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jcapimin.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jchuff.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jchuff.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jcicc.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcicc.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcicc.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jcicc.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jcinit.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcinit.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcinit.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jcinit.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jclhuff.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclhuff.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclhuff.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jclhuff.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jcmarker.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jcmarker.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jcmaster.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmaster.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmaster.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jcmaster.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jcomapi.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcomapi.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcomapi.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jcomapi.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jcparam.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcparam.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcparam.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jcparam.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jcphuff.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcphuff.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcphuff.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jcphuff.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jctrans.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jctrans.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdapimin.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapimin.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapimin.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdapimin.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdatadst.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatadst.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatadst.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdatadst.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdatasrc.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatasrc.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatasrc.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdatasrc.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdhuff.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdhuff.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdicc.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdicc.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdicc.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdicc.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdinput.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdinput.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdinput.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdinput.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdlhuff.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlhuff.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlhuff.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdlhuff.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdmarker.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmarker.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmarker.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdmarker.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdmaster.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdmaster.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdphuff.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdphuff.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdtrans.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdtrans.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdtrans.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdtrans.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jerror.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jerror.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jerror.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jerror.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jfdctflt.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctflt.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctflt.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jfdctflt.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jmemmgr.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jmemmgr.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jmemnobs.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemnobs.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemnobs.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jmemnobs.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jpeg_nbits.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeg_nbits.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeg_nbits.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jpeg_nbits.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jaricom.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jaricom.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jaricom.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jaricom.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jcarith.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jcarith.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/libjpeg-turbo-3.1.1 -I/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src -g -o CMakeFiles/jpeg-static.dir/src/jdarith.c.o -c /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c",
+    "file": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c",
+    "output": "CMakeFiles/jpeg-static.dir/src/jdarith.c.o"
+  }
+]

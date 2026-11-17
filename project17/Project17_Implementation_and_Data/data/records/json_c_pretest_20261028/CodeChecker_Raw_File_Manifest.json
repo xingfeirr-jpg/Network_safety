@@ -1,0 +1,289 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/checkers-command.txt",
+    "relative": "checkers-command.txt",
+    "bytes": 97,
+    "sha256": "aa4bbff26108260126a5f8f06b354b217d0143c0eb64f7578f9d077868792426",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/checkers-command.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/checkers-exit-code.txt",
+    "relative": "checkers-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/checkers-exit-code.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/checkers-stderr.txt",
+    "relative": "checkers-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/checkers-stderr.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/checkers.json",
+    "relative": "checkers.json",
+    "bytes": 55704,
+    "sha256": "0411fbf39b0a30e44f6dfe413248785f565c5d5ea370259818ba0a19336a44f4",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/checkers.json"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/command.txt",
+    "relative": "command.txt",
+    "bytes": 298,
+    "sha256": "1709e49464153b88d48aae758bd84d4f9653a1465187d25690fdb41bf66a3a36",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/command.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/configuration-environment.txt",
+    "relative": "configuration-environment.txt",
+    "bytes": 69,
+    "sha256": "4a7b2e770132b2be586435697590e01041c97ac25719c63c675bd139906d8bc4",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/configuration-environment.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/environment-start.txt",
+    "relative": "environment-start.txt",
+    "bytes": 2525,
+    "sha256": "2fda0cc5afb263383192f92b967b0ec5eda4b861580911be98a92770725d472e",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/environment-start.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/exit-code.txt",
+    "relative": "exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/exit-code.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/findings-command.txt",
+    "relative": "findings-command.txt",
+    "bytes": 122,
+    "sha256": "285866f4d0b22b1acff18799df36c88505ca67c053b293d0e66ec90e11c1d082",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/findings-command.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/findings-exit-code.txt",
+    "relative": "findings-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/findings-exit-code.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/findings-stderr.txt",
+    "relative": "findings-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/findings-stderr.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/findings.txt",
+    "relative": "findings.txt",
+    "bytes": 1859,
+    "sha256": "974ae6dfb2c8bb58aa56b2307c7f0a43999d62fe9c8c1efff5d4068ef7651821",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/findings.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/input-files.sha256",
+    "relative": "input-files.sha256",
+    "bytes": 4861,
+    "sha256": "1dee73fa776d2979c0460597fd2fbe7764519436669ab28056fdc34bb5095a8a",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/input-files.sha256"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/parse-status-command.txt",
+    "relative": "parse-status-command.txt",
+    "bytes": 142,
+    "sha256": "5ca893f83eb46fa524753581ee4ff3fadc8f031d62b4b02c65a7edcd5ca03802",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/parse-status-command.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/parse-status-exit-code.txt",
+    "relative": "parse-status-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/parse-status-exit-code.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/parse-status-stderr.txt",
+    "relative": "parse-status-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/parse-status-stderr.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/parse-status.txt",
+    "relative": "parse-status.txt",
+    "bytes": 4838,
+    "sha256": "66c7c99ac071d26e42bf115eeecc0fb7f87047a3de8f0dd2a73864ce2de71dc3",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/parse-status.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/prepared-profile.json",
+    "relative": "prepared-profile.json",
+    "bytes": 18084,
+    "sha256": "f3f2d286f05c56b3f0762087b803ca74933c7746b797aeae5f2227247359efbd",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/prepared-profile.json"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/arraylist.c_clangsa_36e38d91a5412e621b486ace548dcded.plist",
+    "relative": "reports/arraylist.c_clangsa_36e38d91a5412e621b486ace548dcded.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/arraylist.c_clangsa_36e38d91a5412e621b486ace548dcded.plist"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/compile_cmd.json",
+    "relative": "reports/compile_cmd.json",
+    "bytes": 8452,
+    "sha256": "e786149d71c8b879adff7ace2baba8102c585f1f863afdec27dbcb3965e4c295",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/compile_cmd.json"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/compiler_info.json",
+    "relative": "reports/compiler_info.json",
+    "bytes": 243,
+    "sha256": "74b923fb5a34a453fbd815eb22b1561c31b5c1a96f2fc54e162ce3be904876eb",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/compiler_info.json"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/debug.c_clangsa_b1bde3162345ecd4362789e9c14ad5f6.plist",
+    "relative": "reports/debug.c_clangsa_b1bde3162345ecd4362789e9c14ad5f6.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/debug.c_clangsa_b1bde3162345ecd4362789e9c14ad5f6.plist"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/json_c_version.c_clangsa_bbce485230f3d0b361482a2886a54101.plist",
+    "relative": "reports/json_c_version.c_clangsa_bbce485230f3d0b361482a2886a54101.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/json_c_version.c_clangsa_bbce485230f3d0b361482a2886a54101.plist"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/json_object.c_clangsa_fcd58b52d17b89c4424012a00cfcb75f.plist",
+    "relative": "reports/json_object.c_clangsa_fcd58b52d17b89c4424012a00cfcb75f.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/json_object.c_clangsa_fcd58b52d17b89c4424012a00cfcb75f.plist"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/json_object_iterator.c_clangsa_ae33ee4b8728f4d0d6b6d49d3933b5bf.plist",
+    "relative": "reports/json_object_iterator.c_clangsa_ae33ee4b8728f4d0d6b6d49d3933b5bf.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/json_object_iterator.c_clangsa_ae33ee4b8728f4d0d6b6d49d3933b5bf.plist"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/json_patch.c_clangsa_32c0933836bce2478d36cda606b25253.plist",
+    "relative": "reports/json_patch.c_clangsa_32c0933836bce2478d36cda606b25253.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/json_patch.c_clangsa_32c0933836bce2478d36cda606b25253.plist"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/json_pointer.c_clangsa_96ee1912a12797f507c2083b768d59f4.plist",
+    "relative": "reports/json_pointer.c_clangsa_96ee1912a12797f507c2083b768d59f4.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/json_pointer.c_clangsa_96ee1912a12797f507c2083b768d59f4.plist"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/json_tokener.c_clangsa_ffeafda92fe4597f9bcc421494981eb4.plist",
+    "relative": "reports/json_tokener.c_clangsa_ffeafda92fe4597f9bcc421494981eb4.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/json_tokener.c_clangsa_ffeafda92fe4597f9bcc421494981eb4.plist"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/json_util.c_clangsa_34b8d31dd7f2ce23065ed1f5fa6c2a16.plist",
+    "relative": "reports/json_util.c_clangsa_34b8d31dd7f2ce23065ed1f5fa6c2a16.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/json_util.c_clangsa_34b8d31dd7f2ce23065ed1f5fa6c2a16.plist"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/json_visit.c_clangsa_c92106d816b18f53071fc402fc5d44ff.plist",
+    "relative": "reports/json_visit.c_clangsa_c92106d816b18f53071fc402fc5d44ff.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/json_visit.c_clangsa_c92106d816b18f53071fc402fc5d44ff.plist"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/linkhash.c_clangsa_7c4dd1e0cf7d29889eb5d32d35d4b2d8.plist",
+    "relative": "reports/linkhash.c_clangsa_7c4dd1e0cf7d29889eb5d32d35d4b2d8.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/linkhash.c_clangsa_7c4dd1e0cf7d29889eb5d32d35d4b2d8.plist"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/metadata.json",
+    "relative": "reports/metadata.json",
+    "bytes": 9883,
+    "sha256": "7e0a8f81a862ddbd0ce6e6959541b113160bfe42a693baf7ce86593f61431e1a",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/metadata.json"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/printbuf.c_clangsa_2eb45adaa63443473dd59c67859a6da9.plist",
+    "relative": "reports/printbuf.c_clangsa_2eb45adaa63443473dd59c67859a6da9.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/printbuf.c_clangsa_2eb45adaa63443473dd59c67859a6da9.plist"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/random_seed.c_clangsa_6d8a85a1a4a85306994e98e340e00860.plist",
+    "relative": "reports/random_seed.c_clangsa_6d8a85a1a4a85306994e98e340e00860.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/random_seed.c_clangsa_6d8a85a1a4a85306994e98e340e00860.plist"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/strerror_override.c_clangsa_c580855a9e816f4a4938e8008774f853.plist",
+    "relative": "reports/strerror_override.c_clangsa_c580855a9e816f4a4938e8008774f853.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/strerror_override.c_clangsa_c580855a9e816f4a4938e8008774f853.plist"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/unique_compile_commands.json",
+    "relative": "reports/unique_compile_commands.json",
+    "bytes": 7426,
+    "sha256": "ce49b4c723593c99fd8402cfaa6b90d9080fb5a45c26b5b352309f69c0da36cb",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/reports/unique_compile_commands.json"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/result-summary-pending.json",
+    "relative": "result-summary-pending.json",
+    "bytes": 3328,
+    "sha256": "15d30a877458aef33ad6644ed043a37d8d8cc243edad5d10e2f8e93c813cbdc4",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/result-summary-pending.json"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/run-meta.tsv",
+    "relative": "run-meta.tsv",
+    "bytes": 445,
+    "sha256": "217d5c4bdaaafa004cee4ed584fdc8319047de4b094d926b30cdd7a64c15dfcf",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/run-meta.tsv"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/stderr.txt",
+    "relative": "stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/stderr.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/stdout.txt",
+    "relative": "stdout.txt",
+    "bytes": 2083,
+    "sha256": "86f701adfc1ad61516a6f73ac5f37624199da9f66be3c2a18be04134955bf054",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/stdout.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/time.txt",
+    "relative": "time.txt",
+    "bytes": 1020,
+    "sha256": "321cdbccaea7cbaa2c37aa379986eccfc8b31e7506cb14d079624a590b6e1ee2",
+    "localCopy": "review_evidence/json_c_pretest_20261028/CodeChecker/time.txt"
+  }
+]

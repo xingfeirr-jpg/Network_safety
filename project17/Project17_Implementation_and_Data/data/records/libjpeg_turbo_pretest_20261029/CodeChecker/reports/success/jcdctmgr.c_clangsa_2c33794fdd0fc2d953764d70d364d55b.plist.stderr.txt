@@ -1,0 +1,4 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdctmgr.c:106:5: warning: Value stored to 'val' is never read [deadcode.DeadStores]
+  106 |     val <<= 1;
+      |     ^       ~
+1 warning generated.

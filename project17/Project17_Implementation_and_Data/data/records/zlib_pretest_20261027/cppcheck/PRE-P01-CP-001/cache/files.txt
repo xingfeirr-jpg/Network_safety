@@ -1,0 +1,15 @@
+adler32.a1::/home/yhong/comp5355/sources/zlib-v1.3.2/adler32.c
+compress.a1::/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c
+crc32.a1::/home/yhong/comp5355/sources/zlib-v1.3.2/crc32.c
+deflate.a1::/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c
+gzclose.a1::/home/yhong/comp5355/sources/zlib-v1.3.2/gzclose.c
+gzlib.a1::/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c
+gzread.a1::/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c
+gzwrite.a1::/home/yhong/comp5355/sources/zlib-v1.3.2/gzwrite.c
+inflate.a1::/home/yhong/comp5355/sources/zlib-v1.3.2/inflate.c
+infback.a1::/home/yhong/comp5355/sources/zlib-v1.3.2/infback.c
+inftrees.a1::/home/yhong/comp5355/sources/zlib-v1.3.2/inftrees.c
+inffast.a1::/home/yhong/comp5355/sources/zlib-v1.3.2/inffast.c
+trees.a1::/home/yhong/comp5355/sources/zlib-v1.3.2/trees.c
+uncompr.a1::/home/yhong/comp5355/sources/zlib-v1.3.2/uncompr.c
+zutil.a1::/home/yhong/comp5355/sources/zlib-v1.3.2/zutil.c

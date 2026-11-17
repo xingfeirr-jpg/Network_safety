@@ -1,0 +1,4 @@
+uncompress2_z call:[inflate,inflateEnd,inflateInit_,return,sizeof,while] noreturn:[inflate,return]
+uncompress2 call:[uncompress2_z]
+uncompress_z call:[uncompress2_z] noreturn:[uncompress2_z]
+uncompress call:[uncompress2] noreturn:[uncompress2]

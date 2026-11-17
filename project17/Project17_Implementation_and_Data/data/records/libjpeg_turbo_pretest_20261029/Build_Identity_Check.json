@@ -1,0 +1,2129 @@
+{
+  "project": "P09 libjpeg-turbo",
+  "version": "3.1.1",
+  "commit": "7723f50f3f66b9da74376e6d8badb6162464212c",
+  "runId": "PREP-P09-001",
+  "accepted": true,
+  "acceptedDate": "2026-10-29",
+  "acceptedAtUTC": "2026-10-29T02:37:47.341611+00:00",
+  "purpose": "functional pretest build preparation only;formal30 cells remain not run",
+  "rawFiles": 186,
+  "rawFileGroups": {
+    "preparation": 67,
+    "build_environment": 6,
+    "build": 113
+  },
+  "rawManifestSHA256": "7a7fe889a3840bd3f13a933e437d1c5d70498613892dc730ef397d60409b92ba",
+  "configured": true,
+  "built": true,
+  "scanned": false,
+  "threeToolStatus": "not_run",
+  "candidateCounts": null,
+  "rawDatabaseActions": 136,
+  "selectedCompileActions": 101,
+  "excludedPeripheralActions": 35,
+  "excludedPeripheralTargetCounts": {
+    "cjpeg12-static": 1,
+    "cjpeg16-static": 1,
+    "cjpeg-static": 7,
+    "djpeg12-static": 3,
+    "djpeg16-static": 1,
+    "djpeg-static": 8,
+    "jpegtran-static": 4,
+    "example-static": 1,
+    "rdjpgcom": 1,
+    "wrjpgcom": 1,
+    "strtest": 1,
+    "src/md5/CMakeFiles/md5cmp": 3,
+    "src/md5/CMakeFiles/md5sum": 3
+  },
+  "targetActionCounts": {
+    "jpeg12-static": 28,
+    "jpeg16-static": 15,
+    "jpeg-static": 58
+  },
+  "uniqueCompiledSourcePaths": 58,
+  "actualObjectFiles": 101,
+  "archiveMembers": 101,
+  "archiveDuplicateBasenames": {
+    "jcapistd.c.o": 3,
+    "jccolor.c.o": 3,
+    "jcdiffct.c.o": 3,
+    "jclossls.c.o": 3,
+    "jcmainct.c.o": 3,
+    "jcprepct.c.o": 3,
+    "jcsample.c.o": 3,
+    "jdapistd.c.o": 3,
+    "jdcolor.c.o": 3,
+    "jddiffct.c.o": 3,
+    "jdlossls.c.o": 3,
+    "jdmainct.c.o": 3,
+    "jdpostct.c.o": 3,
+    "jdsample.c.o": 3,
+    "jutils.c.o": 3,
+    "jccoefct.c.o": 2,
+    "jcdctmgr.c.o": 2,
+    "jdcoefct.c.o": 2,
+    "jddctmgr.c.o": 2,
+    "jdmerge.c.o": 2,
+    "jfdctfst.c.o": 2,
+    "jfdctint.c.o": 2,
+    "jidctflt.c.o": 2,
+    "jidctfst.c.o": 2,
+    "jidctint.c.o": 2,
+    "jidctred.c.o": 2,
+    "jquant1.c.o": 2,
+    "jquant2.c.o": 2
+  },
+  "archiveComparison": "every member matched in archive command order by basename,size,SHA256;duplicate basenames retained separately",
+  "staticLibrary": "libjpeg.a",
+  "staticLibraryBytes": 4009102,
+  "staticLibrarySHA256": "0d64b9c73de3590034734cb2ebb4457ce18908f51079269121766832f361d2b1",
+  "rawDatabaseSHA256": "52ce69376478f38601873f1c95059c83a364cad388179adafe963c79397733ae",
+  "selectedDatabase": "review_evidence/libjpeg_turbo_pretest_20261029/analysis_inputs/compile_commands.json",
+  "selectedDatabaseLinuxPath": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_pretest_20261029/analysis_inputs/compile_commands.json",
+  "selectedDatabaseSHA256": "b805ebf4e7eae4fe360e8a896c363107f9b0d501fade1a5f3933e1a6e9957d80",
+  "selectedDatabasePolicy": "preserve original selected101 rows and all8/12/16-bit actions;Linux file,directory,command paths unchanged;raw DB retained unmodified",
+  "projectDependencyFiles": 88,
+  "dependencyKindCounts": {
+    "generated_header": 3,
+    "compiled_c": 58,
+    "included_c": 6,
+    "project_header": 21,
+    "system_or_compiler": 84
+  },
+  "totalUniqueDependencies": 172,
+  "generatedHeaders": [
+    {
+      "linuxPath": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jconfig.h",
+      "localFile": "build/jconfig.h",
+      "kind": "generated_header",
+      "usedByActions": 100,
+      "bytes": 2068,
+      "sha256": "647133bff7661b0fd15170f2b5559c3a438e59a4ababc51916a9495eb700d6d7"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jconfigint.h",
+      "localFile": "build/jconfigint.h",
+      "kind": "generated_header",
+      "usedByActions": 101,
+      "bytes": 1821,
+      "sha256": "35fb57df8fd39839a43e555d69db7d967c999a82585a7cfa3a1456ca850799f3"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jversion.h",
+      "localFile": "build/jversion.h",
+      "kind": "generated_header",
+      "usedByActions": 1,
+      "bytes": 1818,
+      "sha256": "7e1c15351d3a9bea7a0fef108e10f7d643bc5bb7f47c65195ef4730466c019ab"
+    }
+  ],
+  "effectiveLanguage": "default GNU C17;actual compilation and driver have no explicit-std;__STDC_VERSION__=201710L;__STRICT_ANSI__ absent",
+  "compilerContext": "101 read-only -E -dM and -### -fsyntax-only queries preserve actual per-action macros and system/compiler search directories;no objects regenerated",
+  "actualOptions": {
+    "ENABLE_SHARED": "OFF",
+    "ENABLE_STATIC": "ON",
+    "WITH_SIMD": "OFF",
+    "REQUIRE_SIMD": "OFF",
+    "WITH_TURBOJPEG": "OFF",
+    "WITH_JAVA": "OFF",
+    "WITH_FUZZ": "OFF",
+    "WITH_ARITH_ENC": "ON",
+    "WITH_ARITH_DEC": "ON",
+    "WITH_JPEG7": "OFF",
+    "WITH_JPEG8": "OFF",
+    "CMAKE_BUILD_TYPE": "Debug",
+    "CMAKE_C_COMPILER": "/usr/bin/clang-18",
+    "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+    "CMAKE_GENERATOR": "Ninja",
+    "CMAKE_HOME_DIRECTORY": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1",
+    "CMAKE_INSTALL_PREFIX": "/home/yhong/comp5355/deps/libjpeg-turbo-3.1.1"
+  },
+  "actualAdditionalCache": {
+    "CMAKE_C_FLAGS": "",
+    "CMAKE_C_FLAGS_DEBUG": "-g",
+    "CMAKE_C_COMPILER_AR": "CMAKE_C_COMPILER_AR-NOTFOUND",
+    "CMAKE_C_COMPILER_RANLIB": "CMAKE_C_COMPILER_RANLIB-NOTFOUND",
+    "FORCE_INLINE": "ON"
+  },
+  "inheritedBuildEnvironment": "CC=<unset>\nCXX=<unset>\nCFLAGS=<unset>\nCPPFLAGS=<unset>\nCXXFLAGS=<unset>\nLDFLAGS=<unset>\nAR=<unset>\nRANLIB=<unset>\nCMAKE_TOOLCHAIN_FILE=<unset>\nCMAKE_GENERATOR=<unset>\nCMAKE_BUILD_PARALLEL_LEVEL=<unset>\n",
+  "environmentSession": "/home/yhong/comp5355/environment/session-20261029T022436-p09-22994",
+  "startedUTC": "2026-10-29T02:24:37Z",
+  "endedUTC": "2026-10-29T02:25:00Z",
+  "preparationCostsGNUTime": {
+    "configure": {
+      "wallSeconds": 17.88,
+      "wallOriginal": "0:17.88",
+      "userSeconds": 0.39,
+      "systemSeconds": 1.13,
+      "maxRSSKiB": 91152,
+      "exitStatus": 0
+    },
+    "build": {
+      "wallSeconds": 3.12,
+      "wallOriginal": "0:03.12",
+      "userSeconds": 2.33,
+      "systemSeconds": 0.85,
+      "maxRSSKiB": 122628,
+      "exitStatus": 0
+    }
+  },
+  "costBoundary": "configure and complete single-job target build measured separately;source identity,environment,copies,compiler queries and future analysis excluded;maxRSS is GNU time reported maximum,not process-tree sum",
+  "sourceRegularFiles": 546,
+  "sourceDirectoriesIncludingRoot": 42,
+  "sourceUnchangedBeforeAfterAndFresh": true,
+  "executedInputs": [
+    {
+      "linuxPath": "/mnt/d/Project/COMP5355 Cyber and Internet Security/scripts/libjpeg_turbo_prepare_build.sh",
+      "localFile": "scripts/libjpeg_turbo_prepare_build.sh",
+      "sha256": "8b6117dd4227607c6f3841ce02cdf25c4edab0c105a97d119bd468fd87063d99"
+    },
+    {
+      "linuxPath": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_setup/Verify_Build_Source.py",
+      "localFile": "review_evidence/libjpeg_turbo_setup/Verify_Build_Source.py",
+      "sha256": "9176d407e27402ebc16e73d06f9e569662aecd95cbecbadc6b546fa5e85610d5"
+    },
+    {
+      "linuxPath": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_setup/Verify_Extracted_Source.py",
+      "localFile": "review_evidence/libjpeg_turbo_setup/Verify_Extracted_Source.py",
+      "sha256": "8cfefe4aea515ba87fff3b6a437b13f6c90e680a7f5cd23b3b4b9ad496d23f63"
+    },
+    {
+      "linuxPath": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_setup/Inspect_Release_Archive.py",
+      "localFile": "review_evidence/libjpeg_turbo_setup/Inspect_Release_Archive.py",
+      "sha256": "69f500a25f2ad343c296ae01c69d795a79369f86a0c4e7ab8fdf23c0fb42c906"
+    },
+    {
+      "linuxPath": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_setup/Download_Profile.json",
+      "localFile": "review_evidence/libjpeg_turbo_setup/Download_Profile.json",
+      "sha256": "847dcf76333d9a2013349e7276cf1f86967797a02989a2538013df263c7b1bf9"
+    },
+    {
+      "linuxPath": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_setup/Build_Profile.json",
+      "localFile": "review_evidence/libjpeg_turbo_setup/Build_Profile.json",
+      "sha256": "5e4ab65ad74c1fd813a784307f5de840e0afafa68fd8abbba4b35fea8616420f"
+    },
+    {
+      "linuxPath": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_pretest_20261029/Archive_Identity_Check.json",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/Archive_Identity_Check.json",
+      "sha256": "be58cd1b202f17105b860c6f599220144e77b7a1c23fab87c5c2d6ed8738ad99"
+    },
+    {
+      "linuxPath": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_pretest_20261029/Source_Identity_Check.json",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/Source_Identity_Check.json",
+      "sha256": "5fbf3fab9f20556267cc8fd83cad3e06d2fc1cf139076d632a0da0cd4aa0492d"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/preparation/SRC-P09-001/source-check.json",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/source/source-check.json",
+      "sha256": "f0bd826d4947555a41a6aacced439c762b1dd44996cf0bd86d25a1f7b5d7ff6e"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/archive-check.json",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/raw_download/DL-P09-001/archive-check.json",
+      "sha256": "711fac89e3cc5556933414baf5c57910864966826059beede52d829b0b51c0c8"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1.tar.gz",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/archive/libjpeg-turbo-3.1.1.tar.gz",
+      "sha256": "aadc97ea91f6ef078b0ae3a62bba69e008d9a7db19b34e4ac973b19b71b4217c"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/environment/session-20261029T022436-p09-22994/system.txt",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/build_environment/system.txt",
+      "sha256": "f1946e0291f8feed23fdce9326d94024a45490fabacda7db7f35f8a0be16611b"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/environment/session-20261029T022436-p09-22994/tool-versions.txt",
+      "localFile": "review_evidence/libjpeg_turbo_pretest_20261029/build_environment/tool-versions.txt",
+      "sha256": "50114a1314065faff6546dcd68da1c5c6dbc27cffde6215ad14700ee722691ad"
+    }
+  ],
+  "checks": [
+    {
+      "check": "已验收源码身份JSON固定SHA保持",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "本轮收集原件路径唯一且全部大小与SHA一致",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "全部收集文件数与只读回执一致",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "准备阶段Profile与已固定配置逐字节一致",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际执行输入SHA保持：scripts/libjpeg_turbo_prepare_build.sh",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际执行输入SHA保持：review_evidence/libjpeg_turbo_setup/Verify_Build_Source.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际执行输入SHA保持：review_evidence/libjpeg_turbo_setup/Verify_Extracted_Source.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际执行输入SHA保持：review_evidence/libjpeg_turbo_setup/Inspect_Release_Archive.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际执行输入SHA保持：review_evidence/libjpeg_turbo_setup/Download_Profile.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际执行输入SHA保持：review_evidence/libjpeg_turbo_setup/Build_Profile.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际执行输入SHA保持：review_evidence/libjpeg_turbo_pretest_20261029/Archive_Identity_Check.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际执行输入SHA保持：review_evidence/libjpeg_turbo_pretest_20261029/Source_Identity_Check.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际执行输入SHA保持：review_evidence/libjpeg_turbo_pretest_20261029/source/source-check.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际执行输入SHA保持：review_evidence/libjpeg_turbo_pretest_20261029/raw_download/DL-P09-001/archive-check.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际执行输入SHA保持：review_evidence/libjpeg_turbo_pretest_20261029/archive/libjpeg-turbo-3.1.1.tar.gz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际执行输入SHA保持：review_evidence/libjpeg_turbo_pretest_20261029/build_environment/system.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际执行输入SHA保持：review_evidence/libjpeg_turbo_pretest_20261029/build_environment/tool-versions.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "准备阶段13项实际输入已核对",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "configure退出0且命令已保存",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "configure标准错误为空",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "build退出0且命令已保存",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "build标准错误为空",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source-before-build退出0且命令已保存",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source-before-build标准错误为空",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source-after-build退出0且命令已保存",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source-after-build标准错误为空",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "archive-objects退出0且命令已保存",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "archive-objects标准错误为空",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ninja-deps退出0且命令已保存",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ninja-deps标准错误为空",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "target-commands退出0且命令已保存",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "target-commands标准错误为空",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "target-query退出0且命令已保存",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "target-query标准错误为空",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "archive-query退出0且命令已保存",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "archive-query标准错误为空",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jpeg12-query退出0且命令已保存",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jpeg12-query标准错误为空",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jpeg16-query退出0且命令已保存",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "jpeg16-query标准错误为空",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "运行身份、UTC区间、串行目标与脚本退出码有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "before完整源树与SRC及原包保持",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "after完整源树与SRC及原包保持",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fresh完整源树与SRC及原包保持",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "源码守卫阶段与不执行构建的边界正确",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "保留的全部546源文件与本轮真实源树大小及SHA保持",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "保存上下文与实际构建字节一致：compile_commands.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "保存上下文与实际构建字节一致：CMakeCache.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "保存上下文与实际构建字节一致：build.ninja",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "保存上下文与实际构建字节一致：CMakeFiles/rules.ninja",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "保存上下文与实际构建字节一致：jconfig.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "保存上下文与实际构建字节一致：jconfigint.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "保存上下文与实际构建字节一致：jversion.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "保存上下文与实际构建字节一致：libjpeg.a",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "保存上下文与实际构建字节一致：.ninja_log",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "保存上下文与实际构建字节一致：.ninja_deps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "保存上下文与实际构建字节一致：CMakeFiles/CMakeConfigureLog.yaml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "保存上下文与实际构建字节一致：CMakeFiles/3.28.3/CMakeCCompiler.cmake",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "12份构建上下文原件与实际目录已逐字节核对",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "构建原产物SHA保持：/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/libjpeg.a",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "构建原产物SHA保持：/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/compile_commands.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "构建原产物SHA保持：/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/CMakeCache.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "构建原产物SHA保持：/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/build.ninja",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "构建原产物SHA保持：/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jconfig.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "构建原产物SHA保持：/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jconfigint.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "构建原产物SHA保持：/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jversion.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际Cache满足全部固定项目选项及构建设置",
+      "passed": true,
+      "detail": {
+        "ENABLE_SHARED": "OFF",
+        "ENABLE_STATIC": "ON",
+        "WITH_SIMD": "OFF",
+        "REQUIRE_SIMD": "OFF",
+        "WITH_TURBOJPEG": "OFF",
+        "WITH_JAVA": "OFF",
+        "WITH_FUZZ": "OFF",
+        "WITH_ARITH_ENC": "ON",
+        "WITH_ARITH_DEC": "ON",
+        "WITH_JPEG7": "OFF",
+        "WITH_JPEG8": "OFF",
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_C_COMPILER": "/usr/bin/clang-18",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "CMAKE_GENERATOR": "Ninja",
+        "CMAKE_HOME_DIRECTORY": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1",
+        "CMAKE_INSTALL_PREFIX": "/home/yhong/comp5355/deps/libjpeg-turbo-3.1.1"
+      }
+    },
+    {
+      "check": "主库三目标完整101真实C动作保留",
+      "passed": true,
+      "detail": {
+        "jpeg12-static": 28,
+        "jpeg16-static": 15,
+        "jpeg-static": 58
+      }
+    },
+    {
+      "check": "独立筛选结果与Linux只读筛选逐行一致",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "101动作输出唯一且实际对象均保留",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "全部动作使用真实Clang18Debug与固定源码包含路径且未显式设置标准",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "按位深保留同源不同动作而非路径去重",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Ninja主目标命令闭包为101编译加1归档",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Ninja真实编译命令输出与选中数据库完全对应",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际归档命令按顺序覆盖101对象",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际ar t与本地逐成员解析的101名称顺序一致",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位1对应实际对象CMakeFiles/jpeg12-static.dir/src/jcapistd.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位2对应实际对象CMakeFiles/jpeg12-static.dir/src/jccolor.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位3对应实际对象CMakeFiles/jpeg12-static.dir/src/jcdiffct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位4对应实际对象CMakeFiles/jpeg12-static.dir/src/jclossls.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位5对应实际对象CMakeFiles/jpeg12-static.dir/src/jcmainct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位6对应实际对象CMakeFiles/jpeg12-static.dir/src/jcprepct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位7对应实际对象CMakeFiles/jpeg12-static.dir/src/jcsample.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位8对应实际对象CMakeFiles/jpeg12-static.dir/src/jdapistd.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位9对应实际对象CMakeFiles/jpeg12-static.dir/src/jdcolor.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位10对应实际对象CMakeFiles/jpeg12-static.dir/src/jddiffct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位11对应实际对象CMakeFiles/jpeg12-static.dir/src/jdlossls.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位12对应实际对象CMakeFiles/jpeg12-static.dir/src/jdmainct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位13对应实际对象CMakeFiles/jpeg12-static.dir/src/jdpostct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位14对应实际对象CMakeFiles/jpeg12-static.dir/src/jdsample.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位15对应实际对象CMakeFiles/jpeg12-static.dir/src/jutils.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位16对应实际对象CMakeFiles/jpeg12-static.dir/src/jccoefct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位17对应实际对象CMakeFiles/jpeg12-static.dir/src/jcdctmgr.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位18对应实际对象CMakeFiles/jpeg12-static.dir/src/jdcoefct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位19对应实际对象CMakeFiles/jpeg12-static.dir/src/jddctmgr.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位20对应实际对象CMakeFiles/jpeg12-static.dir/src/jdmerge.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位21对应实际对象CMakeFiles/jpeg12-static.dir/src/jfdctfst.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位22对应实际对象CMakeFiles/jpeg12-static.dir/src/jfdctint.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位23对应实际对象CMakeFiles/jpeg12-static.dir/src/jidctflt.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位24对应实际对象CMakeFiles/jpeg12-static.dir/src/jidctfst.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位25对应实际对象CMakeFiles/jpeg12-static.dir/src/jidctint.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位26对应实际对象CMakeFiles/jpeg12-static.dir/src/jidctred.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位27对应实际对象CMakeFiles/jpeg12-static.dir/src/jquant1.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位28对应实际对象CMakeFiles/jpeg12-static.dir/src/jquant2.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位29对应实际对象CMakeFiles/jpeg16-static.dir/src/jcapistd.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位30对应实际对象CMakeFiles/jpeg16-static.dir/src/jccolor.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位31对应实际对象CMakeFiles/jpeg16-static.dir/src/jcdiffct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位32对应实际对象CMakeFiles/jpeg16-static.dir/src/jclossls.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位33对应实际对象CMakeFiles/jpeg16-static.dir/src/jcmainct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位34对应实际对象CMakeFiles/jpeg16-static.dir/src/jcprepct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位35对应实际对象CMakeFiles/jpeg16-static.dir/src/jcsample.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位36对应实际对象CMakeFiles/jpeg16-static.dir/src/jdapistd.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位37对应实际对象CMakeFiles/jpeg16-static.dir/src/jdcolor.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位38对应实际对象CMakeFiles/jpeg16-static.dir/src/jddiffct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位39对应实际对象CMakeFiles/jpeg16-static.dir/src/jdlossls.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位40对应实际对象CMakeFiles/jpeg16-static.dir/src/jdmainct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位41对应实际对象CMakeFiles/jpeg16-static.dir/src/jdpostct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位42对应实际对象CMakeFiles/jpeg16-static.dir/src/jdsample.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位43对应实际对象CMakeFiles/jpeg16-static.dir/src/jutils.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位44对应实际对象CMakeFiles/jpeg-static.dir/src/jcapistd.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位45对应实际对象CMakeFiles/jpeg-static.dir/src/jccolor.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位46对应实际对象CMakeFiles/jpeg-static.dir/src/jcdiffct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位47对应实际对象CMakeFiles/jpeg-static.dir/src/jclossls.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位48对应实际对象CMakeFiles/jpeg-static.dir/src/jcmainct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位49对应实际对象CMakeFiles/jpeg-static.dir/src/jcprepct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位50对应实际对象CMakeFiles/jpeg-static.dir/src/jcsample.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位51对应实际对象CMakeFiles/jpeg-static.dir/src/jdapistd.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位52对应实际对象CMakeFiles/jpeg-static.dir/src/jdcolor.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位53对应实际对象CMakeFiles/jpeg-static.dir/src/jddiffct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位54对应实际对象CMakeFiles/jpeg-static.dir/src/jdlossls.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位55对应实际对象CMakeFiles/jpeg-static.dir/src/jdmainct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位56对应实际对象CMakeFiles/jpeg-static.dir/src/jdpostct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位57对应实际对象CMakeFiles/jpeg-static.dir/src/jdsample.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位58对应实际对象CMakeFiles/jpeg-static.dir/src/jutils.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位59对应实际对象CMakeFiles/jpeg-static.dir/src/jccoefct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位60对应实际对象CMakeFiles/jpeg-static.dir/src/jcdctmgr.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位61对应实际对象CMakeFiles/jpeg-static.dir/src/jdcoefct.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位62对应实际对象CMakeFiles/jpeg-static.dir/src/jddctmgr.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位63对应实际对象CMakeFiles/jpeg-static.dir/src/jdmerge.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位64对应实际对象CMakeFiles/jpeg-static.dir/src/jfdctfst.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位65对应实际对象CMakeFiles/jpeg-static.dir/src/jfdctint.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位66对应实际对象CMakeFiles/jpeg-static.dir/src/jidctflt.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位67对应实际对象CMakeFiles/jpeg-static.dir/src/jidctfst.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位68对应实际对象CMakeFiles/jpeg-static.dir/src/jidctint.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位69对应实际对象CMakeFiles/jpeg-static.dir/src/jidctred.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位70对应实际对象CMakeFiles/jpeg-static.dir/src/jquant1.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位71对应实际对象CMakeFiles/jpeg-static.dir/src/jquant2.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位72对应实际对象CMakeFiles/jpeg-static.dir/src/jcapimin.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位73对应实际对象CMakeFiles/jpeg-static.dir/src/jchuff.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位74对应实际对象CMakeFiles/jpeg-static.dir/src/jcicc.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位75对应实际对象CMakeFiles/jpeg-static.dir/src/jcinit.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位76对应实际对象CMakeFiles/jpeg-static.dir/src/jclhuff.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位77对应实际对象CMakeFiles/jpeg-static.dir/src/jcmarker.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位78对应实际对象CMakeFiles/jpeg-static.dir/src/jcmaster.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位79对应实际对象CMakeFiles/jpeg-static.dir/src/jcomapi.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位80对应实际对象CMakeFiles/jpeg-static.dir/src/jcparam.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位81对应实际对象CMakeFiles/jpeg-static.dir/src/jcphuff.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位82对应实际对象CMakeFiles/jpeg-static.dir/src/jctrans.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位83对应实际对象CMakeFiles/jpeg-static.dir/src/jdapimin.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位84对应实际对象CMakeFiles/jpeg-static.dir/src/jdatadst.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位85对应实际对象CMakeFiles/jpeg-static.dir/src/jdatasrc.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位86对应实际对象CMakeFiles/jpeg-static.dir/src/jdhuff.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位87对应实际对象CMakeFiles/jpeg-static.dir/src/jdicc.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位88对应实际对象CMakeFiles/jpeg-static.dir/src/jdinput.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位89对应实际对象CMakeFiles/jpeg-static.dir/src/jdlhuff.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位90对应实际对象CMakeFiles/jpeg-static.dir/src/jdmarker.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位91对应实际对象CMakeFiles/jpeg-static.dir/src/jdmaster.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位92对应实际对象CMakeFiles/jpeg-static.dir/src/jdphuff.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位93对应实际对象CMakeFiles/jpeg-static.dir/src/jdtrans.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位94对应实际对象CMakeFiles/jpeg-static.dir/src/jerror.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位95对应实际对象CMakeFiles/jpeg-static.dir/src/jfdctflt.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位96对应实际对象CMakeFiles/jpeg-static.dir/src/jmemmgr.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位97对应实际对象CMakeFiles/jpeg-static.dir/src/jmemnobs.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位98对应实际对象CMakeFiles/jpeg-static.dir/src/jpeg_nbits.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位99对应实际对象CMakeFiles/jpeg-static.dir/src/jaricom.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位100对应实际对象CMakeFiles/jpeg-static.dir/src/jcarith.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "归档顺位101对应实际对象CMakeFiles/jpeg-static.dir/src/jdarith.c.o",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Ninja101实际依赖记录覆盖全部保留动作且有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "101动作的预处理宏与driver只读查询均成功",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作0实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作1实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作2实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作3实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作4实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作5实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作6实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作7实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作8实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作9实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作10实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作11实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作12实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作13实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作14实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作15实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作16实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作17实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作18实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作19实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作20实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作21实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作22实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作23实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作24实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作25实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作26实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作27实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作28实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作29实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作30实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作31实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作32实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作33实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作34实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作35实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作36实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作37实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作38实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作39实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作40实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作41实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作42实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作43实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作44实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作45实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作46实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作47实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作48实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作49实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作50实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作51实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作52实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作53实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作54实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作55实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作56实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作57实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作58实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作59实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作60实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作61实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作62实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作63实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作64实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作65实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作66实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作67实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作68实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作69实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作70实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作71实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作72实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作73实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作74实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作75实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作76实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作77实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作78实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作79实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作80实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作81实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作82实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作83实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作84实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作85实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作86实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作87实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作88实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作89实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作90实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作91实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作92实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作93实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作94实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作95实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作96实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作97实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作98实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作99实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "动作100实际GNU C17、位深及Clang18上下文有效",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "构建目录依赖只含三个实际生成头",
+      "passed": true,
+      "detail": "jconfig.h"
+    },
+    {
+      "check": "构建目录依赖只含三个实际生成头",
+      "passed": true,
+      "detail": "jconfigint.h"
+    },
+    {
+      "check": "构建目录依赖只含三个实际生成头",
+      "passed": true,
+      "detail": "jversion.h"
+    },
+    {
+      "check": "项目依赖复制保持：src/jaricom.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcapimin.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcapistd.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcarith.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jccoefct.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jccolext.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jccolor.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcdctmgr.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcdiffct.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jchuff.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jchuff.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcicc.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcinit.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jclhuff.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jclossls.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcmainct.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcmarker.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcmaster.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcmaster.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcomapi.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcparam.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcphuff.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcprepct.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jcsample.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jctrans.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdapimin.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdapistd.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdarith.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdatadst.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdatasrc.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdcoefct.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdcoefct.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdcol565.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdcolext.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdcolor.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdct.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jddctmgr.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jddiffct.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdhuff.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdhuff.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdicc.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdinput.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdlhuff.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdlossls.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdmainct.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdmainct.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdmarker.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdmaster.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdmaster.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdmerge.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdmerge.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdmrg565.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdmrgext.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdphuff.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdpostct.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdsample.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdsample.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jdtrans.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jerror.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jerror.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jfdctflt.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jfdctfst.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jfdctint.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jidctflt.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jidctfst.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jidctint.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jidctred.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jinclude.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jlossls.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jmemmgr.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jmemnobs.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jmemsys.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jmorecfg.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jpeg_nbits.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jpeg_nbits.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jpegapicomp.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jpegint.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jpeglib.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jquant1.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jquant2.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jsamplecomp.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jsimd.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jsimddct.h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jstdhuff.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "项目依赖复制保持：src/jutils.c",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "全部58独立C单元及三个生成头进入实际依赖闭包",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "实际包含型C按依赖保留且未伪造独立动作",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "配置与构建成本分别有有效GNU time记录",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "同一环境会话及三工具均未运行的只读观察",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passedChecks": 372,
+  "failedChecks": 0
+}

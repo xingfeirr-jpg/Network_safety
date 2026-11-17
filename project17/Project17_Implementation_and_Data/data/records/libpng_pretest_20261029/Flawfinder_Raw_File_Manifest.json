@@ -1,0 +1,62 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-FF-001/command.txt",
+    "localRelative": "Flawfinder/command.txt",
+    "bytes": 1255,
+    "sha256": "3a4d6f6e64e07e64149a6487cf66dc90be482a53c48818a8c552babd42fe64f7"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-FF-001/environment-start.txt",
+    "localRelative": "Flawfinder/environment-start.txt",
+    "bytes": 2525,
+    "sha256": "9b8e963777c698b6d86cd507a0060acc7c7455a17f017873cb98ecc422aa52c0"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-FF-001/exit-code.txt",
+    "localRelative": "Flawfinder/exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-FF-001/input-files.sha256",
+    "localRelative": "Flawfinder/input-files.sha256",
+    "bytes": 2746,
+    "sha256": "823d42641f509de9ed67528f2cf101c0b74a7c6596d657d59198bc323b7dbf94"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-FF-001/input-files.txt",
+    "localRelative": "Flawfinder/input-files.txt",
+    "bytes": 1165,
+    "sha256": "29fc98b55b836d0908286de016cd581a35762da4b51d30b0f916a57d39179310"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-FF-001/prepared-profile.json",
+    "localRelative": "Flawfinder/prepared-profile.json",
+    "bytes": 20154,
+    "sha256": "297fac45b17d9c8bec003458b80d1c9d0b638ac7d3ced23e26f7b80121d626d1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-FF-001/run-meta.tsv",
+    "localRelative": "Flawfinder/run-meta.tsv",
+    "bytes": 447,
+    "sha256": "c28ef698ac28038b68aeb656c6c8eb408b498ac7ea1d6c4ee53d6cc74fbd2177"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-FF-001/stderr.txt",
+    "localRelative": "Flawfinder/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-FF-001/stdout.txt",
+    "localRelative": "Flawfinder/stdout.txt",
+    "bytes": 35884,
+    "sha256": "86f406d5a9b010e30d8bf5029738f893475e77b5a6fb4bbaff07e077700a6505"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-FF-001/time.txt",
+    "localRelative": "Flawfinder/time.txt",
+    "bytes": 1969,
+    "sha256": "02e43e9743111d7a3c87aa3c3a7008825701f9ab434d2fc7314c09dc411e13dd"
+  }
+]

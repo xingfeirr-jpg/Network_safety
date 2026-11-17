@@ -1,0 +1,16 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.c:178:14: warning: Array access (via field 'bits') results in a null pointer dereference [core.NullDereference]
+  178 |     i = (int)htbl->bits[l];
+      |              ^~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.c:447:10: warning: Left shift overflows the capacity of 'int' [core.BitwiseShift]
+  447 |   code = GET_BITS(l);
+      |          ^~~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:169:56: note: expanded from macro 'GET_BITS'
+  169 |   (((int)(get_buffer >> (bits_left -= (nbits)))) & ((1 << (nbits)) - 1))
+      |                                                      ~~^~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.c:576:11: warning: Left shift overflows the capacity of 'int' [core.BitwiseShift]
+  576 |       r = GET_BITS(s);
+      |           ^~~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:169:56: note: expanded from macro 'GET_BITS'
+  169 |   (((int)(get_buffer >> (bits_left -= (nbits)))) & ((1 << (nbits)) - 1))
+      |                                                      ~~^~~~~~~~~~
+3 warnings generated.

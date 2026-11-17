@@ -1,0 +1,14 @@
+[
+ "/usr/bin/cppcheck",
+ "--project=/home/yhong/comp5355/build/cJSON-v1.7.19/compile_commands.json",
+ "--enable=warning,performance,portability,information",
+ "--check-level=normal",
+ "--platform=unix64",
+ "--std=c89",
+ "-j",
+ "1",
+ "--cppcheck-build-dir=/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-CP-001/cache",
+ "--checkers-report=/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-CP-001/checkers.txt",
+ "--xml",
+ "--xml-version=2"
+]

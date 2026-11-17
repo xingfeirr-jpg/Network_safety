@@ -1,0 +1,90 @@
+{
+  "acceptedOn": "2026-10-28",
+  "status": "passed",
+  "project": "P05 json-c",
+  "version": "0.18",
+  "purpose": "functional pretest",
+  "runId": "PRE-P05-CP-001",
+  "runRoot": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CP-001",
+  "startedUTC": "2026-10-27T16:00:43Z",
+  "startedAsiaShanghai": "2026-10-28T00:00:43+08:00",
+  "tool": "Cppcheck 2.13.0",
+  "exitCode": 0,
+  "intendedFiles": 14,
+  "progressMatchedFiles": 14,
+  "progressFinal": "14/14 files checked 100% done",
+  "cacheFileMappings": 14,
+  "validAnalyzerInfoXMLFiles": 14,
+  "nonemptySnalyzerinfoFiles": 14,
+  "criticalErrors": "none per checkers.txt",
+  "all40InputHashesMatch": true,
+  "all271SourceEntriesUnchanged": true,
+  "rawFilesCopied": 40,
+  "cacheFiles": 29,
+  "xmlVersion": "2",
+  "xmlElements": 80,
+  "bySeverity": {
+    "information": 79,
+    "warning": 1
+  },
+  "byRule": {
+    "checkLevelNormal": 1,
+    "checkersReport": 1,
+    "integerOverflowCond": 1,
+    "missingIncludeSystem": 77
+  },
+  "sourceCandidates": 1,
+  "candidateStatus": "not reviewed;not confirmed bug",
+  "information": 79,
+  "informationDetails": {
+    "systemIncludeMessages": 77,
+    "distinctSystemHeaderNames": 20,
+    "byHeader": {
+      "assert.h": 3,
+      "endian.h": 1,
+      "errno.h": 4,
+      "fcntl.h": 1,
+      "inttypes.h": 1,
+      "limits.h": 7,
+      "locale.h": 1,
+      "math.h": 2,
+      "stdarg.h": 7,
+      "stddef.h": 9,
+      "stdint.h": 1,
+      "stdio.h": 9,
+      "stdlib.h": 12,
+      "string.h": 10,
+      "strings.h": 2,
+      "sys/param.h": 1,
+      "sys/stat.h": 1,
+      "sys/types.h": 1,
+      "syslog.h": 1,
+      "unistd.h": 3
+    },
+    "normalValueFlowLimit": "Limiting ValueFlow analysis in function 'json_tokener_parse_ex' since it is too complex. Please specify --check-level=exhaustive to perform full analysis.",
+    "checkerReport": "Active checkers:79/592;raw catalogue summary,not79 vulnerabilities"
+  },
+  "analysisLimits": [
+    "normal ValueFlow limited in json_tokener_parse_ex",
+    "system-header information recorded;defaultstd.cfg and no extra POSIX/json-c model",
+    "explicit C11 model differs from GNU C17 build context",
+    "file processing evidence does not imply exhaustive path analysis"
+  ],
+  "metrics": {
+    "user_seconds": 0.49,
+    "system_seconds": 0.01,
+    "wall_seconds": 0.52,
+    "max_rss_kib": 18628
+  },
+  "metricMeaning": "GNU time complete analysis command;maxRSS is not process-tree sum;single descriptive measurement",
+  "rawManifest": "Cppcheck_Raw_File_Manifest.json",
+  "candidates": "Cppcheck_Candidates.csv",
+  "informationTable": "Cppcheck_Information.csv",
+  "readOnlyEvidence": "../json_c_setup/Cppcheck_Acceptance_20261028/Read_Only_Linux_Evidence.json",
+  "otherTools": {
+    "CodeChecker_clangsa": "not run",
+    "Flawfinder": "not run"
+  },
+  "AIReview": "not started;scope pending allthree outputs",
+  "formalThirtyCells": "all not run"
+}

@@ -1,0 +1,109 @@
+[
+  {
+    "library": "zlib",
+    "tag": "v1.3.2",
+    "commit": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+    "upstream_commit": "https://github.com/madler/zlib/commit/da607da739fa6047df13e66a2af6b8bec7c2a498",
+    "pinned_source_download": "https://github.com/madler/zlib/archive/da607da739fa6047df13e66a2af6b8bec7c2a498.tar.gz",
+    "archive_sha256": "b9258cf6254e7f7c37f1cd61dba943a1c5ea3cff5718c789834dac359094f5f7",
+    "study_archive_download": "https://github.com/madler/zlib/archive/da607da739fa6047df13e66a2af6b8bec7c2a498.tar.gz",
+    "study_archive_filename": "zlib-v1.3.2.tar.gz",
+    "upstream_license": "https://github.com/madler/zlib/blob/da607da739fa6047df13e66a2af6b8bec7c2a498/LICENSE"
+  },
+  {
+    "library": "LZ4",
+    "tag": "v1.10.0",
+    "commit": "ebb370ca83af193212df4dcbadcc5d87bc0de2f0",
+    "upstream_commit": "https://github.com/lz4/lz4/commit/ebb370ca83af193212df4dcbadcc5d87bc0de2f0",
+    "pinned_source_download": "https://github.com/lz4/lz4/archive/ebb370ca83af193212df4dcbadcc5d87bc0de2f0.tar.gz",
+    "archive_sha256": "eb1a93e934d4fd29df6e2061ba0bf447568561764d758f4a5662c0e29370ffa9",
+    "study_archive_download": "https://github.com/lz4/lz4/archive/ebb370ca83af193212df4dcbadcc5d87bc0de2f0.tar.gz",
+    "study_archive_filename": "lz4-v1.10.0.tar.gz",
+    "upstream_license": "https://github.com/lz4/lz4/blob/ebb370ca83af193212df4dcbadcc5d87bc0de2f0/lib/LICENSE"
+  },
+  {
+    "library": "cJSON",
+    "tag": "v1.7.19",
+    "commit": "c859b25da02955fef659d658b8f324b5cde87be3",
+    "upstream_commit": "https://github.com/DaveGamble/cJSON/commit/c859b25da02955fef659d658b8f324b5cde87be3",
+    "pinned_source_download": "https://github.com/DaveGamble/cJSON/archive/c859b25da02955fef659d658b8f324b5cde87be3.tar.gz",
+    "upstream_license": "https://github.com/DaveGamble/cJSON/blob/c859b25da02955fef659d658b8f324b5cde87be3/LICENSE"
+  },
+  {
+    "library": "libyaml",
+    "tag": "0.2.5",
+    "commit": "2c891fc7a770e8ba2fec34fc6b545c672beb37e6",
+    "upstream_commit": "https://github.com/yaml/libyaml/commit/2c891fc7a770e8ba2fec34fc6b545c672beb37e6",
+    "pinned_source_download": "https://github.com/yaml/libyaml/archive/2c891fc7a770e8ba2fec34fc6b545c672beb37e6.tar.gz",
+    "archive_sha256": "77987051b6f5bee8ba472f1efbe0053663a58d8d3e7a2f0f4a27d178adbf8844",
+    "study_archive_download": "https://github.com/yaml/libyaml/archive/2c891fc7a770e8ba2fec34fc6b545c672beb37e6.tar.gz",
+    "study_archive_filename": "libyaml-0.2.5.tar.gz",
+    "upstream_license": "https://github.com/yaml/libyaml/blob/2c891fc7a770e8ba2fec34fc6b545c672beb37e6/License"
+  },
+  {
+    "library": "json-c",
+    "tag": "json-c-0.18-20240915",
+    "commit": "41a55cfcedb54d9c1874f2f0eb07b504091d7e37",
+    "upstream_commit": "https://github.com/json-c/json-c/commit/41a55cfcedb54d9c1874f2f0eb07b504091d7e37",
+    "pinned_source_download": "https://github.com/json-c/json-c/archive/41a55cfcedb54d9c1874f2f0eb07b504091d7e37.tar.gz",
+    "archive_sha256": "a090046b2d24901eb8dca4d370c28991299e8c7cfb698b44e09ce809b1ff20b4",
+    "study_archive_download": "https://codeload.github.com/json-c/json-c/tar.gz/41a55cfcedb54d9c1874f2f0eb07b504091d7e37",
+    "study_archive_filename": "json-c-0.18.tar.gz",
+    "upstream_license": "https://github.com/json-c/json-c/blob/41a55cfcedb54d9c1874f2f0eb07b504091d7e37/COPYING"
+  },
+  {
+    "library": "yyjson",
+    "tag": "0.12.0",
+    "commit": "8b4a38dc994a110abaec8a400615567bd996105f",
+    "upstream_commit": "https://github.com/ibireme/yyjson/commit/8b4a38dc994a110abaec8a400615567bd996105f",
+    "pinned_source_download": "https://github.com/ibireme/yyjson/archive/8b4a38dc994a110abaec8a400615567bd996105f.tar.gz",
+    "archive_sha256": "94e9c90f8f12d8329f2c0756782d21e5c278729023cd2c5fe47e323a35947ed6",
+    "study_archive_download": "https://codeload.github.com/ibireme/yyjson/tar.gz/8b4a38dc994a110abaec8a400615567bd996105f",
+    "study_archive_filename": "yyjson-0.12.0.tar.gz",
+    "upstream_license": "https://github.com/ibireme/yyjson/blob/8b4a38dc994a110abaec8a400615567bd996105f/LICENSE"
+  },
+  {
+    "library": "Expat",
+    "tag": "R_2_7_1",
+    "commit": "f9a3eeb3e09fbea04b1c451ffc422ab2f1e45744",
+    "upstream_commit": "https://github.com/libexpat/libexpat/commit/f9a3eeb3e09fbea04b1c451ffc422ab2f1e45744",
+    "pinned_source_download": "https://github.com/libexpat/libexpat/archive/f9a3eeb3e09fbea04b1c451ffc422ab2f1e45744.tar.gz",
+    "archive_sha256": "86f0e8afaf4cd72d806e32afb68e1e84bb2c6e5b0b40de2a34c0970bf8d08c40",
+    "study_archive_download": "https://codeload.github.com/libexpat/libexpat/tar.gz/f9a3eeb3e09fbea04b1c451ffc422ab2f1e45744",
+    "study_archive_filename": "expat-2.7.1.tar.gz",
+    "upstream_license": "https://github.com/libexpat/libexpat/blob/f9a3eeb3e09fbea04b1c451ffc422ab2f1e45744/expat/COPYING"
+  },
+  {
+    "library": "libpng",
+    "tag": "v1.6.50",
+    "commit": "2b978915d82377df13fcbb1fb56660195ded868a",
+    "upstream_commit": "https://github.com/pnggroup/libpng/commit/2b978915d82377df13fcbb1fb56660195ded868a",
+    "pinned_source_download": "https://github.com/pnggroup/libpng/archive/2b978915d82377df13fcbb1fb56660195ded868a.tar.gz",
+    "archive_sha256": "fba1c8e793f01b493f3f47a926862edbfab487ae4240e02ec67131f1e2bf067f",
+    "study_archive_download": "https://codeload.github.com/pnggroup/libpng/tar.gz/2b978915d82377df13fcbb1fb56660195ded868a",
+    "study_archive_filename": "libpng-1.6.50.tar.gz",
+    "upstream_license": "https://github.com/pnggroup/libpng/blob/2b978915d82377df13fcbb1fb56660195ded868a/LICENSE"
+  },
+  {
+    "library": "libjpeg-turbo",
+    "tag": "3.1.1",
+    "commit": "7723f50f3f66b9da74376e6d8badb6162464212c",
+    "upstream_commit": "https://github.com/libjpeg-turbo/libjpeg-turbo/commit/7723f50f3f66b9da74376e6d8badb6162464212c",
+    "pinned_source_download": "https://github.com/libjpeg-turbo/libjpeg-turbo/archive/7723f50f3f66b9da74376e6d8badb6162464212c.tar.gz",
+    "archive_sha256": "aadc97ea91f6ef078b0ae3a62bba69e008d9a7db19b34e4ac973b19b71b4217c",
+    "study_archive_download": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.1/libjpeg-turbo-3.1.1.tar.gz",
+    "study_archive_filename": "libjpeg-turbo-3.1.1.tar.gz",
+    "upstream_license": "https://github.com/libjpeg-turbo/libjpeg-turbo/blob/7723f50f3f66b9da74376e6d8badb6162464212c/LICENSE.md"
+  },
+  {
+    "library": "utf8proc",
+    "tag": "v2.10.0",
+    "commit": "a1b99daa2a3393884220264c927a48ba1251a9c6",
+    "upstream_commit": "https://github.com/JuliaStrings/utf8proc/commit/a1b99daa2a3393884220264c927a48ba1251a9c6",
+    "pinned_source_download": "https://github.com/JuliaStrings/utf8proc/archive/a1b99daa2a3393884220264c927a48ba1251a9c6.tar.gz",
+    "archive_sha256": "43f09c9d0a2d3fcbb4eba77729dd603b0ac470ccace59a2961f82a8b6323445f",
+    "study_archive_download": "https://codeload.github.com/JuliaStrings/utf8proc/tar.gz/a1b99daa2a3393884220264c927a48ba1251a9c6",
+    "study_archive_filename": "utf8proc-2.10.0.tar.gz",
+    "upstream_license": "https://github.com/JuliaStrings/utf8proc/blob/a1b99daa2a3393884220264c927a48ba1251a9c6/LICENSE.md"
+  }
+]

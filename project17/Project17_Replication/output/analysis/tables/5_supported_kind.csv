@@ -1,0 +1,9 @@
+﻿kind,alerts,tools,libraries
+Right shift of negative values,20,Cppcheck=20,libjpeg-turbo=20
+Dead store or ineffective assignment,15,clangsa=14 Cppcheck=1,zlib=1 cJSON=1 libpng=3 libjpeg-turbo=10
+Redundant null check,14,Cppcheck=14,cJSON=14
+Conditional buffer overflow,4,Flawfinder=4,zlib=1 yyjson=2 libpng=1
+Arithmetic on a null pointer,4,Cppcheck=4,LZ4=1 yyjson=3
+Copy to a null destination,2,clangsa=2,LZ4=2
+Null passed to a non-null parameter,2,clangsa=2,libpng=2
+Unchecked environment value,1,Flawfinder=1,libjpeg-turbo=1

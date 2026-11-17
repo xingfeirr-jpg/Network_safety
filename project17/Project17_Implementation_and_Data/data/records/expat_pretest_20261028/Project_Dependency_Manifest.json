@@ -1,0 +1,135 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/build/expat-2.7.1/expat_config.h",
+    "localFile": "review_evidence/expat_pretest_20261028/build/expat_config.h",
+    "category": "generated_header",
+    "bytes": 3336,
+    "sha256": "d83ab8bbccb2940e2f9167ecf8b6332aa9492032a953b07c65766d8f7c582ead"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/ascii.h",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/ascii.h",
+    "category": "source_header",
+    "bytes": 3682,
+    "sha256": "42f8b392c70366743eacbc60ce021389ccaa333598dd49eef6ee5c93698ca205"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/asciitab.h",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/asciitab.h",
+    "category": "source_header",
+    "bytes": 3520,
+    "sha256": "1cc0ae749019fc0e488cd1cf245f6beaa6d4f7c55a1fc797e5aa40a408bc266b"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/expat.h",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/expat.h",
+    "category": "source_header",
+    "bytes": 44120,
+    "sha256": "7c16a5cf0eea844ae579db083b8d75f23a71859cac77e3c4cb7a8fa3b7621685"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/expat_external.h",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/expat_external.h",
+    "category": "source_header",
+    "bytes": 6029,
+    "sha256": "7ca9ed28dd5e08eac425931894fabd4c876db8f4be26f9b9a33c2e4f70a0d6c3"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/iasciitab.h",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/iasciitab.h",
+    "category": "source_header",
+    "bytes": 3590,
+    "sha256": "ad8b01e9f323cc4208bcd22241df383d7e8641fe3c8b3415aa513de82531f89f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/internal.h",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/internal.h",
+    "category": "source_header",
+    "bytes": 6509,
+    "sha256": "6af6e8fbf5c83c1431464a2811b10ea2d1ff64c0eabfd9f18b1d4e53bf400c35"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/latin1tab.h",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/latin1tab.h",
+    "category": "source_header",
+    "bytes": 3573,
+    "sha256": "eab66226da100372e01e42e1cbcd8ac2bbbb5c1b5f95d735289cc85c7a8fc2ba"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/nametab.h",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/nametab.h",
+    "category": "source_header",
+    "bytes": 9044,
+    "sha256": "67dcf415d37a4b692a6a8bb46f990c02d83f2ef3d01a65cd61c8594a084246f2"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/siphash.h",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/siphash.h",
+    "category": "source_header",
+    "bytes": 13014,
+    "sha256": "f537add526ecda8389503b7ef45fb52b6217e4dc171dcc3a8dc6903ff6134726"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/utf8tab.h",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/utf8tab.h",
+    "category": "source_header",
+    "bytes": 3522,
+    "sha256": "8cd26bd461d334d5e1caedb3af4518d401749f2fc66d56208542b29085159c18"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlparse.c",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmlparse.c",
+    "category": "translation_unit",
+    "bytes": 296260,
+    "sha256": "633b272fa893dfbef539edbba35f1b11ecf09a13b89189105b0dfa6c7ecfc3bf"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmlrole.c",
+    "category": "translation_unit",
+    "bytes": 35475,
+    "sha256": "71fb52aa302cf6f56e41943009965804f49ff2210d9bd15b258f70aaf70db772"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.h",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmlrole.h",
+    "category": "source_header",
+    "bytes": 4679,
+    "sha256": "228470eb9181a9a7575b63137edcb61b817ee4e0923faffdbeba29e07c939713"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmltok.c",
+    "category": "translation_unit",
+    "bytes": 54346,
+    "sha256": "5b16c671ccc42496374762768e4bf48f614aecfd2025a07925b8d94244aec645"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmltok.h",
+    "category": "source_header",
+    "bytes": 12894,
+    "sha256": "6b8919dc951606dc6f2b0175f8955a9ced901ce8bd08db47f291b6c04227ae7f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmltok_impl.c",
+    "category": "included_implementation",
+    "bytes": 53720,
+    "sha256": "a3fe18ff32b21fbcb7c190895c68158404e1b9fb449db6431bc08b261dc03938"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.h",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmltok_impl.h",
+    "category": "source_header",
+    "bytes": 3430,
+    "sha256": "f05ad4fe5e98429a7349ff04f57192cac58c324601f2a2e5e697ab0bc05d36d5"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c",
+    "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmltok_ns.c",
+    "category": "included_implementation",
+    "bytes": 4640,
+    "sha256": "6ce6d03193279078d55280150fe91e7370370b504a6c123a79182f28341f3e90"
+  }
+]

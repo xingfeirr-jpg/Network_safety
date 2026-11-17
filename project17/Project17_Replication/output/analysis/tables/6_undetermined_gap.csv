@@ -1,0 +1,4 @@
+﻿missing_evidence,alerts,locations
+Caller and deployment context,9,zlib vsnprintf gzwrite.c:467; zlib open gzlib.c:248; json-c open json_util.c:148; json-c open json_util.c:172; yyjson fopen src/yyjson.c:2103; Expat getenv expat/lib/xmlparse.c:8826; Expat open expat/lib/xmlparse.c:851; libpng fopen pngread.c:1373; libpng fopen pngwrite.c:2391
+Feasible path to the copy,4,LZ4 unix.cstring.NullArg lib/lz4.c:2179; LZ4 unix.cstring.NullArg lib/lz4.c:2185; LZ4 unix.cstring.NullArg lib/lz4.c:2367; LZ4 unix.cstring.NullArg lib/lz4.c:2373
+Copy path at the INT_MAX boundary,2,libyaml memcpy src/api.c:854; libyaml memcpy src/api.c:1225

@@ -1,0 +1,5 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+jpeg_start_compress call:[jinit_compress_master,jpeg_suppress_tables] noreturn:[jpeg_suppress_tables]
+jpeg_write_scanlines
+jpeg_write_raw_data

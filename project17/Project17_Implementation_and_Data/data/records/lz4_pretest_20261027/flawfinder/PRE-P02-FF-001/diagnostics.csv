@@ -1,0 +1,379 @@
+﻿candidateId,runId,tool,severity,rule,file,line,column,message,verbose,cwe,locationsJSON,xmlEntryOrdinal,rawEvidence,file0,judgment,securityRelevance,sourceEvidence,rootCauseGroup,crossToolMatch,AIInitialJudgment,reviewStatus,category,riskLevel,sourceContext,rawReportBlock,displayOrdinal
+P02-FF-001,PRE-P02-FF-001,Flawfinder 2.0.20,4,fprintf,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c,284,13,"If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+            fprintf(stderr, __FILE__  "" %i: "", __LINE__); \","If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+            fprintf(stderr, __FILE__  "" %i: "", __LINE__); \",134,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c"", ""line"": ""284"", ""column"": ""13""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,format,4,"fprintf(stderr, __FILE__  "" %i: "", __LINE__); \","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:284:13:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+            fprintf(stderr, __FILE__  "" %i: "", __LINE__); \",1
+P02-FF-002,PRE-P02-FF-001,Flawfinder 2.0.20,4,fprintf,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c,285,13,"If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+            fprintf(stderr, __VA_ARGS__);             \","If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+            fprintf(stderr, __VA_ARGS__);             \",134,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c"", ""line"": ""285"", ""column"": ""13""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,format,4,"fprintf(stderr, __VA_ARGS__);             \","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:285:13:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+            fprintf(stderr, __VA_ARGS__);             \",2
+P02-FF-003,PRE-P02-FF-001,Flawfinder 2.0.20,4,fprintf,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,158,21,"If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+                    fprintf(stderr, __FILE__ "" (%i): "", __LINE__ );  \","If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+                    fprintf(stderr, __FILE__ "" (%i): "", __LINE__ );  \",134,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""158"", ""column"": ""21""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,format,4,"fprintf(stderr, __FILE__ "" (%i): "", __LINE__ );  \","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:158:21:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+                    fprintf(stderr, __FILE__ "" (%i): "", __LINE__ );  \",3
+P02-FF-004,PRE-P02-FF-001,Flawfinder 2.0.20,4,fprintf,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,159,21,"If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+                    fprintf(stderr, __VA_ARGS__);             \","If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+                    fprintf(stderr, __VA_ARGS__);             \",134,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""159"", ""column"": ""21""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,format,4,"fprintf(stderr, __VA_ARGS__);             \","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:159:21:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+                    fprintf(stderr, __VA_ARGS__);             \",4
+P02-FF-005,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c,351,40,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+#    define LZ4_memcpy(dst, src, size) memcpy(dst, src, size)","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+#    define LZ4_memcpy(dst, src, size) memcpy(dst, src, size)",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c"", ""line"": ""351"", ""column"": ""40""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"#    define LZ4_memcpy(dst, src, size) memcpy(dst, src, size)","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:351:40:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+#    define LZ4_memcpy(dst, src, size) memcpy(dst, src, size)",5
+P02-FF-006,PRE-P02-FF-001,Flawfinder 2.0.20,2,char,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c,635,35,"Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+            static const unsigned char ctz7_tab[128] = {","Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+            static const unsigned char ctz7_tab[128] = {",119;120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c"", ""line"": ""635"", ""column"": ""35""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,static const unsigned char ctz7_tab[128] = {,"/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:635:35:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+            static const unsigned char ctz7_tab[128] = {",6
+P02-FF-007,PRE-P02-FF-001,Flawfinder 2.0.20,2,char,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h,731,5,"Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char minStateSize[LZ4_STREAM_MINSIZE];","Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char minStateSize[LZ4_STREAM_MINSIZE];",119;120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h"", ""line"": ""731"", ""column"": ""5""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,char minStateSize[LZ4_STREAM_MINSIZE];,"/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h:731:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char minStateSize[LZ4_STREAM_MINSIZE];",7
+P02-FF-008,PRE-P02-FF-001,Flawfinder 2.0.20,2,char,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h,767,5,"Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char minStateSize[LZ4_STREAMDECODE_MINSIZE];","Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char minStateSize[LZ4_STREAMDECODE_MINSIZE];",119;120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h"", ""line"": ""767"", ""column"": ""5""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,char minStateSize[LZ4_STREAMDECODE_MINSIZE];,"/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h:767:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char minStateSize[LZ4_STREAMDECODE_MINSIZE];",8
+P02-FF-009,PRE-P02-FF-001,Flawfinder 2.0.20,2,char,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c,75,3,"Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  char buf[LZ4F_HEADER_SIZE_MAX];","Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  char buf[LZ4F_HEADER_SIZE_MAX];",119;120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c"", ""line"": ""75"", ""column"": ""3""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,char buf[LZ4F_HEADER_SIZE_MAX];,"/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c:75:3:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  char buf[LZ4F_HEADER_SIZE_MAX];",9
+P02-FF-010,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c,135,3,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+  memcpy((*lz4fRead)->srcBuf, buf + consumedSize, (*lz4fRead)->srcBufSize);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+  memcpy((*lz4fRead)->srcBuf, buf + consumedSize, (*lz4fRead)->srcBufSize);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c"", ""line"": ""135"", ""column"": ""3""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy((*lz4fRead)->srcBuf, buf + consumedSize, (*lz4fRead)->srcBufSize);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c:135:3:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+  memcpy((*lz4fRead)->srcBuf, buf + consumedSize, (*lz4fRead)->srcBufSize);",10
+P02-FF-011,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,558,5,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(cdict->dictContent, dictStart, dictSize);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(cdict->dictContent, dictStart, dictSize);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""558"", ""column"": ""5""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(cdict->dictContent, dictStart, dictSize);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:558:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(cdict->dictContent, dictStart, dictSize);",11
+P02-FF-012,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,899,9,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(cSizePtr+BHSize, src, srcSize);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(cSizePtr+BHSize, src, srcSize);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""899"", ""column"": ""9""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(cSizePtr+BHSize, src, srcSize);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:899:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(cSizePtr+BHSize, src, srcSize);",12
+P02-FF-013,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1027,13,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(cctxPtr->tmpIn + cctxPtr->tmpInSize, srcBuffer, srcSize);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(cctxPtr->tmpIn + cctxPtr->tmpInSize, srcBuffer, srcSize);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1027"", ""column"": ""13""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(cctxPtr->tmpIn + cctxPtr->tmpInSize, srcBuffer, srcSize);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1027:13:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(cctxPtr->tmpIn + cctxPtr->tmpInSize, srcBuffer, srcSize);",13
+P02-FF-014,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1034,13,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(cctxPtr->tmpIn + cctxPtr->tmpInSize, srcBuffer, sizeToCopy);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(cctxPtr->tmpIn + cctxPtr->tmpInSize, srcBuffer, sizeToCopy);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1034"", ""column"": ""13""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(cctxPtr->tmpIn + cctxPtr->tmpInSize, srcBuffer, sizeToCopy);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1034:13:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(cctxPtr->tmpIn + cctxPtr->tmpInSize, srcBuffer, sizeToCopy);",14
+P02-FF-015,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1096,9,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(cctxPtr->tmpIn, srcPtr, sizeToCopy);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(cctxPtr->tmpIn, srcPtr, sizeToCopy);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1096"", ""column"": ""9""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(cctxPtr->tmpIn, srcPtr, sizeToCopy);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1096:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(cctxPtr->tmpIn, srcPtr, sizeToCopy);",15
+P02-FF-016,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1399,13,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(dctx->header, srcPtr, srcSize);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(dctx->header, srcPtr, srcSize);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1399"", ""column"": ""13""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dctx->header, srcPtr, srcSize);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1399:13:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(dctx->header, srcPtr, srcSize);",16
+P02-FF-017,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1566,9,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(dctx->tmpOutBuffer + preserveSize - copySize, oldDictEnd - copySize, copySize);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(dctx->tmpOutBuffer + preserveSize - copySize, oldDictEnd - copySize, copySize);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1566"", ""column"": ""9""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dctx->tmpOutBuffer + preserveSize - copySize, oldDictEnd - copySize, copySize);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1566:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(dctx->tmpOutBuffer + preserveSize - copySize, oldDictEnd - copySize, copySize);",17
+P02-FF-018,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1576,13,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(dctx->tmpOutBuffer, dctx->dict + dctx->dictSize - preserveSize, preserveSize);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(dctx->tmpOutBuffer, dctx->dict + dctx->dictSize - preserveSize, preserveSize);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1576"", ""column"": ""13""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dctx->tmpOutBuffer, dctx->dict + dctx->dictSize - preserveSize, preserveSize);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1576:13:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(dctx->tmpOutBuffer, dctx->dict + dctx->dictSize - preserveSize, preserveSize);",18
+P02-FF-019,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1579,9,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(dctx->tmpOutBuffer + dctx->dictSize, dstPtr, dstSize);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(dctx->tmpOutBuffer + dctx->dictSize, dstPtr, dstSize);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1579"", ""column"": ""9""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dctx->tmpOutBuffer + dctx->dictSize, dstPtr, dstSize);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1579:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(dctx->tmpOutBuffer + dctx->dictSize, dstPtr, dstSize);",19
+P02-FF-020,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1587,9,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(dctx->tmpOutBuffer, dctx->dict + dctx->dictSize - preserveSize, preserveSize);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(dctx->tmpOutBuffer, dctx->dict + dctx->dictSize - preserveSize, preserveSize);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1587"", ""column"": ""9""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dctx->tmpOutBuffer, dctx->dict + dctx->dictSize - preserveSize, preserveSize);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1587:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(dctx->tmpOutBuffer, dctx->dict + dctx->dictSize - preserveSize, preserveSize);",20
+P02-FF-021,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1588,9,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(dctx->tmpOutBuffer + preserveSize, dstPtr, dstSize);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(dctx->tmpOutBuffer + preserveSize, dstPtr, dstSize);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1588"", ""column"": ""9""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dctx->tmpOutBuffer + preserveSize, dstPtr, dstSize);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1588:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(dctx->tmpOutBuffer + preserveSize, dstPtr, dstSize);",21
+P02-FF-022,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1664,17,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dctx->header + dctx->tmpInSize, srcPtr, sizeToCopy);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dctx->header + dctx->tmpInSize, srcPtr, sizeToCopy);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1664"", ""column"": ""17""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dctx->header + dctx->tmpInSize, srcPtr, sizeToCopy);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1664:17:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dctx->header + dctx->tmpInSize, srcPtr, sizeToCopy);",22
+P02-FF-023,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1716,17,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dctx->tmpIn + dctx->tmpInSize, srcPtr, sizeToCopy);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dctx->tmpIn + dctx->tmpInSize, srcPtr, sizeToCopy);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1716"", ""column"": ""17""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dctx->tmpIn + dctx->tmpInSize, srcPtr, sizeToCopy);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1716:17:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dctx->tmpIn + dctx->tmpInSize, srcPtr, sizeToCopy);",23
+P02-FF-024,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1768,21,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                    memcpy(dstPtr, srcPtr, sizeToCopy);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                    memcpy(dstPtr, srcPtr, sizeToCopy);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1768"", ""column"": ""21""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dstPtr, srcPtr, sizeToCopy);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1768:21:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                    memcpy(dstPtr, srcPtr, sizeToCopy);",24
+P02-FF-025,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1812,21,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                    memcpy(dctx->header + dctx->tmpInSize, srcPtr, sizeToCopy);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                    memcpy(dctx->header + dctx->tmpInSize, srcPtr, sizeToCopy);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1812"", ""column"": ""21""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dctx->header + dctx->tmpInSize, srcPtr, sizeToCopy);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1812:21:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                    memcpy(dctx->header + dctx->tmpInSize, srcPtr, sizeToCopy);",25
+P02-FF-026,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1855,17,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dctx->tmpIn + dctx->tmpInSize, srcPtr, sizeToCopy);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dctx->tmpIn + dctx->tmpInSize, srcPtr, sizeToCopy);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1855"", ""column"": ""17""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dctx->tmpIn + dctx->tmpInSize, srcPtr, sizeToCopy);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1855:17:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dctx->tmpIn + dctx->tmpInSize, srcPtr, sizeToCopy);",26
+P02-FF-027,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1928,25,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                        memcpy(dctx->tmpOutBuffer, dctx->dict + dctx->dictSize - 64 KB, 64 KB);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                        memcpy(dctx->tmpOutBuffer, dctx->dict + dctx->dictSize - 64 KB, 64 KB);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1928"", ""column"": ""25""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dctx->tmpOutBuffer, dctx->dict + dctx->dictSize - 64 KB, 64 KB);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1928:25:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                        memcpy(dctx->tmpOutBuffer, dctx->dict + dctx->dictSize - 64 KB, 64 KB);",27
+P02-FF-028,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,1965,17,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dstPtr, dctx->tmpOut + dctx->tmpOutStart, sizeToCopy);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dstPtr, dctx->tmpOut + dctx->tmpOutStart, sizeToCopy);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""1965"", ""column"": ""17""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dstPtr, dctx->tmpOut + dctx->tmpOutStart, sizeToCopy);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1965:17:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dstPtr, dctx->tmpOut + dctx->tmpOutStart, sizeToCopy);",28
+P02-FF-029,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,2004,17,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dctx->tmpIn + dctx->tmpInSize, srcPtr, sizeToCopy);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dctx->tmpIn + dctx->tmpInSize, srcPtr, sizeToCopy);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""2004"", ""column"": ""17""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dctx->tmpIn + dctx->tmpInSize, srcPtr, sizeToCopy);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:2004:17:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dctx->tmpIn + dctx->tmpInSize, srcPtr, sizeToCopy);",29
+P02-FF-030,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,2047,17,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dctx->header + dctx->tmpInSize, srcPtr, sizeToCopy);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dctx->header + dctx->tmpInSize, srcPtr, sizeToCopy);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""2047"", ""column"": ""17""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dctx->header + dctx->tmpInSize, srcPtr, sizeToCopy);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:2047:17:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                memcpy(dctx->header + dctx->tmpInSize, srcPtr, sizeToCopy);",30
+P02-FF-031,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,2097,13,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(dctx->tmpOutBuffer + preserveSize - copySize, oldDictEnd - copySize, copySize);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(dctx->tmpOutBuffer + preserveSize - copySize, oldDictEnd - copySize, copySize);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""2097"", ""column"": ""13""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dctx->tmpOutBuffer + preserveSize - copySize, oldDictEnd - copySize, copySize);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:2097:13:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(dctx->tmpOutBuffer + preserveSize - copySize, oldDictEnd - copySize, copySize);",31
+P02-FF-032,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c,2105,13,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(dctx->tmpOutBuffer, oldDictEnd - newDictSize, newDictSize);","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(dctx->tmpOutBuffer, oldDictEnd - newDictSize, newDictSize);",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c"", ""line"": ""2105"", ""column"": ""13""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dctx->tmpOutBuffer, oldDictEnd - newDictSize, newDictSize);","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:2105:13:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(dctx->tmpOutBuffer, oldDictEnd - newDictSize, newDictSize);",32
+P02-FF-033,PRE-P02-FF-001,Flawfinder 2.0.20,2,char,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.h,254,5,"Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char minStateSize[LZ4_STREAMHC_MINSIZE];","Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char minStateSize[LZ4_STREAMHC_MINSIZE];",119;120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.h"", ""line"": ""254"", ""column"": ""5""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,char minStateSize[LZ4_STREAMHC_MINSIZE];,"/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.h:254:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char minStateSize[LZ4_STREAMHC_MINSIZE];",33
+P02-FF-034,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c,112,76,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+static void* XXH_memcpy(void* dest, const void* src, size_t size) { return memcpy(dest,src,size); }","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+static void* XXH_memcpy(void* dest, const void* src, size_t size) { return memcpy(dest,src,size); }",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c"", ""line"": ""112"", ""column"": ""76""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"static void* XXH_memcpy(void* dest, const void* src, size_t size) { return memcpy(dest,src,size); }","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:112:76:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+static void* XXH_memcpy(void* dest, const void* src, size_t size) { return memcpy(dest,src,size); }",34
+P02-FF-035,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c,434,5,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dstState, srcState, sizeof(*dstState));","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dstState, srcState, sizeof(*dstState));",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c"", ""line"": ""434"", ""column"": ""5""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dstState, srcState, sizeof(*dstState));","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:434:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dstState, srcState, sizeof(*dstState));",35
+P02-FF-036,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c,446,5,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(statePtr, &state, sizeof(state) - sizeof(state.reserved));","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(statePtr, &state, sizeof(state) - sizeof(state.reserved));",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c"", ""line"": ""446"", ""column"": ""5""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(statePtr, &state, sizeof(state) - sizeof(state.reserved));","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:446:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(statePtr, &state, sizeof(state) - sizeof(state.reserved));",36
+P02-FF-037,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c,569,5,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dst, &hash, sizeof(*dst));","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dst, &hash, sizeof(*dst));",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c"", ""line"": ""569"", ""column"": ""5""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dst, &hash, sizeof(*dst));","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:569:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dst, &hash, sizeof(*dst));",37
+P02-FF-038,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c,895,5,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dstState, srcState, sizeof(*dstState));","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dstState, srcState, sizeof(*dstState));",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c"", ""line"": ""895"", ""column"": ""5""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dstState, srcState, sizeof(*dstState));","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:895:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dstState, srcState, sizeof(*dstState));",38
+P02-FF-039,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c,907,5,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(statePtr, &state, sizeof(state) - sizeof(state.reserved));","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(statePtr, &state, sizeof(state) - sizeof(state.reserved));",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c"", ""line"": ""907"", ""column"": ""5""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(statePtr, &state, sizeof(state) - sizeof(state.reserved));","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:907:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(statePtr, &state, sizeof(state) - sizeof(state.reserved));",39
+P02-FF-040,PRE-P02-FF-001,Flawfinder 2.0.20,2,memcpy,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c,1022,5,"Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dst, &hash, sizeof(*dst));","Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dst, &hash, sizeof(*dst));",120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c"", ""line"": ""1022"", ""column"": ""5""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,"memcpy(dst, &hash, sizeof(*dst));","/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:1022:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dst, &hash, sizeof(*dst));",40
+P02-FF-041,PRE-P02-FF-001,Flawfinder 2.0.20,2,char,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h,204,27,"Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+typedef struct { unsigned char digest[4]; } XXH32_canonical_t;","Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+typedef struct { unsigned char digest[4]; } XXH32_canonical_t;",119;120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h"", ""line"": ""204"", ""column"": ""27""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,typedef struct { unsigned char digest[4]; } XXH32_canonical_t;,"/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:204:27:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+typedef struct { unsigned char digest[4]; } XXH32_canonical_t;",41
+P02-FF-042,PRE-P02-FF-001,Flawfinder 2.0.20,2,char,/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h,239,27,"Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+typedef struct { unsigned char digest[8]; } XXH64_canonical_t;","Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+typedef struct { unsigned char digest[8]; } XXH64_canonical_t;",119;120,"[{""file"": ""/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h"", ""line"": ""239"", ""column"": ""27""}]",,stdout.txt,,未核查,待源码核查,,未分组,待源码核对,未开始,未核查,buffer,2,typedef struct { unsigned char digest[8]; } XXH64_canonical_t;,"/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:239:27:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+typedef struct { unsigned char digest[8]; } XXH64_canonical_t;",42

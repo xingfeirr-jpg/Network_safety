@@ -1,0 +1,19 @@
+png_process_data call:[png_process_some_data,png_push_restore_buffer] noreturn:[png_process_some_data]
+png_process_data_pause call:[png_push_save_buffer] noreturn:[png_push_save_buffer]
+png_process_data_skip call:[png_app_warning]
+png_process_some_data call:[png_push_read_IDAT,png_push_read_chunk,png_push_read_sig]
+png_push_read_sig call:[png_error,png_push_fill_buffer,png_sig_cmp] noreturn:[png_error]
+png_push_read_chunk call:[png_benign_error,png_chunk_unknown_handling,png_error,png_handle_chunk,png_handle_unknown,png_push_have_end,png_push_have_info,png_push_save_buffer,png_read_chunk_header] noreturn:[png_benign_error,png_error,png_handle_chunk,png_push_have_end]
+png_push_fill_buffer call:[memcpy]
+png_push_save_buffer call:[memcpy,png_error,png_free,png_malloc_warn] noreturn:[memcpy,png_error]
+png_push_restore_buffer
+png_push_read_IDAT call:[png_calculate_crc,png_crc_finish,png_crc_read,png_error,png_get_uint_31,png_process_IDAT_data,png_push_fill_buffer,png_push_save_buffer,png_reset_crc] noreturn:[png_error]
+png_process_IDAT_data call:[png_benign_error,png_error,png_push_process_row,png_warning,png_zlib_inflate] noreturn:[png_benign_error,png_error,png_push_process_row,png_warning]
+png_push_process_row call:[memcpy,png_do_read_interlace,png_do_read_transformations,png_error,png_push_have_row,png_read_filter_row,png_read_push_finish_row] noreturn:[png_do_read_interlace,png_do_read_transformations,png_error,png_read_filter_row,png_read_push_finish_row]
+png_read_push_finish_row global:[png_pass_inc,png_pass_start,png_pass_yinc,png_pass_ystart] call:[memset,while] noreturn:[while]
+png_push_have_info
+png_push_have_end
+png_push_have_row
+png_progressive_combine_row call:[png_combine_row] noreturn:[png_combine_row]
+png_set_progressive_read_fn call:[png_set_read_fn] noreturn:[png_set_read_fn]
+png_get_progressive_ptr

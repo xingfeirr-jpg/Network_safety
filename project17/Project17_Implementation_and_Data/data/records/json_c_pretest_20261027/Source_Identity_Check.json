@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-27",
+  "status": "passed",
+  "project": "P05 json-c",
+  "version": "0.18",
+  "commit": "41a55cfcedb54d9c1874f2f0eb07b504091d7e37",
+  "sourceRoot": "/home/yhong/comp5355/sources/json-c-0.18",
+  "method": "user executed extraction;assistant read-only compares all paths,types,file bytes/hashes and link targets with accepted archive",
+  "relativeItemsExcludingRoot": 271,
+  "regularFiles": 239,
+  "symlinks": 22,
+  "subdirectoriesExcludingSourceRoot": 10,
+  "checks": {
+    "exactFileLinkDirectorySetMatchesArchive": true,
+    "all239FileSizesAndSHA256MatchArchive": true,
+    "all22LinkTargetsMatchArchive": true,
+    "sourceRootNotSymlink": true,
+    "fourteenPlannedCoreCUnitsPresent": true,
+    "requiredHeadersAndThreeGenerationTemplatesPresent": true,
+    "cmakeAndHeaderVersion0_18": true,
+    "MITAndFileLevelAttributionPreserved": true
+  },
+  "plannedCoreCFiles": [
+    "arraylist.c",
+    "debug.c",
+    "json_c_version.c",
+    "json_object.c",
+    "json_object_iterator.c",
+    "json_tokener.c",
+    "json_util.c",
+    "json_visit.c",
+    "linkhash.c",
+    "printbuf.c",
+    "random_seed.c",
+    "strerror_override.c",
+    "json_pointer.c",
+    "json_patch.c"
+  ],
+  "rootExtraCExcludedFromTarget": [
+    "libjson.c"
+  ],
+  "generatedHeaderState": "only templates exist;config.h/json_config.h/json.h actual build output not yet created",
+  "buildDirectoryExists": false,
+  "preparationDirectoryExists": false,
+  "buildAndAnalyzers": "not run",
+  "evidence": "../json_c_setup/Source_Acceptance_20261027/Read_Only_Linux_Evidence.json",
+  "archiveEvidence": "Archive_Identity_Check.json",
+  "screenshots": [
+    "../screenshots/P05/FIG-P05-03_source.png",
+    "../screenshots/P05/FIG-P05-04_source_license.png"
+  ],
+  "screenshotMeaning": "two images from one extraction/initial check;04 license supplement,not separate execution",
+  "nextStep": "user captures environment session and runs PREP-P05-001 configure/build;actual action/generated header/dependency acceptance afterward"
+}

@@ -1,0 +1,14 @@
+[
+ "/usr/bin/cppcheck",
+ "--project=/home/yhong/comp5355/build/lz4-v1.10.0/compile_commands.json",
+ "--enable=warning,performance,portability,information",
+ "--check-level=normal",
+ "--platform=unix64",
+ "--std=c11",
+ "-j",
+ "1",
+ "--cppcheck-build-dir=/home/yhong/comp5355/results/pretest-lz4-v1.10.0/PRE-P02-CP-001/cache",
+ "--checkers-report=/home/yhong/comp5355/results/pretest-lz4-v1.10.0/PRE-P02-CP-001/checkers.txt",
+ "--xml",
+ "--xml-version=2"
+]

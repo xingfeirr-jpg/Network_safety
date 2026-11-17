@@ -1,0 +1,98 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1.tar.gz",
+    "localRelative": "archive/libjpeg-turbo-3.1.1.tar.gz",
+    "bytes": 2506010,
+    "sha256": "aadc97ea91f6ef078b0ae3a62bba69e008d9a7db19b34e4ac973b19b71b4217c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1.tar.gz.sha256",
+    "localRelative": "archive/libjpeg-turbo-3.1.1.tar.gz.sha256",
+    "bytes": 124,
+    "sha256": "ac204fda934d57aec08569e8a08c07f14870cdc464fde29be843bea02ec64bc9"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/archive-attempt001-body.part",
+    "localRelative": "raw_download/DL-P09-001/archive-attempt001-body.part",
+    "bytes": 2506010,
+    "sha256": "aadc97ea91f6ef078b0ae3a62bba69e008d9a7db19b34e4ac973b19b71b4217c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/archive-attempt001-exit-code.txt",
+    "localRelative": "raw_download/DL-P09-001/archive-attempt001-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/archive-attempt001-headers.txt",
+    "localRelative": "raw_download/DL-P09-001/archive-attempt001-headers.txt",
+    "bytes": 6410,
+    "sha256": "9f93bee58a2b73ca92dbf366fb05217bca4293735ebd5930f1454dd9c4e79d70"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/archive-attempt001-meta.txt",
+    "localRelative": "raw_download/DL-P09-001/archive-attempt001-meta.txt",
+    "bytes": 942,
+    "sha256": "299e1299f3c49e2cc2aec82b82716b264d091adf48671e82aaca0d8eeea5f0a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/archive-attempt001-stderr.txt",
+    "localRelative": "raw_download/DL-P09-001/archive-attempt001-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/archive-check.json",
+    "localRelative": "raw_download/DL-P09-001/archive-check.json",
+    "bytes": 149680,
+    "sha256": "711fac89e3cc5556933414baf5c57910864966826059beede52d829b0b51c0c8"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/archive-size.txt",
+    "localRelative": "raw_download/DL-P09-001/archive-size.txt",
+    "bytes": 74,
+    "sha256": "9a7881ada7e1129776476d2010855a64ffe1c75ae9225d886744b94d65318f07"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/archive.sha256",
+    "localRelative": "raw_download/DL-P09-001/archive.sha256",
+    "bytes": 124,
+    "sha256": "ac204fda934d57aec08569e8a08c07f14870cdc464fde29be843bea02ec64bc9"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/attempt.tsv",
+    "localRelative": "raw_download/DL-P09-001/attempt.tsv",
+    "bytes": 199,
+    "sha256": "c9a895d3e78aa857a37900c13eb3b2cd0c772cdd3ff375eef464948fdd1e2ced"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/completion.tsv",
+    "localRelative": "raw_download/DL-P09-001/completion.tsv",
+    "bytes": 97,
+    "sha256": "1948d760daf3091a055173d7e143a052ef319a61ddb8bc653665b9ef680d0c86"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/identity-exit-code.txt",
+    "localRelative": "raw_download/DL-P09-001/identity-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/identity-stderr.txt",
+    "localRelative": "raw_download/DL-P09-001/identity-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/identity-stdout.txt",
+    "localRelative": "raw_download/DL-P09-001/identity-stdout.txt",
+    "bytes": 288,
+    "sha256": "d550280271b255d4fb366de7f594e88a56c8a04f04d2d9e73db14679bde23bec"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/preparation-files.sha256",
+    "localRelative": "raw_download/DL-P09-001/preparation-files.sha256",
+    "bytes": 738,
+    "sha256": "81a911c681db676e05f6b4fcbac3a94543e5468d74a15b13ef4ccf1dc46c7675"
+  }
+]

@@ -1,0 +1,16 @@
+[
+ "cmake",
+ "-S",
+ "/home/yhong/comp5355/sources/utf8proc-2.10.0",
+ "-B",
+ "/home/yhong/comp5355/build/utf8proc-2.10.0",
+ "-G",
+ "Ninja",
+ "-DCMAKE_C_COMPILER=/usr/bin/clang-18",
+ "-DCMAKE_BUILD_TYPE=Debug",
+ "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+ "-DBUILD_SHARED_LIBS=OFF",
+ "-DUTF8PROC_ENABLE_TESTING=OFF",
+ "-DUTF8PROC_INSTALL=ON",
+ "-DCMAKE_INSTALL_PREFIX=/home/yhong/comp5355/deps/utf8proc-2.10.0"
+]

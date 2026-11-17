@@ -1,0 +1,13 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatadst.c:134:3: warning: Null pointer passed to 1st parameter expecting 'nonnull' [core.NonNullParamChecker]
+  134 |   memcpy(nextbuffer, dest->buffer, dest->bufsize);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatadst.c:267:7: warning: Dereference of null pointer (loaded from variable 'outbuffer') [core.NullDereference]
+  267 |   if (*outbuffer == NULL || *outsize == 0) {
+      |       ^~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatadst.c:267:29: warning: Dereference of null pointer (loaded from variable 'outsize') [core.NullDereference]
+  267 |   if (*outbuffer == NULL || *outsize == 0) {
+      |                             ^~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatadst.c:272:14: warning: Dereference of null pointer (loaded from variable 'outsize') [core.NullDereference]
+  272 |     *outsize = OUTPUT_BUF_SIZE;
+      |      ~~~~~~~ ^
+4 warnings generated.

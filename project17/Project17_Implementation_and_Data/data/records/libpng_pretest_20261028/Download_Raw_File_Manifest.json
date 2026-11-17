@@ -1,0 +1,338 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50.tar.gz",
+    "localRelative": "archive/libpng-1.6.50.tar.gz",
+    "bytes": 1583920,
+    "sha256": "fba1c8e793f01b493f3f47a926862edbfab487ae4240e02ec67131f1e2bf067f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50.tar.gz.sha256",
+    "localRelative": "archive/libpng-1.6.50.tar.gz.sha256",
+    "bytes": 118,
+    "sha256": "9768d87b89bf2657802368cb96785aad894bf0a5c0d4405d6c6f29e6b7aad1b0"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/archive-check.json",
+    "localRelative": "raw_download/DL-P08-001/archive-check.json",
+    "bytes": 129483,
+    "sha256": "90553d77f517f4de03918feada5275e8cc9ab0e43b72bf9c09065fc6c1e403f4"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/archive-members.txt",
+    "localRelative": "raw_download/DL-P08-001/archive-members.txt",
+    "bytes": 50559,
+    "sha256": "da11dcfc597b38e5837842dd997ef38e825637a95b4fb733ca03f09e3ea07408"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/archive-size.txt",
+    "localRelative": "raw_download/DL-P08-001/archive-size.txt",
+    "bytes": 68,
+    "sha256": "7717350c415e165fa2f6331140f5b835752947b0ffcd607bf9944966f892376f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/archive-try1/body",
+    "localRelative": "raw_download/DL-P08-001/archive-try1/body",
+    "bytes": 1583920,
+    "sha256": "fba1c8e793f01b493f3f47a926862edbfab487ae4240e02ec67131f1e2bf067f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/archive-try1/command.txt",
+    "localRelative": "raw_download/DL-P08-001/archive-try1/command.txt",
+    "bytes": 349,
+    "sha256": "cf7066259514d6af3e918ca9ebf8f49d1818d665f4cadbf9b10b0335e56dbdfe"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/archive-try1/curl-exit-code.txt",
+    "localRelative": "raw_download/DL-P08-001/archive-try1/curl-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/archive-try1/headers.txt",
+    "localRelative": "raw_download/DL-P08-001/archive-try1/headers.txt",
+    "bytes": 705,
+    "sha256": "d8f358ed98a3f8ff0f1d0f45f853b5a46d4f31b56c5f1e3b864bc0138783ea9d"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/archive-try1/http-code.txt",
+    "localRelative": "raw_download/DL-P08-001/archive-try1/http-code.txt",
+    "bytes": 4,
+    "sha256": "c11e3f4837efde2441e23a7b9da02131f53bf59fddeb7147c4ab81afe400460f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/archive-try1/stderr.txt",
+    "localRelative": "raw_download/DL-P08-001/archive-try1/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/archive-try1/url.txt",
+    "localRelative": "raw_download/DL-P08-001/archive-try1/url.txt",
+    "bytes": 92,
+    "sha256": "b4435fd349893137c2ba11e15c128d8742277cb4d35d0ce9c05bbd514e5de603"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/archive.sha256",
+    "localRelative": "raw_download/DL-P08-001/archive.sha256",
+    "bytes": 118,
+    "sha256": "9768d87b89bf2657802368cb96785aad894bf0a5c0d4405d6c6f29e6b7aad1b0"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/attempt-meta.tsv",
+    "localRelative": "raw_download/DL-P08-001/attempt-meta.tsv",
+    "bytes": 156,
+    "sha256": "b3b78f4e30976eb1dbf247a1837b9efd73a532d3436a40a3ad3aa270f4b90cad"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/chain-exit-code.txt",
+    "localRelative": "raw_download/DL-P08-001/chain-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/chain-stderr.txt",
+    "localRelative": "raw_download/DL-P08-001/chain-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/completion.tsv",
+    "localRelative": "raw_download/DL-P08-001/completion.tsv",
+    "bytes": 91,
+    "sha256": "7397e6c8a4e1717966cc8b4a7f08d8f06549fb7e50d803e3530c1aaca0d91a44"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/git-commit-try1/body",
+    "localRelative": "raw_download/DL-P08-001/git-commit-try1/body",
+    "bytes": 1260,
+    "sha256": "6ec458762c83693160e00faae40fc6a8272e2ab741f0ced246df1e4c4c4b7789"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/git-commit-try1/command.txt",
+    "localRelative": "raw_download/DL-P08-001/git-commit-try1/command.txt",
+    "bytes": 361,
+    "sha256": "33b3a4dcd6ff4ed2aa71f4d9effd2d357e205f84e91ba29dbc204cccef483d5e"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/git-commit-try1/curl-exit-code.txt",
+    "localRelative": "raw_download/DL-P08-001/git-commit-try1/curl-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/git-commit-try1/headers.txt",
+    "localRelative": "raw_download/DL-P08-001/git-commit-try1/headers.txt",
+    "bytes": 1319,
+    "sha256": "4f64be8a839896ad11f005d317fff32866ed7c9e80f8b75e22c7627fcacd0f1f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/git-commit-try1/http-code.txt",
+    "localRelative": "raw_download/DL-P08-001/git-commit-try1/http-code.txt",
+    "bytes": 4,
+    "sha256": "c11e3f4837efde2441e23a7b9da02131f53bf59fddeb7147c4ab81afe400460f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/git-commit-try1/stderr.txt",
+    "localRelative": "raw_download/DL-P08-001/git-commit-try1/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/git-commit-try1/url.txt",
+    "localRelative": "raw_download/DL-P08-001/git-commit-try1/url.txt",
+    "bytes": 98,
+    "sha256": "0c45279f8add6a33da95a935e5ecdc95076abde3fcee8c328d1d961b95648228"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/identity-exit-code.txt",
+    "localRelative": "raw_download/DL-P08-001/identity-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/identity-stderr.txt",
+    "localRelative": "raw_download/DL-P08-001/identity-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/identity-stdout.txt",
+    "localRelative": "raw_download/DL-P08-001/identity-stdout.txt",
+    "bytes": 160,
+    "sha256": "33874547a5eeb8c997b3d3ac211729ba6d087a5a1da551dab258944eb9824d13"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/official-identity-exit-code.txt",
+    "localRelative": "raw_download/DL-P08-001/official-identity-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/official-identity-stderr.txt",
+    "localRelative": "raw_download/DL-P08-001/official-identity-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/official-identity-stdout.txt",
+    "localRelative": "raw_download/DL-P08-001/official-identity-stdout.txt",
+    "bytes": 92,
+    "sha256": "c367dfdf98c56830579f295a60ac7972d70cb80c1de61b8157b6dce034880df6"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/official-reference.json",
+    "localRelative": "raw_download/DL-P08-001/official-reference.json",
+    "bytes": 191960,
+    "sha256": "1767ff7c2bc84de9cbe904e0248382f599f9288482f26b8cc5baca596e29e0e8"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/preparation-files.sha256",
+    "localRelative": "raw_download/DL-P08-001/preparation-files.sha256",
+    "bytes": 507,
+    "sha256": "34a72a2117c65ccf20e961b301caa9c1090656f24f7518d92a5b71fe460c2ef9"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/recursive-tree-try1/body",
+    "localRelative": "raw_download/DL-P08-001/recursive-tree-try1/body",
+    "bytes": 191353,
+    "sha256": "841a2d9a80ea75896f35debbe5f362038baf6e2b5976f0518cb47dbf60b219ce"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/recursive-tree-try1/command.txt",
+    "localRelative": "raw_download/DL-P08-001/recursive-tree-try1/command.txt",
+    "bytes": 380,
+    "sha256": "540e6d0239a02fb40dae192f0330e1fbb28a744ffcc7ba6b21d2491f94d2338e"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/recursive-tree-try1/curl-exit-code.txt",
+    "localRelative": "raw_download/DL-P08-001/recursive-tree-try1/curl-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/recursive-tree-try1/headers.txt",
+    "localRelative": "raw_download/DL-P08-001/recursive-tree-try1/headers.txt",
+    "bytes": 1303,
+    "sha256": "f83494b3d58751884396b15439f68da57bd1bbad11a126e8a487ab4a0e1d7cc8"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/recursive-tree-try1/http-code.txt",
+    "localRelative": "raw_download/DL-P08-001/recursive-tree-try1/http-code.txt",
+    "bytes": 4,
+    "sha256": "c11e3f4837efde2441e23a7b9da02131f53bf59fddeb7147c4ab81afe400460f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/recursive-tree-try1/stderr.txt",
+    "localRelative": "raw_download/DL-P08-001/recursive-tree-try1/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/recursive-tree-try1/url.txt",
+    "localRelative": "raw_download/DL-P08-001/recursive-tree-try1/url.txt",
+    "bytes": 108,
+    "sha256": "55578ebb3e75291a418155463d713c5f05311c11916c352eca665b26a778b13d"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/root-tree-sha.txt",
+    "localRelative": "raw_download/DL-P08-001/root-tree-sha.txt",
+    "bytes": 41,
+    "sha256": "b2e5976ddd5eb4ac3f17b3857f00ecfd24c8e3f083bb1999539394a4aa6d555c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tag-object-try1/body",
+    "localRelative": "raw_download/DL-P08-001/tag-object-try1/body",
+    "bytes": 1427,
+    "sha256": "8ef8cb6d461a0a33066364ca7e8fdd60cbb2912087bba6914ae0571c9830628f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tag-object-try1/command.txt",
+    "localRelative": "raw_download/DL-P08-001/tag-object-try1/command.txt",
+    "bytes": 358,
+    "sha256": "7bd1cebed163483214f8b5af39b3aa0adfdcbc6d888fc8897055bebfd87ccd63"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tag-object-try1/curl-exit-code.txt",
+    "localRelative": "raw_download/DL-P08-001/tag-object-try1/curl-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tag-object-try1/headers.txt",
+    "localRelative": "raw_download/DL-P08-001/tag-object-try1/headers.txt",
+    "bytes": 1319,
+    "sha256": "ad64ca10fa8c3fb83e33a08bb9a9426e5aa689e5471404e782e51f7402e43fc8"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tag-object-try1/http-code.txt",
+    "localRelative": "raw_download/DL-P08-001/tag-object-try1/http-code.txt",
+    "bytes": 4,
+    "sha256": "c11e3f4837efde2441e23a7b9da02131f53bf59fddeb7147c4ab81afe400460f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tag-object-try1/stderr.txt",
+    "localRelative": "raw_download/DL-P08-001/tag-object-try1/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tag-object-try1/url.txt",
+    "localRelative": "raw_download/DL-P08-001/tag-object-try1/url.txt",
+    "bytes": 95,
+    "sha256": "397c8413ad9003f026c7e91deff2d00e1cd447b747ef19cb31fee3073124382d"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tag-ref-try1/body",
+    "localRelative": "raw_download/DL-P08-001/tag-ref-try1/body",
+    "bytes": 374,
+    "sha256": "6e3e627584cf6812727198c8844766b4c09f0863e1576f17287414e50feb6498"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tag-ref-try1/command.txt",
+    "localRelative": "raw_download/DL-P08-001/tag-ref-try1/command.txt",
+    "bytes": 323,
+    "sha256": "292ab130c625bb5883bb53ddf8b82a286a2ee1ca9371f7ab917dcaae55ea7c8f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tag-ref-try1/curl-exit-code.txt",
+    "localRelative": "raw_download/DL-P08-001/tag-ref-try1/curl-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tag-ref-try1/headers.txt",
+    "localRelative": "raw_download/DL-P08-001/tag-ref-try1/headers.txt",
+    "bytes": 1339,
+    "sha256": "c107be8a8c87a38a74a41d424869a1f9f424085732bb61dbfbcdf9af442ee2ca"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tag-ref-try1/http-code.txt",
+    "localRelative": "raw_download/DL-P08-001/tag-ref-try1/http-code.txt",
+    "bytes": 4,
+    "sha256": "c11e3f4837efde2441e23a7b9da02131f53bf59fddeb7147c4ab81afe400460f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tag-ref-try1/stderr.txt",
+    "localRelative": "raw_download/DL-P08-001/tag-ref-try1/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tag-ref-try1/url.txt",
+    "localRelative": "raw_download/DL-P08-001/tag-ref-try1/url.txt",
+    "bytes": 66,
+    "sha256": "e821304b5471311ce47988eabf20157ca21007ae17a9e1175c963e773bccd48e"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tar-exit-code.txt",
+    "localRelative": "raw_download/DL-P08-001/tar-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/libpng-1.6.50-DL-P08-001/tar-stderr.txt",
+    "localRelative": "raw_download/DL-P08-001/tar-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

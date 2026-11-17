@@ -1,0 +1,25 @@
+{
+  "purpose": "functional pretest",
+  "runId": "PRE-P10-CP-001",
+  "intendedActions": 1,
+  "identityEntries": 4,
+  "xmlValid": true,
+  "xmlDiagnosticElements": 6,
+  "informationElements": 6,
+  "nonInformationElements": 0,
+  "candidateCount": null,
+  "actualSucceededActions": null,
+  "actualFailedActions": null,
+  "actualSkippedActions": null,
+  "coverageValidation": "pending_tool_output_review",
+  "sourceReview": "not performed",
+  "summaryTiming": "outside analysis measurement",
+  "classification": "pending assistant review; non-information may include configuration failures",
+  "bySeverity": {
+    "information": 6
+  },
+  "byRule": {
+    "checkersReport": 1,
+    "missingIncludeSystem": 5
+  }
+}

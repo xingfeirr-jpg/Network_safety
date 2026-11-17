@@ -1,0 +1,23 @@
+[INFO 2026-10-30 22:03:52] - Using '/usr/bin/clang-18' for analyzer 'clangsa'
+[INFO 2026-10-30 22:03:54] - CodeChecker analyzer version:
+┌──────────────────────┬──────────────────────────────────────────┐
+│ Kind                 │ Version                                  │
+├──────────────────────┼──────────────────────────────────────────┤
+│ Base package version │ 6.29.1                                   │
+│ Package build date   │ 2026-09-18T10:55                         │
+│ Git commit ID (hash) │ 2d666fd9333e69a0c48b5d31a64bd360d5984c20 │
+│ Git tag information  │ 6.29.1                                   │
+└──────────────────────┴──────────────────────────────────────────┘
+
+[INFO 2026-10-30 22:03:54] - CodeChecker web version:
+┌─────────────────────────────────────┬────────────────────────────────────────┐
+│ Kind                                │ Version                                │
+├─────────────────────────────────────┼────────────────────────────────────────┤
+│ Base package version                │ 6.29.1                                 │
+│ Package build date                  │ 2026-09-18T10:55                       │
+│ Git commit ID (hash)                │ 2d666fd9333e69a0c48b5d31a64bd360d5984c │
+│                                     │ 20                                     │
+│ Git tag information                 │ 6.29.1                                 │
+│ Server supported Thrift API version │ 6.74                                   │
+│ Client Thrift API version           │ 6.74                                   │
+└─────────────────────────────────────┴────────────────────────────────────────┘

@@ -1,0 +1,52 @@
+[
+  {
+    "file": "command.txt",
+    "bytes": 691,
+    "sha256": "62043d118e228857da89fe0e0922ada242184c4e056b6c52faa28bc90e7cd2e9"
+  },
+  {
+    "file": "environment-start.txt",
+    "bytes": 2525,
+    "sha256": "f82c7f6d7c338ebb11d652fc85174596712ed51196defbc657b3baf0078011b9"
+  },
+  {
+    "file": "exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "file": "input-files.sha256",
+    "bytes": 1327,
+    "sha256": "6062260cf0c0b7faaa993a0dcb4bdfa2d36517d0121faaf58030c42af3f2eb6d"
+  },
+  {
+    "file": "input-files.txt",
+    "bytes": 601,
+    "sha256": "69c3ed92965cf0bc685294d72255693b74db1a05c8e7e79cf5b94fea328e7ef0"
+  },
+  {
+    "file": "prepared-profile.json",
+    "bytes": 3268,
+    "sha256": "56265a694be5f88ec446046962ee9c8babdfd1a926e09930198cc7fc04bbdca5"
+  },
+  {
+    "file": "run-meta.tsv",
+    "bytes": 445,
+    "sha256": "a3426980dc728d7e0c1fcdf8e8c0ffa821cab44557c49dd1ac48a98eef45efad"
+  },
+  {
+    "file": "stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "stdout.txt",
+    "bytes": 14472,
+    "sha256": "0ff321ceea58d6603f748c6c1860e4ae559d29019b4ff9fd40fb960fbd07c77b"
+  },
+  {
+    "file": "time.txt",
+    "bytes": 1404,
+    "sha256": "61e3b56c577bb70386c15524a18036ceb5b8839adeb8fecdca337e2f87cbfb1f"
+  }
+]

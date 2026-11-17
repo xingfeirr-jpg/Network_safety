@@ -1,0 +1,10 @@
+{
+  "ref": "refs/tags/v2.10.0",
+  "node_id": "MDM6UmVmMjE4ODAzNzU6cmVmcy90YWdzL3YyLjEwLjA=",
+  "url": "https://api.github.com/repos/JuliaStrings/utf8proc/git/refs/tags/v2.10.0",
+  "object": {
+    "sha": "a1b99daa2a3393884220264c927a48ba1251a9c6",
+    "type": "commit",
+    "url": "https://api.github.com/repos/JuliaStrings/utf8proc/git/commits/a1b99daa2a3393884220264c927a48ba1251a9c6"
+  }
+}

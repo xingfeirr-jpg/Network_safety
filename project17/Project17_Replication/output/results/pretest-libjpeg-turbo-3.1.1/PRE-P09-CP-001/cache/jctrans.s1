@@ -1,0 +1,10 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+jpeg_write_coefficients call:[jpeg_suppress_tables,transencode_master_selection]
+jpeg_copy_critical_parameters call:[jpeg_alloc_quant_table,jpeg_set_colorspace,jpeg_set_defaults,memcpy,sizeof] noreturn:[jpeg_alloc_quant_table]
+transencode_master_selection call:[jinit_arith_encoder,jinit_c_master_control,jinit_huff_encoder,jinit_marker_writer,jinit_phuff_encoder,transencode_coef_controller] noreturn:[jinit_arith_encoder,jinit_huff_encoder,jinit_phuff_encoder]
+start_iMCU_row
+start_pass_coef call:[start_iMCU_row] noreturn:[start_iMCU_row]
+compress_output call:[short,start_iMCU_row]
+compress_output_12 call:[compress_output] noreturn:[compress_output]
+transencode_coef_controller call:[jzero_far,short,sizeof]

@@ -1,0 +1,77 @@
+2026-10-27T07:22:22Z
+Linux YHSPC 6.18.54.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct  6 19:13:07 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+nproc=20
+online_processors=20
+MemTotal:        7989128 kB
+MemFree:         6792188 kB
+MemAvailable:    7400852 kB
+Buffers:           24684 kB
+Cached:           711068 kB
+SwapCached:            0 kB
+Active:           226212 kB
+Inactive:         607528 kB
+Active(anon):       3360 kB
+Inactive(anon):    98896 kB
+Active(file):     222852 kB
+Inactive(file):   508632 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       2097152 kB
+SwapFree:        2097152 kB
+Dirty:                 8 kB
+Writeback:             0 kB
+AnonPages:         98324 kB
+Mapped:            88076 kB
+Shmem:              4252 kB
+KReclaimable:      33876 kB
+Slab:             112052 kB
+SReclaimable:      33876 kB
+SUnreclaim:        78176 kB
+KernelStack:        5184 kB
+PageTables:         5320 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     6091716 kB
+Committed_AS:     606052 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       33772 kB
+VmallocChunk:          0 kB
+Percpu:             9312 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:    129024 kB
+FilePmdMapped:         0 kB
+Balloon:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:       64512 kB
+DirectMap2M:     5033984 kB
+DirectMap1G:    11534336 kB
+0.12 0.07 0.02 1/303 24774
+
+Inherited shell limits:
+real-time non-blocking time  (microseconds, -R) unlimited
+core file size              (blocks, -c) 0
+data seg size               (kbytes, -d) unlimited
+scheduling priority                 (-e) 0
+file size                   (blocks, -f) unlimited
+pending signals                     (-i) 31169
+max locked memory           (kbytes, -l) 65536
+max memory size             (kbytes, -m) unlimited
+open files                          (-n) 10240
+pipe size                (512 bytes, -p) 8
+POSIX message queues         (bytes, -q) 819200
+real-time priority                  (-r) 0
+stack size                  (kbytes, -s) 8192
+cpu time                   (seconds, -t) unlimited
+max user processes                  (-u) 31169
+virtual memory              (kbytes, -v) unlimited
+file locks                          (-x) unlimited

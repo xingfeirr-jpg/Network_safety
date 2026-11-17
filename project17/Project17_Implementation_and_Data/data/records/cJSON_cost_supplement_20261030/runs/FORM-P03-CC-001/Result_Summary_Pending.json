@@ -1,0 +1,16 @@
+{
+  "status": "machine_checks_passed_pending_assistant_acceptance",
+  "successful_actions": 1,
+  "failed_actions": 0,
+  "skipped_actions": 0,
+  "legal_plist_files": 1,
+  "saved_diagnostics": 0,
+  "enabled_checkers": 47,
+  "checker_dictionary_matches_old": true,
+  "meaning": "保存诊断数不是漏洞数；普通parse展示数量与旧输出映射待助手核对。",
+  "auxiliary_exit_codes": {
+    "status": 0,
+    "findings": 0
+  },
+  "analysis_exit_code": 0
+}

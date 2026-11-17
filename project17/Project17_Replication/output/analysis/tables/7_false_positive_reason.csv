@@ -1,0 +1,9 @@
+﻿basis_keyword_approximation,alerts,Flawfinder,Cppcheck,clangsa,main_rules
+Write length bounded by capacity,217,192,12,13,memcpy=94 char=53 strlen=24 core.UndefinedBinaryOperatorResult=8
+Error handler does not return,88,8,54,26,core.NullDereference=23 nullPointerRedundantCheck=23 negativeIndex=16 arrayIndexOutOfBoundsCond=14
+Code not compiled in this build,78,70,6,2,char=17 fprintf=15 memcpy=14 vsnprintf=5
+String known to be NUL-terminated,71,71,0,0,strlen=43 memcpy=16 char=11 strncpy=1
+"Name match, not a call",70,70,0,0,char=27 memcpy=14 strlen=13 open=5
+Earlier null or range check,50,40,3,7,strlen=24 memcpy=9 char=3 core.DivideZero=2
+Constant format or argument,37,36,0,1,strlen=11 char=9 snprintf=6 fprintf=4
+Other,37,33,2,2,strlen=17 open=6 memcpy=6 char=3

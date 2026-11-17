@@ -1,0 +1,5 @@
+zlibVersion
+zlibCompileFlags call:[sizeof]
+zError global:[z_errmsg]
+zcalloc call:[calloc,malloc,sizeof] noreturn:[calloc]
+zcfree call:[free] noreturn:[free]

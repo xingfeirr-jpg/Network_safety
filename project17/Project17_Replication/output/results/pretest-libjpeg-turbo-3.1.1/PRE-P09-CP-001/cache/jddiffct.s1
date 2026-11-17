@@ -1,0 +1,11 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+start_iMCU_row
+start_input_pass call:[start_iMCU_row] noreturn:[start_iMCU_row]
+process_restart
+start_output_pass
+decompress_data call:[process_restart,start_iMCU_row]
+dummy_consume_data
+consume_data call:[decompress_data] noreturn:[decompress_data]
+output_data call:[memcpy,sizeof] noreturn:[memcpy]
+jinit_d_diff_controller call:[jround_up,sizeof]

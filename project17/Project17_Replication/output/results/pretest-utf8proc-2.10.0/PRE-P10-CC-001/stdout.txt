@@ -1,0 +1,14 @@
+[INFO 2026-11-08 03:11:56] - Enabled checker list can be found in /home/yhong/comp5355/results/pretest-utf8proc-2.10.0/PRE-P10-CC-001/reports/metadata.json
+[INFO 2026-11-08 03:11:56] - Starting static analysis ...
+[INFO 2026-11-08 03:12:00] - [1/1] clangsa analyzed utf8proc.c successfully.
+[INFO 2026-11-08 03:12:00] - ----==== Summary ====----
+[INFO 2026-11-08 03:12:00] - Successfully analyzed
+[INFO 2026-11-08 03:12:00] -   clangsa: 1
+[INFO 2026-11-08 03:12:00] - Total analyzed compilation commands: 1
+[INFO 2026-11-08 03:12:00] - ----=================----
+[INFO 2026-11-08 03:12:00] - Analysis finished.
+[INFO 2026-11-08 03:12:00] - To view results in the terminal use the "CodeChecker parse" command.
+[INFO 2026-11-08 03:12:00] - To store results use the "CodeChecker store" command.
+[INFO 2026-11-08 03:12:00] - See --help and the user guide for further options about parsing and storing the reports.
+[INFO 2026-11-08 03:12:00] - ----=================----
+[INFO 2026-11-08 03:12:00] - Analysis length: 4.79 sec.

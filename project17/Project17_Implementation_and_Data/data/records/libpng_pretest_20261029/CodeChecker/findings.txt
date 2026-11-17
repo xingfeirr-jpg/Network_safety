@@ -1,0 +1,126 @@
+[INFO 2026-10-29 06:34:48] - Using '/usr/bin/clang-18' for analyzer 'clangsa'
+Found no defects in pngtrans.c
+Found no defects in pngread.c
+Found no defects in pngmem.c
+Found no defects in pngwrite.c
+Found no defects in pngwutil.c
+Found no defects in pngpread.c
+Found no defects in pngerror.c
+Found no defects in png.c
+[HIGH] /home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1076:10: Null pointer passed to 2nd parameter expecting 'nonnull' [core.NonNullParamChecker]
+         memcpy(textp->lang, text_ptr[i].lang, lang_len);
+         ^
+
+[HIGH] /home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1079:10: Null pointer passed to 2nd parameter expecting 'nonnull' [core.NonNullParamChecker]
+         memcpy(textp->lang_key, text_ptr[i].lang_key, lang_key_len);
+         ^
+
+Found 2 defect(s) in pngset.c
+
+[LOW] /home/yhong/comp5355/sources/libpng-1.6.50/pngwtran.c:417:30: Although the value stored to 'dp' is used in the enclosing expression, the value is never actually read from 'dp' [deadcode.DeadStores]
+            for (i = 0, sp = dp = row; i < row_width; i++)
+                             ^
+
+[LOW] /home/yhong/comp5355/sources/libpng-1.6.50/pngwtran.c:437:30: Although the value stored to 'dp' is used in the enclosing expression, the value is never actually read from 'dp' [deadcode.DeadStores]
+            for (i = 0, sp = dp = row; i < row_width; i++)
+                             ^
+
+[LOW] /home/yhong/comp5355/sources/libpng-1.6.50/pngwtran.c:479:30: Although the value stored to 'dp' is used in the enclosing expression, the value is never actually read from 'dp' [deadcode.DeadStores]
+            for (i = 0, sp = dp = row; i < row_width; i++)
+                             ^
+
+Found 3 defect(s) in pngwtran.c
+
+Found no defects in pngrio.c
+Found no defects in pngwio.c
+Found no defects in pngget.c
+[HIGH] /home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1127:13: The left operand of '<<' is a garbage value [core.UndefinedBinaryOperatorResult]
+   ugamma = png_get_uint_32(buf);
+            ^
+
+[HIGH] /home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1224:23: The left operand of '<<' is a garbage value [core.UndefinedBinaryOperatorResult]
+   png_uint_32 uval = png_get_uint_32(buf);
+                      ^
+
+[HIGH] /home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1311:15: The left operand of '>' is a garbage value [core.UndefinedBinaryOperatorResult]
+   if (intent > 3/*PNGv3 spec*/)
+              ^
+
+[HIGH] /home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1375:34: The left operand of '!=' is a garbage value [core.UndefinedBinaryOperatorResult]
+         keyword[keyword_length] != 0)
+                                 ^
+
+[HIGH] /home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1910:4: 3rd function call argument is an uninitialized value [core.CallAndMessage]
+   png_set_cICP(png_ptr, info_ptr, buf[0], buf[1],  buf[2], buf[3]);
+   ^
+
+[HIGH] /home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1950:42: The left operand of '<<' is a garbage value [core.UndefinedBinaryOperatorResult]
+   png_set_cLLI_fixed(png_ptr, info_ptr, png_get_uint_32(buf),
+                                         ^
+
+[HIGH] /home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1984:28: The left operand of '<<' is a garbage value [core.UndefinedBinaryOperatorResult]
+   chromaticities.redx   = png_get_uint_16(buf+ 0U) << 1; /* red x */
+                           ^
+
+[HIGH] /home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:2116:12: The left operand of '<<' is a garbage value [core.UndefinedBinaryOperatorResult]
+   res_x = png_get_uint_32(buf);
+           ^
+
+[HIGH] /home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:2142:15: The left operand of '&' is a garbage value [core.UndefinedBinaryOperatorResult]
+   offset_x = png_get_int_32(buf);
+              ^
+
+Found 9 defect(s) in pngrutil.c
+
+Found no defects in pngrtran.c
+
+----==== Severity Statistics ====----
+┌──────────┬───────────────────┐
+│ Severity │ Number of reports │
+├──────────┼───────────────────┤
+│ HIGH     │ 11                │
+│ LOW      │ 3                 │
+└──────────┴───────────────────┘
+----=================----
+
+----==== Checker Statistics ====----
+┌────────────────────────────────────┬──────────┬───────────────────┐
+│ Checker name                       │ Severity │ Number of reports │
+├────────────────────────────────────┼──────────┼───────────────────┤
+│ core.NonNullParamChecker           │ HIGH     │ 2                 │
+│ deadcode.DeadStores                │ LOW      │ 3                 │
+│ core.UndefinedBinaryOperatorResult │ HIGH     │ 8                 │
+│ core.CallAndMessage                │ HIGH     │ 1                 │
+└────────────────────────────────────┴──────────┴───────────────────┘
+----=================----
+
+----==== File Statistics ====----
+┌────────────┬───────────────────┐
+│ File name  │ Number of reports │
+├────────────┼───────────────────┤
+│ pngset.c   │ 2                 │
+│ pngwtran.c │ 3                 │
+│ pngrutil.c │ 9                 │
+└────────────┴───────────────────┘
+----=================----
+
+----======== Summary ========----
+┌───────────────────────────────────────────┬────┐
+│ Number of processed analyzer result files │ 15 │
+├───────────────────────────────────────────┼────┤
+│ Number of analyzer reports                │ 14 │
+└───────────────────────────────────────────┴────┘
+----=================----
+[INFO 2026-10-29 06:34:48] - ----==== Summary ====----
+[INFO 2026-10-29 06:34:48] - Up-to-date analysis results
+[INFO 2026-10-29 06:34:48] -   clangsa: 15
+[INFO 2026-10-29 06:34:48] - Outdated analysis results
+[INFO 2026-10-29 06:34:48] - Failed to analyze
+[INFO 2026-10-29 06:34:48] - Missing analysis results
+[INFO 2026-10-29 06:34:48] -   clang-tidy: 15
+[INFO 2026-10-29 06:34:48] -   cppcheck: 15
+[INFO 2026-10-29 06:34:48] -   gcc: 15
+[INFO 2026-10-29 06:34:48] -   infer: 15
+[INFO 2026-10-29 06:34:48] - Total analyzed compilation commands: 15
+[INFO 2026-10-29 06:34:48] - Total available compilation commands: 15
+[INFO 2026-10-29 06:34:48] - ----=================----

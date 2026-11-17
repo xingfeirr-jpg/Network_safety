@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="8592699347028424093">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="73" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="126" column="0"/>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;tbl&gt;=16&apos; is redundant or the array &apos;entropy-&gt;dc_stats[16]&apos; is accessed at index 16, which is out of bounds." verbose="Either the condition &apos;tbl&gt;=16&apos; is redundant or the array &apos;entropy-&gt;dc_stats[16]&apos; is accessed at index 16, which is out of bounds." cwe="788" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="715" column="28" info="Array index out of bounds"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="713" column="26" info="Assuming that condition &apos;tbl&gt;=16&apos; is not redundant"/>
+        </error>
+        <error id="negativeIndex" severity="warning" msg="Either the condition &apos;tbl&lt;0&apos; is redundant or the array &apos;entropy-&gt;dc_stats[16]&apos; is accessed at index -1, which is out of bounds." verbose="Either the condition &apos;tbl&lt;0&apos; is redundant or the array &apos;entropy-&gt;dc_stats[16]&apos; is accessed at index -1, which is out of bounds." cwe="786" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="715" column="28" info="Negative array index"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="713" column="15" info="Assuming that condition &apos;tbl&lt;0&apos; is not redundant"/>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;tbl&gt;=16&apos; is redundant or the array &apos;entropy-&gt;ac_stats[16]&apos; is accessed at index 16, which is out of bounds." verbose="Either the condition &apos;tbl&gt;=16&apos; is redundant or the array &apos;entropy-&gt;ac_stats[16]&apos; is accessed at index 16, which is out of bounds." cwe="788" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="727" column="28" info="Array index out of bounds"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="725" column="26" info="Assuming that condition &apos;tbl&gt;=16&apos; is not redundant"/>
+        </error>
+        <error id="negativeIndex" severity="warning" msg="Either the condition &apos;tbl&lt;0&apos; is redundant or the array &apos;entropy-&gt;ac_stats[16]&apos; is accessed at index -1, which is out of bounds." verbose="Either the condition &apos;tbl&lt;0&apos; is redundant or the array &apos;entropy-&gt;ac_stats[16]&apos; is accessed at index -1, which is out of bounds." cwe="786" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="727" column="28" info="Negative array index"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="725" column="15" info="Assuming that condition &apos;tbl&lt;0&apos; is not redundant"/>
+        </error>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:74:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="77" col="33" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:115:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="117" col="53" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:115:1" my-argnr="2" my-argname="st" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="160" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:199:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="201" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:250:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="252" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:329:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="331" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:403:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="405" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:436:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="438" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:505:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="507" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:632:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="634" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:541:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="756" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:74:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="77" col="33" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:115:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="117" col="53" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:115:1" my-argnr="2" my-argname="st" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="160" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:199:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="201" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:250:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="252" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:329:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="331" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:403:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="405" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:436:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="438" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:505:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="507" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:632:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="634" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:541:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c" line="756" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GETENV_S" lineNumber="79"/>
+    <functiondecl functionName="PUTENV_S" lineNumber="132"/>
+    <functiondecl functionName="get_byte" lineNumber="74"/>
+    <functiondecl functionName="arith_decode" lineNumber="115"/>
+    <functiondecl functionName="process_restart" lineNumber="199"/>
+    <functiondecl functionName="decode_mcu_DC_first" lineNumber="250"/>
+    <functiondecl functionName="decode_mcu_AC_first" lineNumber="329"/>
+    <functiondecl functionName="decode_mcu_DC_refine" lineNumber="403"/>
+    <functiondecl functionName="decode_mcu_AC_refine" lineNumber="436"/>
+    <functiondecl functionName="decode_mcu" lineNumber="505"/>
+    <functiondecl functionName="start_pass" lineNumber="632"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ERANGE"/>
+    <functioncall functionName="JERR_BAD_PROGRESSION"/>
+    <functioncall functionName="JERR_CANT_SUSPEND"/>
+    <functioncall functionName="JERR_NO_ARITH_TABLE"/>
+    <functioncall functionName="JWRN_ARITH_BAD_CODE"/>
+    <functioncall functionName="JWRN_BOGUS_PROGRESSION"/>
+    <functioncall functionName="JWRN_NOT_SEQUENTIAL"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="arith_decode"/>
+    <functioncall functionName="bad"/>
+    <functioncall functionName="decode_mcu"/>
+    <functioncall functionName="decode_mcu_AC_first"/>
+    <functioncall functionName="decode_mcu_AC_refine"/>
+    <functioncall functionName="decode_mcu_DC_first"/>
+    <functioncall functionName="decode_mcu_DC_refine"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="get_byte"/>
+    <functioncall functionName="getenv"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="process_restart"/>
+    <functioncall functionName="setenv"/>
+    <functioncall functionName="start_pass"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+  </FileInfo>
+</analyzerinfo>

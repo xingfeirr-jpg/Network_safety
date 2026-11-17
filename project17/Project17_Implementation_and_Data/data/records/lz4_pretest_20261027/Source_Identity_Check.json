@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-27",
+  "status": "passed",
+  "project": "P02 LZ4",
+  "version": "1.10.0",
+  "commit": "ebb370ca83af193212df4dcbadcc5d87bc0de2f0",
+  "sourceDirectory": "/home/yhong/comp5355/sources/lz4-v1.10.0",
+  "checkedRegularFiles": 208,
+  "targetCFiles": [
+    "lib/lz4.c",
+    "lib/lz4hc.c",
+    "lib/lz4frame.c",
+    "lib/lz4file.c",
+    "lib/xxhash.c"
+  ],
+  "checks": {
+    "all208FilesMatchArchive": true,
+    "noExtraOrMissingRegularFiles": true,
+    "allFiveCoreCFilesMatch": true,
+    "licenseHeaderAndCMakeMatch": true
+  },
+  "sourceHashRecord": "linux-extracted-files.sha256",
+  "sourceHashRecordSHA256": "8a6b48880120d16b3742fed30173ba3ee83395849f242122707048c6ccd9e45d",
+  "method": "Read existing extracted regular-file SHA-256 values with wsl find/sha256sum; compare exact relative file set and every content hash with the already accepted fixed archive.",
+  "scopeMeaning": "208 is the complete extracted regular-file count, not C translation units or analyzer coverage; intended library analysis scope remains 5 C units and related headers.",
+  "build": "not run",
+  "toolAnalysis": "not run",
+  "formalThirtyCells": "all not run",
+  "screenshot": "../screenshots/P02/FIG-P02-02_source.png"
+}

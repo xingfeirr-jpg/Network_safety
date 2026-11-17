@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="9973970362135432096">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="73" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="126" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="38" column="0"/>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;pool_id&gt;=2&apos; is redundant or the array &apos;mem-&gt;small_list[2]&apos; is accessed at index 2, which is out of bounds." verbose="Either the condition &apos;pool_id&gt;=2&apos; is redundant or the array &apos;mem-&gt;small_list[2]&apos; is accessed at index 2, which is out of bounds." cwe="788" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="297" column="28" info="Array index out of bounds"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="294" column="30" info="Assuming that condition &apos;pool_id&gt;=2&apos; is not redundant"/>
+        </error>
+        <error id="negativeIndex" severity="warning" msg="Either the condition &apos;pool_id&lt;0&apos; is redundant or the array &apos;mem-&gt;small_list[2]&apos; is accessed at index -1, which is out of bounds." verbose="Either the condition &apos;pool_id&lt;0&apos; is redundant or the array &apos;mem-&gt;small_list[2]&apos; is accessed at index -1, which is out of bounds." cwe="786" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="297" column="28" info="Negative array index"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="294" column="15" info="Assuming that condition &apos;pool_id&lt;0&apos; is not redundant"/>
+        </error>
+        <error id="negativeIndex" severity="warning" msg="Either the condition &apos;pool_id&lt;0&apos; is redundant or the array &apos;mem-&gt;large_list[2]&apos; is accessed at index -1, which is out of bounds." verbose="Either the condition &apos;pool_id&lt;0&apos; is redundant or the array &apos;mem-&gt;large_list[2]&apos; is accessed at index -1, which is out of bounds." cwe="786" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1135" column="29" info="Negative array index"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1105" column="15" info="Assuming that condition &apos;pool_id&lt;0&apos; is not redundant"/>
+        </error>
+        <error id="negativeIndex" severity="warning" msg="Either the condition &apos;pool_id&lt;0&apos; is redundant or the array &apos;mem-&gt;large_list[2]&apos; is accessed at index -1, which is out of bounds." verbose="Either the condition &apos;pool_id&lt;0&apos; is redundant or the array &apos;mem-&gt;large_list[2]&apos; is accessed at index -1, which is out of bounds." cwe="786" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1136" column="18" info="Negative array index"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1105" column="15" info="Assuming that condition &apos;pool_id&lt;0&apos; is not redundant"/>
+        </error>
+        <error id="negativeIndex" severity="warning" msg="Either the condition &apos;pool_id&lt;0&apos; is redundant or the array &apos;mem-&gt;small_list[2]&apos; is accessed at index -1, which is out of bounds." verbose="Either the condition &apos;pool_id&lt;0&apos; is redundant or the array &apos;mem-&gt;small_list[2]&apos; is accessed at index -1, which is out of bounds." cwe="786" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1149" column="29" info="Negative array index"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1105" column="15" info="Assuming that condition &apos;pool_id&lt;0&apos; is not redundant"/>
+        </error>
+        <error id="negativeIndex" severity="warning" msg="Either the condition &apos;pool_id&lt;0&apos; is redundant or the array &apos;mem-&gt;small_list[2]&apos; is accessed at index -1, which is out of bounds." verbose="Either the condition &apos;pool_id&lt;0&apos; is redundant or the array &apos;mem-&gt;small_list[2]&apos; is accessed at index -1, which is out of bounds." cwe="786" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1150" column="18" info="Negative array index"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1105" column="15" info="Assuming that condition &apos;pool_id&lt;0&apos; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;hdr_ptr==NULL&apos; is redundant or there is possible null pointer dereference: hdr_ptr." verbose="Either the condition &apos;hdr_ptr==NULL&apos; is redundant or there is possible null pointer dereference: hdr_ptr." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="401" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="395" column="15" info="Assuming that condition &apos;hdr_ptr==NULL&apos; is not redundant"/>
+            <symbol>hdr_ptr</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;hdr_ptr==NULL&apos; is redundant or there is possible null pointer dereference: hdr_ptr." verbose="Either the condition &apos;hdr_ptr==NULL&apos; is redundant or there is possible null pointer dereference: hdr_ptr." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="405" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="395" column="15" info="Assuming that condition &apos;hdr_ptr==NULL&apos; is not redundant"/>
+            <symbol>hdr_ptr</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;hdr_ptr==NULL&apos; is redundant or there is possible null pointer dereference: hdr_ptr." verbose="Either the condition &apos;hdr_ptr==NULL&apos; is redundant or there is possible null pointer dereference: hdr_ptr." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="406" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="395" column="15" info="Assuming that condition &apos;hdr_ptr==NULL&apos; is not redundant"/>
+            <symbol>hdr_ptr</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1234" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1235" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1236" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1237" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1238" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1239" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1240" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1241" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1242" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1243" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1244" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1247" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1250" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1253" column="5" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1254" column="5" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1256" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1257" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." verbose="Either the condition &apos;mem==NULL&apos; is redundant or there is possible null pointer dereference: mem." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1259" column="3" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1228" column="11" info="Assuming that condition &apos;mem==NULL&apos; is not redundant"/>
+            <symbol>mem</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:818:1" call-funcname="do_sarray_io" call-argnr="3" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="972" col="17" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:886:1" call-funcname="do_barray_io" call-argnr="3" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1056" col="17" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:1098:1" call-funcname="free_pool" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1178" col="14" call-argexpr="pool" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1177" col="40" info="Assuming that condition &apos;pool&gt;=0&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h:79:19" call-funcname="GETENV_S" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1274" col="18" call-argexpr="memenv" call-argvaluetype="7" call-argvalue="30"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:1098:1" call-funcname="free_pool" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1178" col="5" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:1169:1" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:225:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="232" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:267:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="270" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:364:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="367" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:435:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="439" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:552:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="556" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:636:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="641" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:666:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="671" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:696:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="699" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:818:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="822" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:818:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="830" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:886:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="891" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:919:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="927" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:919:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="936" col="17" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:1010:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1020" col="17" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:1098:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1100" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:574:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1202" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:267:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="270" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:364:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="367" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:435:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="439" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:552:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="556" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:636:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="641" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:666:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="671" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:696:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="699" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:818:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="822" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:818:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="830" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:886:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="891" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:919:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="927" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:919:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="936" col="17" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:1010:1" my-argnr="2" my-argname="ptr" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1020" col="17" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:1098:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c" line="1100" col="32" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GETENV_S" lineNumber="79"/>
+    <functiondecl functionName="PUTENV_S" lineNumber="132"/>
+    <functiondecl functionName="round_up_pow2" lineNumber="42"/>
+    <functiondecl functionName="out_of_memory" lineNumber="225"/>
+    <functiondecl functionName="alloc_small" lineNumber="267"/>
+    <functiondecl functionName="alloc_large" lineNumber="364"/>
+    <functiondecl functionName="alloc_sarray" lineNumber="435"/>
+    <functiondecl functionName="alloc_barray" lineNumber="552"/>
+    <functiondecl functionName="request_virt_sarray" lineNumber="636"/>
+    <functiondecl functionName="request_virt_barray" lineNumber="666"/>
+    <functiondecl functionName="realize_virt_arrays" lineNumber="696"/>
+    <functiondecl functionName="do_sarray_io" lineNumber="818"/>
+    <functiondecl functionName="do_barray_io" lineNumber="886"/>
+    <functiondecl functionName="access_virt_sarray" lineNumber="919"/>
+    <functiondecl functionName="access_virt_barray" lineNumber="1010"/>
+    <functiondecl functionName="free_pool" lineNumber="1098"/>
+    <functiondecl functionName="self_destruct" lineNumber="1169"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ERANGE"/>
+    <functioncall functionName="GETENV_S"/>
+    <functioncall functionName="JERR_BAD_ALIGN_TYPE"/>
+    <functioncall functionName="JERR_BAD_ALLOC_CHUNK"/>
+    <functioncall functionName="JERR_BAD_POOL_ID"/>
+    <functioncall functionName="JERR_BAD_VIRTUAL_ACCESS"/>
+    <functioncall functionName="JERR_OUT_OF_MEMORY"/>
+    <functioncall functionName="JERR_VIRTUAL_BUG"/>
+    <functioncall functionName="JERR_WIDTH_OVERFLOW"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="access_virt_barray"/>
+    <functioncall functionName="access_virt_sarray"/>
+    <functioncall functionName="alloc_barray"/>
+    <functioncall functionName="alloc_large"/>
+    <functioncall functionName="alloc_sarray"/>
+    <functioncall functionName="alloc_small"/>
+    <functioncall functionName="do_barray_io"/>
+    <functioncall functionName="do_sarray_io"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="free_pool"/>
+    <functioncall functionName="getenv"/>
+    <functioncall functionName="jpeg_free_large"/>
+    <functioncall functionName="jpeg_free_small"/>
+    <functioncall functionName="jpeg_get_large"/>
+    <functioncall functionName="jpeg_get_small"/>
+    <functioncall functionName="jpeg_mem_available"/>
+    <functioncall functionName="jpeg_mem_init"/>
+    <functioncall functionName="jpeg_mem_term"/>
+    <functioncall functionName="jpeg_open_backing_store"/>
+    <functioncall functionName="jzero_far"/>
+    <functioncall functionName="out_of_memory"/>
+    <functioncall functionName="realize_virt_arrays"/>
+    <functioncall functionName="request_virt_barray"/>
+    <functioncall functionName="request_virt_sarray"/>
+    <functioncall functionName="round_up_pow2"/>
+    <functioncall functionName="self_destruct"/>
+    <functioncall functionName="setenv"/>
+    <functioncall functionName="sscanf"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+  </FileInfo>
+</analyzerinfo>

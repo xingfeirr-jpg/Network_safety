@@ -1,0 +1,210 @@
+{
+  "run_id": "FORM-P03-CP-001",
+  "records": [
+    {
+      "xml_ordinal": 1,
+      "record_kind": "information",
+      "attributes": {
+        "id": "missingIncludeSystem",
+        "severity": "information",
+        "msg": "Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+        "verbose": "Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "40",
+          "column": "0"
+        }
+      ],
+      "symbols": [],
+      "raw_xml_block": "<error id=\"missingIncludeSystem\" severity=\"information\" msg=\"Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\" verbose=\"Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"40\" column=\"0\"/>\n        </error>",
+      "xml_start_line": 5,
+      "xml_end_line": 7
+    },
+    {
+      "xml_ordinal": 2,
+      "record_kind": "information",
+      "attributes": {
+        "id": "missingIncludeSystem",
+        "severity": "information",
+        "msg": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+        "verbose": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "41",
+          "column": "0"
+        }
+      ],
+      "symbols": [],
+      "raw_xml_block": "<error id=\"missingIncludeSystem\" severity=\"information\" msg=\"Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\" verbose=\"Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"41\" column=\"0\"/>\n        </error>",
+      "xml_start_line": 8,
+      "xml_end_line": 10
+    },
+    {
+      "xml_ordinal": 3,
+      "record_kind": "information",
+      "attributes": {
+        "id": "missingIncludeSystem",
+        "severity": "information",
+        "msg": "Include file: <math.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+        "verbose": "Include file: <math.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "42",
+          "column": "0"
+        }
+      ],
+      "symbols": [],
+      "raw_xml_block": "<error id=\"missingIncludeSystem\" severity=\"information\" msg=\"Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\" verbose=\"Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"42\" column=\"0\"/>\n        </error>",
+      "xml_start_line": 11,
+      "xml_end_line": 13
+    },
+    {
+      "xml_ordinal": 4,
+      "record_kind": "information",
+      "attributes": {
+        "id": "missingIncludeSystem",
+        "severity": "information",
+        "msg": "Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+        "verbose": "Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "43",
+          "column": "0"
+        }
+      ],
+      "symbols": [],
+      "raw_xml_block": "<error id=\"missingIncludeSystem\" severity=\"information\" msg=\"Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\" verbose=\"Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"43\" column=\"0\"/>\n        </error>",
+      "xml_start_line": 14,
+      "xml_end_line": 16
+    },
+    {
+      "xml_ordinal": 5,
+      "record_kind": "information",
+      "attributes": {
+        "id": "missingIncludeSystem",
+        "severity": "information",
+        "msg": "Include file: <limits.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+        "verbose": "Include file: <limits.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "44",
+          "column": "0"
+        }
+      ],
+      "symbols": [],
+      "raw_xml_block": "<error id=\"missingIncludeSystem\" severity=\"information\" msg=\"Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\" verbose=\"Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"44\" column=\"0\"/>\n        </error>",
+      "xml_start_line": 17,
+      "xml_end_line": 19
+    },
+    {
+      "xml_ordinal": 6,
+      "record_kind": "information",
+      "attributes": {
+        "id": "missingIncludeSystem",
+        "severity": "information",
+        "msg": "Include file: <ctype.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+        "verbose": "Include file: <ctype.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "45",
+          "column": "0"
+        }
+      ],
+      "symbols": [],
+      "raw_xml_block": "<error id=\"missingIncludeSystem\" severity=\"information\" msg=\"Include file: &lt;ctype.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\" verbose=\"Include file: &lt;ctype.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"45\" column=\"0\"/>\n        </error>",
+      "xml_start_line": 20,
+      "xml_end_line": 22
+    },
+    {
+      "xml_ordinal": 7,
+      "record_kind": "information",
+      "attributes": {
+        "id": "missingIncludeSystem",
+        "severity": "information",
+        "msg": "Include file: <float.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+        "verbose": "Include file: <float.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "46",
+          "column": "0"
+        }
+      ],
+      "symbols": [],
+      "raw_xml_block": "<error id=\"missingIncludeSystem\" severity=\"information\" msg=\"Include file: &lt;float.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\" verbose=\"Include file: &lt;float.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"46\" column=\"0\"/>\n        </error>",
+      "xml_start_line": 23,
+      "xml_end_line": 25
+    },
+    {
+      "xml_ordinal": 8,
+      "record_kind": "information",
+      "attributes": {
+        "id": "missingIncludeSystem",
+        "severity": "information",
+        "msg": "Include file: <locale.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+        "verbose": "Include file: <locale.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "49",
+          "column": "0"
+        }
+      ],
+      "symbols": [],
+      "raw_xml_block": "<error id=\"missingIncludeSystem\" severity=\"information\" msg=\"Include file: &lt;locale.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\" verbose=\"Include file: &lt;locale.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"49\" column=\"0\"/>\n        </error>",
+      "xml_start_line": 26,
+      "xml_end_line": 28
+    },
+    {
+      "xml_ordinal": 9,
+      "record_kind": "information",
+      "attributes": {
+        "id": "missingIncludeSystem",
+        "severity": "information",
+        "msg": "Include file: <stddef.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+        "verbose": "Include file: <stddef.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h",
+          "line": "86",
+          "column": "0"
+        }
+      ],
+      "symbols": [],
+      "raw_xml_block": "<error id=\"missingIncludeSystem\" severity=\"information\" msg=\"Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\" verbose=\"Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h\" line=\"86\" column=\"0\"/>\n        </error>",
+      "xml_start_line": 29,
+      "xml_end_line": 31
+    },
+    {
+      "xml_ordinal": 26,
+      "record_kind": "information",
+      "attributes": {
+        "id": "checkersReport",
+        "severity": "information",
+        "msg": "Active checkers: 79/592 (use --checkers-report=<filename> to see details)",
+        "verbose": "Active checkers: 79/592 (use --checkers-report=<filename> to see details)"
+      },
+      "locations": [],
+      "symbols": [],
+      "raw_xml_block": "<error id=\"checkersReport\" severity=\"information\" msg=\"Active checkers: 79/592 (use --checkers-report=&lt;filename&gt; to see details)\" verbose=\"Active checkers: 79/592 (use --checkers-report=&lt;filename&gt; to see details)\"/>",
+      "xml_start_line": 112,
+      "xml_end_line": 112
+    }
+  ],
+  "mapping_status": "pending_assistant_comparison_with_PRE-P03-CP-001"
+}

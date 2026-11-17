@@ -1,0 +1,6 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+start_pass_lhuff_decoder call:[jpeg_make_d_derived_tbl] noreturn:[jpeg_make_d_derived_tbl]
+process_restart
+decode_mcus call:[jpeg_fill_bit_buffer,jpeg_huff_decode,jzero_far,sizeof] noreturn:[jzero_far]
+jinit_lhuff_decoder call:[sizeof]

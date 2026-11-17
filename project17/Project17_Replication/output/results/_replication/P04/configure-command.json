@@ -1,0 +1,16 @@
+[
+ "cmake",
+ "-S",
+ "/home/yhong/comp5355/sources/libyaml-0.2.5",
+ "-B",
+ "/home/yhong/comp5355/build/libyaml-0.2.5",
+ "-G",
+ "Ninja",
+ "-DCMAKE_C_COMPILER=/usr/bin/clang-18",
+ "-DCMAKE_BUILD_TYPE=Debug",
+ "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+ "-DBUILD_SHARED_LIBS=OFF",
+ "-DBUILD_TESTING=OFF",
+ "-DYAML_STATIC_LIB_NAME=yaml",
+ "-DCMAKE_INSTALL_PREFIX=/home/yhong/comp5355/deps/libyaml-0.2.5"
+]

@@ -1,0 +1,29 @@
+{
+  "project": "P09 libjpeg-turbo",
+  "runId": "PRE-P09-CP-001",
+  "purpose": "functional pretest",
+  "accepted": true,
+  "observedCompletedRequests": 101,
+  "observedFailedRequests": 0,
+  "observedSkippedRequests": 0,
+  "sourceCandidates": 91,
+  "informationElements": 13,
+  "measurement": {
+    "schema": "measurement-v1",
+    "wall_seconds": 12.97,
+    "user_seconds": 12.58,
+    "system_seconds": 0.24,
+    "max_rss_kib": 95784,
+    "exit_code": 0,
+    "boundary": "complete Cppcheck invocation;identity and XML summary outside timing",
+    "repetitions": 1,
+    "osCache": "natural_not_cleared"
+  },
+  "cacheBoundary": {
+    "persistentAnalyzerInfoSlots": 58,
+    "mappedButAbsentA2A3Slots": 43,
+    "sourcePaths": 58,
+    "meaning": "101 primary analysis requests completed;do not claim101independent bit-depth contexts persisted for whole-program processing"
+  },
+  "sourceReview": "not started;all91candidates unreviewed"
+}

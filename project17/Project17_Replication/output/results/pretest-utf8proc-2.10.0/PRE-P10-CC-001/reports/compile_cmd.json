@@ -1,0 +1,8 @@
+[
+  {
+    "directory": "/home/yhong/comp5355/build/utf8proc-2.10.0",
+    "command": "/usr/bin/clang-18 -DUTF8PROC_EXPORTS -DUTF8PROC_STATIC -I/home/yhong/comp5355/sources/utf8proc-2.10.0/. -g -fPIC -O2 -std=c99 -pedantic -Wall -o CMakeFiles/utf8proc.dir/utf8proc.c.o -c /home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c",
+    "file": "/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c",
+    "output": "CMakeFiles/utf8proc.dir/utf8proc.c.o"
+  }
+]

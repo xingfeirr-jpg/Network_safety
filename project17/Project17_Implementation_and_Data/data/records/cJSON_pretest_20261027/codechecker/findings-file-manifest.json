@@ -1,0 +1,17 @@
+[
+  {
+    "path": "findings.txt",
+    "bytes": 1391,
+    "sha256": "cb399610fa5f3f2d8472f0451fa27c358a6bc53793f071485edcffcd658a26ee"
+  },
+  {
+    "path": "findings-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "findings-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  }
+]

@@ -1,0 +1,21 @@
+png_set_bgr
+png_set_swap
+png_set_packing
+png_set_packswap
+png_set_shift
+png_set_interlace_handling
+png_set_filler call:[case,png_app_error]
+png_set_add_alpha call:[png_set_filler]
+png_set_swap_alpha
+png_set_invert_alpha
+png_set_invert_mono
+png_do_invert
+png_do_swap
+png_do_packswap global:[fourbppswaptable,onebppswaptable,twobppswaptable]
+png_do_strip_channel
+png_do_bgr
+png_do_check_palette_indexes
+png_set_user_transform_info call:[png_app_error]
+png_get_user_transform_ptr
+png_get_current_row_number call:[return] noreturn:[return]
+png_get_current_pass_number

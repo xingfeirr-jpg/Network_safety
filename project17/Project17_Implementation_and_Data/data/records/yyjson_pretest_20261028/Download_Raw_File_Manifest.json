@@ -1,0 +1,110 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0.tar.gz",
+    "localRelative": "archive/yyjson-0.12.0.tar.gz",
+    "bytes": 1621181,
+    "sha256": "94e9c90f8f12d8329f2c0756782d21e5c278729023cd2c5fe47e323a35947ed6"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0.tar.gz.sha256",
+    "localRelative": "archive/yyjson-0.12.0.tar.gz.sha256",
+    "bytes": 118,
+    "sha256": "dcb020d679414dd98f564689b9b3e36ed083dde1d6e2e5a2faa5b0933699588f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/archive-check.json",
+    "localRelative": "download/archive-check.json",
+    "bytes": 211369,
+    "sha256": "d59311ee0df6c3a229764914effeedc59f01d705d431dc90072ce648aebc8ba8"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/archive-members.txt",
+    "localRelative": "download/archive-members.txt",
+    "bytes": 90104,
+    "sha256": "99f6d243b2a80ac21f27869255c9abf4dae93c03b45f89dfd910ac316f07fd06"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/archive-size.txt",
+    "localRelative": "download/archive-size.txt",
+    "bytes": 68,
+    "sha256": "872345d9fd10c3a44b805ecb334e1ca1b4aa67f1dee24f61c9c8fd6a8b47eb7c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/archive.sha256",
+    "localRelative": "download/archive.sha256",
+    "bytes": 118,
+    "sha256": "dcb020d679414dd98f564689b9b3e36ed083dde1d6e2e5a2faa5b0933699588f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/attempt-meta.tsv",
+    "localRelative": "download/attempt-meta.tsv",
+    "bytes": 210,
+    "sha256": "df21df3d6aaf8e371bff077daef74ec4305ab54b567e4e1b6daa2b099dad53e9"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/command.txt",
+    "localRelative": "download/command.txt",
+    "bytes": 373,
+    "sha256": "b3f52d413f40a3a72dfe39cf021831e5a14d6649f89c3a205f9a98f6e26658f7"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/completion.tsv",
+    "localRelative": "download/completion.tsv",
+    "bytes": 165,
+    "sha256": "3fdf6bb6b93cc1673b64c95ffbfa6a420c53becb72dea2f5619070e47acfad45"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/curl-exit-code.txt",
+    "localRelative": "download/curl-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/curl-stderr.txt",
+    "localRelative": "download/curl-stderr.txt",
+    "bytes": 633,
+    "sha256": "0a1c71dfd5341cbd0bded8467496ac061ade2da37d5fb53da7a01692e42796f1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/curl-stdout.txt",
+    "localRelative": "download/curl-stdout.txt",
+    "bytes": 141,
+    "sha256": "797264cea204ef0b9ebdbe1efb65fcfaae421e2227b244649b8aeb93c4ebf28f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/identity-exit-code.txt",
+    "localRelative": "download/identity-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/identity-stderr.txt",
+    "localRelative": "download/identity-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/identity-stdout.txt",
+    "localRelative": "download/identity-stdout.txt",
+    "bytes": 159,
+    "sha256": "148c9885c0d0f5b875fa4733be2853f50d64c0e837fee86b777f574a5c608f0c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/preparation-files.sha256",
+    "localRelative": "download/preparation-files.sha256",
+    "bytes": 536,
+    "sha256": "8ada47df427c485b3db6369086f8461754d3e7de0f38d5c6cc0021a4c8d0e075"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/tar-exit-code.txt",
+    "localRelative": "download/tar-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/yyjson-0.12.0-DL-P06-001/tar-stderr.txt",
+    "localRelative": "download/tar-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

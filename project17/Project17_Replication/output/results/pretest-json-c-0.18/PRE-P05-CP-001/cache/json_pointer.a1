@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="12425687297697335179">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/strerror_override.h" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_inttypes.h" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object.h" line="30" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/strerror_override.h" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="15" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="16" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object_private.h" line="28" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/snprintf_compat.h" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/vasprintf_compat.h" line="12" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/vasprintf_compat.h" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/vasprintf_compat.h" line="15" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:46:12" call-funcname="is_valid_index" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="139" col="22" call-argexpr="&amp;idx" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:85:12" call-funcname="json_pointer_get_single_path" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="178" col="40" call-argexpr="&amp;obj" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:85:12" call-funcname="json_pointer_get_single_path" call-argnr="4" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="178" col="40" call-argexpr="&amp;idx" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:157:12" call-funcname="json_pointer_result_get_recursive" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="207" col="40" call-argexpr="&amp;res" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer_private.h:29:5" call-funcname="json_pointer_get_internal" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="258" col="32" call-argexpr="&amp;jpres" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:201:12" call-funcname="json_pointer_object_get_recursive" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="343" col="40" call-argexpr="&amp;set" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer_private.h:35:5" call-funcname="json_pointer_set_with_array_cb" call-argnr="5" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="355" col="39" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:201:12" call-funcname="json_pointer_object_get_recursive" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="403" col="40" call-argexpr="&amp;set" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:129:12" call-funcname="json_pointer_set_single_path" call-argnr="5" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="410" col="35" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:196:17" call-funcname="json_object_is_type" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="88" col="6" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:85:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:46:12" call-funcname="is_valid_index" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="90" col="8" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:85:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:46:12" call-funcname="is_valid_index" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="90" col="8" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:85:12" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:623:17" call-funcname="json_object_array_put_idx" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="126" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:123:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:623:17" call-funcname="json_object_array_put_idx" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="126" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:123:12" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:196:17" call-funcname="json_object_is_type" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="133" col="6" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:129:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:606:17" call-funcname="json_object_array_add" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="138" col="11" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:129:12" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:157:12" call-funcname="json_pointer_result_get_recursive" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="185" col="10" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:157:12" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:157:12" call-funcname="json_pointer_result_get_recursive" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="207" col="7" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:201:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:157:12" call-funcname="json_pointer_result_get_recursive" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="207" col="7" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:201:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer_private.h:29:5" call-funcname="json_pointer_get_internal" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="258" col="7" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.h:42:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer_private.h:29:5" call-funcname="json_pointer_get_internal" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="258" col="7" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.h:42:17" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:129:12" call-funcname="json_pointer_set_single_path" call-argnr="4" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="333" col="10" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer_private.h:35:5" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:129:12" call-funcname="json_pointer_set_single_path" call-argnr="5" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="333" col="10" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer_private.h:35:5" my-argnr="5"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer_private.h:35:5" call-funcname="json_pointer_set_with_array_cb" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="355" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.h:90:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer_private.h:35:5" call-funcname="json_pointer_set_with_array_cb" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="355" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.h:90:17" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer_private.h:35:5" call-funcname="json_pointer_set_with_array_cb" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="355" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.h:90:17" my-argnr="3"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <array-index>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:157:12" my-argnr="2" my-argname="path" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="166" col="6" value="0"/>
+    </array-index>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:32:13" my-argnr="1" my-argname="s" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="34" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:32:13" my-argnr="2" my-argname="occur" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="35" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:46:12" my-argnr="1" my-argname="path" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="48" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:157:12" my-argnr="2" my-argname="path" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="166" col="6" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:32:13" my-argnr="1" my-argname="s" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="34" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:32:13" my-argnr="2" my-argname="occur" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="35" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:46:12" my-argnr="1" my-argname="path" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="48" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:157:12" my-argnr="2" my-argname="path" file="/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c" line="166" col="6" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="string_replace_all_occurrences_with_char" lineNumber="32"/>
+    <functiondecl functionName="is_valid_index" lineNumber="46"/>
+    <functiondecl functionName="json_pointer_get_single_path" lineNumber="85"/>
+    <functiondecl functionName="json_object_array_put_idx_cb" lineNumber="123"/>
+    <functiondecl functionName="json_pointer_set_single_path" lineNumber="129"/>
+    <functiondecl functionName="json_pointer_result_get_recursive" lineNumber="157"/>
+    <functiondecl functionName="json_pointer_object_get_recursive" lineNumber="201"/>
+    <functiondecl functionName="json_pointer_get_internal" lineNumber="217"/>
+    <functiondecl functionName="json_pointer_set_with_array_cb" lineNumber="301"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ENOENT"/>
+    <functioncall functionName="ENOMEM"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="array_set_cb"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="is_valid_index"/>
+    <functioncall functionName="json_c_shallow_copy_default"/>
+    <functioncall functionName="json_object_array_add"/>
+    <functioncall functionName="json_object_array_get_idx"/>
+    <functioncall functionName="json_object_array_length"/>
+    <functioncall functionName="json_object_array_put_idx"/>
+    <functioncall functionName="json_object_array_put_idx_cb"/>
+    <functioncall functionName="json_object_free_userdata"/>
+    <functioncall functionName="json_object_is_type"/>
+    <functioncall functionName="json_object_object_add"/>
+    <functioncall functionName="json_object_object_get_ex"/>
+    <functioncall functionName="json_object_put"/>
+    <functioncall functionName="json_object_userdata_to_json_string"/>
+    <functioncall functionName="json_pointer_get_internal"/>
+    <functioncall functionName="json_pointer_get_single_path"/>
+    <functioncall functionName="json_pointer_object_get_recursive"/>
+    <functioncall functionName="json_pointer_result_get_recursive"/>
+    <functioncall functionName="json_pointer_set_single_path"/>
+    <functioncall functionName="json_pointer_set_with_array_cb"/>
+    <functioncall functionName="json_type_array"/>
+    <functioncall functionName="json_type_object"/>
+    <functioncall functionName="memmove"/>
+    <functioncall functionName="out"/>
+    <functioncall functionName="set_single_path"/>
+    <functioncall functionName="strchr"/>
+    <functioncall functionName="strdup"/>
+    <functioncall functionName="string_replace_all_occurrences_with_char"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strrchr"/>
+    <functioncall functionName="strstr"/>
+    <functioncall functionName="strtoull"/>
+    <functioncall functionName="va_end"/>
+    <functioncall functionName="va_start"/>
+    <functioncall functionName="vasprintf"/>
+  </FileInfo>
+</analyzerinfo>

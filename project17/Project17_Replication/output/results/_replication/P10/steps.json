@@ -1,0 +1,41 @@
+{
+  "id": "P10",
+  "name": "utf8proc",
+  "version": "2.10.0",
+  "started_utc": "2026-11-08T03:11:25Z",
+  "S1": {
+    "archive": "/home/yhong/comp5355/downloads/utf8proc-2.10.0.tar.gz",
+    "sha256": "43f09c9d0a2d3fcbb4eba77729dd603b0ac470ccace59a2961f82a8b6323445f",
+    "expected_sha256": "43f09c9d0a2d3fcbb4eba77729dd603b0ac470ccace59a2961f82a8b6323445f",
+    "matches_original": true
+  },
+  "S2": {
+    "source_dir": "/home/yhong/comp5355/sources/utf8proc-2.10.0",
+    "regular_files": 45
+  },
+  "S3": {
+    "build_dir": "/home/yhong/comp5355/build/utf8proc-2.10.0",
+    "compile_actions": 1
+  },
+  "S5": {
+    "FF": {
+      "run_id": "PRE-P10-FF-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T03:11:28Z",
+      "ended_utc": "2026-11-08T03:11:29Z"
+    },
+    "CP": {
+      "run_id": "PRE-P10-CP-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T03:11:29Z",
+      "ended_utc": "2026-11-08T03:11:55Z"
+    },
+    "CC": {
+      "run_id": "PRE-P10-CC-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T03:11:55Z",
+      "ended_utc": "2026-11-08T03:12:01Z"
+    }
+  },
+  "ended_utc": "2026-11-08T03:12:01Z"
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="6294848125033353164">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="73" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="126" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:525:14" call-funcname="jinit_d_main_controller" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="714" col="30" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:527:14" call-funcname="j12init_d_main_controller" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="716" col="32" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:555:14" call-funcname="j16init_d_main_controller" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="720" col="32" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c:35:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="39" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c:96:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="105" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1120:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="273" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c:415:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="425" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c:511:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="513" col="41" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c:777:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="779" col="41" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c:837:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="839" col="41" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1107:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="856" col="41" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:524:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="884" col="41" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c:35:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="39" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c:96:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="105" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1120:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="273" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c:415:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="425" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c:511:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="513" col="41" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c:777:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="779" col="41" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c:837:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="839" col="41" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1107:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="856" col="41" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:524:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c" line="884" col="41" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GETENV_S" lineNumber="79"/>
+    <functiondecl functionName="PUTENV_S" lineNumber="132"/>
+    <functiondecl functionName="use_merged_upsample" lineNumber="35"/>
+    <functiondecl functionName="jpeg_core_output_dimensions" lineNumber="96"/>
+    <functiondecl functionName="prepare_range_limit_table" lineNumber="415"/>
+    <functiondecl functionName="master_selection" lineNumber="511"/>
+    <functiondecl functionName="prepare_for_output_pass" lineNumber="777"/>
+    <functiondecl functionName="finish_output_pass" lineNumber="837"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ERANGE"/>
+    <functioncall functionName="JBUF_CRANK_DEST"/>
+    <functioncall functionName="JBUF_PASS_THRU"/>
+    <functioncall functionName="JBUF_SAVE_AND_PASS"/>
+    <functioncall functionName="JERR_ARITH_NOTIMPL"/>
+    <functioncall functionName="JERR_BAD_PRECISION"/>
+    <functioncall functionName="JERR_BAD_STATE"/>
+    <functioncall functionName="JERR_MODE_CHANGE"/>
+    <functioncall functionName="JERR_NOTIMPL"/>
+    <functioncall functionName="JERR_WIDTH_OVERFLOW"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="finish_output_pass"/>
+    <functioncall functionName="getenv"/>
+    <functioncall functionName="j12init_1pass_quantizer"/>
+    <functioncall functionName="j12init_2pass_quantizer"/>
+    <functioncall functionName="j12init_color_deconverter"/>
+    <functioncall functionName="j12init_d_coef_controller"/>
+    <functioncall functionName="j12init_d_diff_controller"/>
+    <functioncall functionName="j12init_d_main_controller"/>
+    <functioncall functionName="j12init_d_post_controller"/>
+    <functioncall functionName="j12init_inverse_dct"/>
+    <functioncall functionName="j12init_lossless_decompressor"/>
+    <functioncall functionName="j12init_merged_upsampler"/>
+    <functioncall functionName="j12init_upsampler"/>
+    <functioncall functionName="j16init_color_deconverter"/>
+    <functioncall functionName="j16init_d_diff_controller"/>
+    <functioncall functionName="j16init_d_main_controller"/>
+    <functioncall functionName="j16init_d_post_controller"/>
+    <functioncall functionName="j16init_lossless_decompressor"/>
+    <functioncall functionName="j16init_upsampler"/>
+    <functioncall functionName="jdiv_round_up"/>
+    <functioncall functionName="jinit_1pass_quantizer"/>
+    <functioncall functionName="jinit_2pass_quantizer"/>
+    <functioncall functionName="jinit_arith_decoder"/>
+    <functioncall functionName="jinit_color_deconverter"/>
+    <functioncall functionName="jinit_d_coef_controller"/>
+    <functioncall functionName="jinit_d_diff_controller"/>
+    <functioncall functionName="jinit_d_main_controller"/>
+    <functioncall functionName="jinit_d_post_controller"/>
+    <functioncall functionName="jinit_huff_decoder"/>
+    <functioncall functionName="jinit_inverse_dct"/>
+    <functioncall functionName="jinit_lhuff_decoder"/>
+    <functioncall functionName="jinit_lossless_decompressor"/>
+    <functioncall functionName="jinit_merged_upsampler"/>
+    <functioncall functionName="jinit_phuff_decoder"/>
+    <functioncall functionName="jinit_upsampler"/>
+    <functioncall functionName="jpeg_calc_output_dimensions"/>
+    <functioncall functionName="jpeg_core_output_dimensions"/>
+    <functioncall functionName="master_selection"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="prepare_for_output_pass"/>
+    <functioncall functionName="prepare_range_limit_table"/>
+    <functioncall functionName="setenv"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="use_merged_upsample"/>
+  </FileInfo>
+</analyzerinfo>

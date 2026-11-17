@@ -1,0 +1,178 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/pnglibconf.h",
+    "localFile": "review_evidence/libpng_pretest_20261028/build/pnglibconf.h",
+    "category": "generated_header",
+    "codeOwner": "P08 libpng",
+    "bytes": 8090,
+    "sha256": "d510d301910871746a7059fbc9be0035e0f91502ea248c23c9d95fafc4afc646"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/png.c",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/png.c",
+    "category": "translation_unit",
+    "codeOwner": "P08 libpng",
+    "bytes": 135132,
+    "sha256": "c439e93c040d6c0913f6e6e3847c44d985a3a7cefc60158deece24ab55dfd92b"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/png.h",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/png.h",
+    "category": "source_header",
+    "codeOwner": "P08 libpng",
+    "bytes": 148212,
+    "sha256": "3c3b27f3e9b3030f7d234cb491b524fcc765345ced5a5dbce9e882cc35a1167f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngconf.h",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngconf.h",
+    "category": "source_header",
+    "codeOwner": "P08 libpng",
+    "bytes": 22673,
+    "sha256": "b92d648561f31b884be944720d5eb56eae1949b39e6b70ca70d8ed4a0f4b7349"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngdebug.h",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngdebug.h",
+    "category": "source_header",
+    "codeOwner": "P08 libpng",
+    "bytes": 5414,
+    "sha256": "dcc808a35628d28e5aca1297e8ebe7c376f12448f65b72214b7271a2e1fc865e"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngerror.c",
+    "category": "translation_unit",
+    "codeOwner": "P08 libpng",
+    "bytes": 29585,
+    "sha256": "9918080bc68b31801f9a8349146c9494b355e3b16a26cc4bcb10fa1e993b4167"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngget.c",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngget.c",
+    "category": "translation_unit",
+    "codeOwner": "P08 libpng",
+    "bytes": 37560,
+    "sha256": "7fe9aa76f804c564570c36975b7b92c063254820de582447820d2c0d5940f242"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pnginfo.h",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pnginfo.h",
+    "category": "source_header",
+    "codeOwner": "P08 libpng",
+    "bytes": 10964,
+    "sha256": "95fd19c965b86c6f279e426b9ee42c62e83af41a372b51fe8feb52a3427cb44d"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngmem.c",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngmem.c",
+    "category": "translation_unit",
+    "codeOwner": "P08 libpng",
+    "bytes": 8547,
+    "sha256": "9a28d9e571887c72cdbae73d1865c6fba497b6e02adf3a5515edf93fd972df60"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngpread.c",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngpread.c",
+    "category": "translation_unit",
+    "codeOwner": "P08 libpng",
+    "bytes": 28098,
+    "sha256": "230e4e01a9748922a33a936d1c4a2f599d61fc6425b49270197949fd3f38443e"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngpriv.h",
+    "category": "source_header",
+    "codeOwner": "P08 libpng",
+    "bytes": 92899,
+    "sha256": "23fcf7fc89fc28073aed686207626753933f0dbcff360024f0378b112dca30b4"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngread.c",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngread.c",
+    "category": "translation_unit",
+    "codeOwner": "P08 libpng",
+    "bytes": 139434,
+    "sha256": "9106d0df385e051d46b007e402eabec18b5fce44fdfefed6e964a09008910e21"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngrio.c",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngrio.c",
+    "category": "translation_unit",
+    "codeOwner": "P08 libpng",
+    "bytes": 3898,
+    "sha256": "3c710643f274fd2b4aa2bc154c9dc53a512edae773dda1434f205fb005f2e93e"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngrtran.c",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngrtran.c",
+    "category": "translation_unit",
+    "codeOwner": "P08 libpng",
+    "bytes": 169872,
+    "sha256": "59753c1591d9eb8798b5e4270353c0d7da122ef6f1af2bfd83ff7b335fb2fea3"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngrutil.c",
+    "category": "translation_unit",
+    "codeOwner": "P08 libpng",
+    "bytes": 153123,
+    "sha256": "2042d92c70b587a4ad2cf98f0e74279b12ceb11a88fd1f6622306928c9af68fd"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngset.c",
+    "category": "translation_unit",
+    "codeOwner": "P08 libpng",
+    "bytes": 57534,
+    "sha256": "9bd59a79669db37b2ecc481439481eb5f49bf77bee0de4b1aba649915609b3d0"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngstruct.h",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngstruct.h",
+    "category": "source_header",
+    "codeOwner": "P08 libpng",
+    "bytes": 19251,
+    "sha256": "498aa14b9af46bce8677ceb39d0ecd28f54bbad6a5ba29930984b38f97012571"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngtrans.c",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngtrans.c",
+    "category": "translation_unit",
+    "codeOwner": "P08 libpng",
+    "bytes": 25332,
+    "sha256": "6398722afbad3f54beed1e6fefa4f4a96fa0b6e45dd24120c688f67b740a7eb2"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwio.c",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwio.c",
+    "category": "translation_unit",
+    "codeOwner": "P08 libpng",
+    "bytes": 5588,
+    "sha256": "a25def3351807ed3f2e12a02a7801d4208f0033516185f4ad524d804d2f00ce3"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwrite.c",
+    "category": "translation_unit",
+    "codeOwner": "P08 libpng",
+    "bytes": 78685,
+    "sha256": "e2079b6a8010ef8ecff771c81b8aa0e654a710b4232078a2ab277069441deb4b"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwtran.c",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwtran.c",
+    "category": "translation_unit",
+    "codeOwner": "P08 libpng",
+    "bytes": 15336,
+    "sha256": "6355098f20b9058ab607cebd01f3130c61ac858dceb339c3a7d83407c1067b94"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwutil.c",
+    "category": "translation_unit",
+    "codeOwner": "P08 libpng",
+    "bytes": 81464,
+    "sha256": "3167c7e997f8a7db6c6ab4b816298aea0ad3189bea960ece984881cffba92a5f"
+  }
+]

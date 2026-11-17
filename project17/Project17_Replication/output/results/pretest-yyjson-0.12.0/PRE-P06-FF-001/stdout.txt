@@ -1,0 +1,548 @@
+Flawfinder version 2.0.20, (C) 2001-2026 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 222
+Examining /home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c
+Examining /home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h
+
+FINAL RESULTS:
+
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:8148:15:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+#elif defined(snprintf) || (YYJSON_STDC_VER >= 199901L)
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:8150:5:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+    snprintf((char *)buf, len, fmt, dig, val)
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:8153:5:  [4] (format) sprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+    sprintf((char *)buf, fmt, dig, val)
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:547:22:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+typedef struct v16 { char c[2]; } v16;
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:548:22:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+typedef struct v32 { char c[4]; } v32;
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:549:22:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+typedef struct v64 { char c[8]; } v64;
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:562:28:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+#define byte_move_idx(x) ((char *)dst)[x] = ((const char *)src)[x];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:562:53:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+#define byte_move_idx(x) ((char *)dst)[x] = ((const char *)src)[x];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:563:28:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+#define byte_move_src(x) ((char *)tmp)[x] = ((const char *)src)[x];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:563:53:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+#define byte_move_src(x) ((char *)tmp)[x] = ((const char *)src)[x];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:564:28:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+#define byte_move_dst(x) ((char *)dst)[x] = ((const char *)tmp)[x];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:564:53:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+#define byte_move_dst(x) ((char *)dst)[x] = ((const char *)tmp)[x];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:569:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dst, src, 2);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:578:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dst, src, 4);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:587:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dst, src, 8);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:596:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dst, src, 16);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:606:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(&tmp, src, 2);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:607:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dst, &tmp, 2);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:609:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char tmp[2];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:619:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(&tmp, src, 4);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:620:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dst, &tmp, 4);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:622:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char tmp[4];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:632:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(&tmp, src, 8);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:633:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(dst, &tmp, 8);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:635:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char tmp[8];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:647:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(&tmp1, psrc, 8);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:648:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(&tmp2, psrc + 8, 8);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:649:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(pdst, &tmp1, 8);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:650:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(pdst + 8, &tmp2, 8);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:652:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char tmp[16];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:672:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(&u1, buf, 2);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:673:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(&u2, pat, 2);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:676:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    return ((char *)buf)[0] == ((const char *)pat)[0] &&
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:676:40:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    return ((char *)buf)[0] == ((const char *)pat)[0] &&
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:677:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+           ((char *)buf)[1] == ((const char *)pat)[1];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:677:40:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+           ((char *)buf)[1] == ((const char *)pat)[1];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:685:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(&u1, buf, 4);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:686:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(&u2, pat, 4);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:689:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    return ((char *)buf)[0] == ((const char *)pat)[0] &&
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:689:40:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    return ((char *)buf)[0] == ((const char *)pat)[0] &&
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:690:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+           ((char *)buf)[1] == ((const char *)pat)[1] &&
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:690:40:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+           ((char *)buf)[1] == ((const char *)pat)[1] &&
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:691:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+           ((char *)buf)[2] == ((const char *)pat)[2] &&
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:691:40:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+           ((char *)buf)[2] == ((const char *)pat)[2] &&
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:692:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+           ((char *)buf)[3] == ((const char *)pat)[3];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:692:40:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+           ((char *)buf)[3] == ((const char *)pat)[3];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:700:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(&uni, src, 2);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:702:26:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    uni.v.c[0] = ((const char *)src)[0];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:703:26:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    uni.v.c[1] = ((const char *)src)[1];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:712:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(&uni, src, 2);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:713:26:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    uni.v.c[2] = ((const char *)src)[2];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:716:26:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    uni.v.c[0] = ((const char *)src)[0];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:717:26:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    uni.v.c[1] = ((const char *)src)[1];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:718:26:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    uni.v.c[2] = ((const char *)src)[2];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:728:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(&uni, src, 4);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:730:26:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    uni.v.c[0] = ((const char *)src)[0];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:731:26:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    uni.v.c[1] = ((const char *)src)[1];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:732:26:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    uni.v.c[2] = ((const char *)src)[2];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:733:26:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    uni.v.c[3] = ((const char *)src)[3];
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:1932:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(&f, &u, sizeof(u));
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:2103:12:  [2] (misc) fopen:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+    return fopen(path, mode);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:2161:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(&size, &mem, sizeof(usize));
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:2163:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(&mem, &size, sizeof(usize));
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:2339:13:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(new_ptr, ptr, cur->size - sizeof(pool_chunk));
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:2849:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy((void *)buf, (const void *)mval->uni.str, len);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:4725:56:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+                                yyjson_val *val, const char **msg, u8 *con[2]) {
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:6205:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(hdr, dat, len);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:6413:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(buf, dat, dat_len + 1);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:6422:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(hdr, dat, dat_len + 1);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:6510:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(state->hdr, buf, buf_len);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:7071:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+static const char digit_table[200] = {
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:8598:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(cur, raw, raw_len);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:8666:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(cur, src, i); \
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:5675:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy((void *)mem, (const void *)str, len);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:3451:17:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    usize len = strlen(str);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c:6411:15:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    dat_len = strlen(dat);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:5002:48:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return unsafe_yyjson_equals_strn(val, str, strlen(str));
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:5097:18:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    size_t len = strlen(str);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:5485:44:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_obj_getn(obj, key, key ? strlen(key) : 0);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:5547:50:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_obj_iter_getn(iter, key, key ? strlen(key) : 0);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:5979:62:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    yyjson_mut_val_one_str({ unsafe_yyjson_set_raw(val, str, strlen(str)); });
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:5991:22:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        size_t len = strlen(str);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:6069:22:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        size_t len = strlen(str);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:6344:15:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        len = strlen(str);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:6756:48:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_mut_obj_getn(obj, key, key ? strlen(key) : 0);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:6840:54:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_mut_obj_iter_getn(iter, key, key ? strlen(key) : 0);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:6894:50:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                    uint64_t key_len = (uint64_t)strlen(keys[i]);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:6895:50:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                    uint64_t val_len = (uint64_t)strlen(vals[i]);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:6926:50:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                    uint64_t key_len = (uint64_t)strlen(key_str);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:6927:50:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                    uint64_t val_len = (uint64_t)strlen(val_str);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7095:26:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        size_t key_len = strlen(key);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7149:30:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+            size_t key_len = strlen(_key); \
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7153:35:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+            key->tag |= (uint64_t)strlen(_key) << YYJSON_TAG_BIT; \
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7235:26:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        size_t val_len = strlen(_val);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7237:31:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        val->tag = ((uint64_t)strlen(_val) << YYJSON_TAG_BIT) | YYJSON_TYPE_STR;
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7261:23:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        size_t _len = strlen(_val);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7309:55:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_mut_obj_remove_strn(obj, key, key ? strlen(key) : 0);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7335:54:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_mut_obj_rename_keyn(doc, obj, key, strlen(key),
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7336:48:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                                      new_key, strlen(new_key));
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7414:42:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_doc_ptr_getn(doc, ptr, strlen(ptr));
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7447:38:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_ptr_getn(val, ptr, strlen(ptr));
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7476:46:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_mut_doc_ptr_getn(doc, ptr, strlen(ptr));
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7514:42:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_mut_ptr_getn(val, ptr, strlen(ptr));
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7549:46:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_mut_doc_ptr_addn(doc, ptr, strlen(ptr), new_val);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7611:42:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_mut_ptr_addn(val, ptr, strlen(ptr), new_val, doc);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7651:46:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_mut_doc_ptr_setn(doc, ptr, strlen(ptr), new_val);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7715:42:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_mut_ptr_setn(val, ptr, strlen(ptr), new_val, doc);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7757:50:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_mut_doc_ptr_replacen(doc, ptr, strlen(ptr), new_val);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7801:46:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_mut_ptr_replacen(val, ptr, strlen(ptr), new_val);
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7834:49:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_mut_doc_ptr_removen(doc, ptr, strlen(ptr));
+/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h:7873:45:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return yyjson_mut_ptr_removen(val, ptr, strlen(ptr));
+
+ANALYSIS SUMMARY:
+
+Hits = 111
+Lines analyzed = 19295 in approximately 0.30 seconds (63275 lines/second)
+Physical Source Lines of Code (SLOC) = 12827
+Hits@level = [0]   1 [1]  37 [2]  71 [3]   0 [4]   3 [5]   0
+Hits@level+ = [0+] 112 [1+] 111 [2+]  74 [3+]   3 [4+]   3 [5+]   0
+Hits/KSLOC@level+ = [0+] 8.73158 [1+] 8.65362 [2+] 5.76908 [3+] 0.233882 [4+] 0.233882 [5+]   0
+Minimum risk level = 1
+
+Not every hit is necessarily a security vulnerability.
+You can inhibit a report by adding a comment in this form:
+// flawfinder: ignore
+Make *sure* it's a false positive!
+You can use the option --neverignore to show these.
+
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(https://dwheeler.com/secure-programs) for more information.

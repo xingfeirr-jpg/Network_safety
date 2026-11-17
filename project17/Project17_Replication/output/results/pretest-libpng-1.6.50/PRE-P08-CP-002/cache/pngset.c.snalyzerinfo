@@ -1,0 +1,49 @@
+png_set_bKGD
+png_set_cHRM_fixed
+png_set_cHRM_XYZ_fixed call:[png_app_error,png_xy_from_XYZ] noreturn:[png_app_error]
+png_set_cHRM call:[png_fixed,png_set_cHRM_fixed] noreturn:[png_set_cHRM_fixed]
+png_set_cHRM_XYZ call:[png_fixed,png_set_cHRM_XYZ_fixed] noreturn:[png_set_cHRM_XYZ_fixed]
+png_set_cICP call:[png_warning]
+png_set_cLLI_fixed call:[png_chunk_report]
+png_set_cLLI call:[png_fixed_ITU,png_set_cLLI_fixed] noreturn:[png_set_cLLI_fixed]
+png_ITU_fixed_16 call:[return]
+png_set_mDCV_fixed call:[png_ITU_fixed_16,png_chunk_report]
+png_set_mDCV call:[png_fixed,png_fixed_ITU,png_set_mDCV_fixed] noreturn:[png_set_mDCV_fixed]
+png_set_eXIf call:[png_warning]
+png_set_eXIf_1 call:[memcpy,png_free_data,png_malloc_warn,png_warning]
+png_set_gAMA_fixed
+png_set_gAMA call:[png_fixed,png_set_gAMA_fixed] noreturn:[png_set_gAMA_fixed]
+png_set_hIST call:[png_free_data,png_malloc_warn,png_warning,sizeof]
+png_set_IHDR call:[png_check_IHDR]
+png_set_oFFs
+png_set_pCAL call:[memcpy,memset,png_check_fp_string,png_chunk_report,png_malloc_warn,png_warning,sizeof,strlen] noreturn:[memcpy]
+png_set_sCAL_s call:[memcpy,png_check_fp_string,png_error,png_free,png_malloc_warn,png_warning,strlen] noreturn:[png_error]
+png_set_sCAL call:[png_ascii_from_fp,png_set_sCAL_s,png_warning,sizeof] noreturn:[png_set_sCAL_s,png_warning]
+png_set_sCAL_fixed call:[png_ascii_from_fixed,png_set_sCAL_s,png_warning,sizeof] noreturn:[png_set_sCAL_s,png_warning]
+png_set_pHYs
+png_set_PLTE call:[memcpy,png_calloc,png_error,png_free_data,png_warning,sizeof] noreturn:[memcpy,png_error]
+png_set_sBIT
+png_set_sRGB
+png_set_sRGB_gAMA_and_cHRM call:[png_set_cHRM_fixed,png_set_gAMA_fixed,png_set_sRGB] noreturn:[png_set_cHRM_fixed]
+png_set_iCCP call:[memcpy,png_app_error,png_benign_error,png_free,png_free_data,png_malloc_warn,strlen] noreturn:[png_app_error]
+png_set_text call:[png_error,png_set_text_2] noreturn:[png_error]
+png_set_text_2 call:[memcpy,png_chunk_report,png_free,png_malloc_base,png_realloc_array,sizeof,strlen] noreturn:[memcpy,png_realloc_array,strlen]
+png_set_tIME call:[png_warning]
+png_set_tRNS call:[memcpy,png_free_data,png_malloc,png_warning] noreturn:[png_warning]
+png_set_sPLT call:[memcpy,png_app_error,png_chunk_report,png_free,png_malloc_array,png_malloc_base,png_realloc_array,sizeof,strlen,while] noreturn:[png_chunk_report]
+check_location call:[png_app_warning,png_error,return] noreturn:[png_error]
+png_set_unknown_chunks call:[check_location,memcpy,png_chunk_report,png_free,png_malloc_base,png_realloc_array,sizeof]
+png_set_unknown_chunk_location call:[check_location,png_app_error] noreturn:[check_location]
+png_permit_mng_features
+add_one_chunk call:[memcmp,memcpy]
+png_set_keep_unknown_chunks call:[add_one_chunk,memcpy,png_app_error,png_free,png_malloc,sizeof] noreturn:[add_one_chunk,memcpy,png_free]
+png_set_read_user_chunk_fn
+png_set_rows call:[png_free_data] noreturn:[png_free_data]
+png_set_compression_buffer_size call:[png_error,png_free_buffer_list,png_warning] noreturn:[png_error]
+png_set_invalid
+png_set_user_limits
+png_set_chunk_cache_max
+png_set_chunk_malloc_max
+png_set_benign_errors
+png_set_check_for_invalid_index
+png_check_keyword call:[png_formatted_warning,png_warning,png_warning_parameter,png_warning_parameter_signed] noreturn:[png_formatted_warning,png_warning]

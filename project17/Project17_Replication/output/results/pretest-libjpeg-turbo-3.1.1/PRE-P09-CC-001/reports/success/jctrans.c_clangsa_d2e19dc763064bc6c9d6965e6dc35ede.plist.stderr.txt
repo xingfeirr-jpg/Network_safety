@@ -1,0 +1,7 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:335:26: warning: Array access results in an undefined pointer dereference [core.NullDereference]
+  335 |             buffer_ptr = buffer[ci][yindex + yoffset] + start_col;
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:350:38: warning: Array access results in an undefined pointer dereference [core.NullDereference]
+  350 |             MCU_buffer[blkn][0][0] = MCU_buffer[blkn - 1][0][0];
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.

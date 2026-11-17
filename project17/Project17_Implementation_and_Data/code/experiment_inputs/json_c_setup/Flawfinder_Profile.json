@@ -1,0 +1,214 @@
+{
+  "profileId": "P05-FF-PRE-v1",
+  "plannedRunId": "PRE-P05-FF-001",
+  "preparedDate": "2026-10-28",
+  "status": "prepared; not executed",
+  "purpose": "functional pretest",
+  "tool": "Flawfinder",
+  "version": "2.0.20",
+  "binary": "/home/yhong/comp5355/.venv/bin/flawfinder",
+  "arguments": [
+    "--minlevel=1",
+    "--neverignore",
+    "--columns",
+    "--context"
+  ],
+  "inputCount": 39,
+  "sourceCFiles": 14,
+  "sourceHeaders": 22,
+  "generatedHeaders": 3,
+  "inputs": [
+    {
+      "file": "/home/yhong/comp5355/build/json-c-0.18/config.h",
+      "sha256": "c4e95ce745b3a70a053f2668660857989b3fcf13b931a53d7c9330d454f198ff"
+    },
+    {
+      "file": "/home/yhong/comp5355/build/json-c-0.18/json.h",
+      "sha256": "05408079f9d62dbec3c4ebc2c05babdc0f70cf130fdbda39c95337805a358f25"
+    },
+    {
+      "file": "/home/yhong/comp5355/build/json-c-0.18/json_config.h",
+      "sha256": "fefd78485ec4eca046bb436941b0ba32c72c3d5422c0393c2dfea6bc6eaa8cc4"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/arraylist.c",
+      "sha256": "71527ce16c73bb8e1e2641ed821126e7635ccf71b616ef7d5806c9d9f8ba0a53"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/arraylist.h",
+      "sha256": "87fca0c05be03dd60a9615b0ea5807f8d646cf0081bdd20fecd5c814d3f1cd4e"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/debug.c",
+      "sha256": "b24cc7f0077692cca3864f3f87fd0ddebe2664416b9b48b1e4269065b25327e2"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/debug.h",
+      "sha256": "41e878c2f47ad099074dacbb62fd49148decdddae63ddec7922643e32baea1db"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_c_version.c",
+      "sha256": "804065f0cfdd7b286da631a721825bf5b114af9e52329ce606dd72a6d19985f2"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_c_version.h",
+      "sha256": "67e161a37d0534c78dfd720eb2d31235461881565221574223d92abfc6ef049b"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_inttypes.h",
+      "sha256": "68a1588426bcd8d53031c78c55fde6c8d31ef5f2bdefddd1514b04a8f2ac6510"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_object.c",
+      "sha256": "22d97121c8b28ced7587acae225c6dc41f92733ecbc0460a41604a5aeb6adea5"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_object.h",
+      "sha256": "ef19d8e438d229740cae99394dce31b86b3df2057c5037addb24fceb0baf9cab"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c",
+      "sha256": "80af2b7b80fb5ee7c2f860c5c22a5dfc83e9791687d3347db04abd3f2117694e"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.h",
+      "sha256": "5e708aa326cd6dd86b6e0817acf57d3084512028c8990c49ed6824b9d3c773d3"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_object_private.h",
+      "sha256": "594f424c37ddf814757ec062bfcf2b22bbc136a69b562b7bb74d467c43934a8b"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_patch.c",
+      "sha256": "ec36dd5cfef6cc71d0d6a366c26cef9d6433214672af3fed8484297276e4cfcd"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_patch.h",
+      "sha256": "fb92cc4b674801a4381e5e623b3964e9f9f794f229da4612cafca632e8701176"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c",
+      "sha256": "43372d801a2efa8b806fd70196789ec01f0caa57050fbc1d2f0867da9f8eba06"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_pointer.h",
+      "sha256": "189db377d7422c3b348cebf68657523604b771f5a22d7be54e75b521cf95057b"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_pointer_private.h",
+      "sha256": "3cea9df9b531945e62363464c1ff4b15b0fa0153bfe965a00f1f106e6f1a04fb"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c",
+      "sha256": "0195b0818ee577d38b9beef2119fc945a1c85b85ffac16d3b71d8b69c2e3f642"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h",
+      "sha256": "fc230c56b09cb275b9c5e175c1268452066d0c8fbf89c5a2146d8171a2ed25c8"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_types.h",
+      "sha256": "fc4f78e373ca0e6e349d3b2ce0d162088e63704b3db3b50f80766a81bfecf2d1"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_util.c",
+      "sha256": "1f3479b7861d108a692e409ad7621eba97b3a3dceae396d14bd9550ef8a36a74"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_util.h",
+      "sha256": "a2da94a510583a7e9bae8892ee239615cc26efcf3c41654cefb4e589e63df351"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_visit.c",
+      "sha256": "9eae7e6778bb0ecc2a847e09c774f0943b891b059b1f0972b0c60afb21080029"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/json_visit.h",
+      "sha256": "7d647144074951c6807752e11563654ffcfb63bd35d4c341591b3b2b5a68e399"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/linkhash.c",
+      "sha256": "0fd98b308c2fbd18a115c9d30669989454b4a9673db43da3449a18803e824f9c"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/linkhash.h",
+      "sha256": "78189fe2ca202e6b68dfe0a96f4f78ba351fbb30c75ccb02c96206b7575007bf"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/math_compat.h",
+      "sha256": "55fd40b697d27506224962c7e268f6d8de6fab1beb7ac20eb28810ed430267bf"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/printbuf.c",
+      "sha256": "ccd27ddd89cf60de1ca563a5b30774aaa89199e6570e97ade5f5187769b49ce6"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/printbuf.h",
+      "sha256": "ce5fbc9f02e27566700fe9f3c40c852f2abaf58088cda1d75139802c536e8a0f"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/random_seed.c",
+      "sha256": "4c07211f846ce7607f71a931f387a7c41c33f43061be9ac68753d04f6c4f45ce"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/random_seed.h",
+      "sha256": "af7357160009b242464fb960cc34dadb65e383900ebbe565991680b6bd54df1e"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/snprintf_compat.h",
+      "sha256": "c4486b8ef28489d2cab21f12f0d2a21d4889ba94221ba430756f7202c9083fd3"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/strdup_compat.h",
+      "sha256": "814b423a05560f26a4ed2a393c2d9f5924ee0179a89fbd9047f9440ae1e295ca"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/strerror_override.c",
+      "sha256": "a12ae5e01d59d6650840e0c3fe4d6e1895728ab45402f739c7a6a1df46130264"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/strerror_override.h",
+      "sha256": "79cf418fc36ff45ddbf642dbd29ee0b912623a9880a2966a666960639f7e7f8b"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/json-c-0.18/vasprintf_compat.h",
+      "sha256": "7e91e49baf6c7e66f1a37b28d17be8dbd36f9531a2ea9eda1037a5f2047686a8"
+    }
+  ],
+  "identityManifest": "flawfinder-inputs.sha256",
+  "identityManifestSHA256": "9a73cf87e9156a25ac99ed248205a8ed487597dc860fc10eb9b22c00acd68fa1",
+  "runtimeInputList": "input-files.txt written from exactly the same in-memory argument array after analysis; no separate mutable preparation text list",
+  "expectedRuntimeInputListSHA256": "5c9e297029d810cce857e85be1a642e39aecd98f86dc522c438a72329562b816",
+  "headerSelection": "Exactly the39 accepted VALID Ninja project dependency closure files; each once. Includes config.h/json_config.h/json.h generated headers. Compilation database is not a text input.",
+  "semanticReferenceActions": 14,
+  "textScopeCaveat": "Lexical text scanning does not preprocess macros; inactive branches in included files may match.39 text files are not claimed equivalent to14 semantic compilation actions or their path coverage.",
+  "macroContext": "Semantic build _GNU_SOURCE/_REENTRANT and generated headers determine the closure; no -D/-I/--std preprocessing arguments are added to Flawfinder.",
+  "displayedHitPolicy": "minlevel1; level0 and cumulative0+ are reported separately, never equated to displayed hit count or confirmed vulnerabilities",
+  "ignoredCommentPolicy": "--neverignore retains hits otherwise suppressed by Flawfinder ignore directives; built-in lexical/risk heuristics still apply",
+  "measurement": "measurement-v1",
+  "locale": "C",
+  "jobs": "tool serial default; one tool combination at a time",
+  "applicationCache": "No Flawfinder analysis-result cache requested; recorder generic cache directory is unused.",
+  "osPageCache": "natural, not cleared",
+  "wholeCommandTimeout": "not imposed",
+  "runDirectory": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-FF-001",
+  "buildEnvironmentSession": "session-20261027T153242-p05-22994",
+  "executionEnvironmentSession": "not asserted from build snapshot; actual run-start environment/current session recorded separately",
+  "buildIdentity": "../json_c_pretest_20261027/Build_Identity_Check.json",
+  "projectDependencyManifest": "../json_c_pretest_20261027/Project_Dependency_Manifest.json",
+  "parameterEvidence": "Flawfinder_Parameter_Check_20261028.md",
+  "outputs": {
+    "stdout": "stdout.txt",
+    "stderr": "stderr.txt",
+    "time": "time.txt",
+    "exitCode": "exit-code.txt",
+    "inputFiles": "input-files.txt",
+    "inputIdentity": "input-files.sha256",
+    "preparedProfile": "prepared-profile.json"
+  },
+  "actualCoverage": "pending user execution and output review",
+  "actualDisplayedHits": null,
+  "actualLevel0Hits": null,
+  "sourceReview": "not started for Flawfinder output",
+  "formalThirtyCells": "all not run"
+}

@@ -1,0 +1,15 @@
+[
+ "cmake",
+ "-S",
+ "/home/yhong/comp5355/sources/cJSON-v1.7.19",
+ "-B",
+ "/home/yhong/comp5355/build/cJSON-v1.7.19",
+ "-G",
+ "Ninja",
+ "-DCMAKE_C_COMPILER=/usr/bin/clang-18",
+ "-DCMAKE_BUILD_TYPE=Debug",
+ "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+ "-DBUILD_SHARED_LIBS=OFF",
+ "-DENABLE_CJSON_TEST=OFF",
+ "-DENABLE_CJSON_UTILS=OFF"
+]

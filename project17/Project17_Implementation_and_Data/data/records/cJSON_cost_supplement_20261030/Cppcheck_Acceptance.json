@@ -1,0 +1,1458 @@
+{
+  "accepted": true,
+  "accepted_date": "2026-10-30",
+  "run_id": "FORM-P03-CP-001",
+  "project": "P03 cJSON",
+  "version": "1.7.19",
+  "source_commit": "c859b25da02955fef659d658b8f324b5cde87be3",
+  "status": "accepted_complete_analysis_single_cost_and_exact_old_diagnostic_mapping",
+  "review_method": "用户在Ubuntu执行；同一助手体系读取原始回执并交叉核对。本次为输出映射与成本验收，复用既有AI源码核查；不称独立人工审核，不新增AI初判或源码核查。",
+  "policy": "comparison-v1; measurement-v1",
+  "tool_version": "2.13.0",
+  "ubuntu_package": "2.13.0-2ubuntu3",
+  "parser": "builtin内部解析器",
+  "standard": "c89",
+  "platform": "unix64",
+  "check_level": "normal",
+  "analysis_argv": [
+    "/usr/bin/cppcheck",
+    "--project=/home/yhong/comp5355/build/cJSON-v1.7.19/compile_commands.json",
+    "--enable=warning,performance,portability,information",
+    "--check-level=normal",
+    "--platform=unix64",
+    "--std=c89",
+    "-j",
+    "1",
+    "--cppcheck-build-dir=/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-CP-001/cache",
+    "--checkers-report=/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-CP-001/checkers.txt",
+    "--xml",
+    "--xml-version=2"
+  ],
+  "profile_sha256": "04db3110593f2f1ce42514e38a21dfc38a8503ad1455ff5b89e2045e77ba246f",
+  "input_files_passed_before_and_after": 7,
+  "input_identity_checks": [
+    {
+      "label": "源码 cJSON.c",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+      "expected_sha256": "298581a04a36c0165da4b0aade235c23088cb2faa58651d720ea2f3706ed0b0d",
+      "before_sha256": "298581a04a36c0165da4b0aade235c23088cb2faa58651d720ea2f3706ed0b0d",
+      "after_sha256": "298581a04a36c0165da4b0aade235c23088cb2faa58651d720ea2f3706ed0b0d",
+      "bytes": 80399,
+      "passed_before": true,
+      "passed_after": true
+    },
+    {
+      "label": "源码 cJSON.h",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h",
+      "expected_sha256": "25b0145150d500498e4d209cec69c18c42cf818bffcc54690be3b895a2a16dee",
+      "before_sha256": "25b0145150d500498e4d209cec69c18c42cf818bffcc54690be3b895a2a16dee",
+      "after_sha256": "25b0145150d500498e4d209cec69c18c42cf818bffcc54690be3b895a2a16dee",
+      "bytes": 16394,
+      "passed_before": true,
+      "passed_after": true
+    },
+    {
+      "label": "源码 LICENSE",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/LICENSE",
+      "expected_sha256": "a36dda207c36db5818729c54e7ad4e8b0c6fba847491ba64f372c1a2037b6d5c",
+      "before_sha256": "a36dda207c36db5818729c54e7ad4e8b0c6fba847491ba64f372c1a2037b6d5c",
+      "after_sha256": "a36dda207c36db5818729c54e7ad4e8b0c6fba847491ba64f372c1a2037b6d5c",
+      "bytes": 1084,
+      "passed_before": true,
+      "passed_after": true
+    },
+    {
+      "label": "源码 CMakeLists.txt",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/CMakeLists.txt",
+      "expected_sha256": "cdcb1302634cb81778130e9c30c2e952f80157bb9fee6b3f8489be8c15de9d34",
+      "before_sha256": "cdcb1302634cb81778130e9c30c2e952f80157bb9fee6b3f8489be8c15de9d34",
+      "after_sha256": "cdcb1302634cb81778130e9c30c2e952f80157bb9fee6b3f8489be8c15de9d34",
+      "bytes": 10205,
+      "passed_before": true,
+      "passed_after": true
+    },
+    {
+      "label": "构建上下文 compile_commands.json",
+      "path": "/home/yhong/comp5355/build/cJSON-v1.7.19/compile_commands.json",
+      "expected_sha256": "ff6f0e4cfd162a124d934f8adde2ba96c029b75df634b0884614a965ec19dd9b",
+      "before_sha256": "ff6f0e4cfd162a124d934f8adde2ba96c029b75df634b0884614a965ec19dd9b",
+      "after_sha256": "ff6f0e4cfd162a124d934f8adde2ba96c029b75df634b0884614a965ec19dd9b",
+      "bytes": 781,
+      "passed_before": true,
+      "passed_after": true
+    },
+    {
+      "label": "构建上下文 CMakeCache.txt",
+      "path": "/home/yhong/comp5355/build/cJSON-v1.7.19/CMakeCache.txt",
+      "expected_sha256": "a338bf89a1a1810ac248a4094c0f989dfdd2f29d82c393135618bbd862b71f66",
+      "before_sha256": "a338bf89a1a1810ac248a4094c0f989dfdd2f29d82c393135618bbd862b71f66",
+      "after_sha256": "a338bf89a1a1810ac248a4094c0f989dfdd2f29d82c393135618bbd862b71f66",
+      "bytes": 19012,
+      "passed_before": true,
+      "passed_after": true
+    },
+    {
+      "label": "原静态库 libcjson.a",
+      "path": "/home/yhong/comp5355/build/cJSON-v1.7.19/libcjson.a",
+      "expected_sha256": "8ea454e9b2f13ee80b23e1ed25366d6567611f89cf2375bc8af94736794b39e8",
+      "before_sha256": "8ea454e9b2f13ee80b23e1ed25366d6567611f89cf2375bc8af94736794b39e8",
+      "after_sha256": "8ea454e9b2f13ee80b23e1ed25366d6567611f89cf2375bc8af94736794b39e8",
+      "bytes": 88738,
+      "passed_before": true,
+      "passed_after": true
+    }
+  ],
+  "database_sha256": "ff6f0e4cfd162a124d934f8adde2ba96c029b75df634b0884614a965ec19dd9b",
+  "coverage": {
+    "intended_database_actions": 1,
+    "actual_actions": 1,
+    "successful_actions": 1,
+    "failed_actions": 0,
+    "skipped_actions": 0,
+    "source": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+    "observed_checking_sources": [
+      "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+    ],
+    "observed_cache_mappings": [
+      {
+        "cache_slot": "cJSON.a1",
+        "source_file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      }
+    ],
+    "cache_slots_exist_nonempty": true,
+    "checker_report_no_critical_errors": true,
+    "basis": "原1动作数据库、实际Checking源码、1项非空缓存映射、无critical检查器报告和合法完整XML共同支持；不单凭退出0或候选数判断。",
+    "meaning": "本配置实际动作范围验收，不等于穷尽所有代码或路径。"
+  },
+  "successful_actions": 1,
+  "failed_actions": 0,
+  "skipped_actions": 0,
+  "analysis_exit_code": 0,
+  "wrapper_exit_code": 0,
+  "all_saved_exit_files_zero": 6,
+  "xml_format_version": "2",
+  "xml_diagnostic_count": 26,
+  "source_candidate_count": 16,
+  "information_count": 10,
+  "configuration_blocker_count": 0,
+  "blocking_diagnostic_ids": [],
+  "total_location_count": 43,
+  "severity_counts": {
+    "information": 10,
+    "warning": 16
+  },
+  "rule_counts": {
+    "missingIncludeSystem": 9,
+    "uselessAssignmentPtrArg": 1,
+    "nullPointerRedundantCheck": 14,
+    "ctunullpointer": 1,
+    "checkersReport": 1
+  },
+  "checker_dictionary": {
+    "reported_yes_no_entries": 178,
+    "enabled_yes_entries": 79,
+    "disabled_no_entries": 99,
+    "tool_reported_active_checkers": "79/592",
+    "matches_old": true,
+    "report_byte_identical": true,
+    "checkers_sha256": "6531ca0de68eb5d6a4bbaa8099d89b622f574cd76477eb0148b8e7d91a4c6422",
+    "meaning": "178项可提取Yes/No条目与工具自报79/592分别记录；均不是代码覆盖率或漏洞检测率。"
+  },
+  "measurement": {
+    "wall_seconds": 0.29,
+    "user_seconds": 0.27,
+    "system_seconds": 0.01,
+    "max_rss_kib": 21908,
+    "sample_count": 1,
+    "timing_boundary": "完整一次Cppcheck进程：启动、导入原编译数据库、分析、写XML和检查器报告",
+    "outside_timing": "输入身份、版本、完整环境、XML提取、摘要、新旧映射与回执复制",
+    "os_page_cache": "natural_not_cleared",
+    "new_tool_cache": true,
+    "old_cache_reused": false,
+    "max_rss_meaning": "GNU time报告的Linux KiB最大RSS，不是整个进程树RSS之和的总峰值",
+    "cost_interpretation": "单次描述性完整进程成本，不作为稳定排名或显著性结论；不倒填旧PRE历史时间"
+  },
+  "old_new_mapping": {
+    "old_run": "PRE-P03-CP-001",
+    "old_ledger": "review_evidence/cJSON_review/Review_Ledger.csv",
+    "old_ledger_sha256": "54e5f277cfc5990752a7b5051dbf0d47130df0343f0adb13393ac8c7ee75adcc",
+    "xml_byte_identical": true,
+    "xml_bytes": 16993,
+    "xml_sha256": "73930e4467836a883865bf77e4b18a1b1edad969ef75e19bcff67a80aefcd77a",
+    "all_diagnostic_attributes_locations_symbols_and_order_identical": true,
+    "exact_source_candidate_mappings": 16,
+    "reused_quality_supported_judgments": 15,
+    "reused_false_positive_judgments": 1,
+    "reused_conclusion_counts": {
+      "有证据支持": 15,
+      "误报": 1
+    },
+    "new_candidates_requiring_review": 0,
+    "progress_byte_identical": true,
+    "checkers_byte_identical": true,
+    "rows": [
+      {
+        "new_candidate_ordinal": 1,
+        "new_xml_ordinal": 10,
+        "old_xml_ordinal": 10,
+        "old_review_id": "P03-CP-010",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "uselessAssignmentPtrArg",
+          "severity": "warning",
+          "msg": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+          "verbose": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+          "cwe": "398",
+          "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "3190",
+            "column": "5"
+          }
+        ],
+        "symbols": [],
+        "new_raw_block_sha256": "79c2775e2c3cf1c62e2e16bc8aebf7177118cc4b756e46328abc26fa65a7cc3b",
+        "old_raw_block_sha256": "79c2775e2c3cf1c62e2e16bc8aebf7177118cc4b756e46328abc26fa65a7cc3b",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "有证据支持",
+        "old_security_relevance": "一般质量提示：无效的局部形参赋值；未形成已确认安全漏洞。",
+        "old_risk_scope_conclusion": "确认3190是无效局部赋值；诊断有依据，不能因没有安全影响而记成误报。",
+        "old_code_evidence": "cJSON.c:3187–3191（完整cJSON_free）；209–238（free hook配置）；430–471（cJSON_SetValuestring）；2412–2433（完整replace_item_in_object）；cJSON.h:298–300（free封装声明）。",
+        "old_conclusion_evidence": "工具所述“赋值不影响函数外”准确：void *object是指针值的副本，既不是void **也没有返回新指针。3189已调用deallocate，3190后无其他读取，因此此赋值无效；它不会使调用者的指针变为NULL。头文件只声明释放封装，并未承诺修改调用方指针；两个库内调用点随后显式替换字段，没有由3190引入的use-after-free证据。"
+      },
+      {
+        "new_candidate_ordinal": 2,
+        "new_xml_ordinal": 11,
+        "old_xml_ordinal": 11,
+        "old_review_id": "P03-CP-011",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "nullPointerRedundantCheck",
+          "severity": "warning",
+          "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "cwe": "476",
+          "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "821",
+            "column": "42",
+            "info": "Null pointer dereference"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1716",
+            "column": "41",
+            "info": "Calling function 'parse_string', 2nd argument 'input_buffer' value is 0"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1726",
+            "column": "13",
+            "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+          }
+        ],
+        "symbols": [
+          "input_buffer"
+        ],
+        "new_raw_block_sha256": "580b178aaf12ac556cc321f8248be7226946b41a8e05dc7bffba47a15cdc5498",
+        "old_raw_block_sha256": "580b178aaf12ac556cc321f8248be7226946b41a8e05dc7bffba47a15cdc5498",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "有证据支持",
+        "old_security_relevance": "一般质量提示：宏内判空分量冗余；该input_buffer空指针风险不成立。",
+        "old_risk_scope_conclusion": "诊断有依据（仅冗余判空分支）；input_buffer为空的解引用分支不可达，未确认安全漏洞。",
+        "old_code_evidence": "cJSON.c:289–304（结构与宏）；819–946（完整parse_string）；1363–1415（完整parse_value）；1652–1767（完整parse_object，尤其1708–1728）；1142–1169（入口构造与传参）。 本条精确位置：821；XML依据检查位置：1726。",
+        "old_conclusion_evidence": "XML 把 parse_object:1716 的第二实参当作 0，但该形参由 parse_value:1365 的检查和 parse_object 的调用链保证非空；1726 的宏内判空分量因此为恒真。 因而工具原文的“判空冗余”分支成立；这里只据非空调用链确认NULL分量冗余，其他范围条件需逐点判断。不能把这条析取提示直接写成空指针漏洞，也不能把整条提示记为误报。"
+      },
+      {
+        "new_candidate_ordinal": 3,
+        "new_xml_ordinal": 12,
+        "old_xml_ordinal": 12,
+        "old_review_id": "P03-CP-012",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "nullPointerRedundantCheck",
+          "severity": "warning",
+          "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "cwe": "476",
+          "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "822",
+            "column": "38",
+            "info": "Null pointer dereference"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1716",
+            "column": "41",
+            "info": "Calling function 'parse_string', 2nd argument 'input_buffer' value is 0"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1726",
+            "column": "13",
+            "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+          }
+        ],
+        "symbols": [
+          "input_buffer"
+        ],
+        "new_raw_block_sha256": "d4a11f081de85f21a3ecb7a4f24ce489ff6bcae6baf5bd5dedfaf1f1052c501b",
+        "old_raw_block_sha256": "d4a11f081de85f21a3ecb7a4f24ce489ff6bcae6baf5bd5dedfaf1f1052c501b",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "有证据支持",
+        "old_security_relevance": "一般质量提示：宏内判空分量冗余；该input_buffer空指针风险不成立。",
+        "old_risk_scope_conclusion": "诊断有依据（仅冗余判空分支）；input_buffer为空的解引用分支不可达，未确认安全漏洞。",
+        "old_code_evidence": "cJSON.c:289–304（结构与宏）；819–946（完整parse_string）；1363–1415（完整parse_value）；1652–1767（完整parse_object，尤其1708–1728）；1142–1169（入口构造与传参）。 本条精确位置：822；XML依据检查位置：1726。",
+        "old_conclusion_evidence": "与821独立保留位置和原ID；两次初始化使用同一 const 指针形参，期间没有可将它设为NULL的赋值。XML1716传0的假设不可达，1726宏内判空冗余。 因而工具原文的“判空冗余”分支成立；这里只据非空调用链确认NULL分量冗余，其他范围条件需逐点判断。不能把这条析取提示直接写成空指针漏洞，也不能把整条提示记为误报。"
+      },
+      {
+        "new_candidate_ordinal": 4,
+        "new_xml_ordinal": 13,
+        "old_xml_ordinal": 13,
+        "old_review_id": "P03-CP-013",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "nullPointerRedundantCheck",
+          "severity": "warning",
+          "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "cwe": "476",
+          "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "827",
+            "column": "9",
+            "info": "Null pointer dereference"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1716",
+            "column": "41",
+            "info": "Calling function 'parse_string', 2nd argument 'input_buffer' value is 0"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1726",
+            "column": "13",
+            "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+          }
+        ],
+        "symbols": [
+          "input_buffer"
+        ],
+        "new_raw_block_sha256": "ad6edff75a081ea36276e0ed3bdfcdf035a94c94f4470b5f98b4dbe345ebd01e",
+        "old_raw_block_sha256": "ad6edff75a081ea36276e0ed3bdfcdf035a94c94f4470b5f98b4dbe345ebd01e",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "有证据支持",
+        "old_security_relevance": "一般质量提示：宏内判空分量冗余；该input_buffer空指针风险不成立。",
+        "old_risk_scope_conclusion": "诊断有依据（仅冗余判空分支）；input_buffer为空的解引用分支不可达，未确认安全漏洞。",
+        "old_code_evidence": "cJSON.c:289–304（结构与宏）；819–946（完整parse_string）；1363–1415（完整parse_value）；1652–1767（完整parse_object，尤其1708–1728）；1142–1169（入口构造与传参）。 本条精确位置：827；XML依据检查位置：1726。",
+        "old_conclusion_evidence": "parse_value:1394在调用1396前检查剩余长度及双引号；另一个调用1716前已有1708的访问条件。读取字符不会把 input_buffer 设为NULL；XML假设的NULL调用不成立。 因而工具原文的“判空冗余”分支成立；这里只据非空调用链确认NULL分量冗余，其他范围条件需逐点判断。不能把这条析取提示直接写成空指针漏洞，也不能把整条提示记为误报。"
+      },
+      {
+        "new_candidate_ordinal": 5,
+        "new_xml_ordinal": 14,
+        "old_xml_ordinal": 14,
+        "old_review_id": "P03-CP-014",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "nullPointerRedundantCheck",
+          "severity": "warning",
+          "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "cwe": "476",
+          "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1497",
+            "column": "9",
+            "info": "Null pointer dereference"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1511",
+            "column": "9",
+            "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+          }
+        ],
+        "symbols": [
+          "input_buffer"
+        ],
+        "new_raw_block_sha256": "eb11d82e831a6e26a4591b942ce04dc9fd13f20207605ee75e06a1c552d1a976",
+        "old_raw_block_sha256": "eb11d82e831a6e26a4591b942ce04dc9fd13f20207605ee75e06a1c552d1a976",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "有证据支持",
+        "old_security_relevance": "一般质量提示：宏内判空分量冗余；该input_buffer空指针风险不成立。",
+        "old_risk_scope_conclusion": "诊断有依据（仅冗余判空分支）；input_buffer为空的解引用分支不可达，未确认安全漏洞。",
+        "old_code_evidence": "cJSON.c:289–304（结构与宏）；1142–1169（入口）；1363–1415（完整parse_value）；1492–1587（完整parse_array）。 本条精确位置：1497；XML依据检查位置：1511。",
+        "old_conclusion_evidence": "唯一调用点1406位于1365判空和1404首字符检查之后，1511的input_buffer!=NULL分量冗余；先读取depth不是可达的NULL解引用。 因而工具原文的“判空冗余”分支成立；这里只据非空调用链确认NULL分量冗余，其他范围条件需逐点判断。不能把这条析取提示直接写成空指针漏洞，也不能把整条提示记为误报。"
+      },
+      {
+        "new_candidate_ordinal": 6,
+        "new_xml_ordinal": 15,
+        "old_xml_ordinal": 15,
+        "old_review_id": "P03-CP-015",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "nullPointerRedundantCheck",
+          "severity": "warning",
+          "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "cwe": "476",
+          "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1501",
+            "column": "5",
+            "info": "Null pointer dereference"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1511",
+            "column": "9",
+            "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+          }
+        ],
+        "symbols": [
+          "input_buffer"
+        ],
+        "new_raw_block_sha256": "820044813c54acb07038b6b3c59858cf62520e62c1634f66fa0283b8a00255c9",
+        "old_raw_block_sha256": "820044813c54acb07038b6b3c59858cf62520e62c1634f66fa0283b8a00255c9",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "有证据支持",
+        "old_security_relevance": "一般质量提示：宏内判空分量冗余；该input_buffer空指针风险不成立。",
+        "old_risk_scope_conclusion": "诊断有依据（仅冗余判空分支）；input_buffer为空的解引用分支不可达，未确认安全漏洞。",
+        "old_code_evidence": "cJSON.c:289–304（结构与宏）；1142–1169（入口）；1363–1415（完整parse_value）；1492–1587（完整parse_array）。 本条精确位置：1501；XML依据检查位置：1511。",
+        "old_conclusion_evidence": "深度字段的增量不会改变 const 指针自身；1406传入非空指针，后续1511宏内判空分量依然恒真。 因而工具原文的“判空冗余”分支成立；这里只据非空调用链确认NULL分量冗余，其他范围条件需逐点判断。不能把这条析取提示直接写成空指针漏洞，也不能把整条提示记为误报。"
+      },
+      {
+        "new_candidate_ordinal": 7,
+        "new_xml_ordinal": 16,
+        "old_xml_ordinal": 16,
+        "old_review_id": "P03-CP-016",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "nullPointerRedundantCheck",
+          "severity": "warning",
+          "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "cwe": "476",
+          "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1503",
+            "column": "9",
+            "info": "Null pointer dereference"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1511",
+            "column": "9",
+            "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+          }
+        ],
+        "symbols": [
+          "input_buffer"
+        ],
+        "new_raw_block_sha256": "e31473533758208460e0fd4ff850f138589427d6bfd9c904e3a96baaeec61642",
+        "old_raw_block_sha256": "e31473533758208460e0fd4ff850f138589427d6bfd9c904e3a96baaeec61642",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "有证据支持",
+        "old_security_relevance": "一般质量提示：宏内判空分量冗余；该input_buffer空指针风险不成立。",
+        "old_risk_scope_conclusion": "诊断有依据（仅冗余判空分支）；input_buffer为空的解引用分支不可达，未确认安全漏洞。",
+        "old_code_evidence": "cJSON.c:289–304（结构与宏）；1142–1169（入口）；1363–1415（完整parse_value）；1492–1587（完整parse_array）。 本条精确位置：1503；XML依据检查位置：1511。",
+        "old_conclusion_evidence": "1404先通过can_access_at_index验证字符存在且为[，1406才调用parse_array。宏304虽直接解引用，但本调用链已确立非空；1511宏内判空分量冗余。 因而工具原文的“判空冗余”分支成立；这里只据非空调用链确认NULL分量冗余，其他范围条件需逐点判断。不能把这条析取提示直接写成空指针漏洞，也不能把整条提示记为误报。"
+      },
+      {
+        "new_candidate_ordinal": 8,
+        "new_xml_ordinal": 17,
+        "old_xml_ordinal": 17,
+        "old_review_id": "P03-CP-017",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "nullPointerRedundantCheck",
+          "severity": "warning",
+          "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "cwe": "476",
+          "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1509",
+            "column": "5",
+            "info": "Null pointer dereference"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1511",
+            "column": "9",
+            "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+          }
+        ],
+        "symbols": [
+          "input_buffer"
+        ],
+        "new_raw_block_sha256": "0b8df5a3a110d00a006ea1b84452ca6a95b76af319554b66dc5236a698a81152",
+        "old_raw_block_sha256": "0b8df5a3a110d00a006ea1b84452ca6a95b76af319554b66dc5236a698a81152",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "有证据支持",
+        "old_security_relevance": "一般质量提示：宏内判空分量冗余；该input_buffer空指针风险不成立。",
+        "old_risk_scope_conclusion": "诊断有依据（仅冗余判空分支）；input_buffer为空的解引用分支不可达，未确认安全漏洞。",
+        "old_code_evidence": "cJSON.c:289–304（结构与宏）；1142–1169（入口）；1363–1415（完整parse_value）；1492–1587（完整parse_array）。 本条精确位置：1509；XML依据检查位置：1511。",
+        "old_conclusion_evidence": "只有偏移量变化，指针本身保持1406传来的非空值。buffer_skip_whitespace返回值在1510没有回写input_buffer，不存在把该指针改成NULL的赋值。 因而工具原文的“判空冗余”分支成立；这里只据非空调用链确认NULL分量冗余，其他范围条件需逐点判断。不能把这条析取提示直接写成空指针漏洞，也不能把整条提示记为误报。"
+      },
+      {
+        "new_candidate_ordinal": 9,
+        "new_xml_ordinal": 18,
+        "old_xml_ordinal": 18,
+        "old_review_id": "P03-CP-018",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "nullPointerRedundantCheck",
+          "severity": "warning",
+          "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "cwe": "476",
+          "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1520",
+            "column": "9",
+            "info": "Null pointer dereference"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1518",
+            "column": "9",
+            "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+          }
+        ],
+        "symbols": [
+          "input_buffer"
+        ],
+        "new_raw_block_sha256": "4124b00fe87dd77d60c5892547baa6ee7b083e0d5f48514403a5d50082116b05",
+        "old_raw_block_sha256": "4124b00fe87dd77d60c5892547baa6ee7b083e0d5f48514403a5d50082116b05",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "有证据支持",
+        "old_security_relevance": "一般质量提示：宏内判空分量冗余；该input_buffer空指针风险不成立。",
+        "old_risk_scope_conclusion": "诊断有依据（仅冗余判空分支）；input_buffer为空的解引用分支不可达，未确认安全漏洞。",
+        "old_code_evidence": "cJSON.c:289–304（结构与宏）；1142–1169（入口）；1363–1415（完整parse_value）；1492–1587（完整parse_array）。 本条精确位置：1520；XML依据检查位置：1518。",
+        "old_conclusion_evidence": "1518的cannot_access_at_index可因offset不在length范围内而为真；该分支不意味着input_buffer为NULL。1406传入的非空指针保持不变，因此1518宏内判空分量冗余。 因而工具原文的“判空冗余”分支成立；这里只据非空调用链确认NULL分量冗余，其他范围条件需逐点判断。不能把这条析取提示直接写成空指针漏洞，也不能把整条提示记为误报。"
+      },
+      {
+        "new_candidate_ordinal": 10,
+        "new_xml_ordinal": 19,
+        "old_xml_ordinal": 19,
+        "old_review_id": "P03-CP-019",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "nullPointerRedundantCheck",
+          "severity": "warning",
+          "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "cwe": "476",
+          "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1657",
+            "column": "9",
+            "info": "Null pointer dereference"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1663",
+            "column": "9",
+            "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+          }
+        ],
+        "symbols": [
+          "input_buffer"
+        ],
+        "new_raw_block_sha256": "27a873e6bcb74cd3e1c91091c324870d8dfd224caf754403361b0bc8517904e7",
+        "old_raw_block_sha256": "27a873e6bcb74cd3e1c91091c324870d8dfd224caf754403361b0bc8517904e7",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "有证据支持",
+        "old_security_relevance": "一般质量提示：宏内判空分量冗余；该input_buffer空指针风险不成立。",
+        "old_risk_scope_conclusion": "诊断有依据（仅冗余判空分支）；input_buffer为空的解引用分支不可达，未确认安全漏洞。",
+        "old_code_evidence": "cJSON.c:289–304（结构与宏）；1142–1169（入口）；1363–1415（完整parse_value）；1652–1767（完整parse_object）。 本条精确位置：1657；XML依据检查位置：1663。",
+        "old_conclusion_evidence": "唯一调用点1411受1365判空及1409首字符/范围检查控制。1663宏301的NULL分量冗余；该入口处范围检查也已由1409验证。 因而工具原文的“判空冗余”分支成立；这里只据非空调用链确认NULL分量冗余，其他范围条件需逐点判断。不能把这条析取提示直接写成空指针漏洞，也不能把整条提示记为误报。"
+      },
+      {
+        "new_candidate_ordinal": 11,
+        "new_xml_ordinal": 20,
+        "old_xml_ordinal": 20,
+        "old_review_id": "P03-CP-020",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "nullPointerRedundantCheck",
+          "severity": "warning",
+          "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "cwe": "476",
+          "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1661",
+            "column": "5",
+            "info": "Null pointer dereference"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1663",
+            "column": "9",
+            "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+          }
+        ],
+        "symbols": [
+          "input_buffer"
+        ],
+        "new_raw_block_sha256": "30b4b993bab8776235c45cec757ca8f3aaa03c372c9786d80e7f7c6fc8995383",
+        "old_raw_block_sha256": "30b4b993bab8776235c45cec757ca8f3aaa03c372c9786d80e7f7c6fc8995383",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "有证据支持",
+        "old_security_relevance": "一般质量提示：宏内判空分量冗余；该input_buffer空指针风险不成立。",
+        "old_risk_scope_conclusion": "诊断有依据（仅冗余判空分支）；input_buffer为空的解引用分支不可达，未确认安全漏洞。",
+        "old_code_evidence": "cJSON.c:289–304（结构与宏）；1142–1169（入口）；1363–1415（完整parse_value）；1652–1767（完整parse_object）。 本条精确位置：1661；XML依据检查位置：1663。",
+        "old_conclusion_evidence": "1411传入的指针已非空；递增depth不修改指针本身。1663宏内的判空分量冗余，不构成新的空指针来源。 因而工具原文的“判空冗余”分支成立；这里只据非空调用链确认NULL分量冗余，其他范围条件需逐点判断。不能把这条析取提示直接写成空指针漏洞，也不能把整条提示记为误报。"
+      },
+      {
+        "new_candidate_ordinal": 12,
+        "new_xml_ordinal": 21,
+        "old_xml_ordinal": 21,
+        "old_review_id": "P03-CP-021",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "nullPointerRedundantCheck",
+          "severity": "warning",
+          "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "cwe": "476",
+          "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1668",
+            "column": "5",
+            "info": "Null pointer dereference"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1670",
+            "column": "9",
+            "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+          }
+        ],
+        "symbols": [
+          "input_buffer"
+        ],
+        "new_raw_block_sha256": "45934a3ea0dbb3d06288df8ee899f00d3447e88f92093e8a843a86fae8dec17f",
+        "old_raw_block_sha256": "45934a3ea0dbb3d06288df8ee899f00d3447e88f92093e8a843a86fae8dec17f",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "有证据支持",
+        "old_security_relevance": "一般质量提示：宏内判空分量冗余；该input_buffer空指针风险不成立。",
+        "old_risk_scope_conclusion": "诊断有依据（仅冗余判空分支）；input_buffer为空的解引用分支不可达，未确认安全漏洞。",
+        "old_code_evidence": "cJSON.c:289–304（结构与宏）；1142–1169（入口）；1363–1415（完整parse_value）；1652–1767（完整parse_object）。 本条精确位置：1668；XML依据检查位置：1670。",
+        "old_conclusion_evidence": "1663为假后，can_access_at_index必为真，直接提供非空和范围条件；其后只有偏移量变化，1670中NULL分量冗余。 因而工具原文的“判空冗余”分支成立；这里只据非空调用链确认NULL分量冗余，其他范围条件需逐点判断。不能把这条析取提示直接写成空指针漏洞，也不能把整条提示记为误报。"
+      },
+      {
+        "new_candidate_ordinal": 13,
+        "new_xml_ordinal": 22,
+        "old_xml_ordinal": 22,
+        "old_review_id": "P03-CP-022",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "nullPointerRedundantCheck",
+          "severity": "warning",
+          "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "cwe": "476",
+          "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1678",
+            "column": "9",
+            "info": "Null pointer dereference"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1676",
+            "column": "9",
+            "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+          }
+        ],
+        "symbols": [
+          "input_buffer"
+        ],
+        "new_raw_block_sha256": "2b76b7967ee4a77aac6e73d13f2d5f8bcc102b3a42774dd98f1026c3c8c44fc6",
+        "old_raw_block_sha256": "2b76b7967ee4a77aac6e73d13f2d5f8bcc102b3a42774dd98f1026c3c8c44fc6",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "有证据支持",
+        "old_security_relevance": "一般质量提示：宏内判空分量冗余；该input_buffer空指针风险不成立。",
+        "old_risk_scope_conclusion": "诊断有依据（仅冗余判空分支）；input_buffer为空的解引用分支不可达，未确认安全漏洞。",
+        "old_code_evidence": "cJSON.c:289–304（结构与宏）；1142–1169（入口）；1363–1415（完整parse_value）；1652–1767（完整parse_object）。 本条精确位置：1678；XML依据检查位置：1676。",
+        "old_conclusion_evidence": "进入1676分支可以是偏移量越过可读区间；非空指针并未改变。不能把cannot_access_at_index的成立解释成input_buffer为NULL；冗余的是宏内判空分量。 因而工具原文的“判空冗余”分支成立；这里只据非空调用链确认NULL分量冗余，其他范围条件需逐点判断。不能把这条析取提示直接写成空指针漏洞，也不能把整条提示记为误报。"
+      },
+      {
+        "new_candidate_ordinal": 14,
+        "new_xml_ordinal": 23,
+        "old_xml_ordinal": 23,
+        "old_review_id": "P03-CP-023",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "nullPointerRedundantCheck",
+          "severity": "warning",
+          "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "cwe": "476",
+          "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1683",
+            "column": "5",
+            "info": "Null pointer dereference"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1708",
+            "column": "13",
+            "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+          }
+        ],
+        "symbols": [
+          "input_buffer"
+        ],
+        "new_raw_block_sha256": "e26364250df7aecef2cd2e46e8d2a4be01cecc29405819115d916e0a277c36b7",
+        "old_raw_block_sha256": "e26364250df7aecef2cd2e46e8d2a4be01cecc29405819115d916e0a277c36b7",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "有证据支持",
+        "old_security_relevance": "一般质量提示：宏内判空分量冗余；该input_buffer空指针风险不成立。",
+        "old_risk_scope_conclusion": "诊断有依据（仅冗余判空分支）；input_buffer为空的解引用分支不可达，未确认安全漏洞。",
+        "old_code_evidence": "cJSON.c:289–304（结构与宏）；1142–1169（入口）；1363–1415（完整parse_value）；1652–1767（完整parse_object）。 本条精确位置：1683；XML依据检查位置：1708。",
+        "old_conclusion_evidence": "1676条件为假已经证明can_access_at_index为真，既有非空又有范围依据；1708仍需检查index=1的剩余长度，但NULL分量冗余。 因而工具原文的“判空冗余”分支成立；这里只据非空调用链确认NULL分量冗余，其他范围条件需逐点判断。不能把这条析取提示直接写成空指针漏洞，也不能把整条提示记为误报。"
+      },
+      {
+        "new_candidate_ordinal": 15,
+        "new_xml_ordinal": 24,
+        "old_xml_ordinal": 24,
+        "old_review_id": "P03-CP-024",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "nullPointerRedundantCheck",
+          "severity": "warning",
+          "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+          "cwe": "476",
+          "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1714",
+            "column": "9",
+            "info": "Null pointer dereference"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1726",
+            "column": "13",
+            "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+          }
+        ],
+        "symbols": [
+          "input_buffer"
+        ],
+        "new_raw_block_sha256": "f1d9a962c274417ce54f8e5a10c9f5ca72a210e29c3d48fcb116789b4c682be2",
+        "old_raw_block_sha256": "f1d9a962c274417ce54f8e5a10c9f5ca72a210e29c3d48fcb116789b4c682be2",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "有证据支持",
+        "old_security_relevance": "一般质量提示：宏内判空分量冗余；该input_buffer空指针风险不成立。",
+        "old_risk_scope_conclusion": "诊断有依据（仅冗余判空分支）；input_buffer为空的解引用分支不可达，未确认安全漏洞。",
+        "old_code_evidence": "cJSON.c:289–304（结构与宏）；1142–1169（入口）；1363–1415（完整parse_value）；1652–1767（完整parse_object）。 本条精确位置：1714；XML依据检查位置：1726。",
+        "old_conclusion_evidence": "1708条件为假时，can_access_at_index(input_buffer,1)为真，已经再次证明指针非空；1715不回写指针，1716传入同一指针。1726宏内判空分量冗余。 因而工具原文的“判空冗余”分支成立；这里只据非空调用链确认NULL分量冗余，其他范围条件需逐点判断。不能把这条析取提示直接写成空指针漏洞，也不能把整条提示记为误报。"
+      },
+      {
+        "new_candidate_ordinal": 16,
+        "new_xml_ordinal": 25,
+        "old_xml_ordinal": 25,
+        "old_review_id": "P03-CP-025",
+        "old_run_id": "PRE-P03-CP-001",
+        "attributes": {
+          "id": "ctunullpointer",
+          "severity": "warning",
+          "msg": "Null pointer dereference: input_buffer",
+          "verbose": "Null pointer dereference: input_buffer",
+          "cwe": "476"
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "821",
+            "column": "42",
+            "info": "Dereferencing argument input_buffer that is null"
+          },
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "1716",
+            "column": "26",
+            "info": "Calling function parse_string, 2nd argument is null"
+          }
+        ],
+        "symbols": [],
+        "new_raw_block_sha256": "1f4b05489f950e721e726065a679c52f429353adc3442e5724d4bea2d2648c55",
+        "old_raw_block_sha256": "1f4b05489f950e721e726065a679c52f429353adc3442e5724d4bea2d2648c55",
+        "raw_block_byte_identical": true,
+        "reused_diagnostic_conclusion": "误报",
+        "old_security_relevance": "空指针安全风险误报：XML所需的NULL实参调用不可达。",
+        "old_risk_scope_conclusion": "明确否定本条“input_buffer为NULL”的路径；本条判误报。",
+        "old_code_evidence": "cJSON.c:289–304（结构与宏）；819–946（完整parse_string）；1363–1415（完整parse_value）；1652–1767（完整parse_object，尤其1708–1728）；1142–1169（入口构造与传参）。",
+        "old_conclusion_evidence": "parse_object为static函数，唯一调用parse_value:1411在1365–1368排除input_buffer==NULL后才可达；对象循环保持parse_buffer * const input_buffer不变，1708条件为假还证明can_access_at_index(input_buffer,1)为真。1715只调用跳空白函数且不回写指针，所以1716传入的仍是非空指针。另一parse_string调用1396同样受1365和1394保护。1144创建实际parse_buffer对象，1151拒绝NULL输入，1156赋content，1167向parse_value传入其地址经辅助函数返回的同一指针。畸形JSON可改变offset、导致false或goto fail，不能把此const指针实参变为NULL。故XML1716的NULL传参是不可达路径，此条空指针诊断为误报。"
+      }
+    ],
+    "differences": [
+      "命令的cache与checkers输出改用新FORM绝对路径；外层工作目录为/home/yhong/comp5355，原数据库内动作directory及编译参数保持。",
+      "完整外部GNU time和当前环境首次用于本次新FORM成本；旧PRE时间不改写。",
+      "诊断XML、处理日志、检查器报告及三份缓存文件与旧原件字节一致；相同内容不作为复用旧缓存的推断。"
+    ]
+  },
+  "information_mapping": {
+    "count": 10,
+    "missing_include_system_count": 9,
+    "checkers_report_count": 1,
+    "included_in_source_candidates": false,
+    "rows": [
+      {
+        "new_xml_ordinal": 1,
+        "old_xml_ordinal": 1,
+        "attributes": {
+          "id": "missingIncludeSystem",
+          "severity": "information",
+          "msg": "Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "verbose": "Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "40",
+            "column": "0"
+          }
+        ],
+        "symbols": [],
+        "new_raw_block_sha256": "b0d9158ffc70be65b1f5924bf23dbbafe24d3286d25d6446929bf61a506a1003",
+        "old_raw_block_sha256": "b0d9158ffc70be65b1f5924bf23dbbafe24d3286d25d6446929bf61a506a1003",
+        "raw_block_byte_identical": true,
+        "counting_role": "information_not_source_candidate"
+      },
+      {
+        "new_xml_ordinal": 2,
+        "old_xml_ordinal": 2,
+        "attributes": {
+          "id": "missingIncludeSystem",
+          "severity": "information",
+          "msg": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "verbose": "Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "41",
+            "column": "0"
+          }
+        ],
+        "symbols": [],
+        "new_raw_block_sha256": "0980179a7ad4b670512ee33926c585b82e4785c631b51062e9871a30a36c9bff",
+        "old_raw_block_sha256": "0980179a7ad4b670512ee33926c585b82e4785c631b51062e9871a30a36c9bff",
+        "raw_block_byte_identical": true,
+        "counting_role": "information_not_source_candidate"
+      },
+      {
+        "new_xml_ordinal": 3,
+        "old_xml_ordinal": 3,
+        "attributes": {
+          "id": "missingIncludeSystem",
+          "severity": "information",
+          "msg": "Include file: <math.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "verbose": "Include file: <math.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "42",
+            "column": "0"
+          }
+        ],
+        "symbols": [],
+        "new_raw_block_sha256": "468b01ce71fde670f3dea608ba1b9cc4e5845abb83bd6f9f37b3d0a63ea8cccb",
+        "old_raw_block_sha256": "468b01ce71fde670f3dea608ba1b9cc4e5845abb83bd6f9f37b3d0a63ea8cccb",
+        "raw_block_byte_identical": true,
+        "counting_role": "information_not_source_candidate"
+      },
+      {
+        "new_xml_ordinal": 4,
+        "old_xml_ordinal": 4,
+        "attributes": {
+          "id": "missingIncludeSystem",
+          "severity": "information",
+          "msg": "Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "verbose": "Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "43",
+            "column": "0"
+          }
+        ],
+        "symbols": [],
+        "new_raw_block_sha256": "e32789d8703426f3b56487fb19e76b7b8e69995c324fcf272fb8514cb4e2b4f5",
+        "old_raw_block_sha256": "e32789d8703426f3b56487fb19e76b7b8e69995c324fcf272fb8514cb4e2b4f5",
+        "raw_block_byte_identical": true,
+        "counting_role": "information_not_source_candidate"
+      },
+      {
+        "new_xml_ordinal": 5,
+        "old_xml_ordinal": 5,
+        "attributes": {
+          "id": "missingIncludeSystem",
+          "severity": "information",
+          "msg": "Include file: <limits.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "verbose": "Include file: <limits.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "44",
+            "column": "0"
+          }
+        ],
+        "symbols": [],
+        "new_raw_block_sha256": "ab14a06d14bc1f411b73c4ee2d6190e5ffc15076a1d8f47aa717a574382461c9",
+        "old_raw_block_sha256": "ab14a06d14bc1f411b73c4ee2d6190e5ffc15076a1d8f47aa717a574382461c9",
+        "raw_block_byte_identical": true,
+        "counting_role": "information_not_source_candidate"
+      },
+      {
+        "new_xml_ordinal": 6,
+        "old_xml_ordinal": 6,
+        "attributes": {
+          "id": "missingIncludeSystem",
+          "severity": "information",
+          "msg": "Include file: <ctype.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "verbose": "Include file: <ctype.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "45",
+            "column": "0"
+          }
+        ],
+        "symbols": [],
+        "new_raw_block_sha256": "481803b4a76a6d3520e865edb9da26856529e3b0bac761aac71c08640fe6ec8e",
+        "old_raw_block_sha256": "481803b4a76a6d3520e865edb9da26856529e3b0bac761aac71c08640fe6ec8e",
+        "raw_block_byte_identical": true,
+        "counting_role": "information_not_source_candidate"
+      },
+      {
+        "new_xml_ordinal": 7,
+        "old_xml_ordinal": 7,
+        "attributes": {
+          "id": "missingIncludeSystem",
+          "severity": "information",
+          "msg": "Include file: <float.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "verbose": "Include file: <float.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "46",
+            "column": "0"
+          }
+        ],
+        "symbols": [],
+        "new_raw_block_sha256": "96676b3cc6f89ed9abe850a43e481e92ab8222010adef2ef9a0f523df80d275e",
+        "old_raw_block_sha256": "96676b3cc6f89ed9abe850a43e481e92ab8222010adef2ef9a0f523df80d275e",
+        "raw_block_byte_identical": true,
+        "counting_role": "information_not_source_candidate"
+      },
+      {
+        "new_xml_ordinal": 8,
+        "old_xml_ordinal": 8,
+        "attributes": {
+          "id": "missingIncludeSystem",
+          "severity": "information",
+          "msg": "Include file: <locale.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "verbose": "Include file: <locale.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "line": "49",
+            "column": "0"
+          }
+        ],
+        "symbols": [],
+        "new_raw_block_sha256": "564a7565c816f4436852756a9b30c61a265cb4ce64bb90a7a4d6f195daae9d55",
+        "old_raw_block_sha256": "564a7565c816f4436852756a9b30c61a265cb4ce64bb90a7a4d6f195daae9d55",
+        "raw_block_byte_identical": true,
+        "counting_role": "information_not_source_candidate"
+      },
+      {
+        "new_xml_ordinal": 9,
+        "old_xml_ordinal": 9,
+        "attributes": {
+          "id": "missingIncludeSystem",
+          "severity": "information",
+          "msg": "Include file: <stddef.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "verbose": "Include file: <stddef.h> not found. Please note: Cppcheck does not need standard library headers to get proper results."
+        },
+        "locations": [
+          {
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h",
+            "line": "86",
+            "column": "0"
+          }
+        ],
+        "symbols": [],
+        "new_raw_block_sha256": "b8443de01a1128a1e814d0a7a2d8d589a9d1ad023b9206042bed4f06a8f30654",
+        "old_raw_block_sha256": "b8443de01a1128a1e814d0a7a2d8d589a9d1ad023b9206042bed4f06a8f30654",
+        "raw_block_byte_identical": true,
+        "counting_role": "information_not_source_candidate"
+      },
+      {
+        "new_xml_ordinal": 26,
+        "old_xml_ordinal": 26,
+        "attributes": {
+          "id": "checkersReport",
+          "severity": "information",
+          "msg": "Active checkers: 79/592 (use --checkers-report=<filename> to see details)",
+          "verbose": "Active checkers: 79/592 (use --checkers-report=<filename> to see details)"
+        },
+        "locations": [],
+        "symbols": [],
+        "new_raw_block_sha256": "2146ea8a61eb3bc99de4b60a136aa141fd6134928784aeae0323fac757c18e37",
+        "old_raw_block_sha256": "2146ea8a61eb3bc99de4b60a136aa141fd6134928784aeae0323fac757c18e37",
+        "raw_block_byte_identical": true,
+        "counting_role": "information_not_source_candidate"
+      }
+    ]
+  },
+  "cache_evidence": {
+    "new_directory": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-CP-001/cache",
+    "created_empty_by_recorder": true,
+    "actual_analysis_argv_references_new_directory": true,
+    "recorder_refuses_existing_run_directory": true,
+    "files": [
+      {
+        "file": "cache/cJSON.a1",
+        "bytes": 79474,
+        "sha256": "3ace06c6d93dde40fd3f7a8b5b2a3fdcf07b44282f7630ec353d61775cd82580",
+        "byte_identical_to_old": true
+      },
+      {
+        "file": "cache/cJSON.c.snalyzerinfo",
+        "bytes": 9120,
+        "sha256": "e9c5ffa58056d8d56694e8a6476f44669ecb82fee16f7da6278a1b6baac45df9",
+        "byte_identical_to_old": true
+      },
+      {
+        "file": "cache/files.txt",
+        "bytes": 61,
+        "sha256": "7d42486f12127a3ebcb87663f56d9dd59a7903d510e81f67a90e0380bbfc9ccc",
+        "byte_identical_to_old": true
+      }
+    ]
+  },
+  "environment_association": {
+    "current_environment": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-FORM-P03-CP-001/environment",
+    "pre_analysis_checks": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-FORM-P03-CP-001",
+    "accepted_preflight": "review_evidence/cJSON_cost_supplement_20261030/Preflight_Acceptance.json",
+    "accepted_codechecker": "review_evidence/cJSON_cost_supplement_20261030/CodeChecker_Acceptance.json",
+    "accepted_flawfinder": "review_evidence/cJSON_cost_supplement_20261030/Flawfinder_Acceptance.json",
+    "execution_order": "P03 CC和FF已验收后执行CP",
+    "tool_result_cache": "measurement-v1记录器新建空run/cache，实际Cppcheck命令显式引用；不复用旧缓存"
+  },
+  "run_meta": {
+    "measurement_schema": "measurement-v1",
+    "run_id": "FORM-P03-CP-001",
+    "purpose": "formal",
+    "working_directory": "/home/yhong/comp5355",
+    "locale": "C",
+    "application_cache_policy": "required_fresh_tool_cache",
+    "os_page_cache": "natural_not_cleared",
+    "created_empty_cache_directory": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-CP-001/cache",
+    "started_utc": "2026-10-30T15:14:56Z",
+    "ended_utc": "2026-10-30T15:14:56Z",
+    "timed_invocation_exit_code": "0",
+    "coverage_validation": "pending_tool_output_review"
+  },
+  "environment": {
+    "snapshot_utc": "2026-10-30T15:14:54Z",
+    "os": "Ubuntu 24.04.5 LTS",
+    "architecture": "x86_64",
+    "python": "3.12.3",
+    "cppcheck": "2.13.0",
+    "cppcheck_ubuntu_package": "2.13.0-2ubuntu3",
+    "gnu_time_package": "1.9-0.2build1",
+    "gnu_time_binary_sha256": "3b11dec50514a8473e9f6efa7a34d584d0657538c09988f61b72d38ad4991a10",
+    "linux_visible_memtotal_kib": 7989128,
+    "run_start_memavailable_kib": 7259588
+  },
+  "raw_receipt_count": 49,
+  "raw_receipt_bytes": 190014,
+  "raw_receipt_groups": {
+    "preparation": {
+      "count": 28,
+      "bytes": 13644
+    },
+    "run": {
+      "count": 21,
+      "bytes": 176370
+    }
+  },
+  "raw_receipt_manifest": {
+    "execution_preparation/FORM-P03-CP-001/environment/recording-scripts.sha256": {
+      "bytes": 290,
+      "sha256": "f6f8d6294677df8df08f12a1c3530bfac21a5ea2fe38274ee9acc6a861a31de5"
+    },
+    "execution_preparation/FORM-P03-CP-001/environment/system.txt": {
+      "bytes": 6403,
+      "sha256": "5239786d083d9eb4ecdb82055d8cc4da8db496eb153e5a995225c1749a5c6e43"
+    },
+    "execution_preparation/FORM-P03-CP-001/environment/time-binary.sha256": {
+      "bytes": 80,
+      "sha256": "53657e86cac996a537975f1d42d31ff35e26d2eb8ec42bd97be2291124f2f840"
+    },
+    "execution_preparation/FORM-P03-CP-001/environment/time-package.txt": {
+      "bytes": 19,
+      "sha256": "49460f22ef48737103328d157c9a1bd442a70a329cd9035dee3e0061e37cf187"
+    },
+    "execution_preparation/FORM-P03-CP-001/environment/time-version.txt": {
+      "bytes": 336,
+      "sha256": "a3b64288a651d40a18a243c43c871f7ae2886baa58b7e3c64a1061bfd651245f"
+    },
+    "execution_preparation/FORM-P03-CP-001/environment/tool-versions.txt": {
+      "bytes": 2964,
+      "sha256": "464c28c83c938c844e25f22c121d2aa7e76f16090dc5d3b0241e6929b872dcc3"
+    },
+    "execution_preparation/FORM-P03-CP-001/environment-command.txt": {
+      "bytes": 186,
+      "sha256": "4d335194f07dbffac4ac81d94797c0d216fc32344356714dc60003326063ccf9"
+    },
+    "execution_preparation/FORM-P03-CP-001/environment-exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "execution_preparation/FORM-P03-CP-001/environment-stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "execution_preparation/FORM-P03-CP-001/environment-stdout.txt": {
+      "bytes": 218,
+      "sha256": "7737c9eb4d7fe5c23642f3c8d263704338511b74822ea334978de7d565aeafdb"
+    },
+    "execution_preparation/FORM-P03-CP-001/Execution_Status.json": {
+      "bytes": 189,
+      "sha256": "c68eab104440d49273ebdc6e6fa3a0bb7bf647f2569035b4b4e58da3a179a36f"
+    },
+    "execution_preparation/FORM-P03-CP-001/Input_Check.json": {
+      "bytes": 2665,
+      "sha256": "87cc36f5f5b1495409f5f96a0532b59154543b467d05390bb15688f70c516c74"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-clang-command.txt": {
+      "bytes": 28,
+      "sha256": "01c27405830a1a01e0781623ef0fea785af7a598e9215998f992623fed15e852"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-clang-exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-clang-stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-clang-stdout.txt": {
+      "bytes": 110,
+      "sha256": "3635b8631d4ebcd8ed7586f4e01e7a6b44407de9d38db6e01daca9c242ed7a53"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-cppcheck-command.txt": {
+      "bytes": 28,
+      "sha256": "bb88258248f55f7d3e938b5bc30adcf27a3206017f1a275cae0dc9911e1ba9e4"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-cppcheck-exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-cppcheck-stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-cppcheck-stdout.txt": {
+      "bytes": 16,
+      "sha256": "e458f60048e8bafd7420b246d7a1e99dc5b9af74b7c0ad92ba3b5940508c5e63"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-cppcheck-ubuntu-package-command.txt": {
+      "bytes": 39,
+      "sha256": "899392de23300150d17ae967ef15386268b2dd9c07b3245491bf9e55ba90f141"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-cppcheck-ubuntu-package-exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-cppcheck-ubuntu-package-stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-cppcheck-ubuntu-package-stdout.txt": {
+      "bytes": 15,
+      "sha256": "2e60241fba42e44acc92262d5ddb35bc3bbd761e5cd7c34a04949cd18db49503"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-gnu-time-package-command.txt": {
+      "bytes": 35,
+      "sha256": "dfc671a5e029b2eac68009fd41bfb20ce0743846efe726cbe24b9a3252fc43b7"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-gnu-time-package-exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-gnu-time-package-stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "execution_preparation/FORM-P03-CP-001/version-gnu-time-package-stdout.txt": {
+      "bytes": 13,
+      "sha256": "eb3dfc5debb41ad81ede114b36ee089d5ae2298fefcc560e266db6ca780ef787"
+    },
+    "runs/FORM-P03-CP-001/cache/cJSON.a1": {
+      "bytes": 79474,
+      "sha256": "3ace06c6d93dde40fd3f7a8b5b2a3fdcf07b44282f7630ec353d61775cd82580"
+    },
+    "runs/FORM-P03-CP-001/cache/cJSON.c.snalyzerinfo": {
+      "bytes": 9120,
+      "sha256": "e9c5ffa58056d8d56694e8a6476f44669ecb82fee16f7da6278a1b6baac45df9"
+    },
+    "runs/FORM-P03-CP-001/cache/files.txt": {
+      "bytes": 61,
+      "sha256": "7d42486f12127a3ebcb87663f56d9dd59a7903d510e81f67a90e0380bbfc9ccc"
+    },
+    "runs/FORM-P03-CP-001/checkers.txt": {
+      "bytes": 10920,
+      "sha256": "6531ca0de68eb5d6a4bbaa8099d89b622f574cd76477eb0148b8e7d91a4c6422"
+    },
+    "runs/FORM-P03-CP-001/command.txt": {
+      "bytes": 414,
+      "sha256": "3171020bd47fc7f3209bf63248784dda3e31221d701212892f292a7450c8e8d0"
+    },
+    "runs/FORM-P03-CP-001/compile_commands.input.json": {
+      "bytes": 781,
+      "sha256": "ff6f0e4cfd162a124d934f8adde2ba96c029b75df634b0884614a965ec19dd9b"
+    },
+    "runs/FORM-P03-CP-001/Configuration_Blockers.json": {
+      "bytes": 123,
+      "sha256": "9927b0cf9108ad4e8438ad66bc5e828332c5cfe655ac7165fe9c489479df9ec6"
+    },
+    "runs/FORM-P03-CP-001/control-manifest.sha256": {
+      "bytes": 1767,
+      "sha256": "c5eda22a1c1400c7b329c5e6ae05e5e1e41d9aa7a6c4cb02c62a2e01ee3af056"
+    },
+    "runs/FORM-P03-CP-001/Coverage_Evidence_Pending.json": {
+      "bytes": 736,
+      "sha256": "89cca7498b4b21e95be5e0abeb85d8647e5729830f11b2342c3a716ca969b8bf"
+    },
+    "runs/FORM-P03-CP-001/environment-start.txt": {
+      "bytes": 2525,
+      "sha256": "c54b5ea89b3ef14dae26e704d2bbfde82ac9506dd27aee8d9b32ff37b7f97017"
+    },
+    "runs/FORM-P03-CP-001/Environment_Association.json": {
+      "bytes": 725,
+      "sha256": "0018b004d9a5569a64e862266ee5367ed49f5f9eaa277ef0583d35437f15a490"
+    },
+    "runs/FORM-P03-CP-001/exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "runs/FORM-P03-CP-001/Information_Only.json": {
+      "bytes": 11505,
+      "sha256": "114932c6536cd40bd67b3e97a4983d2ebe99c33e1c7e170fa2ec73e65e756b39"
+    },
+    "runs/FORM-P03-CP-001/Input_After_Check.json": {
+      "bytes": 2510,
+      "sha256": "a091c3bb4ce963f188edbf0849d41e9b5425753b0734afadcf659df8b1768e1b"
+    },
+    "runs/FORM-P03-CP-001/prepared-profile.json": {
+      "bytes": 4630,
+      "sha256": "04db3110593f2f1ce42514e38a21dfc38a8503ad1455ff5b89e2045e77ba246f"
+    },
+    "runs/FORM-P03-CP-001/Result_Summary_Pending.json": {
+      "bytes": 1004,
+      "sha256": "b7a109953dd2bb5ad0a0012c3ba7a1c21835e820cd18454225c021c3da20c42d"
+    },
+    "runs/FORM-P03-CP-001/run-meta.tsv": {
+      "bytes": 447,
+      "sha256": "d73aa0cab46a83de7e0687ceb0219771c490742d4921e09bdd6b25fef4a95ed6"
+    },
+    "runs/FORM-P03-CP-001/Source_Candidates.json": {
+      "bytes": 31168,
+      "sha256": "c1f5faaf51ef1af5f4e2347cf93335fbc670811c9d86a592075f011ccf622aed"
+    },
+    "runs/FORM-P03-CP-001/stderr.txt": {
+      "bytes": 16993,
+      "sha256": "73930e4467836a883865bf77e4b18a1b1edad969ef75e19bcff67a80aefcd77a"
+    },
+    "runs/FORM-P03-CP-001/stdout.txt": {
+      "bytes": 341,
+      "sha256": "cd730dee83eb364f103b723b095118df816369adb2678ff7c53d6578db83c73e"
+    },
+    "runs/FORM-P03-CP-001/time.txt": {
+      "bytes": 1124,
+      "sha256": "fc04df1c47c357082b8452f8f15075f8b148ccfa44ef41a062519c1b6fae1dec"
+    }
+  },
+  "execution_control_file_count": 14,
+  "control_manifest_sha256": "c5eda22a1c1400c7b329c5e6ae05e5e1e41d9aa7a6c4cb02c62a2e01ee3af056",
+  "execution_controls": [
+    {
+      "file": "scripts/cjson_cppcheck_cost.sh",
+      "expected_sha256": "87bb0b736226502526d0418451f39d5669410992c1273e81f2077dc282789225",
+      "actual_sha256": "87bb0b736226502526d0418451f39d5669410992c1273e81f2077dc282789225",
+      "passed": true
+    },
+    {
+      "file": "review_evidence/cJSON_cost_supplement_20261030/Run_Cppcheck.py",
+      "expected_sha256": "54222df158a6f49a6d835fbdce41d659b0903284407456729561cc3fd6f85648",
+      "actual_sha256": "54222df158a6f49a6d835fbdce41d659b0903284407456729561cc3fd6f85648",
+      "passed": true
+    },
+    {
+      "file": "review_evidence/cJSON_cost_supplement_20261030/Cppcheck_Profile.json",
+      "expected_sha256": "04db3110593f2f1ce42514e38a21dfc38a8503ad1455ff5b89e2045e77ba246f",
+      "actual_sha256": "04db3110593f2f1ce42514e38a21dfc38a8503ad1455ff5b89e2045e77ba246f",
+      "passed": true
+    },
+    {
+      "file": "review_evidence/cJSON_cost_supplement_20261030/Run_CodeChecker.py",
+      "expected_sha256": "0de124ef97a62e581d73ef7a5d486efbfd2501095822a5ecedf1334f63525908",
+      "actual_sha256": "0de124ef97a62e581d73ef7a5d486efbfd2501095822a5ecedf1334f63525908",
+      "passed": true
+    },
+    {
+      "file": "review_evidence/cJSON_cost_supplement_20261030/Verify_Preflight.py",
+      "expected_sha256": "b97e067a81b118a5aa8961d430586470a89f83b00e41f9620c779be8e658b044",
+      "actual_sha256": "b97e067a81b118a5aa8961d430586470a89f83b00e41f9620c779be8e658b044",
+      "passed": true
+    },
+    {
+      "file": "review_evidence/cJSON_cost_supplement_20261030/Preflight_Profile.json",
+      "expected_sha256": "df679063d0f6daa0dfbfd7f1ac3ee5edf3c7cdb16f597d5df6606d2e32520b2b",
+      "actual_sha256": "df679063d0f6daa0dfbfd7f1ac3ee5edf3c7cdb16f597d5df6606d2e32520b2b",
+      "passed": true
+    },
+    {
+      "file": "review_evidence/cJSON_cost_supplement_20261030/Preflight_Acceptance.json",
+      "expected_sha256": "664cd387e64bee8c3eaedce178a82ec7c71f0c79053f5d5fe5fd7ee3a7dddda2",
+      "actual_sha256": "664cd387e64bee8c3eaedce178a82ec7c71f0c79053f5d5fe5fd7ee3a7dddda2",
+      "passed": true
+    },
+    {
+      "file": "review_evidence/cJSON_cost_supplement_20261030/CodeChecker_Acceptance.json",
+      "expected_sha256": "d55c093352b302d73cc5aee152d81180e5c6a76e46c5f10cdcb1e578e7cbf4c8",
+      "actual_sha256": "d55c093352b302d73cc5aee152d81180e5c6a76e46c5f10cdcb1e578e7cbf4c8",
+      "passed": true
+    },
+    {
+      "file": "review_evidence/cJSON_cost_supplement_20261030/Flawfinder_Acceptance.json",
+      "expected_sha256": "2604256a2a7655e9c970297ee29b3346cbf0bf2f74987497b298d46229680690",
+      "actual_sha256": "2604256a2a7655e9c970297ee29b3346cbf0bf2f74987497b298d46229680690",
+      "passed": true
+    },
+    {
+      "file": "scripts/measure_run.sh",
+      "expected_sha256": "accd9b22a820014e1af3573099a1f6a5ec3cd51d3534404e27292d3b4c2259ef",
+      "actual_sha256": "accd9b22a820014e1af3573099a1f6a5ec3cd51d3534404e27292d3b4c2259ef",
+      "passed": true
+    },
+    {
+      "file": "scripts/capture_environment.sh",
+      "expected_sha256": "5f6e1e4d65e848dd016e830e9b03ae1d935afdb7b8611bfd3716ab324167640c",
+      "actual_sha256": "5f6e1e4d65e848dd016e830e9b03ae1d935afdb7b8611bfd3716ab324167640c",
+      "passed": true
+    },
+    {
+      "file": "review_evidence/cJSON_pretest_20261026/cppcheck/run-summary.json",
+      "expected_sha256": "d20980bd15806bce4b9c010330cf5faf161f6de1cd2945e84f4ee69397182617",
+      "actual_sha256": "d20980bd15806bce4b9c010330cf5faf161f6de1cd2945e84f4ee69397182617",
+      "passed": true
+    },
+    {
+      "file": "review_evidence/cJSON_pretest_20261026/cppcheck/checkers.txt",
+      "expected_sha256": "6531ca0de68eb5d6a4bbaa8099d89b622f574cd76477eb0148b8e7d91a4c6422",
+      "actual_sha256": "6531ca0de68eb5d6a4bbaa8099d89b622f574cd76477eb0148b8e7d91a4c6422",
+      "passed": true
+    },
+    {
+      "file": "review_evidence/cJSON_pretest_20261026/compile_commands.json",
+      "expected_sha256": "ff6f0e4cfd162a124d934f8adde2ba96c029b75df634b0884614a965ec19dd9b",
+      "actual_sha256": "ff6f0e4cfd162a124d934f8adde2ba96c029b75df634b0884614a965ec19dd9b",
+      "passed": true
+    }
+  ],
+  "protected_old_files_verified": 1098,
+  "protected_old_files_bytes_and_sha256_unchanged": true,
+  "protected_baseline": "review_evidence/formal_comparison_20261030/Before_Integrity.json",
+  "protected_baseline_sha256": "5fc0cd58581501acc3986abe2b4afa43ce15d605029fcd6d7603a5ca63be4cf0",
+  "new_ai_assessments": 0,
+  "new_source_evidence_reviews": 0,
+  "old_pre_originals_and_review_ledger_unchanged": true,
+  "comparison_status_after_acceptance": {
+    "adopted_result_combinations": 30,
+    "reused_old_cost_combinations": 27,
+    "new_cost_measurements": 3,
+    "available_cost_combinations": 30,
+    "new_form_analyses": 3,
+    "final_report_matrix_imported": false,
+    "p03_original_candidates": 42,
+    "p03_reused_false_positive_judgments": 27,
+    "p03_reused_quality_supported_judgments": 15,
+    "global_candidates": 725,
+    "global_false_positive_judgments": 648,
+    "global_supported_judgments": 62,
+    "global_unresolved_judgments": 15
+  },
+  "limitations": [
+    "15条有据诊断是一般质量提示，不是15个已证安全漏洞；CP025的ctunullpointer为空指针风险误报。",
+    "9条missingIncludeSystem及默认std.cfg模型限制保持，不自行补头或扩大include；checkersReport另1条信息。",
+    "normal不穷尽路径；1翻译单元不证明跨文件覆盖，ctunullpointer规则名不表示启用了Clang CTU。",
+    "旧PRE未独立保留完整argv的历史缺口保持；本次精确argv按旧摘要参数核对且有独立原件。",
+    "原机器pending记录保持；本派生验收给出最终状态，所有49份回执不改写。",
+    "成本三项补测齐备不表示报告矩阵、展示、签名及最终课程交付已经完成。"
+  ]
+}

@@ -1,0 +1,64 @@
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1127:13: warning: The left operand of '<<' is a garbage value [core.UndefinedBinaryOperatorResult]
+ 1127 |    ugamma = png_get_uint_32(buf);
+      |             ^~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libpng-1.6.50/png.h:2702:34: note: expanded from macro 'png_get_uint_32'
+ 2702 | #    define png_get_uint_32(buf) PNG_get_uint_32(buf)
+      |                                  ^~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libpng-1.6.50/png.h:2680:28: note: expanded from macro 'PNG_get_uint_32'
+ 2680 |    (((png_uint_32)(*(buf)) << 24) + \
+      |                    ~~~~~~  ^
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1224:23: warning: The left operand of '<<' is a garbage value [core.UndefinedBinaryOperatorResult]
+ 1224 |    png_uint_32 uval = png_get_uint_32(buf);
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libpng-1.6.50/png.h:2702:34: note: expanded from macro 'png_get_uint_32'
+ 2702 | #    define png_get_uint_32(buf) PNG_get_uint_32(buf)
+      |                                  ^~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libpng-1.6.50/png.h:2680:28: note: expanded from macro 'PNG_get_uint_32'
+ 2680 |    (((png_uint_32)(*(buf)) << 24) + \
+      |                    ~~~~~~  ^
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1311:15: warning: The left operand of '>' is a garbage value [core.UndefinedBinaryOperatorResult]
+ 1311 |    if (intent > 3/*PNGv3 spec*/)
+      |        ~~~~~~ ^
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1375:34: warning: The left operand of '!=' is a garbage value [core.UndefinedBinaryOperatorResult]
+ 1375 |          keyword[keyword_length] != 0)
+      |          ~~~~~~~~~~~~~~~~~~~~~~~ ^
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1910:4: warning: 3rd function call argument is an uninitialized value [core.CallAndMessage]
+ 1910 |    png_set_cICP(png_ptr, info_ptr, buf[0], buf[1],  buf[2], buf[3]);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1950:42: warning: The left operand of '<<' is a garbage value [core.UndefinedBinaryOperatorResult]
+ 1950 |    png_set_cLLI_fixed(png_ptr, info_ptr, png_get_uint_32(buf),
+      |                                          ^~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libpng-1.6.50/png.h:2702:34: note: expanded from macro 'png_get_uint_32'
+ 2702 | #    define png_get_uint_32(buf) PNG_get_uint_32(buf)
+      |                                  ^~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libpng-1.6.50/png.h:2680:28: note: expanded from macro 'PNG_get_uint_32'
+ 2680 |    (((png_uint_32)(*(buf)) << 24) + \
+      |                    ~~~~~~  ^
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1984:28: warning: The left operand of '<<' is a garbage value [core.UndefinedBinaryOperatorResult]
+ 1984 |    chromaticities.redx   = png_get_uint_16(buf+ 0U) << 1; /* red x */
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libpng-1.6.50/png.h:2703:34: note: expanded from macro 'png_get_uint_16'
+ 2703 | #    define png_get_uint_16(buf) PNG_get_uint_16(buf)
+      |                                  ^~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libpng-1.6.50/png.h:2690:30: note: expanded from macro 'PNG_get_uint_16'
+ 2690 |     (((unsigned int)(*(buf)) << 8) + \
+      |                      ~~~~~~  ^
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:2116:12: warning: The left operand of '<<' is a garbage value [core.UndefinedBinaryOperatorResult]
+ 2116 |    res_x = png_get_uint_32(buf);
+      |            ^~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libpng-1.6.50/png.h:2702:34: note: expanded from macro 'png_get_uint_32'
+ 2702 | #    define png_get_uint_32(buf) PNG_get_uint_32(buf)
+      |                                  ^~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libpng-1.6.50/png.h:2680:28: note: expanded from macro 'PNG_get_uint_32'
+ 2680 |    (((png_uint_32)(*(buf)) << 24) + \
+      |                    ~~~~~~  ^
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:2142:15: warning: The left operand of '&' is a garbage value [core.UndefinedBinaryOperatorResult]
+ 2142 |    offset_x = png_get_int_32(buf);
+      |               ^~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libpng-1.6.50/png.h:2704:34: note: expanded from macro 'png_get_int_32'
+ 2704 | #    define png_get_int_32(buf)  PNG_get_int_32(buf)
+      |                                  ^~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libpng-1.6.50/png.h:2694:26: note: expanded from macro 'PNG_get_int_32'
+ 2694 |    ((png_int_32)((*(buf) & 0x80) \
+      |                   ~~~~~~ ^
+9 warnings generated.

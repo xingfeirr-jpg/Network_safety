@@ -1,0 +1,86 @@
+[
+{
+  "directory": "/home/yhong/comp5355/build/json-c-0.18",
+  "command": "/usr/bin/clang-18 -D_GNU_SOURCE -I/home/yhong/comp5355/sources/json-c-0.18 -I/home/yhong/comp5355/build/json-c-0.18  -ffunction-sections -fdata-sections -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC -D_REENTRANT -o CMakeFiles/json-c.dir/arraylist.c.o -c /home/yhong/comp5355/sources/json-c-0.18/arraylist.c",
+  "file": "/home/yhong/comp5355/sources/json-c-0.18/arraylist.c",
+  "output": "CMakeFiles/json-c.dir/arraylist.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/json-c-0.18",
+  "command": "/usr/bin/clang-18 -D_GNU_SOURCE -I/home/yhong/comp5355/sources/json-c-0.18 -I/home/yhong/comp5355/build/json-c-0.18  -ffunction-sections -fdata-sections -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC -D_REENTRANT -o CMakeFiles/json-c.dir/debug.c.o -c /home/yhong/comp5355/sources/json-c-0.18/debug.c",
+  "file": "/home/yhong/comp5355/sources/json-c-0.18/debug.c",
+  "output": "CMakeFiles/json-c.dir/debug.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/json-c-0.18",
+  "command": "/usr/bin/clang-18 -D_GNU_SOURCE -I/home/yhong/comp5355/sources/json-c-0.18 -I/home/yhong/comp5355/build/json-c-0.18  -ffunction-sections -fdata-sections -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC -D_REENTRANT -o CMakeFiles/json-c.dir/json_c_version.c.o -c /home/yhong/comp5355/sources/json-c-0.18/json_c_version.c",
+  "file": "/home/yhong/comp5355/sources/json-c-0.18/json_c_version.c",
+  "output": "CMakeFiles/json-c.dir/json_c_version.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/json-c-0.18",
+  "command": "/usr/bin/clang-18 -D_GNU_SOURCE -I/home/yhong/comp5355/sources/json-c-0.18 -I/home/yhong/comp5355/build/json-c-0.18  -ffunction-sections -fdata-sections -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC -D_REENTRANT -o CMakeFiles/json-c.dir/json_object.c.o -c /home/yhong/comp5355/sources/json-c-0.18/json_object.c",
+  "file": "/home/yhong/comp5355/sources/json-c-0.18/json_object.c",
+  "output": "CMakeFiles/json-c.dir/json_object.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/json-c-0.18",
+  "command": "/usr/bin/clang-18 -D_GNU_SOURCE -I/home/yhong/comp5355/sources/json-c-0.18 -I/home/yhong/comp5355/build/json-c-0.18  -ffunction-sections -fdata-sections -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC -D_REENTRANT -o CMakeFiles/json-c.dir/json_object_iterator.c.o -c /home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c",
+  "file": "/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c",
+  "output": "CMakeFiles/json-c.dir/json_object_iterator.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/json-c-0.18",
+  "command": "/usr/bin/clang-18 -D_GNU_SOURCE -I/home/yhong/comp5355/sources/json-c-0.18 -I/home/yhong/comp5355/build/json-c-0.18  -ffunction-sections -fdata-sections -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC -D_REENTRANT -o CMakeFiles/json-c.dir/json_tokener.c.o -c /home/yhong/comp5355/sources/json-c-0.18/json_tokener.c",
+  "file": "/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c",
+  "output": "CMakeFiles/json-c.dir/json_tokener.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/json-c-0.18",
+  "command": "/usr/bin/clang-18 -D_GNU_SOURCE -I/home/yhong/comp5355/sources/json-c-0.18 -I/home/yhong/comp5355/build/json-c-0.18  -ffunction-sections -fdata-sections -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC -D_REENTRANT -o CMakeFiles/json-c.dir/json_util.c.o -c /home/yhong/comp5355/sources/json-c-0.18/json_util.c",
+  "file": "/home/yhong/comp5355/sources/json-c-0.18/json_util.c",
+  "output": "CMakeFiles/json-c.dir/json_util.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/json-c-0.18",
+  "command": "/usr/bin/clang-18 -D_GNU_SOURCE -I/home/yhong/comp5355/sources/json-c-0.18 -I/home/yhong/comp5355/build/json-c-0.18  -ffunction-sections -fdata-sections -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC -D_REENTRANT -o CMakeFiles/json-c.dir/json_visit.c.o -c /home/yhong/comp5355/sources/json-c-0.18/json_visit.c",
+  "file": "/home/yhong/comp5355/sources/json-c-0.18/json_visit.c",
+  "output": "CMakeFiles/json-c.dir/json_visit.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/json-c-0.18",
+  "command": "/usr/bin/clang-18 -D_GNU_SOURCE -I/home/yhong/comp5355/sources/json-c-0.18 -I/home/yhong/comp5355/build/json-c-0.18  -ffunction-sections -fdata-sections -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC -D_REENTRANT -o CMakeFiles/json-c.dir/linkhash.c.o -c /home/yhong/comp5355/sources/json-c-0.18/linkhash.c",
+  "file": "/home/yhong/comp5355/sources/json-c-0.18/linkhash.c",
+  "output": "CMakeFiles/json-c.dir/linkhash.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/json-c-0.18",
+  "command": "/usr/bin/clang-18 -D_GNU_SOURCE -I/home/yhong/comp5355/sources/json-c-0.18 -I/home/yhong/comp5355/build/json-c-0.18  -ffunction-sections -fdata-sections -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC -D_REENTRANT -o CMakeFiles/json-c.dir/printbuf.c.o -c /home/yhong/comp5355/sources/json-c-0.18/printbuf.c",
+  "file": "/home/yhong/comp5355/sources/json-c-0.18/printbuf.c",
+  "output": "CMakeFiles/json-c.dir/printbuf.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/json-c-0.18",
+  "command": "/usr/bin/clang-18 -D_GNU_SOURCE -I/home/yhong/comp5355/sources/json-c-0.18 -I/home/yhong/comp5355/build/json-c-0.18  -ffunction-sections -fdata-sections -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC -D_REENTRANT -o CMakeFiles/json-c.dir/random_seed.c.o -c /home/yhong/comp5355/sources/json-c-0.18/random_seed.c",
+  "file": "/home/yhong/comp5355/sources/json-c-0.18/random_seed.c",
+  "output": "CMakeFiles/json-c.dir/random_seed.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/json-c-0.18",
+  "command": "/usr/bin/clang-18 -D_GNU_SOURCE -I/home/yhong/comp5355/sources/json-c-0.18 -I/home/yhong/comp5355/build/json-c-0.18  -ffunction-sections -fdata-sections -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC -D_REENTRANT -o CMakeFiles/json-c.dir/strerror_override.c.o -c /home/yhong/comp5355/sources/json-c-0.18/strerror_override.c",
+  "file": "/home/yhong/comp5355/sources/json-c-0.18/strerror_override.c",
+  "output": "CMakeFiles/json-c.dir/strerror_override.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/json-c-0.18",
+  "command": "/usr/bin/clang-18 -D_GNU_SOURCE -I/home/yhong/comp5355/sources/json-c-0.18 -I/home/yhong/comp5355/build/json-c-0.18  -ffunction-sections -fdata-sections -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC -D_REENTRANT -o CMakeFiles/json-c.dir/json_pointer.c.o -c /home/yhong/comp5355/sources/json-c-0.18/json_pointer.c",
+  "file": "/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c",
+  "output": "CMakeFiles/json-c.dir/json_pointer.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/json-c-0.18",
+  "command": "/usr/bin/clang-18 -D_GNU_SOURCE -I/home/yhong/comp5355/sources/json-c-0.18 -I/home/yhong/comp5355/build/json-c-0.18  -ffunction-sections -fdata-sections -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC -D_REENTRANT -o CMakeFiles/json-c.dir/json_patch.c.o -c /home/yhong/comp5355/sources/json-c-0.18/json_patch.c",
+  "file": "/home/yhong/comp5355/sources/json-c-0.18/json_patch.c",
+  "output": "CMakeFiles/json-c.dir/json_patch.c.o"
+}
+]

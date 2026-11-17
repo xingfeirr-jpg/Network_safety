@@ -1,0 +1,555 @@
+Flawfinder version 2.0.20, (C) 2001-2026 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 222
+Examining /home/yhong/comp5355/build/libpng-1.6.50/pnglibconf.h
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/png.c
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/png.h
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngconf.h
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngdebug.h
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngget.c
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pnginfo.h
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngmem.c
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngpread.c
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngread.c
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngrio.c
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngrtran.c
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngset.c
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngstruct.h
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngtrans.c
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngwio.c
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngwtran.c
+Examining /home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c
+
+FINAL RESULTS:
+
+/home/yhong/comp5355/sources/libpng-1.6.50/pngdebug.h:87:8:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+       fprintf(PNG_DEBUG_FILE,"%s" m PNG_STRING_NEWLINE,(num_tabs==1 ? "   " : \
+/home/yhong/comp5355/sources/libpng-1.6.50/pngdebug.h:95:8:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+       fprintf(PNG_DEBUG_FILE,"%s" m PNG_STRING_NEWLINE,(num_tabs==1 ? "   " : \
+/home/yhong/comp5355/sources/libpng-1.6.50/pngdebug.h:103:8:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+       fprintf(PNG_DEBUG_FILE,"%s" m PNG_STRING_NEWLINE,(num_tabs==1 ? "   " : \
+/home/yhong/comp5355/sources/libpng-1.6.50/pngdebug.h:116:8:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+       fprintf(PNG_DEBUG_FILE,format); \
+/home/yhong/comp5355/sources/libpng-1.6.50/pngdebug.h:127:8:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+       fprintf(PNG_DEBUG_FILE,format,p1); \
+/home/yhong/comp5355/sources/libpng-1.6.50/pngdebug.h:138:8:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+       fprintf(PNG_DEBUG_FILE,format,p1,p2); \
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:734:10:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+         fprintf(stderr, PNG_STRING_NEWLINE);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:741:10:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+         fprintf(stderr, PNG_STRING_NEWLINE);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:749:7:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+      fprintf(stderr, PNG_STRING_NEWLINE);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:805:10:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+         fprintf(stderr, PNG_STRING_NEWLINE);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:812:10:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+         fprintf(stderr, PNG_STRING_NEWLINE);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:820:7:  [4] (format) fprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+      fprintf(stderr, PNG_STRING_NEWLINE);
+/home/yhong/comp5355/sources/libpng-1.6.50/png.c:229:7:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+      char m[128];
+/home/yhong/comp5355/sources/libpng-1.6.50/png.c:737:31:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+png_convert_to_rfc1123_buffer(char out[29], png_const_timep ptime)
+/home/yhong/comp5355/sources/libpng-1.6.50/png.c:739:17:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+   static const char short_months[12][4] =
+/home/yhong/comp5355/sources/libpng-1.6.50/png.c:755:7:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+      char number_buf[5] = {0, 0, 0, 0, 0}; /* enough for a four-digit year */
+/home/yhong/comp5355/sources/libpng-1.6.50/png.c:1538:4:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+   char message[196]; /* see below for calculation */
+/home/yhong/comp5355/sources/libpng-1.6.50/png.c:1554:7:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+      char number[PNG_NUMBER_BUFFER_SIZE]; /* +24 = 114 */
+/home/yhong/comp5355/sources/libpng-1.6.50/png.c:2393:13:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+            char exponent[10];
+/home/yhong/comp5355/sources/libpng-1.6.50/png.c:2659:10:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+         char digits[10] = {0};
+/home/yhong/comp5355/sources/libpng-1.6.50/png.h:1049:54:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+PNG_EXPORT(241, int, png_convert_to_rfc1123_buffer, (char out[29],
+/home/yhong/comp5355/sources/libpng-1.6.50/png.h:2811:4:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+   char         message[64];
+/home/yhong/comp5355/sources/libpng-1.6.50/pngdebug.h:112:8:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+       char format[256]; \
+/home/yhong/comp5355/sources/libpng-1.6.50/pngdebug.h:123:8:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+       char format[256]; \
+/home/yhong/comp5355/sources/libpng-1.6.50/pngdebug.h:134:8:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+       char format[256]; \
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:43:4:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+   char msg[16];
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:258:4:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+   char buffer[PNG_NUMBER_BUFFER_SIZE] = {0};
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:268:4:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+   char buffer[PNG_NUMBER_BUFFER_SIZE] = {0};
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:293:4:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+   char msg[192];
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:428:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+static const char png_digit[16] = {
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:483:4:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+   char msg[18+PNG_MAX_ERROR_TEXT];
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:499:4:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+   char msg[18+PNG_MAX_ERROR_TEXT];
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:577:4:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+   char msg[fixed_message_ln+PNG_MAX_ERROR_TEXT];
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:578:4:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+   memcpy(msg, fixed_message, fixed_message_ln);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:721:7:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+      char error_number[16];
+/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c:792:7:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+      char warning_number[16];
+/home/yhong/comp5355/sources/libpng-1.6.50/pngmem.c:152:13:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(new_array, old_array, element_size*(unsigned)old_elements);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngpread.c:309:7:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+      memcpy(ptr, png_ptr->save_buffer_ptr, save_size);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngpread.c:326:7:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+      memcpy(ptr, png_ptr->current_buffer_ptr, save_size);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngpread.c:376:10:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+         memcpy(png_ptr->save_buffer, old_buffer, png_ptr->save_buffer_size);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngpread.c:384:7:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+      memcpy(png_ptr->save_buffer + png_ptr->save_buffer_size,
+/home/yhong/comp5355/sources/libpng-1.6.50/pngpread.c:635:4:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+   memcpy(png_ptr->prev_row, png_ptr->row_buf, row_info.rowbytes + 1);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1807:9:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+typedef char png_warning_parameters[PNG_WARNING_PARAMETER_COUNT][
+/home/yhong/comp5355/sources/libpng-1.6.50/pngread.c:462:4:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+   memcpy(png_ptr->prev_row, png_ptr->row_buf, row_info.rowbytes + 1);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngread.c:1373:21:  [2] (misc) fopen:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+         FILE *fp = fopen(file_name, "rb");
+/home/yhong/comp5355/sources/libpng-1.6.50/pngread.c:1421:16:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+               memcpy(out, memory, need);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:418:7:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+      char msg[64];
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:753:28:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                           memcpy(text, png_ptr->read_buffer, prefix_size);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1354:7:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+      char keyword[81];
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1428:28:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                           memcpy(profile, profile_header,
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:1486:43:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                                          memcpy(info_ptr->iccp_name, keyword,
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:3689:19:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                  memcpy(dp, sp, bytes_to_copy);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:3714:4:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+   memcpy(dp, sp, PNG_ROWBYTES(pixel_depth, row_width));
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:3942:16:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+               memcpy(v, sp, pixel_bytes);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:3946:19:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                  memcpy(dp, v, pixel_bytes);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:347:4:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+   memcpy(new_exif, exif, (size_t)num_exif);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:540:4:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+   memcpy(info_ptr->pcal_purpose, purpose, length);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:563:4:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+   memcpy(info_ptr->pcal_units, units, length);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:591:7:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+      memcpy(info_ptr->pcal_params[i], params[i], length);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:640:4:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+   memcpy(info_ptr->scal_s_width, swidth, lengthw);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:658:4:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+   memcpy(info_ptr->scal_s_height, sheight, lengthh);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:681:7:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+      char swidth[PNG_sCAL_MAX_DIGITS+1];
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:682:7:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+      char sheight[PNG_sCAL_MAX_DIGITS+1];
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:711:7:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+      char swidth[PNG_sCAL_MAX_DIGITS+1];
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:712:7:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+      char sheight[PNG_sCAL_MAX_DIGITS+1];
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:795:7:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+      memcpy(png_ptr->palette, palette, (unsigned int)num_palette *
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:887:4:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+   memcpy(new_iccp_name, name, length);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:900:4:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+   memcpy(new_iccp_profile, profile, proflen);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1070:7:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+      memcpy(textp->key, text_ptr[i].key, key_len);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1076:10:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+         memcpy(textp->lang, text_ptr[i].lang, lang_len);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1079:10:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+         memcpy(textp->lang_key, text_ptr[i].lang_key, lang_key_len);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1092:10:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+         memcpy(textp->text, text_ptr[i].text, text_length);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1173:11:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+          memcpy(info_ptr->trans_alpha, trans_alpha, (size_t)num_trans);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1280:7:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+      memcpy(np->name, entries->name, length);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1300:7:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+      memcpy(np->entries, entries->entries,
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1419:7:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+      memcpy(np->name, unknowns->name, (sizeof np->name));
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1442:10:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+         memcpy(np->data, unknowns->data, unknowns->size);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1521:7:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+      memcpy(list, add, 4);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1625:10:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+         memcpy(new_list, png_ptr->chunk_list, 5*old_num_chunks);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1658:16:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+               memcpy(outlist, inlist, 5);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngstruct.h:343:4:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+   char time_buffer[29]; /* String to hold RFC 1123 time text */
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:888:4:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+   memcpy(png_ptr->row_buf + 1, row, row_info.rowbytes);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:2232:13:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(display->memory+ob, data, size);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:2391:21:  [2] (misc) fopen:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+         FILE *fp = fopen(file_name, "wb");
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:315:7:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+      char msg[64];
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:1912:4:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+   memcpy(buf + 1, width, wlen + 1);      /* Append the '\0' here */
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:1913:4:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+   memcpy(buf + wlen + 2, height, hlen);  /* Do NOT append the '\0' here */
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:2292:19:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                  memcpy(dp, sp, pixel_bytes);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c:2444:28:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+   text_info.text_length = strlen(text);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:497:13:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+   length = strlen(purpose) + 1;
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:522:43:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+          !png_check_fp_string(params[i], strlen(params[i])))
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:550:13:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+   length = strlen(units) + 1;
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:579:16:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+      length = strlen(params[i]) + 1;
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:616:37:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+   if (swidth == NULL || (lengthw = strlen(swidth)) == 0 ||
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:620:38:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+   if (sheight == NULL || (lengthh = strlen(sheight)) == 0 ||
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:877:13:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+   length = strlen(name)+1;
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1003:17:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+      key_len = strlen(text_ptr[i].key);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1017:24:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+            lang_len = strlen(text_ptr[i].lang);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1023:28:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+            lang_key_len = strlen(text_ptr[i].lang_key);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1050:24:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+         text_length = strlen(text_ptr[i].text);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1274:16:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+      length = strlen(entries->name) + 1;
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:1631:18:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+      text_len = strlen(text);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:1686:27:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+       text == NULL ? 0 : strlen(text));
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:1754:15:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+   lang_len = strlen(lang)+1;
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:1756:19:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+   lang_key_len = strlen(lang_key)+1;
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:1770:57:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+   png_text_compress_init(&comp, (png_const_bytep)text, strlen(text));
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:1852:16:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+   units_len = strlen(units) + (nparams == 0 ? 0 : 1);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:1864:23:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+      params_len[i] = strlen(params[i]) + (i == nparams - 1 ? 0 : 1);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:1901:11:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+   wlen = strlen(width);
+/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:1902:11:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+   hlen = strlen(height);
+
+ANALYSIS SUMMARY:
+
+Hits = 110
+Lines analyzed = 37836 in approximately 0.33 seconds (116021 lines/second)
+Physical Source Lines of Code (SLOC) = 24068
+Hits@level = [0]  10 [1]  22 [2]  76 [3]   0 [4]  12 [5]   0
+Hits@level+ = [0+] 120 [1+] 110 [2+]  88 [3+]  12 [4+]  12 [5+]   0
+Hits/KSLOC@level+ = [0+] 4.98587 [1+] 4.57038 [2+] 3.65631 [3+] 0.498587 [4+] 0.498587 [5+]   0
+Minimum risk level = 1
+
+Not every hit is necessarily a security vulnerability.
+You can inhibit a report by adding a comment in this form:
+// flawfinder: ignore
+Make *sure* it's a false positive!
+You can use the option --neverignore to show these.
+
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(https://dwheeler.com/secure-programs) for more information.

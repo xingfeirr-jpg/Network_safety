@@ -1,0 +1,75 @@
+{
+  "accepted_date": "2026-10-30",
+  "record_id": "CHECK-P03-COST-001",
+  "status": "accepted_preflight_only",
+  "assistant_review": "主助手核对并由同一助手体系子代理交叉检查；不称独立人工审核",
+  "source_checked_utc": "2026-10-30T13:39:36.979529+00:00",
+  "input_files_passed": 7,
+  "checks_passed": 20,
+  "environment_exit_code": 0,
+  "step_exit_code": 0,
+  "database_actions": 1,
+  "database_standard": "c89",
+  "new_form_analyses": 0,
+  "new_cost_measurements": 0,
+  "raw_receipt_manifest": {
+    "environment/recording-scripts.sha256": {
+      "bytes": 290,
+      "sha256": "f6f8d6294677df8df08f12a1c3530bfac21a5ea2fe38274ee9acc6a861a31de5"
+    },
+    "environment/system.txt": {
+      "bytes": 6403,
+      "sha256": "e574233b5b857dbd99dbc5cf8e51ffa0a7bdc9644e101fb27e4713e1060f8c6c"
+    },
+    "environment/time-binary.sha256": {
+      "bytes": 80,
+      "sha256": "53657e86cac996a537975f1d42d31ff35e26d2eb8ec42bd97be2291124f2f840"
+    },
+    "environment/time-package.txt": {
+      "bytes": 19,
+      "sha256": "49460f22ef48737103328d157c9a1bd442a70a329cd9035dee3e0061e37cf187"
+    },
+    "environment/time-version.txt": {
+      "bytes": 336,
+      "sha256": "a3b64288a651d40a18a243c43c871f7ae2886baa58b7e3c64a1061bfd651245f"
+    },
+    "environment/tool-versions.txt": {
+      "bytes": 2964,
+      "sha256": "ef534bcd6045f44d7d0afd83883371e731368946684288d54f36176e26013a66"
+    },
+    "environment-capture.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "environment-capture.stdout.txt": {
+      "bytes": 215,
+      "sha256": "40054937eae05a52876c5569b6c686927ac96d9f20d3d399801d28c89232cafc"
+    },
+    "environment-exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "Preflight_Check.json": {
+      "bytes": 9030,
+      "sha256": "0184e812c911c06ba1be9df337f12f3cdf77adde44f24671d9b31bcbfa6d8982"
+    },
+    "stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.txt": {
+      "bytes": 1018,
+      "sha256": "c4ee8fd9293b86b0b35e7bacd38ecf6a58c708b34eba74141244897e635f3e92"
+    }
+  },
+  "figure_id": "FIG-P03-13",
+  "limitations": [
+    "前置通过不证明新分析覆盖、诊断或成本；新运行另验收。",
+    "旧FF/CP无独立完整argv，三组缺独立原profile；历史缺口保留。"
+  ],
+  "next_run": "FORM-P03-CC-001"
+}

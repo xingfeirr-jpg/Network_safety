@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-27",
+  "runId": "PRE-P01-CP-001",
+  "purpose": "functional pretest; not formal comparison",
+  "status": "accepted under declared normal settings; ValueFlow limitation disclosed",
+  "tool": "Cppcheck 2.13.0",
+  "arguments": [
+    "--project=/home/yhong/comp5355/build/zlib-v1.3.2/compile_commands.json",
+    "--enable=warning,performance,portability,information",
+    "--check-level=normal",
+    "--platform=unix64",
+    "--std=c11",
+    "-j",
+    "1",
+    "--cppcheck-build-dir=/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CP-001/cache",
+    "--checkers-report=/home/yhong/comp5355/results/pretest-zlib-v1.3.2/PRE-P01-CP-001/checkers.txt",
+    "--xml",
+    "--xml-version=2"
+  ],
+  "intendedTranslationUnits": 15,
+  "processedTranslationUnits": 15,
+  "failedTranslationUnits": 0,
+  "skippedTranslationUnits": 0,
+  "xmlVersion": 2,
+  "xmlDiagnosticElements": 18,
+  "sourceIssueCandidates": 0,
+  "informationItems": 18,
+  "bySeverity": {
+    "information": 18
+  },
+  "byRule": {
+    "missingIncludeSystem": 16,
+    "checkLevelNormal": 1,
+    "checkersReport": 1
+  },
+  "missingIncludeUniqueHeaders": [
+    "errno.h",
+    "fcntl.h",
+    "limits.h",
+    "stdarg.h",
+    "stddef.h",
+    "stdio.h",
+    "stdlib.h",
+    "string.h",
+    "sys/types.h",
+    "unistd.h"
+  ],
+  "analysisLimitation": {
+    "rule": "checkLevelNormal",
+    "file": "/home/yhong/comp5355/sources/zlib-v1.3.2/inflate.c",
+    "line": 474,
+    "message": "Limiting ValueFlow analysis in function 'inflate' since it is too complex. Please specify --check-level=exhaustive to perform full analysis.",
+    "meaning": "ValueFlow limited by normal complexity budget; inflate.c was processed"
+  },
+  "activeCheckersReported": 79,
+  "totalCheckersReported": 592,
+  "exitCode": 0,
+  "measuredWallSeconds": 3.58,
+  "measuredUserSeconds": 3.63,
+  "measuredSystemSeconds": 0.03,
+  "gnuTimeMaxRssKiB": 30680,
+  "coverageEvidence": [
+    "15 database actions match stdout Checking entries and cache/files.txt in order",
+    "15 analyzerinfo cache files are valid XML and contain no non-information diagnostics",
+    "checkers report says no critical errors and all files checked",
+    "normal ValueFlow restriction in inflate is retained as limitation, not input omission"
+  ],
+  "identityManifestFiles": 27,
+  "sourceCopyFiles": 42,
+  "sourceCopyHashes": "all matched",
+  "sourceReview": "No Cppcheck source candidates to triage; Flawfinder 49 remain unreviewed",
+  "rawPendingFields": "Original run-meta.tsv and xml-summary.json remain unchanged; acceptance is recorded here",
+  "buildStandard": "Clang GNU C17 default",
+  "analysisStandard": "Cppcheck C11 model",
+  "wholeProgram": "Native Cppcheck mechanism, default max-ctu-depth=2; no extra library or exhaustive mode",
+  "formalThirtyCells": "all not run"
+}

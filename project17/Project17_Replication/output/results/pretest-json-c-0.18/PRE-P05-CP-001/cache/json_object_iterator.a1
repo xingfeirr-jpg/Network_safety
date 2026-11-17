@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="3514597663908833411">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h" line="25" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/debug.h" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_inttypes.h" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object.h" line="30" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.h" line="27" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object_private.h" line="28" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:366:30" call-funcname="json_object_get_object" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c" line="69" col="11" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.h:107:41" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:348:36" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="350" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:364:33" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="366" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:386:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="388" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:396:23" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="398" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:407:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="409" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:416:24" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="418" col="2" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:426:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="428" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:436:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="438" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.h:154:18" my-argnr="1" my-argname="iter" file="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c" line="101" col="2" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.h:171:25" my-argnr="1" my-argname="iter" file="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c" line="112" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.h:193:1" my-argnr="1" my-argname="iter" file="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c" line="123" col="67" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.h:221:23" my-argnr="1" my-argname="iter1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c" line="135" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.h:221:23" my-argnr="2" my-argname="iter2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c" line="135" col="28" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:348:36" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="350" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:364:33" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="366" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:386:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="388" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:396:23" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="398" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:407:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="409" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:426:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="428" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:436:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="438" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.h:171:25" my-argnr="1" my-argname="iter" file="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c" line="112" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.h:221:23" my-argnr="1" my-argname="iter1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c" line="135" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.h:221:23" my-argnr="2" my-argname="iter2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c" line="135" col="28" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="lh_table_head" lineNumber="348"/>
+    <functiondecl functionName="lh_get_hash" lineNumber="364"/>
+    <functiondecl functionName="lh_entry_k" lineNumber="386"/>
+    <functiondecl functionName="lh_entry_k_is_constant" lineNumber="396"/>
+    <functiondecl functionName="lh_entry_v" lineNumber="407"/>
+    <functiondecl functionName="lh_entry_set_val" lineNumber="416"/>
+    <functiondecl functionName="lh_entry_next" lineNumber="426"/>
+    <functiondecl functionName="lh_entry_prev" lineNumber="436"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="hash_fn"/>
+    <functioncall functionName="json_c_shallow_copy_default"/>
+    <functioncall functionName="json_object_free_userdata"/>
+    <functioncall functionName="json_object_get_object"/>
+    <functioncall functionName="json_object_userdata_to_json_string"/>
+    <functioncall functionName="lh_entry_next"/>
+    <functioncall functionName="lh_entry_v"/>
+    <functioncall functionName="lh_table_head"/>
+  </FileInfo>
+</analyzerinfo>

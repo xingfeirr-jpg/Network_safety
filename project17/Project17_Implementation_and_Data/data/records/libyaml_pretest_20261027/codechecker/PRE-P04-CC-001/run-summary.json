@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-27",
+  "runId": "PRE-P04-CC-001",
+  "purpose": "functional pretest",
+  "status": "accepted successful zero saved/displayed diagnostic",
+  "originalFiles": 35,
+  "toolVersion": "6.29.1",
+  "backendVersion": "18.1.3",
+  "analyzers": [
+    "clangsa"
+  ],
+  "inputActions": 8,
+  "successfulActions": 8,
+  "failedActions": 0,
+  "skippedActions": 0,
+  "savedPlistFiles": 8,
+  "savedPlistDiagnostics": 0,
+  "parseDisplayedReports": 0,
+  "sourceCandidates": 0,
+  "checkerEnabled": 47,
+  "checkerDisabled": 99,
+  "compilerInfo": {
+    "compiler_includes": [
+      "/usr/lib/llvm-18/lib/clang/18/include",
+      "/usr/local/include",
+      "/usr/include/x86_64-linux-gnu",
+      "/usr/include"
+    ],
+    "compiler_standard": "-std=gnu17",
+    "target": "x86_64-pc-linux-gnu"
+  },
+  "ctu": "off by fixed-version default;no --ctu",
+  "z3Refutation": "off explicitly",
+  "backendArgvEvidence": "full per-action backend argv not separately dumped; original/derived databases, compiler_info and fixed-version generation logic retained",
+  "exitCodes": {
+    "exit-code.txt": 0,
+    "checkers-exit-code.txt": 0,
+    "parse-status-exit-code.txt": 0,
+    "findings-exit-code.txt": 0
+  },
+  "parseStatus": {
+    "upToDateClangsa": 8,
+    "failedClangsa": 0,
+    "outdatedClangsa": 0,
+    "missingClangsa": 0,
+    "unselectedBackendMissing": {
+      "clang-tidy": 8,
+      "cppcheck": 8,
+      "gcc": 8,
+      "infer": 8
+    }
+  },
+  "parseFiltering": "version-default filters retained;all8 saved plists have empty diagnostics,not merely filtered presentation",
+  "wallSeconds": 28.33,
+  "userSeconds": 24.81,
+  "systemSeconds": 1.63,
+  "gnuTimeMaxRssKiB": 219420,
+  "toolInternalAnalysisSeconds": 25.93,
+  "timingMeaning": "whole analyze externally timed;checker/status/parse auxiliary commands outside timing and not separately measured",
+  "zeroMeaning": "nonempty8-action input succeeded,8 legal empty plists and parse0;not proof of no vulnerabilities or rejection of FF hits",
+  "sourceReview": "all40 FF candidates evidence-reviewed:38 original-risk false positives,2 unable;3 additional source observations separate;no CC source candidate",
+  "formalThirtyCells": "all not run"
+}

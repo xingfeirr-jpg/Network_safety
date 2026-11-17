@@ -1,0 +1,15 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+jpeg12_idct_islow
+jpeg12_idct_7x7
+jpeg12_idct_6x6
+jpeg12_idct_5x5
+jpeg12_idct_3x3
+jpeg12_idct_9x9
+jpeg12_idct_10x10
+jpeg12_idct_11x11
+jpeg12_idct_12x12
+jpeg12_idct_13x13
+jpeg12_idct_14x14
+jpeg12_idct_15x15
+jpeg12_idct_16x16

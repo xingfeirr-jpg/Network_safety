@@ -1,0 +1,10 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+jpeg_get_small call:[malloc,return] noreturn:[malloc]
+jpeg_free_small call:[free] noreturn:[free]
+jpeg_get_large call:[malloc,return] noreturn:[malloc]
+jpeg_free_large call:[free] noreturn:[free]
+jpeg_mem_available
+jpeg_open_backing_store
+jpeg_mem_init
+jpeg_mem_term

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="6533659188704514060">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="9" column="0"/>
+        </error>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c:9:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c" line="29" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c:16:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c" line="55" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c:13:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c" line="100" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:32:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c" line="146" col="12" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c:16:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c" line="55" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c:13:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c" line="100" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:32:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c" line="146" col="12" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="yaml_parser_set_reader_error" lineNumber="26"/>
+    <functiondecl functionName="yaml_parser_determine_encoding" lineNumber="51"/>
+    <functiondecl functionName="yaml_parser_update_raw_buffer" lineNumber="94"/>
+    <functiondecl functionName="yaml_parser_update_buffer" lineNumber="142"/>
+    <functioncall functionName="YAML_READER_ERROR"/>
+    <functioncall functionName="YAML_UTF16BE_ENCODING"/>
+    <functioncall functionName="YAML_UTF16LE_ENCODING"/>
+    <functioncall functionName="YAML_UTF8_ENCODING"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="memcmp"/>
+    <functioncall functionName="memmove"/>
+    <functioncall functionName="read_handler"/>
+    <functioncall functionName="yaml_parser_determine_encoding"/>
+    <functioncall functionName="yaml_parser_set_reader_error"/>
+    <functioncall functionName="yaml_parser_update_raw_buffer"/>
+  </FileInfo>
+</analyzerinfo>

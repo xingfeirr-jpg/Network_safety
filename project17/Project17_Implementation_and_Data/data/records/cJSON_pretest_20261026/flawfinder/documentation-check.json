@@ -1,0 +1,20 @@
+{
+  "checkedOn": "2026-10-26",
+  "checks": {
+    "backgroundPreserved": true,
+    "formalAcceptanceAndResultsPreserved": true,
+    "tenSamplesPreserved": true,
+    "courseRequirementsPreserved": true,
+    "laterGuidePreserved": true,
+    "thirtyFormalCellsUnrun": true,
+    "twentySixUnreviewedCsvRows": true,
+    "levelCountsMatch": true,
+    "filteredZeroSeparate": true,
+    "successAndInputsRecorded": true,
+    "copiedHashesCorrect": true,
+    "localLinksResolve": true
+  },
+  "runId": "PRE-P03-FF-001",
+  "cppcheckStatus": "not run",
+  "clangsaStatus": "not run"
+}

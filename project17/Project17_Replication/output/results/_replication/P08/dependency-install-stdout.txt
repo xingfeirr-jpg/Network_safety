@@ -1,0 +1,4 @@
+-- Installing: /home/yhong/comp5355/deps/zlib-v1.3.2/lib/libz.a
+-- Installing: /home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h
+-- Installing: /home/yhong/comp5355/deps/zlib-v1.3.2/include/zlib.h
+-- Installing: /home/yhong/comp5355/deps/zlib-v1.3.2/lib/pkgconfig/zlib.pc

@@ -1,0 +1,4 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant1.c:259:52: warning: Division by zero [core.DivideZero]
+  259 |   return (int)(((JLONG)j * _MAXJSAMPLE + maxj / 2) / maxj);
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+1 warning generated.

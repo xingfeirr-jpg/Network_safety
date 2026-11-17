@@ -1,0 +1,30 @@
+通过：源码 cJSON.c
+通过：源码 cJSON.h
+通过：源码 LICENSE
+通过：源码 CMakeLists.txt
+通过：构建上下文 compile_commands.json
+通过：构建上下文 CMakeCache.txt
+通过：原静态库 libcjson.a
+通过：本次完整环境快照
+通过：真实数据库保持原1条C89动作
+通过：Ubuntu 24.04 / x86_64环境
+通过：固定Python虚拟环境
+通过：flawfinder版本
+通过：codechecker版本
+通过：Cppcheck版本
+通过：clang版本
+通过：Cppcheck Ubuntu package版本
+通过：GNU time package版本
+通过：CodeChecker固定入口
+通过：Flawfinder固定入口
+通过：Cppcheck固定入口
+通过：clangsa固定入口
+通过：GNU time固定入口
+通过：CodeChecker默认labels未被覆盖
+通过：clangsa路径显式固定
+通过：FORM-P03-CC-001目录未占用
+通过：FORM-P03-FF-001目录未占用
+通过：FORM-P03-CP-001目录未占用
+
+前置检查通过，待助手验收。
+本步未配置、构建、安装、运行三工具分析或解析旧报告。

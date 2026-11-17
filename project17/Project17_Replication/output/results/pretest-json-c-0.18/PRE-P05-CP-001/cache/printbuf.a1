@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="14171103222726394371">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="21" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="22" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="25" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/debug.h" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/snprintf_compat.h" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/vasprintf_compat.h" line="12" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/vasprintf_compat.h" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/vasprintf_compat.h" line="15" column="0"/>
+        </error>
+        <error id="integerOverflowCond" severity="warning" msg="Either the condition &apos;offset&lt;-1&apos; is redundant or there is signed integer overflow for expression &apos;2147483647-offset&apos;." verbose="Either the condition &apos;offset&lt;-1&apos; is redundant or there is signed integer overflow for expression &apos;2147483647-offset&apos;." cwe="190" file0="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="123" column="46" info="Integer overflow"/>
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="123" column="24" info="Assuming that condition &apos;offset&lt;-1&apos; is not redundant"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="169" col="28" call-argexpr="size" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="163" col="39" info="Assuming that condition &apos;(size=vasprintf(&amp;t,msg,ap))&lt;0&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="174" col="28" call-argexpr="buf" call-argvaluetype="7" call-argvalue="128"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="174" col="28" call-argexpr="size" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="160" col="11" info="Assuming that condition &apos;size&lt;0&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="169" col="10" my-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:121:17" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c:35:12" my-argnr="1" my-argname="p" file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="70" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:123:18" my-argnr="1" my-argname="p" file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="181" col="2" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c:35:12" my-argnr="1" my-argname="p" file="/home/yhong/comp5355/sources/json-c-0.18/printbuf.c" line="70" col="6" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="printbuf_extend" lineNumber="65"/>
+    <functioncall functionName="EFBIG"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="calloc"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="printbuf_extend"/>
+    <functioncall functionName="printbuf_memappend"/>
+    <functioncall functionName="realloc"/>
+    <functioncall functionName="va_end"/>
+    <functioncall functionName="va_start"/>
+    <functioncall functionName="vasprintf"/>
+    <functioncall functionName="vsnprintf"/>
+  </FileInfo>
+</analyzerinfo>

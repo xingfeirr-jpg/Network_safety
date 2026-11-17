@@ -1,0 +1,7 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmaster.c:423:30: warning: The left operand of '<' is a garbage value [core.UndefinedBinaryOperatorResult]
+  423 |       if (last_bitpos[ci][0] < 0)
+      |           ~~~~~~~~~~~~~~~~~~ ^
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmaster.c:429:11: warning: Branch condition evaluates to a garbage value [core.uninitialized.Branch]
+  429 |       if (!component_sent[ci])
+      |           ^~~~~~~~~~~~~~~~~~~
+2 warnings generated.

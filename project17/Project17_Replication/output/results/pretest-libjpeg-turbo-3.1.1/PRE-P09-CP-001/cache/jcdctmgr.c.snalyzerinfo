@@ -1,0 +1,10 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+start_pass_fdctmgr call:[sizeof]
+convsamp
+quantize
+forward_DCT call:[void]
+convsamp_float
+quantize_float
+forward_DCT_float call:[void]
+j12init_forward_dct call:[sizeof]

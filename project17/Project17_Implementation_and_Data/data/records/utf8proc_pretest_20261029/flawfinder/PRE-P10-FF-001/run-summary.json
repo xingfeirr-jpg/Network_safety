@@ -1,0 +1,96 @@
+{
+  "status": "passed",
+  "project": "P10 utf8proc",
+  "version": "2.10.0",
+  "runId": "PRE-P10-FF-001",
+  "purpose": "functional pretest",
+  "checkedAtUTC": "2026-10-29T09:31:15.465295+00:00",
+  "tool": "Flawfinder",
+  "toolVersion": "2.0.20",
+  "builtInRulesBanner": 222,
+  "copiedRawFiles": 20,
+  "checks": {
+    "20RawFilesVerified": true,
+    "AnalysisExitZeroAndStderrEmpty": true,
+    "ControlInputVersionChecksZero": true,
+    "ProfileUnchanged": true,
+    "InputManifestUnchanged": true,
+    "ControlManifestUnchanged": true,
+    "SixControlHashesMatch": true,
+    "ThreeRuntimeInputsMatch": true,
+    "ActualCommandMatchesProfile": true,
+    "AllThreeInputsExamined": true,
+    "CurrentSourceAndDatabaseMatch": true,
+    "ActualVersionMatches": true,
+    "MeasurementMetadataMatches": true,
+    "ExecutionSessionNotFalselyInferred": true,
+    "18DisplayedHitsParsed": true,
+    "LevelZeroAndCumulativeSeparate": true,
+    "ToolLineSummaryMatches": true,
+    "NoOtherAnalysisRunDirectory": true
+  },
+  "intendedTextFiles": 3,
+  "examinedTextFiles": 3,
+  "examinedInputs": [
+    "/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c",
+    "/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h",
+    "/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc_data.c"
+  ],
+  "independentSemanticActionsReference": 1,
+  "failedTextInputs": 0,
+  "skippedTextInputs": 0,
+  "displayedHitCount": 18,
+  "hitsByLevel": {
+    "0": 0,
+    "1": 18,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+  },
+  "cumulative0Plus": 18,
+  "byRule": {
+    "strlen": 18
+  },
+  "byFile": {
+    "utf8proc.c": 13,
+    "utf8proc.h": 5,
+    "utf8proc_data.c": 0
+  },
+  "linesAnalyzed": 18718,
+  "toolSLOC": 18043,
+  "toolSelfReportedSeconds": 0.29,
+  "resources": {
+    "wall_seconds": 0.34,
+    "user_seconds": 0.33,
+    "system_seconds": 0.0,
+    "max_rss_kib": 25612,
+    "timed_invocation_exit_code": 0,
+    "wall_raw": "0:00.34",
+    "maxRSSMeaning": "GNU time maximum RSS, not a summed process-tree peak"
+  },
+  "analysisCommand": [
+    "/home/yhong/comp5355/.venv/bin/flawfinder",
+    "--minlevel=1",
+    "--neverignore",
+    "--columns",
+    "--context",
+    "/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c",
+    "/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h",
+    "/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc_data.c"
+  ],
+  "buildEnvironmentSession": "/home/yhong/comp5355/environment/session-20261029T085446-p10-22994",
+  "executionEnvironmentSession": "not supplied; actual run-start snapshot saved",
+  "rawManifestSHA256": "f580d6cad01d63ce68123905f1467e89ff13b9f06d9f9a8290adbe472ee39c22",
+  "candidateCSV": "Flawfinder_Candidates.csv",
+  "candidateCSVSHA256": "160f2cf5753761a586e13bbb37ab8cf06e30ee7790c1b189c3d154983139b62f",
+  "unreviewedCandidates": 18,
+  "reviewedCandidates": 0,
+  "diagnosisJudgement": "未核查；未做源码真假判断或AI初判",
+  "securityRelevance": "未核查",
+  "figures": [
+    "FIG-P10-04",
+    "FIG-P10-05"
+  ],
+  "formalThirtyCells": "all not run"
+}

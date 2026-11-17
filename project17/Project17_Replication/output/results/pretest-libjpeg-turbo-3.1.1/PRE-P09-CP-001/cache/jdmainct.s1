@@ -1,0 +1,11 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+set_wraparound_pointers
+alloc_funny_pointers call:[sizeof]
+make_funny_pointers
+set_bottom_pointers
+start_pass_main call:[make_funny_pointers]
+process_data_simple_main
+process_data_context_main call:[set_bottom_pointers,set_wraparound_pointers] noreturn:[set_bottom_pointers,set_wraparound_pointers]
+process_data_crank_post
+jinit_d_main_controller call:[alloc_funny_pointers,memset,sizeof]

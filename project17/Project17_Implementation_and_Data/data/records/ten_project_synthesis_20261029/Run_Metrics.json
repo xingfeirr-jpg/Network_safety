@@ -1,0 +1,3849 @@
+{
+  "schema": "project17-ten-project-run-metrics-v1",
+  "date": "2026-10-29",
+  "language": "中文",
+  "purpose": "既有十程序三工具功能预试的运行、范围及成本综合；只读原件派生",
+  "source_policy": "仅使用当前canonical记录及原始日志，避开baseline；不改原件、原标签，不启动WSL、扫描器或构建",
+  "formal_comparison": {
+    "cells": 30,
+    "executed": 0,
+    "status": "全部未运行；有效预试不自动填正式矩阵"
+  },
+  "tool_versions": {
+    "Flawfinder": "2.0.20",
+    "Cppcheck": "2.13.0（Ubuntu 2.13.0-2ubuntu3）",
+    "CodeChecker": "6.29.1",
+    "clangsa": "18.1.3",
+    "source": "review_evidence/Environment_Deployment_Check.md及各实际运行记录/版本原件"
+  },
+  "conventions": [
+    "null表示未测量、未独立记录或不适用，绝不补成0；具体含义见对应字段和说明",
+    "FF为显示命中；CP为XML源码诊断元素；CC为保存plist诊断元素，三者相加仅为登记条目，不是独立根因或漏洞数",
+    "FF等级0摘要与CP信息另列；失败与输入不完整尝试单列",
+    "GNU time最大RSS保留Linux KiB含义；自报时间不替代外部值；单次、自然缓存、负载未完全控制",
+    "当运行记录阶段状态已过期，当前审阅结论以canonical Review_Summary/Review_Ledger为准，不回写旧阶段原件"
+  ],
+  "descriptive_inventory": {
+    "effective_pretest_combinations": 30,
+    "retained_nonaccepted_attempts": 2,
+    "candidate_entries_total": 725,
+    "by_tool": {
+      "FF": 536,
+      "CP": 116,
+      "CC": 73
+    },
+    "cppcheck_information_total": 213,
+    "externally_measured_effective_combinations": 27,
+    "external_measurement_missing_effective_combinations": 3,
+    "source": "从下列30个有效预试记录逐项求和；未合并根因，不计两次未验收尝试"
+  },
+  "projects": [
+    {
+      "project_id": "P01",
+      "project": "zlib",
+      "version": "1.3.2",
+      "phase": "功能预试",
+      "project_record": "review_evidence/zlib_Pretest_Record.md",
+      "scope": {
+        "semantic_compile_actions": 15,
+        "flawfinder_text_files": 26,
+        "scope_source": "review_evidence/zlib_Pretest_Record.md",
+        "independent_source_paths": null,
+        "meaning": "语义动作与词法文本范围分别记录；包含型实现、头和生成头不伪造独立动作"
+      },
+      "runs": [
+        {
+          "project_id": "P01",
+          "run_id": "PRE-P01-FF-001",
+          "tool": "Flawfinder",
+          "tool_key": "FF",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "文本文件",
+            "intended_count": 26,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/run-summary.json",
+            "scope_field": "inputFileCount"
+          },
+          "coverage": {
+            "succeeded_or_examined": 26,
+            "failed": null,
+            "skipped": null,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 49,
+            "candidate_unit": "minlevel=1显示命中条目",
+            "saved_source_diagnostics": null,
+            "displayed_reports": 49,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": 55,
+            "flawfinder_cumulative_0plus": 104,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 0.18,
+            "user_seconds": 0.16,
+            "system_seconds": 0.02,
+            "max_rss_kib": 21988,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:00.18",
+            "source_file": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "c1a2209ba4b797633132994186a309bcfc9927a478c12db01b9159ea29803311",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 0.14,
+            "source_file": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/run-summary.json",
+            "source_field": "toolReportedApproxSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "lines_analyzed": 23114,
+            "physical_sloc": 17685,
+            "text_scale_source": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/run-summary.json",
+            "text_scale_source_fields": [
+              "linesAnalyzed",
+              "physicalSLOC"
+            ]
+          },
+          "configuration": {
+            "profile": "review_evidence/zlib_setup/Flawfinder_Profile.json",
+            "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "--minlevel=1",
+              "--neverignore",
+              "--columns",
+              "--context"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/run-summary.json",
+            "record_sha256": "93214091d2ed499d822953a0c8130dfe7920660df0e4e2aee2d1a2aeebbf24d5",
+            "field_map": {
+              "input": "inputFileCount",
+              "examined": "inputFileCount",
+              "candidates": "displayedHits",
+              "displayed": "displayedHits",
+              "level0": "riskZeroFiltered",
+              "cumulative": "cumulativeIncludingRiskZero",
+              "self_seconds": "toolReportedApproxSeconds"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "measuredWallSeconds",
+              "user_seconds": "measuredUserSeconds",
+              "system_seconds": "measuredSystemSeconds",
+              "max_rss_kib": "gnuTimeMaxRssKiB"
+            },
+            "raw_directory": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001",
+            "project_record": "review_evidence/zlib_Pretest_Record.md",
+            "current_review_summary": "review_evidence/zlib_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+            "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/run-meta.tsv",
+            "started_utc": "2026-10-27T06:34:17Z",
+            "ended_utc": "2026-10-27T06:34:17Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/command.txt",
+            "effective_tool_order_in_project": 1,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P01",
+          "run_id": "PRE-P01-CP-001",
+          "tool": "Cppcheck",
+          "tool_key": "CP",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 15,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/run-summary.json",
+            "scope_field": "intendedTranslationUnits"
+          },
+          "coverage": {
+            "succeeded_or_examined": 15,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 0,
+            "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+            "saved_source_diagnostics": 0,
+            "displayed_reports": null,
+            "raw_xml_elements": 18,
+            "information_items": 18,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 3.58,
+            "user_seconds": 3.63,
+            "system_seconds": 0.03,
+            "max_rss_kib": 30680,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:03.58",
+            "source_file": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "74dfa98f214cdcde355781cea59c07d594ced1670165d169532d764dcc4686a9",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": null,
+            "source_file": null,
+            "source_field": null,
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "checker_catalog_active": 79,
+            "checker_catalog_total": 592,
+            "checker_catalog_source": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/stderr.txt",
+            "checker_catalog_source_field": "results/errors/error[@id=checkersReport]/@msg",
+            "checker_catalog_meaning": "检查器目录自报统计；非代码或漏洞覆盖率"
+          },
+          "configuration": {
+            "profile": "review_evidence/zlib_setup/Cppcheck_Profile.json",
+            "analysis_standard": "C11",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "builtin内部解析器",
+              "normal",
+              "unix64",
+              "-j 1",
+              "XML2",
+              "warning/performance/portability/information及默认error",
+              "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/run-summary.json",
+            "record_sha256": "f2133a8ddc1e3fb697dd5de2aa3af83b6f72ec6ae98963b97429b5be33b329a9",
+            "field_map": {
+              "input": "intendedTranslationUnits",
+              "succeeded": "processedTranslationUnits",
+              "failed": "failedTranslationUnits",
+              "skipped": "skippedTranslationUnits",
+              "candidates": "sourceIssueCandidates",
+              "saved": "sourceIssueCandidates",
+              "information": "informationItems",
+              "xml": "xmlDiagnosticElements"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "measuredWallSeconds",
+              "user_seconds": "measuredUserSeconds",
+              "system_seconds": "measuredSystemSeconds",
+              "max_rss_kib": "gnuTimeMaxRssKiB"
+            },
+            "raw_directory": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001",
+            "project_record": "review_evidence/zlib_Pretest_Record.md",
+            "current_review_summary": "review_evidence/zlib_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+            "Cppcheck C11模型与实际GNU C17构建有差异。",
+            "normal在inflate值流分析受限。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/run-meta.tsv",
+            "started_utc": "2026-10-27T07:22:22Z",
+            "ended_utc": "2026-10-27T07:22:25Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/command.txt",
+            "effective_tool_order_in_project": 2,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P01",
+          "run_id": "PRE-P01-CC-001",
+          "tool": "CodeChecker/clangsa",
+          "tool_key": "CC",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 15,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/run-summary.json",
+            "scope_field": "inputActions"
+          },
+          "coverage": {
+            "succeeded_or_examined": 15,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 3,
+            "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+            "saved_source_diagnostics": 3,
+            "displayed_reports": 3,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 34.07,
+            "user_seconds": 30.01,
+            "system_seconds": 1.81,
+            "max_rss_kib": 184252,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:34.07",
+            "source_file": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "0f045972f01d1558d23ca244a47e4ff3c7ce83a2186cd71ab983eaf681881c5d",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 31.27,
+            "source_file": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/run-summary.json",
+            "source_field": "toolReportedAnalysisSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比"
+          },
+          "configuration": {
+            "profile": "review_evidence/zlib_setup/CodeChecker_Profile.json",
+            "analysis_standard": "GNU C17",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "仅clangsa",
+              "-j 1",
+              "每动作120秒",
+              "compile-uniqueing none",
+              "CTU默认关闭",
+              "Z3 refutation off",
+              "capture-analysis-output请求；实际捕获范围见各验收记录",
+              "新reports；保留默认parse过滤"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/run-summary.json",
+            "record_sha256": "7a8dc541fd2b9251d5940b6063d84a73a7b12bce8c1a1ab142324bca98633c1e",
+            "field_map": {
+              "input": "inputActions",
+              "succeeded": "successfulActions",
+              "failed": "failedActions",
+              "skipped": "skippedActions",
+              "candidates": "savedPlistDiagnostics",
+              "saved": "savedPlistDiagnostics",
+              "displayed": "parseDisplayedReports",
+              "self_seconds": "toolReportedAnalysisSeconds"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "measuredWallSeconds",
+              "user_seconds": "measuredUserSeconds",
+              "system_seconds": "measuredSystemSeconds",
+              "max_rss_kib": "gnuTimeMaxRssKiB"
+            },
+            "raw_directory": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001",
+            "project_record": "review_evidence/zlib_Pretest_Record.md",
+            "current_review_summary": "review_evidence/zlib_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/run-meta.tsv",
+            "started_utc": "2026-10-27T07:48:57Z",
+            "ended_utc": "2026-10-27T07:49:31Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/command.txt",
+            "effective_tool_order_in_project": 3,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        }
+      ]
+    },
+    {
+      "project_id": "P02",
+      "project": "LZ4",
+      "version": "1.10.0",
+      "phase": "功能预试",
+      "project_record": "review_evidence/LZ4_Pretest_Record.md",
+      "scope": {
+        "semantic_compile_actions": 5,
+        "flawfinder_text_files": 11,
+        "scope_source": "review_evidence/LZ4_Pretest_Record.md",
+        "independent_source_paths": null,
+        "meaning": "语义动作与词法文本范围分别记录；包含型实现、头和生成头不伪造独立动作"
+      },
+      "runs": [
+        {
+          "project_id": "P02",
+          "run_id": "PRE-P02-FF-001",
+          "tool": "Flawfinder",
+          "tool_key": "FF",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "文本文件",
+            "intended_count": 11,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/run-summary.json",
+            "scope_field": "inputFiles"
+          },
+          "coverage": {
+            "succeeded_or_examined": 11,
+            "failed": null,
+            "skipped": null,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 42,
+            "candidate_unit": "minlevel=1显示命中条目",
+            "saved_source_diagnostics": null,
+            "displayed_reports": 42,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": 4,
+            "flawfinder_cumulative_0plus": 46,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 0.1,
+            "user_seconds": 0.09,
+            "system_seconds": 0.01,
+            "max_rss_kib": 20472,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:00.10",
+            "source_file": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "61e3b56c577bb70386c15524a18036ceb5b8839adeb8fecdca337e2f87cbfb1f",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 0.07,
+            "source_file": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/run-summary.json",
+            "source_field": "toolSelfSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "lines_analyzed": 11045,
+            "physical_sloc": 6941,
+            "text_scale_source": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/run-summary.json",
+            "text_scale_source_fields": [
+              "linesAnalyzed",
+              "physicalSLOC"
+            ]
+          },
+          "configuration": {
+            "profile": "review_evidence/lz4_setup/Flawfinder_Profile.json",
+            "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "--minlevel=1",
+              "--neverignore",
+              "--columns",
+              "--context"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/run-summary.json",
+            "record_sha256": "6c80ed4e0ff8cd921085b3ae82b025f7f3dba79d903d2b4a15db7f3d9f2022c0",
+            "field_map": {
+              "input": "inputFiles",
+              "examined": "inputFiles",
+              "candidates": "displayedHits",
+              "displayed": "displayedHits",
+              "level0": "level0Filtered",
+              "cumulative": "cumulative0Plus",
+              "self_seconds": "toolSelfSeconds"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "wallSeconds",
+              "user_seconds": "userSeconds",
+              "system_seconds": "systemSeconds",
+              "max_rss_kib": "gnuTimeMaxRssKiB"
+            },
+            "raw_directory": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001",
+            "project_record": "review_evidence/LZ4_Pretest_Record.md",
+            "current_review_summary": "review_evidence/lz4_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+            "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/run-meta.tsv",
+            "started_utc": "2026-10-27T10:43:21Z",
+            "ended_utc": "2026-10-27T10:43:21Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/command.txt",
+            "effective_tool_order_in_project": 3,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P02",
+          "run_id": "PRE-P02-CP-001",
+          "tool": "Cppcheck",
+          "tool_key": "CP",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 5,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/run-summary.json",
+            "scope_field": "intendedTranslationUnits"
+          },
+          "coverage": {
+            "succeeded_or_examined": 5,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 1,
+            "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+            "saved_source_diagnostics": 1,
+            "displayed_reports": null,
+            "raw_xml_elements": 25,
+            "information_items": 24,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 3.26,
+            "user_seconds": 3.25,
+            "system_seconds": 0.02,
+            "max_rss_kib": 25216,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:03.26",
+            "source_file": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "0dfd444b1e670fbe400983b63d5c61c45223637a1ccf759a72bb3466ec562b52",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": null,
+            "source_file": null,
+            "source_field": null,
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "checker_catalog_active": 79,
+            "checker_catalog_total": 592,
+            "checker_catalog_source": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/stderr.txt",
+            "checker_catalog_source_field": "results/errors/error[@id=checkersReport]/@msg",
+            "checker_catalog_meaning": "检查器目录自报统计；非代码或漏洞覆盖率"
+          },
+          "configuration": {
+            "profile": "review_evidence/lz4_setup/Cppcheck_Profile.json",
+            "analysis_standard": "C11",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "builtin内部解析器",
+              "normal",
+              "unix64",
+              "-j 1",
+              "XML2",
+              "warning/performance/portability/information及默认error",
+              "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/run-summary.json",
+            "record_sha256": "a24cb2b67d62cdfa822fce45581e1cae8b0b10f06dfb319b116932d3bf859a32",
+            "field_map": {
+              "input": "intendedTranslationUnits",
+              "succeeded": "processedTranslationUnits",
+              "failed": "failedTranslationUnits",
+              "skipped": "skippedTranslationUnits",
+              "candidates": "sourceIssueCandidates",
+              "saved": "sourceIssueCandidates",
+              "information": "informationItems",
+              "xml": "xmlDiagnosticElements"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "wallSeconds",
+              "user_seconds": "userSeconds",
+              "system_seconds": "systemSeconds",
+              "max_rss_kib": "gnuTimeMaxRssKiB"
+            },
+            "raw_directory": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001",
+            "project_record": "review_evidence/LZ4_Pretest_Record.md",
+            "current_review_summary": "review_evidence/lz4_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+            "Cppcheck C11模型与实际GNU C17构建有差异。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/run-meta.tsv",
+            "started_utc": "2026-10-27T10:16:19Z",
+            "ended_utc": "2026-10-27T10:16:23Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/command.txt",
+            "effective_tool_order_in_project": 1,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P02",
+          "run_id": "PRE-P02-CC-001",
+          "tool": "CodeChecker/clangsa",
+          "tool_key": "CC",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 5,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/run-summary.json",
+            "scope_field": "inputActions"
+          },
+          "coverage": {
+            "succeeded_or_examined": 5,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 8,
+            "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+            "saved_source_diagnostics": 8,
+            "displayed_reports": 8,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 21.73,
+            "user_seconds": 18.73,
+            "system_seconds": 0.87,
+            "max_rss_kib": 200624,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:21.73",
+            "source_file": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "6fe16d936dea1d507823dd00046fba283a0dfc4a04ec899026ad787cda040c29",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 19.19,
+            "source_file": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/run-summary.json",
+            "source_field": "toolInternalAnalysisSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比"
+          },
+          "configuration": {
+            "profile": "review_evidence/lz4_setup/CodeChecker_Profile.json",
+            "analysis_standard": "GNU C17",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "仅clangsa",
+              "-j 1",
+              "每动作120秒",
+              "compile-uniqueing none",
+              "CTU默认关闭",
+              "Z3 refutation off",
+              "capture-analysis-output请求；实际捕获范围见各验收记录",
+              "新reports；保留默认parse过滤"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/run-summary.json",
+            "record_sha256": "b0dfaf06f2547e71aaa491a44e475b02271fb32190c530d3a177f0f0ab98880a",
+            "field_map": {
+              "input": "inputActions",
+              "succeeded": "successfulActions",
+              "failed": "failedActions",
+              "skipped": "skippedActions",
+              "candidates": "savedPlistDiagnostics",
+              "saved": "savedPlistDiagnostics",
+              "displayed": "parseDisplayedReports",
+              "self_seconds": "toolInternalAnalysisSeconds"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "wallSeconds",
+              "user_seconds": "userSeconds",
+              "system_seconds": "systemSeconds",
+              "max_rss_kib": "gnuTimeMaxRssKiB"
+            },
+            "raw_directory": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001",
+            "project_record": "review_evidence/LZ4_Pretest_Record.md",
+            "current_review_summary": "review_evidence/lz4_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/run-meta.tsv",
+            "started_utc": "2026-10-27T10:28:41Z",
+            "ended_utc": "2026-10-27T10:29:02Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/command.txt",
+            "effective_tool_order_in_project": 2,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        }
+      ]
+    },
+    {
+      "project_id": "P03",
+      "project": "cJSON",
+      "version": "1.7.19",
+      "phase": "功能预试",
+      "project_record": "review_evidence/cJSON_Pretest_Record.md",
+      "scope": {
+        "semantic_compile_actions": 1,
+        "flawfinder_text_files": 2,
+        "scope_source": "review_evidence/cJSON_Pretest_Record.md",
+        "independent_source_paths": null,
+        "meaning": "语义动作与词法文本范围分别记录；包含型实现、头和生成头不伪造独立动作"
+      },
+      "runs": [
+        {
+          "project_id": "P03",
+          "run_id": "PRE-P03-FF-001",
+          "tool": "Flawfinder",
+          "tool_key": "FF",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "文本文件",
+            "intended_count": 2,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/cJSON_pretest_20261026/flawfinder/run-summary.json",
+            "scope_field": "inputs#count"
+          },
+          "coverage": {
+            "succeeded_or_examined": 2,
+            "failed": null,
+            "skipped": null,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 26,
+            "candidate_unit": "minlevel=1显示命中条目",
+            "saved_source_diagnostics": null,
+            "displayed_reports": 26,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": 1,
+            "flawfinder_cumulative_0plus": 27,
+            "cumulative_derived_from_display_and_level0": true,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": null,
+            "user_seconds": null,
+            "system_seconds": null,
+            "max_rss_kib": null,
+            "timed_invocation_exit_code": null,
+            "source_file": null,
+            "source_fields": [],
+            "boundary": "旧预试没有统一外部测量；不以自报或时间戳补值",
+            "rss_meaning": "未测量"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 0.02,
+            "source_file": "review_evidence/cJSON_pretest_20261026/flawfinder/run-summary.json",
+            "source_field": "toolReportedApproximateSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "lines_analyzed": 3497,
+            "physical_sloc": 2674,
+            "text_scale_source": "review_evidence/cJSON_pretest_20261026/flawfinder/run-summary.json",
+            "text_scale_source_fields": [
+              "toolReportedLinesAnalyzed",
+              "toolReportedSloc"
+            ]
+          },
+          "configuration": {
+            "profile": null,
+            "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+            "actual_build_standard": "C89",
+            "options": [
+              "--minlevel=1",
+              "--neverignore",
+              "--columns",
+              "--context"
+            ],
+            "cache_policy": "旧预试按原件；不得追认统一政策"
+          },
+          "provenance": {
+            "record": "review_evidence/cJSON_pretest_20261026/flawfinder/run-summary.json",
+            "record_sha256": "ba067dbd58828d0d2721bbfbc286df54df718dee4ffd11dd7f7fc27af70dd354",
+            "field_map": {
+              "input": "inputs#count",
+              "examined": "inputs#count",
+              "candidates": "displayedHitCount",
+              "displayed": "displayedHitCount",
+              "level0": "filteredRiskZeroCount",
+              "self_seconds": "toolReportedApproximateSeconds"
+            },
+            "resource_record_field_map": {},
+            "raw_directory": "review_evidence/cJSON_pretest_20261026/flawfinder",
+            "project_record": "review_evidence/cJSON_Pretest_Record.md",
+            "current_review_summary": "review_evidence/cJSON_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "旧预试未采用measurement-v1，外部wall/user/sys/RSS全部null。累计0+由26显示及等级0摘要1直接相加，仅作摘要，不新增候选。",
+            "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+            "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": null,
+            "started_utc": null,
+            "ended_utc": null,
+            "locale": null,
+            "measurement_schema": null,
+            "application_cache_policy": null,
+            "os_page_cache": null,
+            "actual_run_environment_snapshot": null,
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": null,
+            "effective_tool_order_in_project": null,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P03",
+          "run_id": "PRE-P03-CP-001",
+          "tool": "Cppcheck",
+          "tool_key": "CP",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 1,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/cJSON_Pretest_Record.md",
+            "scope_field": "实际编译数据库／当前范围章节；记录的动作数，不从文本输入推算"
+          },
+          "coverage": {
+            "succeeded_or_examined": 1,
+            "failed": null,
+            "skipped": null,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 16,
+            "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+            "saved_source_diagnostics": 16,
+            "displayed_reports": null,
+            "raw_xml_elements": 26,
+            "information_items": 10,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": null,
+            "user_seconds": null,
+            "system_seconds": null,
+            "max_rss_kib": null,
+            "timed_invocation_exit_code": null,
+            "source_file": null,
+            "source_fields": [],
+            "boundary": "旧预试没有统一外部测量；不以自报或时间戳补值",
+            "rss_meaning": "未测量"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": null,
+            "source_file": null,
+            "source_field": null,
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "checker_catalog_active": 79,
+            "checker_catalog_total": 592,
+            "checker_catalog_source": "review_evidence/cJSON_pretest_20261026/cppcheck/report.xml",
+            "checker_catalog_source_field": "results/errors/error[@id=checkersReport]/@msg",
+            "checker_catalog_meaning": "检查器目录自报统计；非代码或漏洞覆盖率"
+          },
+          "configuration": {
+            "profile": null,
+            "analysis_standard": "C89",
+            "actual_build_standard": "C89",
+            "options": [
+              "builtin内部解析器",
+              "normal",
+              "unix64",
+              "-j 1",
+              "XML2",
+              "warning/performance/portability/information及默认error",
+              "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+            ],
+            "cache_policy": "旧预试按原件；不得追认统一政策"
+          },
+          "provenance": {
+            "record": "review_evidence/cJSON_pretest_20261026/cppcheck/run-summary.json",
+            "record_sha256": "d20980bd15806bce4b9c010330cf5faf161f6de1cd2945e84f4ee69397182617",
+            "field_map": {
+              "candidates": "severityCounts.warning",
+              "saved": "severityCounts.warning",
+              "information": "severityCounts.information",
+              "xml": "diagnosticCount"
+            },
+            "resource_record_field_map": {},
+            "raw_directory": "review_evidence/cJSON_pretest_20261026/cppcheck",
+            "project_record": "review_evidence/cJSON_Pretest_Record.md",
+            "current_review_summary": "review_evidence/cJSON_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "旧预试未采用measurement-v1，外部成本全部null；1动作范围以保存的真实DB及progress/checkers/cache交叉证明，ctunullpointer标识不证明跨文件覆盖。",
+            "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+            "1成功动作依据真实DB数组长度1、progress唯一Checking cJSON.c与checkers无critical；未独立量化失败／跳过留null。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": null,
+            "started_utc": null,
+            "ended_utc": null,
+            "locale": null,
+            "measurement_schema": null,
+            "application_cache_policy": null,
+            "os_page_cache": null,
+            "actual_run_environment_snapshot": null,
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": null,
+            "effective_tool_order_in_project": null,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P03",
+          "run_id": "PRE-P03-CC-001",
+          "tool": "CodeChecker/clangsa",
+          "tool_key": "CC",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 1,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/cJSON_pretest_20261027/codechecker/run-summary.json",
+            "scope_field": "inputActionCount"
+          },
+          "coverage": {
+            "succeeded_or_examined": 1,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 0,
+            "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+            "saved_source_diagnostics": 0,
+            "displayed_reports": 0,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": null,
+            "user_seconds": null,
+            "system_seconds": null,
+            "max_rss_kib": null,
+            "timed_invocation_exit_code": null,
+            "source_file": null,
+            "source_fields": [],
+            "boundary": "旧预试没有统一外部测量；不以自报或时间戳补值",
+            "rss_meaning": "未测量"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 5.94,
+            "source_file": "review_evidence/cJSON_pretest_20261027/codechecker/run-summary.json",
+            "source_field": "toolReportedAnalysisSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比"
+          },
+          "configuration": {
+            "profile": null,
+            "analysis_standard": "C89",
+            "actual_build_standard": "C89",
+            "options": [
+              "仅clangsa",
+              "-j 1",
+              "每动作120秒",
+              "compile-uniqueing none",
+              "CTU默认关闭",
+              "Z3 refutation off",
+              "capture-analysis-output请求；实际捕获范围见各验收记录",
+              "新reports；保留默认parse过滤"
+            ],
+            "cache_policy": "旧预试按原件；不得追认统一政策"
+          },
+          "provenance": {
+            "record": "review_evidence/cJSON_pretest_20261027/codechecker/run-summary.json",
+            "record_sha256": "da39beebcc7cb410fcca91f919733ec4278c4d7b419f79e72a06f90d45ac6869",
+            "field_map": {
+              "input": "inputActionCount",
+              "succeeded": "successfulActionCount",
+              "failed": "failedActionCount",
+              "skipped": "skippedActionCount",
+              "candidates": "savedPlistDiagnosticCount",
+              "saved": "savedPlistDiagnosticCount",
+              "displayed": "analyzerReports",
+              "self_seconds": "toolReportedAnalysisSeconds"
+            },
+            "resource_record_field_map": {},
+            "raw_directory": "review_evidence/cJSON_pretest_20261027/codechecker",
+            "project_record": "review_evidence/cJSON_Pretest_Record.md",
+            "current_review_summary": "review_evidence/cJSON_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "旧预试只有内部5.94秒，外部成本全部null；实际导入C89，compiler_info默认GNU17不覆盖显式C89。",
+            "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": null,
+            "started_utc": null,
+            "ended_utc": null,
+            "locale": null,
+            "measurement_schema": null,
+            "application_cache_policy": null,
+            "os_page_cache": null,
+            "actual_run_environment_snapshot": null,
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": null,
+            "effective_tool_order_in_project": null,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        }
+      ]
+    },
+    {
+      "project_id": "P04",
+      "project": "libyaml",
+      "version": "0.2.5",
+      "phase": "功能预试",
+      "project_record": "review_evidence/Libyaml_Pretest_Record.md",
+      "scope": {
+        "semantic_compile_actions": 8,
+        "flawfinder_text_files": 11,
+        "scope_source": "review_evidence/Libyaml_Pretest_Record.md",
+        "independent_source_paths": null,
+        "meaning": "语义动作与词法文本范围分别记录；包含型实现、头和生成头不伪造独立动作"
+      },
+      "runs": [
+        {
+          "project_id": "P04",
+          "run_id": "PRE-P04-FF-001",
+          "tool": "Flawfinder",
+          "tool_key": "FF",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "文本文件",
+            "intended_count": 11,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/run-summary.json",
+            "scope_field": "inputFiles"
+          },
+          "coverage": {
+            "succeeded_or_examined": 11,
+            "failed": null,
+            "skipped": null,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 40,
+            "candidate_unit": "minlevel=1显示命中条目",
+            "saved_source_diagnostics": null,
+            "displayed_reports": 40,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": 1,
+            "flawfinder_cumulative_0plus": 41,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 0.1,
+            "user_seconds": 0.09,
+            "system_seconds": 0.0,
+            "max_rss_kib": 20620,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:00.10",
+            "source_file": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "362b978c36d9ca5b9c1f50b421b433fe81480bc352ca00b6db3b4e490ebadbca",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 0.06,
+            "source_file": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/run-summary.json",
+            "source_field": "toolSelfSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "lines_analyzed": 12944,
+            "physical_sloc": 7450,
+            "text_scale_source": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/run-summary.json",
+            "text_scale_source_fields": [
+              "linesAnalyzed",
+              "physicalSLOC"
+            ]
+          },
+          "configuration": {
+            "profile": "review_evidence/libyaml_setup/Flawfinder_Profile.json",
+            "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "--minlevel=1",
+              "--neverignore",
+              "--columns",
+              "--context"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/run-summary.json",
+            "record_sha256": "c2db604d8b60d4c74da48cdbba4da3c431c79eb894683a152ce32f8d7aaa6455",
+            "field_map": {
+              "input": "inputFiles",
+              "examined": "inputFiles",
+              "candidates": "displayedHits",
+              "displayed": "displayedHits",
+              "level0": "level0Filtered",
+              "cumulative": "cumulative0Plus",
+              "self_seconds": "toolSelfSeconds"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "wallSeconds",
+              "user_seconds": "userSeconds",
+              "system_seconds": "systemSeconds",
+              "max_rss_kib": "gnuTimeMaxRssKiB"
+            },
+            "raw_directory": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001",
+            "project_record": "review_evidence/Libyaml_Pretest_Record.md",
+            "current_review_summary": "review_evidence/libyaml_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+            "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/run-meta.tsv",
+            "started_utc": "2026-10-27T12:45:20Z",
+            "ended_utc": "2026-10-27T12:45:20Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/command.txt",
+            "effective_tool_order_in_project": 1,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P04",
+          "run_id": "PRE-P04-CP-001",
+          "tool": "Cppcheck",
+          "tool_key": "CP",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 8,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/run-summary.json",
+            "scope_field": "intendedTranslationUnits"
+          },
+          "coverage": {
+            "succeeded_or_examined": 8,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 0,
+            "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+            "saved_source_diagnostics": 0,
+            "displayed_reports": null,
+            "raw_xml_elements": 7,
+            "information_items": 7,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 61.81,
+            "user_seconds": 61.61,
+            "system_seconds": 0.05,
+            "max_rss_kib": 35384,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "1:01.81",
+            "source_file": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "c7d3d747d0478122b737b8d5ff1e82d1b2102aa5800b45e8d582391693901a48",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": null,
+            "source_file": null,
+            "source_field": null,
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "checker_catalog_active": 79,
+            "checker_catalog_total": 592,
+            "checker_catalog_source": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/stderr.txt",
+            "checker_catalog_source_field": "results/errors/error[@id=checkersReport]/@msg",
+            "checker_catalog_meaning": "检查器目录自报统计；非代码或漏洞覆盖率"
+          },
+          "configuration": {
+            "profile": "review_evidence/libyaml_setup/Cppcheck_Profile.json",
+            "analysis_standard": "C11",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "builtin内部解析器",
+              "normal",
+              "unix64",
+              "-j 1",
+              "XML2",
+              "warning/performance/portability/information及默认error",
+              "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/run-summary.json",
+            "record_sha256": "6b8a575803bb491ef3a9ed0be12ebf85cbcbd92cfb11aee305eb2669eecf4af6",
+            "field_map": {
+              "input": "intendedTranslationUnits",
+              "succeeded": "processedTranslationUnits",
+              "failed": "failedTranslationUnits",
+              "skipped": "skippedTranslationUnits",
+              "candidates": "sourceIssueCandidates",
+              "saved": "sourceIssueCandidates",
+              "information": "informationItems",
+              "xml": "xmlDiagnosticElements"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "wallSeconds",
+              "user_seconds": "userSeconds",
+              "system_seconds": "systemSeconds",
+              "max_rss_kib": "gnuTimeMaxRssKiB"
+            },
+            "raw_directory": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001",
+            "project_record": "review_evidence/Libyaml_Pretest_Record.md",
+            "current_review_summary": "review_evidence/libyaml_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+            "Cppcheck C11模型与实际GNU C17构建有差异。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/run-meta.tsv",
+            "started_utc": "2026-10-27T12:55:44Z",
+            "ended_utc": "2026-10-27T12:56:46Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/command.txt",
+            "effective_tool_order_in_project": 2,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P04",
+          "run_id": "PRE-P04-CC-001",
+          "tool": "CodeChecker/clangsa",
+          "tool_key": "CC",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 8,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/run-summary.json",
+            "scope_field": "inputActions"
+          },
+          "coverage": {
+            "succeeded_or_examined": 8,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 0,
+            "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+            "saved_source_diagnostics": 0,
+            "displayed_reports": 0,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 28.33,
+            "user_seconds": 24.81,
+            "system_seconds": 1.63,
+            "max_rss_kib": 219420,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:28.33",
+            "source_file": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "38377d1c1fe002d89f0de1d7a84fc7f3b11320996f9cfc211d3a1676cc3da466",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 25.93,
+            "source_file": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/run-summary.json",
+            "source_field": "toolInternalAnalysisSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比"
+          },
+          "configuration": {
+            "profile": "review_evidence/libyaml_setup/CodeChecker_Profile.json",
+            "analysis_standard": "GNU C17",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "仅clangsa",
+              "-j 1",
+              "每动作120秒",
+              "compile-uniqueing none",
+              "CTU默认关闭",
+              "Z3 refutation off",
+              "capture-analysis-output请求；实际捕获范围见各验收记录",
+              "新reports；保留默认parse过滤"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/run-summary.json",
+            "record_sha256": "5081ef2ff50e433d7f0e448a324157f2b221448acca207c8ee22cc75a1f7c1d9",
+            "field_map": {
+              "input": "inputActions",
+              "succeeded": "successfulActions",
+              "failed": "failedActions",
+              "skipped": "skippedActions",
+              "candidates": "savedPlistDiagnostics",
+              "saved": "savedPlistDiagnostics",
+              "displayed": "parseDisplayedReports",
+              "self_seconds": "toolInternalAnalysisSeconds"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "wallSeconds",
+              "user_seconds": "userSeconds",
+              "system_seconds": "systemSeconds",
+              "max_rss_kib": "gnuTimeMaxRssKiB"
+            },
+            "raw_directory": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001",
+            "project_record": "review_evidence/Libyaml_Pretest_Record.md",
+            "current_review_summary": "review_evidence/libyaml_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/run-meta.tsv",
+            "started_utc": "2026-10-27T13:08:41Z",
+            "ended_utc": "2026-10-27T13:09:09Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/command.txt",
+            "effective_tool_order_in_project": 3,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        }
+      ]
+    },
+    {
+      "project_id": "P05",
+      "project": "json-c",
+      "version": "0.18",
+      "phase": "功能预试",
+      "project_record": "review_evidence/Json_C_Pretest_Record.md",
+      "scope": {
+        "semantic_compile_actions": 14,
+        "flawfinder_text_files": 39,
+        "scope_source": "review_evidence/Json_C_Pretest_Record.md",
+        "independent_source_paths": null,
+        "meaning": "语义动作与词法文本范围分别记录；包含型实现、头和生成头不伪造独立动作"
+      },
+      "runs": [
+        {
+          "project_id": "P05",
+          "run_id": "PRE-P05-FF-001",
+          "tool": "Flawfinder",
+          "tool_key": "FF",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "文本文件",
+            "intended_count": 39,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/json_c_pretest_20261028/Flawfinder_Validation.json",
+            "scope_field": "intendedTextFiles"
+          },
+          "coverage": {
+            "succeeded_or_examined": 39,
+            "failed": null,
+            "skipped": null,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 59,
+            "candidate_unit": "minlevel=1显示命中条目",
+            "saved_source_diagnostics": null,
+            "displayed_reports": 59,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": 15,
+            "flawfinder_cumulative_0plus": 74,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 0.07,
+            "user_seconds": 0.05,
+            "system_seconds": 0.01,
+            "max_rss_kib": 20384,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:00.07",
+            "source_file": "review_evidence/json_c_pretest_20261028/Flawfinder/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "e65544ae923b0f6e714aba844e5fbdd7e128d21fc95d78b8fe60cad9b8b3bbcf",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 0.04,
+            "source_file": "review_evidence/json_c_pretest_20261028/Flawfinder_Validation.json",
+            "source_field": "toolSelfSecondsSeparate",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "lines_analyzed": 9988,
+            "physical_sloc": 5811,
+            "text_scale_source": "review_evidence/json_c_pretest_20261028/Flawfinder_Validation.json",
+            "text_scale_source_fields": [
+              "linesAnalyzedSelfReported",
+              "physicalSLOCAsToolReported"
+            ]
+          },
+          "configuration": {
+            "profile": "review_evidence/json_c_setup/Flawfinder_Profile.json",
+            "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "--minlevel=1",
+              "--neverignore",
+              "--columns",
+              "--context"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/json_c_pretest_20261028/Flawfinder_Validation.json",
+            "record_sha256": "c1104104913274fc88d6cf1595528137205547a8bb2eb42a9c2ea71fc7b10454",
+            "field_map": {
+              "input": "intendedTextFiles",
+              "examined": "examinedTextFiles",
+              "candidates": "displayedHits",
+              "displayed": "displayedHits",
+              "level0": "level0SummaryOnly",
+              "cumulative": "cumulative0plus",
+              "self_seconds": "toolSelfSecondsSeparate"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "metrics.wall_seconds",
+              "user_seconds": "metrics.user_seconds",
+              "system_seconds": "metrics.system_seconds",
+              "max_rss_kib": "metrics.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/json_c_pretest_20261028/Flawfinder",
+            "project_record": "review_evidence/Json_C_Pretest_Record.md",
+            "current_review_summary": "review_evidence/json_c_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+            "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/json_c_pretest_20261028/Flawfinder/run-meta.tsv",
+            "started_utc": "2026-10-28T01:04:26Z",
+            "ended_utc": "2026-10-28T01:04:26Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/json_c_pretest_20261028/Flawfinder/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/json_c_pretest_20261028/Flawfinder/command.txt",
+            "effective_tool_order_in_project": 3,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P05",
+          "run_id": "PRE-P05-CP-001",
+          "tool": "Cppcheck",
+          "tool_key": "CP",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 14,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/json_c_pretest_20261028/Cppcheck_Validation.json",
+            "scope_field": "intendedFiles"
+          },
+          "coverage": {
+            "succeeded_or_examined": 14,
+            "failed": null,
+            "skipped": null,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 1,
+            "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+            "saved_source_diagnostics": 1,
+            "displayed_reports": null,
+            "raw_xml_elements": 80,
+            "information_items": 79,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 0.52,
+            "user_seconds": 0.49,
+            "system_seconds": 0.01,
+            "max_rss_kib": 18628,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:00.52",
+            "source_file": "review_evidence/json_c_pretest_20261028/Cppcheck/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "c97175525eb240587579bb7d0688bbb5c7278640dbd0ca4ee56c3dd9e3149b25",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": null,
+            "source_file": null,
+            "source_field": null,
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "checker_catalog_active": 79,
+            "checker_catalog_total": 592,
+            "checker_catalog_source": "review_evidence/json_c_pretest_20261028/Cppcheck/stderr.txt",
+            "checker_catalog_source_field": "results/errors/error[@id=checkersReport]/@msg",
+            "checker_catalog_meaning": "检查器目录自报统计；非代码或漏洞覆盖率"
+          },
+          "configuration": {
+            "profile": "review_evidence/json_c_setup/Cppcheck_Profile.json",
+            "analysis_standard": "C11",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "builtin内部解析器",
+              "normal",
+              "unix64",
+              "-j 1",
+              "XML2",
+              "warning/performance/portability/information及默认error",
+              "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/json_c_pretest_20261028/Cppcheck_Validation.json",
+            "record_sha256": "e0d7624468c9317fb93e81a593c2d5768d4792099a7c0b1c3f4d028b9009e5f7",
+            "field_map": {
+              "input": "intendedFiles",
+              "succeeded": "progressMatchedFiles",
+              "candidates": "sourceCandidates",
+              "saved": "sourceCandidates",
+              "information": "information",
+              "xml": "xmlElements"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "metrics.wall_seconds",
+              "user_seconds": "metrics.user_seconds",
+              "system_seconds": "metrics.system_seconds",
+              "max_rss_kib": "metrics.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/json_c_pretest_20261028/Cppcheck",
+            "project_record": "review_evidence/Json_C_Pretest_Record.md",
+            "current_review_summary": "review_evidence/json_c_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+            "Cppcheck C11模型与实际GNU C17构建有差异。",
+            "normal在json_tokener_parse_ex值流分析受限；结构化逐动作failed／skipped未单列，留null；14/14进度、14缓存及无critical记录支持声明范围有效。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/json_c_pretest_20261028/Cppcheck/run-meta.tsv",
+            "started_utc": "2026-10-27T16:00:43Z",
+            "ended_utc": "2026-10-27T16:00:43Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/json_c_pretest_20261028/Cppcheck/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/json_c_pretest_20261028/Cppcheck/command.txt",
+            "effective_tool_order_in_project": 1,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P05",
+          "run_id": "PRE-P05-CC-001",
+          "tool": "CodeChecker/clangsa",
+          "tool_key": "CC",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 14,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/json_c_pretest_20261028/CodeChecker_Run_Record.json",
+            "scope_field": "actions.intended"
+          },
+          "coverage": {
+            "succeeded_or_examined": 14,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 0,
+            "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+            "saved_source_diagnostics": 0,
+            "displayed_reports": 0,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 13.76,
+            "user_seconds": 10.71,
+            "system_seconds": 1.09,
+            "max_rss_kib": 197488,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:13.76",
+            "source_file": "review_evidence/json_c_pretest_20261028/CodeChecker/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "321cdbccaea7cbaa2c37aa379986eccfc8b31e7506cb14d079624a590b6e1ee2",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 11.24,
+            "source_file": "review_evidence/json_c_pretest_20261028/CodeChecker_Run_Record.json",
+            "source_field": "selfTimeSecondsSeparate",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比"
+          },
+          "configuration": {
+            "profile": "review_evidence/json_c_setup/CodeChecker_Profile.json",
+            "analysis_standard": "GNU C17",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "仅clangsa",
+              "-j 1",
+              "每动作120秒",
+              "compile-uniqueing none",
+              "CTU默认关闭",
+              "Z3 refutation off",
+              "capture-analysis-output请求；实际捕获范围见各验收记录",
+              "新reports；保留默认parse过滤"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/json_c_pretest_20261028/CodeChecker_Run_Record.json",
+            "record_sha256": "301995a5ff0a9fb4103e24847279902e6c1c4c38644795aa9ca8d2d2fe07d0ea",
+            "field_map": {
+              "input": "actions.intended",
+              "succeeded": "actions.successful",
+              "failed": "actions.failed",
+              "skipped": "actions.skipped",
+              "candidates": "savedDiagnostics",
+              "saved": "savedDiagnostics",
+              "displayed": "parseReports",
+              "self_seconds": "selfTimeSecondsSeparate"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "metrics.wall_seconds",
+              "user_seconds": "metrics.user_seconds",
+              "system_seconds": "metrics.system_seconds",
+              "max_rss_kib": "metrics.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/json_c_pretest_20261028/CodeChecker",
+            "project_record": "review_evidence/Json_C_Pretest_Record.md",
+            "current_review_summary": "review_evidence/json_c_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/json_c_pretest_20261028/CodeChecker/run-meta.tsv",
+            "started_utc": "2026-10-27T16:21:23Z",
+            "ended_utc": "2026-10-27T16:21:36Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/json_c_pretest_20261028/CodeChecker/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/json_c_pretest_20261028/CodeChecker/command.txt",
+            "effective_tool_order_in_project": 2,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        }
+      ]
+    },
+    {
+      "project_id": "P06",
+      "project": "yyjson",
+      "version": "0.12.0",
+      "phase": "功能预试",
+      "project_record": "review_evidence/YYJSON_Pretest_Record.md",
+      "scope": {
+        "semantic_compile_actions": 1,
+        "flawfinder_text_files": 2,
+        "scope_source": "review_evidence/YYJSON_Pretest_Record.md",
+        "independent_source_paths": null,
+        "meaning": "语义动作与词法文本范围分别记录；包含型实现、头和生成头不伪造独立动作"
+      },
+      "runs": [
+        {
+          "project_id": "P06",
+          "run_id": "PRE-P06-FF-001",
+          "tool": "Flawfinder",
+          "tool_key": "FF",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "文本文件",
+            "intended_count": 2,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/yyjson_pretest_20261028/Flawfinder_Run_Record.json",
+            "scope_field": "intendedTextFiles"
+          },
+          "coverage": {
+            "succeeded_or_examined": 2,
+            "failed": null,
+            "skipped": null,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 111,
+            "candidate_unit": "minlevel=1显示命中条目",
+            "saved_source_diagnostics": null,
+            "displayed_reports": 111,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": 1,
+            "flawfinder_cumulative_0plus": 112,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 0.13,
+            "user_seconds": 0.12,
+            "system_seconds": 0.0,
+            "max_rss_kib": 21480,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:00.13",
+            "source_file": "review_evidence/yyjson_pretest_20261028/Flawfinder/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "80edfff52d71e8ac8c00defaf105fa7b9682ce7360dc874f3d770795646a3c6f",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 0.09,
+            "source_file": "review_evidence/yyjson_pretest_20261028/Flawfinder_Run_Record.json",
+            "source_field": "toolSelfSecondsSeparate",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "lines_analyzed": 19295,
+            "physical_sloc": 12827,
+            "text_scale_source": "review_evidence/yyjson_pretest_20261028/Flawfinder_Run_Record.json",
+            "text_scale_source_fields": [
+              "linesAnalyzedSelfReported",
+              "physicalSLOCAsToolReported"
+            ]
+          },
+          "configuration": {
+            "profile": "review_evidence/yyjson_setup/Flawfinder_Profile.json",
+            "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "--minlevel=1",
+              "--neverignore",
+              "--columns",
+              "--context"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/yyjson_pretest_20261028/Flawfinder_Run_Record.json",
+            "record_sha256": "98b225abb782ee5a3cf3794e8466c7ceb63c9c9286cb874c0b3736c90832bdde",
+            "field_map": {
+              "input": "intendedTextFiles",
+              "examined": "examinedTextFiles",
+              "candidates": "displayedHits",
+              "displayed": "displayedHits",
+              "level0": "level0SummaryOnly",
+              "cumulative": "cumulative0plus",
+              "self_seconds": "toolSelfSecondsSeparate"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "metrics.wall_seconds",
+              "user_seconds": "metrics.user_seconds",
+              "system_seconds": "metrics.system_seconds",
+              "max_rss_kib": "metrics.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/yyjson_pretest_20261028/Flawfinder",
+            "project_record": "review_evidence/YYJSON_Pretest_Record.md",
+            "current_review_summary": "review_evidence/yyjson_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+            "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/yyjson_pretest_20261028/Flawfinder/run-meta.tsv",
+            "started_utc": "2026-10-28T03:43:01Z",
+            "ended_utc": "2026-10-28T03:43:01Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/yyjson_pretest_20261028/Flawfinder/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/yyjson_pretest_20261028/Flawfinder/command.txt",
+            "effective_tool_order_in_project": 2,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P06",
+          "run_id": "PRE-P06-CP-002",
+          "tool": "Cppcheck",
+          "tool_key": "CP",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 1,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/yyjson_pretest_20261028/Cppcheck_Run_Record.json",
+            "scope_field": "intendedActions"
+          },
+          "coverage": {
+            "succeeded_or_examined": 1,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 5,
+            "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+            "saved_source_diagnostics": 5,
+            "displayed_reports": null,
+            "raw_xml_elements": 18,
+            "information_items": 13,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 5.44,
+            "user_seconds": 5.38,
+            "system_seconds": 0.05,
+            "max_rss_kib": 82324,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:05.44",
+            "source_file": "review_evidence/yyjson_pretest_20261028/Cppcheck/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "d505898ad12c7c2b168276899f98989f463352beec85a814c19d41a791ab9a7b",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": null,
+            "source_file": null,
+            "source_field": null,
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "checker_catalog_active": 79,
+            "checker_catalog_total": 592,
+            "checker_catalog_source": "review_evidence/yyjson_pretest_20261028/Cppcheck/stderr.txt",
+            "checker_catalog_source_field": "results/errors/error[@id=checkersReport]/@msg",
+            "checker_catalog_meaning": "检查器目录自报统计；非代码或漏洞覆盖率"
+          },
+          "configuration": {
+            "profile": "review_evidence/yyjson_setup/Cppcheck_Retry002_Profile.json",
+            "analysis_standard": "C11",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "builtin内部解析器",
+              "normal",
+              "unix64",
+              "-j 1",
+              "XML2",
+              "warning/performance/portability/information及默认error",
+              "新build-dir；默认库模型；无inconclusive/force/额外抑制",
+              "-D__STDC__=1"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/yyjson_pretest_20261028/Cppcheck_Run_Record.json",
+            "record_sha256": "9ab61b419703b7d6b7f5333a1b6f033878ba67878651052a233aa7b233195697",
+            "field_map": {
+              "input": "intendedActions",
+              "succeeded": "completedSemanticActions",
+              "failed": "failedActions",
+              "skipped": "skippedActions",
+              "candidates": "sourceCandidateCount",
+              "saved": "sourceCandidateCount",
+              "information": "informationElements",
+              "xml": "xmlElements"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "metrics.wall_seconds",
+              "user_seconds": "metrics.user_seconds",
+              "system_seconds": "metrics.system_seconds",
+              "max_rss_kib": "metrics.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/yyjson_pretest_20261028/Cppcheck",
+            "project_record": "review_evidence/YYJSON_Pretest_Record.md",
+            "current_review_summary": "review_evidence/yyjson_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+            "Cppcheck C11模型与实际GNU C17构建有差异。",
+            "002为有效结果；001预处理失败另列。normal在read_root_minify/read_root_pretty/yyjson_incr_read受限。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/yyjson_pretest_20261028/Cppcheck/run-meta.tsv",
+            "started_utc": "2026-10-28T04:09:24Z",
+            "ended_utc": "2026-10-28T04:09:29Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/yyjson_pretest_20261028/Cppcheck/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/yyjson_pretest_20261028/Cppcheck/command.txt",
+            "effective_tool_order_in_project": 3,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P06",
+          "run_id": "PRE-P06-CC-001",
+          "tool": "CodeChecker/clangsa",
+          "tool_key": "CC",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 1,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/YYJSON_Pretest_Record.md",
+            "scope_field": "实际编译数据库／当前范围章节；记录的动作数，不从文本输入推算"
+          },
+          "coverage": {
+            "succeeded_or_examined": 1,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 0,
+            "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+            "saved_source_diagnostics": 0,
+            "displayed_reports": 0,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 33.02,
+            "user_seconds": 30.05,
+            "system_seconds": 0.95,
+            "max_rss_kib": 198108,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:33.02",
+            "source_file": "review_evidence/yyjson_pretest_20261028/CodeChecker/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "523a8e2e82f2439ee97ca9504b5ad95d483d0e5633b4e9e8a00393f59595b545",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 30.35,
+            "source_file": "review_evidence/yyjson_pretest_20261028/CodeChecker_Run_Record.json",
+            "source_field": "toolSelfAnalysisSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比"
+          },
+          "configuration": {
+            "profile": "review_evidence/yyjson_setup/CodeChecker_Profile.json",
+            "analysis_standard": "GNU C17",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "仅clangsa",
+              "-j 1",
+              "每动作120秒",
+              "compile-uniqueing none",
+              "CTU默认关闭",
+              "Z3 refutation off",
+              "capture-analysis-output请求；实际捕获范围见各验收记录",
+              "新reports；保留默认parse过滤"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/yyjson_pretest_20261028/CodeChecker_Run_Record.json",
+            "record_sha256": "0199b63b936c06799518a955b3377ba947c28f6770bfaaa7db038bcb90e4902f",
+            "field_map": {
+              "succeeded": "actualSucceededActions",
+              "failed": "actualFailedActions",
+              "skipped": "actualSkippedActions",
+              "candidates": "savedDiagnostics",
+              "saved": "savedDiagnostics",
+              "displayed": "displayedReports",
+              "self_seconds": "toolSelfAnalysisSeconds"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "wallSeconds",
+              "user_seconds": "userSeconds",
+              "system_seconds": "systemSeconds",
+              "max_rss_kib": "maxRssKiB"
+            },
+            "raw_directory": "review_evidence/yyjson_pretest_20261028/CodeChecker",
+            "project_record": "review_evidence/YYJSON_Pretest_Record.md",
+            "current_review_summary": "review_evidence/yyjson_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/yyjson_pretest_20261028/CodeChecker/run-meta.tsv",
+            "started_utc": "2026-10-28T03:23:45Z",
+            "ended_utc": "2026-10-28T03:24:18Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/yyjson_pretest_20261028/CodeChecker/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/yyjson_pretest_20261028/CodeChecker/command.txt",
+            "effective_tool_order_in_project": 1,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        }
+      ]
+    },
+    {
+      "project_id": "P07",
+      "project": "Expat",
+      "version": "2.7.1",
+      "phase": "功能预试",
+      "project_record": "review_evidence/Expat_Pretest_Record.md",
+      "scope": {
+        "semantic_compile_actions": 3,
+        "flawfinder_text_files": 19,
+        "scope_source": "review_evidence/Expat_Pretest_Record.md",
+        "independent_source_paths": null,
+        "meaning": "语义动作与词法文本范围分别记录；包含型实现、头和生成头不伪造独立动作"
+      },
+      "runs": [
+        {
+          "project_id": "P07",
+          "run_id": "PRE-P07-FF-001",
+          "tool": "Flawfinder",
+          "tool_key": "FF",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "文本文件",
+            "intended_count": 19,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/expat_pretest_20261028/Flawfinder_Run_Record.json",
+            "scope_field": "intendedTextFiles"
+          },
+          "coverage": {
+            "succeeded_or_examined": 19,
+            "failed": null,
+            "skipped": null,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 39,
+            "candidate_unit": "minlevel=1显示命中条目",
+            "saved_source_diagnostics": null,
+            "displayed_reports": 39,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": 8,
+            "flawfinder_cumulative_0plus": 47,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 0.1,
+            "user_seconds": 0.1,
+            "system_seconds": 0.0,
+            "max_rss_kib": 21136,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:00.10",
+            "source_file": "review_evidence/expat_pretest_20261028/Flawfinder/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "4d79d09de25a32d652f8c3424bd5dc5025148d1756d8c77ceb99ef0592650769",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 0.07,
+            "source_file": "review_evidence/expat_pretest_20261028/Flawfinder_Run_Record.json",
+            "source_field": "toolSelfSecondsSeparate",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "lines_analyzed": 16705,
+            "physical_sloc": 13000,
+            "text_scale_source": "review_evidence/expat_pretest_20261028/Flawfinder_Run_Record.json",
+            "text_scale_source_fields": [
+              "linesAnalyzedSelfReported",
+              "physicalSLOCAsToolReported"
+            ]
+          },
+          "configuration": {
+            "profile": "review_evidence/expat_setup/Flawfinder_Profile.json",
+            "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+            "actual_build_standard": "C99",
+            "options": [
+              "--minlevel=1",
+              "--neverignore",
+              "--columns",
+              "--context"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/expat_pretest_20261028/Flawfinder_Run_Record.json",
+            "record_sha256": "5527d207d2af3854368481e14824eab742ae2f5de8daf410f41a4e8ef3bf1138",
+            "field_map": {
+              "input": "intendedTextFiles",
+              "examined": "examinedTextFiles",
+              "candidates": "displayedHits",
+              "displayed": "displayedHits",
+              "level0": "level0SummaryOnly",
+              "cumulative": "cumulative0plus",
+              "self_seconds": "toolSelfSecondsSeparate"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "metrics.wall_seconds",
+              "user_seconds": "metrics.user_seconds",
+              "system_seconds": "metrics.system_seconds",
+              "max_rss_kib": "metrics.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/expat_pretest_20261028/Flawfinder",
+            "project_record": "review_evidence/Expat_Pretest_Record.md",
+            "current_review_summary": "review_evidence/expat_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+            "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/expat_pretest_20261028/Flawfinder/run-meta.tsv",
+            "started_utc": "2026-10-28T09:18:26Z",
+            "ended_utc": "2026-10-28T09:18:26Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/expat_pretest_20261028/Flawfinder/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/expat_pretest_20261028/Flawfinder/command.txt",
+            "effective_tool_order_in_project": 1,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P07",
+          "run_id": "PRE-P07-CP-001",
+          "tool": "Cppcheck",
+          "tool_key": "CP",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 3,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/expat_pretest_20261028/Cppcheck_Run_Record.json",
+            "scope_field": "intendedActions"
+          },
+          "coverage": {
+            "succeeded_or_examined": 3,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 2,
+            "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+            "saved_source_diagnostics": 2,
+            "displayed_reports": null,
+            "raw_xml_elements": 28,
+            "information_items": 26,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 2.95,
+            "user_seconds": 2.9,
+            "system_seconds": 0.04,
+            "max_rss_kib": 49032,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:02.95",
+            "source_file": "review_evidence/expat_pretest_20261028/Cppcheck/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "65ea9fdb0a83fd6540ec1e4bbc92ebf5aef767868082614abaef70df7e216ae1",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": null,
+            "source_file": null,
+            "source_field": null,
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "checker_catalog_active": 79,
+            "checker_catalog_total": 592,
+            "checker_catalog_source": "review_evidence/expat_pretest_20261028/Cppcheck/stderr.txt",
+            "checker_catalog_source_field": "results/errors/error[@id=checkersReport]/@msg",
+            "checker_catalog_meaning": "检查器目录自报统计；非代码或漏洞覆盖率"
+          },
+          "configuration": {
+            "profile": "review_evidence/expat_setup/Cppcheck_Profile.json",
+            "analysis_standard": "C99",
+            "actual_build_standard": "C99",
+            "options": [
+              "builtin内部解析器",
+              "normal",
+              "unix64",
+              "-j 1",
+              "XML2",
+              "warning/performance/portability/information及默认error",
+              "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/expat_pretest_20261028/Cppcheck_Run_Record.json",
+            "record_sha256": "39f033b817c1fb21fab2f086a2b022137b5a23e4418eb81269e0a5a3a87e56c9",
+            "field_map": {
+              "input": "intendedActions",
+              "succeeded": "checkedActions",
+              "failed": "failedActions",
+              "skipped": "skippedActions",
+              "candidates": "sourceCandidates",
+              "saved": "sourceCandidates",
+              "information": "informationElements",
+              "xml": "xmlDiagnosticElements"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "metrics.wall_seconds",
+              "user_seconds": "metrics.user_seconds",
+              "system_seconds": "metrics.system_seconds",
+              "max_rss_kib": "metrics.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/expat_pretest_20261028/Cppcheck",
+            "project_record": "review_evidence/Expat_Pretest_Record.md",
+            "current_review_summary": "review_evidence/expat_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+            "normal在doProlog值流分析受限。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/expat_pretest_20261028/Cppcheck/run-meta.tsv",
+            "started_utc": "2026-10-28T09:45:13Z",
+            "ended_utc": "2026-10-28T09:45:16Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/expat_pretest_20261028/Cppcheck/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/expat_pretest_20261028/Cppcheck/command.txt",
+            "effective_tool_order_in_project": 2,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P07",
+          "run_id": "PRE-P07-CC-001",
+          "tool": "CodeChecker/clangsa",
+          "tool_key": "CC",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 3,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/Expat_Pretest_Record.md",
+            "scope_field": "实际编译数据库／当前范围章节；记录的动作数，不从文本输入推算"
+          },
+          "coverage": {
+            "succeeded_or_examined": 3,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 0,
+            "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+            "saved_source_diagnostics": 0,
+            "displayed_reports": 0,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 16.49,
+            "user_seconds": 14.11,
+            "system_seconds": 0.77,
+            "max_rss_kib": 199476,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:16.49",
+            "source_file": "review_evidence/expat_pretest_20261028/CodeChecker/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "10a58024060239f6ca2153b4ab8dce4e4217a9bf37d7afc0a97d7d5c25ebbe2f",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 14.35,
+            "source_file": "review_evidence/expat_pretest_20261028/CodeChecker_Run_Record.json",
+            "source_field": "selfReportedAnalysisSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比"
+          },
+          "configuration": {
+            "profile": "review_evidence/expat_setup/CodeChecker_Profile.json",
+            "analysis_standard": "C99",
+            "actual_build_standard": "C99",
+            "options": [
+              "仅clangsa",
+              "-j 1",
+              "每动作120秒",
+              "compile-uniqueing none",
+              "CTU默认关闭",
+              "Z3 refutation off",
+              "capture-analysis-output请求；实际捕获范围见各验收记录",
+              "新reports；保留默认parse过滤"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/expat_pretest_20261028/CodeChecker_Run_Record.json",
+            "record_sha256": "36536e18655493df1e2491f69dd93a95c49ff433e0b62578feba9b0f756bb27e",
+            "field_map": {
+              "succeeded": "actualSucceededActions",
+              "failed": "failedActions",
+              "skipped": "skippedActions",
+              "candidates": "savedDiagnostics",
+              "saved": "savedDiagnostics",
+              "displayed": "displayedReports",
+              "self_seconds": "selfReportedAnalysisSeconds"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "metrics.wall_seconds",
+              "user_seconds": "metrics.user_seconds",
+              "system_seconds": "metrics.system_seconds",
+              "max_rss_kib": "metrics.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/expat_pretest_20261028/CodeChecker",
+            "project_record": "review_evidence/Expat_Pretest_Record.md",
+            "current_review_summary": "review_evidence/expat_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/expat_pretest_20261028/CodeChecker/run-meta.tsv",
+            "started_utc": "2026-10-28T09:59:15Z",
+            "ended_utc": "2026-10-28T09:59:32Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/expat_pretest_20261028/CodeChecker/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/expat_pretest_20261028/CodeChecker/command.txt",
+            "effective_tool_order_in_project": 3,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        }
+      ]
+    },
+    {
+      "project_id": "P08",
+      "project": "libpng",
+      "version": "1.6.50",
+      "phase": "功能预试",
+      "project_record": "review_evidence/Libpng_Pretest_Record.md",
+      "scope": {
+        "semantic_compile_actions": 15,
+        "flawfinder_text_files": 22,
+        "scope_source": "review_evidence/Libpng_Pretest_Record.md",
+        "independent_source_paths": null,
+        "meaning": "语义动作与词法文本范围分别记录；包含型实现、头和生成头不伪造独立动作"
+      },
+      "runs": [
+        {
+          "project_id": "P08",
+          "run_id": "PRE-P08-FF-001",
+          "tool": "Flawfinder",
+          "tool_key": "FF",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "文本文件",
+            "intended_count": 22,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/libpng_pretest_20261029/Flawfinder_Run_Record.json",
+            "scope_field": "textInputs"
+          },
+          "coverage": {
+            "succeeded_or_examined": 22,
+            "failed": null,
+            "skipped": null,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 110,
+            "candidate_unit": "minlevel=1显示命中条目",
+            "saved_source_diagnostics": null,
+            "displayed_reports": 110,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": 10,
+            "flawfinder_cumulative_0plus": 120,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 0.21,
+            "user_seconds": 0.2,
+            "system_seconds": 0.0,
+            "max_rss_kib": 20844,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:00.21",
+            "source_file": "review_evidence/libpng_pretest_20261029/Flawfinder/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "02e43e9743111d7a3c87aa3c3a7008825701f9ab434d2fc7314c09dc411e13dd",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 0.17,
+            "source_file": "review_evidence/libpng_pretest_20261029/Flawfinder_Run_Record.json",
+            "source_field": "selfReportedAnalysisSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "lines_analyzed": 37836,
+            "physical_sloc": 24068,
+            "text_scale_source": "review_evidence/libpng_pretest_20261029/Flawfinder_Run_Record.json",
+            "text_scale_source_fields": [
+              "linesAnalyzed",
+              "physicalSLOC"
+            ]
+          },
+          "configuration": {
+            "profile": "review_evidence/libpng_setup/Flawfinder_Profile.json",
+            "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "--minlevel=1",
+              "--neverignore",
+              "--columns",
+              "--context"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/libpng_pretest_20261029/Flawfinder_Run_Record.json",
+            "record_sha256": "8a2bff39030005e722dae8d0156dae1e36a030ca28333aa62d4bb6b1fee4081c",
+            "field_map": {
+              "input": "textInputs",
+              "examined": "textInputs",
+              "candidates": "displayedHits",
+              "displayed": "displayedHits",
+              "level0": "level0SummaryOnly",
+              "cumulative": "cumulative0Plus",
+              "self_seconds": "selfReportedAnalysisSeconds"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "metrics.wall_seconds",
+              "user_seconds": "metrics.user_seconds",
+              "system_seconds": "metrics.system_seconds",
+              "max_rss_kib": "metrics.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/libpng_pretest_20261029/Flawfinder",
+            "project_record": "review_evidence/Libpng_Pretest_Record.md",
+            "current_review_summary": "review_evidence/libpng_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+            "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/libpng_pretest_20261029/Flawfinder/run-meta.tsv",
+            "started_utc": "2026-10-28T22:55:07Z",
+            "ended_utc": "2026-10-28T22:55:07Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/libpng_pretest_20261029/Flawfinder/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/libpng_pretest_20261029/Flawfinder/command.txt",
+            "effective_tool_order_in_project": 3,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P08",
+          "run_id": "PRE-P08-CP-002",
+          "tool": "Cppcheck",
+          "tool_key": "CP",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 15,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002_Run_Record.json",
+            "scope_field": "intendedActions"
+          },
+          "coverage": {
+            "succeeded_or_examined": 15,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 0,
+            "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+            "saved_source_diagnostics": 0,
+            "displayed_reports": null,
+            "raw_xml_elements": 17,
+            "information_items": 17,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 79.24,
+            "user_seconds": 79.04,
+            "system_seconds": 0.11,
+            "max_rss_kib": 60592,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "1:19.24",
+            "source_file": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "adbb331786a68f8cdbddcb23e14e500c53e68f3cfb4df9de1663b5792d9499fc",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": null,
+            "source_file": null,
+            "source_field": null,
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "checker_catalog_active": 79,
+            "checker_catalog_total": 592,
+            "checker_catalog_source": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002/stderr.txt",
+            "checker_catalog_source_field": "results/errors/error[@id=checkersReport]/@msg",
+            "checker_catalog_meaning": "检查器目录自报统计；非代码或漏洞覆盖率"
+          },
+          "configuration": {
+            "profile": "review_evidence/libpng_setup/Cppcheck_Retry002/Cppcheck_Profile.json",
+            "analysis_standard": "C11",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "builtin内部解析器",
+              "normal",
+              "unix64",
+              "-j 1",
+              "XML2",
+              "warning/performance/portability/information及默认error",
+              "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002_Run_Record.json",
+            "record_sha256": "79c19ed335a8069aff94051ebc2f3dba5c124ce8af8f0ee84d74b20fd86c689a",
+            "field_map": {
+              "input": "intendedActions",
+              "succeeded": "succeededActions",
+              "failed": "failedActions",
+              "skipped": "skippedActions",
+              "candidates": "sourceCandidates",
+              "saved": "sourceCandidates",
+              "information": "informationElements",
+              "xml": "xmlDiagnosticElements"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "metrics.wall_seconds",
+              "user_seconds": "metrics.user_seconds",
+              "system_seconds": "metrics.system_seconds",
+              "max_rss_kib": "metrics.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002",
+            "project_record": "review_evidence/Libpng_Pretest_Record.md",
+            "current_review_summary": "review_evidence/libpng_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+            "Cppcheck C11模型与实际GNU C17构建有差异。",
+            "002使用仅供Cppcheck的派生DB：15个固定zlib路径从-isystem改为-I，其他动作保持；001缺zlib.h为输入不完整尝试，不计有效零结果。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002/run-meta.tsv",
+            "started_utc": "2026-10-28T22:16:00Z",
+            "ended_utc": "2026-10-28T22:17:19Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002/command.txt",
+            "effective_tool_order_in_project": 1,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P08",
+          "run_id": "PRE-P08-CC-001",
+          "tool": "CodeChecker/clangsa",
+          "tool_key": "CC",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 15,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/Libpng_Pretest_Record.md",
+            "scope_field": "实际编译数据库／当前范围章节；记录的动作数，不从文本输入推算"
+          },
+          "coverage": {
+            "succeeded_or_examined": 15,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 14,
+            "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+            "saved_source_diagnostics": 14,
+            "displayed_reports": 14,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 37.75,
+            "user_seconds": 33.87,
+            "system_seconds": 1.78,
+            "max_rss_kib": 181140,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:37.75",
+            "source_file": "review_evidence/libpng_pretest_20261029/CodeChecker/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "54632683b0a559411b26165258a96945700ff2b34f2e6b8f46ed36cf52789b30",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 35.18,
+            "source_file": "review_evidence/libpng_pretest_20261029/CodeChecker_Run_Record.json",
+            "source_field": "selfReportedAnalysisSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比"
+          },
+          "configuration": {
+            "profile": "review_evidence/libpng_setup/CodeChecker_Profile.json",
+            "analysis_standard": "GNU C17",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "仅clangsa",
+              "-j 1",
+              "每动作120秒",
+              "compile-uniqueing none",
+              "CTU默认关闭",
+              "Z3 refutation off",
+              "capture-analysis-output请求；实际捕获范围见各验收记录",
+              "新reports；保留默认parse过滤"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/libpng_pretest_20261029/CodeChecker_Run_Record.json",
+            "record_sha256": "6ddc582efa516dbceb4e8f1c9f910eb4d14e70f358c0af6fa583d5db05f45e11",
+            "field_map": {
+              "succeeded": "actualSucceededActions",
+              "failed": "failedActions",
+              "skipped": "skippedActions",
+              "candidates": "savedDiagnostics",
+              "saved": "savedDiagnostics",
+              "displayed": "displayedReports",
+              "self_seconds": "selfReportedAnalysisSeconds"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "metrics.wall_seconds",
+              "user_seconds": "metrics.user_seconds",
+              "system_seconds": "metrics.system_seconds",
+              "max_rss_kib": "metrics.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/libpng_pretest_20261029/CodeChecker",
+            "project_record": "review_evidence/Libpng_Pretest_Record.md",
+            "current_review_summary": "review_evidence/libpng_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/libpng_pretest_20261029/CodeChecker/run-meta.tsv",
+            "started_utc": "2026-10-28T22:34:09Z",
+            "ended_utc": "2026-10-28T22:34:46Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/libpng_pretest_20261029/CodeChecker/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/libpng_pretest_20261029/CodeChecker/command.txt",
+            "effective_tool_order_in_project": 2,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        }
+      ]
+    },
+    {
+      "project_id": "P09",
+      "project": "libjpeg-turbo",
+      "version": "3.1.1",
+      "phase": "功能预试",
+      "project_record": "review_evidence/Libjpeg_Turbo_Pretest_Record.md",
+      "scope": {
+        "semantic_compile_actions": 101,
+        "flawfinder_text_files": 88,
+        "scope_source": "review_evidence/Libjpeg_Turbo_Pretest_Record.md",
+        "independent_source_paths": 58,
+        "meaning": "语义动作与词法文本范围分别记录；包含型实现、头和生成头不伪造独立动作"
+      },
+      "runs": [
+        {
+          "project_id": "P09",
+          "run_id": "PRE-P09-FF-001",
+          "tool": "Flawfinder",
+          "tool_key": "FF",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "文本文件",
+            "intended_count": 88,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder_Identity_Check.json",
+            "scope_field": "textInputs"
+          },
+          "coverage": {
+            "succeeded_or_examined": 88,
+            "failed": null,
+            "skipped": null,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 42,
+            "candidate_unit": "minlevel=1显示命中条目",
+            "saved_source_diagnostics": null,
+            "displayed_reports": 42,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": 6,
+            "flawfinder_cumulative_0plus": 48,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 0.27,
+            "user_seconds": 0.27,
+            "system_seconds": 0.0,
+            "max_rss_kib": 21124,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:00.27",
+            "source_file": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "a39de10ac7f4285cd886ba55d930a63f1793eeef603127bddeeb07b6d37c04e7",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 0.24,
+            "source_file": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder_Identity_Check.json",
+            "source_field": "measurement.toolSelfReportedSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "lines_analyzed": 41778,
+            "physical_sloc": 27157,
+            "text_scale_source": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder_Identity_Check.json",
+            "text_scale_source_fields": [
+              "linesAnalyzed",
+              "physicalSLOC"
+            ]
+          },
+          "configuration": {
+            "profile": "review_evidence/libjpeg_turbo_setup/Flawfinder_Profile.json",
+            "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "--minlevel=1",
+              "--neverignore",
+              "--columns",
+              "--context"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder_Identity_Check.json",
+            "record_sha256": "5c2fb73492a0876b59e9077c3bcec8464c75cad1e8bc2b77f23855951109e3cd",
+            "field_map": {
+              "input": "textInputs",
+              "examined": "actualExaminingLines",
+              "candidates": "displayedHits",
+              "displayed": "displayedHits",
+              "level0": "level0SummaryOnly",
+              "cumulative": "cumulative0plus",
+              "self_seconds": "measurement.toolSelfReportedSeconds"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "measurement.wall_seconds",
+              "user_seconds": "measurement.user_seconds",
+              "system_seconds": "measurement.system_seconds",
+              "max_rss_kib": "measurement.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder",
+            "project_record": "review_evidence/Libjpeg_Turbo_Pretest_Record.md",
+            "current_review_summary": "review_evidence/libjpeg_turbo_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+            "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder/run-meta.tsv",
+            "started_utc": "2026-10-29T05:46:16Z",
+            "ended_utc": "2026-10-29T05:46:16Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder/command.txt",
+            "effective_tool_order_in_project": 2,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P09",
+          "run_id": "PRE-P09-CP-001",
+          "tool": "Cppcheck",
+          "tool_key": "CP",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 101,
+            "unique_source_paths": 58,
+            "scope_source": "review_evidence/Libjpeg_Turbo_Pretest_Record.md",
+            "scope_field": "实际编译数据库／当前范围章节；记录的动作数，不从文本输入推算"
+          },
+          "coverage": {
+            "succeeded_or_examined": 101,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 91,
+            "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+            "saved_source_diagnostics": 91,
+            "displayed_reports": null,
+            "raw_xml_elements": null,
+            "information_items": 13,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 12.97,
+            "user_seconds": 12.58,
+            "system_seconds": 0.24,
+            "max_rss_kib": 95784,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:12.97",
+            "source_file": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "66cc609a35b3a88ce522a5ce2f618619124bf557e5c74d7e3b99e1cb60f3fd1d",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": null,
+            "source_file": null,
+            "source_field": null,
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "checker_catalog_active": 79,
+            "checker_catalog_total": 592,
+            "checker_catalog_source": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck/stderr.txt",
+            "checker_catalog_source_field": "results/errors/error[@id=checkersReport]/@msg",
+            "checker_catalog_meaning": "检查器目录自报统计；非代码或漏洞覆盖率"
+          },
+          "configuration": {
+            "profile": "review_evidence/libjpeg_turbo_setup/Cppcheck_Profile.json",
+            "analysis_standard": "C11",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "builtin内部解析器",
+              "normal",
+              "unix64",
+              "-j 1",
+              "XML2",
+              "warning/performance/portability/information及默认error",
+              "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck_Run_Record.json",
+            "record_sha256": "7ba8c6eba294e0a14f9bb2dfb0cf7984979a0deb7e7b0e20cf1c15e0759b5db3",
+            "field_map": {
+              "succeeded": "observedCompletedRequests",
+              "failed": "observedFailedRequests",
+              "skipped": "observedSkippedRequests",
+              "candidates": "sourceCandidates",
+              "saved": "sourceCandidates",
+              "information": "informationElements"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "measurement.wall_seconds",
+              "user_seconds": "measurement.user_seconds",
+              "system_seconds": "measurement.system_seconds",
+              "max_rss_kib": "measurement.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck",
+            "project_record": "review_evidence/Libjpeg_Turbo_Pretest_Record.md",
+            "current_review_summary": "review_evidence/libjpeg_turbo_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+            "Cppcheck C11模型与实际GNU C17构建有差异。",
+            "101主请求按原DB处理完成，对应58唯一源路径；仅58主.a1／.s1缓存，43个.a2/.a3映射无独立文件，不声称101独立多位深全程序持久化上下文。normal在encode_one_block受限。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck/run-meta.tsv",
+            "started_utc": "2026-10-29T06:04:00Z",
+            "ended_utc": "2026-10-29T06:04:13Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck/command.txt",
+            "effective_tool_order_in_project": 3,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P09",
+          "run_id": "PRE-P09-CC-001",
+          "tool": "CodeChecker/clangsa",
+          "tool_key": "CC",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 101,
+            "unique_source_paths": 58,
+            "scope_source": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker_Run_Record.json",
+            "scope_field": "intended_actions"
+          },
+          "coverage": {
+            "succeeded_or_examined": 101,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 48,
+            "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+            "saved_source_diagnostics": 48,
+            "displayed_reports": 46,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 121.59,
+            "user_seconds": 113.98,
+            "system_seconds": 5.58,
+            "max_rss_kib": 200416,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "2:01.59",
+            "source_file": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "b9073ee595287ce4e21f761ebabafeb1b3d1b5249298d6373c0f424d81e00943",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 118.75,
+            "source_file": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker_Identity_Check.json",
+            "source_field": "measurement.toolSelfReportedSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比"
+          },
+          "configuration": {
+            "profile": "review_evidence/libjpeg_turbo_setup/CodeChecker_Profile.json",
+            "analysis_standard": "GNU C17",
+            "actual_build_standard": "GNU C17",
+            "options": [
+              "仅clangsa",
+              "-j 1",
+              "每动作120秒",
+              "compile-uniqueing none",
+              "CTU默认关闭",
+              "Z3 refutation off",
+              "capture-analysis-output请求；实际捕获范围见各验收记录",
+              "新reports；保留默认parse过滤"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker_Run_Record.json",
+            "record_sha256": "bcb7a048ac91afe3cfbefa243034934a830282c0bd88e4cd5d84de621ec1e504",
+            "field_map": {
+              "input": "intended_actions",
+              "succeeded": "succeeded_actions",
+              "failed": "failed_actions",
+              "skipped": "skipped_actions",
+              "candidates": "raw_saved_diagnostics",
+              "saved": "raw_saved_diagnostics",
+              "displayed": "displayed_reports"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "wall_seconds",
+              "user_seconds": "user_seconds",
+              "system_seconds": "system_seconds",
+              "max_rss_kib": "max_rss_kib"
+            },
+            "raw_directory": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker",
+            "project_record": "review_evidence/Libjpeg_Turbo_Pretest_Record.md",
+            "current_review_summary": "review_evidence/libjpeg_turbo_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。",
+            "101动作=8位58＋12位28＋16位15，58唯一源路径；保存48，普通parse按路径键折叠2后展示46，登记候选仍48；42个issue_hash不作为计数。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker/run-meta.tsv",
+            "started_utc": "2026-10-29T03:00:19Z",
+            "ended_utc": "2026-10-29T03:02:20Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker/environment-start.txt",
+            "execution_environment_source": null,
+            "build_environment_session": null,
+            "execution_environment_session": null,
+            "command_file": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker/command.txt",
+            "effective_tool_order_in_project": 1,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        }
+      ]
+    },
+    {
+      "project_id": "P10",
+      "project": "utf8proc",
+      "version": "2.10.0",
+      "phase": "功能预试",
+      "project_record": "review_evidence/Utf8proc_Pretest_Record.md",
+      "scope": {
+        "semantic_compile_actions": 1,
+        "flawfinder_text_files": 3,
+        "scope_source": "review_evidence/Utf8proc_Pretest_Record.md",
+        "independent_source_paths": null,
+        "meaning": "语义动作与词法文本范围分别记录；包含型实现、头和生成头不伪造独立动作"
+      },
+      "runs": [
+        {
+          "project_id": "P10",
+          "run_id": "PRE-P10-FF-001",
+          "tool": "Flawfinder",
+          "tool_key": "FF",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "文本文件",
+            "intended_count": 3,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/run-summary.json",
+            "scope_field": "intendedTextFiles"
+          },
+          "coverage": {
+            "succeeded_or_examined": 3,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 18,
+            "candidate_unit": "minlevel=1显示命中条目",
+            "saved_source_diagnostics": null,
+            "displayed_reports": 18,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": 0,
+            "flawfinder_cumulative_0plus": 18,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 0.34,
+            "user_seconds": 0.33,
+            "system_seconds": 0.0,
+            "max_rss_kib": 25612,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:00.34",
+            "source_file": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "74454edb3433c9ec46c31fc0195f92105b795bf1de698dff99fd6575489888d5",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 0.29,
+            "source_file": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/run-summary.json",
+            "source_field": "toolSelfReportedSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "lines_analyzed": 18718,
+            "physical_sloc": 18043,
+            "text_scale_source": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/run-summary.json",
+            "text_scale_source_fields": [
+              "linesAnalyzed",
+              "toolSLOC"
+            ]
+          },
+          "configuration": {
+            "profile": "review_evidence/utf8proc_setup/Flawfinder_Profile.json",
+            "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+            "actual_build_standard": "C99",
+            "options": [
+              "--minlevel=1",
+              "--neverignore",
+              "--columns",
+              "--context"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/run-summary.json",
+            "record_sha256": "9bf1e673fd518a0e31893e8165e31c0afae694d8f07593cd7779232bb9e925d0",
+            "field_map": {
+              "input": "intendedTextFiles",
+              "examined": "examinedTextFiles",
+              "failed": "failedTextInputs",
+              "skipped": "skippedTextInputs",
+              "candidates": "displayedHitCount",
+              "displayed": "displayedHitCount",
+              "level0": "hitsByLevel.0",
+              "cumulative": "cumulative0Plus",
+              "self_seconds": "toolSelfReportedSeconds"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "resources.wall_seconds",
+              "user_seconds": "resources.user_seconds",
+              "system_seconds": "resources.system_seconds",
+              "max_rss_kib": "resources.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001",
+            "project_record": "review_evidence/Utf8proc_Pretest_Record.md",
+            "current_review_summary": "review_evidence/utf8proc_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+            "完整执行环境会话未提供；实际run-start快照保留，不从构建会话推认执行会话。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/run-meta.tsv",
+            "started_utc": "2026-10-29T09:22:41Z",
+            "ended_utc": "2026-10-29T09:22:41Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/environment-start.txt",
+            "execution_environment_source": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/execution-environment.tsv",
+            "build_environment_session": "/home/yhong/comp5355/environment/session-20261029T085446-p10-22994",
+            "execution_environment_session": "not supplied; see environment-start.txt for this actual run",
+            "command_file": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/command.txt",
+            "effective_tool_order_in_project": 1,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P10",
+          "run_id": "PRE-P10-CP-001",
+          "tool": "Cppcheck",
+          "tool_key": "CP",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 1,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/run-summary.json",
+            "scope_field": "intendedActions"
+          },
+          "coverage": {
+            "succeeded_or_examined": 1,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 0,
+            "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+            "saved_source_diagnostics": 0,
+            "displayed_reports": null,
+            "raw_xml_elements": 6,
+            "information_items": 6,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 5.44,
+            "user_seconds": 5.18,
+            "system_seconds": 0.25,
+            "max_rss_kib": 339712,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:05.44",
+            "source_file": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "5c632030331b7a118d920651d67d9a18221b495a61fda74a11ad80ac55148d80",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": null,
+            "source_file": null,
+            "source_field": null,
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比",
+            "checker_catalog_active": 79,
+            "checker_catalog_total": 592,
+            "checker_catalog_source": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/stderr.txt",
+            "checker_catalog_source_field": "results/errors/error[@id=checkersReport]/@msg",
+            "checker_catalog_meaning": "检查器目录自报统计；非代码或漏洞覆盖率"
+          },
+          "configuration": {
+            "profile": "review_evidence/utf8proc_setup/Cppcheck_Profile.json",
+            "analysis_standard": "C99",
+            "actual_build_standard": "C99",
+            "options": [
+              "builtin内部解析器",
+              "normal",
+              "unix64",
+              "-j 1",
+              "XML2",
+              "warning/performance/portability/information及默认error",
+              "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/run-summary.json",
+            "record_sha256": "8aa7f6c1f732a2b763d51d94f319191142b31b8fbb9ffaf8355fa2724878689b",
+            "field_map": {
+              "input": "intendedActions",
+              "succeeded": "succeededActions",
+              "failed": "failedActions",
+              "skipped": "skippedActions",
+              "candidates": "sourceCandidateCount",
+              "saved": "sourceCandidateCount",
+              "information": "informationCount",
+              "xml": "xmlDiagnosticElements"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "resources.wall_seconds",
+              "user_seconds": "resources.user_seconds",
+              "system_seconds": "resources.system_seconds",
+              "max_rss_kib": "resources.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001",
+            "project_record": "review_evidence/Utf8proc_Pretest_Record.md",
+            "current_review_summary": "review_evidence/utf8proc_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+            "完整执行环境会话未提供；实际run-start快照保留，不从构建会话推认执行会话。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/run-meta.tsv",
+            "started_utc": "2026-10-29T09:45:39Z",
+            "ended_utc": "2026-10-29T09:45:44Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/environment-start.txt",
+            "execution_environment_source": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/execution-environment.tsv",
+            "build_environment_session": "/home/yhong/comp5355/environment/session-20261029T085446-p10-22994",
+            "execution_environment_session": "not supplied; see environment-start.txt for this actual run",
+            "command_file": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/command.txt",
+            "effective_tool_order_in_project": 2,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        },
+        {
+          "project_id": "P10",
+          "run_id": "PRE-P10-CC-001",
+          "tool": "CodeChecker/clangsa",
+          "tool_key": "CC",
+          "phase": "功能预试",
+          "accepted_for_effective_pretest": true,
+          "input": {
+            "unit": "编译动作／主分析请求",
+            "intended_count": 1,
+            "unique_source_paths": null,
+            "scope_source": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/run-summary.json",
+            "scope_field": "intendedActions"
+          },
+          "coverage": {
+            "succeeded_or_examined": 1,
+            "failed": 0,
+            "skipped": 0,
+            "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+          },
+          "output": {
+            "candidate_count": 0,
+            "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+            "saved_source_diagnostics": 0,
+            "displayed_reports": 0,
+            "raw_xml_elements": null,
+            "information_items": null,
+            "flawfinder_level0_summary": null,
+            "flawfinder_cumulative_0plus": null,
+            "cumulative_derived_from_display_and_level0": false,
+            "pre_codechecker_processing_backend_diagnostics": null
+          },
+          "external_resources": {
+            "wall_seconds": 3.66,
+            "user_seconds": 2.03,
+            "system_seconds": 0.47,
+            "max_rss_kib": 197060,
+            "timed_invocation_exit_code": 0,
+            "wall_raw": "0:03.66",
+            "source_file": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/time.txt",
+            "source_fields": [
+              "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+              "User time (seconds)",
+              "System time (seconds)",
+              "Maximum resident set size (kbytes)",
+              "Exit status"
+            ],
+            "source_sha256": "de6b7b44777fa253e3f975ce7771ca9df2729daccbd28481001eb6b00d5bc81f",
+            "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+            "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+          },
+          "tool_self_reported": {
+            "analysis_seconds": 1.87,
+            "source_file": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/run-summary.json",
+            "source_field": "toolSelfReportedSeconds",
+            "meaning": "工具内部区间／近似值单列，不当作统一外部计时，不互算速度比"
+          },
+          "configuration": {
+            "profile": "review_evidence/utf8proc_setup/CodeChecker_Profile.json",
+            "analysis_standard": "C99",
+            "actual_build_standard": "C99",
+            "options": [
+              "仅clangsa",
+              "-j 1",
+              "每动作120秒",
+              "compile-uniqueing none",
+              "CTU默认关闭",
+              "Z3 refutation off",
+              "capture-analysis-output请求；实际捕获范围见各验收记录",
+              "新reports；保留默认parse过滤"
+            ],
+            "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+          },
+          "provenance": {
+            "record": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/run-summary.json",
+            "record_sha256": "343284dc6997dc02647481300e64798a86d75bd3c7197408b9020fc9f90e2727",
+            "field_map": {
+              "input": "intendedActions",
+              "succeeded": "succeededActions",
+              "failed": "failedActions",
+              "skipped": "skippedActions",
+              "candidates": "savedPlistDiagnostics",
+              "saved": "savedPlistDiagnostics",
+              "displayed": "displayedReports",
+              "self_seconds": "toolSelfReportedSeconds"
+            },
+            "resource_record_field_map": {
+              "wall_seconds": "resources.wall_seconds",
+              "user_seconds": "resources.user_seconds",
+              "system_seconds": "resources.system_seconds",
+              "max_rss_kib": "resources.max_rss_kib"
+            },
+            "raw_directory": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001",
+            "project_record": "review_evidence/Utf8proc_Pretest_Record.md",
+            "current_review_summary": "review_evidence/utf8proc_review/Review_Summary.json",
+            "historical_phase_note": "本记录原有未审／尚未运行其他工具等阶段字段保持原样；当前核查状态以canonical Review_Summary/Review_Ledger为准"
+          },
+          "comparability_gaps": [
+            "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。",
+            "完整执行环境会话未提供；实际run-start快照保留，不从构建会话推认执行会话。"
+          ],
+          "runtime_metadata": {
+            "run_meta_source": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/run-meta.tsv",
+            "started_utc": "2026-10-29T10:08:02Z",
+            "ended_utc": "2026-10-29T10:08:05Z",
+            "locale": "C",
+            "measurement_schema": "measurement-v1",
+            "application_cache_policy": "required_fresh_tool_cache",
+            "os_page_cache": "natural_not_cleared",
+            "actual_run_environment_snapshot": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/environment-start.txt",
+            "execution_environment_source": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/execution-environment.tsv",
+            "build_environment_session": "/home/yhong/comp5355/environment/session-20261029T085446-p10-22994",
+            "execution_environment_session": "not supplied; see environment-start.txt for this actual run",
+            "command_file": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/command.txt",
+            "effective_tool_order_in_project": 3,
+            "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+          }
+        }
+      ]
+    }
+  ],
+  "retained_attempts": [
+    {
+      "project_id": "P06",
+      "run_id": "PRE-P06-CP-001",
+      "tool": "Cppcheck",
+      "accepted_for_effective_pretest": false,
+      "status": "预处理失败",
+      "reason": "yyjson.h:415 preprocessorErrorDirective；所有检查跳过，退出0不构成成功",
+      "intended_actions": 1,
+      "reported_processed_or_semantic_completed": 0,
+      "failed_actions": 1,
+      "skipped_actions": null,
+      "source_candidates": null,
+      "raw_noninformation_elements": 1,
+      "information_items": 7,
+      "raw_xml_elements": 8,
+      "external_resources": {
+        "wall_seconds": 0.06,
+        "user_seconds": 0.03,
+        "system_seconds": 0.02,
+        "max_rss_kib": 29796,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:00.06",
+        "source_file": "review_evidence/yyjson_pretest_20261028/Cppcheck_Attempt001/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "639dc6293e3ab2eb0e41bbd742a646e62e75397da3fcdd15e609f20853c8e4fc",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "source_record": "review_evidence/yyjson_pretest_20261028/Cppcheck_Attempt001_Run_Record.json",
+      "source_fields": "status/intendedActions/completedSemanticActions或reportedCheckedActions/preprocessingFailedActions/allCheckingSkippedForAffectedFile/observedNonInformationElements/informationElements/xmlElements或xmlDiagnosticElements/metrics；按各原记录命名",
+      "meaning": "保留失败或不完整尝试成本，不与002有效成本合并，不把非information环境错误当漏洞"
+    },
+    {
+      "project_id": "P08",
+      "run_id": "PRE-P08-CP-001",
+      "tool": "Cppcheck",
+      "accepted_for_effective_pretest": false,
+      "status": "输入不完整",
+      "reason": "pngstruct.h:27缺zlib.h；15动作有进度且无critical，但依赖未读，不验收有效零诊断",
+      "intended_actions": 15,
+      "reported_processed_or_semantic_completed": 15,
+      "failed_actions": null,
+      "skipped_actions": null,
+      "source_candidates": null,
+      "raw_noninformation_elements": 0,
+      "information_items": 13,
+      "raw_xml_elements": 13,
+      "external_resources": {
+        "wall_seconds": 39.18,
+        "user_seconds": 39.07,
+        "system_seconds": 0.14,
+        "max_rss_kib": 58860,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:39.18",
+        "source_file": "review_evidence/libpng_pretest_20261029/Cppcheck/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "c7f2d5ccffed5591700205b3ad4b7bb1108da3610e32240d7ff42b13cacb1ff9",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "source_record": "review_evidence/libpng_pretest_20261029/Cppcheck_Run_Record.json",
+      "source_fields": "status/intendedActions/completedSemanticActions或reportedCheckedActions/preprocessingFailedActions/allCheckingSkippedForAffectedFile/observedNonInformationElements/informationElements/xmlElements或xmlDiagnosticElements/metrics；按各原记录命名",
+      "meaning": "保留失败或不完整尝试成本，不与002有效成本合并，不把非information环境错误当漏洞"
+    }
+  ],
+  "cross_project_comparability_gaps": [
+    "P03三个旧预试没有measurement-v1外部成本，不补值、不与自报值混算",
+    "P03显式C89，P07/P10显式C99，其余实际GNU C17但Cppcheck采用C11模型；FF文本与语义动作的条件分支覆盖不同",
+    "P06 CP002额外__STDC__=1；P08 CP002用-isystem到-I派生DB读固定zlib头；依赖zlib C不重复归P08分析",
+    "P01 inflate、P05 json_tokener_parse_ex、P06三个函数、P07 doProlog、P09 encode_one_block有normal值流限制；未出现限制消息不等于穷尽",
+    "P09的101动作来自58唯一C路径及8/12/16位重复配置；CPP持久化缓存只有58主槽而43多位深映射无独立文件",
+    "P09 CodeChecker保存48展示46，其他有效CC保存与展示相同；统一登记保存元素且保留展示数",
+    "运行顺序按项目轮换，但旧P03为此前实际顺序；自然OS缓存和宿主负载没有完全控制，单次描述性成本不形成稳定性能排名",
+    "每动作120秒只适用于CC，并非三工具统一整项目超时；检查器目录数量不是代码或漏洞覆盖率",
+    "CC完整逐动作后端argv未单独捕获，处理前全部后端诊断数未知；默认过滤及后处理边界保留",
+    "P10完整执行环境会话未提供，动态run-start快照保留；构建环境不能冒充检测执行会话"
+  ],
+  "methods_sources": [
+    "Project17_Experiment_Protocol.md#B",
+    "Project17_Experiment_Protocol.md#D",
+    "Project17_Experiment_Protocol.md#F",
+    "Project17_Measurement_Plan.md"
+  ]
+}

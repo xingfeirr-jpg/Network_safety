@@ -1,0 +1,75 @@
+{
+  "profileId": "P02-FF-PRE-v1",
+  "plannedRunId": "PRE-P02-FF-001",
+  "status": "prepared; not executed",
+  "purpose": "functional pretest",
+  "tool": "Flawfinder",
+  "version": "2.0.20",
+  "binary": "/home/yhong/comp5355/.venv/bin/flawfinder",
+  "arguments": [
+    "--minlevel=1",
+    "--neverignore",
+    "--columns",
+    "--context"
+  ],
+  "inputCount": 11,
+  "sourceCFiles": 5,
+  "projectHeaders": 6,
+  "inputs": [
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c",
+      "sha256": "9396f7de527bc8435de9c7569fb7998e56545a84b4f3c2d808c0235c01774539"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h",
+      "sha256": "26b82efc53d1570f3b54eef02e9c4764c1ad374ff03cac04e2ced5ea4d4c552f"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c",
+      "sha256": "9c920fb21890bdce47d753bcd4a4dd3699ae75ac81ae7a999397c64fef012bec"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.h",
+      "sha256": "400ed90bc74324abcf338d37235dd81aa431fd815c22db4b369b88c12b213115"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c",
+      "sha256": "44f421bea199c7f11da263c717f063228cd2c8c05a8384d327b49cc81ccfbac4"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h",
+      "sha256": "b845db4b7ee1bfa64b8f641a94f62e7f636a8b5d673cc61766413782283aaad1"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame_static.h",
+      "sha256": "31ab72a6e97e4fa0bedd4420d24a3f1f8024cbfa1d8ffad88c87cbb4e04f769d"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c",
+      "sha256": "126cafafdb91767e6e55238298a910903851b35b2cee27ce80ae2280469ee232"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.h",
+      "sha256": "e43824e8a9ba16f54100c4ccbccfa5782a858ca9ab83c48aac303fea3e76e21e"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c",
+      "sha256": "b667033dc735fb5ea5648e0a61a2e065e5ef5bbda53669730063bd856c643c48"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h",
+      "sha256": "aefdd236f35130495c18764cabed3f7b216906855fc5e6a9025cd2040bc84444"
+    }
+  ],
+  "inputListSHA256": "69c3ed92965cf0bc685294d72255693b74db1a05c8e7e79cf5b94fea328e7ef0",
+  "identityManifestSHA256": "6062260cf0c0b7faaa993a0dcb4bdfa2d36517d0121faaf58030c42af3f2eb6d",
+  "headerSelection": "Actual Ninja project dependency closure; each file listed once; no compile database as text input and no synthetic action for included lz4.c.",
+  "textScopeCaveat": "Flawfinder does not preprocess configuration macros; inactive branches in these files can match.",
+  "displayedHitPolicy": "minlevel1; level0 and cumulative0+ do not count as displayed hits.",
+  "measurement": "measurement-v1",
+  "locale": "C",
+  "applicationCache": "Flawfinder no analysis-result cache requested; generic recorder empty cache directory is unused.",
+  "osPageCache": "natural, not cleared",
+  "runDirectory": "/home/yhong/comp5355/results/pretest-lz4-v1.10.0/PRE-P02-FF-001",
+  "environmentSession": "session-20261027T100151-22994"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jconfig.h",
+    "localFile": "build/jconfig.h",
+    "kind": "generated_header",
+    "usedByActions": 100,
+    "bytes": 2068,
+    "sha256": "647133bff7661b0fd15170f2b5559c3a438e59a4ababc51916a9495eb700d6d7"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jconfigint.h",
+    "localFile": "build/jconfigint.h",
+    "kind": "generated_header",
+    "usedByActions": 101,
+    "bytes": 1821,
+    "sha256": "35fb57df8fd39839a43e555d69db7d967c999a82585a7cfa3a1456ca850799f3"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jversion.h",
+    "localFile": "build/jversion.h",
+    "kind": "generated_header",
+    "usedByActions": 1,
+    "bytes": 1818,
+    "sha256": "7e1c15351d3a9bea7a0fef108e10f7d643bc5bb7f47c65195ef4730466c019ab"
+  }
+]

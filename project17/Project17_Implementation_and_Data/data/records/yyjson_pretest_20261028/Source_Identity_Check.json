@@ -1,0 +1,33 @@
+{
+  "project": "P06 yyjson",
+  "date": "2026-10-28",
+  "status": "accepted",
+  "recordId": "SRC-P06-001",
+  "version": "0.12.0",
+  "commit": "8b4a38dc994a110abaec8a400615567bd996105f",
+  "sourceRoot": "/home/yhong/comp5355/sources/yyjson-0.12.0",
+  "archiveSHA256": "94e9c90f8f12d8329f2c0756782d21e5c278729023cd2c5fe47e323a35947ed6",
+  "regularFiles": 903,
+  "directoriesExcludingRoot": 25,
+  "symlinks": 0,
+  "fullContentsMatchArchiveAndOfficialGitBlobs": true,
+  "userSourceCheckMatchesAssistantReadOnlyReinspection": true,
+  "extractExitCode": 0,
+  "verifyExitCode": 0,
+  "rawCopies": 15,
+  "rawCopiesMatchLinuxSHA256": true,
+  "plannedLibraryC": [
+    "src/yyjson.c"
+  ],
+  "plannedHeaders": [
+    "src/yyjson.h"
+  ],
+  "libraryRangeMeaning": "logical scope;actual build actions and compiler context pending",
+  "sourceManifest": "Source_Raw_File_Manifest.json",
+  "fullSourceIdentity": "../yyjson_setup/Source_Acceptance_20261028/Source_Reinspection.json",
+  "readOnlyEvidence": "../yyjson_setup/Source_Acceptance_20261028/Read_Only_Linux_Evidence.json",
+  "figure": "FIG-P06-02",
+  "figurePath": "../screenshots/P06/FIG-P06-02_source.png",
+  "buildAndAnalysis": "not performed",
+  "nextStep": "user captures environment and executes PREP-P06-001;assistant checks real artifacts/DB before analyzing"
+}

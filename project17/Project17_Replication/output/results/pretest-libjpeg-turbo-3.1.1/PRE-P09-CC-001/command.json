@@ -1,0 +1,18 @@
+[
+ "/home/yhong/comp5355/.venv/bin/CodeChecker",
+ "analyze",
+ "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_pretest_20261029/analysis_inputs/compile_commands.json",
+ "--analyzers",
+ "clangsa",
+ "-o",
+ "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-CC-001/reports",
+ "-j",
+ "1",
+ "--timeout",
+ "120",
+ "--compile-uniqueing",
+ "none",
+ "--capture-analysis-output",
+ "--z3-refutation",
+ "off"
+]

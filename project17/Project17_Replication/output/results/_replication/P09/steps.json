@@ -1,0 +1,42 @@
+{
+  "id": "P09",
+  "name": "libjpeg-turbo",
+  "version": "3.1.1",
+  "started_utc": "2026-11-08T03:13:04Z",
+  "S1": {
+    "archive": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1.tar.gz",
+    "sha256": "aadc97ea91f6ef078b0ae3a62bba69e008d9a7db19b34e4ac973b19b71b4217c",
+    "expected_sha256": "aadc97ea91f6ef078b0ae3a62bba69e008d9a7db19b34e4ac973b19b71b4217c",
+    "matches_original": true
+  },
+  "S2": {
+    "source_dir": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1",
+    "regular_files": 546
+  },
+  "S3": {
+    "build_dir": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+    "compile_actions": 136,
+    "analysis_actions": 101
+  },
+  "S5": {
+    "FF": {
+      "run_id": "PRE-P09-FF-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T03:13:16Z",
+      "ended_utc": "2026-11-08T03:13:17Z"
+    },
+    "CP": {
+      "run_id": "PRE-P09-CP-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T03:13:17Z",
+      "ended_utc": "2026-11-08T03:13:50Z"
+    },
+    "CC": {
+      "run_id": "PRE-P09-CC-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T03:13:50Z",
+      "ended_utc": "2026-11-08T03:19:43Z"
+    }
+  },
+  "ended_utc": "2026-11-08T03:19:43Z"
+}

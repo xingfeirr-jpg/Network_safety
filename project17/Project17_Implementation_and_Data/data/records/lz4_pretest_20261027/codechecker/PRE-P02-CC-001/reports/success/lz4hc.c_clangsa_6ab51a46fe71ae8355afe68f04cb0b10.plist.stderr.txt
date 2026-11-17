@@ -1,0 +1,7 @@
+/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c:1753:9: warning: Null pointer passed as 1st argument to memory copy function [unix.cstring.NullArg]
+ 1753 |         LZ4_memmove(safeBuffer, streamPtr->end - dictSize, (size_t)dictSize);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:357:25: note: expanded from macro 'LZ4_memmove'
+  357 | #    define LZ4_memmove __builtin_memmove
+      |                         ^
+1 warning generated.

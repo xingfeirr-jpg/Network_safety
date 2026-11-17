@@ -1,0 +1,5 @@
+adler32_z call:[while]
+adler32 call:[adler32_z] noreturn:[adler32_z]
+adler32_combine_
+adler32_combine call:[adler32_combine_] noreturn:[adler32_combine_]
+adler32_combine64 call:[adler32_combine_] noreturn:[adler32_combine_]

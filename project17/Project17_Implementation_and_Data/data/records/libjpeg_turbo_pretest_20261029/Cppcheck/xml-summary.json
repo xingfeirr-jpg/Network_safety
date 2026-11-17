@@ -1,0 +1,34 @@
+{
+  "purpose": "functional pretest",
+  "runId": "PRE-P09-CP-001",
+  "intendedActions": 101,
+  "candidateCount": null,
+  "coverageValidation": "pending_tool_output_review",
+  "sourceReview": "not performed",
+  "summaryTiming": "outside analysis measurement",
+  "xmlValid": true,
+  "xmlDiagnosticElements": 104,
+  "informationElements": 13,
+  "nonInformationElements": 91,
+  "classification": "pending assistant review;non-information may include configuration failures",
+  "bySeverity": {
+    "error": 6,
+    "information": 13,
+    "portability": 28,
+    "warning": 57
+  },
+  "byRule": {
+    "AssignmentIntegerToAddress": 4,
+    "arrayIndexOutOfBoundsCond": 14,
+    "checkLevelNormal": 1,
+    "checkersReport": 1,
+    "legacyUninitvar": 3,
+    "missingIncludeSystem": 11,
+    "negativeIndex": 17,
+    "nullPointerArithmeticRedundantCheck": 1,
+    "nullPointerRedundantCheck": 25,
+    "shiftNegativeLHS": 4,
+    "shiftTooManyBitsSigned": 20,
+    "zerodiv": 3
+  }
+}

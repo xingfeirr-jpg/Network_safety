@@ -1,0 +1,12 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+start_pass_lhuff call:[jpeg_make_c_derived_tbl,memset,sizeof] noreturn:[jpeg_make_c_derived_tbl,memset]
+dump_buffer
+emit_bits call:[dump_buffer]
+flush_bits call:[emit_bits]
+emit_restart call:[dump_buffer,flush_bits]
+encode_mcus_huff call:[emit_bits,emit_restart]
+finish_pass_huff call:[flush_bits]
+encode_mcus_gather
+finish_pass_gather call:[jpeg_alloc_huff_table,jpeg_gen_optimal_table,memset,sizeof] noreturn:[jpeg_alloc_huff_table]
+jinit_lhuff_encoder call:[sizeof]

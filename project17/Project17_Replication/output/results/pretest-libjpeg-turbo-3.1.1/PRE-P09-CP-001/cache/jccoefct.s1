@@ -1,0 +1,8 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+start_iMCU_row
+start_pass_coef call:[start_iMCU_row]
+compress_data call:[jzero_far,sizeof,start_iMCU_row]
+compress_first_pass call:[compress_output,jzero_far,short,sizeof] noreturn:[compress_output]
+compress_output call:[short,start_iMCU_row]
+jinit_c_coef_controller call:[jround_up,memset,short,sizeof]

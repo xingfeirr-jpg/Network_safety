@@ -1,0 +1,18 @@
+{
+  "checkedOn": "2026-10-27",
+  "sampleId": "P03",
+  "checks": {
+    "cJSON.c": {
+      "sha256": "298581a04a36c0165da4b0aade235c23088cb2faa58651d720ea2f3706ed0b0d",
+      "unchangedFromBuild": true
+    },
+    "cJSON.h": {
+      "sha256": "25b0145150d500498e4d209cec69c18c42cf818bffcc54690be3b895a2a16dee",
+      "unchangedFromBuild": true
+    },
+    "compile_commands.json": {
+      "sha256": "ff6f0e4cfd162a124d934f8adde2ba96c029b75df634b0884614a965ec19dd9b",
+      "unchangedFromBuild": true
+    }
+  }
+}

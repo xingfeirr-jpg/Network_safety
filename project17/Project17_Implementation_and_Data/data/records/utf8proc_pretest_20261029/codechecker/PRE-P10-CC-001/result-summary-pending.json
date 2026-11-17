@@ -1,0 +1,46 @@
+{
+  "purpose": "functional pretest",
+  "runId": "PRE-P10-CC-001",
+  "intendedActions": 1,
+  "actualSucceededActions": null,
+  "actualFailedActions": null,
+  "actualSkippedActions": null,
+  "coverageValidation": "pending_tool_output_review",
+  "sourceReview": "not performed",
+  "metadataTools": [
+    {
+      "actionNum": 1,
+      "clangsaStatistics": {
+        "failed": 0,
+        "failed_sources": [],
+        "successful": 1,
+        "successful_sources": [
+          "/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c"
+        ],
+        "version": "18.1.3"
+      },
+      "skipped": 0
+    }
+  ],
+  "rawPlistFileCount": 1,
+  "parsedPlistFileCount": 1,
+  "parsedSubsetDiagnostics": 0,
+  "savedPlistDiagnostics": 0,
+  "displayedDiagnosticCount": null,
+  "candidateCount": null,
+  "summaryTiming": "outside analysis measurement",
+  "summaryValid": true,
+  "plistResults": [
+    {
+      "file": "reports/utf8proc.c_clangsa_e267b78e0ba22f7543be45a858e0e3a1.plist",
+      "savedDiagnostics": 0
+    }
+  ],
+  "invalidPlistFiles": [],
+  "auxiliaryExitCodes": {
+    "checkers": 0,
+    "parse-status": 0,
+    "findings": 0
+  },
+  "summaryValidationErrors": []
+}

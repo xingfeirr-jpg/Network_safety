@@ -1,0 +1,89 @@
+[INFO 2026-10-27 18:29:05] - Using '/usr/bin/clang-18' for analyzer 'clangsa'
+[HIGH] /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c:1753:9: Null pointer passed as 1st argument to memory copy function [unix.cstring.NullArg]
+        LZ4_memmove(safeBuffer, streamPtr->end - dictSize, (size_t)dictSize);
+        ^
+
+Found 1 defect(s) in lz4hc.c
+
+[HIGH] /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1579:9: Null pointer passed to 2nd parameter expecting 'nonnull' [core.NonNullParamChecker]
+        memcpy(dctx->tmpOutBuffer + dctx->dictSize, dstPtr, dstSize);
+        ^
+
+[HIGH] /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1588:9: Null pointer passed to 2nd parameter expecting 'nonnull' [core.NonNullParamChecker]
+        memcpy(dctx->tmpOutBuffer + preserveSize, dstPtr, dstSize);
+        ^
+
+Found 2 defect(s) in lz4frame.c
+
+Found no defects in xxhash.c
+[HIGH] /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:1827:9: Null pointer passed as 1st argument to memory copy function [unix.cstring.NullArg]
+        LZ4_memmove(safeBuffer, previousDictEnd - dictSize, (size_t)dictSize);
+        ^
+
+[HIGH] /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:2179:21: Null pointer passed as 2nd argument to memory copy function [unix.cstring.NullArg]
+                    LZ4_memmove(op, dictEnd - (lowPrefix-match), length);
+                    ^
+
+[HIGH] /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:2185:21: Null pointer passed as 2nd argument to memory copy function [unix.cstring.NullArg]
+                    LZ4_memcpy(op, dictEnd - copySize, copySize);
+                    ^
+
+[HIGH] /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:2367:21: Null pointer passed as 2nd argument to memory copy function [unix.cstring.NullArg]
+                    LZ4_memmove(op, dictEnd - (lowPrefix-match), length);
+                    ^
+
+[HIGH] /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c:2373:21: Null pointer passed as 2nd argument to memory copy function [unix.cstring.NullArg]
+                    LZ4_memcpy(op, dictEnd - copySize, copySize);
+                    ^
+
+Found 5 defect(s) in lz4.c
+
+Found no defects in lz4file.c
+
+----==== Severity Statistics ====----
+┌──────────┬───────────────────┐
+│ Severity │ Number of reports │
+├──────────┼───────────────────┤
+│ HIGH     │ 8                 │
+└──────────┴───────────────────┘
+----=================----
+
+----==== Checker Statistics ====----
+┌──────────────────────────┬──────────┬───────────────────┐
+│ Checker name             │ Severity │ Number of reports │
+├──────────────────────────┼──────────┼───────────────────┤
+│ unix.cstring.NullArg     │ HIGH     │ 6                 │
+│ core.NonNullParamChecker │ HIGH     │ 2                 │
+└──────────────────────────┴──────────┴───────────────────┘
+----=================----
+
+----==== File Statistics ====----
+┌────────────┬───────────────────┐
+│ File name  │ Number of reports │
+├────────────┼───────────────────┤
+│ lz4hc.c    │ 1                 │
+│ lz4frame.c │ 2                 │
+│ lz4.c      │ 5                 │
+└────────────┴───────────────────┘
+----=================----
+
+----======== Summary ========----
+┌───────────────────────────────────────────┬───┐
+│ Number of processed analyzer result files │ 5 │
+├───────────────────────────────────────────┼───┤
+│ Number of analyzer reports                │ 8 │
+└───────────────────────────────────────────┴───┘
+----=================----
+[INFO 2026-10-27 18:29:06] - ----==== Summary ====----
+[INFO 2026-10-27 18:29:06] - Up-to-date analysis results
+[INFO 2026-10-27 18:29:06] -   clangsa: 5
+[INFO 2026-10-27 18:29:06] - Outdated analysis results
+[INFO 2026-10-27 18:29:06] - Failed to analyze
+[INFO 2026-10-27 18:29:06] - Missing analysis results
+[INFO 2026-10-27 18:29:06] -   clang-tidy: 5
+[INFO 2026-10-27 18:29:06] -   cppcheck: 5
+[INFO 2026-10-27 18:29:06] -   gcc: 5
+[INFO 2026-10-27 18:29:06] -   infer: 5
+[INFO 2026-10-27 18:29:06] - Total analyzed compilation commands: 5
+[INFO 2026-10-27 18:29:06] - Total available compilation commands: 5
+[INFO 2026-10-27 18:29:06] - ----=================----

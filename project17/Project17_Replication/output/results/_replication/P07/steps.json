@@ -1,0 +1,41 @@
+{
+  "id": "P07",
+  "name": "Expat",
+  "version": "2.7.1",
+  "started_utc": "2026-11-08T02:58:17Z",
+  "S1": {
+    "archive": "/home/yhong/comp5355/downloads/expat-2.7.1.tar.gz",
+    "sha256": "86f0e8afaf4cd72d806e32afb68e1e84bb2c6e5b0b40de2a34c0970bf8d08c40",
+    "expected_sha256": "86f0e8afaf4cd72d806e32afb68e1e84bb2c6e5b0b40de2a34c0970bf8d08c40",
+    "matches_original": true
+  },
+  "S2": {
+    "source_dir": "/home/yhong/comp5355/sources/expat-2.7.1",
+    "regular_files": 207
+  },
+  "S3": {
+    "build_dir": "/home/yhong/comp5355/build/expat-2.7.1",
+    "compile_actions": 3
+  },
+  "S5": {
+    "FF": {
+      "run_id": "PRE-P07-FF-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:58:34Z",
+      "ended_utc": "2026-11-08T02:58:35Z"
+    },
+    "CP": {
+      "run_id": "PRE-P07-CP-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:58:35Z",
+      "ended_utc": "2026-11-08T02:58:42Z"
+    },
+    "CC": {
+      "run_id": "PRE-P07-CC-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:58:42Z",
+      "ended_utc": "2026-11-08T02:59:12Z"
+    }
+  },
+  "ended_utc": "2026-11-08T02:59:12Z"
+}

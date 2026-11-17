@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="18009042247823566669">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="21" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="22" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="23" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="24" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="25" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="26" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/debug.h" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_inttypes.h" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object.h" line="30" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object_private.h" line="28" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;locale.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;locale.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;strings.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;strings.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="44" column="0"/>
+        </error>
+        <error id="checkLevelNormal" severity="information" msg="Limiting ValueFlow analysis in function &apos;json_tokener_parse_ex&apos; since it is too complex. Please specify --check-level=exhaustive to perform full analysis." verbose="Limiting ValueFlow analysis in function &apos;json_tokener_parse_ex&apos; since it is too complex. Please specify --check-level=exhaustive to perform full analysis." file0="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="313" column="1"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:192:13" call-funcname="json_tokener_reset_level" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="209" col="27" call-argexpr="i" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="208" col="25" info="Assuming that condition &apos;i&gt;=0&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h:238:33" call-funcname="json_tokener_parse_verbose" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="218" col="34" call-argexpr="&amp;jerr_ignored" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h:238:33" call-funcname="json_tokener_parse_verbose" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="218" col="34" call-argexpr="jerr_ignored" call-argvaluetype="4" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="397" col="5" call-argexpr="&amp;c" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="544" col="4" call-argexpr="&amp;c" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="599" col="4" call-argexpr="&amp;c" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="633" col="4" call-argexpr="str-case_start" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="623" col="27" info="case_start is assigned &apos;str&apos; here."/>
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="624" col="13" info="Assuming condition is false"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="640" col="4" call-argexpr="&amp;c" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="703" col="5" call-argexpr="&amp;c" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="894" col="4" call-argexpr="&amp;c" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:689:33" call-funcname="json_object_new_boolean" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="920" col="39" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:109:17" call-funcname="json_parse_int64" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="1055" col="25" call-argexpr="&amp;num64" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:109:17" call-funcname="json_parse_int64" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="1055" col="25" call-argexpr="num64" call-argvaluetype="4" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:114:17" call-funcname="json_parse_uint64" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="1070" col="31" call-argexpr="&amp;numuint64" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:130:12" call-funcname="json_tokener_parse_double" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="1104" col="39" call-argexpr="&amp;numd" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:130:12" call-funcname="json_tokener_parse_double" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="1104" col="39" call-argexpr="numd" call-argvaluetype="4" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:681:17" call-funcname="json_object_array_shrink" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="1130" col="29" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:681:17" call-funcname="json_object_array_shrink" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="1169" col="29" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h:222:18" call-funcname="json_tokener_reset" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="185" col="2" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h:216:18" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h:238:33" call-funcname="json_tokener_parse_verbose" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="218" col="8" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h:230:33" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h:322:33" call-funcname="json_tokener_parse_ex" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="233" col="8" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h:238:33" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h:198:37" my-argnr="1" my-argname="tok" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="144" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:192:13" my-argnr="1" my-argname="tok" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="194" col="2" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h:322:33" my-argnr="1" my-argname="tok" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="326" col="2" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:128:18" my-argnr="2" my-argname="nBytes" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="1356" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h:244:18" my-argnr="1" my-argname="tok" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="1381" col="2" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h:137:20" my-argnr="1" my-argname="tok" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="1386" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:130:12" my-argnr="1" my-argname="buf" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="1393" col="19" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:130:12" my-argnr="3" my-argname="retval" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="1393" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h:198:37" my-argnr="1" my-argname="tok" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="144" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:128:18" my-argnr="2" my-argname="nBytes" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="1356" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.h:137:20" my-argnr="1" my-argname="tok" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="1386" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:130:12" my-argnr="1" my-argname="buf" file="/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c" line="1393" col="19" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="is_ws_char" lineNumber="69"/>
+    <functiondecl functionName="is_hex_char" lineNumber="77"/>
+    <functiondecl functionName="json_tokener_reset_level" lineNumber="192"/>
+    <functiondecl functionName="json_tokener_validate_utf8" lineNumber="1353"/>
+    <functiondecl functionName="json_tokener_parse_double" lineNumber="1390"/>
+    <functioncall functionName="INFINITY"/>
+    <functioncall functionName="LC_NUMERIC_MASK"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="calloc"/>
+    <functioncall functionName="duplocale"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="freelocale"/>
+    <functioncall functionName="is_hex_char"/>
+    <functioncall functionName="is_ws_char"/>
+    <functioncall functionName="json_c_shallow_copy_default"/>
+    <functioncall functionName="json_object_array_add"/>
+    <functioncall functionName="json_object_array_shrink"/>
+    <functioncall functionName="json_object_free_userdata"/>
+    <functioncall functionName="json_object_get"/>
+    <functioncall functionName="json_object_new_array"/>
+    <functioncall functionName="json_object_new_boolean"/>
+    <functioncall functionName="json_object_new_double"/>
+    <functioncall functionName="json_object_new_double_s"/>
+    <functioncall functionName="json_object_new_int64"/>
+    <functioncall functionName="json_object_new_object"/>
+    <functioncall functionName="json_object_new_string_len"/>
+    <functioncall functionName="json_object_new_uint64"/>
+    <functioncall functionName="json_object_object_add"/>
+    <functioncall functionName="json_object_put"/>
+    <functioncall functionName="json_object_userdata_to_json_string"/>
+    <functioncall functionName="json_parse_int64"/>
+    <functioncall functionName="json_parse_uint64"/>
+    <functioncall functionName="json_tokener_continue"/>
+    <functioncall functionName="json_tokener_error_depth"/>
+    <functioncall functionName="json_tokener_error_memory"/>
+    <functioncall functionName="json_tokener_error_parse_array"/>
+    <functioncall functionName="json_tokener_error_parse_boolean"/>
+    <functioncall functionName="json_tokener_error_parse_comment"/>
+    <functioncall functionName="json_tokener_error_parse_eof"/>
+    <functioncall functionName="json_tokener_error_parse_null"/>
+    <functioncall functionName="json_tokener_error_parse_number"/>
+    <functioncall functionName="json_tokener_error_parse_object_key_name"/>
+    <functioncall functionName="json_tokener_error_parse_object_key_sep"/>
+    <functioncall functionName="json_tokener_error_parse_object_value_sep"/>
+    <functioncall functionName="json_tokener_error_parse_string"/>
+    <functioncall functionName="json_tokener_error_parse_unexpected"/>
+    <functioncall functionName="json_tokener_error_parse_utf8_string"/>
+    <functioncall functionName="json_tokener_error_size"/>
+    <functioncall functionName="json_tokener_free"/>
+    <functioncall functionName="json_tokener_new"/>
+    <functioncall functionName="json_tokener_new_ex"/>
+    <functioncall functionName="json_tokener_parse_double"/>
+    <functioncall functionName="json_tokener_parse_ex"/>
+    <functioncall functionName="json_tokener_parse_verbose"/>
+    <functioncall functionName="json_tokener_reset"/>
+    <functioncall functionName="json_tokener_reset_level"/>
+    <functioncall functionName="json_tokener_state_array"/>
+    <functioncall functionName="json_tokener_state_array_add"/>
+    <functioncall functionName="json_tokener_state_array_after_sep"/>
+    <functioncall functionName="json_tokener_state_array_sep"/>
+    <functioncall functionName="json_tokener_state_boolean"/>
+    <functioncall functionName="json_tokener_state_comment"/>
+    <functioncall functionName="json_tokener_state_comment_end"/>
+    <functioncall functionName="json_tokener_state_comment_eol"/>
+    <functioncall functionName="json_tokener_state_comment_start"/>
+    <functioncall functionName="json_tokener_state_eatws"/>
+    <functioncall functionName="json_tokener_state_escape_unicode"/>
+    <functioncall functionName="json_tokener_state_escape_unicode_need_escape"/>
+    <functioncall functionName="json_tokener_state_escape_unicode_need_u"/>
+    <functioncall functionName="json_tokener_state_finish"/>
+    <functioncall functionName="json_tokener_state_inf"/>
+    <functioncall functionName="json_tokener_state_null"/>
+    <functioncall functionName="json_tokener_state_number"/>
+    <functioncall functionName="json_tokener_state_object_field"/>
+    <functioncall functionName="json_tokener_state_object_field_end"/>
+    <functioncall functionName="json_tokener_state_object_field_start"/>
+    <functioncall functionName="json_tokener_state_object_field_start_after_sep"/>
+    <functioncall functionName="json_tokener_state_object_sep"/>
+    <functioncall functionName="json_tokener_state_object_value"/>
+    <functioncall functionName="json_tokener_state_object_value_add"/>
+    <functioncall functionName="json_tokener_state_start"/>
+    <functioncall functionName="json_tokener_state_string"/>
+    <functioncall functionName="json_tokener_state_string_escape"/>
+    <functioncall functionName="json_tokener_success"/>
+    <functioncall functionName="json_tokener_validate_utf8"/>
+    <functioncall functionName="mc_debug"/>
+    <functioncall functionName="nan"/>
+    <functioncall functionName="newlocale"/>
+    <functioncall functionName="out"/>
+    <functioncall functionName="printbuf_free"/>
+    <functioncall functionName="printbuf_memappend"/>
+    <functioncall functionName="printbuf_new"/>
+    <functioncall functionName="printbuf_reset"/>
+    <functioncall functionName="redo_char"/>
+    <functioncall functionName="strchr"/>
+    <functioncall functionName="strdup"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncasecmp"/>
+    <functioncall functionName="strncmp"/>
+    <functioncall functionName="strtod"/>
+    <functioncall functionName="uselocale"/>
+  </FileInfo>
+</analyzerinfo>

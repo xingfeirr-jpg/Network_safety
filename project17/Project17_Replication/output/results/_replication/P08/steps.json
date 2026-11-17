@@ -1,0 +1,42 @@
+{
+  "id": "P08",
+  "name": "libpng",
+  "version": "1.6.50",
+  "started_utc": "2026-11-08T02:59:12Z",
+  "S1": {
+    "archive": "/home/yhong/comp5355/downloads/libpng-1.6.50.tar.gz",
+    "sha256": "fba1c8e793f01b493f3f47a926862edbfab487ae4240e02ec67131f1e2bf067f",
+    "expected_sha256": "fba1c8e793f01b493f3f47a926862edbfab487ae4240e02ec67131f1e2bf067f",
+    "matches_original": true
+  },
+  "S2": {
+    "source_dir": "/home/yhong/comp5355/sources/libpng-1.6.50",
+    "regular_files": 599
+  },
+  "S3": {
+    "build_dir": "/home/yhong/comp5355/build/libpng-1.6.50",
+    "compile_actions": 15,
+    "cppcheck_adapted_actions": 15
+  },
+  "S5": {
+    "FF": {
+      "run_id": "PRE-P08-FF-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:59:29Z",
+      "ended_utc": "2026-11-08T02:59:29Z"
+    },
+    "CP": {
+      "run_id": "PRE-P08-CP-002",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:59:29Z",
+      "ended_utc": "2026-11-08T03:02:38Z"
+    },
+    "CC": {
+      "run_id": "PRE-P08-CC-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T03:02:38Z",
+      "ended_utc": "2026-11-08T03:04:40Z"
+    }
+  },
+  "ended_utc": "2026-11-08T03:04:40Z"
+}

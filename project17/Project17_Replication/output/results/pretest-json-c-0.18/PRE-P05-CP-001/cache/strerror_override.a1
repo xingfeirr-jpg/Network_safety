@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="13394042236283308798">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/strerror_override.h" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_inttypes.h" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object.h" line="30" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/strerror_override.h" line="18" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="E2BIG"/>
+    <functioncall functionName="EACCES"/>
+    <functioncall functionName="EAGAIN"/>
+    <functioncall functionName="EBADF"/>
+    <functioncall functionName="EBUSY"/>
+    <functioncall functionName="ECHILD"/>
+    <functioncall functionName="EDEADLK"/>
+    <functioncall functionName="EDOM"/>
+    <functioncall functionName="EEXIST"/>
+    <functioncall functionName="EFAULT"/>
+    <functioncall functionName="EFBIG"/>
+    <functioncall functionName="EINTR"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="EIO"/>
+    <functioncall functionName="EISDIR"/>
+    <functioncall functionName="EMFILE"/>
+    <functioncall functionName="EMLINK"/>
+    <functioncall functionName="ENFILE"/>
+    <functioncall functionName="ENODEV"/>
+    <functioncall functionName="ENOENT"/>
+    <functioncall functionName="ENOMEM"/>
+    <functioncall functionName="ENOSPC"/>
+    <functioncall functionName="ENOTDIR"/>
+    <functioncall functionName="ENOTTY"/>
+    <functioncall functionName="ENXIO"/>
+    <functioncall functionName="EPERM"/>
+    <functioncall functionName="EPIPE"/>
+    <functioncall functionName="ERANGE"/>
+    <functioncall functionName="EROFS"/>
+    <functioncall functionName="ESPIPE"/>
+    <functioncall functionName="ESRCH"/>
+    <functioncall functionName="EXDEV"/>
+    <functioncall functionName="getenv"/>
+    <functioncall functionName="json_c_shallow_copy_default"/>
+    <functioncall functionName="json_object_free_userdata"/>
+    <functioncall functionName="json_object_userdata_to_json_string"/>
+    <functioncall functionName="strerror"/>
+  </FileInfo>
+</analyzerinfo>

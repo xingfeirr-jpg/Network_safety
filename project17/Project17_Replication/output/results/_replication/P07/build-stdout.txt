@@ -1,0 +1,4 @@
+[1/4] Building C object CMakeFiles/expat.dir/lib/xmlparse.c.o
+[2/4] Building C object CMakeFiles/expat.dir/lib/xmlrole.c.o
+[3/4] Building C object CMakeFiles/expat.dir/lib/xmltok.c.o
+[4/4] Linking C static library libexpat.a

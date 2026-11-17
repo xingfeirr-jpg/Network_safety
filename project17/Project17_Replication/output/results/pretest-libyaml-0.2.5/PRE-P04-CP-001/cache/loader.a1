@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="6530027514425408158">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="9" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1432:1" call-funcname="yaml_parser_parse" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="99" col="31" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1432:1" call-funcname="yaml_parser_parse" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="108" col="27" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:56:1" call-funcname="yaml_parser_load_document" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="118" col="35" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:53:1" call-funcname="yaml_parser_load_nodes" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="203" col="32" call-argexpr="&amp;ctx" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1432:1" call-funcname="yaml_parser_parse" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="222" col="31" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:59:1" call-funcname="yaml_parser_load_alias" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="226" col="44" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:63:1" call-funcname="yaml_parser_load_scalar" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="229" col="45" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:67:1" call-funcname="yaml_parser_load_sequence" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="232" col="47" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:75:1" call-funcname="yaml_parser_load_sequence_end" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="235" col="51" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:71:1" call-funcname="yaml_parser_load_mapping" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="239" col="46" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:79:1" call-funcname="yaml_parser_load_mapping_end" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="242" col="50" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:22:1" call-funcname="yaml_free" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="385" col="18" call-argexpr="tag" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="384" col="9" info="Assuming that condition &apos;!tag&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:22:1" call-funcname="yaml_free" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="430" col="18" call-argexpr="tag" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="429" col="9" info="Assuming that condition &apos;!tag&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:22:1" call-funcname="yaml_free" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="498" col="18" call-argexpr="tag" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="497" col="9" info="Assuming that condition &apos;!tag&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1432:1" call-funcname="yaml_parser_parse" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="222" col="14" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:53:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:59:1" call-funcname="yaml_parser_load_alias" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="226" col="22" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:53:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:299:1" call-funcname="yaml_parser_load_node_add" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="361" col="20" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:59:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:299:1" call-funcname="yaml_parser_load_node_add" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="401" col="12" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:63:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:299:1" call-funcname="yaml_parser_load_node_add" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="448" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:67:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:299:1" call-funcname="yaml_parser_load_node_add" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="516" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:71:1" my-argnr="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:16:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="142" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:20:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="158" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:38:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="174" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:56:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="192" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:56:1" my-argnr="2" my-argname="event" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="189" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:299:1" my-argnr="2" my-argname="ctx" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="305" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:59:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="357" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:59:1" my-argnr="2" my-argname="event" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="354" col="27" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:63:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="382" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:63:1" my-argnr="2" my-argname="event" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="380" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:67:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="427" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:67:1" my-argnr="2" my-argname="event" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="425" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:75:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="470" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:75:1" my-argnr="2" my-argname="event" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="471" col="55" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:75:1" my-argnr="3" my-argname="ctx" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="467" col="15" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:71:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="495" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:71:1" my-argnr="2" my-argname="event" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="493" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:79:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="538" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:79:1" my-argnr="2" my-argname="event" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="539" col="55" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:79:1" my-argnr="3" my-argname="ctx" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="535" col="15" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:38:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="174" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:56:1" my-argnr="2" my-argname="event" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="189" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:299:1" my-argnr="2" my-argname="ctx" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="305" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:59:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="357" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:59:1" my-argnr="2" my-argname="event" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="354" col="27" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:63:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="382" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:63:1" my-argnr="2" my-argname="event" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="380" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:67:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="427" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:67:1" my-argnr="2" my-argname="event" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="425" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:75:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="470" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:75:1" my-argnr="2" my-argname="event" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="471" col="55" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:75:1" my-argnr="3" my-argname="ctx" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="467" col="15" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:71:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="495" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:71:1" my-argnr="2" my-argname="event" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="493" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:79:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="538" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:79:1" my-argnr="2" my-argname="event" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="539" col="55" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c:79:1" my-argnr="3" my-argname="ctx" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c" line="535" col="15" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="yaml_parser_load" lineNumber="87"/>
+    <functiondecl functionName="yaml_parser_set_composer_error" lineNumber="139"/>
+    <functiondecl functionName="yaml_parser_set_composer_error_context" lineNumber="154"/>
+    <functiondecl functionName="yaml_parser_delete_aliases" lineNumber="172"/>
+    <functiondecl functionName="yaml_parser_load_document" lineNumber="185"/>
+    <functiondecl functionName="yaml_parser_load_nodes" lineNumber="217"/>
+    <functiondecl functionName="yaml_parser_register_anchor" lineNumber="264"/>
+    <functiondecl functionName="yaml_parser_load_node_add" lineNumber="299"/>
+    <functiondecl functionName="yaml_parser_load_alias" lineNumber="351"/>
+    <functiondecl functionName="yaml_parser_load_scalar" lineNumber="375"/>
+    <functiondecl functionName="yaml_parser_load_sequence" lineNumber="415"/>
+    <functiondecl functionName="yaml_parser_load_sequence_end" lineNumber="462"/>
+    <functiondecl functionName="yaml_parser_load_mapping" lineNumber="483"/>
+    <functiondecl functionName="yaml_parser_load_mapping_end" lineNumber="530"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="YAML_COMPOSER_ERROR"/>
+    <functioncall functionName="YAML_MAPPING_NODE"/>
+    <functioncall functionName="YAML_MEMORY_ERROR"/>
+    <functioncall functionName="YAML_SCALAR_NODE"/>
+    <functioncall functionName="YAML_SEQUENCE_NODE"/>
+    <functioncall functionName="anchor"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="error"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="strcmp"/>
+    <functioncall functionName="yaml_document_delete"/>
+    <functioncall functionName="yaml_free"/>
+    <functioncall functionName="yaml_malloc"/>
+    <functioncall functionName="yaml_parser_delete_aliases"/>
+    <functioncall functionName="yaml_parser_load_alias"/>
+    <functioncall functionName="yaml_parser_load_document"/>
+    <functioncall functionName="yaml_parser_load_mapping"/>
+    <functioncall functionName="yaml_parser_load_mapping_end"/>
+    <functioncall functionName="yaml_parser_load_node_add"/>
+    <functioncall functionName="yaml_parser_load_nodes"/>
+    <functioncall functionName="yaml_parser_load_scalar"/>
+    <functioncall functionName="yaml_parser_load_sequence"/>
+    <functioncall functionName="yaml_parser_load_sequence_end"/>
+    <functioncall functionName="yaml_parser_parse"/>
+    <functioncall functionName="yaml_parser_register_anchor"/>
+    <functioncall functionName="yaml_parser_set_composer_error"/>
+    <functioncall functionName="yaml_parser_set_composer_error_context"/>
+    <functioncall functionName="yaml_stack_extend"/>
+    <functioncall functionName="yaml_strdup"/>
+  </FileInfo>
+</analyzerinfo>

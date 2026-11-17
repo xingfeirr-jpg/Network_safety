@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="11071511971624302403">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="73" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="126" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="37" column="0"/>
+        </error>
+        <error id="checkLevelNormal" severity="information" msg="Limiting ValueFlow analysis in function &apos;encode_one_block&apos; since it is too complex. Please specify --check-level=exhaustive to perform full analysis." verbose="Limiting ValueFlow analysis in function &apos;encode_one_block&apos; since it is too complex. Please specify --check-level=exhaustive to perform full analysis." file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="564" column="1"/>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;codesize[i]&gt;32&apos; is redundant or the array &apos;bits[33]&apos; is accessed at index 33, which is out of bounds." verbose="Either the condition &apos;codesize[i]&gt;32&apos; is redundant or the array &apos;bits[33]&apos; is accessed at index 33, which is out of bounds." cwe="788" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="1046" column="9" info="Array index out of bounds"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="1043" column="21" info="Assuming that condition &apos;codesize[i]&gt;32&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="584" column="16" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="636" column="5" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="637" column="5" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="638" column="5" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="639" column="5" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="640" column="5" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="641" column="5" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="642" column="5" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="643" column="5" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="644" column="5" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="645" column="5" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="646" column="5" info="Shift"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.h:39:14" call-funcname="jpeg_make_c_derived_tbl" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="195" col="30" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:667:1" call-funcname="emit_restart" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="711" col="24" call-argexpr="&amp;state" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:562:1" call-funcname="encode_one_block" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="735" col="28" call-argexpr="&amp;state" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:480:1" call-funcname="flush_bits" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="784" col="18" call-argexpr="&amp;state" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:480:1" call-funcname="flush_bits" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="671" col="8" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:667:1" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <array-index>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:562:1" my-argnr="2" my-argname="block" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="577" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:811:1" my-argnr="2" my-argname="block" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="821" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.h:43:14" my-argnr="3" my-argname="freq" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="967" col="3" value="2048"/>
+    </array-index>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:143:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="145" col="48" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.h:39:14" my-argnr="4" my-argname="pdtbl" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="255" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:333:1" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="336" col="39" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:480:1" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="497" col="31" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:562:1" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="569" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:562:1" my-argnr="2" my-argname="block" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="577" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:562:1" my-argnr="4" my-argname="dctbl" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="600" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:127:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="694" col="48" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:128:17" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="771" col="48" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:811:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="817" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:811:1" my-argnr="2" my-argname="block" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="821" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:811:1" my-argnr="4" my-argname="dc_counts" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="838" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:130:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="887" col="48" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.h:43:14" my-argnr="2" my-argname="htbl" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="1090" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.h:43:14" my-argnr="3" my-argname="freq" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="967" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:132:17" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="1114" col="48" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:500:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="1163" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:143:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="145" col="48" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.h:39:14" my-argnr="4" my-argname="pdtbl" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="255" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:333:1" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="336" col="39" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:480:1" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="497" col="31" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:562:1" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="569" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:562:1" my-argnr="2" my-argname="block" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="577" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:562:1" my-argnr="4" my-argname="dctbl" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="600" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:127:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="694" col="48" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:128:17" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="771" col="48" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:811:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="817" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:811:1" my-argnr="2" my-argname="block" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="821" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:811:1" my-argnr="4" my-argname="dc_counts" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="838" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:130:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="887" col="48" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:132:17" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="1114" col="48" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:500:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c" line="1163" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GETENV_S" lineNumber="79"/>
+    <functiondecl functionName="PUTENV_S" lineNumber="132"/>
+    <functiondecl functionName="start_pass_huff" lineNumber="143"/>
+    <functiondecl functionName="dump_buffer" lineNumber="333"/>
+    <functiondecl functionName="flush_bits" lineNumber="480"/>
+    <functiondecl functionName="encode_one_block" lineNumber="562"/>
+    <functiondecl functionName="emit_restart" lineNumber="667"/>
+    <functiondecl functionName="encode_mcu_huff" lineNumber="692"/>
+    <functiondecl functionName="finish_pass_huff" lineNumber="769"/>
+    <functiondecl functionName="htest_one_block" lineNumber="811"/>
+    <functiondecl functionName="encode_mcu_gather" lineNumber="885"/>
+    <functiondecl functionName="finish_pass_gather" lineNumber="1112"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ERANGE"/>
+    <functioncall functionName="JERR_BAD_DCT_COEF"/>
+    <functioncall functionName="JERR_BAD_HUFF_TABLE"/>
+    <functioncall functionName="JERR_CANT_SUSPEND"/>
+    <functioncall functionName="JERR_HUFF_CLEN_OVERFLOW"/>
+    <functioncall functionName="JERR_NO_HUFF_TABLE"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="dump_buffer"/>
+    <functioncall functionName="emit_restart"/>
+    <functioncall functionName="encode_mcu_gather"/>
+    <functioncall functionName="encode_mcu_huff"/>
+    <functioncall functionName="encode_one_block"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="finish_pass_gather"/>
+    <functioncall functionName="finish_pass_huff"/>
+    <functioncall functionName="flush_bits"/>
+    <functioncall functionName="getenv"/>
+    <functioncall functionName="htest_one_block"/>
+    <functioncall functionName="jpeg_alloc_huff_table"/>
+    <functioncall functionName="jpeg_gen_optimal_table"/>
+    <functioncall functionName="jpeg_make_c_derived_tbl"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="setenv"/>
+    <functioncall functionName="start_pass_huff"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+  </FileInfo>
+</analyzerinfo>

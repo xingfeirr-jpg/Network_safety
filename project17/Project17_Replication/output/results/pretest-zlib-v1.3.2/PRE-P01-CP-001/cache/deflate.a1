@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="6374842927261394938">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="268" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="434" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="460" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="466" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="494" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/zutil.h" line="26" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/zutil.h" line="28" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/zutil.h" line="29" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/zutil.h" line="50" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1907:21" call-funcname="deflateInit2_" call-argnr="6" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="381" col="25" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1848:23" call-funcname="crc32" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="669" col="29" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1848:23" call-funcname="crc32" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="669" col="29" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1848:23" call-funcname="crc32" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="669" col="29" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1809:23" call-funcname="adler32" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="671" col="16" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1809:23" call-funcname="adler32" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="671" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1809:23" call-funcname="adler32" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="671" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1809:23" call-funcname="adler32" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1055" col="30" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1809:23" call-funcname="adler32" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1055" col="30" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1809:23" call-funcname="adler32" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1055" col="30" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1848:23" call-funcname="crc32" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1068" col="28" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1848:23" call-funcname="crc32" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1068" col="28" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1848:23" call-funcname="crc32" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1068" col="28" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1848:23" call-funcname="crc32" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1198" col="32" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1848:23" call-funcname="crc32" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1198" col="32" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1848:23" call-funcname="crc32" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1198" col="32" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h:317:20" call-funcname="_tr_stored_block" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1242" col="33" call-argexpr="(char*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h:317:20" call-funcname="_tr_stored_block" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1242" col="33" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h:317:20" call-funcname="_tr_stored_block" call-argnr="4" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1242" col="33" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h:317:20" call-funcname="_tr_stored_block" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1713" col="25" call-argexpr="(char*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h:317:20" call-funcname="_tr_stored_block" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1713" col="25" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h:317:20" call-funcname="_tr_stored_block" call-argnr="4" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1839" col="25" call-argexpr="last" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1790" col="9" info="Assuming that condition &apos;last&apos; is not redundant"/>
+  <path file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1797" col="32" info="Assuming condition is false"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h:313:20" call-funcname="_tr_flush_block" call-argnr="4" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1938" col="21" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h:313:20" call-funcname="_tr_flush_block" call-argnr="4" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1946" col="9" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h:313:20" call-funcname="_tr_flush_block" call-argnr="4" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="2038" col="25" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h:313:20" call-funcname="_tr_flush_block" call-argnr="4" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="2048" col="17" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h:313:20" call-funcname="_tr_flush_block" call-argnr="4" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="2074" col="9" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h:313:20" call-funcname="_tr_flush_block" call-argnr="4" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="2139" col="21" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h:313:20" call-funcname="_tr_flush_block" call-argnr="4" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="2147" col="9" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h:313:20" call-funcname="_tr_flush_block" call-argnr="4" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="2175" col="21" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h:313:20" call-funcname="_tr_flush_block" call-argnr="4" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="2183" col="9" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1907:21" call-funcname="deflateInit2_" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="381" col="12" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1903:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1907:21" call-funcname="deflateInit2_" call-argnr="7" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="381" col="12" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1903:21" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:538:11" call-funcname="deflateStateCheck" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="567" col="9" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:618:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:538:11" call-funcname="deflateStateCheck" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="630" col="9" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:662:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:538:11" call-funcname="deflateStateCheck" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="647" col="9" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:2040:32" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:2040:32" call-funcname="deflateResetKeep" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="707" col="11" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:702:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:538:11" call-funcname="deflateStateCheck" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="715" col="9" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:833:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:538:11" call-funcname="deflateStateCheck" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="723" col="9" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:786:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:538:11" call-funcname="deflateStateCheck" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="738" col="9" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:804:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:538:11" call-funcname="deflateStateCheck" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="749" col="9" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:816:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:538:11" call-funcname="deflateStateCheck" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="778" col="9" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:713:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:538:11" call-funcname="deflateStateCheck" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="823" col="9" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:751:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:538:11" call-funcname="deflateStateCheck" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="876" col="9" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:769:26" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:769:26" call-funcname="deflateBound_z" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="930" col="22" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:768:23" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:538:11" call-funcname="deflateStateCheck" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="985" col="9" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:254:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:538:11" call-funcname="deflateStateCheck" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1296" col="9" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:367:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:538:11" call-funcname="deflateStateCheck" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1327" col="9" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:684:21" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:187:12" my-argnr="1" my-argname="s" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="190" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:219:16" my-argnr="1" my-argname="strm" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="220" col="20" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:252:12" my-argnr="1" my-argname="s" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="255" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:682:12" my-argnr="1" my-argname="s" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="683" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:939:12" my-argnr="1" my-argname="s" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="940" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:950:12" my-argnr="1" my-argname="strm" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="952" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:1389:12" my-argnr="1" my-argname="s" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1390" col="29" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:73:19" my-argnr="1" my-argname="s" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1673" col="37" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:187:12" my-argnr="1" my-argname="s" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="190" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:219:16" my-argnr="1" my-argname="strm" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="220" col="20" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:252:12" my-argnr="1" my-argname="s" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="255" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:950:12" my-argnr="1" my-argname="strm" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="952" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:1389:12" my-argnr="1" my-argname="s" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1390" col="29" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c:73:19" my-argnr="1" my-argname="s" file="/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c" line="1673" col="37" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="slide_hash" lineNumber="187"/>
+    <functiondecl functionName="read_buf" lineNumber="219"/>
+    <functiondecl functionName="fill_window" lineNumber="252"/>
+    <functiondecl functionName="deflateStateCheck" lineNumber="538"/>
+    <functiondecl functionName="lm_init" lineNumber="682"/>
+    <functiondecl functionName="putShortMSB" lineNumber="939"/>
+    <functiondecl functionName="flush_pending" lineNumber="950"/>
+    <functiondecl functionName="longest_match" lineNumber="1389"/>
+    <functiondecl functionName="deflate_stored" lineNumber="1668"/>
+    <functiondecl functionName="deflate_fast" lineNumber="1857"/>
+    <functiondecl functionName="deflate_slow" lineNumber="1956"/>
+    <functiondecl functionName="deflate_rle" lineNumber="2084"/>
+    <functiondecl functionName="deflate_huff" lineNumber="2155"/>
+    <functioncall functionName="_tr_align"/>
+    <functioncall functionName="_tr_flush_bits"/>
+    <functioncall functionName="_tr_flush_block"/>
+    <functioncall functionName="_tr_init"/>
+    <functioncall functionName="_tr_stored_block"/>
+    <functioncall functionName="adler32"/>
+    <functioncall functionName="block_done"/>
+    <functioncall functionName="block_state"/>
+    <functioncall functionName="crc32"/>
+    <functioncall functionName="crc32_z"/>
+    <functioncall functionName="deflate"/>
+    <functioncall functionName="deflateBound_z"/>
+    <functioncall functionName="deflateEnd"/>
+    <functioncall functionName="deflateInit2_"/>
+    <functioncall functionName="deflateReset"/>
+    <functioncall functionName="deflateResetKeep"/>
+    <functioncall functionName="deflateStateCheck"/>
+    <functioncall functionName="deflate_fast"/>
+    <functioncall functionName="deflate_huff"/>
+    <functioncall functionName="deflate_rle"/>
+    <functioncall functionName="deflate_slow"/>
+    <functioncall functionName="deflate_stored"/>
+    <functioncall functionName="fill_window"/>
+    <functioncall functionName="finish_done"/>
+    <functioncall functionName="finish_started"/>
+    <functioncall functionName="flush_pending"/>
+    <functioncall functionName="lm_init"/>
+    <functioncall functionName="longest_match"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="need_more"/>
+    <functioncall functionName="off_t"/>
+    <functioncall functionName="putShortMSB"/>
+    <functioncall functionName="read_buf"/>
+    <functioncall functionName="slide_hash"/>
+    <functioncall functionName="zcalloc"/>
+    <functioncall functionName="zcfree"/>
+  </FileInfo>
+</analyzerinfo>

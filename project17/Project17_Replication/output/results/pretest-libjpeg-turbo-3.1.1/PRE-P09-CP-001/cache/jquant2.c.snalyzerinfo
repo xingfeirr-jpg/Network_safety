@@ -1,0 +1,20 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+prescan_quantize call:[short]
+find_biggest_color_pop
+find_biggest_volume
+update_box global:[c_scales,rgb_blue,rgb_green,rgb_red] call:[short]
+median_cut global:[c_scales,rgb_blue,rgb_green,rgb_red] call:[find_biggest_color_pop,find_biggest_volume,update_box] noreturn:[find_biggest_color_pop,find_biggest_volume]
+compute_color call:[short]
+select_colors call:[compute_color,median_cut,sizeof,update_box] noreturn:[compute_color]
+find_nearby_colors global:[c_scales,rgb_blue,rgb_green,rgb_red]
+find_best_colors global:[c_scales,rgb_blue,rgb_green,rgb_red]
+fill_inverse_cmap call:[find_best_colors,find_nearby_colors,short]
+pass2_no_dither call:[fill_inverse_cmap,short] noreturn:[fill_inverse_cmap]
+pass2_fs_dither call:[fill_inverse_cmap,short] noreturn:[fill_inverse_cmap]
+init_error_limit call:[sizeof]
+finish_pass1 call:[select_colors]
+finish_pass2
+start_pass_2_quant call:[init_error_limit,jzero_far,short,sizeof] noreturn:[init_error_limit,jzero_far]
+new_color_map_2_quant
+j12init_2pass_quantizer call:[init_error_limit,short,sizeof] noreturn:[init_error_limit]

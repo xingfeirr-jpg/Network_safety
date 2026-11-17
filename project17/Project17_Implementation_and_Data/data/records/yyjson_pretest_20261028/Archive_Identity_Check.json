@@ -1,0 +1,67 @@
+{
+  "project": "P06 yyjson",
+  "purpose": "functional pretest source preparation;archive acceptance only",
+  "date": "2026-10-28",
+  "status": "accepted",
+  "attemptId": "DL-P06-001",
+  "version": "0.12.0",
+  "tag": "0.12.0",
+  "commit": "8b4a38dc994a110abaec8a400615567bd996105f",
+  "archiveFile": "archive/yyjson-0.12.0.tar.gz",
+  "archiveBytes": 1621181,
+  "archiveSHA256": "94e9c90f8f12d8329f2c0756782d21e5c278729023cd2c5fe47e323a35947ed6",
+  "hashMeaning": "local archive identity,not publisher checksum",
+  "actualSourceUrl": "https://codeload.github.com/ibireme/yyjson/tar.gz/8b4a38dc994a110abaec8a400615567bd996105f",
+  "httpStatus": 200,
+  "curlExitCode": 0,
+  "tarExitCode": 0,
+  "identityExitCode": 0,
+  "rawFiles": 18,
+  "allRawCopiesMatchLinuxSHA256": true,
+  "checksumCopiesByteIdentical": true,
+  "regularFiles": 903,
+  "directoriesExcludingRoot": 25,
+  "archiveMembersIncludingRoot": 929,
+  "symlinks": 0,
+  "regularFileContentBytes": 7104562,
+  "all903ContentsMatchOfficialGitBlobs": true,
+  "userIdentityJSONEqualsAssistantReinspection": true,
+  "archiveRoot": "yyjson-8b4a38dc994a110abaec8a400615567bd996105f",
+  "versionEvidence": [
+    "CMakeLists.txt project VERSION0.12.0",
+    "src/yyjson.h YYJSON_VERSION_STRING0.12.0 / HEX0x000C00"
+  ],
+  "license": "MIT",
+  "plannedLibraryC": [
+    "src/yyjson.c"
+  ],
+  "plannedLibraryHeaders": [
+    "src/yyjson.h"
+  ],
+  "libraryRangeMeaning": "logical fixed CMake scope only;actual compilation database and coverage not yet available",
+  "timing": {
+    "startUTC": "2026-10-28T02:27:46Z",
+    "downloadEndUTC": "2026-10-28T02:27:51Z",
+    "completedUTC": "2026-10-28T02:27:51Z",
+    "meaning": "download timestamps;not tool analysis cost"
+  },
+  "cpWarning": {
+    "visibleInScreenshot": true,
+    "text": "cp: warning: behavior of -n is non-portable and may change in future; use --update=none instead",
+    "meaning": "compatibility warning,not evidence of failed download;checksum copies match and later cmp/completion exist",
+    "separateCpExitCode": "not recorded",
+    "overallShellExitCode": "not separately recorded",
+    "action": "preserve executed download script and logs;no redownload"
+  },
+  "sourceExtraction": "not executed in Ubuntu;local QA copies are separate",
+  "build": "not executed",
+  "toolAnalysis": "not run",
+  "candidateCount": null,
+  "figure": "FIG-P06-01",
+  "figurePath": "../screenshots/P06/FIG-P06-01_archive.png",
+  "rawManifest": "Download_Raw_File_Manifest.json",
+  "completeFileInventory": "../yyjson_setup/Archive_Acceptance_20261028/Archive_Reinspection.json",
+  "readOnlyLinuxEvidence": "../yyjson_setup/Archive_Acceptance_20261028/Read_Only_Linux_Evidence.json",
+  "additionalAICheck": "../yyjson_setup/Archive_Acceptance_20261028/Additional_AI_Check.md",
+  "nextStep": "user executes SRC-P06-001 extraction/source verification;return output before build"
+}

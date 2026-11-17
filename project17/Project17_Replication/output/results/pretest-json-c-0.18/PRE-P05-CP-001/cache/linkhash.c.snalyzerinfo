@@ -1,0 +1,28 @@
+lh_table_head
+lh_get_hash call:[hash_fn] noreturn:[hash_fn]
+lh_entry_k call:[return] noreturn:[return]
+lh_entry_k_is_constant
+lh_entry_v call:[return] noreturn:[return]
+lh_entry_set_val
+lh_entry_next
+lh_entry_prev
+json_global_set_string_hash global:[char_hash_fn]
+lh_ptr_hash call:[return]
+lh_ptr_equal call:[return] noreturn:[return]
+hashlittle
+lh_perllike_str_hash
+lh_char_hash call:[hashlittle,json_c_get_random_seed,strlen] noreturn:[hashlittle]
+lh_char_equal call:[return,strcmp] noreturn:[return]
+lh_table_new call:[assert,calloc,free,sizeof]
+lh_kchar_table_new global:[char_hash_fn] call:[lh_table_new] noreturn:[lh_table_new]
+lh_kptr_table_new call:[lh_table_new] noreturn:[lh_table_new]
+lh_table_resize call:[free,lh_get_hash,lh_table_free,lh_table_insert_w_hash,lh_table_new]
+lh_table_free call:[free,free_fn] noreturn:[free,free_fn]
+lh_table_insert_w_hash call:[lh_table_resize]
+lh_table_insert call:[lh_get_hash,lh_table_insert_w_hash] noreturn:[lh_table_insert_w_hash]
+lh_table_lookup_entry_w_hash call:[equal_fn]
+lh_table_lookup_entry call:[lh_get_hash,lh_table_lookup_entry_w_hash] noreturn:[lh_table_lookup_entry_w_hash]
+lh_table_lookup_ex call:[lh_entry_v,lh_table_lookup_entry] noreturn:[lh_entry_v]
+lh_table_delete_entry call:[free_fn] noreturn:[free_fn]
+lh_table_delete call:[lh_table_delete_entry,lh_table_lookup_entry] noreturn:[lh_table_delete_entry]
+lh_table_length

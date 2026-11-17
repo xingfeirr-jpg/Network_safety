@@ -1,0 +1,5 @@
+png_write_data call:[png_error] noreturn:[png_error]
+png_default_write_data call:[fwrite,png_error] noreturn:[png_error]
+png_flush
+png_default_flush call:[fflush] noreturn:[fflush]
+png_set_write_fn call:[png_warning] noreturn:[png_warning]

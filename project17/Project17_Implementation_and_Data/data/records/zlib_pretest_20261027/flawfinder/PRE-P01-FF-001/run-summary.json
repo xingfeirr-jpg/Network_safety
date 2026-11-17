@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-27",
+  "runId": "PRE-P01-FF-001",
+  "purpose": "functional pretest; not formal comparison",
+  "status": "input and run evidence accepted",
+  "tool": "Flawfinder 2.0.20",
+  "arguments": [
+    "--minlevel=1",
+    "--neverignore",
+    "--columns",
+    "--context"
+  ],
+  "inputFileCount": 26,
+  "sourceCFiles": 15,
+  "projectHeaders": 11,
+  "exitCode": 0,
+  "stderrBytes": 0,
+  "displayedHits": 49,
+  "displayedRiskLevels": {
+    "4": 20,
+    "2": 20,
+    "1": 9
+  },
+  "ruleCounts": {
+    "vsnprintf": 4,
+    "snprintf": 3,
+    "_snprintf": 1,
+    "strcpy": 2,
+    "strcat": 2,
+    "vsprintf": 2,
+    "sprintf": 4,
+    "fprintf": 5,
+    "fopen": 4,
+    "char": 7,
+    "open": 1,
+    "memcpy": 5,
+    "strlen": 8,
+    "read": 1
+  },
+  "riskZeroFiltered": 55,
+  "cumulativeIncludingRiskZero": 104,
+  "linesAnalyzed": 23114,
+  "physicalSLOC": 17685,
+  "toolReportedApproxSeconds": 0.14,
+  "measuredWallSeconds": 0.18,
+  "measuredUserSeconds": 0.16,
+  "measuredSystemSeconds": 0.02,
+  "gnuTimeMaxRssKiB": 21988,
+  "reviewStatus": "49 candidates unreviewed; no vulnerability or false-positive judgment made",
+  "coverageEvidence": "26 Examining entries match frozen input list in order; input manifests byte-identical; exit0/stderr empty",
+  "rawFileCount": 9,
+  "formalThirtyCells": "all not run"
+}

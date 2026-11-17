@@ -1,0 +1,7 @@
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1076:10: warning: Null pointer passed to 2nd parameter expecting 'nonnull' [core.NonNullParamChecker]
+ 1076 |          memcpy(textp->lang, text_ptr[i].lang, lang_len);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c:1079:10: warning: Null pointer passed to 2nd parameter expecting 'nonnull' [core.NonNullParamChecker]
+ 1079 |          memcpy(textp->lang_key, text_ptr[i].lang_key, lang_key_len);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.

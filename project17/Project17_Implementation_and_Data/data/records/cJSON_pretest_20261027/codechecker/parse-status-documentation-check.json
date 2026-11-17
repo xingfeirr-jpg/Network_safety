@@ -1,0 +1,25 @@
+{
+  "checkedOn": "2026-10-27",
+  "runId": "PRE-P03-CC-001",
+  "stage": "parse status check",
+  "checks": {
+    "backgroundUnchanged": true,
+    "formalAcceptanceAndResultsUnchanged": true,
+    "tenSamplesUnchanged": true,
+    "thirtyFormalCellsUnrun": true,
+    "courseRequirementsUnchanged": true,
+    "subsequentPreparationPlanUnchanged": true,
+    "flawfinderCppcheckRecordsUnchanged": true,
+    "originalAnalysisSummaryUnchanged": true,
+    "fourteenOutputCopiesHashVerified": true,
+    "statusCommandZeroAndEmptyStderr": true,
+    "statusInterpretationSeparated": true,
+    "fourMissingBackendsAreUnselected": true,
+    "normalDiagnosticParseNotRun": true,
+    "zeroSavedDiagnosticsRetained": true,
+    "localLinksResolve": true,
+    "noReplacementCharacters": true,
+    "noStaleStatusNextStep": true
+  },
+  "diagnosticParseStatus": "not run"
+}

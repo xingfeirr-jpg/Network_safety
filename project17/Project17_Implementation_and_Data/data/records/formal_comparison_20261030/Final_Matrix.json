@@ -1,0 +1,4900 @@
+{
+  "schema": "project17-final-comparison-v1",
+  "date": "2026-10-30",
+  "meaning": "已批准旧检测结果的回顾性采用；27旧成本加3新完整分析成本。PRE原目的和原件保持。",
+  "summary": {
+    "projects": 10,
+    "accepted_result_cells": 30,
+    "accepted_external_cost_cells": 30,
+    "reused_external_cost_cells": 27,
+    "new_complete_analysis_runs": 3,
+    "new_complete_analysis_runs_are_not_30": true,
+    "candidate_entries": 725,
+    "original_risk_false_positive": 648,
+    "supported_diagnoses": 62,
+    "undetermined": 15,
+    "unreviewed": 0,
+    "cppcheck_information_items": 213,
+    "codechecker_saved_diagnostics": 73,
+    "codechecker_displayed_reports": 71,
+    "globally_deduplicated_bug_count": null,
+    "global_cross_tool_overlap_rate": null
+  },
+  "sources": [
+    {
+      "path": "review_evidence/formal_comparison_20261030/Reuse_Assessment.json",
+      "bytes": 214133,
+      "sha256": "9ca654f60b117deb727f5b9e4413fc484509fc773944869d2f6865e4d640b5b2"
+    },
+    {
+      "path": "review_evidence/formal_comparison_20261030/Frozen_Configuration.json",
+      "bytes": 599766,
+      "sha256": "d786ec99929ff30371ba3b7c707773130ff663950aea18613f342ade4c828645"
+    },
+    {
+      "path": "review_evidence/formal_comparison_20261030/Before_Integrity.json",
+      "bytes": 229810,
+      "sha256": "5fc0cd58581501acc3986abe2b4afa43ce15d605029fcd6d7603a5ca63be4cf0"
+    },
+    {
+      "path": "review_evidence/ten_project_synthesis_20261029/Candidate_Review_Combined.csv",
+      "bytes": 936120,
+      "sha256": "eac4c8604e8879d63b5c539e3294342cdeb0e110da4e46555a5f019613c8d109"
+    },
+    {
+      "path": "review_evidence/ten_project_synthesis_20261029/Project_Summary.csv",
+      "bytes": 2255,
+      "sha256": "0ec3c3e53a3867311e7cc574635817181ee1c5a9bc7d44b9a279c384cd1d8ccd"
+    },
+    {
+      "path": "review_evidence/ten_project_synthesis_20261029/Tool_Summary.csv",
+      "bytes": 501,
+      "sha256": "96c5464d886fe00e95c86c371a955e7b04a5badbdf245547b9013d94c979b577"
+    },
+    {
+      "path": "review_evidence/cJSON_cost_supplement_20261030/Flawfinder_Acceptance.json",
+      "bytes": 26455,
+      "sha256": "2604256a2a7655e9c970297ee29b3346cbf0bf2f74987497b298d46229680690"
+    },
+    {
+      "path": "review_evidence/cJSON_cost_supplement_20261030/Cppcheck_Acceptance.json",
+      "bytes": 76140,
+      "sha256": "7d6bf51b2fa8b757ca21c920f5c098a401994a271f08422db31f664ddb1b3f9a"
+    },
+    {
+      "path": "review_evidence/cJSON_cost_supplement_20261030/CodeChecker_Acceptance.json",
+      "bytes": 14727,
+      "sha256": "d55c093352b302d73cc5aee152d81180e5c6a76e46c5f10cdcb1e578e7cbf4c8"
+    }
+  ],
+  "counting_boundary": "FF显示hit／CP非information XML元素／CC保存plist诊断；不是独立bug或安全漏洞数。",
+  "review_boundary": "同一助手体系AI全量源码核查；限定用户阅读另列；不称独立人工复核。",
+  "timing_boundary": "完整工具分析进程；准备、版本/哈希检查、独立parse和AI核查在外；每格单次自然页缓存。",
+  "coverage_boundary": "成功文本或编译动作仅说明实际分析范围，不是程序路径覆盖率；旧FF失败/跳过未单独记录的null保持。",
+  "overlap_boundary": "尚未完成全局独立问题的统一跨工具匹配；不按行号、规则、hash或未分组占位值推算重合/独有漏洞数。",
+  "rows": [
+    {
+      "cell": 1,
+      "project_id": "P01",
+      "project": "zlib",
+      "version": "1.3.2",
+      "tool": "Flawfinder",
+      "tool_key": "FF",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P01-FF-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P01-FF-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "文本文件",
+        "intended_count": 26,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/run-summary.json",
+        "scope_field": "inputFileCount"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 26,
+        "failed": null,
+        "skipped": null,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 49,
+        "candidate_unit": "minlevel=1显示命中条目",
+        "saved_source_diagnostics": null,
+        "displayed_reports": 49,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": 55,
+        "flawfinder_cumulative_0plus": 104,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/zlib_setup/Flawfinder_Profile.json",
+        "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "--minlevel=1",
+          "--neverignore",
+          "--columns",
+          "--context"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/run-meta.tsv",
+        "started_utc": "2026-10-27T06:34:17Z",
+        "ended_utc": "2026-10-27T06:34:17Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/command.txt",
+        "effective_tool_order_in_project": 1,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 0.18,
+        "user_seconds": 0.16,
+        "system_seconds": 0.02,
+        "max_rss_kib": 21988,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:00.18",
+        "source_file": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "c1a2209ba4b797633132994186a309bcfc9927a478c12db01b9159ea29803311",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 49,
+        "original_risk_false_positive": 46,
+        "supported_diagnoses": 1,
+        "undetermined": 2,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/run-summary.json",
+          "bytes": 1367,
+          "sha256": "93214091d2ed499d822953a0c8130dfe7920660df0e4e2aee2d1a2aeebbf24d5"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/zlib_Pretest_Record.md",
+          "bytes": 6070,
+          "sha256": "110cb61c4d8d235633d46c77b97c8720201c9148888f49ed05ddbb1776bbfcf4"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/zlib_review/Review_Summary.json",
+          "bytes": 1389,
+          "sha256": "f6287d373b36b375cb81b370a378047e1935e192a3e7d1b64094d1fa685b17e5"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/zlib_review/Review_Ledger.csv",
+          "bytes": 257786,
+          "sha256": "a9a53bc1da07e135e43d18df6f10bb0d3d465eb0a725f89596c9f40493f2aaff"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/zlib_setup/Flawfinder_Profile.json",
+          "bytes": 5252,
+          "sha256": "e677f98b51d7a5d58d918df74355f60b7a4dd21c33d90c3fbd85bd33c92150ab"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/command.txt",
+          "bytes": 1397,
+          "sha256": "71f120a86545a2349972827f6743bf7ac4e92d249c728ab20e5e864be9ae28ce"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/run-meta.tsv",
+          "bytes": 445,
+          "sha256": "723eb52336f16d06c5cd75615850ac562ff76e596145bb529e28aa6f95404a1e"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "e6560832c10249709fb6cd7a1edc02df47e58c0ec260ccca68254c6f7f38aa54"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/zlib_pretest_20261027/flawfinder/PRE-P01-FF-001/time.txt",
+          "bytes": 2111,
+          "sha256": "c1a2209ba4b797633132994186a309bcfc9927a478c12db01b9159ea29803311"
+        }
+      ],
+      "limits": [
+        "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+        "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "范围为词法Examining文件；失败／跳过null原样保留，不推成0或语义路径覆盖。"
+      ],
+      "baseline_assessment_row": 1
+    },
+    {
+      "cell": 2,
+      "project_id": "P01",
+      "project": "zlib",
+      "version": "1.3.2",
+      "tool": "Cppcheck",
+      "tool_key": "CP",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P01-CP-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P01-CP-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 15,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/run-summary.json",
+        "scope_field": "intendedTranslationUnits"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 15,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 0,
+        "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+        "saved_source_diagnostics": 0,
+        "displayed_reports": null,
+        "raw_xml_elements": 18,
+        "information_items": 18,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/zlib_setup/Cppcheck_Profile.json",
+        "analysis_standard": "C11",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "builtin内部解析器",
+          "normal",
+          "unix64",
+          "-j 1",
+          "XML2",
+          "warning/performance/portability/information及默认error",
+          "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/run-meta.tsv",
+        "started_utc": "2026-10-27T07:22:22Z",
+        "ended_utc": "2026-10-27T07:22:25Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/command.txt",
+        "effective_tool_order_in_project": 2,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 3.58,
+        "user_seconds": 3.63,
+        "system_seconds": 0.03,
+        "max_rss_kib": 30680,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:03.58",
+        "source_file": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "74dfa98f214cdcde355781cea59c07d594ced1670165d169532d764dcc4686a9",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 0,
+        "original_risk_false_positive": 0,
+        "supported_diagnoses": 0,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/run-summary.json",
+          "bytes": 2877,
+          "sha256": "f2133a8ddc1e3fb697dd5de2aa3af83b6f72ec6ae98963b97429b5be33b329a9"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/zlib_Pretest_Record.md",
+          "bytes": 6070,
+          "sha256": "110cb61c4d8d235633d46c77b97c8720201c9148888f49ed05ddbb1776bbfcf4"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/zlib_review/Review_Summary.json",
+          "bytes": 1389,
+          "sha256": "f6287d373b36b375cb81b370a378047e1935e192a3e7d1b64094d1fa685b17e5"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/zlib_review/Review_Ledger.csv",
+          "bytes": 257786,
+          "sha256": "a9a53bc1da07e135e43d18df6f10bb0d3d465eb0a725f89596c9f40493f2aaff"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/zlib_setup/Cppcheck_Profile.json",
+          "bytes": 7922,
+          "sha256": "6a87f635941ac46f7548389f3a89f011967eb94963d18ef419a1b0cb7dde0d13"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/command.txt",
+          "bytes": 408,
+          "sha256": "c2b7371bdd558b7d3936736fbb19938d2c82affad14d4eb43109d2491e4172a0"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/run-meta.tsv",
+          "bytes": 445,
+          "sha256": "7e7ffbf18a459fae87b74dfc904e9ca9836355a94d6ab97f077238fcb87399ce"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "9990e66c36a952a38aa4f05b45b110176d475810d2ac3817c9f512c5b9ad7790"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/zlib_pretest_20261027/cppcheck/PRE-P01-CP-001/time.txt",
+          "bytes": 1120,
+          "sha256": "74dfa98f214cdcde355781cea59c07d594ced1670165d169532d764dcc4686a9"
+        }
+      ],
+      "limits": [
+        "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+        "Cppcheck C11模型与实际GNU C17构建有差异。",
+        "normal在inflate值流分析受限。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。"
+      ],
+      "baseline_assessment_row": 2
+    },
+    {
+      "cell": 3,
+      "project_id": "P01",
+      "project": "zlib",
+      "version": "1.3.2",
+      "tool": "CodeChecker/clangsa",
+      "tool_key": "CC",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P01-CC-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P01-CC-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 15,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/run-summary.json",
+        "scope_field": "inputActions"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 15,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 3,
+        "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+        "saved_source_diagnostics": 3,
+        "displayed_reports": 3,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/zlib_setup/CodeChecker_Profile.json",
+        "analysis_standard": "GNU C17",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "仅clangsa",
+          "-j 1",
+          "每动作120秒",
+          "compile-uniqueing none",
+          "CTU默认关闭",
+          "Z3 refutation off",
+          "capture-analysis-output请求；实际捕获范围见各验收记录",
+          "新reports；保留默认parse过滤"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/run-meta.tsv",
+        "started_utc": "2026-10-27T07:48:57Z",
+        "ended_utc": "2026-10-27T07:49:31Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/command.txt",
+        "effective_tool_order_in_project": 3,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 34.07,
+        "user_seconds": 30.01,
+        "system_seconds": 1.81,
+        "max_rss_kib": 184252,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:34.07",
+        "source_file": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "0f045972f01d1558d23ca244a47e4ff3c7ce83a2186cd71ab983eaf681881c5d",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 3,
+        "original_risk_false_positive": 2,
+        "supported_diagnoses": 1,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/run-summary.json",
+          "bytes": 5781,
+          "sha256": "7a8dc541fd2b9251d5940b6063d84a73a7b12bce8c1a1ab142324bca98633c1e"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/zlib_Pretest_Record.md",
+          "bytes": 6070,
+          "sha256": "110cb61c4d8d235633d46c77b97c8720201c9148888f49ed05ddbb1776bbfcf4"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/zlib_review/Review_Summary.json",
+          "bytes": 1389,
+          "sha256": "f6287d373b36b375cb81b370a378047e1935e192a3e7d1b64094d1fa685b17e5"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/zlib_review/Review_Ledger.csv",
+          "bytes": 257786,
+          "sha256": "a9a53bc1da07e135e43d18df6f10bb0d3d465eb0a725f89596c9f40493f2aaff"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/zlib_setup/CodeChecker_Profile.json",
+          "bytes": 14620,
+          "sha256": "f6163a0d59da5900592232ee1afdcfee344d29578727b5c8d15328646790d363"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/command.txt",
+          "bytes": 298,
+          "sha256": "8939664511dc317e2bdc203973bf965b294d541e372cfcf76ef58b3e390eeb9c"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/run-meta.tsv",
+          "bytes": 445,
+          "sha256": "60397d3c5a1e7d86dda1778418d87bcbb205e1836baba74ecd1a2566cb104a97"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "532512cf7ae2f659934d4f225df354dcd6b79435a32ee53260fda5b92dda7eda"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/zlib_pretest_20261027/codechecker/PRE-P01-CC-001/time.txt",
+          "bytes": 1020,
+          "sha256": "0f045972f01d1558d23ca244a47e4ff3c7ce83a2186cd71ab983eaf681881c5d"
+        }
+      ],
+      "limits": [
+        "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "完整backend argv未捕获，CodeChecker处理前诊断总数未知；CTU off不代表CPP原生全程序关闭。"
+      ],
+      "baseline_assessment_row": 3
+    },
+    {
+      "cell": 4,
+      "project_id": "P02",
+      "project": "LZ4",
+      "version": "1.10.0",
+      "tool": "Flawfinder",
+      "tool_key": "FF",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P02-FF-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P02-FF-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "文本文件",
+        "intended_count": 11,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/run-summary.json",
+        "scope_field": "inputFiles"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 11,
+        "failed": null,
+        "skipped": null,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 42,
+        "candidate_unit": "minlevel=1显示命中条目",
+        "saved_source_diagnostics": null,
+        "displayed_reports": 42,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": 4,
+        "flawfinder_cumulative_0plus": 46,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/lz4_setup/Flawfinder_Profile.json",
+        "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "--minlevel=1",
+          "--neverignore",
+          "--columns",
+          "--context"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/run-meta.tsv",
+        "started_utc": "2026-10-27T10:43:21Z",
+        "ended_utc": "2026-10-27T10:43:21Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/command.txt",
+        "effective_tool_order_in_project": 3,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 0.1,
+        "user_seconds": 0.09,
+        "system_seconds": 0.01,
+        "max_rss_kib": 20472,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:00.10",
+        "source_file": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "61e3b56c577bb70386c15524a18036ceb5b8839adeb8fecdca337e2f87cbfb1f",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 42,
+        "original_risk_false_positive": 42,
+        "supported_diagnoses": 0,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/run-summary.json",
+          "bytes": 894,
+          "sha256": "6c80ed4e0ff8cd921085b3ae82b025f7f3dba79d903d2b4a15db7f3d9f2022c0"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/LZ4_Pretest_Record.md",
+          "bytes": 2700,
+          "sha256": "b82ebb6c2f9c113e24162747cbc41c44921b0d677fa335fcacbd6b21e8e7fb73"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/lz4_review/Review_Summary.json",
+          "bytes": 1945,
+          "sha256": "14e8a5ae81e0666dbb65384e62691ffffd7e8e67079976b037abc53dd1d83df4"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/lz4_review/Review_Ledger.csv",
+          "bytes": 155856,
+          "sha256": "88dcd416d13836899c57d36e4f07108a188d162cd03bd12f7be71a275c03f353"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/lz4_setup/Flawfinder_Profile.json",
+          "bytes": 3268,
+          "sha256": "56265a694be5f88ec446046962ee9c8babdfd1a926e09930198cc7fc04bbdca5"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/command.txt",
+          "bytes": 691,
+          "sha256": "62043d118e228857da89fe0e0922ada242184c4e056b6c52faa28bc90e7cd2e9"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/run-meta.tsv",
+          "bytes": 445,
+          "sha256": "a3426980dc728d7e0c1fcdf8e8c0ffa821cab44557c49dd1ac48a98eef45efad"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "f82c7f6d7c338ebb11d652fc85174596712ed51196defbc657b3baf0078011b9"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/lz4_pretest_20261027/flawfinder/PRE-P02-FF-001/time.txt",
+          "bytes": 1404,
+          "sha256": "61e3b56c577bb70386c15524a18036ceb5b8839adeb8fecdca337e2f87cbfb1f"
+        }
+      ],
+      "limits": [
+        "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+        "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "范围为词法Examining文件；失败／跳过null原样保留，不推成0或语义路径覆盖。"
+      ],
+      "baseline_assessment_row": 4
+    },
+    {
+      "cell": 5,
+      "project_id": "P02",
+      "project": "LZ4",
+      "version": "1.10.0",
+      "tool": "Cppcheck",
+      "tool_key": "CP",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P02-CP-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P02-CP-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 5,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/run-summary.json",
+        "scope_field": "intendedTranslationUnits"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 5,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 1,
+        "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+        "saved_source_diagnostics": 1,
+        "displayed_reports": null,
+        "raw_xml_elements": 25,
+        "information_items": 24,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/lz4_setup/Cppcheck_Profile.json",
+        "analysis_standard": "C11",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "builtin内部解析器",
+          "normal",
+          "unix64",
+          "-j 1",
+          "XML2",
+          "warning/performance/portability/information及默认error",
+          "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/run-meta.tsv",
+        "started_utc": "2026-10-27T10:16:19Z",
+        "ended_utc": "2026-10-27T10:16:23Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/command.txt",
+        "effective_tool_order_in_project": 1,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 3.26,
+        "user_seconds": 3.25,
+        "system_seconds": 0.02,
+        "max_rss_kib": 25216,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:03.26",
+        "source_file": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "0dfd444b1e670fbe400983b63d5c61c45223637a1ccf759a72bb3466ec562b52",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 1,
+        "original_risk_false_positive": 0,
+        "supported_diagnoses": 1,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/run-summary.json",
+          "bytes": 1430,
+          "sha256": "a24cb2b67d62cdfa822fce45581e1cae8b0b10f06dfb319b116932d3bf859a32"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/LZ4_Pretest_Record.md",
+          "bytes": 2700,
+          "sha256": "b82ebb6c2f9c113e24162747cbc41c44921b0d677fa335fcacbd6b21e8e7fb73"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/lz4_review/Review_Summary.json",
+          "bytes": 1945,
+          "sha256": "14e8a5ae81e0666dbb65384e62691ffffd7e8e67079976b037abc53dd1d83df4"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/lz4_review/Review_Ledger.csv",
+          "bytes": 155856,
+          "sha256": "88dcd416d13836899c57d36e4f07108a188d162cd03bd12f7be71a275c03f353"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/lz4_setup/Cppcheck_Profile.json",
+          "bytes": 5667,
+          "sha256": "8a435281572eca2a01b9511d555b335ea65e1fdcd0a5d5b46e7712445ee1f982"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/command.txt",
+          "bytes": 408,
+          "sha256": "dbf83fea51e8349fc325ff85abc5d1580d7f064173e44569cb80539deeff03be"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/run-meta.tsv",
+          "bytes": 445,
+          "sha256": "46cb137d7936a0bb4422cfc611760a3bf0e3ccd7ce58215ff57a43760b00ef51"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "640d359bac52a99afa87ec6485d7f2facc3c66d17401378f66244f61a6dc40fc"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/lz4_pretest_20261027/cppcheck/PRE-P02-CP-001/time.txt",
+          "bytes": 1120,
+          "sha256": "0dfd444b1e670fbe400983b63d5c61c45223637a1ccf759a72bb3466ec562b52"
+        }
+      ],
+      "limits": [
+        "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+        "Cppcheck C11模型与实际GNU C17构建有差异。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。"
+      ],
+      "baseline_assessment_row": 5
+    },
+    {
+      "cell": 6,
+      "project_id": "P02",
+      "project": "LZ4",
+      "version": "1.10.0",
+      "tool": "CodeChecker/clangsa",
+      "tool_key": "CC",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P02-CC-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P02-CC-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 5,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/run-summary.json",
+        "scope_field": "inputActions"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 5,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 8,
+        "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+        "saved_source_diagnostics": 8,
+        "displayed_reports": 8,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/lz4_setup/CodeChecker_Profile.json",
+        "analysis_standard": "GNU C17",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "仅clangsa",
+          "-j 1",
+          "每动作120秒",
+          "compile-uniqueing none",
+          "CTU默认关闭",
+          "Z3 refutation off",
+          "capture-analysis-output请求；实际捕获范围见各验收记录",
+          "新reports；保留默认parse过滤"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/run-meta.tsv",
+        "started_utc": "2026-10-27T10:28:41Z",
+        "ended_utc": "2026-10-27T10:29:02Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/command.txt",
+        "effective_tool_order_in_project": 2,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 21.73,
+        "user_seconds": 18.73,
+        "system_seconds": 0.87,
+        "max_rss_kib": 200624,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:21.73",
+        "source_file": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "6fe16d936dea1d507823dd00046fba283a0dfc4a04ec899026ad787cda040c29",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 8,
+        "original_risk_false_positive": 2,
+        "supported_diagnoses": 2,
+        "undetermined": 4,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/run-summary.json",
+          "bytes": 2300,
+          "sha256": "b0dfaf06f2547e71aaa491a44e475b02271fb32190c530d3a177f0f0ab98880a"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/LZ4_Pretest_Record.md",
+          "bytes": 2700,
+          "sha256": "b82ebb6c2f9c113e24162747cbc41c44921b0d677fa335fcacbd6b21e8e7fb73"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/lz4_review/Review_Summary.json",
+          "bytes": 1945,
+          "sha256": "14e8a5ae81e0666dbb65384e62691ffffd7e8e67079976b037abc53dd1d83df4"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/lz4_review/Review_Ledger.csv",
+          "bytes": 155856,
+          "sha256": "88dcd416d13836899c57d36e4f07108a188d162cd03bd12f7be71a275c03f353"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/lz4_setup/CodeChecker_Profile.json",
+          "bytes": 12220,
+          "sha256": "6a0325c7025f546bac0ca382de8d935b3ecb9febe79b9cb5e42b73d972df5784"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/command.txt",
+          "bytes": 298,
+          "sha256": "c0366e0424dcccd9eff18e52ec949e3e7830aa48c9b51f534de61a70c6564589"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/run-meta.tsv",
+          "bytes": 445,
+          "sha256": "2aceb1c1c29bc66bd80e9f15e0628bfe961389b30152e23298bcdea4df1391fe"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "a29d5768b1c22fbf77b10010d0b36567290a1748d5db276c19d456c0c0b067f8"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/lz4_pretest_20261027/codechecker/PRE-P02-CC-001/time.txt",
+          "bytes": 1020,
+          "sha256": "6fe16d936dea1d507823dd00046fba283a0dfc4a04ec899026ad787cda040c29"
+        }
+      ],
+      "limits": [
+        "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "完整backend argv未捕获，CodeChecker处理前诊断总数未知；CTU off不代表CPP原生全程序关闭。"
+      ],
+      "baseline_assessment_row": 6
+    },
+    {
+      "cell": 7,
+      "project_id": "P03",
+      "project": "cJSON",
+      "version": "1.7.19",
+      "tool": "Flawfinder",
+      "tool_key": "FF",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P03-FF-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "FORM-P03-FF-001",
+      "cost_source_kind": "新完整分析及旧输出映射",
+      "input": {
+        "unit": "文本文件",
+        "intended_count": 2,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/cJSON_pretest_20261026/flawfinder/run-summary.json",
+        "scope_field": "inputs#count"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 2,
+        "failed": null,
+        "skipped": null,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 26,
+        "candidate_unit": "minlevel=1显示命中条目",
+        "saved_source_diagnostics": null,
+        "displayed_reports": 26,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": 1,
+        "flawfinder_cumulative_0plus": 27,
+        "cumulative_derived_from_display_and_level0": true,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": null,
+        "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+        "actual_build_standard": "C89",
+        "options": [
+          "--minlevel=1",
+          "--neverignore",
+          "--columns",
+          "--context"
+        ],
+        "cache_policy": "旧预试按原件；不得追认统一政策"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": null,
+        "started_utc": null,
+        "ended_utc": null,
+        "locale": null,
+        "measurement_schema": null,
+        "application_cache_policy": null,
+        "os_page_cache": null,
+        "actual_run_environment_snapshot": null,
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": null,
+        "effective_tool_order_in_project": null,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 0.05,
+        "user_seconds": 0.04,
+        "system_seconds": 0.0,
+        "max_rss_kib": 20492,
+        "timed_invocation_exit_code": 0,
+        "source_file": "review_evidence/cJSON_cost_supplement_20261030/runs/FORM-P03-FF-001/time.txt",
+        "source_sha256": "2d718a9f5b3607253e9badc1ceb8aa7631965add46cb6077af6cad53fbad196a",
+        "boundary": "完整一次Flawfinder进程：启动、读取两文件、扫描、写原始输出",
+        "sample_count": 1,
+        "os_page_cache": "natural_not_cleared",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不是全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": {
+        "path": "review_evidence/cJSON_cost_supplement_20261030/Flawfinder_Acceptance.json",
+        "bytes": 26455,
+        "sha256": "2604256a2a7655e9c970297ee29b3346cbf0bf2f74987497b298d46229680690"
+      },
+      "new_cost_coverage": {
+        "successful_actions": null,
+        "failed_actions": null,
+        "skipped_actions": null,
+        "actual_text_inputs": [
+          "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h"
+        ]
+      },
+      "judgments": {
+        "reviewed_candidate_entries": 26,
+        "original_risk_false_positive": 26,
+        "supported_diagnoses": 0,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/cJSON_pretest_20261026/flawfinder/run-summary.json",
+          "bytes": 1385,
+          "sha256": "ba067dbd58828d0d2721bbfbc286df54df718dee4ffd11dd7f7fc27af70dd354"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/cJSON_Pretest_Record.md",
+          "bytes": 18794,
+          "sha256": "3e3421ceb4dcfe30acbea4924e10e0c790dd1ae787fba7698bc2078524130ff3"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/cJSON_review/Review_Summary.json",
+          "bytes": 1976,
+          "sha256": "0473ce57d09dd26fd86394000f90fe30ad74a81a034a5682058b25cd04d59e8d"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/cJSON_review/Review_Ledger.csv",
+          "bytes": 98559,
+          "sha256": "54e5f277cfc5990752a7b5051dbf0d47130df0343f0adb13393ac8c7ee75adcc"
+        }
+      ],
+      "limits": [
+        "旧预试未采用measurement-v1，外部wall/user/sys/RSS全部null。累计0+由26显示及等级0摘要1直接相加，仅作摘要，不新增候选。",
+        "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+        "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。",
+        "无独立profile／command.txt、完整实际argv文件或measurement-v1动态环境；参数依旧摘要／项目记录。",
+        "范围为词法Examining文件；失败／跳过null原样保留，不推成0或语义路径覆盖。"
+      ],
+      "baseline_assessment_row": 7
+    },
+    {
+      "cell": 8,
+      "project_id": "P03",
+      "project": "cJSON",
+      "version": "1.7.19",
+      "tool": "Cppcheck",
+      "tool_key": "CP",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P03-CP-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "FORM-P03-CP-001",
+      "cost_source_kind": "新完整分析及旧输出映射",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 1,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/cJSON_Pretest_Record.md",
+        "scope_field": "实际编译数据库／当前范围章节；记录的动作数，不从文本输入推算"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 1,
+        "failed": null,
+        "skipped": null,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 16,
+        "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+        "saved_source_diagnostics": 16,
+        "displayed_reports": null,
+        "raw_xml_elements": 26,
+        "information_items": 10,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": null,
+        "analysis_standard": "C89",
+        "actual_build_standard": "C89",
+        "options": [
+          "builtin内部解析器",
+          "normal",
+          "unix64",
+          "-j 1",
+          "XML2",
+          "warning/performance/portability/information及默认error",
+          "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+        ],
+        "cache_policy": "旧预试按原件；不得追认统一政策"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": null,
+        "started_utc": null,
+        "ended_utc": null,
+        "locale": null,
+        "measurement_schema": null,
+        "application_cache_policy": null,
+        "os_page_cache": null,
+        "actual_run_environment_snapshot": null,
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": null,
+        "effective_tool_order_in_project": null,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 0.29,
+        "user_seconds": 0.27,
+        "system_seconds": 0.01,
+        "max_rss_kib": 21908,
+        "timed_invocation_exit_code": 0,
+        "source_file": "review_evidence/cJSON_cost_supplement_20261030/runs/FORM-P03-CP-001/time.txt",
+        "source_sha256": "fc04df1c47c357082b8452f8f15075f8b148ccfa44ef41a062519c1b6fae1dec",
+        "boundary": "完整一次Cppcheck进程：启动、导入原编译数据库、分析、写XML和检查器报告",
+        "sample_count": 1,
+        "os_page_cache": "natural_not_cleared",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不是全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": {
+        "path": "review_evidence/cJSON_cost_supplement_20261030/Cppcheck_Acceptance.json",
+        "bytes": 76140,
+        "sha256": "7d6bf51b2fa8b757ca21c920f5c098a401994a271f08422db31f664ddb1b3f9a"
+      },
+      "new_cost_coverage": {
+        "intended_database_actions": 1,
+        "actual_actions": 1,
+        "successful_actions": 1,
+        "failed_actions": 0,
+        "skipped_actions": 0,
+        "source": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+        "observed_checking_sources": [
+          "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+        ],
+        "observed_cache_mappings": [
+          {
+            "cache_slot": "cJSON.a1",
+            "source_file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+          }
+        ],
+        "cache_slots_exist_nonempty": true,
+        "checker_report_no_critical_errors": true,
+        "basis": "原1动作数据库、实际Checking源码、1项非空缓存映射、无critical检查器报告和合法完整XML共同支持；不单凭退出0或候选数判断。",
+        "meaning": "本配置实际动作范围验收，不等于穷尽所有代码或路径。"
+      },
+      "judgments": {
+        "reviewed_candidate_entries": 16,
+        "original_risk_false_positive": 1,
+        "supported_diagnoses": 15,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/cJSON_pretest_20261026/cppcheck/run-summary.json",
+          "bytes": 2525,
+          "sha256": "d20980bd15806bce4b9c010330cf5faf161f6de1cd2945e84f4ee69397182617"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/cJSON_Pretest_Record.md",
+          "bytes": 18794,
+          "sha256": "3e3421ceb4dcfe30acbea4924e10e0c790dd1ae787fba7698bc2078524130ff3"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/cJSON_review/Review_Summary.json",
+          "bytes": 1976,
+          "sha256": "0473ce57d09dd26fd86394000f90fe30ad74a81a034a5682058b25cd04d59e8d"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/cJSON_review/Review_Ledger.csv",
+          "bytes": 98559,
+          "sha256": "54e5f277cfc5990752a7b5051dbf0d47130df0343f0adb13393ac8c7ee75adcc"
+        }
+      ],
+      "limits": [
+        "旧预试未采用measurement-v1，外部成本全部null；1动作范围以保存的真实DB及progress/checkers/cache交叉证明，ctunullpointer标识不证明跨文件覆盖。",
+        "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+        "1成功动作依据真实DB数组长度1、progress唯一Checking cJSON.c与checkers无critical；未独立量化失败／跳过留null。",
+        "无独立profile／command.txt、完整实际argv文件或measurement-v1动态环境；参数依旧摘要／项目记录。"
+      ],
+      "baseline_assessment_row": 8
+    },
+    {
+      "cell": 9,
+      "project_id": "P03",
+      "project": "cJSON",
+      "version": "1.7.19",
+      "tool": "CodeChecker/clangsa",
+      "tool_key": "CC",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P03-CC-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "FORM-P03-CC-001",
+      "cost_source_kind": "新完整分析及旧输出映射",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 1,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/cJSON_pretest_20261027/codechecker/run-summary.json",
+        "scope_field": "inputActionCount"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 1,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 0,
+        "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+        "saved_source_diagnostics": 0,
+        "displayed_reports": 0,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": null,
+        "analysis_standard": "C89",
+        "actual_build_standard": "C89",
+        "options": [
+          "仅clangsa",
+          "-j 1",
+          "每动作120秒",
+          "compile-uniqueing none",
+          "CTU默认关闭",
+          "Z3 refutation off",
+          "capture-analysis-output请求；实际捕获范围见各验收记录",
+          "新reports；保留默认parse过滤"
+        ],
+        "cache_policy": "旧预试按原件；不得追认统一政策"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": null,
+        "started_utc": null,
+        "ended_utc": null,
+        "locale": null,
+        "measurement_schema": null,
+        "application_cache_policy": null,
+        "os_page_cache": null,
+        "actual_run_environment_snapshot": null,
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": null,
+        "effective_tool_order_in_project": null,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 7.6,
+        "user_seconds": 6.14,
+        "system_seconds": 0.63,
+        "max_rss_kib": 180344,
+        "timed_invocation_exit_code": 0,
+        "source_file": "review_evidence/cJSON_cost_supplement_20261030/runs/FORM-P03-CC-001/time.txt",
+        "source_sha256": "fa6e79b61f38e07f5d576e78e2f6e5183914dc47bd19d97b461f0a1cfffb17cc",
+        "boundary": "完整analyze；前置、环境、checkers查询、parse及复制在计时外",
+        "sample_count": 1,
+        "os_page_cache": "natural_not_cleared",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不是全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": {
+        "path": "review_evidence/cJSON_cost_supplement_20261030/CodeChecker_Acceptance.json",
+        "bytes": 14727,
+        "sha256": "d55c093352b302d73cc5aee152d81180e5c6a76e46c5f10cdcb1e578e7cbf4c8"
+      },
+      "new_cost_coverage": {
+        "successful_actions": 1,
+        "failed_actions": 0,
+        "skipped_actions": 0,
+        "actual_text_inputs": null
+      },
+      "judgments": {
+        "reviewed_candidate_entries": 0,
+        "original_risk_false_positive": 0,
+        "supported_diagnoses": 0,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/cJSON_pretest_20261027/codechecker/run-summary.json",
+          "bytes": 5877,
+          "sha256": "da39beebcc7cb410fcca91f919733ec4278c4d7b419f79e72a06f90d45ac6869"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/cJSON_Pretest_Record.md",
+          "bytes": 18794,
+          "sha256": "3e3421ceb4dcfe30acbea4924e10e0c790dd1ae787fba7698bc2078524130ff3"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/cJSON_review/Review_Summary.json",
+          "bytes": 1976,
+          "sha256": "0473ce57d09dd26fd86394000f90fe30ad74a81a034a5682058b25cd04d59e8d"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/cJSON_review/Review_Ledger.csv",
+          "bytes": 98559,
+          "sha256": "54e5f277cfc5990752a7b5051dbf0d47130df0343f0adb13393ac8c7ee75adcc"
+        }
+      ],
+      "limits": [
+        "旧预试只有内部5.94秒，外部成本全部null；实际导入C89，compiler_info默认GNU17不覆盖显式C89。",
+        "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。",
+        "无独立profile／command.txt或measurement-v1动态环境；完整analyze调用保存在旧摘要／metadata，逐动作backend argv未捕获。",
+        "完整backend argv未捕获，CodeChecker处理前诊断总数未知；CTU off不代表CPP原生全程序关闭。"
+      ],
+      "baseline_assessment_row": 9
+    },
+    {
+      "cell": 10,
+      "project_id": "P04",
+      "project": "libyaml",
+      "version": "0.2.5",
+      "tool": "Flawfinder",
+      "tool_key": "FF",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P04-FF-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P04-FF-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "文本文件",
+        "intended_count": 11,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/run-summary.json",
+        "scope_field": "inputFiles"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 11,
+        "failed": null,
+        "skipped": null,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 40,
+        "candidate_unit": "minlevel=1显示命中条目",
+        "saved_source_diagnostics": null,
+        "displayed_reports": 40,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": 1,
+        "flawfinder_cumulative_0plus": 41,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/libyaml_setup/Flawfinder_Profile.json",
+        "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "--minlevel=1",
+          "--neverignore",
+          "--columns",
+          "--context"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/run-meta.tsv",
+        "started_utc": "2026-10-27T12:45:20Z",
+        "ended_utc": "2026-10-27T12:45:20Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/command.txt",
+        "effective_tool_order_in_project": 1,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 0.1,
+        "user_seconds": 0.09,
+        "system_seconds": 0.0,
+        "max_rss_kib": 20620,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:00.10",
+        "source_file": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "362b978c36d9ca5b9c1f50b421b433fe81480bc352ca00b6db3b4e490ebadbca",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 40,
+        "original_risk_false_positive": 38,
+        "supported_diagnoses": 0,
+        "undetermined": 2,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/run-summary.json",
+          "bytes": 990,
+          "sha256": "c2db604d8b60d4c74da48cdbba4da3c431c79eb894683a152ce32f8d7aaa6455"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Libyaml_Pretest_Record.md",
+          "bytes": 5573,
+          "sha256": "b72060ed34420c1a4ed33be8d7e356e8ef507f71af676837b6d5d10b20cafc38"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/libyaml_review/Review_Summary.json",
+          "bytes": 2170,
+          "sha256": "d972518bc3098ebf0817dd246dd15df14c5ef867387bfac3b2bc618acb3a41ef"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/libyaml_review/Review_Ledger.csv",
+          "bytes": 159693,
+          "sha256": "97640a5e6b0464f450e3d4b334a6438e6727d5c8a015af1b29b0da15a03a3c9f"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/libyaml_setup/Flawfinder_Profile.json",
+          "bytes": 3356,
+          "sha256": "545c6047e69ae872879a29518eed3e32f7f16b3a611d915dfa37c0e80f685da2"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/command.txt",
+          "bytes": 715,
+          "sha256": "9e7b29ea5aef6d882ff4f21a3083db90228263a9d8384083244a4018f040e8f8"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/run-meta.tsv",
+          "bytes": 447,
+          "sha256": "a6c6ecd1e0ebf72070bb0a906fd3d3f054db645f384df90dc109e9c39ed388e3"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "4c03ef2a623869cfa167cfea69421577fde6965c1d36b4f9d92c843de9e54a02"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/time.txt",
+          "bytes": 1428,
+          "sha256": "362b978c36d9ca5b9c1f50b421b433fe81480bc352ca00b6db3b4e490ebadbca"
+        }
+      ],
+      "limits": [
+        "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+        "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "范围为词法Examining文件；失败／跳过null原样保留，不推成0或语义路径覆盖。"
+      ],
+      "baseline_assessment_row": 10
+    },
+    {
+      "cell": 11,
+      "project_id": "P04",
+      "project": "libyaml",
+      "version": "0.2.5",
+      "tool": "Cppcheck",
+      "tool_key": "CP",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P04-CP-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P04-CP-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 8,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/run-summary.json",
+        "scope_field": "intendedTranslationUnits"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 8,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 0,
+        "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+        "saved_source_diagnostics": 0,
+        "displayed_reports": null,
+        "raw_xml_elements": 7,
+        "information_items": 7,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/libyaml_setup/Cppcheck_Profile.json",
+        "analysis_standard": "C11",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "builtin内部解析器",
+          "normal",
+          "unix64",
+          "-j 1",
+          "XML2",
+          "warning/performance/portability/information及默认error",
+          "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/run-meta.tsv",
+        "started_utc": "2026-10-27T12:55:44Z",
+        "ended_utc": "2026-10-27T12:56:46Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/command.txt",
+        "effective_tool_order_in_project": 2,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 61.81,
+        "user_seconds": 61.61,
+        "system_seconds": 0.05,
+        "max_rss_kib": 35384,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "1:01.81",
+        "source_file": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "c7d3d747d0478122b737b8d5ff1e82d1b2102aa5800b45e8d582391693901a48",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 0,
+        "original_risk_false_positive": 0,
+        "supported_diagnoses": 0,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/run-summary.json",
+          "bytes": 1568,
+          "sha256": "6b8a575803bb491ef3a9ed0be12ebf85cbcbd92cfb11aee305eb2669eecf4af6"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Libyaml_Pretest_Record.md",
+          "bytes": 5573,
+          "sha256": "b72060ed34420c1a4ed33be8d7e356e8ef507f71af676837b6d5d10b20cafc38"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/libyaml_review/Review_Summary.json",
+          "bytes": 2170,
+          "sha256": "d972518bc3098ebf0817dd246dd15df14c5ef867387bfac3b2bc618acb3a41ef"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/libyaml_review/Review_Ledger.csv",
+          "bytes": 159693,
+          "sha256": "97640a5e6b0464f450e3d4b334a6438e6727d5c8a015af1b29b0da15a03a3c9f"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/libyaml_setup/Cppcheck_Profile.json",
+          "bytes": 5900,
+          "sha256": "97c065c88a16deed94ba988926e60431537bccc39e64c2b2dcef675d2458846e"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/command.txt",
+          "bytes": 414,
+          "sha256": "fdf9a23e16d054f0fe80b80517736e4336de3a0946d5c73f61dd09058f6e2ac4"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/run-meta.tsv",
+          "bytes": 447,
+          "sha256": "45bf6d3f3fb6c454526f98eb9dc7cbfbe7296fb22a8303368e5a0aa50c11028c"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "c7339941a574bf81e3ba202c1094a2f9c80a02ac5b6fe2deed98fad2a02ad441"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/libyaml_pretest_20261027/cppcheck/PRE-P04-CP-001/time.txt",
+          "bytes": 1127,
+          "sha256": "c7d3d747d0478122b737b8d5ff1e82d1b2102aa5800b45e8d582391693901a48"
+        }
+      ],
+      "limits": [
+        "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+        "Cppcheck C11模型与实际GNU C17构建有差异。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。"
+      ],
+      "baseline_assessment_row": 11
+    },
+    {
+      "cell": 12,
+      "project_id": "P04",
+      "project": "libyaml",
+      "version": "0.2.5",
+      "tool": "CodeChecker/clangsa",
+      "tool_key": "CC",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P04-CC-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P04-CC-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 8,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/run-summary.json",
+        "scope_field": "inputActions"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 8,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 0,
+        "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+        "saved_source_diagnostics": 0,
+        "displayed_reports": 0,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/libyaml_setup/CodeChecker_Profile.json",
+        "analysis_standard": "GNU C17",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "仅clangsa",
+          "-j 1",
+          "每动作120秒",
+          "compile-uniqueing none",
+          "CTU默认关闭",
+          "Z3 refutation off",
+          "capture-analysis-output请求；实际捕获范围见各验收记录",
+          "新reports；保留默认parse过滤"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/run-meta.tsv",
+        "started_utc": "2026-10-27T13:08:41Z",
+        "ended_utc": "2026-10-27T13:09:09Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/command.txt",
+        "effective_tool_order_in_project": 3,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 28.33,
+        "user_seconds": 24.81,
+        "system_seconds": 1.63,
+        "max_rss_kib": 219420,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:28.33",
+        "source_file": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "38377d1c1fe002d89f0de1d7a84fc7f3b11320996f9cfc211d3a1676cc3da466",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 0,
+        "original_risk_false_positive": 0,
+        "supported_diagnoses": 0,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/run-summary.json",
+          "bytes": 2252,
+          "sha256": "5081ef2ff50e433d7f0e448a324157f2b221448acca207c8ee22cc75a1f7c1d9"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Libyaml_Pretest_Record.md",
+          "bytes": 5573,
+          "sha256": "b72060ed34420c1a4ed33be8d7e356e8ef507f71af676837b6d5d10b20cafc38"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/libyaml_review/Review_Summary.json",
+          "bytes": 2170,
+          "sha256": "d972518bc3098ebf0817dd246dd15df14c5ef867387bfac3b2bc618acb3a41ef"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/libyaml_review/Review_Ledger.csv",
+          "bytes": 159693,
+          "sha256": "97640a5e6b0464f450e3d4b334a6438e6727d5c8a015af1b29b0da15a03a3c9f"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/libyaml_setup/CodeChecker_Profile.json",
+          "bytes": 12320,
+          "sha256": "9302fa93c46957d25e3004171969712ba1b4cd3880f4f9bc52b09df91a346a50"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/command.txt",
+          "bytes": 302,
+          "sha256": "cf62db6905ca4d77e4ee26b67c0bb33b824fc24c14f29c5d9e094664a94380cd"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/run-meta.tsv",
+          "bytes": 447,
+          "sha256": "aab31fa7a2f5b335da8579891e1b363c765abac3496e2168e0fda96c3d8e69c2"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "5760ed7f6421c6044eca647fa9dffe5c3381dcef661d0258d8d01553cabb228e"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/libyaml_pretest_20261027/codechecker/PRE-P04-CC-001/time.txt",
+          "bytes": 1025,
+          "sha256": "38377d1c1fe002d89f0de1d7a84fc7f3b11320996f9cfc211d3a1676cc3da466"
+        }
+      ],
+      "limits": [
+        "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "完整backend argv未捕获，CodeChecker处理前诊断总数未知；CTU off不代表CPP原生全程序关闭。"
+      ],
+      "baseline_assessment_row": 12
+    },
+    {
+      "cell": 13,
+      "project_id": "P05",
+      "project": "json-c",
+      "version": "0.18",
+      "tool": "Flawfinder",
+      "tool_key": "FF",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P05-FF-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P05-FF-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "文本文件",
+        "intended_count": 39,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/json_c_pretest_20261028/Flawfinder_Validation.json",
+        "scope_field": "intendedTextFiles"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 39,
+        "failed": null,
+        "skipped": null,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 59,
+        "candidate_unit": "minlevel=1显示命中条目",
+        "saved_source_diagnostics": null,
+        "displayed_reports": 59,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": 15,
+        "flawfinder_cumulative_0plus": 74,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/json_c_setup/Flawfinder_Profile.json",
+        "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "--minlevel=1",
+          "--neverignore",
+          "--columns",
+          "--context"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/json_c_pretest_20261028/Flawfinder/run-meta.tsv",
+        "started_utc": "2026-10-28T01:04:26Z",
+        "ended_utc": "2026-10-28T01:04:26Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/json_c_pretest_20261028/Flawfinder/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/json_c_pretest_20261028/Flawfinder/command.txt",
+        "effective_tool_order_in_project": 3,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 0.07,
+        "user_seconds": 0.05,
+        "system_seconds": 0.01,
+        "max_rss_kib": 20384,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:00.07",
+        "source_file": "review_evidence/json_c_pretest_20261028/Flawfinder/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "e65544ae923b0f6e714aba844e5fbdd7e128d21fc95d78b8fe60cad9b8b3bbcf",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 59,
+        "original_risk_false_positive": 57,
+        "supported_diagnoses": 0,
+        "undetermined": 2,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/json_c_pretest_20261028/Flawfinder_Validation.json",
+          "bytes": 1718,
+          "sha256": "c1104104913274fc88d6cf1595528137205547a8bb2eb42a9c2ea71fc7b10454"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Json_C_Pretest_Record.md",
+          "bytes": 14133,
+          "sha256": "ecfefaf55d5782051202f61d7318a869b174fa44c4133599106b13a9b69b8800"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/json_c_review/Review_Summary.json",
+          "bytes": 3651,
+          "sha256": "79d96dc103936931259422368a4bb1988825c6d62b13f9793cdb2e809f68057a"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/json_c_review/Review_Ledger.csv",
+          "bytes": 244917,
+          "sha256": "0a699d72a32a30d3d6c706b9d2eb0a673013c2ab00b433926b4792d2ce449e26"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/json_c_setup/Flawfinder_Profile.json",
+          "bytes": 9912,
+          "sha256": "9be497d63eef9fabe733982aab0f93a5a19f95bfadca3d238ffbcfbd23ff8af6"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/json_c_pretest_20261028/Flawfinder/command.txt",
+          "bytes": 2250,
+          "sha256": "b5a5edf6bb85e470f35d254b600b01af5ca93bcb773809828fa938416bf07032"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/json_c_pretest_20261028/Flawfinder/run-meta.tsv",
+          "bytes": 445,
+          "sha256": "36a8021b0d98b460b69f658b03950955c0a421c55b0df85babd4201136cabdc8"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/json_c_pretest_20261028/Flawfinder/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "c55caa4563e77f72be98247b7119b8ea610de22a9fa45bf2c9e37a0c8c0b14a3"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/json_c_pretest_20261028/Flawfinder/time.txt",
+          "bytes": 2963,
+          "sha256": "e65544ae923b0f6e714aba844e5fbdd7e128d21fc95d78b8fe60cad9b8b3bbcf"
+        }
+      ],
+      "limits": [
+        "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+        "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "范围为词法Examining文件；失败／跳过null原样保留，不推成0或语义路径覆盖。"
+      ],
+      "baseline_assessment_row": 13
+    },
+    {
+      "cell": 14,
+      "project_id": "P05",
+      "project": "json-c",
+      "version": "0.18",
+      "tool": "Cppcheck",
+      "tool_key": "CP",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P05-CP-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P05-CP-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 14,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/json_c_pretest_20261028/Cppcheck_Validation.json",
+        "scope_field": "intendedFiles"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 14,
+        "failed": null,
+        "skipped": null,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 1,
+        "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+        "saved_source_diagnostics": 1,
+        "displayed_reports": null,
+        "raw_xml_elements": 80,
+        "information_items": 79,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/json_c_setup/Cppcheck_Profile.json",
+        "analysis_standard": "C11",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "builtin内部解析器",
+          "normal",
+          "unix64",
+          "-j 1",
+          "XML2",
+          "warning/performance/portability/information及默认error",
+          "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/json_c_pretest_20261028/Cppcheck/run-meta.tsv",
+        "started_utc": "2026-10-27T16:00:43Z",
+        "ended_utc": "2026-10-27T16:00:43Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/json_c_pretest_20261028/Cppcheck/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/json_c_pretest_20261028/Cppcheck/command.txt",
+        "effective_tool_order_in_project": 1,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 0.52,
+        "user_seconds": 0.49,
+        "system_seconds": 0.01,
+        "max_rss_kib": 18628,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:00.52",
+        "source_file": "review_evidence/json_c_pretest_20261028/Cppcheck/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "c97175525eb240587579bb7d0688bbb5c7278640dbd0ca4ee56c3dd9e3149b25",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 1,
+        "original_risk_false_positive": 1,
+        "supported_diagnoses": 0,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/json_c_pretest_20261028/Cppcheck_Validation.json",
+          "bytes": 2989,
+          "sha256": "e0d7624468c9317fb93e81a593c2d5768d4792099a7c0b1c3f4d028b9009e5f7"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Json_C_Pretest_Record.md",
+          "bytes": 14133,
+          "sha256": "ecfefaf55d5782051202f61d7318a869b174fa44c4133599106b13a9b69b8800"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/json_c_review/Review_Summary.json",
+          "bytes": 3651,
+          "sha256": "79d96dc103936931259422368a4bb1988825c6d62b13f9793cdb2e809f68057a"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/json_c_review/Review_Ledger.csv",
+          "bytes": 244917,
+          "sha256": "0a699d72a32a30d3d6c706b9d2eb0a673013c2ab00b433926b4792d2ce449e26"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/json_c_setup/Cppcheck_Profile.json",
+          "bytes": 10771,
+          "sha256": "69eeae70d5543cd888f7217ee9b37455573fdde6f359220a597c0870bb4a9e07"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/json_c_pretest_20261028/Cppcheck/command.txt",
+          "bytes": 408,
+          "sha256": "084ed80d817069e713c7b6fe39a7776ade1e4e77f35bd0f195e9c92a80ecacd4"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/json_c_pretest_20261028/Cppcheck/run-meta.tsv",
+          "bytes": 445,
+          "sha256": "2d3c756faaf963a97765668e7611a6ce82526570ef3fd6001f057e28282f698f"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/json_c_pretest_20261028/Cppcheck/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "0f193b389b088929d66562e69d250c00a643b6b2543845a5054aad402f392013"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/json_c_pretest_20261028/Cppcheck/time.txt",
+          "bytes": 1118,
+          "sha256": "c97175525eb240587579bb7d0688bbb5c7278640dbd0ca4ee56c3dd9e3149b25"
+        }
+      ],
+      "limits": [
+        "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+        "Cppcheck C11模型与实际GNU C17构建有差异。",
+        "normal在json_tokener_parse_ex值流分析受限；结构化逐动作failed／skipped未单列，留null；14/14进度、14缓存及无critical记录支持声明范围有效。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。"
+      ],
+      "baseline_assessment_row": 14
+    },
+    {
+      "cell": 15,
+      "project_id": "P05",
+      "project": "json-c",
+      "version": "0.18",
+      "tool": "CodeChecker/clangsa",
+      "tool_key": "CC",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P05-CC-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P05-CC-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 14,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/json_c_pretest_20261028/CodeChecker_Run_Record.json",
+        "scope_field": "actions.intended"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 14,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 0,
+        "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+        "saved_source_diagnostics": 0,
+        "displayed_reports": 0,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/json_c_setup/CodeChecker_Profile.json",
+        "analysis_standard": "GNU C17",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "仅clangsa",
+          "-j 1",
+          "每动作120秒",
+          "compile-uniqueing none",
+          "CTU默认关闭",
+          "Z3 refutation off",
+          "capture-analysis-output请求；实际捕获范围见各验收记录",
+          "新reports；保留默认parse过滤"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/json_c_pretest_20261028/CodeChecker/run-meta.tsv",
+        "started_utc": "2026-10-27T16:21:23Z",
+        "ended_utc": "2026-10-27T16:21:36Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/json_c_pretest_20261028/CodeChecker/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/json_c_pretest_20261028/CodeChecker/command.txt",
+        "effective_tool_order_in_project": 2,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 13.76,
+        "user_seconds": 10.71,
+        "system_seconds": 1.09,
+        "max_rss_kib": 197488,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:13.76",
+        "source_file": "review_evidence/json_c_pretest_20261028/CodeChecker/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "321cdbccaea7cbaa2c37aa379986eccfc8b31e7506cb14d079624a590b6e1ee2",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 0,
+        "original_risk_false_positive": 0,
+        "supported_diagnoses": 0,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/json_c_pretest_20261028/CodeChecker_Run_Record.json",
+          "bytes": 746,
+          "sha256": "301995a5ff0a9fb4103e24847279902e6c1c4c38644795aa9ca8d2d2fe07d0ea"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Json_C_Pretest_Record.md",
+          "bytes": 14133,
+          "sha256": "ecfefaf55d5782051202f61d7318a869b174fa44c4133599106b13a9b69b8800"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/json_c_review/Review_Summary.json",
+          "bytes": 3651,
+          "sha256": "79d96dc103936931259422368a4bb1988825c6d62b13f9793cdb2e809f68057a"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/json_c_review/Review_Ledger.csv",
+          "bytes": 244917,
+          "sha256": "0a699d72a32a30d3d6c706b9d2eb0a673013c2ab00b433926b4792d2ce449e26"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/json_c_setup/CodeChecker_Profile.json",
+          "bytes": 18084,
+          "sha256": "f3f2d286f05c56b3f0762087b803ca74933c7746b797aeae5f2227247359efbd"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/json_c_pretest_20261028/CodeChecker/command.txt",
+          "bytes": 298,
+          "sha256": "1709e49464153b88d48aae758bd84d4f9653a1465187d25690fdb41bf66a3a36"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/json_c_pretest_20261028/CodeChecker/run-meta.tsv",
+          "bytes": 445,
+          "sha256": "217d5c4bdaaafa004cee4ed584fdc8319047de4b094d926b30cdd7a64c15dfcf"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/json_c_pretest_20261028/CodeChecker/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "2fda0cc5afb263383192f92b967b0ec5eda4b861580911be98a92770725d472e"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/json_c_pretest_20261028/CodeChecker/time.txt",
+          "bytes": 1020,
+          "sha256": "321cdbccaea7cbaa2c37aa379986eccfc8b31e7506cb14d079624a590b6e1ee2"
+        }
+      ],
+      "limits": [
+        "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "完整backend argv未捕获，CodeChecker处理前诊断总数未知；CTU off不代表CPP原生全程序关闭。"
+      ],
+      "baseline_assessment_row": 15
+    },
+    {
+      "cell": 16,
+      "project_id": "P06",
+      "project": "yyjson",
+      "version": "0.12.0",
+      "tool": "Flawfinder",
+      "tool_key": "FF",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P06-FF-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P06-FF-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "文本文件",
+        "intended_count": 2,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/yyjson_pretest_20261028/Flawfinder_Run_Record.json",
+        "scope_field": "intendedTextFiles"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 2,
+        "failed": null,
+        "skipped": null,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 111,
+        "candidate_unit": "minlevel=1显示命中条目",
+        "saved_source_diagnostics": null,
+        "displayed_reports": 111,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": 1,
+        "flawfinder_cumulative_0plus": 112,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/yyjson_setup/Flawfinder_Profile.json",
+        "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "--minlevel=1",
+          "--neverignore",
+          "--columns",
+          "--context"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/yyjson_pretest_20261028/Flawfinder/run-meta.tsv",
+        "started_utc": "2026-10-28T03:43:01Z",
+        "ended_utc": "2026-10-28T03:43:01Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/yyjson_pretest_20261028/Flawfinder/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/yyjson_pretest_20261028/Flawfinder/command.txt",
+        "effective_tool_order_in_project": 2,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 0.13,
+        "user_seconds": 0.12,
+        "system_seconds": 0.0,
+        "max_rss_kib": 21480,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:00.13",
+        "source_file": "review_evidence/yyjson_pretest_20261028/Flawfinder/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "80edfff52d71e8ac8c00defaf105fa7b9682ce7360dc874f3d770795646a3c6f",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 111,
+        "original_risk_false_positive": 108,
+        "supported_diagnoses": 2,
+        "undetermined": 1,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/yyjson_pretest_20261028/Flawfinder_Run_Record.json",
+          "bytes": 2708,
+          "sha256": "98b225abb782ee5a3cf3794e8466c7ceb63c9c9286cb874c0b3736c90832bdde"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/YYJSON_Pretest_Record.md",
+          "bytes": 20949,
+          "sha256": "081e9b6a4488ba4d81f1706ee7ed96becbc68d5011f882544e02b0392a96e2f4"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/yyjson_review/Review_Summary.json",
+          "bytes": 2614,
+          "sha256": "726ec3f960285d561a5d4c707ca95b155f55d1f23e4dcaf067f2856f8cea455a"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/yyjson_review/Review_Ledger.csv",
+          "bytes": 780459,
+          "sha256": "8f065e9d929fa050b8556216c7199cfbc3a0cb095a05f940755c138feeb7f60b"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/yyjson_setup/Flawfinder_Profile.json",
+          "bytes": 3844,
+          "sha256": "db14d7855d57b47422528ab9281abc0f49371f6e764cd0798b89b161d309a1fb"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/yyjson_pretest_20261028/Flawfinder/command.txt",
+          "bytes": 202,
+          "sha256": "0e721196a32e995926ed5b6c7c7c0f761bb199c5c5d6558a93230d2b5e841d09"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/yyjson_pretest_20261028/Flawfinder/run-meta.tsv",
+          "bytes": 447,
+          "sha256": "6535b232ae5dc06a4aec27ad0217505341b665c873b8fb7dbe6748918e50af97"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/yyjson_pretest_20261028/Flawfinder/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "74a4c84d3a1964c48f8f5540aba0a43040764aa2865f419f40cb30e68790d6eb"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/yyjson_pretest_20261028/Flawfinder/time.txt",
+          "bytes": 915,
+          "sha256": "80edfff52d71e8ac8c00defaf105fa7b9682ce7360dc874f3d770795646a3c6f"
+        }
+      ],
+      "limits": [
+        "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+        "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "范围为词法Examining文件；失败／跳过null原样保留，不推成0或语义路径覆盖。"
+      ],
+      "baseline_assessment_row": 16
+    },
+    {
+      "cell": 17,
+      "project_id": "P06",
+      "project": "yyjson",
+      "version": "0.12.0",
+      "tool": "Cppcheck",
+      "tool_key": "CP",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P06-CP-002",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P06-CP-002",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 1,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/yyjson_pretest_20261028/Cppcheck_Run_Record.json",
+        "scope_field": "intendedActions"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 1,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 5,
+        "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+        "saved_source_diagnostics": 5,
+        "displayed_reports": null,
+        "raw_xml_elements": 18,
+        "information_items": 13,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/yyjson_setup/Cppcheck_Retry002_Profile.json",
+        "analysis_standard": "C11",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "builtin内部解析器",
+          "normal",
+          "unix64",
+          "-j 1",
+          "XML2",
+          "warning/performance/portability/information及默认error",
+          "新build-dir；默认库模型；无inconclusive/force/额外抑制",
+          "-D__STDC__=1"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/yyjson_pretest_20261028/Cppcheck/run-meta.tsv",
+        "started_utc": "2026-10-28T04:09:24Z",
+        "ended_utc": "2026-10-28T04:09:29Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/yyjson_pretest_20261028/Cppcheck/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/yyjson_pretest_20261028/Cppcheck/command.txt",
+        "effective_tool_order_in_project": 3,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 5.44,
+        "user_seconds": 5.38,
+        "system_seconds": 0.05,
+        "max_rss_kib": 82324,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:05.44",
+        "source_file": "review_evidence/yyjson_pretest_20261028/Cppcheck/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "d505898ad12c7c2b168276899f98989f463352beec85a814c19d41a791ab9a7b",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 5,
+        "original_risk_false_positive": 2,
+        "supported_diagnoses": 3,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/yyjson_pretest_20261028/Cppcheck_Run_Record.json",
+          "bytes": 3872,
+          "sha256": "9ab61b419703b7d6b7f5333a1b6f033878ba67878651052a233aa7b233195697"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/YYJSON_Pretest_Record.md",
+          "bytes": 20949,
+          "sha256": "081e9b6a4488ba4d81f1706ee7ed96becbc68d5011f882544e02b0392a96e2f4"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/yyjson_review/Review_Summary.json",
+          "bytes": 2614,
+          "sha256": "726ec3f960285d561a5d4c707ca95b155f55d1f23e4dcaf067f2856f8cea455a"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/yyjson_review/Review_Ledger.csv",
+          "bytes": 780459,
+          "sha256": "8f065e9d929fa050b8556216c7199cfbc3a0cb095a05f940755c138feeb7f60b"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/yyjson_setup/Cppcheck_Retry002_Profile.json",
+          "bytes": 6784,
+          "sha256": "3a25211d52cc297d146568a7a6cfb8434e37b563223e3cfd089ced365666227f"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/yyjson_pretest_20261028/Cppcheck/command.txt",
+          "bytes": 427,
+          "sha256": "761c2057496a3515747ee62cd19eb67242b7db06fa6947da7bfee3cb9f477b9b"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/yyjson_pretest_20261028/Cppcheck/run-meta.tsv",
+          "bytes": 447,
+          "sha256": "86e1d431e58eb05747ace8983bc305b4208a2814f2bd972f41b8e46e3439c1ff"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/yyjson_pretest_20261028/Cppcheck/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "440a5cbce4eee669788e640b91e2d7518199a5829dfd33754d04470e06b0fca2"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/yyjson_pretest_20261028/Cppcheck/time.txt",
+          "bytes": 1139,
+          "sha256": "d505898ad12c7c2b168276899f98989f463352beec85a814c19d41a791ab9a7b"
+        }
+      ],
+      "limits": [
+        "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+        "Cppcheck C11模型与实际GNU C17构建有差异。",
+        "002为有效结果；001预处理失败另列。normal在read_root_minify/read_root_pretty/yyjson_incr_read受限。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "只采用CP002，固定补__STDC__=1；CP001预处理阻断另存。"
+      ],
+      "baseline_assessment_row": 17
+    },
+    {
+      "cell": 18,
+      "project_id": "P06",
+      "project": "yyjson",
+      "version": "0.12.0",
+      "tool": "CodeChecker/clangsa",
+      "tool_key": "CC",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P06-CC-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P06-CC-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 1,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/YYJSON_Pretest_Record.md",
+        "scope_field": "实际编译数据库／当前范围章节；记录的动作数，不从文本输入推算"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 1,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 0,
+        "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+        "saved_source_diagnostics": 0,
+        "displayed_reports": 0,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/yyjson_setup/CodeChecker_Profile.json",
+        "analysis_standard": "GNU C17",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "仅clangsa",
+          "-j 1",
+          "每动作120秒",
+          "compile-uniqueing none",
+          "CTU默认关闭",
+          "Z3 refutation off",
+          "capture-analysis-output请求；实际捕获范围见各验收记录",
+          "新reports；保留默认parse过滤"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/yyjson_pretest_20261028/CodeChecker/run-meta.tsv",
+        "started_utc": "2026-10-28T03:23:45Z",
+        "ended_utc": "2026-10-28T03:24:18Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/yyjson_pretest_20261028/CodeChecker/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/yyjson_pretest_20261028/CodeChecker/command.txt",
+        "effective_tool_order_in_project": 1,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 33.02,
+        "user_seconds": 30.05,
+        "system_seconds": 0.95,
+        "max_rss_kib": 198108,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:33.02",
+        "source_file": "review_evidence/yyjson_pretest_20261028/CodeChecker/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "523a8e2e82f2439ee97ca9504b5ad95d483d0e5633b4e9e8a00393f59595b545",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 0,
+        "original_risk_false_positive": 0,
+        "supported_diagnoses": 0,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/yyjson_pretest_20261028/CodeChecker_Run_Record.json",
+          "bytes": 2528,
+          "sha256": "0199b63b936c06799518a955b3377ba947c28f6770bfaaa7db038bcb90e4902f"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/YYJSON_Pretest_Record.md",
+          "bytes": 20949,
+          "sha256": "081e9b6a4488ba4d81f1706ee7ed96becbc68d5011f882544e02b0392a96e2f4"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/yyjson_review/Review_Summary.json",
+          "bytes": 2614,
+          "sha256": "726ec3f960285d561a5d4c707ca95b155f55d1f23e4dcaf067f2856f8cea455a"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/yyjson_review/Review_Ledger.csv",
+          "bytes": 780459,
+          "sha256": "8f065e9d929fa050b8556216c7199cfbc3a0cb095a05f940755c138feeb7f60b"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/yyjson_setup/CodeChecker_Profile.json",
+          "bytes": 9559,
+          "sha256": "735e83ddfc68c3155f4ac3e83071485c0cd4ae9639e5c265b70f36b133e0d5a1"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/yyjson_pretest_20261028/CodeChecker/command.txt",
+          "bytes": 302,
+          "sha256": "c2cd3e5f4b9990fcba5ac6ab90214596848b5b20abf3d1bff04e9c321a83b0f0"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/yyjson_pretest_20261028/CodeChecker/run-meta.tsv",
+          "bytes": 447,
+          "sha256": "8a4c338b9785ef40c01165770f7d166e55341cde1749cdcbe0d94dd623b27005"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/yyjson_pretest_20261028/CodeChecker/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "8caec35febd6ba5814e3b77fdb308022fa4719fadd523c4ea5438be5028fdc49"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/yyjson_pretest_20261028/CodeChecker/time.txt",
+          "bytes": 1025,
+          "sha256": "523a8e2e82f2439ee97ca9504b5ad95d483d0e5633b4e9e8a00393f59595b545"
+        }
+      ],
+      "limits": [
+        "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "完整backend argv未捕获，CodeChecker处理前诊断总数未知；CTU off不代表CPP原生全程序关闭。"
+      ],
+      "baseline_assessment_row": 18
+    },
+    {
+      "cell": 19,
+      "project_id": "P07",
+      "project": "Expat",
+      "version": "2.7.1",
+      "tool": "Flawfinder",
+      "tool_key": "FF",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P07-FF-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P07-FF-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "文本文件",
+        "intended_count": 19,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/expat_pretest_20261028/Flawfinder_Run_Record.json",
+        "scope_field": "intendedTextFiles"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 19,
+        "failed": null,
+        "skipped": null,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 39,
+        "candidate_unit": "minlevel=1显示命中条目",
+        "saved_source_diagnostics": null,
+        "displayed_reports": 39,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": 8,
+        "flawfinder_cumulative_0plus": 47,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/expat_setup/Flawfinder_Profile.json",
+        "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+        "actual_build_standard": "C99",
+        "options": [
+          "--minlevel=1",
+          "--neverignore",
+          "--columns",
+          "--context"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/expat_pretest_20261028/Flawfinder/run-meta.tsv",
+        "started_utc": "2026-10-28T09:18:26Z",
+        "ended_utc": "2026-10-28T09:18:26Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/expat_pretest_20261028/Flawfinder/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/expat_pretest_20261028/Flawfinder/command.txt",
+        "effective_tool_order_in_project": 1,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 0.1,
+        "user_seconds": 0.1,
+        "system_seconds": 0.0,
+        "max_rss_kib": 21136,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:00.10",
+        "source_file": "review_evidence/expat_pretest_20261028/Flawfinder/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "4d79d09de25a32d652f8c3424bd5dc5025148d1756d8c77ceb99ef0592650769",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 39,
+        "original_risk_false_positive": 37,
+        "supported_diagnoses": 0,
+        "undetermined": 2,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/expat_pretest_20261028/Flawfinder_Run_Record.json",
+          "bytes": 2068,
+          "sha256": "5527d207d2af3854368481e14824eab742ae2f5de8daf410f41a4e8ef3bf1138"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Expat_Pretest_Record.md",
+          "bytes": 14544,
+          "sha256": "5cde23e7c2443ccbdaf57ddcb43f49aaa2851ad217574fb6ec6c55a85561910f"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/expat_review/Review_Summary.json",
+          "bytes": 2352,
+          "sha256": "b9ab1d6afb3056d6aa6186d1c2b06e80fbf0ee380d7440d680d5eb881be77ca4"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/expat_review/Review_Ledger.csv",
+          "bytes": 158894,
+          "sha256": "980e63199ad9545f950fc66eeb330e34c0a6221c28fe3d8956912fd6461b66f1"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/expat_setup/Flawfinder_Profile.json",
+          "bytes": 9212,
+          "sha256": "9e59dbd2c5f1a6289732db8ddefea7830a6938b5ae2d338ccc4c17bef49fe4fc"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/expat_pretest_20261028/Flawfinder/command.txt",
+          "bytes": 1260,
+          "sha256": "3a33c5f99b3eae2fb219490e0ee4ab25f923dc357231cb170a700590c9d8e133"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/expat_pretest_20261028/Flawfinder/run-meta.tsv",
+          "bytes": 445,
+          "sha256": "e22deb1178241821a30f3c72345b36756becd89c8500bd4582358277c5c6949d"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/expat_pretest_20261028/Flawfinder/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "44f1e2e43881f7fbe72b1b08c94c01ebdf6a24b066fa0fad3e3837ccbd1dc882"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/expat_pretest_20261028/Flawfinder/time.txt",
+          "bytes": 1973,
+          "sha256": "4d79d09de25a32d652f8c3424bd5dc5025148d1756d8c77ceb99ef0592650769"
+        }
+      ],
+      "limits": [
+        "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+        "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "范围为词法Examining文件；失败／跳过null原样保留，不推成0或语义路径覆盖。"
+      ],
+      "baseline_assessment_row": 19
+    },
+    {
+      "cell": 20,
+      "project_id": "P07",
+      "project": "Expat",
+      "version": "2.7.1",
+      "tool": "Cppcheck",
+      "tool_key": "CP",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P07-CP-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P07-CP-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 3,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/expat_pretest_20261028/Cppcheck_Run_Record.json",
+        "scope_field": "intendedActions"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 3,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 2,
+        "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+        "saved_source_diagnostics": 2,
+        "displayed_reports": null,
+        "raw_xml_elements": 28,
+        "information_items": 26,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/expat_setup/Cppcheck_Profile.json",
+        "analysis_standard": "C99",
+        "actual_build_standard": "C99",
+        "options": [
+          "builtin内部解析器",
+          "normal",
+          "unix64",
+          "-j 1",
+          "XML2",
+          "warning/performance/portability/information及默认error",
+          "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/expat_pretest_20261028/Cppcheck/run-meta.tsv",
+        "started_utc": "2026-10-28T09:45:13Z",
+        "ended_utc": "2026-10-28T09:45:16Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/expat_pretest_20261028/Cppcheck/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/expat_pretest_20261028/Cppcheck/command.txt",
+        "effective_tool_order_in_project": 2,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 2.95,
+        "user_seconds": 2.9,
+        "system_seconds": 0.04,
+        "max_rss_kib": 49032,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:02.95",
+        "source_file": "review_evidence/expat_pretest_20261028/Cppcheck/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "65ea9fdb0a83fd6540ec1e4bbc92ebf5aef767868082614abaef70df7e216ae1",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 2,
+        "original_risk_false_positive": 2,
+        "supported_diagnoses": 0,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/expat_pretest_20261028/Cppcheck_Run_Record.json",
+          "bytes": 2199,
+          "sha256": "39f033b817c1fb21fab2f086a2b022137b5a23e4418eb81269e0a5a3a87e56c9"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Expat_Pretest_Record.md",
+          "bytes": 14544,
+          "sha256": "5cde23e7c2443ccbdaf57ddcb43f49aaa2851ad217574fb6ec6c55a85561910f"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/expat_review/Review_Summary.json",
+          "bytes": 2352,
+          "sha256": "b9ab1d6afb3056d6aa6186d1c2b06e80fbf0ee380d7440d680d5eb881be77ca4"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/expat_review/Review_Ledger.csv",
+          "bytes": 158894,
+          "sha256": "980e63199ad9545f950fc66eeb330e34c0a6221c28fe3d8956912fd6461b66f1"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/expat_setup/Cppcheck_Profile.json",
+          "bytes": 10985,
+          "sha256": "4d9e398c94547f2772fb86ad6229929664a2f64fff4c450ee90c127b39b4c470"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/expat_pretest_20261028/Cppcheck/command.txt",
+          "bytes": 408,
+          "sha256": "958f7583e1c45c025367531bbcf89515bc0d40929fd1c39a24a8feb10059ccf1"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/expat_pretest_20261028/Cppcheck/run-meta.tsv",
+          "bytes": 445,
+          "sha256": "13728c7ee02449491ca843036a81944ce419764d74d29cc655bbf78e0236e775"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/expat_pretest_20261028/Cppcheck/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "3f2a1caff2583506e0eb5f3836a0888696b8244c6db0ceb3f07b79c0345f9c49"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/expat_pretest_20261028/Cppcheck/time.txt",
+          "bytes": 1120,
+          "sha256": "65ea9fdb0a83fd6540ec1e4bbc92ebf5aef767868082614abaef70df7e216ae1"
+        }
+      ],
+      "limits": [
+        "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+        "normal在doProlog值流分析受限。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。"
+      ],
+      "baseline_assessment_row": 20
+    },
+    {
+      "cell": 21,
+      "project_id": "P07",
+      "project": "Expat",
+      "version": "2.7.1",
+      "tool": "CodeChecker/clangsa",
+      "tool_key": "CC",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P07-CC-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P07-CC-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 3,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/Expat_Pretest_Record.md",
+        "scope_field": "实际编译数据库／当前范围章节；记录的动作数，不从文本输入推算"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 3,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 0,
+        "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+        "saved_source_diagnostics": 0,
+        "displayed_reports": 0,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/expat_setup/CodeChecker_Profile.json",
+        "analysis_standard": "C99",
+        "actual_build_standard": "C99",
+        "options": [
+          "仅clangsa",
+          "-j 1",
+          "每动作120秒",
+          "compile-uniqueing none",
+          "CTU默认关闭",
+          "Z3 refutation off",
+          "capture-analysis-output请求；实际捕获范围见各验收记录",
+          "新reports；保留默认parse过滤"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/expat_pretest_20261028/CodeChecker/run-meta.tsv",
+        "started_utc": "2026-10-28T09:59:15Z",
+        "ended_utc": "2026-10-28T09:59:32Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/expat_pretest_20261028/CodeChecker/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/expat_pretest_20261028/CodeChecker/command.txt",
+        "effective_tool_order_in_project": 3,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 16.49,
+        "user_seconds": 14.11,
+        "system_seconds": 0.77,
+        "max_rss_kib": 199476,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:16.49",
+        "source_file": "review_evidence/expat_pretest_20261028/CodeChecker/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "10a58024060239f6ca2153b4ab8dce4e4217a9bf37d7afc0a97d7d5c25ebbe2f",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 0,
+        "original_risk_false_positive": 0,
+        "supported_diagnoses": 0,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/expat_pretest_20261028/CodeChecker_Run_Record.json",
+          "bytes": 4063,
+          "sha256": "36536e18655493df1e2491f69dd93a95c49ff433e0b62578feba9b0f756bb27e"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Expat_Pretest_Record.md",
+          "bytes": 14544,
+          "sha256": "5cde23e7c2443ccbdaf57ddcb43f49aaa2851ad217574fb6ec6c55a85561910f"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/expat_review/Review_Summary.json",
+          "bytes": 2352,
+          "sha256": "b9ab1d6afb3056d6aa6186d1c2b06e80fbf0ee380d7440d680d5eb881be77ca4"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/expat_review/Review_Ledger.csv",
+          "bytes": 158894,
+          "sha256": "980e63199ad9545f950fc66eeb330e34c0a6221c28fe3d8956912fd6461b66f1"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/expat_setup/CodeChecker_Profile.json",
+          "bytes": 15494,
+          "sha256": "b21283559f9d98c98aa406363cb6eb2437e48a61bca11f940c6f6e64fc95a7b1"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/expat_pretest_20261028/CodeChecker/command.txt",
+          "bytes": 298,
+          "sha256": "a2b21366f2848670bbbbff1334378e394d82610eaea8d4e9b7f0d54d3eaf7dcd"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/expat_pretest_20261028/CodeChecker/run-meta.tsv",
+          "bytes": 445,
+          "sha256": "2c4bbea0c32a895dca7aae9049a1ab188f296d500f83e0a0e888181b023d3ae7"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/expat_pretest_20261028/CodeChecker/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "54879182331b28a07050f9e6f6186d8e89be98c5621f67fd5281a9cae9d17a43"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/expat_pretest_20261028/CodeChecker/time.txt",
+          "bytes": 1019,
+          "sha256": "10a58024060239f6ca2153b4ab8dce4e4217a9bf37d7afc0a97d7d5c25ebbe2f"
+        }
+      ],
+      "limits": [
+        "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "完整backend argv未捕获，CodeChecker处理前诊断总数未知；CTU off不代表CPP原生全程序关闭。"
+      ],
+      "baseline_assessment_row": 21
+    },
+    {
+      "cell": 22,
+      "project_id": "P08",
+      "project": "libpng",
+      "version": "1.6.50",
+      "tool": "Flawfinder",
+      "tool_key": "FF",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P08-FF-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P08-FF-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "文本文件",
+        "intended_count": 22,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/libpng_pretest_20261029/Flawfinder_Run_Record.json",
+        "scope_field": "textInputs"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 22,
+        "failed": null,
+        "skipped": null,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 110,
+        "candidate_unit": "minlevel=1显示命中条目",
+        "saved_source_diagnostics": null,
+        "displayed_reports": 110,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": 10,
+        "flawfinder_cumulative_0plus": 120,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/libpng_setup/Flawfinder_Profile.json",
+        "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "--minlevel=1",
+          "--neverignore",
+          "--columns",
+          "--context"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/libpng_pretest_20261029/Flawfinder/run-meta.tsv",
+        "started_utc": "2026-10-28T22:55:07Z",
+        "ended_utc": "2026-10-28T22:55:07Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/libpng_pretest_20261029/Flawfinder/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/libpng_pretest_20261029/Flawfinder/command.txt",
+        "effective_tool_order_in_project": 3,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 0.21,
+        "user_seconds": 0.2,
+        "system_seconds": 0.0,
+        "max_rss_kib": 20844,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:00.21",
+        "source_file": "review_evidence/libpng_pretest_20261029/Flawfinder/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "02e43e9743111d7a3c87aa3c3a7008825701f9ab434d2fc7314c09dc411e13dd",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 110,
+        "original_risk_false_positive": 107,
+        "supported_diagnoses": 1,
+        "undetermined": 2,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/libpng_pretest_20261029/Flawfinder_Run_Record.json",
+          "bytes": 3268,
+          "sha256": "8a2bff39030005e722dae8d0156dae1e36a030ca28333aa62d4bb6b1fee4081c"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Libpng_Pretest_Record.md",
+          "bytes": 17088,
+          "sha256": "4762af315dce8df7a316af4630ac5cd73a26d2c5cb9065ba462e31b70bd06e2d"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/libpng_review/Review_Summary.json",
+          "bytes": 2631,
+          "sha256": "26a0caa2eefe8634591313509f20039692175e7895d6dbf194e6e980144ee296"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/libpng_review/Review_Ledger.csv",
+          "bytes": 190746,
+          "sha256": "7c6001847d7dc3f820c9316db141af8b69d14caf48cea243c75f8f15b112b61f"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/libpng_setup/Flawfinder_Profile.json",
+          "bytes": 20154,
+          "sha256": "297fac45b17d9c8bec003458b80d1c9d0b638ac7d3ced23e26f7b80121d626d1"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/libpng_pretest_20261029/Flawfinder/command.txt",
+          "bytes": 1255,
+          "sha256": "3a4d6f6e64e07e64149a6487cf66dc90be482a53c48818a8c552babd42fe64f7"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/libpng_pretest_20261029/Flawfinder/run-meta.tsv",
+          "bytes": 447,
+          "sha256": "c28ef698ac28038b68aeb656c6c8eb408b498ac7ea1d6c4ee53d6cc74fbd2177"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/libpng_pretest_20261029/Flawfinder/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "9b8e963777c698b6d86cd507a0060acc7c7455a17f017873cb98ecc422aa52c0"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/libpng_pretest_20261029/Flawfinder/time.txt",
+          "bytes": 1969,
+          "sha256": "02e43e9743111d7a3c87aa3c3a7008825701f9ab434d2fc7314c09dc411e13dd"
+        }
+      ],
+      "limits": [
+        "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+        "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "范围为词法Examining文件；失败／跳过null原样保留，不推成0或语义路径覆盖。"
+      ],
+      "baseline_assessment_row": 22
+    },
+    {
+      "cell": 23,
+      "project_id": "P08",
+      "project": "libpng",
+      "version": "1.6.50",
+      "tool": "Cppcheck",
+      "tool_key": "CP",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P08-CP-002",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P08-CP-002",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 15,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002_Run_Record.json",
+        "scope_field": "intendedActions"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 15,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 0,
+        "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+        "saved_source_diagnostics": 0,
+        "displayed_reports": null,
+        "raw_xml_elements": 17,
+        "information_items": 17,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/libpng_setup/Cppcheck_Retry002/Cppcheck_Profile.json",
+        "analysis_standard": "C11",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "builtin内部解析器",
+          "normal",
+          "unix64",
+          "-j 1",
+          "XML2",
+          "warning/performance/portability/information及默认error",
+          "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002/run-meta.tsv",
+        "started_utc": "2026-10-28T22:16:00Z",
+        "ended_utc": "2026-10-28T22:17:19Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002/command.txt",
+        "effective_tool_order_in_project": 1,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 79.24,
+        "user_seconds": 79.04,
+        "system_seconds": 0.11,
+        "max_rss_kib": 60592,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "1:19.24",
+        "source_file": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "adbb331786a68f8cdbddcb23e14e500c53e68f3cfb4df9de1663b5792d9499fc",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 0,
+        "original_risk_false_positive": 0,
+        "supported_diagnoses": 0,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002_Run_Record.json",
+          "bytes": 3505,
+          "sha256": "79c19ed335a8069aff94051ebc2f3dba5c124ce8af8f0ee84d74b20fd86c689a"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Libpng_Pretest_Record.md",
+          "bytes": 17088,
+          "sha256": "4762af315dce8df7a316af4630ac5cd73a26d2c5cb9065ba462e31b70bd06e2d"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/libpng_review/Review_Summary.json",
+          "bytes": 2631,
+          "sha256": "26a0caa2eefe8634591313509f20039692175e7895d6dbf194e6e980144ee296"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/libpng_review/Review_Ledger.csv",
+          "bytes": 190746,
+          "sha256": "7c6001847d7dc3f820c9316db141af8b69d14caf48cea243c75f8f15b112b61f"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/libpng_setup/Cppcheck_Retry002/Cppcheck_Profile.json",
+          "bytes": 17428,
+          "sha256": "3a4661e674f4331525e0eeb04ce7a53d62392f7fd97aa0edab847d0e0f2b3c11"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002/command.txt",
+          "bytes": 476,
+          "sha256": "2daa68bb68674fe7d1e0ee7499a185fc869e31d20b5425e113d942dab0bb0c27"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002/run-meta.tsv",
+          "bytes": 447,
+          "sha256": "fe9dc34f872452e06338f59d439f9f3e0164df932a116d3520e9f9c1a3f31eba"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "72d2810ba4b6f8ed23855163b7fa4ca6df4889807327c47251a7e6606f2d5257"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/libpng_pretest_20261029/Cppcheck_Retry002/time.txt",
+          "bytes": 1187,
+          "sha256": "adbb331786a68f8cdbddcb23e14e500c53e68f3cfb4df9de1663b5792d9499fc"
+        }
+      ],
+      "limits": [
+        "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+        "Cppcheck C11模型与实际GNU C17构建有差异。",
+        "002使用仅供Cppcheck的派生DB：15个固定zlib路径从-isystem改为-I，其他动作保持；001缺zlib.h为输入不完整尝试，不计有效零结果。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "只采用CP002派生DB，固定zlib头-isystem转-I；001输入不完整另存。"
+      ],
+      "baseline_assessment_row": 23
+    },
+    {
+      "cell": 24,
+      "project_id": "P08",
+      "project": "libpng",
+      "version": "1.6.50",
+      "tool": "CodeChecker/clangsa",
+      "tool_key": "CC",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P08-CC-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P08-CC-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 15,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/Libpng_Pretest_Record.md",
+        "scope_field": "实际编译数据库／当前范围章节；记录的动作数，不从文本输入推算"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 15,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 14,
+        "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+        "saved_source_diagnostics": 14,
+        "displayed_reports": 14,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/libpng_setup/CodeChecker_Profile.json",
+        "analysis_standard": "GNU C17",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "仅clangsa",
+          "-j 1",
+          "每动作120秒",
+          "compile-uniqueing none",
+          "CTU默认关闭",
+          "Z3 refutation off",
+          "capture-analysis-output请求；实际捕获范围见各验收记录",
+          "新reports；保留默认parse过滤"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/libpng_pretest_20261029/CodeChecker/run-meta.tsv",
+        "started_utc": "2026-10-28T22:34:09Z",
+        "ended_utc": "2026-10-28T22:34:46Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/libpng_pretest_20261029/CodeChecker/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/libpng_pretest_20261029/CodeChecker/command.txt",
+        "effective_tool_order_in_project": 2,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 37.75,
+        "user_seconds": 33.87,
+        "system_seconds": 1.78,
+        "max_rss_kib": 181140,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:37.75",
+        "source_file": "review_evidence/libpng_pretest_20261029/CodeChecker/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "54632683b0a559411b26165258a96945700ff2b34f2e6b8f46ed36cf52789b30",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 14,
+        "original_risk_false_positive": 9,
+        "supported_diagnoses": 5,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/libpng_pretest_20261029/CodeChecker_Run_Record.json",
+          "bytes": 9340,
+          "sha256": "6ddc582efa516dbceb4e8f1c9f910eb4d14e70f358c0af6fa583d5db05f45e11"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Libpng_Pretest_Record.md",
+          "bytes": 17088,
+          "sha256": "4762af315dce8df7a316af4630ac5cd73a26d2c5cb9065ba462e31b70bd06e2d"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/libpng_review/Review_Summary.json",
+          "bytes": 2631,
+          "sha256": "26a0caa2eefe8634591313509f20039692175e7895d6dbf194e6e980144ee296"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/libpng_review/Review_Ledger.csv",
+          "bytes": 190746,
+          "sha256": "7c6001847d7dc3f820c9316db141af8b69d14caf48cea243c75f8f15b112b61f"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/libpng_setup/CodeChecker_Profile.json",
+          "bytes": 15923,
+          "sha256": "626616bc42390930e05136f5ae4e1fb5102f6cc3428c849bfecf569fc09bad62"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/libpng_pretest_20261029/CodeChecker/command.txt",
+          "bytes": 302,
+          "sha256": "7d905408a93f4796922a18043d520381e8b3611cd77eafe1b0eb34eca9b8c1dd"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/libpng_pretest_20261029/CodeChecker/run-meta.tsv",
+          "bytes": 447,
+          "sha256": "db19f9bc8575ecf8e510e350d0c0adbdba95d7fe4cf8cc4892a7907ec8a8aa37"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/libpng_pretest_20261029/CodeChecker/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "c2f143aa9c92f3b474bed00570b863ed91f11601e214b8cb4737cb4d73f58bfa"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/libpng_pretest_20261029/CodeChecker/time.txt",
+          "bytes": 1025,
+          "sha256": "54632683b0a559411b26165258a96945700ff2b34f2e6b8f46ed36cf52789b30"
+        }
+      ],
+      "limits": [
+        "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "完整backend argv未捕获，CodeChecker处理前诊断总数未知；CTU off不代表CPP原生全程序关闭。"
+      ],
+      "baseline_assessment_row": 24
+    },
+    {
+      "cell": 25,
+      "project_id": "P09",
+      "project": "libjpeg-turbo",
+      "version": "3.1.1",
+      "tool": "Flawfinder",
+      "tool_key": "FF",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P09-FF-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P09-FF-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "文本文件",
+        "intended_count": 88,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder_Identity_Check.json",
+        "scope_field": "textInputs"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 88,
+        "failed": null,
+        "skipped": null,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 42,
+        "candidate_unit": "minlevel=1显示命中条目",
+        "saved_source_diagnostics": null,
+        "displayed_reports": 42,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": 6,
+        "flawfinder_cumulative_0plus": 48,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/libjpeg_turbo_setup/Flawfinder_Profile.json",
+        "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "--minlevel=1",
+          "--neverignore",
+          "--columns",
+          "--context"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder/run-meta.tsv",
+        "started_utc": "2026-10-29T05:46:16Z",
+        "ended_utc": "2026-10-29T05:46:16Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder/command.txt",
+        "effective_tool_order_in_project": 2,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 0.27,
+        "user_seconds": 0.27,
+        "system_seconds": 0.0,
+        "max_rss_kib": 21124,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:00.27",
+        "source_file": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "a39de10ac7f4285cd886ba55d930a63f1793eeef603127bddeeb07b6d37c04e7",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 42,
+        "original_risk_false_positive": 41,
+        "supported_diagnoses": 1,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder_Identity_Check.json",
+          "bytes": 3654,
+          "sha256": "5c2fb73492a0876b59e9077c3bcec8464c75cad1e8bc2b77f23855951109e3cd"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Libjpeg_Turbo_Pretest_Record.md",
+          "bytes": 15810,
+          "sha256": "b0c4fe60a2c4a56663e34e7bbd39097b20b97a0b2c9e5b8b7c4329eb01ddbf13"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/libjpeg_turbo_review/Review_Summary.json",
+          "bytes": 5627,
+          "sha256": "426b604a3965ea540317b6766b8ec0dcc495d4997b10f25aa823ef47dff077ac"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/libjpeg_turbo_review/Review_Ledger.csv",
+          "bytes": 2066682,
+          "sha256": "2ff6bcac18445f936132d825164ffd937dd09fc34dd2f8d26c2ad690a2f6fd51"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/libjpeg_turbo_setup/Flawfinder_Profile.json",
+          "bytes": 69968,
+          "sha256": "34e7c777262096f81218b5097e4c47a07870a027bf7100dfaaf040e962d874c6"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder/command.txt",
+          "bytes": 5663,
+          "sha256": "7ca98bdc23c64a1e9e55d53d649bf5e4d39b41a6187c2cadc4c66b115898cfea"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder/run-meta.tsv",
+          "bytes": 453,
+          "sha256": "4c846c3b7a6e3f9887f27bb3dce992bd291ae5a5e6cec4235ee1c3ebc3dd52d5"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "2078209fff878c540b9f482dfeaedda8668ddffb68a523afa52c01cf87e77143"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/libjpeg_turbo_pretest_20261029/Flawfinder/time.txt",
+          "bytes": 6377,
+          "sha256": "a39de10ac7f4285cd886ba55d930a63f1793eeef603127bddeeb07b6d37c04e7"
+        }
+      ],
+      "limits": [
+        "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+        "原验收未独立给出FF逐文本失败／跳过计数，字段留null；全清单Examining及正常退出另有证据。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "101语义动作／58唯一C路径；8/12/16位为58/28/15。",
+        "范围为词法Examining文件；失败／跳过null原样保留，不推成0或语义路径覆盖。"
+      ],
+      "baseline_assessment_row": 25
+    },
+    {
+      "cell": 26,
+      "project_id": "P09",
+      "project": "libjpeg-turbo",
+      "version": "3.1.1",
+      "tool": "Cppcheck",
+      "tool_key": "CP",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P09-CP-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P09-CP-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 101,
+        "unique_source_paths": 58,
+        "scope_source": "review_evidence/Libjpeg_Turbo_Pretest_Record.md",
+        "scope_field": "实际编译数据库／当前范围章节；记录的动作数，不从文本输入推算"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 101,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 91,
+        "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+        "saved_source_diagnostics": 91,
+        "displayed_reports": null,
+        "raw_xml_elements": null,
+        "information_items": 13,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/libjpeg_turbo_setup/Cppcheck_Profile.json",
+        "analysis_standard": "C11",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "builtin内部解析器",
+          "normal",
+          "unix64",
+          "-j 1",
+          "XML2",
+          "warning/performance/portability/information及默认error",
+          "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck/run-meta.tsv",
+        "started_utc": "2026-10-29T06:04:00Z",
+        "ended_utc": "2026-10-29T06:04:13Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck/command.txt",
+        "effective_tool_order_in_project": 3,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 12.97,
+        "user_seconds": 12.58,
+        "system_seconds": 0.24,
+        "max_rss_kib": 95784,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:12.97",
+        "source_file": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "66cc609a35b3a88ce522a5ce2f618619124bf557e5c74d7e3b99e1cb60f3fd1d",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 91,
+        "original_risk_false_positive": 71,
+        "supported_diagnoses": 20,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck_Run_Record.json",
+          "bytes": 932,
+          "sha256": "7ba8c6eba294e0a14f9bb2dfb0cf7984979a0deb7e7b0e20cf1c15e0759b5db3"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Libjpeg_Turbo_Pretest_Record.md",
+          "bytes": 15810,
+          "sha256": "b0c4fe60a2c4a56663e34e7bbd39097b20b97a0b2c9e5b8b7c4329eb01ddbf13"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/libjpeg_turbo_review/Review_Summary.json",
+          "bytes": 5627,
+          "sha256": "426b604a3965ea540317b6766b8ec0dcc495d4997b10f25aa823ef47dff077ac"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/libjpeg_turbo_review/Review_Ledger.csv",
+          "bytes": 2066682,
+          "sha256": "2ff6bcac18445f936132d825164ffd937dd09fc34dd2f8d26c2ad690a2f6fd51"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/libjpeg_turbo_setup/Cppcheck_Profile.json",
+          "bytes": 39249,
+          "sha256": "461274fc6fa018c27ad3d8e190c4f4844ac69340f3713d7d3b82ff1a3afa189f"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck/command.txt",
+          "bytes": 504,
+          "sha256": "d8633f54da630a28ac1ac752f18ccd263b79886ed7c5dd40ff1ac8310df54b14"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck/run-meta.tsv",
+          "bytes": 453,
+          "sha256": "0d037af71b09287aaeb5fb64490f811ebeddfa028c208708956bfd6da40e9d36"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "4f77dc4fa9680d09c795f6b86cd2f26083e7d39f2c748d9b90e5d495851e981e"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/libjpeg_turbo_pretest_20261029/Cppcheck/time.txt",
+          "bytes": 1214,
+          "sha256": "66cc609a35b3a88ce522a5ce2f618619124bf557e5c74d7e3b99e1cb60f3fd1d"
+        }
+      ],
+      "limits": [
+        "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+        "Cppcheck C11模型与实际GNU C17构建有差异。",
+        "101主请求按原DB处理完成，对应58唯一源路径；仅58主.a1／.s1缓存，43个.a2/.a3映射无独立文件，不声称101独立多位深全程序持久化上下文。normal在encode_one_block受限。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "101语义动作／58唯一C路径；8/12/16位为58/28/15。",
+        "101主请求完成；58主缓存槽，43多配置映射无独立持久化槽。"
+      ],
+      "baseline_assessment_row": 26
+    },
+    {
+      "cell": 27,
+      "project_id": "P09",
+      "project": "libjpeg-turbo",
+      "version": "3.1.1",
+      "tool": "CodeChecker/clangsa",
+      "tool_key": "CC",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P09-CC-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P09-CC-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 101,
+        "unique_source_paths": 58,
+        "scope_source": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker_Run_Record.json",
+        "scope_field": "intended_actions"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 101,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 48,
+        "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+        "saved_source_diagnostics": 48,
+        "displayed_reports": 46,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/libjpeg_turbo_setup/CodeChecker_Profile.json",
+        "analysis_standard": "GNU C17",
+        "actual_build_standard": "GNU C17",
+        "options": [
+          "仅clangsa",
+          "-j 1",
+          "每动作120秒",
+          "compile-uniqueing none",
+          "CTU默认关闭",
+          "Z3 refutation off",
+          "capture-analysis-output请求；实际捕获范围见各验收记录",
+          "新reports；保留默认parse过滤"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker/run-meta.tsv",
+        "started_utc": "2026-10-29T03:00:19Z",
+        "ended_utc": "2026-10-29T03:02:20Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker/environment-start.txt",
+        "execution_environment_source": null,
+        "build_environment_session": null,
+        "execution_environment_session": null,
+        "command_file": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker/command.txt",
+        "effective_tool_order_in_project": 1,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 121.59,
+        "user_seconds": 113.98,
+        "system_seconds": 5.58,
+        "max_rss_kib": 200416,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "2:01.59",
+        "source_file": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "b9073ee595287ce4e21f761ebabafeb1b3d1b5249298d6373c0f424d81e00943",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 48,
+        "original_risk_false_positive": 38,
+        "supported_diagnoses": 10,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker_Run_Record.json",
+          "bytes": 511,
+          "sha256": "bcb7a048ac91afe3cfbefa243034934a830282c0bd88e4cd5d84de621ec1e504"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Libjpeg_Turbo_Pretest_Record.md",
+          "bytes": 15810,
+          "sha256": "b0c4fe60a2c4a56663e34e7bbd39097b20b97a0b2c9e5b8b7c4329eb01ddbf13"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/libjpeg_turbo_review/Review_Summary.json",
+          "bytes": 5627,
+          "sha256": "426b604a3965ea540317b6766b8ec0dcc495d4997b10f25aa823ef47dff077ac"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/libjpeg_turbo_review/Review_Ledger.csv",
+          "bytes": 2066682,
+          "sha256": "2ff6bcac18445f936132d825164ffd937dd09fc34dd2f8d26c2ad690a2f6fd51"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/libjpeg_turbo_setup/CodeChecker_Profile.json",
+          "bytes": 41842,
+          "sha256": "30e4954b3ec9b79e914c8c11120219196994d4dfe6b58d0ede15314d4c31dcdd"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker/command.txt",
+          "bytes": 386,
+          "sha256": "82862cd936b2184bc04429c5733828ee92696a7cee00c74cc89b557911645174"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker/run-meta.tsv",
+          "bytes": 453,
+          "sha256": "282bb778a976a12a23c23a3b41d47fb4ce1521ca727fff71c4ab24ed9260befc"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "707ae6524ef40ce6bbcbd26b9ce65b95d77ad357cb69d665161ca087783f5660"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/libjpeg_turbo_pretest_20261029/CodeChecker/time.txt",
+          "bytes": 1107,
+          "sha256": "b9073ee595287ce4e21f761ebabafeb1b3d1b5249298d6373c0f424d81e00943"
+        }
+      ],
+      "limits": [
+        "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。",
+        "101动作=8位58＋12位28＋16位15，58唯一源路径；保存48，普通parse按路径键折叠2后展示46，登记候选仍48；42个issue_hash不作为计数。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "101语义动作／58唯一C路径；8/12/16位为58/28/15。",
+        "保存48／普通展示46；不以42个issue_hash代替原诊断计数。",
+        "完整backend argv未捕获，CodeChecker处理前诊断总数未知；CTU off不代表CPP原生全程序关闭。"
+      ],
+      "baseline_assessment_row": 27
+    },
+    {
+      "cell": 28,
+      "project_id": "P10",
+      "project": "utf8proc",
+      "version": "2.10.0",
+      "tool": "Flawfinder",
+      "tool_key": "FF",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P10-FF-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P10-FF-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "文本文件",
+        "intended_count": 3,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/run-summary.json",
+        "scope_field": "intendedTextFiles"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 3,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 18,
+        "candidate_unit": "minlevel=1显示命中条目",
+        "saved_source_diagnostics": null,
+        "displayed_reports": 18,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": 0,
+        "flawfinder_cumulative_0plus": 18,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/utf8proc_setup/Flawfinder_Profile.json",
+        "analysis_standard": "文本扫描；不预处理，无语义语言标准",
+        "actual_build_standard": "C99",
+        "options": [
+          "--minlevel=1",
+          "--neverignore",
+          "--columns",
+          "--context"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/run-meta.tsv",
+        "started_utc": "2026-10-29T09:22:41Z",
+        "ended_utc": "2026-10-29T09:22:41Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/environment-start.txt",
+        "execution_environment_source": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/execution-environment.tsv",
+        "build_environment_session": "/home/yhong/comp5355/environment/session-20261029T085446-p10-22994",
+        "execution_environment_session": "not supplied; see environment-start.txt for this actual run",
+        "command_file": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/command.txt",
+        "effective_tool_order_in_project": 1,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 0.34,
+        "user_seconds": 0.33,
+        "system_seconds": 0.0,
+        "max_rss_kib": 25612,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:00.34",
+        "source_file": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "74454edb3433c9ec46c31fc0195f92105b795bf1de698dff99fd6575489888d5",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 18,
+        "original_risk_false_positive": 18,
+        "supported_diagnoses": 0,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/run-summary.json",
+          "bytes": 3110,
+          "sha256": "9bf1e673fd518a0e31893e8165e31c0afae694d8f07593cd7779232bb9e925d0"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Utf8proc_Pretest_Record.md",
+          "bytes": 9097,
+          "sha256": "8d7124dc69ac5a3d66eb8826700a5d299a45b4b102e6ba48888c9f15370d24ad"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/utf8proc_review/Review_Summary.json",
+          "bytes": 2712,
+          "sha256": "f3800a92da043f8c47fde3ee140034be88512a05b4e6501c50bd61e5917f4cb3"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/utf8proc_review/Review_Ledger.csv",
+          "bytes": 32627,
+          "sha256": "3fae1221ec9909fa131ca57a9e7a6b8e42e9058c307b919d00b3af05f32b9de9"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/utf8proc_setup/Flawfinder_Profile.json",
+          "bytes": 6469,
+          "sha256": "5d9805d1f368bea9059cce59caee655e92a32c374c967277f3a23d7b9f14566b"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/command.txt",
+          "bytes": 263,
+          "sha256": "a727f34cc76b653adce8138ce9d37ff361527bfa552577eaf0d603622d8b3f16"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/run-meta.tsv",
+          "bytes": 449,
+          "sha256": "1a8640d5b31d020229d6d468601e18ced1e96634142232faa0aac2a1f6cb562b"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "f0245d9e36d8510119cf6fb8d9666b7caa05313c6e07e04fe02f492489a0271e"
+        },
+        {
+          "role": "环境会话关联说明",
+          "path": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/execution-environment.tsv",
+          "bytes": 272,
+          "sha256": "8a8e9bc5fafc9c8ca76cadcec55b5224a0c2607a93851e1cb3401b67547082a1"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/utf8proc_pretest_20261029/flawfinder/PRE-P10-FF-001/time.txt",
+          "bytes": 976,
+          "sha256": "74454edb3433c9ec46c31fc0195f92105b795bf1de698dff99fd6575489888d5"
+        }
+      ],
+      "limits": [
+        "Examining覆盖全部声明文本，可能含语义工具未激活的条件分支；文件数不等同编译动作或路径覆盖。",
+        "完整执行环境会话未提供；实际run-start快照保留，不从构建会话推认执行会话。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "范围为词法Examining文件；失败／跳过null原样保留，不推成0或语义路径覆盖。"
+      ],
+      "baseline_assessment_row": 28
+    },
+    {
+      "cell": 29,
+      "project_id": "P10",
+      "project": "utf8proc",
+      "version": "2.10.0",
+      "tool": "Cppcheck",
+      "tool_key": "CP",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P10-CP-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P10-CP-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 1,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/run-summary.json",
+        "scope_field": "intendedActions"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 1,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 0,
+        "candidate_unit": "XML非information源码诊断元素；多个location仍计一条",
+        "saved_source_diagnostics": 0,
+        "displayed_reports": null,
+        "raw_xml_elements": 6,
+        "information_items": 6,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/utf8proc_setup/Cppcheck_Profile.json",
+        "analysis_standard": "C99",
+        "actual_build_standard": "C99",
+        "options": [
+          "builtin内部解析器",
+          "normal",
+          "unix64",
+          "-j 1",
+          "XML2",
+          "warning/performance/portability/information及默认error",
+          "新build-dir；默认库模型；无inconclusive/force/额外抑制"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/run-meta.tsv",
+        "started_utc": "2026-10-29T09:45:39Z",
+        "ended_utc": "2026-10-29T09:45:44Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/environment-start.txt",
+        "execution_environment_source": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/execution-environment.tsv",
+        "build_environment_session": "/home/yhong/comp5355/environment/session-20261029T085446-p10-22994",
+        "execution_environment_session": "not supplied; see environment-start.txt for this actual run",
+        "command_file": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/command.txt",
+        "effective_tool_order_in_project": 2,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 5.44,
+        "user_seconds": 5.18,
+        "system_seconds": 0.25,
+        "max_rss_kib": 339712,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:05.44",
+        "source_file": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "5c632030331b7a118d920651d67d9a18221b495a61fda74a11ad80ac55148d80",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 0,
+        "original_risk_false_positive": 0,
+        "supported_diagnoses": 0,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/run-summary.json",
+          "bytes": 7517,
+          "sha256": "8aa7f6c1f732a2b763d51d94f319191142b31b8fbb9ffaf8355fa2724878689b"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Utf8proc_Pretest_Record.md",
+          "bytes": 9097,
+          "sha256": "8d7124dc69ac5a3d66eb8826700a5d299a45b4b102e6ba48888c9f15370d24ad"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/utf8proc_review/Review_Summary.json",
+          "bytes": 2712,
+          "sha256": "f3800a92da043f8c47fde3ee140034be88512a05b4e6501c50bd61e5917f4cb3"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/utf8proc_review/Review_Ledger.csv",
+          "bytes": 32627,
+          "sha256": "3fae1221ec9909fa131ca57a9e7a6b8e42e9058c307b919d00b3af05f32b9de9"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/utf8proc_setup/Cppcheck_Profile.json",
+          "bytes": 10328,
+          "sha256": "dc91825108586618b5e7f0a78894340c251b53ea9c62edf0b2091b25b9d01189"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/command.txt",
+          "bytes": 420,
+          "sha256": "aad18dce78e53c37c730f923ff1893fc1e65b955a53a1e851f44078af9bd4d7b"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/run-meta.tsv",
+          "bytes": 449,
+          "sha256": "4b974a8579dd1fa4b56a84af7015b0080e8010c2b9e2fbda4fcb9733db3d6fc4"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "0e9942112aefb06039975e8672d35d753a32d72b2e1526312248f06d3fe78855"
+        },
+        {
+          "role": "环境会话关联说明",
+          "path": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/execution-environment.tsv",
+          "bytes": 272,
+          "sha256": "8a8e9bc5fafc9c8ca76cadcec55b5224a0c2607a93851e1cb3401b67547082a1"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/utf8proc_pretest_20261029/cppcheck/PRE-P10-CP-001/time.txt",
+          "bytes": 1133,
+          "sha256": "5c632030331b7a118d920651d67d9a18221b495a61fda74a11ad80ac55148d80"
+        }
+      ],
+      "limits": [
+        "源码候选与information分列；成功处理动作不等于穷尽路径。未保存独立展示数量，displayed_reports为null。",
+        "完整执行环境会话未提供；实际run-start快照保留，不从构建会话推认执行会话。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。"
+      ],
+      "baseline_assessment_row": 29
+    },
+    {
+      "cell": 30,
+      "project_id": "P10",
+      "project": "utf8proc",
+      "version": "2.10.0",
+      "tool": "CodeChecker/clangsa",
+      "tool_key": "CC",
+      "policy": "comparison-v1",
+      "adopted_date": "2026-10-30",
+      "result_status": "已按声明范围验收并采用",
+      "result_run_id": "PRE-P10-CC-001",
+      "result_original_phase": "功能预试",
+      "cost_status": "已验收；单次描述性成本",
+      "cost_run_id": "PRE-P10-CC-001",
+      "cost_source_kind": "已验收旧预试外部记录",
+      "input": {
+        "unit": "编译动作／主分析请求",
+        "intended_count": 1,
+        "unique_source_paths": null,
+        "scope_source": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/run-summary.json",
+        "scope_field": "intendedActions"
+      },
+      "result_coverage": {
+        "succeeded_or_examined": 1,
+        "failed": 0,
+        "skipped": 0,
+        "unknown_note": "null表示未独立记录该统计；非零或空结果的有效性依据各验收记录，不从退出码单独推定"
+      },
+      "output": {
+        "candidate_count": 0,
+        "candidate_unit": "CodeChecker保存plist中的diagnostic元素；不按路径事件或hash去重",
+        "saved_source_diagnostics": 0,
+        "displayed_reports": 0,
+        "raw_xml_elements": null,
+        "information_items": null,
+        "flawfinder_level0_summary": null,
+        "flawfinder_cumulative_0plus": null,
+        "cumulative_derived_from_display_and_level0": false,
+        "pre_codechecker_processing_backend_diagnostics": null
+      },
+      "configuration": {
+        "profile": "review_evidence/utf8proc_setup/CodeChecker_Profile.json",
+        "analysis_standard": "C99",
+        "actual_build_standard": "C99",
+        "options": [
+          "仅clangsa",
+          "-j 1",
+          "每动作120秒",
+          "compile-uniqueing none",
+          "CTU默认关闭",
+          "Z3 refutation off",
+          "capture-analysis-output请求；实际捕获范围见各验收记录",
+          "新reports；保留默认parse过滤"
+        ],
+        "cache_policy": "新工具结果目录／Cppcheck缓存；自然OS缓存；单次描述性测量"
+      },
+      "result_runtime_metadata": {
+        "run_meta_source": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/run-meta.tsv",
+        "started_utc": "2026-10-29T10:08:02Z",
+        "ended_utc": "2026-10-29T10:08:05Z",
+        "locale": "C",
+        "measurement_schema": "measurement-v1",
+        "application_cache_policy": "required_fresh_tool_cache",
+        "os_page_cache": "natural_not_cleared",
+        "actual_run_environment_snapshot": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/environment-start.txt",
+        "execution_environment_source": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/execution-environment.tsv",
+        "build_environment_session": "/home/yhong/comp5355/environment/session-20261029T085446-p10-22994",
+        "execution_environment_session": "not supplied; see environment-start.txt for this actual run",
+        "command_file": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/command.txt",
+        "effective_tool_order_in_project": 3,
+        "boundary": "环境会话未取得留null；动态快照与完整会话分开。旧pending覆盖字段不覆盖已验收结论。"
+      },
+      "external_resources": {
+        "wall_seconds": 3.66,
+        "user_seconds": 2.03,
+        "system_seconds": 0.47,
+        "max_rss_kib": 197060,
+        "timed_invocation_exit_code": 0,
+        "wall_raw": "0:03.66",
+        "source_file": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/time.txt",
+        "source_fields": [
+          "Elapsed (wall clock) time (h:mm:ss or m:ss)",
+          "User time (seconds)",
+          "System time (seconds)",
+          "Maximum resident set size (kbytes)",
+          "Exit status"
+        ],
+        "source_sha256": "de6b7b44777fa253e3f975ce7771ca9df2729daccbd28481001eb6b00d5bc81f",
+        "boundary": "完整单次工具分析命令；配置／构建／独立parse／AI核查在外",
+        "rss_meaning": "GNU time最大RSS，Linux KiB；不称全进程树RSS总峰值"
+      },
+      "new_cost_acceptance": null,
+      "new_cost_coverage": null,
+      "judgments": {
+        "reviewed_candidate_entries": 0,
+        "original_risk_false_positive": 0,
+        "supported_diagnoses": 0,
+        "undetermined": 0,
+        "unreviewed": 0
+      },
+      "result_evidence": [
+        {
+          "role": "运行验收／摘要",
+          "path": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/run-summary.json",
+          "bytes": 7676,
+          "sha256": "343284dc6997dc02647481300e64798a86d75bd3c7197408b9020fc9f90e2727"
+        },
+        {
+          "role": "项目记录",
+          "path": "review_evidence/Utf8proc_Pretest_Record.md",
+          "bytes": 9097,
+          "sha256": "8d7124dc69ac5a3d66eb8826700a5d299a45b4b102e6ba48888c9f15370d24ad"
+        },
+        {
+          "role": "当前核查汇总",
+          "path": "review_evidence/utf8proc_review/Review_Summary.json",
+          "bytes": 2712,
+          "sha256": "f3800a92da043f8c47fde3ee140034be88512a05b4e6501c50bd61e5917f4cb3"
+        },
+        {
+          "role": "当前核查账本",
+          "path": "review_evidence/utf8proc_review/Review_Ledger.csv",
+          "bytes": 32627,
+          "sha256": "3fae1221ec9909fa131ca57a9e7a6b8e42e9058c307b919d00b3af05f32b9de9"
+        },
+        {
+          "role": "固定profile；执行以命令和输出为证",
+          "path": "review_evidence/utf8proc_setup/CodeChecker_Profile.json",
+          "bytes": 12505,
+          "sha256": "a25570a7a3d5e15e30d4ebf638f1313a577ca174944352fffe8fb5ebf0543b7c"
+        },
+        {
+          "role": "实际命令",
+          "path": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/command.txt",
+          "bytes": 306,
+          "sha256": "b8494721aae5235d5cf7792241b0911814d97b77c25a7080f4f45adddfbcbd73"
+        },
+        {
+          "role": "测量元数据",
+          "path": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/run-meta.tsv",
+          "bytes": 449,
+          "sha256": "a6c2fc9e4527680939c24fd5f04b45acdb4ee8760ac8f423b2b722c6e65e28ba"
+        },
+        {
+          "role": "实际动态环境快照",
+          "path": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/environment-start.txt",
+          "bytes": 2525,
+          "sha256": "d2524975c39ecb495791b1ede899abcd94e936e5b2a162a1b04621bf60bd8bcd"
+        },
+        {
+          "role": "环境会话关联说明",
+          "path": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/execution-environment.tsv",
+          "bytes": 272,
+          "sha256": "8a8e9bc5fafc9c8ca76cadcec55b5224a0c2607a93851e1cb3401b67547082a1"
+        },
+        {
+          "role": "外部GNU time",
+          "path": "review_evidence/utf8proc_pretest_20261029/codechecker/PRE-P10-CC-001/time.txt",
+          "bytes": 1027,
+          "sha256": "de6b7b44777fa253e3f975ce7771ca9df2729daccbd28481001eb6b00d5bc81f"
+        }
+      ],
+      "limits": [
+        "保存的是CodeChecker处理后的plist；处理前后端全部诊断数未知；普通parse退出2为有报告，未选后端Missing不记clangsa失败。完整逐动作后端argv未单独转储的边界保留。独立parse等辅助成本未测量。",
+        "完整执行环境会话未提供；实际run-start快照保留，不从构建会话推认执行会话。",
+        "完整执行会话未逐次可靠关联；不能以构建会话或事后快照补造历史环境。",
+        "完整backend argv未捕获，CodeChecker处理前诊断总数未知；CTU off不代表CPP原生全程序关闭。"
+      ],
+      "baseline_assessment_row": 30
+    }
+  ]
+}

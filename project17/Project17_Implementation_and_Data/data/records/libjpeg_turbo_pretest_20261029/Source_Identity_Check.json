@@ -1,0 +1,205 @@
+{
+  "project": "P09 libjpeg-turbo",
+  "runId": "SRC-P09-001",
+  "accepted": true,
+  "acceptedDate": "2026-10-29",
+  "version": "3.1.1",
+  "commit": "7723f50f3f66b9da74376e6d8badb6162464212c",
+  "purpose": "functional pretest source extraction acceptance only",
+  "sourceDirectory": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1",
+  "regularFiles": 546,
+  "directoriesIncludingRoot": 42,
+  "subdirectories": 41,
+  "symlinks": 0,
+  "hardlinks": 0,
+  "allPermissionsIncludingExecutionBitsMatch": true,
+  "copiedOriginalFiles": 564,
+  "copiedSourceFiles": 546,
+  "stageRecordFiles": 18,
+  "rawSourceCheck": "review_evidence/libjpeg_turbo_pretest_20261029/source/source-check.json",
+  "rawSourceCheckSHA256": "f0bd826d4947555a41a6aacced439c762b1dd44996cf0bd86d25a1f7b5d7ff6e",
+  "sourceManifest": "review_evidence/libjpeg_turbo_pretest_20261029/Source_Raw_File_Manifest.json",
+  "sourceReinspection": "review_evidence/libjpeg_turbo_setup/Source_Acceptance_20261029/Source_Reinspection.json",
+  "archiveSHA256": "aadc97ea91f6ef078b0ae3a62bba69e008d9a7db19b34e4ac973b19b71b4217c",
+  "archiveBytes": 2506010,
+  "fixedCommitReferenceFiles": {
+    "CMakeLists.txt": "7ecd13a697bc2ad91b374bb5ad4c2d249169dade540d54f891ce686a44ecebc1",
+    "BUILDING.md": "8d2c93157e3294e66e686ec133c704bc13ccfdb2895a85403198510e52ffffa9",
+    "LICENSE.md": "96f5b328adbb78eeaaec6980d73fd558cb1e4d62560ed615646bc3cf5e532430",
+    "README.ijg": "75815e3bf6484201a3c3d17a1bbf10f2e8e3237f84df10a2357ea896db2a81d6"
+  },
+  "executedInputs": [
+    {
+      "file": "review_evidence/libjpeg_turbo_setup/Extract_Verify_Source.sh",
+      "linuxPath": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_setup/Extract_Verify_Source.sh",
+      "sha256": "6b7cf6ae841ebeb10462894887da92c72732872488dbc18efd555e42b9627466"
+    },
+    {
+      "file": "review_evidence/libjpeg_turbo_setup/Verify_Extracted_Source.py",
+      "linuxPath": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_setup/Verify_Extracted_Source.py",
+      "sha256": "8cfefe4aea515ba87fff3b6a437b13f6c90e680a7f5cd23b3b4b9ad496d23f63"
+    },
+    {
+      "file": "review_evidence/libjpeg_turbo_setup/Inspect_Release_Archive.py",
+      "linuxPath": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_setup/Inspect_Release_Archive.py",
+      "sha256": "69f500a25f2ad343c296ae01c69d795a79369f86a0c4e7ab8fdf23c0fb42c906"
+    },
+    {
+      "file": "review_evidence/libjpeg_turbo_setup/Download_Profile.json",
+      "linuxPath": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_setup/Download_Profile.json",
+      "sha256": "847dcf76333d9a2013349e7276cf1f86967797a02989a2538013df263c7b1bf9"
+    },
+    {
+      "file": "review_evidence/libjpeg_turbo_pretest_20261029/Archive_Identity_Check.json",
+      "linuxPath": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_setup/../libjpeg_turbo_pretest_20261029/Archive_Identity_Check.json",
+      "sha256": "be58cd1b202f17105b860c6f599220144e77b7a1c23fab87c5c2d6ed8738ad99"
+    },
+    {
+      "file": "review_evidence/libjpeg_turbo_pretest_20261029/raw_download/DL-P09-001/archive-check.json",
+      "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1-DL-P09-001/archive-check.json",
+      "sha256": "711fac89e3cc5556933414baf5c57910864966826059beede52d829b0b51c0c8"
+    },
+    {
+      "file": "review_evidence/libjpeg_turbo_pretest_20261029/archive/libjpeg-turbo-3.1.1.tar.gz",
+      "linuxPath": "/home/yhong/comp5355/downloads/libjpeg-turbo-3.1.1.tar.gz",
+      "sha256": "aadc97ea91f6ef078b0ae3a62bba69e008d9a7db19b34e4ac973b19b71b4217c"
+    }
+  ],
+  "preflightExitCode": 0,
+  "extractExitCode": 0,
+  "verifyExitCode": 0,
+  "scriptExitCode": 0,
+  "startedUTC": "2026-10-29T02:03:34Z",
+  "endedUTC": "2026-10-29T02:03:35Z",
+  "sourceExtracted": true,
+  "configured": false,
+  "built": false,
+  "scanned": false,
+  "buildDirectoryExists": false,
+  "actualCompilationActions": null,
+  "wholeArchiveEqualsGitTree": "not asserted:official release may include generated files",
+  "checks": [
+    {
+      "check": "all564 copied originals match exact lengths and SHA-256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "546 source files and18 stage records retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "accepted archive, official digest, pins and complete member inventory freshly rechecked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fresh Linux reinspection matches every archive member type,mode,size and content hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "user source-check matches fresh reinspection exactly for all588 members",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "546 files,41 subdirectories,root included42,zero links",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "local complete file set matches all546 source files",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "local full source copies match accepted per-file size and SHA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preflight exit0,empty stderr and nonempty saved command",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "extract exit0,empty stderr and nonempty saved command",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "verify exit0,empty stderr and nonempty saved command",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preflight explicitly passed before extraction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "run identity and script exit0 recorded with UTC interval",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed input SHA matches: review_evidence/libjpeg_turbo_setup/Extract_Verify_Source.sh",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed input SHA matches: review_evidence/libjpeg_turbo_setup/Verify_Extracted_Source.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed input SHA matches: review_evidence/libjpeg_turbo_setup/Inspect_Release_Archive.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed input SHA matches: review_evidence/libjpeg_turbo_setup/Download_Profile.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed input SHA matches: review_evidence/libjpeg_turbo_pretest_20261029/Archive_Identity_Check.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed input SHA matches: review_evidence/libjpeg_turbo_pretest_20261029/raw_download/DL-P09-001/archive-check.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed input SHA matches: review_evidence/libjpeg_turbo_pretest_20261029/archive/libjpeg-turbo-3.1.1.tar.gz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "seven source-stage identity inputs retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "four fixed commit reference texts match actual source copies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source CMake identifies fixed version3.1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fresh Linux read confirms build and PREP-P09-001 absent",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 24,
+  "failed": 0
+}

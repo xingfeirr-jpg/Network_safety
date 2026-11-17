@@ -1,0 +1,54 @@
+png_save_uint_32
+png_save_uint_16
+png_write_sig call:[png_write_data]
+png_write_chunk_header call:[png_calculate_crc,png_reset_crc,png_save_uint_32,png_write_data]
+png_write_chunk_start call:[png_write_chunk_header] noreturn:[png_write_chunk_header]
+png_write_chunk_data call:[png_calculate_crc,png_write_data] noreturn:[png_calculate_crc]
+png_write_chunk_end call:[png_save_uint_32,png_write_data] noreturn:[png_write_data]
+png_write_complete_chunk call:[png_error,png_write_chunk_data,png_write_chunk_end,png_write_chunk_header] noreturn:[png_error,png_write_chunk_end]
+png_write_chunk call:[png_write_complete_chunk] noreturn:[png_write_complete_chunk]
+png_image_size call:[return]
+optimize_cmf call:[while]
+png_deflate_claim call:[deflateEnd,deflateInit2_,deflateReset,png_safecat,png_warning,png_zstream_error,return,sizeof] noreturn:[deflateReset,png_warning,png_zstream_error,return]
+png_free_buffer_list call:[png_free,while] noreturn:[while]
+png_text_compress_init
+png_text_compress call:[deflate,offsetof,optimize_cmf,png_deflate_claim,png_malloc_base,png_zstream_error,sizeof,while] noreturn:[png_zstream_error]
+png_write_compressed_data_out call:[png_error,png_write_chunk_data,sizeof] noreturn:[png_error]
+png_write_IHDR call:[case,png_error,png_save_uint_32,png_warning,png_write_complete_chunk] noreturn:[png_error]
+png_write_PLTE call:[png_error,png_warning,png_write_chunk_data,png_write_chunk_end,png_write_chunk_header] noreturn:[png_error,png_write_chunk_data]
+png_compress_IDAT call:[deflate,offsetof,optimize_cmf,png_deflate_claim,png_error,png_free_buffer_list,png_image_size,png_malloc,png_write_complete_chunk,png_zstream_error] noreturn:[optimize_cmf,png_error,png_free_buffer_list,png_write_complete_chunk]
+png_write_IEND call:[png_write_complete_chunk]
+png_write_gAMA_fixed call:[png_save_uint_32,png_write_complete_chunk] noreturn:[png_write_complete_chunk]
+png_write_sRGB call:[png_warning,png_write_complete_chunk] noreturn:[png_warning,png_write_complete_chunk]
+png_write_iCCP call:[png_check_keyword,png_error,png_text_compress,png_text_compress_init,png_write_chunk_data,png_write_chunk_end,png_write_chunk_header,png_write_compressed_data_out] noreturn:[png_error,png_write_chunk_end]
+png_write_sPLT call:[png_check_keyword,png_error,png_save_uint_16,png_write_chunk_data,png_write_chunk_end,png_write_chunk_header] noreturn:[png_error,png_save_uint_16,png_write_chunk_data,png_write_chunk_end]
+png_write_sBIT call:[png_warning,png_write_complete_chunk] noreturn:[png_write_complete_chunk]
+png_write_cHRM_fixed call:[png_save_int_32,png_write_complete_chunk] noreturn:[png_write_complete_chunk]
+png_write_tRNS call:[png_app_warning,png_save_uint_16,png_write_complete_chunk] noreturn:[png_app_warning,png_write_complete_chunk]
+png_write_bKGD call:[png_save_uint_16,png_warning,png_write_complete_chunk] noreturn:[png_write_complete_chunk]
+png_write_cICP call:[png_write_chunk_data,png_write_chunk_end,png_write_chunk_header] noreturn:[png_write_chunk_end]
+png_write_cLLI_fixed call:[png_save_uint_32,png_write_complete_chunk] noreturn:[png_write_complete_chunk]
+png_write_mDCV_fixed call:[png_save_uint_16,png_save_uint_32,png_write_complete_chunk] noreturn:[png_write_complete_chunk]
+png_write_eXIf call:[png_write_chunk_data,png_write_chunk_end,png_write_chunk_header] noreturn:[png_write_chunk_data,png_write_chunk_end]
+png_write_hIST call:[png_save_uint_16,png_warning,png_write_chunk_data,png_write_chunk_end,png_write_chunk_header] noreturn:[png_write_chunk_data,png_write_chunk_end]
+png_write_tEXt call:[png_check_keyword,png_error,png_write_chunk_data,png_write_chunk_end,png_write_chunk_header,strlen] noreturn:[png_error,png_write_chunk_data,png_write_chunk_end,strlen]
+png_write_zTXt call:[png_check_keyword,png_error,png_text_compress,png_text_compress_init,png_write_chunk_data,png_write_chunk_end,png_write_chunk_header,png_write_compressed_data_out,png_write_tEXt,strlen] noreturn:[png_error,png_write_chunk_end]
+png_write_iTXt call:[png_check_keyword,png_error,png_text_compress,png_text_compress_init,png_write_chunk_data,png_write_chunk_end,png_write_chunk_header,png_write_compressed_data_out,strlen] noreturn:[png_error,png_write_chunk_data,png_write_chunk_end,png_write_compressed_data_out]
+png_write_oFFs call:[png_save_int_32,png_warning,png_write_complete_chunk] noreturn:[png_warning,png_write_complete_chunk]
+png_write_pCAL call:[png_check_keyword,png_error,png_free,png_malloc,png_save_int_32,png_write_chunk_data,png_write_chunk_end,png_write_chunk_header,sizeof,strlen] noreturn:[png_error,png_write_chunk_data,png_write_chunk_end]
+png_write_sCAL_s call:[memcpy,png_warning,png_write_complete_chunk,strlen] noreturn:[png_write_complete_chunk]
+png_write_pHYs call:[png_save_uint_32,png_warning,png_write_complete_chunk] noreturn:[png_warning,png_write_complete_chunk]
+png_write_tIME call:[png_save_uint_16,png_warning,png_write_complete_chunk] noreturn:[png_write_complete_chunk]
+png_write_start_row global:[png_pass_inc,png_pass_start,png_pass_yinc,png_pass_ystart] call:[png_calloc,png_malloc] noreturn:[png_calloc,png_malloc]
+png_write_finish_row global:[png_pass_inc,png_pass_start,png_pass_yinc,png_pass_ystart] call:[memset,png_compress_IDAT,while] noreturn:[memset,png_compress_IDAT,while]
+png_do_write_interlace global:[png_pass_inc,png_pass_start] call:[memcpy] noreturn:[memcpy]
+png_setup_sub_row
+png_setup_sub_row_only
+png_setup_up_row
+png_setup_up_row_only
+png_setup_avg_row
+png_setup_avg_row_only
+png_setup_paeth_row
+png_setup_paeth_row_only
+png_write_find_filter call:[png_setup_avg_row,png_setup_avg_row_only,png_setup_paeth_row,png_setup_paeth_row_only,png_setup_sub_row,png_setup_sub_row_only,png_setup_up_row,png_setup_up_row_only,png_write_filtered_row] noreturn:[png_write_filtered_row]
+png_write_filtered_row call:[png_compress_IDAT,png_write_finish_row,png_write_flush] noreturn:[png_write_flush]

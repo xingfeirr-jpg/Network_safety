@@ -1,0 +1,4 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:207:8: warning: Access to field 'sent_table' results in a dereference of a null pointer (loaded from variable 'htbl') [core.NullDereference]
+  207 |   if (!htbl->sent_table) {
+      |        ^~~~~~~~~~~~~~~~
+1 warning generated.

@@ -1,0 +1,4 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:513:41: warning: Division by zero [core.DivideZero]
+  513 |     (_JSAMPLE)((c0total + (total >> 1)) / total);
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+1 warning generated.

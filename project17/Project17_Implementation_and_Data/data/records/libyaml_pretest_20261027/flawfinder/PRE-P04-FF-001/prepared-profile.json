@@ -1,0 +1,77 @@
+{
+  "profileId": "P04-FF-PRE-v1",
+  "plannedRunId": "PRE-P04-FF-001",
+  "status": "prepared; not executed",
+  "purpose": "functional pretest",
+  "tool": "Flawfinder",
+  "version": "2.0.20",
+  "binary": "/home/yhong/comp5355/.venv/bin/flawfinder",
+  "arguments": [
+    "--minlevel=1",
+    "--neverignore",
+    "--columns",
+    "--context"
+  ],
+  "inputCount": 11,
+  "sourceCFiles": 8,
+  "sourceHeaders": 2,
+  "generatedHeaders": 1,
+  "inputs": [
+    {
+      "file": "/home/yhong/comp5355/build/libyaml-0.2.5/include/config.h",
+      "sha256": "8dc8527df62e73904353d78d9eb7fcff6155aa0bec527b6614bef09c10809d58"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h",
+      "sha256": "de39c9fc2b2c8584775e6d0dc0f13c8e778ceba47d419cff9d85465ca35d6954"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c",
+      "sha256": "71f9263a2c77237762c8fa5e7c3d2bdd35723ecf1e2898222c7a603a5bf3f2db"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c",
+      "sha256": "56fe41a1db73e1b9342b9381856e1fade8ea339a0b723bef90e7e1e8638bc441"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c",
+      "sha256": "fbec4f702153929ad1421636ab0f5ecded140f0f37014d5ab3c65dfecd7e0743"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c",
+      "sha256": "68424f0b29e16434e7f2c0838b26dd4b68e04b567ad40f4f4c1bc61cd8e93479"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c",
+      "sha256": "b418ed8d6ef7e86dbd0e59c8dc7a00c8e48200b0252dd41e25d00d4616c7b2dc"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c",
+      "sha256": "c428a44b177391557bdf49177c1dc0216edf2a2bbe0e24ca2ef2725ef7f01e9d"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c",
+      "sha256": "bc3b30ceec0c696925e9703845874d7fafefb42bfbd3006dc4a02fc6d646f2d1"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/writer.c",
+      "sha256": "44a75c870a0b7039e37b457850b31748a69ce3bf1bf39950e7b855acef472de2"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h",
+      "sha256": "8dffe95c784665eba4ee88169456ebd41137a6d80ad13d536df6ad10d7a4d459"
+    }
+  ],
+  "inputListSHA256": "c08fc5751f30fc51a98193d6b848dbf2ff073b25f53d13c5cd6ab2ce9f0eb039",
+  "identityManifestSHA256": "266ae821612a5f2233926e4c6a899cdf1c8f47fab043727930d47b4582b4e715",
+  "headerSelection": "actual VALID Ninja project dependency closure; each file once, config.h included; no compile database scanned as text",
+  "textScopeCaveat": "lexical text scanning does not preprocess macros; inactive text may match",
+  "displayedHitPolicy": "minlevel1; level0 and cumulative0+ reported separately, not displayed hit count",
+  "measurement": "measurement-v1",
+  "locale": "C",
+  "applicationCache": "no Flawfinder analysis-result cache requested; recorder generic cache directory unused",
+  "osPageCache": "natural, not cleared",
+  "runDirectory": "/home/yhong/comp5355/results/pretest-libyaml-0.2.5/PRE-P04-FF-001",
+  "environmentSession": "session-20261027T123546-p04-22994",
+  "buildIdentity": "../libyaml_pretest_20261027/Build_Identity_Check.json"
+}

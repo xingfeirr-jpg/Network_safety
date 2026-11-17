@@ -1,0 +1,30 @@
+{
+  "runId": "PRE-P06-CC-001",
+  "purpose": "functional pretest",
+  "coverageValidation": "pending_tool_output_review",
+  "sourceReview": "not performed",
+  "auxiliaryTiming": "checkers and both parse commands outside analysis timing; not measured",
+  "metadataTools": [
+    {
+      "actionNum": 1,
+      "clangsaStatistics": {
+        "failed": 0,
+        "failed_sources": [],
+        "successful": 1,
+        "successful_sources": [
+          "/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c"
+        ],
+        "version": "18.1.3"
+      },
+      "skipped": 0
+    }
+  ],
+  "plistResults": [
+    {
+      "file": "reports/yyjson.c_clangsa_4d26b441507cc4b8a2667507fb8332f7.plist",
+      "savedDiagnostics": 0
+    }
+  ],
+  "plistFileCount": 1,
+  "savedPlistDiagnostics": 0
+}

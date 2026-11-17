@@ -1,0 +1,8 @@
+{
+  "current_environment": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-FORM-P03-FF-001/environment",
+  "pre_analysis_checks": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-FORM-P03-FF-001",
+  "accepted_preflight": "review_evidence/cJSON_cost_supplement_20261030/Preflight_Acceptance.json",
+  "accepted_codechecker": "review_evidence/cJSON_cost_supplement_20261030/CodeChecker_Acceptance.json",
+  "execution_order": "P03 CC已验收后执行FF；CP尚未由本入口执行",
+  "tool_result_cache": "Flawfinder不使用工具结果缓存；记录器的通用空cache目录未用于本工具"
+}

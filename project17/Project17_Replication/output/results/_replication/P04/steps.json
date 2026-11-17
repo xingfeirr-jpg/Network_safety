@@ -1,0 +1,41 @@
+{
+  "id": "P04",
+  "name": "libyaml",
+  "version": "0.2.5",
+  "started_utc": "2026-11-08T02:53:30Z",
+  "S1": {
+    "archive": "/home/yhong/comp5355/downloads/libyaml-0.2.5.tar.gz",
+    "sha256": "77987051b6f5bee8ba472f1efbe0053663a58d8d3e7a2f0f4a27d178adbf8844",
+    "expected_sha256": "77987051b6f5bee8ba472f1efbe0053663a58d8d3e7a2f0f4a27d178adbf8844",
+    "matches_original": true
+  },
+  "S2": {
+    "source_dir": "/home/yhong/comp5355/sources/libyaml-0.2.5",
+    "regular_files": 62
+  },
+  "S3": {
+    "build_dir": "/home/yhong/comp5355/build/libyaml-0.2.5",
+    "compile_actions": 8
+  },
+  "S5": {
+    "FF": {
+      "run_id": "PRE-P04-FF-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:53:32Z",
+      "ended_utc": "2026-11-08T02:53:32Z"
+    },
+    "CP": {
+      "run_id": "PRE-P04-CP-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:53:32Z",
+      "ended_utc": "2026-11-08T02:55:22Z"
+    },
+    "CC": {
+      "run_id": "PRE-P04-CC-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:55:22Z",
+      "ended_utc": "2026-11-08T02:56:10Z"
+    }
+  },
+  "ended_utc": "2026-11-08T02:56:10Z"
+}

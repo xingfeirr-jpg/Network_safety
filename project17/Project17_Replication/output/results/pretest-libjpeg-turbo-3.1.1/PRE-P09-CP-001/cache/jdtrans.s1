@@ -1,0 +1,4 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+jpeg_read_coefficients call:[transdecode_master_selection]
+transdecode_master_selection call:[j12init_d_coef_controller,jinit_arith_decoder,jinit_d_coef_controller,jinit_huff_decoder,jinit_phuff_decoder] noreturn:[j12init_d_coef_controller,jinit_arith_decoder,jinit_d_coef_controller,jinit_huff_decoder,jinit_phuff_decoder]

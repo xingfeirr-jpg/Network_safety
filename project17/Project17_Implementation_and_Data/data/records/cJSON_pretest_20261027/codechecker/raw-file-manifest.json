@@ -1,0 +1,57 @@
+[
+  {
+    "path": "analyze-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "path": "analyze-stderr.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "analyze.log",
+    "bytes": 1012,
+    "sha256": "de70db1ee4b96e473a93bad92b643e4e2b2c0507898292ba0569bd8d706bf62f"
+  },
+  {
+    "path": "checkers-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "path": "checkers-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "checkers.json",
+    "bytes": 55704,
+    "sha256": "0411fbf39b0a30e44f6dfe413248785f565c5d5ea370259818ba0a19336a44f4"
+  },
+  {
+    "path": "reports/cJSON.c_clangsa_ed85e4485239f352e3c6c5c3f783d77a.plist",
+    "bytes": 521,
+    "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179"
+  },
+  {
+    "path": "reports/compile_cmd.json",
+    "bytes": 793,
+    "sha256": "a391fdbfadf7729d5d7993df84bdc5ac90446c448e7a6905552855d9c09ca627"
+  },
+  {
+    "path": "reports/compiler_info.json",
+    "bytes": 255,
+    "sha256": "4a44923f0a7a2c369c7fcc226bb92fd003efb178b6d19e52027eabf2173b9f52"
+  },
+  {
+    "path": "reports/metadata.json",
+    "bytes": 6563,
+    "sha256": "1cdc1c1d06a9407a3984e99cba2bfc0f2bc0805242d620f5f2b7e1de20a4cf98"
+  },
+  {
+    "path": "reports/unique_compile_commands.json",
+    "bytes": 725,
+    "sha256": "310ffe527c137569185ddaaef193d2fc5f4bd1018577293ac307a9db78b4468a"
+  }
+]

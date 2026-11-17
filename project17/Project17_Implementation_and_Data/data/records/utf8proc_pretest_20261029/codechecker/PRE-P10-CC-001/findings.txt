@@ -1,0 +1,23 @@
+[INFO 2026-10-29 18:08:08] - Using '/usr/bin/clang-18' for analyzer 'clangsa'
+Found no defects in utf8proc.c
+
+----======== Summary ========----
+┌───────────────────────────────────────────┬───┐
+│ Number of processed analyzer result files │ 1 │
+├───────────────────────────────────────────┼───┤
+│ Number of analyzer reports                │ 0 │
+└───────────────────────────────────────────┴───┘
+----=================----
+[INFO 2026-10-29 18:08:09] - ----==== Summary ====----
+[INFO 2026-10-29 18:08:09] - Up-to-date analysis results
+[INFO 2026-10-29 18:08:09] -   clangsa: 1
+[INFO 2026-10-29 18:08:09] - Outdated analysis results
+[INFO 2026-10-29 18:08:09] - Failed to analyze
+[INFO 2026-10-29 18:08:09] - Missing analysis results
+[INFO 2026-10-29 18:08:09] -   clang-tidy: 1
+[INFO 2026-10-29 18:08:09] -   cppcheck: 1
+[INFO 2026-10-29 18:08:09] -   gcc: 1
+[INFO 2026-10-29 18:08:09] -   infer: 1
+[INFO 2026-10-29 18:08:09] - Total analyzed compilation commands: 1
+[INFO 2026-10-29 18:08:09] - Total available compilation commands: 1
+[INFO 2026-10-29 18:08:09] - ----=================----

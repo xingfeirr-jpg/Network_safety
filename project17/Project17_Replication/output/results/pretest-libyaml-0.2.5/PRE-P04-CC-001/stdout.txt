@@ -1,0 +1,21 @@
+[INFO 2026-11-08 02:55:22] - Enabled checker list can be found in /home/yhong/comp5355/results/pretest-libyaml-0.2.5/PRE-P04-CC-001/reports/metadata.json
+[INFO 2026-11-08 02:55:22] - Starting static analysis ...
+[INFO 2026-11-08 02:55:29] - [1/8] clangsa analyzed api.c successfully.
+[INFO 2026-11-08 02:55:31] - [2/8] clangsa analyzed dumper.c successfully.
+[INFO 2026-11-08 02:55:48] - [3/8] clangsa analyzed emitter.c successfully.
+[INFO 2026-11-08 02:55:50] - [4/8] clangsa analyzed loader.c successfully.
+[INFO 2026-11-08 02:55:52] - [5/8] clangsa analyzed parser.c successfully.
+[INFO 2026-11-08 02:55:54] - [6/8] clangsa analyzed reader.c successfully.
+[INFO 2026-11-08 02:56:10] - [7/8] clangsa analyzed scanner.c successfully.
+[INFO 2026-11-08 02:56:10] - [8/8] clangsa analyzed writer.c successfully.
+[INFO 2026-11-08 02:56:10] - ----==== Summary ====----
+[INFO 2026-11-08 02:56:10] - Successfully analyzed
+[INFO 2026-11-08 02:56:10] -   clangsa: 8
+[INFO 2026-11-08 02:56:10] - Total analyzed compilation commands: 8
+[INFO 2026-11-08 02:56:10] - ----=================----
+[INFO 2026-11-08 02:56:10] - Analysis finished.
+[INFO 2026-11-08 02:56:10] - To view results in the terminal use the "CodeChecker parse" command.
+[INFO 2026-11-08 02:56:10] - To store results use the "CodeChecker store" command.
+[INFO 2026-11-08 02:56:10] - See --help and the user guide for further options about parsing and storing the reports.
+[INFO 2026-11-08 02:56:10] - ----=================----
+[INFO 2026-11-08 02:56:10] - Analysis length: 48.07 sec.

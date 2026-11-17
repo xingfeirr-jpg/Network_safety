@@ -1,0 +1,23 @@
+	Command being timed: "/home/yhong/comp5355/.venv/bin/CodeChecker analyze /mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_pretest_20261029/analysis_inputs/compile_commands.json --analyzers clangsa -o /home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-CC-001/reports -j 1 --timeout 120 --compile-uniqueing none --capture-analysis-output --z3-refutation off"
+	User time (seconds): 334.00
+	System time (seconds): 15.51
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:53.31
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 201692
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3180567
+	Voluntary context switches: 29065
+	Involuntary context switches: 1355
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

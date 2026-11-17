@@ -1,0 +1,18 @@
+[INFO 2026-11-08 02:52:34] - Enabled checker list can be found in /home/yhong/comp5355/results/pretest-lz4-v1.10.0/PRE-P02-CC-001/reports/metadata.json
+[INFO 2026-11-08 02:52:34] - Starting static analysis ...
+[INFO 2026-11-08 02:52:42] - [1/5] clangsa analyzed lz4.c successfully.
+[INFO 2026-11-08 02:52:42] - [2/5] clangsa analyzed lz4file.c successfully.
+[INFO 2026-11-08 02:52:52] - [3/5] clangsa analyzed lz4frame.c successfully.
+[INFO 2026-11-08 02:53:08] - [4/5] clangsa analyzed lz4hc.c successfully.
+[INFO 2026-11-08 02:53:10] - [5/5] clangsa analyzed xxhash.c successfully.
+[INFO 2026-11-08 02:53:10] - ----==== Summary ====----
+[INFO 2026-11-08 02:53:10] - Successfully analyzed
+[INFO 2026-11-08 02:53:10] -   clangsa: 5
+[INFO 2026-11-08 02:53:10] - Total analyzed compilation commands: 5
+[INFO 2026-11-08 02:53:10] - ----=================----
+[INFO 2026-11-08 02:53:10] - Analysis finished.
+[INFO 2026-11-08 02:53:10] - To view results in the terminal use the "CodeChecker parse" command.
+[INFO 2026-11-08 02:53:10] - To store results use the "CodeChecker store" command.
+[INFO 2026-11-08 02:53:10] - See --help and the user guide for further options about parsing and storing the reports.
+[INFO 2026-11-08 02:53:10] - ----=================----
+[INFO 2026-11-08 02:53:10] - Analysis length: 35.39 sec.

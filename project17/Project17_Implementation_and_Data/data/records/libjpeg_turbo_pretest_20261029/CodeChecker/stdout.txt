@@ -1,0 +1,114 @@
+[INFO 2026-10-29 11:00:21] - Enabled checker list can be found in /home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-CC-001/reports/metadata.json
+[INFO 2026-10-29 11:00:21] - Starting static analysis ...
+[INFO 2026-10-29 11:00:22] - [1/101] clangsa analyzed jcapistd.c successfully.
+[INFO 2026-10-29 11:00:22] - [2/101] clangsa analyzed jccolor.c successfully.
+[INFO 2026-10-29 11:00:24] - [3/101] clangsa analyzed jcdiffct.c successfully.
+[INFO 2026-10-29 11:00:24] - [4/101] clangsa analyzed jclossls.c successfully.
+[INFO 2026-10-29 11:00:24] - [5/101] clangsa analyzed jcmainct.c successfully.
+[INFO 2026-10-29 11:00:26] - [6/101] clangsa analyzed jcprepct.c successfully.
+[INFO 2026-10-29 11:00:28] - [7/101] clangsa analyzed jcsample.c successfully.
+[INFO 2026-10-29 11:00:30] - [8/101] clangsa analyzed jdapistd.c successfully.
+[INFO 2026-10-29 11:00:32] - [9/101] clangsa analyzed jdcolor.c successfully.
+[INFO 2026-10-29 11:00:34] - [10/101] clangsa analyzed jddiffct.c successfully.
+[INFO 2026-10-29 11:00:34] - [11/101] clangsa analyzed jdlossls.c successfully.
+[INFO 2026-10-29 11:00:34] - [12/101] clangsa analyzed jdmainct.c successfully.
+[INFO 2026-10-29 11:00:35] - [13/101] clangsa analyzed jdpostct.c successfully.
+[INFO 2026-10-29 11:00:36] - [14/101] clangsa analyzed jdsample.c successfully.
+[INFO 2026-10-29 11:00:36] - [15/101] clangsa analyzed jutils.c successfully.
+[INFO 2026-10-29 11:00:38] - [16/101] clangsa analyzed jccoefct.c successfully.
+[INFO 2026-10-29 11:00:39] - [17/101] clangsa analyzed jcdctmgr.c successfully.
+[INFO 2026-10-29 11:00:44] - [18/101] clangsa analyzed jdcoefct.c successfully.
+[INFO 2026-10-29 11:00:45] - [19/101] clangsa analyzed jddctmgr.c successfully.
+[INFO 2026-10-29 11:00:45] - [20/101] clangsa analyzed jdmerge.c successfully.
+[INFO 2026-10-29 11:00:45] - [21/101] clangsa analyzed jfdctfst.c successfully.
+[INFO 2026-10-29 11:00:45] - [22/101] clangsa analyzed jfdctint.c successfully.
+[INFO 2026-10-29 11:00:46] - [23/101] clangsa analyzed jidctflt.c successfully.
+[INFO 2026-10-29 11:00:47] - [24/101] clangsa analyzed jidctfst.c successfully.
+[INFO 2026-10-29 11:00:48] - [25/101] clangsa analyzed jidctint.c successfully.
+[INFO 2026-10-29 11:00:49] - [26/101] clangsa analyzed jidctred.c successfully.
+[INFO 2026-10-29 11:00:50] - [27/101] clangsa analyzed jquant1.c successfully.
+[INFO 2026-10-29 11:00:52] - [28/101] clangsa analyzed jquant2.c successfully.
+[INFO 2026-10-29 11:00:52] - [29/101] clangsa analyzed jcapistd.c successfully.
+[INFO 2026-10-29 11:00:53] - [30/101] clangsa analyzed jccolor.c successfully.
+[INFO 2026-10-29 11:00:55] - [31/101] clangsa analyzed jcdiffct.c successfully.
+[INFO 2026-10-29 11:00:55] - [32/101] clangsa analyzed jclossls.c successfully.
+[INFO 2026-10-29 11:00:55] - [33/101] clangsa analyzed jcmainct.c successfully.
+[INFO 2026-10-29 11:00:57] - [34/101] clangsa analyzed jcprepct.c successfully.
+[INFO 2026-10-29 11:00:58] - [35/101] clangsa analyzed jcsample.c successfully.
+[INFO 2026-10-29 11:00:58] - [36/101] clangsa analyzed jdapistd.c successfully.
+[INFO 2026-10-29 11:01:00] - [37/101] clangsa analyzed jdcolor.c successfully.
+[INFO 2026-10-29 11:01:02] - [38/101] clangsa analyzed jddiffct.c successfully.
+[INFO 2026-10-29 11:01:02] - [39/101] clangsa analyzed jdlossls.c successfully.
+[INFO 2026-10-29 11:01:03] - [40/101] clangsa analyzed jdmainct.c successfully.
+[INFO 2026-10-29 11:01:03] - [41/101] clangsa analyzed jdpostct.c successfully.
+[INFO 2026-10-29 11:01:04] - [42/101] clangsa analyzed jdsample.c successfully.
+[INFO 2026-10-29 11:01:04] - [43/101] clangsa analyzed jutils.c successfully.
+[INFO 2026-10-29 11:01:04] - [44/101] clangsa analyzed jcapistd.c successfully.
+[INFO 2026-10-29 11:01:05] - [45/101] clangsa analyzed jccolor.c successfully.
+[INFO 2026-10-29 11:01:06] - [46/101] clangsa analyzed jcdiffct.c successfully.
+[INFO 2026-10-29 11:01:06] - [47/101] clangsa analyzed jclossls.c successfully.
+[INFO 2026-10-29 11:01:06] - [48/101] clangsa analyzed jcmainct.c successfully.
+[INFO 2026-10-29 11:01:08] - [49/101] clangsa analyzed jcprepct.c successfully.
+[INFO 2026-10-29 11:01:10] - [50/101] clangsa analyzed jcsample.c successfully.
+[INFO 2026-10-29 11:01:13] - [51/101] clangsa analyzed jdapistd.c successfully.
+[INFO 2026-10-29 11:01:15] - [52/101] clangsa analyzed jdcolor.c successfully.
+[INFO 2026-10-29 11:01:17] - [53/101] clangsa analyzed jddiffct.c successfully.
+[INFO 2026-10-29 11:01:17] - [54/101] clangsa analyzed jdlossls.c successfully.
+[INFO 2026-10-29 11:01:18] - [55/101] clangsa analyzed jdmainct.c successfully.
+[INFO 2026-10-29 11:01:18] - [56/101] clangsa analyzed jdpostct.c successfully.
+[INFO 2026-10-29 11:01:19] - [57/101] clangsa analyzed jdsample.c successfully.
+[INFO 2026-10-29 11:01:19] - [58/101] clangsa analyzed jutils.c successfully.
+[INFO 2026-10-29 11:01:21] - [59/101] clangsa analyzed jccoefct.c successfully.
+[INFO 2026-10-29 11:01:22] - [60/101] clangsa analyzed jcdctmgr.c successfully.
+[INFO 2026-10-29 11:01:27] - [61/101] clangsa analyzed jdcoefct.c successfully.
+[INFO 2026-10-29 11:01:27] - [62/101] clangsa analyzed jddctmgr.c successfully.
+[INFO 2026-10-29 11:01:28] - [63/101] clangsa analyzed jdmerge.c successfully.
+[INFO 2026-10-29 11:01:28] - [64/101] clangsa analyzed jfdctfst.c successfully.
+[INFO 2026-10-29 11:01:28] - [65/101] clangsa analyzed jfdctint.c successfully.
+[INFO 2026-10-29 11:01:28] - [66/101] clangsa analyzed jidctflt.c successfully.
+[INFO 2026-10-29 11:01:30] - [67/101] clangsa analyzed jidctfst.c successfully.
+[INFO 2026-10-29 11:01:31] - [68/101] clangsa analyzed jidctint.c successfully.
+[INFO 2026-10-29 11:01:31] - [69/101] clangsa analyzed jidctred.c successfully.
+[INFO 2026-10-29 11:01:32] - [70/101] clangsa analyzed jquant1.c successfully.
+[INFO 2026-10-29 11:01:34] - [71/101] clangsa analyzed jquant2.c successfully.
+[INFO 2026-10-29 11:01:35] - [72/101] clangsa analyzed jcapimin.c successfully.
+[INFO 2026-10-29 11:01:38] - [73/101] clangsa analyzed jchuff.c successfully.
+[INFO 2026-10-29 11:01:38] - [74/101] clangsa analyzed jcicc.c successfully.
+[INFO 2026-10-29 11:01:38] - [75/101] clangsa analyzed jcinit.c successfully.
+[INFO 2026-10-29 11:01:40] - [76/101] clangsa analyzed jclhuff.c successfully.
+[INFO 2026-10-29 11:01:43] - [77/101] clangsa analyzed jcmarker.c successfully.
+[INFO 2026-10-29 11:01:46] - [78/101] clangsa analyzed jcmaster.c successfully.
+[INFO 2026-10-29 11:01:46] - [79/101] clangsa analyzed jcomapi.c successfully.
+[INFO 2026-10-29 11:01:47] - [80/101] clangsa analyzed jcparam.c successfully.
+[INFO 2026-10-29 11:01:51] - [81/101] clangsa analyzed jcphuff.c successfully.
+[INFO 2026-10-29 11:01:53] - [82/101] clangsa analyzed jctrans.c successfully.
+[INFO 2026-10-29 11:01:53] - [83/101] clangsa analyzed jdapimin.c successfully.
+[INFO 2026-10-29 11:01:53] - [84/101] clangsa analyzed jdatadst.c successfully.
+[INFO 2026-10-29 11:01:53] - [85/101] clangsa analyzed jdatasrc.c successfully.
+[INFO 2026-10-29 11:01:56] - [86/101] clangsa analyzed jdhuff.c successfully.
+[INFO 2026-10-29 11:01:56] - [87/101] clangsa analyzed jdicc.c successfully.
+[INFO 2026-10-29 11:01:57] - [88/101] clangsa analyzed jdinput.c successfully.
+[INFO 2026-10-29 11:01:58] - [89/101] clangsa analyzed jdlhuff.c successfully.
+[INFO 2026-10-29 11:02:00] - [90/101] clangsa analyzed jdmarker.c successfully.
+[INFO 2026-10-29 11:02:01] - [91/101] clangsa analyzed jdmaster.c successfully.
+[INFO 2026-10-29 11:02:05] - [92/101] clangsa analyzed jdphuff.c successfully.
+[INFO 2026-10-29 11:02:05] - [93/101] clangsa analyzed jdtrans.c successfully.
+[INFO 2026-10-29 11:02:06] - [94/101] clangsa analyzed jerror.c successfully.
+[INFO 2026-10-29 11:02:06] - [95/101] clangsa analyzed jfdctflt.c successfully.
+[INFO 2026-10-29 11:02:10] - [96/101] clangsa analyzed jmemmgr.c successfully.
+[INFO 2026-10-29 11:02:10] - [97/101] clangsa analyzed jmemnobs.c successfully.
+[INFO 2026-10-29 11:02:10] - [98/101] clangsa analyzed jpeg_nbits.c successfully.
+[INFO 2026-10-29 11:02:10] - [99/101] clangsa analyzed jaricom.c successfully.
+[INFO 2026-10-29 11:02:15] - [100/101] clangsa analyzed jcarith.c successfully.
+[INFO 2026-10-29 11:02:20] - [101/101] clangsa analyzed jdarith.c successfully.
+[INFO 2026-10-29 11:02:20] - ----==== Summary ====----
+[INFO 2026-10-29 11:02:20] - Successfully analyzed
+[INFO 2026-10-29 11:02:20] -   clangsa: 101
+[INFO 2026-10-29 11:02:20] - Total analyzed compilation commands: 101
+[INFO 2026-10-29 11:02:20] - ----=================----
+[INFO 2026-10-29 11:02:20] - Analysis finished.
+[INFO 2026-10-29 11:02:20] - To view results in the terminal use the "CodeChecker parse" command.
+[INFO 2026-10-29 11:02:20] - To store results use the "CodeChecker store" command.
+[INFO 2026-10-29 11:02:20] - See --help and the user guide for further options about parsing and storing the reports.
+[INFO 2026-10-29 11:02:20] - ----=================----
+[INFO 2026-10-29 11:02:20] - Analysis length: 118.75 sec.

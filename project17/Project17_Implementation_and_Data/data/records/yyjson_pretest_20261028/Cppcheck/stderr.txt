@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h" line="40" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h" line="41" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h" line="42" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;float.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;float.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h" line="43" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h" line="349" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h" line="423" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="24" column="0"/>
+        </error>
+        <error id="checkLevelNormal" severity="information" msg="Limiting ValueFlow analysis in function &apos;read_root_minify&apos; since it is too complex. Please specify --check-level=exhaustive to perform full analysis." verbose="Limiting ValueFlow analysis in function &apos;read_root_minify&apos; since it is too complex. Please specify --check-level=exhaustive to perform full analysis." file0="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="5317" column="66"/>
+        </error>
+        <error id="checkLevelNormal" severity="information" msg="Limiting ValueFlow analysis in function &apos;read_root_pretty&apos; since it is too complex. Please specify --check-level=exhaustive to perform full analysis." verbose="Limiting ValueFlow analysis in function &apos;read_root_pretty&apos; since it is too complex. Please specify --check-level=exhaustive to perform full analysis." file0="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="5721" column="66"/>
+        </error>
+        <error id="checkLevelNormal" severity="information" msg="Limiting ValueFlow analysis in function &apos;yyjson_incr_read&apos; since it is too complex. Please specify --check-level=exhaustive to perform full analysis." verbose="Limiting ValueFlow analysis in function &apos;yyjson_incr_read&apos; since it is too complex. Please specify --check-level=exhaustive to perform full analysis." file0="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="6533" column="52"/>
+        </error>
+        <error id="pointerOutOfBoundsCond" severity="portability" msg="Undefined behaviour, when &apos;bb*2&apos; is 8589914992 the pointer arithmetic &apos;digit_table+bb*2&apos; is out of bounds." verbose="Undefined behaviour, when &apos;bb*2&apos; is 8589914992 the pointer arithmetic &apos;digit_table+bb*2&apos; is out of bounds." cwe="758" file0="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="7133" column="42" info="Pointer arithmetic overflow"/>
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="7129" column="12" info="bb is assigned &apos;val-aa*100&apos; here."/>
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="7128" column="27" info="Assignment &apos;aa=(val*5243)&gt;&gt;19&apos;, assigned value is 99"/>
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="7127" column="20" info="Assuming that condition &apos;val&lt;10000&apos; is not redundant"/>
+        </error>
+        <error id="pointerOutOfBoundsCond" severity="portability" msg="Undefined behaviour, when &apos;bb*2&apos; is 12968 the pointer arithmetic &apos;digit_table+bb*2&apos; is out of bounds." verbose="Undefined behaviour, when &apos;bb*2&apos; is 12968 the pointer arithmetic &apos;digit_table+bb*2&apos; is out of bounds." cwe="758" file0="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="7144" column="42" info="Pointer arithmetic overflow"/>
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="7139" column="28" info="Assignment &apos;bb=(bbcc*5243)&gt;&gt;19&apos;, assigned value is 6484"/>
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="7138" column="14" info="bbcc is assigned &apos;val-aa*10000&apos; here."/>
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="7137" column="14" info="Assignment &apos;aa=(uint32_t)(((uint64_t)val*429497)&gt;&gt;32)&apos;, assigned value is 99"/>
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="7136" column="20" info="Assuming that condition &apos;val&lt;1000000&apos; is not redundant"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!alc&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;!alc&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="2498" column="44" info="Null pointer addition"/>
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="2499" column="9" info="Assuming that condition &apos;!alc&apos; is not redundant"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!alc&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;!alc&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="2510" column="44" info="Null pointer addition"/>
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="2512" column="9" info="Assuming that condition &apos;!alc&apos; is not redundant"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;!str&apos; is redundant or there is pointer arithmetic with NULL pointer." verbose="Either the condition &apos;!str&apos; is redundant or there is pointer arithmetic with NULL pointer." cwe="682" file0="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c">
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="3047" column="25" info="Null pointer addition"/>
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="3046" column="19" info="cur is assigned &apos;(const uint8_t*)str&apos; here."/>
+            <location file="/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c" line="3049" column="9" info="Assuming that condition &apos;!str&apos; is not redundant"/>
+        </error>
+        <error id="checkersReport" severity="information" msg="Active checkers: 79/592 (use --checkers-report=&lt;filename&gt; to see details)" verbose="Active checkers: 79/592 (use --checkers-report=&lt;filename&gt; to see details)"/>
+    </errors>
+</results>

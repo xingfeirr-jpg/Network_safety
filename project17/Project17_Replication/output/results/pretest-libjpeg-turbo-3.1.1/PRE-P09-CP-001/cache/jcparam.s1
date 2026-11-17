@@ -1,0 +1,16 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+add_huff_table call:[jpeg_alloc_huff_table,memcpy,memset,sizeof] noreturn:[jpeg_alloc_huff_table]
+std_huff_tables call:[add_huff_table] noreturn:[add_huff_table]
+jpeg_add_quant_table call:[jpeg_alloc_quant_table] noreturn:[jpeg_alloc_quant_table]
+jpeg_set_linear_quality global:[std_chrominance_quant_tbl,std_luminance_quant_tbl] call:[jpeg_add_quant_table] noreturn:[jpeg_add_quant_table]
+jpeg_quality_scaling
+jpeg_set_quality call:[jpeg_quality_scaling,jpeg_set_linear_quality] noreturn:[jpeg_set_linear_quality]
+jpeg_set_defaults call:[jpeg_default_colorspace,jpeg_set_quality,sizeof,std_huff_tables] noreturn:[jpeg_default_colorspace]
+jpeg_default_colorspace call:[jpeg_set_colorspace] noreturn:[jpeg_set_colorspace]
+jpeg_set_colorspace
+fill_a_scan
+fill_scans
+fill_dc_scans call:[fill_scans] noreturn:[fill_scans]
+jpeg_simple_progression call:[fill_a_scan,fill_dc_scans,fill_scans,jpeg_default_colorspace,sizeof] noreturn:[fill_a_scan,fill_scans,jpeg_default_colorspace]
+jpeg_enable_lossless

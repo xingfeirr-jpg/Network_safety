@@ -1,0 +1,14 @@
+[INFO 2026-11-08 02:57:12] - Enabled checker list can be found in /home/yhong/comp5355/results/pretest-yyjson-0.12.0/PRE-P06-CC-001/reports/metadata.json
+[INFO 2026-11-08 02:57:12] - Starting static analysis ...
+[INFO 2026-11-08 02:58:16] - [1/1] clangsa analyzed yyjson.c successfully.
+[INFO 2026-11-08 02:58:16] - ----==== Summary ====----
+[INFO 2026-11-08 02:58:16] - Successfully analyzed
+[INFO 2026-11-08 02:58:16] -   clangsa: 1
+[INFO 2026-11-08 02:58:16] - Total analyzed compilation commands: 1
+[INFO 2026-11-08 02:58:16] - ----=================----
+[INFO 2026-11-08 02:58:16] - Analysis finished.
+[INFO 2026-11-08 02:58:16] - To view results in the terminal use the "CodeChecker parse" command.
+[INFO 2026-11-08 02:58:16] - To store results use the "CodeChecker store" command.
+[INFO 2026-11-08 02:58:16] - See --help and the user guide for further options about parsing and storing the reports.
+[INFO 2026-11-08 02:58:16] - ----=================----
+[INFO 2026-11-08 02:58:16] - Analysis length: 64.64 sec.

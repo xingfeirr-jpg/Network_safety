@@ -1,0 +1,17 @@
+[
+ "cmake",
+ "-S",
+ "/home/yhong/comp5355/sources/lz4-v1.10.0/build/cmake",
+ "-B",
+ "/home/yhong/comp5355/build/lz4-v1.10.0",
+ "-G",
+ "Ninja",
+ "-DCMAKE_C_COMPILER=/usr/bin/clang-18",
+ "-DCMAKE_BUILD_TYPE=Debug",
+ "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+ "-DBUILD_SHARED_LIBS=OFF",
+ "-DBUILD_STATIC_LIBS=ON",
+ "-DLZ4_BUILD_CLI=OFF",
+ "-DCMAKE_INSTALL_PREFIX=/home/yhong/comp5355/deps/lz4-v1.10.0",
+ "-DCMAKE_INSTALL_LIBDIR=lib"
+]

@@ -1,0 +1,3 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+jpeg_write_icc_profile call:[jpeg_write_m_byte,jpeg_write_m_header]

@@ -1,0 +1,1 @@
+gzclose call:[gzclose_r,gzclose_w,return] noreturn:[gzclose_w,return]

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="14254402273123941276">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="268" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="434" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="460" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="466" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="494" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/zutil.h" line="26" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/zutil.h" line="28" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/zutil.h" line="29" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/zutil.h" line="50" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/crc32.c:184:13" call-funcname="x2nmodp" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/crc32.c" line="960" col="19" call-argexpr="len2" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/zlib-v1.3.2/crc32.c" line="955" col="14" info="Assuming that condition &apos;len2&lt;0&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1866:23" call-funcname="crc32_z" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/crc32.c" line="950" col="12" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1848:23" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="byte_swap" lineNumber="121"/>
+    <functiondecl functionName="multmodp" lineNumber="163"/>
+    <functiondecl functionName="x2nmodp" lineNumber="184"/>
+    <functiondecl functionName="crc_word" lineNumber="608"/>
+    <functiondecl functionName="crc_word_big" lineNumber="615"/>
+    <functioncall functionName="byte_swap"/>
+    <functioncall functionName="crc32_combine64"/>
+    <functioncall functionName="crc32_combine_gen64"/>
+    <functioncall functionName="crc32_combine_op"/>
+    <functioncall functionName="crc32_z"/>
+    <functioncall functionName="crc_word"/>
+    <functioncall functionName="crc_word_big"/>
+    <functioncall functionName="multmodp"/>
+    <functioncall functionName="off_t"/>
+    <functioncall functionName="x2nmodp"/>
+  </FileInfo>
+</analyzerinfo>

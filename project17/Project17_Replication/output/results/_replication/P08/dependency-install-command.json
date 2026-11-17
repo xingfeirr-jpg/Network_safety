@@ -1,0 +1,11 @@
+[
+ "cmake",
+ "--install",
+ "/home/yhong/comp5355/build/zlib-v1.3.2",
+ "--prefix",
+ "/home/yhong/comp5355/deps/zlib-v1.3.2",
+ "--component",
+ "Development",
+ "--config",
+ "Debug"
+]

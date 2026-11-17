@@ -1,0 +1,27 @@
+[INFO 2026-10-28 00:21:25] - Enabled checker list can be found in /home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports/metadata.json
+[INFO 2026-10-28 00:21:25] - Starting static analysis ...
+[INFO 2026-10-28 00:21:25] - [1/14] clangsa analyzed arraylist.c successfully.
+[INFO 2026-10-28 00:21:25] - [2/14] clangsa analyzed debug.c successfully.
+[INFO 2026-10-28 00:21:25] - [3/14] clangsa analyzed json_c_version.c successfully.
+[INFO 2026-10-28 00:21:30] - [4/14] clangsa analyzed json_object.c successfully.
+[INFO 2026-10-28 00:21:30] - [5/14] clangsa analyzed json_object_iterator.c successfully.
+[INFO 2026-10-28 00:21:32] - [6/14] clangsa analyzed json_tokener.c successfully.
+[INFO 2026-10-28 00:21:32] - [7/14] clangsa analyzed json_util.c successfully.
+[INFO 2026-10-28 00:21:33] - [8/14] clangsa analyzed json_visit.c successfully.
+[INFO 2026-10-28 00:21:35] - [9/14] clangsa analyzed linkhash.c successfully.
+[INFO 2026-10-28 00:21:35] - [10/14] clangsa analyzed printbuf.c successfully.
+[INFO 2026-10-28 00:21:35] - [11/14] clangsa analyzed random_seed.c successfully.
+[INFO 2026-10-28 00:21:35] - [12/14] clangsa analyzed strerror_override.c successfully.
+[INFO 2026-10-28 00:21:35] - [13/14] clangsa analyzed json_pointer.c successfully.
+[INFO 2026-10-28 00:21:36] - [14/14] clangsa analyzed json_patch.c successfully.
+[INFO 2026-10-28 00:21:36] - ----==== Summary ====----
+[INFO 2026-10-28 00:21:36] - Successfully analyzed
+[INFO 2026-10-28 00:21:36] -   clangsa: 14
+[INFO 2026-10-28 00:21:36] - Total analyzed compilation commands: 14
+[INFO 2026-10-28 00:21:36] - ----=================----
+[INFO 2026-10-28 00:21:36] - Analysis finished.
+[INFO 2026-10-28 00:21:36] - To view results in the terminal use the "CodeChecker parse" command.
+[INFO 2026-10-28 00:21:36] - To store results use the "CodeChecker store" command.
+[INFO 2026-10-28 00:21:36] - See --help and the user guide for further options about parsing and storing the reports.
+[INFO 2026-10-28 00:21:36] - ----=================----
+[INFO 2026-10-28 00:21:36] - Analysis length: 11.24 sec.

@@ -1,0 +1,12 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+start_pass_downsample
+expand_right_edge
+sep_downsample
+int_downsample call:[expand_right_edge]
+fullsize_downsample call:[expand_right_edge,j16copy_sample_rows] noreturn:[expand_right_edge]
+h2v1_downsample call:[expand_right_edge]
+h2v2_downsample call:[expand_right_edge]
+h2v2_smooth_downsample call:[expand_right_edge]
+fullsize_smooth_downsample call:[expand_right_edge]
+j16init_downsampler call:[sizeof]

@@ -1,0 +1,464 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/archive-objects-command.txt",
+    "localRelative": "preparation/PREP-P08-001/archive-objects-command.txt",
+    "bytes": 59,
+    "sha256": "2cc8b4e34ac229f9a057f3c3ddd73bb9ce21b8f88b8399a81cab209ffef9e503"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/archive-objects-exit-code.txt",
+    "localRelative": "preparation/PREP-P08-001/archive-objects-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/archive-objects-stderr.txt",
+    "localRelative": "preparation/PREP-P08-001/archive-objects-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/archive-objects.txt",
+    "localRelative": "preparation/PREP-P08-001/archive-objects.txt",
+    "bytes": 179,
+    "sha256": "56047db03c8a12f5533f33a275f681561e48f50cfd21723a2a7eb7a49df40520"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/build-artifacts.sha256",
+    "localRelative": "preparation/PREP-P08-001/build-artifacts.sha256",
+    "bytes": 748,
+    "sha256": "03e4af2d98c870d1ed79775fe6e79fd2cd6e3f23e01e4d73ad3709e4e4b67543"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/build-command.txt",
+    "localRelative": "preparation/PREP-P08-001/build-command.txt",
+    "bytes": 89,
+    "sha256": "1b298f8b7981a334441b855d7f654491f2bf06758224774f4d738a021df606e0"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/build-exit-code.txt",
+    "localRelative": "preparation/PREP-P08-001/build-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/build-stderr.txt",
+    "localRelative": "preparation/PREP-P08-001/build-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/build-stdout.txt",
+    "localRelative": "preparation/PREP-P08-001/build-stdout.txt",
+    "bytes": 995,
+    "sha256": "8f42b5b71dbf454acbccf58eae8c8d883b6b71f28e32bc077afcf284ffd50ef9"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/build-time.txt",
+    "localRelative": "preparation/PREP-P08-001/build-time.txt",
+    "bytes": 807,
+    "sha256": "0f0fe219ba12071fe3f3b6ccd6e40448f017c68821225fee3ea4755ab70cdd60"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/configure-command.txt",
+    "localRelative": "preparation/PREP-P08-001/configure-command.txt",
+    "bytes": 711,
+    "sha256": "24d5da9aee850b4b5682a80317c36c58450ad8808ba8317949de56595a3304dd"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/configure-exit-code.txt",
+    "localRelative": "preparation/PREP-P08-001/configure-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/configure-stderr.txt",
+    "localRelative": "preparation/PREP-P08-001/configure-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/configure-stdout.txt",
+    "localRelative": "preparation/PREP-P08-001/configure-stdout.txt",
+    "bytes": 886,
+    "sha256": "8b43aca095e212c737b246c691811731366a9b036b6465fed5693bfc8dd322bc"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/configure-time.txt",
+    "localRelative": "preparation/PREP-P08-001/configure-time.txt",
+    "bytes": 1430,
+    "sha256": "ae578e145c0c2c0e95d78b035e44b2a92575aed7b18fa6d1d1dc0996df2eefe8"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/dependency-after-build-command.txt",
+    "localRelative": "preparation/PREP-P08-001/dependency-after-build-command.txt",
+    "bytes": 327,
+    "sha256": "d6b918c45a316d0985920c52dc87adcbb9fbb37df2235078bce6323acc6151ad"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/dependency-after-build-exit-code.txt",
+    "localRelative": "preparation/PREP-P08-001/dependency-after-build-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/dependency-after-build-stderr.txt",
+    "localRelative": "preparation/PREP-P08-001/dependency-after-build-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/dependency-after-build-stdout.txt",
+    "localRelative": "preparation/PREP-P08-001/dependency-after-build-stdout.txt",
+    "bytes": 206,
+    "sha256": "d46c0030fc1219c0c54c9e5fa34922274567fc747eff7a64400cb9ece745298f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/dependency-after-build.json",
+    "localRelative": "preparation/PREP-P08-001/dependency-after-build.json",
+    "bytes": 1193,
+    "sha256": "6016da488d77413d18c7708951e70b9e6705d92457c47b9bd29ad4cf93985940"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/dependency-before-build-command.txt",
+    "localRelative": "preparation/PREP-P08-001/dependency-before-build-command.txt",
+    "bytes": 328,
+    "sha256": "8eee142e1fc041620c8dc741a137fa629521c10b02312ba3fd31bc981c3f2edb"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/dependency-before-build-exit-code.txt",
+    "localRelative": "preparation/PREP-P08-001/dependency-before-build-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/dependency-before-build-stderr.txt",
+    "localRelative": "preparation/PREP-P08-001/dependency-before-build-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/dependency-before-build-stdout.txt",
+    "localRelative": "preparation/PREP-P08-001/dependency-before-build-stdout.txt",
+    "bytes": 206,
+    "sha256": "d46c0030fc1219c0c54c9e5fa34922274567fc747eff7a64400cb9ece745298f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/dependency-before-build.json",
+    "localRelative": "preparation/PREP-P08-001/dependency-before-build.json",
+    "bytes": 1193,
+    "sha256": "6016da488d77413d18c7708951e70b9e6705d92457c47b9bd29ad4cf93985940"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/dependency-inputs.sha256",
+    "localRelative": "preparation/PREP-P08-001/dependency-inputs.sha256",
+    "bytes": 978,
+    "sha256": "7885a1d182b8e0f85c6eddf027358c413b79d90cc440cd7eae8588081be28c16"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/environment-start.txt",
+    "localRelative": "preparation/PREP-P08-001/environment-start.txt",
+    "bytes": 1502,
+    "sha256": "fb74685950c55df5dfd42693f4719807cb02dd5f562a09ce1f1d68e81a0c706e"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/ninja-deps-command.txt",
+    "localRelative": "preparation/PREP-P08-001/ninja-deps-command.txt",
+    "bytes": 59,
+    "sha256": "1ed1386d021f9b320a0c0fdcf8faba543f98c8ffa1218567a6aceccc328bf2a7"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/ninja-deps-exit-code.txt",
+    "localRelative": "preparation/PREP-P08-001/ninja-deps-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/ninja-deps-stderr.txt",
+    "localRelative": "preparation/PREP-P08-001/ninja-deps-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/ninja-deps.txt",
+    "localRelative": "preparation/PREP-P08-001/ninja-deps.txt",
+    "bytes": 67204,
+    "sha256": "e977678096c0875cc9dfea9e8f79d16c1e03e4a16a42e9394e8eacdee662856b"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/preparation-inputs.sha256",
+    "localRelative": "preparation/PREP-P08-001/preparation-inputs.sha256",
+    "bytes": 2152,
+    "sha256": "5e985958b1ff9d19d5e32201aadea64a5d9317069a6e6fc127e15ee3380dc42d"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/preparation-meta.txt",
+    "localRelative": "preparation/PREP-P08-001/preparation-meta.txt",
+    "bytes": 313,
+    "sha256": "cf74961a1e005e7b50645b67e4c64b643ba76216b78e7bbd6ad6f3d9c3f7e51a"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/source-after-build-command.txt",
+    "localRelative": "preparation/PREP-P08-001/source-after-build-command.txt",
+    "bytes": 576,
+    "sha256": "389e1831cb277eee7d7818dc871f23d676c490bcf4753d3fd1d1d5bd2b725bb2"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/source-after-build-exit-code.txt",
+    "localRelative": "preparation/PREP-P08-001/source-after-build-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/source-after-build-stderr.txt",
+    "localRelative": "preparation/PREP-P08-001/source-after-build-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/source-after-build-stdout.txt",
+    "localRelative": "preparation/PREP-P08-001/source-after-build-stdout.txt",
+    "bytes": 100,
+    "sha256": "e3cb0d34ca85a1b0cf8177669e9be303d24e88ba7fb763bac599f7e48907332b"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/source-after-build.json",
+    "localRelative": "preparation/PREP-P08-001/source-after-build.json",
+    "bytes": 152200,
+    "sha256": "d454077624b7caf26b1a77b2b7bcc6fec507f7296aef8b942fcadbb78013d26e"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/source-before-build-command.txt",
+    "localRelative": "preparation/PREP-P08-001/source-before-build-command.txt",
+    "bytes": 578,
+    "sha256": "716bfacb0d00824afc311987c0eb7c439439d1a4383efedb3bf84d3009455fc2"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/source-before-build-exit-code.txt",
+    "localRelative": "preparation/PREP-P08-001/source-before-build-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/source-before-build-stderr.txt",
+    "localRelative": "preparation/PREP-P08-001/source-before-build-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/source-before-build-stdout.txt",
+    "localRelative": "preparation/PREP-P08-001/source-before-build-stdout.txt",
+    "bytes": 101,
+    "sha256": "13ab6fcaa14869028a1e272a1a5067c2a9152a621bfe8b0feb57a0b4d01bd1f1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/source-before-build.json",
+    "localRelative": "preparation/PREP-P08-001/source-before-build.json",
+    "bytes": 152201,
+    "sha256": "b68ff1b1b407b260c47a6c59e99141963cfb24da8ed0f96bc1cdd3245c39094d"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/target-commands-command.txt",
+    "localRelative": "preparation/PREP-P08-001/target-commands-command.txt",
+    "bytes": 74,
+    "sha256": "20db0562bfa8d75d662ccf2599c1da61ec908bbe7c6042f8ad006e8ab642b90b"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/target-commands-exit-code.txt",
+    "localRelative": "preparation/PREP-P08-001/target-commands-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/target-commands-stderr.txt",
+    "localRelative": "preparation/PREP-P08-001/target-commands-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/preparation/PREP-P08-001/target-commands.txt",
+    "localRelative": "preparation/PREP-P08-001/target-commands.txt",
+    "bytes": 6408,
+    "sha256": "e38bd23bdb2816220289f70ae2a4e7d1d71503b16d4ea517fa339bb5903832ac"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T122337-p08-22994/recording-scripts.sha256",
+    "localRelative": "build_environment/recording-scripts.sha256",
+    "bytes": 290,
+    "sha256": "f6f8d6294677df8df08f12a1c3530bfac21a5ea2fe38274ee9acc6a861a31de5"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T122337-p08-22994/system.txt",
+    "localRelative": "build_environment/system.txt",
+    "bytes": 6403,
+    "sha256": "8d82e54fc60563f36e216186e9d414e733c1f70c875a9fb85b8bb0218da1aad1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T122337-p08-22994/time-binary.sha256",
+    "localRelative": "build_environment/time-binary.sha256",
+    "bytes": 80,
+    "sha256": "53657e86cac996a537975f1d42d31ff35e26d2eb8ec42bd97be2291124f2f840"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T122337-p08-22994/time-package.txt",
+    "localRelative": "build_environment/time-package.txt",
+    "bytes": 19,
+    "sha256": "49460f22ef48737103328d157c9a1bd442a70a329cd9035dee3e0061e37cf187"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T122337-p08-22994/time-version.txt",
+    "localRelative": "build_environment/time-version.txt",
+    "bytes": 336,
+    "sha256": "a3b64288a651d40a18a243c43c871f7ae2886baa58b7e3c64a1061bfd651245f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T122337-p08-22994/tool-versions.txt",
+    "localRelative": "build_environment/tool-versions.txt",
+    "bytes": 2964,
+    "sha256": "e8ef61516af62bf3107f0bcc5640aac9cc0d55adf013c943bb172a6d466dc105"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/compile_commands.json",
+    "localRelative": "build/compile_commands.json",
+    "bytes": 7213,
+    "sha256": "8b9db250e24514cebc54052a8b7c400635dc33a045e0e937be0bb57bd71d0b74"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeCache.txt",
+    "localRelative": "build/CMakeCache.txt",
+    "bytes": 19328,
+    "sha256": "4182763939994dcc808901fe4aa0b3d3ac7ef941b76bed4363653e54ed257735"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/build.ninja",
+    "localRelative": "build/build.ninja",
+    "bytes": 28655,
+    "sha256": "4ecb4b4eed973698537f4feedac93b15ddc0a5546efc5d1e24af71536c1f2369"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/rules.ninja",
+    "localRelative": "build/CMakeFiles/rules.ninja",
+    "bytes": 2021,
+    "sha256": "f8879502b0bef279ee082e3ec69768cf7b3a74b003124758d203004113eec284"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/libpng16d.a",
+    "localRelative": "build/libpng16d.a",
+    "bytes": 1036702,
+    "sha256": "f08cdb296a968b9a5f3657a412f5f57070bcd5b01dd14d7603ebd3715abd4062"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/pnglibconf.h",
+    "localRelative": "build/pnglibconf.h",
+    "bytes": 8090,
+    "sha256": "d510d301910871746a7059fbc9be0035e0f91502ea248c23c9d95fafc4afc646"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/libpng16.pc",
+    "localRelative": "build/libpng16.pc",
+    "bytes": 382,
+    "sha256": "6feab02bcb66b14434ab8a006db9fe3237a4e8770800fdf7eead1709af8dd50b"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/CMakeConfigureLog.yaml",
+    "localRelative": "build/CMakeFiles/CMakeConfigureLog.yaml",
+    "bytes": 20125,
+    "sha256": "dd63e943111c226a8ab9a30daeef1ab1e52b26b2dccaa5077731ec30ecf9613a"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/png_static.dir/png.c.o",
+    "localRelative": "build/CMakeFiles/png_static.dir/png.c.o",
+    "bytes": 107248,
+    "sha256": "642dc48729c5708fe6f742920be92e737f1683c8e1e81f0a3a246d48c6e3b015"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/png_static.dir/pngerror.c.o",
+    "localRelative": "build/CMakeFiles/png_static.dir/pngerror.c.o",
+    "bytes": 43048,
+    "sha256": "f419c388e8c8558f9c0dea76b7a22f60272094cc80bdfbaf6fb6e53d2b09f8a1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/png_static.dir/pngget.c.o",
+    "localRelative": "build/CMakeFiles/png_static.dir/pngget.c.o",
+    "bytes": 61440,
+    "sha256": "613ad78c4aae080566e4e00ab190cc19da2d47a6f3d2a00915adce71cdff7a3a"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/png_static.dir/pngmem.c.o",
+    "localRelative": "build/CMakeFiles/png_static.dir/pngmem.c.o",
+    "bytes": 29328,
+    "sha256": "bd002d97838af2e6a05512eeeb851ca03fd7391599850377f6fdab8efbabb916"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/png_static.dir/pngpread.c.o",
+    "localRelative": "build/CMakeFiles/png_static.dir/pngpread.c.o",
+    "bytes": 49096,
+    "sha256": "f4c51d74fddaaea8ed8f9972d065e77eeb4a7b45dacdfd5f07ad37bc34920c04"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/png_static.dir/pngread.c.o",
+    "localRelative": "build/CMakeFiles/png_static.dir/pngread.c.o",
+    "bytes": 113008,
+    "sha256": "da8a26c04d313925fd49566aed8336ca3792d10d72ca46b400375a5c3ccb6edd"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/png_static.dir/pngrio.c.o",
+    "localRelative": "build/CMakeFiles/png_static.dir/pngrio.c.o",
+    "bytes": 24224,
+    "sha256": "765f1a5841a1971866ddc555dab475fba483afb134718b226589f2ec824668f7"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/png_static.dir/pngrtran.c.o",
+    "localRelative": "build/CMakeFiles/png_static.dir/pngrtran.c.o",
+    "bytes": 130752,
+    "sha256": "987480f7e8cc7e68b241b41ae2f5025ec68a0c0ebc470a97973e43fd9d71711b"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/png_static.dir/pngrutil.c.o",
+    "localRelative": "build/CMakeFiles/png_static.dir/pngrutil.c.o",
+    "bytes": 118272,
+    "sha256": "60bc28ca2418990338c52f78c7887238b020ffa462f38897667a66702397d0b5"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/png_static.dir/pngset.c.o",
+    "localRelative": "build/CMakeFiles/png_static.dir/pngset.c.o",
+    "bytes": 77400,
+    "sha256": "4569c1dc8eb92b682d7f3ce7e9ef15f06e003b4270c1a0509169cd3129feb74b"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/png_static.dir/pngtrans.c.o",
+    "localRelative": "build/CMakeFiles/png_static.dir/pngtrans.c.o",
+    "bytes": 38560,
+    "sha256": "a3a681a1def79c7a0aca0c370dc9ce81854659f931ebca69adf5c3a8ef39d227"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/png_static.dir/pngwio.c.o",
+    "localRelative": "build/CMakeFiles/png_static.dir/pngwio.c.o",
+    "bytes": 27048,
+    "sha256": "1dfde8ddaeb7816852fdaf123f56715a7fc8f2c4ade39a47586bab1b4676d9da"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/png_static.dir/pngwrite.c.o",
+    "localRelative": "build/CMakeFiles/png_static.dir/pngwrite.c.o",
+    "bytes": 82608,
+    "sha256": "af22c8e884628514c4aaf2e79fd539bcd27510b4d89d560f40874ba3c6571252"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/png_static.dir/pngwtran.c.o",
+    "localRelative": "build/CMakeFiles/png_static.dir/pngwtran.c.o",
+    "bytes": 33688,
+    "sha256": "7a5845b05604804f25a13c80e05a45bc6f993664042d48275c376975b6900150"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/png_static.dir/pngwutil.c.o",
+    "localRelative": "build/CMakeFiles/png_static.dir/pngwutil.c.o",
+    "bytes": 91064,
+    "sha256": "253f29122f566cef83d88c32b05c2dbb22ac550c9735f2428bc1bfbb01a11031"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/libpng-1.6.50/CMakeFiles/3.28.3/CMakeCCompiler.cmake",
+    "localRelative": "build/CMakeFiles/3.28.3/CMakeCCompiler.cmake",
+    "bytes": 2567,
+    "sha256": "f1d3a6d844d61d1297a5a78c093b9383ab3bd3c4ed45262116a1ec8544401f2c"
+  }
+]

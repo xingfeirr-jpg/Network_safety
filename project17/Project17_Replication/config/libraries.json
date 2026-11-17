@@ -1,0 +1,793 @@
+{
+  "about": "Shared configuration for the ten libraries. Every value comes from the original study records (prepare_build scripts, CMakeCache.txt, Frozen_Configuration.json, Third_Party_Sources.json); no parameter is new. {BASE} is the working root inside the container, identical to the original study. saved_* fields are paths relative to Project17_Implementation_and_Data/.",
+  "base": "/home/yhong/comp5355",
+  "tools": {
+    "flawfinder": {
+      "binary": "{BASE}/.venv/bin/flawfinder",
+      "args": [
+        "--minlevel=1",
+        "--neverignore",
+        "--columns",
+        "--context"
+      ]
+    },
+    "cppcheck": {
+      "binary": "/usr/bin/cppcheck",
+      "args": [
+        "--project={DB}",
+        "--enable=warning,performance,portability,information",
+        "--check-level=normal",
+        "--platform=unix64",
+        "--std={STD}",
+        "-j",
+        "1",
+        "--cppcheck-build-dir={RUN}/cache",
+        "--checkers-report={RUN}/checkers.txt",
+        "--xml",
+        "--xml-version=2"
+      ]
+    },
+    "codechecker": {
+      "binary": "{BASE}/.venv/bin/CodeChecker",
+      "args": [
+        "analyze",
+        "{DB}",
+        "--analyzers",
+        "clangsa",
+        "-o",
+        "{RUN}/reports",
+        "-j",
+        "1",
+        "--timeout",
+        "120",
+        "--compile-uniqueing",
+        "none",
+        "--capture-analysis-output",
+        "--z3-refutation",
+        "off"
+      ]
+    }
+  },
+  "libraries": [
+    {
+      "id": "P01",
+      "name": "zlib",
+      "version": "1.3.2",
+      "commit": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+      "download": {
+        "url": "https://github.com/madler/zlib/archive/da607da739fa6047df13e66a2af6b8bec7c2a498.tar.gz",
+        "sha256": "b9258cf6254e7f7c37f1cd61dba943a1c5ea3cff5718c789834dac359094f5f7"
+      },
+      "source_dir": "sources/zlib-v1.3.2",
+      "build_dir": "build/zlib-v1.3.2",
+      "build": {
+        "cmake_subdir": "",
+        "options": [
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-18",
+          "-DCMAKE_BUILD_TYPE=Debug",
+          "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+          "-DZLIB_BUILD_SHARED=OFF",
+          "-DZLIB_BUILD_STATIC=ON",
+          "-DZLIB_BUILD_TESTING=OFF",
+          "-DZLIB_PREFIX=OFF",
+          "-DZLIB_INSTALL=ON",
+          "-DCMAKE_INSTALL_PREFIX={BASE}/deps/zlib-v1.3.2",
+          "-DCMAKE_INSTALL_LIBDIR=lib"
+        ],
+        "target": "zlibstatic",
+        "saved_compile_db": "data/records/zlib_pretest_20261027/build_context/compile_commands.json"
+      },
+      "flawfinder": {
+        "inputs": [
+          "sources/zlib-v1.3.2/adler32.c",
+          "sources/zlib-v1.3.2/compress.c",
+          "sources/zlib-v1.3.2/crc32.c",
+          "sources/zlib-v1.3.2/deflate.c",
+          "sources/zlib-v1.3.2/gzclose.c",
+          "sources/zlib-v1.3.2/gzlib.c",
+          "sources/zlib-v1.3.2/gzread.c",
+          "sources/zlib-v1.3.2/gzwrite.c",
+          "sources/zlib-v1.3.2/inflate.c",
+          "sources/zlib-v1.3.2/infback.c",
+          "sources/zlib-v1.3.2/inftrees.c",
+          "sources/zlib-v1.3.2/inffast.c",
+          "sources/zlib-v1.3.2/trees.c",
+          "sources/zlib-v1.3.2/uncompr.c",
+          "sources/zlib-v1.3.2/zutil.c",
+          "sources/zlib-v1.3.2/zlib.h",
+          "sources/zlib-v1.3.2/crc32.h",
+          "sources/zlib-v1.3.2/deflate.h",
+          "sources/zlib-v1.3.2/gzguts.h",
+          "sources/zlib-v1.3.2/inffast.h",
+          "sources/zlib-v1.3.2/inffixed.h",
+          "sources/zlib-v1.3.2/inflate.h",
+          "sources/zlib-v1.3.2/inftrees.h",
+          "sources/zlib-v1.3.2/trees.h",
+          "sources/zlib-v1.3.2/zutil.h",
+          "build/zlib-v1.3.2/zconf.h"
+        ]
+      },
+      "cppcheck": {
+        "std": "c11"
+      },
+      "results_dir": "results/pretest-zlib-v1.3.2",
+      "runs": {
+        "FF": "PRE-P01-FF-001",
+        "CP": "PRE-P01-CP-001",
+        "CC": "PRE-P01-CC-001"
+      },
+      "ledger_runs": {
+        "FF": "PRE-P01-FF-001",
+        "CP": "PRE-P01-CP-001",
+        "CC": "PRE-P01-CC-001"
+      }
+    },
+    {
+      "id": "P02",
+      "name": "LZ4",
+      "version": "1.10.0",
+      "commit": "ebb370ca83af193212df4dcbadcc5d87bc0de2f0",
+      "download": {
+        "url": "https://github.com/lz4/lz4/archive/ebb370ca83af193212df4dcbadcc5d87bc0de2f0.tar.gz",
+        "sha256": "eb1a93e934d4fd29df6e2061ba0bf447568561764d758f4a5662c0e29370ffa9"
+      },
+      "source_dir": "sources/lz4-v1.10.0",
+      "build_dir": "build/lz4-v1.10.0",
+      "build": {
+        "cmake_subdir": "build/cmake",
+        "options": [
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-18",
+          "-DCMAKE_BUILD_TYPE=Debug",
+          "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DBUILD_STATIC_LIBS=ON",
+          "-DLZ4_BUILD_CLI=OFF",
+          "-DCMAKE_INSTALL_PREFIX={BASE}/deps/lz4-v1.10.0",
+          "-DCMAKE_INSTALL_LIBDIR=lib"
+        ],
+        "target": "lz4_static",
+        "saved_compile_db": "data/records/lz4_pretest_20261027/build/compile_commands.json"
+      },
+      "flawfinder": {
+        "inputs": [
+          "sources/lz4-v1.10.0/lib/lz4.c",
+          "sources/lz4-v1.10.0/lib/lz4.h",
+          "sources/lz4-v1.10.0/lib/lz4file.c",
+          "sources/lz4-v1.10.0/lib/lz4file.h",
+          "sources/lz4-v1.10.0/lib/lz4frame.c",
+          "sources/lz4-v1.10.0/lib/lz4frame.h",
+          "sources/lz4-v1.10.0/lib/lz4frame_static.h",
+          "sources/lz4-v1.10.0/lib/lz4hc.c",
+          "sources/lz4-v1.10.0/lib/lz4hc.h",
+          "sources/lz4-v1.10.0/lib/xxhash.c",
+          "sources/lz4-v1.10.0/lib/xxhash.h"
+        ]
+      },
+      "cppcheck": {
+        "std": "c11"
+      },
+      "results_dir": "results/pretest-lz4-v1.10.0",
+      "runs": {
+        "FF": "PRE-P02-FF-001",
+        "CP": "PRE-P02-CP-001",
+        "CC": "PRE-P02-CC-001"
+      },
+      "ledger_runs": {
+        "FF": "PRE-P02-FF-001",
+        "CP": "PRE-P02-CP-001",
+        "CC": "PRE-P02-CC-001"
+      }
+    },
+    {
+      "id": "P03",
+      "name": "cJSON",
+      "version": "1.7.19",
+      "commit": "c859b25da02955fef659d658b8f324b5cde87be3",
+      "download": {
+        "url": "https://github.com/DaveGamble/cJSON/archive/c859b25da02955fef659d658b8f324b5cde87be3.tar.gz",
+        "sha256": null,
+        "note": "The original study did not record the cJSON archive hash; the replication records the new hash, and source identity is shown by the S3 database check and the S2 input hashes."
+      },
+      "source_dir": "sources/cJSON-v1.7.19",
+      "build_dir": "build/cJSON-v1.7.19",
+      "build": {
+        "cmake_subdir": "",
+        "options": [
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-18",
+          "-DCMAKE_BUILD_TYPE=Debug",
+          "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DENABLE_CJSON_TEST=OFF",
+          "-DENABLE_CJSON_UTILS=OFF"
+        ],
+        "target": "cjson",
+        "note": "No cJSON build script was kept in the original study; these options are restored from cJSON_pretest_20261026/CMakeCache.txt and checked against the saved compilation database in S3.",
+        "saved_compile_db": "data/records/cJSON_pretest_20261026/compile_commands.json"
+      },
+      "flawfinder": {
+        "inputs": [
+          "sources/cJSON-v1.7.19/cJSON.c",
+          "sources/cJSON-v1.7.19/cJSON.h"
+        ]
+      },
+      "cppcheck": {
+        "std": "c89"
+      },
+      "results_dir": "results/formal-cJSON-v1.7.19",
+      "runs": {
+        "FF": "FORM-P03-FF-001",
+        "CP": "FORM-P03-CP-001",
+        "CC": "FORM-P03-CC-001"
+      },
+      "ledger_runs": {
+        "FF": "PRE-P03-FF-001",
+        "CP": "PRE-P03-CP-001",
+        "CC": "PRE-P03-CC-001"
+      }
+    },
+    {
+      "id": "P04",
+      "name": "libyaml",
+      "version": "0.2.5",
+      "commit": "2c891fc7a770e8ba2fec34fc6b545c672beb37e6",
+      "download": {
+        "url": "https://github.com/yaml/libyaml/archive/2c891fc7a770e8ba2fec34fc6b545c672beb37e6.tar.gz",
+        "sha256": "77987051b6f5bee8ba472f1efbe0053663a58d8d3e7a2f0f4a27d178adbf8844"
+      },
+      "source_dir": "sources/libyaml-0.2.5",
+      "build_dir": "build/libyaml-0.2.5",
+      "build": {
+        "cmake_subdir": "",
+        "options": [
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-18",
+          "-DCMAKE_BUILD_TYPE=Debug",
+          "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DBUILD_TESTING=OFF",
+          "-DYAML_STATIC_LIB_NAME=yaml",
+          "-DCMAKE_INSTALL_PREFIX={BASE}/deps/libyaml-0.2.5"
+        ],
+        "target": "yaml",
+        "saved_compile_db": "data/records/libyaml_pretest_20261027/build_identity/compile_commands.json"
+      },
+      "flawfinder": {
+        "inputs": [
+          "build/libyaml-0.2.5/include/config.h",
+          "sources/libyaml-0.2.5/include/yaml.h",
+          "sources/libyaml-0.2.5/src/api.c",
+          "sources/libyaml-0.2.5/src/dumper.c",
+          "sources/libyaml-0.2.5/src/emitter.c",
+          "sources/libyaml-0.2.5/src/loader.c",
+          "sources/libyaml-0.2.5/src/parser.c",
+          "sources/libyaml-0.2.5/src/reader.c",
+          "sources/libyaml-0.2.5/src/scanner.c",
+          "sources/libyaml-0.2.5/src/writer.c",
+          "sources/libyaml-0.2.5/src/yaml_private.h"
+        ]
+      },
+      "cppcheck": {
+        "std": "c11"
+      },
+      "results_dir": "results/pretest-libyaml-0.2.5",
+      "runs": {
+        "FF": "PRE-P04-FF-001",
+        "CP": "PRE-P04-CP-001",
+        "CC": "PRE-P04-CC-001"
+      },
+      "ledger_runs": {
+        "FF": "PRE-P04-FF-001",
+        "CP": "PRE-P04-CP-001",
+        "CC": "PRE-P04-CC-001"
+      }
+    },
+    {
+      "id": "P05",
+      "name": "json-c",
+      "version": "0.18",
+      "commit": "41a55cfcedb54d9c1874f2f0eb07b504091d7e37",
+      "download": {
+        "url": "https://codeload.github.com/json-c/json-c/tar.gz/41a55cfcedb54d9c1874f2f0eb07b504091d7e37",
+        "sha256": "a090046b2d24901eb8dca4d370c28991299e8c7cfb698b44e09ce809b1ff20b4"
+      },
+      "source_dir": "sources/json-c-0.18",
+      "build_dir": "build/json-c-0.18",
+      "build": {
+        "cmake_subdir": "",
+        "options": [
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-18",
+          "-DCMAKE_BUILD_TYPE=Debug",
+          "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DBUILD_STATIC_LIBS=ON",
+          "-DBUILD_TESTING=OFF",
+          "-DBUILD_APPS=OFF",
+          "-DDISABLE_JSON_POINTER=OFF",
+          "-DDISABLE_JSON_PATCH=OFF",
+          "-DDISABLE_EXTRA_LIBS=ON",
+          "-DDISABLE_WERROR=ON",
+          "-DCMAKE_INSTALL_PREFIX={BASE}/deps/json-c-0.18"
+        ],
+        "target": "json-c",
+        "saved_compile_db": "data/records/json_c_pretest_20261027/build/compile_commands.json"
+      },
+      "flawfinder": {
+        "inputs": [
+          "build/json-c-0.18/config.h",
+          "build/json-c-0.18/json.h",
+          "build/json-c-0.18/json_config.h",
+          "sources/json-c-0.18/arraylist.c",
+          "sources/json-c-0.18/arraylist.h",
+          "sources/json-c-0.18/debug.c",
+          "sources/json-c-0.18/debug.h",
+          "sources/json-c-0.18/json_c_version.c",
+          "sources/json-c-0.18/json_c_version.h",
+          "sources/json-c-0.18/json_inttypes.h",
+          "sources/json-c-0.18/json_object.c",
+          "sources/json-c-0.18/json_object.h",
+          "sources/json-c-0.18/json_object_iterator.c",
+          "sources/json-c-0.18/json_object_iterator.h",
+          "sources/json-c-0.18/json_object_private.h",
+          "sources/json-c-0.18/json_patch.c",
+          "sources/json-c-0.18/json_patch.h",
+          "sources/json-c-0.18/json_pointer.c",
+          "sources/json-c-0.18/json_pointer.h",
+          "sources/json-c-0.18/json_pointer_private.h",
+          "sources/json-c-0.18/json_tokener.c",
+          "sources/json-c-0.18/json_tokener.h",
+          "sources/json-c-0.18/json_types.h",
+          "sources/json-c-0.18/json_util.c",
+          "sources/json-c-0.18/json_util.h",
+          "sources/json-c-0.18/json_visit.c",
+          "sources/json-c-0.18/json_visit.h",
+          "sources/json-c-0.18/linkhash.c",
+          "sources/json-c-0.18/linkhash.h",
+          "sources/json-c-0.18/math_compat.h",
+          "sources/json-c-0.18/printbuf.c",
+          "sources/json-c-0.18/printbuf.h",
+          "sources/json-c-0.18/random_seed.c",
+          "sources/json-c-0.18/random_seed.h",
+          "sources/json-c-0.18/snprintf_compat.h",
+          "sources/json-c-0.18/strdup_compat.h",
+          "sources/json-c-0.18/strerror_override.c",
+          "sources/json-c-0.18/strerror_override.h",
+          "sources/json-c-0.18/vasprintf_compat.h"
+        ]
+      },
+      "cppcheck": {
+        "std": "c11"
+      },
+      "results_dir": "results/pretest-json-c-0.18",
+      "runs": {
+        "FF": "PRE-P05-FF-001",
+        "CP": "PRE-P05-CP-001",
+        "CC": "PRE-P05-CC-001"
+      },
+      "ledger_runs": {
+        "FF": "PRE-P05-FF-001",
+        "CP": "PRE-P05-CP-001",
+        "CC": "PRE-P05-CC-001"
+      }
+    },
+    {
+      "id": "P06",
+      "name": "yyjson",
+      "version": "0.12.0",
+      "commit": "8b4a38dc994a110abaec8a400615567bd996105f",
+      "download": {
+        "url": "https://codeload.github.com/ibireme/yyjson/tar.gz/8b4a38dc994a110abaec8a400615567bd996105f",
+        "sha256": "94e9c90f8f12d8329f2c0756782d21e5c278729023cd2c5fe47e323a35947ed6"
+      },
+      "source_dir": "sources/yyjson-0.12.0",
+      "build_dir": "build/yyjson-0.12.0",
+      "build": {
+        "cmake_subdir": "",
+        "options": [
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-18",
+          "-DCMAKE_BUILD_TYPE=Debug",
+          "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DYYJSON_BUILD_TESTS=OFF",
+          "-DYYJSON_BUILD_FUZZER=OFF",
+          "-DYYJSON_BUILD_MISC=OFF",
+          "-DYYJSON_BUILD_DOC=OFF",
+          "-DYYJSON_DISABLE_READER=OFF",
+          "-DYYJSON_DISABLE_WRITER=OFF",
+          "-DYYJSON_DISABLE_INCR_READER=OFF",
+          "-DYYJSON_DISABLE_UTILS=OFF",
+          "-DYYJSON_DISABLE_FAST_FP_CONV=OFF",
+          "-DYYJSON_DISABLE_NON_STANDARD=OFF",
+          "-DYYJSON_DISABLE_UTF8_VALIDATION=OFF",
+          "-DYYJSON_DISABLE_UNALIGNED_MEMORY_ACCESS=OFF",
+          "-DCMAKE_INSTALL_PREFIX={BASE}/deps/yyjson-0.12.0"
+        ],
+        "target": "yyjson",
+        "saved_compile_db": "data/records/yyjson_pretest_20261028/build/compile_commands.json"
+      },
+      "flawfinder": {
+        "inputs": [
+          "sources/yyjson-0.12.0/src/yyjson.c",
+          "sources/yyjson-0.12.0/src/yyjson.h"
+        ]
+      },
+      "cppcheck": {
+        "std": "c11",
+        "extra_args": [
+          "-D__STDC__=1"
+        ],
+        "extra_args_note": "Without this macro, Cppcheck preprocessing fails (original run CP-001)."
+      },
+      "results_dir": "results/pretest-yyjson-0.12.0",
+      "runs": {
+        "FF": "PRE-P06-FF-001",
+        "CP": "PRE-P06-CP-002",
+        "CC": "PRE-P06-CC-001"
+      },
+      "ledger_runs": {
+        "FF": "PRE-P06-FF-001",
+        "CP": "PRE-P06-CP-002",
+        "CC": "PRE-P06-CC-001"
+      }
+    },
+    {
+      "id": "P07",
+      "name": "Expat",
+      "version": "2.7.1",
+      "commit": "f9a3eeb3e09fbea04b1c451ffc422ab2f1e45744",
+      "download": {
+        "url": "https://codeload.github.com/libexpat/libexpat/tar.gz/f9a3eeb3e09fbea04b1c451ffc422ab2f1e45744",
+        "sha256": "86f0e8afaf4cd72d806e32afb68e1e84bb2c6e5b0b40de2a34c0970bf8d08c40"
+      },
+      "source_dir": "sources/expat-2.7.1",
+      "build_dir": "build/expat-2.7.1",
+      "build": {
+        "cmake_subdir": "expat",
+        "options": [
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-18",
+          "-DCMAKE_BUILD_TYPE=Debug",
+          "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+          "-DEXPAT_SHARED_LIBS=OFF",
+          "-DEXPAT_BUILD_TOOLS=OFF",
+          "-DEXPAT_BUILD_EXAMPLES=OFF",
+          "-DEXPAT_BUILD_TESTS=OFF",
+          "-DEXPAT_BUILD_DOCS=OFF",
+          "-DEXPAT_BUILD_FUZZERS=OFF",
+          "-DEXPAT_OSSFUZZ_BUILD=OFF",
+          "-DEXPAT_CHAR_TYPE=char",
+          "-DEXPAT_DTD=ON",
+          "-DEXPAT_GE=ON",
+          "-DEXPAT_NS=ON",
+          "-DEXPAT_WITH_LIBBSD=OFF",
+          "-DEXPAT_MIN_SIZE=OFF",
+          "-DEXPAT_LARGE_SIZE=OFF",
+          "-DEXPAT_ATTR_INFO=OFF",
+          "-DEXPAT_CONTEXT_BYTES=1024",
+          "-DEXPAT_WARNINGS_AS_ERRORS=OFF",
+          "-DCMAKE_INSTALL_PREFIX={BASE}/deps/expat-2.7.1"
+        ],
+        "target": "expat",
+        "saved_compile_db": "data/records/expat_pretest_20261028/build/compile_commands.json"
+      },
+      "flawfinder": {
+        "inputs": [
+          "build/expat-2.7.1/expat_config.h",
+          "sources/expat-2.7.1/expat/lib/ascii.h",
+          "sources/expat-2.7.1/expat/lib/asciitab.h",
+          "sources/expat-2.7.1/expat/lib/expat.h",
+          "sources/expat-2.7.1/expat/lib/expat_external.h",
+          "sources/expat-2.7.1/expat/lib/iasciitab.h",
+          "sources/expat-2.7.1/expat/lib/internal.h",
+          "sources/expat-2.7.1/expat/lib/latin1tab.h",
+          "sources/expat-2.7.1/expat/lib/nametab.h",
+          "sources/expat-2.7.1/expat/lib/siphash.h",
+          "sources/expat-2.7.1/expat/lib/utf8tab.h",
+          "sources/expat-2.7.1/expat/lib/xmlparse.c",
+          "sources/expat-2.7.1/expat/lib/xmlrole.c",
+          "sources/expat-2.7.1/expat/lib/xmlrole.h",
+          "sources/expat-2.7.1/expat/lib/xmltok.c",
+          "sources/expat-2.7.1/expat/lib/xmltok.h",
+          "sources/expat-2.7.1/expat/lib/xmltok_impl.c",
+          "sources/expat-2.7.1/expat/lib/xmltok_impl.h",
+          "sources/expat-2.7.1/expat/lib/xmltok_ns.c"
+        ]
+      },
+      "cppcheck": {
+        "std": "c99"
+      },
+      "results_dir": "results/pretest-expat-2.7.1",
+      "runs": {
+        "FF": "PRE-P07-FF-001",
+        "CP": "PRE-P07-CP-001",
+        "CC": "PRE-P07-CC-001"
+      },
+      "ledger_runs": {
+        "FF": "PRE-P07-FF-001",
+        "CP": "PRE-P07-CP-001",
+        "CC": "PRE-P07-CC-001"
+      }
+    },
+    {
+      "id": "P08",
+      "name": "libpng",
+      "version": "1.6.50",
+      "commit": "2b978915d82377df13fcbb1fb56660195ded868a",
+      "download": {
+        "url": "https://codeload.github.com/pnggroup/libpng/tar.gz/2b978915d82377df13fcbb1fb56660195ded868a",
+        "sha256": "fba1c8e793f01b493f3f47a926862edbfab487ae4240e02ec67131f1e2bf067f"
+      },
+      "source_dir": "sources/libpng-1.6.50",
+      "build_dir": "build/libpng-1.6.50",
+      "build": {
+        "cmake_subdir": "",
+        "options": [
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-18",
+          "-DCMAKE_BUILD_TYPE=Debug",
+          "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+          "-DPNG_SHARED=OFF",
+          "-DPNG_STATIC=ON",
+          "-DPNG_FRAMEWORK=OFF",
+          "-DPNG_TESTS=OFF",
+          "-DPNG_TOOLS=OFF",
+          "-DPNG_HARDWARE_OPTIMIZATIONS=OFF",
+          "-DPNG_LIBCONF_HEADER:FILEPATH={BASE}/sources/libpng-1.6.50/scripts/pnglibconf.h.prebuilt",
+          "-DZLIB_ROOT:PATH={BASE}/deps/zlib-v1.3.2",
+          "-DZLIB_USE_STATIC_LIBS=ON",
+          "-DZLIB_INCLUDE_DIR:PATH={BASE}/deps/zlib-v1.3.2/include",
+          "-DZLIB_LIBRARY:FILEPATH={BASE}/deps/zlib-v1.3.2/lib/libz.a",
+          "-DCMAKE_INSTALL_PREFIX={BASE}/deps/libpng-1.6.50"
+        ],
+        "target": "png_static",
+        "depends_on": "P01",
+        "dependency_note": "Install zlib 1.3.2 into deps/zlib-v1.3.2 first as a fixed external dependency.",
+        "saved_compile_db": "data/records/libpng_pretest_20261028/build/compile_commands.json"
+      },
+      "flawfinder": {
+        "inputs": [
+          "build/libpng-1.6.50/pnglibconf.h",
+          "sources/libpng-1.6.50/png.c",
+          "sources/libpng-1.6.50/png.h",
+          "sources/libpng-1.6.50/pngconf.h",
+          "sources/libpng-1.6.50/pngdebug.h",
+          "sources/libpng-1.6.50/pngerror.c",
+          "sources/libpng-1.6.50/pngget.c",
+          "sources/libpng-1.6.50/pnginfo.h",
+          "sources/libpng-1.6.50/pngmem.c",
+          "sources/libpng-1.6.50/pngpread.c",
+          "sources/libpng-1.6.50/pngpriv.h",
+          "sources/libpng-1.6.50/pngread.c",
+          "sources/libpng-1.6.50/pngrio.c",
+          "sources/libpng-1.6.50/pngrtran.c",
+          "sources/libpng-1.6.50/pngrutil.c",
+          "sources/libpng-1.6.50/pngset.c",
+          "sources/libpng-1.6.50/pngstruct.h",
+          "sources/libpng-1.6.50/pngtrans.c",
+          "sources/libpng-1.6.50/pngwio.c",
+          "sources/libpng-1.6.50/pngwrite.c",
+          "sources/libpng-1.6.50/pngwtran.c",
+          "sources/libpng-1.6.50/pngwutil.c"
+        ]
+      },
+      "cppcheck": {
+        "std": "c11",
+        "database": {
+          "path": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libpng_setup/Cppcheck_Retry002/compile_commands.json",
+          "replace": [
+            "-isystem {BASE}/deps/zlib-v1.3.2/include",
+            "-I{BASE}/deps/zlib-v1.3.2/include"
+          ],
+          "saved": "code/experiment_inputs/libpng_setup/Cppcheck_Retry002/compile_commands.json",
+          "note": "Without this change Cppcheck cannot read zlib.h (original run CP-001); this database is used by Cppcheck only."
+        }
+      },
+      "results_dir": "results/pretest-libpng-1.6.50",
+      "runs": {
+        "FF": "PRE-P08-FF-001",
+        "CP": "PRE-P08-CP-002",
+        "CC": "PRE-P08-CC-001"
+      },
+      "ledger_runs": {
+        "FF": "PRE-P08-FF-001",
+        "CP": "PRE-P08-CP-002",
+        "CC": "PRE-P08-CC-001"
+      }
+    },
+    {
+      "id": "P09",
+      "name": "libjpeg-turbo",
+      "version": "3.1.1",
+      "commit": "7723f50f3f66b9da74376e6d8badb6162464212c",
+      "download": {
+        "url": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.1/libjpeg-turbo-3.1.1.tar.gz",
+        "sha256": "aadc97ea91f6ef078b0ae3a62bba69e008d9a7db19b34e4ac973b19b71b4217c"
+      },
+      "source_dir": "sources/libjpeg-turbo-3.1.1",
+      "build_dir": "build/libjpeg-turbo-3.1.1",
+      "build": {
+        "cmake_subdir": "",
+        "options": [
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-18",
+          "-DCMAKE_BUILD_TYPE=Debug",
+          "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+          "-DENABLE_SHARED=OFF",
+          "-DENABLE_STATIC=ON",
+          "-DWITH_SIMD=OFF",
+          "-DREQUIRE_SIMD=OFF",
+          "-DWITH_TURBOJPEG=OFF",
+          "-DWITH_JAVA=OFF",
+          "-DWITH_FUZZ=OFF",
+          "-DWITH_ARITH_ENC=ON",
+          "-DWITH_ARITH_DEC=ON",
+          "-DWITH_JPEG7=OFF",
+          "-DWITH_JPEG8=OFF",
+          "-DBUILD=20261029",
+          "-DCMAKE_INSTALL_PREFIX={BASE}/deps/libjpeg-turbo-3.1.1"
+        ],
+        "target": "jpeg-static",
+        "note": "-DBUILD=20261029 comes from the original CMakeCache.txt. libjpeg-turbo writes the build date into the generated jconfigint.h; without a fixed value the header hash changes with the date (the alerts do not).",
+        "saved_compile_db": "data/records/libjpeg_turbo_pretest_20261029/build/compile_commands.json"
+      },
+      "analysis_db": {
+        "path": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libjpeg_turbo_pretest_20261029/analysis_inputs/compile_commands.json",
+        "keep_output_dirs": [
+          "CMakeFiles/jpeg-static.dir/",
+          "CMakeFiles/jpeg12-static.dir/",
+          "CMakeFiles/jpeg16-static.dir/"
+        ],
+        "saved": "data/records/libjpeg_turbo_pretest_20261029/analysis_inputs/compile_commands.json",
+        "note": "Keep only the 101 compilation actions of the 8/12/16-bit library targets and drop the 35 actions of command-line tools and examples."
+      },
+      "flawfinder": {
+        "inputs": [
+          "build/libjpeg-turbo-3.1.1/jconfig.h",
+          "build/libjpeg-turbo-3.1.1/jconfigint.h",
+          "build/libjpeg-turbo-3.1.1/jversion.h",
+          "sources/libjpeg-turbo-3.1.1/src/jaricom.c",
+          "sources/libjpeg-turbo-3.1.1/src/jcapimin.c",
+          "sources/libjpeg-turbo-3.1.1/src/jcapistd.c",
+          "sources/libjpeg-turbo-3.1.1/src/jcarith.c",
+          "sources/libjpeg-turbo-3.1.1/src/jccoefct.c",
+          "sources/libjpeg-turbo-3.1.1/src/jccolext.c",
+          "sources/libjpeg-turbo-3.1.1/src/jccolor.c",
+          "sources/libjpeg-turbo-3.1.1/src/jcdctmgr.c",
+          "sources/libjpeg-turbo-3.1.1/src/jcdiffct.c",
+          "sources/libjpeg-turbo-3.1.1/src/jchuff.c",
+          "sources/libjpeg-turbo-3.1.1/src/jchuff.h",
+          "sources/libjpeg-turbo-3.1.1/src/jcicc.c",
+          "sources/libjpeg-turbo-3.1.1/src/jcinit.c",
+          "sources/libjpeg-turbo-3.1.1/src/jclhuff.c",
+          "sources/libjpeg-turbo-3.1.1/src/jclossls.c",
+          "sources/libjpeg-turbo-3.1.1/src/jcmainct.c",
+          "sources/libjpeg-turbo-3.1.1/src/jcmarker.c",
+          "sources/libjpeg-turbo-3.1.1/src/jcmaster.c",
+          "sources/libjpeg-turbo-3.1.1/src/jcmaster.h",
+          "sources/libjpeg-turbo-3.1.1/src/jcomapi.c",
+          "sources/libjpeg-turbo-3.1.1/src/jcparam.c",
+          "sources/libjpeg-turbo-3.1.1/src/jcphuff.c",
+          "sources/libjpeg-turbo-3.1.1/src/jcprepct.c",
+          "sources/libjpeg-turbo-3.1.1/src/jcsample.c",
+          "sources/libjpeg-turbo-3.1.1/src/jctrans.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdapimin.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdapistd.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdarith.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdatadst.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdatasrc.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdcoefct.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdcoefct.h",
+          "sources/libjpeg-turbo-3.1.1/src/jdcol565.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdcolext.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdcolor.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdct.h",
+          "sources/libjpeg-turbo-3.1.1/src/jddctmgr.c",
+          "sources/libjpeg-turbo-3.1.1/src/jddiffct.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdhuff.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdhuff.h",
+          "sources/libjpeg-turbo-3.1.1/src/jdicc.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdinput.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdlhuff.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdlossls.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdmainct.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdmainct.h",
+          "sources/libjpeg-turbo-3.1.1/src/jdmarker.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdmaster.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdmaster.h",
+          "sources/libjpeg-turbo-3.1.1/src/jdmerge.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdmerge.h",
+          "sources/libjpeg-turbo-3.1.1/src/jdmrg565.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdmrgext.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdphuff.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdpostct.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdsample.c",
+          "sources/libjpeg-turbo-3.1.1/src/jdsample.h",
+          "sources/libjpeg-turbo-3.1.1/src/jdtrans.c",
+          "sources/libjpeg-turbo-3.1.1/src/jerror.c",
+          "sources/libjpeg-turbo-3.1.1/src/jerror.h",
+          "sources/libjpeg-turbo-3.1.1/src/jfdctflt.c",
+          "sources/libjpeg-turbo-3.1.1/src/jfdctfst.c",
+          "sources/libjpeg-turbo-3.1.1/src/jfdctint.c",
+          "sources/libjpeg-turbo-3.1.1/src/jidctflt.c",
+          "sources/libjpeg-turbo-3.1.1/src/jidctfst.c",
+          "sources/libjpeg-turbo-3.1.1/src/jidctint.c",
+          "sources/libjpeg-turbo-3.1.1/src/jidctred.c",
+          "sources/libjpeg-turbo-3.1.1/src/jinclude.h",
+          "sources/libjpeg-turbo-3.1.1/src/jlossls.h",
+          "sources/libjpeg-turbo-3.1.1/src/jmemmgr.c",
+          "sources/libjpeg-turbo-3.1.1/src/jmemnobs.c",
+          "sources/libjpeg-turbo-3.1.1/src/jmemsys.h",
+          "sources/libjpeg-turbo-3.1.1/src/jmorecfg.h",
+          "sources/libjpeg-turbo-3.1.1/src/jpeg_nbits.c",
+          "sources/libjpeg-turbo-3.1.1/src/jpeg_nbits.h",
+          "sources/libjpeg-turbo-3.1.1/src/jpegapicomp.h",
+          "sources/libjpeg-turbo-3.1.1/src/jpegint.h",
+          "sources/libjpeg-turbo-3.1.1/src/jpeglib.h",
+          "sources/libjpeg-turbo-3.1.1/src/jquant1.c",
+          "sources/libjpeg-turbo-3.1.1/src/jquant2.c",
+          "sources/libjpeg-turbo-3.1.1/src/jsamplecomp.h",
+          "sources/libjpeg-turbo-3.1.1/src/jsimd.h",
+          "sources/libjpeg-turbo-3.1.1/src/jsimddct.h",
+          "sources/libjpeg-turbo-3.1.1/src/jstdhuff.c",
+          "sources/libjpeg-turbo-3.1.1/src/jutils.c"
+        ]
+      },
+      "cppcheck": {
+        "std": "c11"
+      },
+      "results_dir": "results/pretest-libjpeg-turbo-3.1.1",
+      "runs": {
+        "FF": "PRE-P09-FF-001",
+        "CP": "PRE-P09-CP-001",
+        "CC": "PRE-P09-CC-001"
+      },
+      "ledger_runs": {
+        "FF": "PRE-P09-FF-001",
+        "CP": "PRE-P09-CP-001",
+        "CC": "PRE-P09-CC-001"
+      }
+    },
+    {
+      "id": "P10",
+      "name": "utf8proc",
+      "version": "2.10.0",
+      "commit": "a1b99daa2a3393884220264c927a48ba1251a9c6",
+      "download": {
+        "url": "https://codeload.github.com/JuliaStrings/utf8proc/tar.gz/a1b99daa2a3393884220264c927a48ba1251a9c6",
+        "sha256": "43f09c9d0a2d3fcbb4eba77729dd603b0ac470ccace59a2961f82a8b6323445f"
+      },
+      "source_dir": "sources/utf8proc-2.10.0",
+      "build_dir": "build/utf8proc-2.10.0",
+      "build": {
+        "cmake_subdir": "",
+        "options": [
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-18",
+          "-DCMAKE_BUILD_TYPE=Debug",
+          "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DUTF8PROC_ENABLE_TESTING=OFF",
+          "-DUTF8PROC_INSTALL=ON",
+          "-DCMAKE_INSTALL_PREFIX={BASE}/deps/utf8proc-2.10.0"
+        ],
+        "target": "utf8proc",
+        "saved_compile_db": "data/records/utf8proc_pretest_20261029/build/compile_commands.json"
+      },
+      "flawfinder": {
+        "inputs": [
+          "sources/utf8proc-2.10.0/utf8proc.c",
+          "sources/utf8proc-2.10.0/utf8proc.h",
+          "sources/utf8proc-2.10.0/utf8proc_data.c"
+        ]
+      },
+      "cppcheck": {
+        "std": "c99"
+      },
+      "results_dir": "results/pretest-utf8proc-2.10.0",
+      "runs": {
+        "FF": "PRE-P10-FF-001",
+        "CP": "PRE-P10-CP-001",
+        "CC": "PRE-P10-CC-001"
+      },
+      "ledger_runs": {
+        "FF": "PRE-P10-FF-001",
+        "CP": "PRE-P10-CP-001",
+        "CC": "PRE-P10-CC-001"
+      }
+    }
+  ]
+}

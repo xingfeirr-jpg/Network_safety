@@ -1,0 +1,86 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-FF-001/command.txt",
+    "localRelative": "Flawfinder/command.txt",
+    "bytes": 5663,
+    "sha256": "7ca98bdc23c64a1e9e55d53d649bf5e4d39b41a6187c2cadc4c66b115898cfea"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-FF-001/environment-start.txt",
+    "localRelative": "Flawfinder/environment-start.txt",
+    "bytes": 2525,
+    "sha256": "2078209fff878c540b9f482dfeaedda8668ddffb68a523afa52c01cf87e77143"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-FF-001/executed-inputs.sha256",
+    "localRelative": "Flawfinder/executed-inputs.sha256",
+    "bytes": 1284,
+    "sha256": "e7b5a44b7a523bd2908e46c9861b32eafefccecbb620a0654537cd6b40cc7756"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-FF-001/exit-code.txt",
+    "localRelative": "Flawfinder/exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-FF-001/input-files.sha256",
+    "localRelative": "Flawfinder/input-files.sha256",
+    "bytes": 11381,
+    "sha256": "8c44c250d111fdd509948814afbf9d3625fc3d4b194d0cb372b04c02a8164c5a"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-FF-001/input-files.txt",
+    "localRelative": "Flawfinder/input-files.txt",
+    "bytes": 5573,
+    "sha256": "03c054d61c2e7f1fa204cdddcb74bbae7174a138454d8614d2a525527fd82168"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-FF-001/input-identity-check.json",
+    "localRelative": "Flawfinder/input-identity-check.json",
+    "bytes": 132559,
+    "sha256": "82695cb8961b3dc7a99d08585c95f5c97f9cb5c3416b56293c3a191aae5451b1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-FF-001/input-identity-command.txt",
+    "localRelative": "Flawfinder/input-identity-command.txt",
+    "bytes": 201,
+    "sha256": "b5a2a0a418f166ffe30610b8d0b19aa1693a925d0ed07de122931ae1f0c2678c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-FF-001/input-identity-exit-code.txt",
+    "localRelative": "Flawfinder/input-identity-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-FF-001/prepared-profile.json",
+    "localRelative": "Flawfinder/prepared-profile.json",
+    "bytes": 69968,
+    "sha256": "34e7c777262096f81218b5097e4c47a07870a027bf7100dfaaf040e962d874c6"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-FF-001/run-meta.tsv",
+    "localRelative": "Flawfinder/run-meta.tsv",
+    "bytes": 453,
+    "sha256": "4c846c3b7a6e3f9887f27bb3dce992bd291ae5a5e6cec4235ee1c3ebc3dd52d5"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-FF-001/stderr.txt",
+    "localRelative": "Flawfinder/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-FF-001/stdout.txt",
+    "localRelative": "Flawfinder/stdout.txt",
+    "bytes": 21255,
+    "sha256": "488204f8c20fe4224fad2bbdbeb1ee2803a986e18f66eb0e061556d553a9f4e1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1/PRE-P09-FF-001/time.txt",
+    "localRelative": "Flawfinder/time.txt",
+    "bytes": 6377,
+    "sha256": "a39de10ac7f4285cd886ba55d930a63f1793eeef603127bddeeb07b6d37c04e7"
+  }
+]

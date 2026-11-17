@@ -1,0 +1,35 @@
+{
+  "sha": "a1b99daa2a3393884220264c927a48ba1251a9c6",
+  "node_id": "C_kwDOAU3eN9oAKGExYjk5ZGFhMmEzMzkzODg0MjIwMjY0YzkyN2E0OGJhMTI1MWE5YzY",
+  "url": "https://api.github.com/repos/JuliaStrings/utf8proc/git/commits/a1b99daa2a3393884220264c927a48ba1251a9c6",
+  "html_url": "https://github.com/JuliaStrings/utf8proc/commit/a1b99daa2a3393884220264c927a48ba1251a9c6",
+  "author": {
+    "name": "Steven G. Johnson",
+    "email": "stevenj@alum.mit.edu",
+    "date": "2024-12-31T20:17:14Z"
+  },
+  "committer": {
+    "name": "Steven G. Johnson",
+    "email": "stevenj@alum.mit.edu",
+    "date": "2024-12-31T20:17:14Z"
+  },
+  "tree": {
+    "sha": "b5b227d68996d6e0cdafd9bf4bdb53cf5f05f339",
+    "url": "https://api.github.com/repos/JuliaStrings/utf8proc/git/trees/b5b227d68996d6e0cdafd9bf4bdb53cf5f05f339"
+  },
+  "message": "rm blank line",
+  "parents": [
+    {
+      "sha": "dfa687b804bcf161fed6ba9a470dda2f14ed51d6",
+      "url": "https://api.github.com/repos/JuliaStrings/utf8proc/git/commits/dfa687b804bcf161fed6ba9a470dda2f14ed51d6",
+      "html_url": "https://github.com/JuliaStrings/utf8proc/commit/dfa687b804bcf161fed6ba9a470dda2f14ed51d6"
+    }
+  ],
+  "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  }
+}

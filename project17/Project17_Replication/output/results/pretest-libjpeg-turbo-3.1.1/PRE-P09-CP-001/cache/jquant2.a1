@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="10075116140879483766">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="73" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="126" column="0"/>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="513" column="41" info="Division by zero"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="499" column="23" info="Assuming condition is false"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="490" column="16" info="Assignment &apos;total=0&apos;, assigned value is 0"/>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="515" column="41" info="Division by zero"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="499" column="23" info="Assuming condition is false"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="490" column="16" info="Assignment &apos;total=0&apos;, assigned value is 0"/>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="517" column="41" info="Division by zero"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="499" column="23" info="Assuming condition is false"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="490" column="16" info="Assignment &apos;total=0&apos;, assigned value is 0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:629:1" call-funcname="find_nearby_colors" call-argnr="5" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="871" col="33" call-argexpr="colorlist" call-argvaluetype="7" call-argvalue="256"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:758:1" call-funcname="find_best_colors" call-argnr="6" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="874" col="19" call-argexpr="colorlist" call-argvaluetype="7" call-argvalue="256"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:758:1" call-funcname="find_best_colors" call-argnr="7" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="874" col="19" call-argexpr="bestcolor" call-argvaluetype="7" call-argvalue="128"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:253:1" call-funcname="find_biggest_color_pop" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="417" col="12" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:404:1" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:204:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="207" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:293:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="297" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:293:1" my-argnr="2" my-argname="boxp" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="305" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:479:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="484" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:479:1" my-argnr="2" my-argname="boxp" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="495" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:522:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="530" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:629:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="640" col="19" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:838:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="843" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:898:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="902" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:932:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="936" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:1086:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="1089" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:1121:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="1123" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:1145:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="1147" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:1208:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="1210" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:550:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="1227" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:204:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="207" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:293:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="297" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:293:1" my-argnr="2" my-argname="boxp" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="305" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:479:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="484" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:479:1" my-argnr="2" my-argname="boxp" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="495" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:522:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="530" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:629:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="640" col="19" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:838:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="843" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:898:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="902" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:932:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="936" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:1086:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="1089" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:1121:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="1123" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:1145:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="1147" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:1208:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="1210" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:550:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c" line="1227" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GETENV_S" lineNumber="79"/>
+    <functiondecl functionName="PUTENV_S" lineNumber="132"/>
+    <functiondecl functionName="prescan_quantize" lineNumber="204"/>
+    <functiondecl functionName="find_biggest_color_pop" lineNumber="253"/>
+    <functiondecl functionName="find_biggest_volume" lineNumber="273"/>
+    <functiondecl functionName="update_box" lineNumber="293"/>
+    <functiondecl functionName="median_cut" lineNumber="404"/>
+    <functiondecl functionName="compute_color" lineNumber="479"/>
+    <functiondecl functionName="select_colors" lineNumber="522"/>
+    <functiondecl functionName="find_nearby_colors" lineNumber="629"/>
+    <functiondecl functionName="find_best_colors" lineNumber="758"/>
+    <functiondecl functionName="fill_inverse_cmap" lineNumber="838"/>
+    <functiondecl functionName="pass2_no_dither" lineNumber="898"/>
+    <functiondecl functionName="pass2_fs_dither" lineNumber="932"/>
+    <functiondecl functionName="init_error_limit" lineNumber="1086"/>
+    <functiondecl functionName="finish_pass1" lineNumber="1121"/>
+    <functiondecl functionName="finish_pass2" lineNumber="1134"/>
+    <functiondecl functionName="start_pass_2_quant" lineNumber="1145"/>
+    <functiondecl functionName="new_color_map_2_quant" lineNumber="1208"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ERANGE"/>
+    <functioncall functionName="JDITHER_FS"/>
+    <functioncall functionName="JERR_BAD_PRECISION"/>
+    <functioncall functionName="JERR_NOTIMPL"/>
+    <functioncall functionName="JERR_QUANT_FEW_COLORS"/>
+    <functioncall functionName="JERR_QUANT_MANY_COLORS"/>
+    <functioncall functionName="JTRC_QUANT_SELECTED"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="compute_color"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="fill_inverse_cmap"/>
+    <functioncall functionName="find_best_colors"/>
+    <functioncall functionName="find_biggest_color_pop"/>
+    <functioncall functionName="find_biggest_volume"/>
+    <functioncall functionName="find_nearby_colors"/>
+    <functioncall functionName="finish_pass1"/>
+    <functioncall functionName="finish_pass2"/>
+    <functioncall functionName="getenv"/>
+    <functioncall functionName="have_c0max"/>
+    <functioncall functionName="have_c0min"/>
+    <functioncall functionName="have_c1max"/>
+    <functioncall functionName="have_c1min"/>
+    <functioncall functionName="have_c2max"/>
+    <functioncall functionName="have_c2min"/>
+    <functioncall functionName="init_error_limit"/>
+    <functioncall functionName="jzero_far"/>
+    <functioncall functionName="median_cut"/>
+    <functioncall functionName="new_color_map_2_quant"/>
+    <functioncall functionName="pass2_fs_dither"/>
+    <functioncall functionName="pass2_no_dither"/>
+    <functioncall functionName="prescan_quantize"/>
+    <functioncall functionName="select_colors"/>
+    <functioncall functionName="setenv"/>
+    <functioncall functionName="start_pass_2_quant"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="update_box"/>
+  </FileInfo>
+</analyzerinfo>

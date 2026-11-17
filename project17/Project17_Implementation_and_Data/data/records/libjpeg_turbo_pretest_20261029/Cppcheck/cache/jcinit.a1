@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="2827362907598425580">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="73" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="126" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:480:14" call-funcname="jinit_c_master_control" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcinit.c" line="39" col="25" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:486:14" call-funcname="jinit_c_prep_controller" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcinit.c" line="46" col="30" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:488:14" call-funcname="j12init_c_prep_controller" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcinit.c" line="50" col="32" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:507:14" call-funcname="j16init_c_prep_controller" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcinit.c" line="56" col="32" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:482:14" call-funcname="jinit_c_main_controller" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcinit.c" line="129" col="28" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:484:14" call-funcname="j12init_c_main_controller" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcinit.c" line="131" col="30" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:505:14" call-funcname="j16init_c_main_controller" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcinit.c" line="134" col="30" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:480:14" call-funcname="jinit_c_master_control" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcinit.c" line="39" col="3" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:479:14" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GETENV_S" lineNumber="79"/>
+    <functiondecl functionName="PUTENV_S" lineNumber="132"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ERANGE"/>
+    <functioncall functionName="JERR_ARITH_NOTIMPL"/>
+    <functioncall functionName="JERR_BAD_PRECISION"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="getenv"/>
+    <functioncall functionName="j12init_c_coef_controller"/>
+    <functioncall functionName="j12init_c_diff_controller"/>
+    <functioncall functionName="j12init_c_main_controller"/>
+    <functioncall functionName="j12init_c_prep_controller"/>
+    <functioncall functionName="j12init_color_converter"/>
+    <functioncall functionName="j12init_downsampler"/>
+    <functioncall functionName="j12init_forward_dct"/>
+    <functioncall functionName="j12init_lossless_compressor"/>
+    <functioncall functionName="j16init_c_diff_controller"/>
+    <functioncall functionName="j16init_c_main_controller"/>
+    <functioncall functionName="j16init_c_prep_controller"/>
+    <functioncall functionName="j16init_color_converter"/>
+    <functioncall functionName="j16init_downsampler"/>
+    <functioncall functionName="j16init_lossless_compressor"/>
+    <functioncall functionName="jinit_arith_encoder"/>
+    <functioncall functionName="jinit_c_coef_controller"/>
+    <functioncall functionName="jinit_c_diff_controller"/>
+    <functioncall functionName="jinit_c_main_controller"/>
+    <functioncall functionName="jinit_c_master_control"/>
+    <functioncall functionName="jinit_c_prep_controller"/>
+    <functioncall functionName="jinit_color_converter"/>
+    <functioncall functionName="jinit_downsampler"/>
+    <functioncall functionName="jinit_forward_dct"/>
+    <functioncall functionName="jinit_huff_encoder"/>
+    <functioncall functionName="jinit_lhuff_encoder"/>
+    <functioncall functionName="jinit_lossless_compressor"/>
+    <functioncall functionName="jinit_marker_writer"/>
+    <functioncall functionName="jinit_phuff_encoder"/>
+    <functioncall functionName="setenv"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+  </FileInfo>
+</analyzerinfo>

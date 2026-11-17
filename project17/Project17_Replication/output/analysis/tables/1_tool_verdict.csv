@@ -1,0 +1,4 @@
+﻿tool,alerts,false_positive,supported,undetermined,supported_share,alerts_per_supported
+Flawfinder,536,520,5,11,0.9%,107.2
+Cppcheck,116,77,39,0,33.6%,3.0
+CodeChecker/clangsa,73,51,18,4,24.7%,4.1

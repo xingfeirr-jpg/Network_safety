@@ -1,0 +1,50 @@
+[
+  {
+    "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+    "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/api.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c",
+    "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c",
+    "output": "CMakeFiles/yaml.dir/src/api.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+    "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/dumper.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c",
+    "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c",
+    "output": "CMakeFiles/yaml.dir/src/dumper.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+    "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/emitter.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c",
+    "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c",
+    "output": "CMakeFiles/yaml.dir/src/emitter.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+    "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/loader.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c",
+    "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c",
+    "output": "CMakeFiles/yaml.dir/src/loader.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+    "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/parser.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c",
+    "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c",
+    "output": "CMakeFiles/yaml.dir/src/parser.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+    "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/reader.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c",
+    "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c",
+    "output": "CMakeFiles/yaml.dir/src/reader.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+    "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/scanner.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c",
+    "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c",
+    "output": "CMakeFiles/yaml.dir/src/scanner.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+    "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/writer.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/writer.c",
+    "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/writer.c",
+    "output": "CMakeFiles/yaml.dir/src/writer.c.o"
+  }
+]

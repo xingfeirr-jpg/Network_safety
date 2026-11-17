@@ -1,0 +1,262 @@
+{
+  "record_id": "CHECK-P03-COST-001",
+  "checked_utc": "2026-10-30T13:39:36.979529+00:00",
+  "purpose": "cJSON成本补测前只读检查；未构建、未运行检测器或parse",
+  "status": "machine_checks_passed_pending_assistant_acceptance",
+  "passed": true,
+  "files": [
+    {
+      "label": "源码 cJSON.c",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+      "sha256": "298581a04a36c0165da4b0aade235c23088cb2faa58651d720ea2f3706ed0b0d",
+      "passed": true,
+      "actual_sha256": "298581a04a36c0165da4b0aade235c23088cb2faa58651d720ea2f3706ed0b0d",
+      "actual_bytes": 80399
+    },
+    {
+      "label": "源码 cJSON.h",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h",
+      "sha256": "25b0145150d500498e4d209cec69c18c42cf818bffcc54690be3b895a2a16dee",
+      "passed": true,
+      "actual_sha256": "25b0145150d500498e4d209cec69c18c42cf818bffcc54690be3b895a2a16dee",
+      "actual_bytes": 16394
+    },
+    {
+      "label": "源码 LICENSE",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/LICENSE",
+      "sha256": "a36dda207c36db5818729c54e7ad4e8b0c6fba847491ba64f372c1a2037b6d5c",
+      "passed": true,
+      "actual_sha256": "a36dda207c36db5818729c54e7ad4e8b0c6fba847491ba64f372c1a2037b6d5c",
+      "actual_bytes": 1084
+    },
+    {
+      "label": "源码 CMakeLists.txt",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/CMakeLists.txt",
+      "sha256": "cdcb1302634cb81778130e9c30c2e952f80157bb9fee6b3f8489be8c15de9d34",
+      "passed": true,
+      "actual_sha256": "cdcb1302634cb81778130e9c30c2e952f80157bb9fee6b3f8489be8c15de9d34",
+      "actual_bytes": 10205
+    },
+    {
+      "label": "构建上下文 compile_commands.json",
+      "path": "/home/yhong/comp5355/build/cJSON-v1.7.19/compile_commands.json",
+      "sha256": "ff6f0e4cfd162a124d934f8adde2ba96c029b75df634b0884614a965ec19dd9b",
+      "passed": true,
+      "actual_sha256": "ff6f0e4cfd162a124d934f8adde2ba96c029b75df634b0884614a965ec19dd9b",
+      "actual_bytes": 781
+    },
+    {
+      "label": "构建上下文 CMakeCache.txt",
+      "path": "/home/yhong/comp5355/build/cJSON-v1.7.19/CMakeCache.txt",
+      "sha256": "a338bf89a1a1810ac248a4094c0f989dfdd2f29d82c393135618bbd862b71f66",
+      "passed": true,
+      "actual_sha256": "a338bf89a1a1810ac248a4094c0f989dfdd2f29d82c393135618bbd862b71f66",
+      "actual_bytes": 19012
+    },
+    {
+      "label": "原静态库 libcjson.a",
+      "path": "/home/yhong/comp5355/build/cJSON-v1.7.19/libcjson.a",
+      "sha256": "8ea454e9b2f13ee80b23e1ed25366d6567611f89cf2375bc8af94736794b39e8",
+      "bytes": 88738,
+      "passed": true,
+      "actual_sha256": "8ea454e9b2f13ee80b23e1ed25366d6567611f89cf2375bc8af94736794b39e8",
+      "actual_bytes": 88738
+    }
+  ],
+  "checks": [
+    {
+      "label": "本次完整环境快照",
+      "passed": true,
+      "details": {
+        "exit_code": "0",
+        "required_files": [
+          "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-P03-COST-001/environment/system.txt",
+          "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-P03-COST-001/environment/tool-versions.txt",
+          "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-P03-COST-001/environment/time-version.txt",
+          "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-P03-COST-001/environment/time-binary.sha256",
+          "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-P03-COST-001/environment/recording-scripts.sha256"
+        ]
+      }
+    },
+    {
+      "label": "真实数据库保持原1条C89动作",
+      "passed": true,
+      "details": {
+        "current": [
+          {
+            "directory": "/home/yhong/comp5355/build/cJSON-v1.7.19",
+            "command": "/usr/bin/clang-18 -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wcomma -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wused-but-marked-unused -Wswitch-enum -fvisibility=hidden -g -o CMakeFiles/cjson.dir/cJSON.c.o -c /home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+            "output": "CMakeFiles/cjson.dir/cJSON.c.o"
+          }
+        ],
+        "baseline": "review_evidence/cJSON_pretest_20261026/compile_commands.json"
+      }
+    },
+    {
+      "label": "Ubuntu 24.04 / x86_64环境",
+      "passed": true,
+      "details": {
+        "machine": "x86_64",
+        "os": {
+          "NAME": "Ubuntu",
+          "ID": "ubuntu",
+          "PRETTY_NAME": "Ubuntu 24.04.5 LTS",
+          "VERSION_ID": "24.04",
+          "VERSION": "24.04.5 LTS (Noble Numbat)",
+          "VERSION_CODENAME": "noble",
+          "ID_LIKE": "debian",
+          "HOME_URL": "https://www.ubuntu.com/",
+          "SUPPORT_URL": "https://help.ubuntu.com/",
+          "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+          "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+          "UBUNTU_CODENAME": "noble",
+          "LOGO": "ubuntu-logo"
+        }
+      }
+    },
+    {
+      "label": "固定Python虚拟环境",
+      "passed": true,
+      "details": "/home/yhong/comp5355/.venv"
+    },
+    {
+      "label": "flawfinder版本",
+      "passed": true,
+      "details": {
+        "expected": "2.0.20",
+        "actual": "2.0.20"
+      }
+    },
+    {
+      "label": "codechecker版本",
+      "passed": true,
+      "details": {
+        "expected": "6.29.1",
+        "actual": "6.29.1"
+      }
+    },
+    {
+      "label": "Cppcheck版本",
+      "passed": true,
+      "details": {
+        "argv": [
+          "/usr/bin/cppcheck",
+          "--version"
+        ],
+        "exit_code": 0,
+        "stdout": "Cppcheck 2.13.0\n",
+        "stderr": ""
+      }
+    },
+    {
+      "label": "clang版本",
+      "passed": true,
+      "details": {
+        "argv": [
+          "/usr/bin/clang-18",
+          "--version"
+        ],
+        "exit_code": 0,
+        "stdout": "Ubuntu clang version 18.1.3 (1ubuntu1)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin\n",
+        "stderr": ""
+      }
+    },
+    {
+      "label": "Cppcheck Ubuntu package版本",
+      "passed": true,
+      "details": {
+        "argv": [
+          "dpkg-query",
+          "-W",
+          "-f=${Version}",
+          "cppcheck"
+        ],
+        "exit_code": 0,
+        "stdout": "2.13.0-2ubuntu3",
+        "stderr": ""
+      }
+    },
+    {
+      "label": "GNU time package版本",
+      "passed": true,
+      "details": {
+        "argv": [
+          "dpkg-query",
+          "-W",
+          "-f=${Version}",
+          "time"
+        ],
+        "exit_code": 0,
+        "stdout": "1.9-0.2build1",
+        "stderr": ""
+      }
+    },
+    {
+      "label": "CodeChecker固定入口",
+      "passed": true,
+      "details": "/home/yhong/comp5355/.venv/bin/CodeChecker"
+    },
+    {
+      "label": "Flawfinder固定入口",
+      "passed": true,
+      "details": "/home/yhong/comp5355/.venv/bin/flawfinder"
+    },
+    {
+      "label": "Cppcheck固定入口",
+      "passed": true,
+      "details": "/usr/bin/cppcheck"
+    },
+    {
+      "label": "clangsa固定入口",
+      "passed": true,
+      "details": "/usr/bin/clang-18"
+    },
+    {
+      "label": "GNU time固定入口",
+      "passed": true,
+      "details": "/usr/bin/time"
+    },
+    {
+      "label": "CodeChecker默认labels未被覆盖",
+      "passed": true,
+      "details": "unset"
+    },
+    {
+      "label": "clangsa路径显式固定",
+      "passed": true,
+      "details": "clangsa:/usr/bin/clang-18"
+    },
+    {
+      "label": "FORM-P03-CC-001目录未占用",
+      "passed": true,
+      "details": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-CC-001"
+    },
+    {
+      "label": "FORM-P03-FF-001目录未占用",
+      "passed": true,
+      "details": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-FF-001"
+    },
+    {
+      "label": "FORM-P03-CP-001目录未占用",
+      "passed": true,
+      "details": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-CP-001"
+    }
+  ],
+  "planned_runs": [
+    {
+      "run_id": "FORM-P03-CC-001",
+      "directory": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-CC-001"
+    },
+    {
+      "run_id": "FORM-P03-FF-001",
+      "directory": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-FF-001"
+    },
+    {
+      "run_id": "FORM-P03-CP-001",
+      "directory": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-CP-001"
+    }
+  ],
+  "profile_sha256": "df679063d0f6daa0dfbfd7f1ac3ee5edf3c7cdb16f597d5df6606d2e32520b2b",
+  "environment_directory": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-P03-COST-001/environment"
+}

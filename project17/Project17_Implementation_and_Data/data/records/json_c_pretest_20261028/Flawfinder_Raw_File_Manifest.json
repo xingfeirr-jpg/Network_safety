@@ -1,0 +1,72 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-FF-001/command.txt",
+    "relative": "command.txt",
+    "bytes": 2250,
+    "sha256": "b5a5edf6bb85e470f35d254b600b01af5ca93bcb773809828fa938416bf07032",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Flawfinder/command.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-FF-001/environment-start.txt",
+    "relative": "environment-start.txt",
+    "bytes": 2525,
+    "sha256": "c55caa4563e77f72be98247b7119b8ea610de22a9fa45bf2c9e37a0c8c0b14a3",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Flawfinder/environment-start.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-FF-001/exit-code.txt",
+    "relative": "exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Flawfinder/exit-code.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-FF-001/input-files.sha256",
+    "relative": "input-files.sha256",
+    "bytes": 4734,
+    "sha256": "9a73cf87e9156a25ac99ed248205a8ed487597dc860fc10eb9b22c00acd68fa1",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Flawfinder/input-files.sha256"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-FF-001/input-files.txt",
+    "relative": "input-files.txt",
+    "bytes": 2160,
+    "sha256": "5c9e297029d810cce857e85be1a642e39aecd98f86dc522c438a72329562b816",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Flawfinder/input-files.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-FF-001/prepared-profile.json",
+    "relative": "prepared-profile.json",
+    "bytes": 9912,
+    "sha256": "9be497d63eef9fabe733982aab0f93a5a19f95bfadca3d238ffbcfbd23ff8af6",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Flawfinder/prepared-profile.json"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-FF-001/run-meta.tsv",
+    "relative": "run-meta.tsv",
+    "bytes": 445,
+    "sha256": "36a8021b0d98b460b69f658b03950955c0a421c55b0df85babd4201136cabdc8",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Flawfinder/run-meta.tsv"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-FF-001/stderr.txt",
+    "relative": "stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Flawfinder/stderr.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-FF-001/stdout.txt",
+    "relative": "stdout.txt",
+    "bytes": 22294,
+    "sha256": "b330dd98b3b51866621eac2b6863e1031a4ced03b02670ad4e8c09f8688d4ca6",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Flawfinder/stdout.txt"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-FF-001/time.txt",
+    "relative": "time.txt",
+    "bytes": 2963,
+    "sha256": "e65544ae923b0f6e714aba844e5fbdd7e128d21fc95d78b8fe60cad9b8b3bbcf",
+    "localCopy": "review_evidence/json_c_pretest_20261028/Flawfinder/time.txt"
+  }
+]

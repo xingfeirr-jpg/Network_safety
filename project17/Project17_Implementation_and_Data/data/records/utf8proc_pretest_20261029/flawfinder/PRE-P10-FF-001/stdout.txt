@@ -1,0 +1,100 @@
+Flawfinder version 2.0.20, (C) 2001-2026 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 222
+Examining /home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c
+Examining /home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h
+Examining /home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc_data.c
+
+FINAL RESULTS:
+
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:126:49:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+  const utf8proc_uint8_t *str, utf8proc_ssize_t strlen, utf8proc_int32_t *dst
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:132:8:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+  if (!strlen) return 0;
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:133:17:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+  end = str + ((strlen < 0) ? 4 : strlen);
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:133:35:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+  end = str + ((strlen < 0) ? 4 : strlen);
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:541:49:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+  const utf8proc_uint8_t *str, utf8proc_ssize_t strlen,
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:544:43:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return utf8proc_decompose_custom(str, strlen, buffer, bufsize, options, NULL, NULL);
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:548:49:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+  const utf8proc_uint8_t *str, utf8proc_ssize_t strlen,
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:573:21:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        if (rpos >= strlen) break;
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:755:49:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+  const utf8proc_uint8_t *str, utf8proc_ssize_t strlen, utf8proc_uint8_t **dstptr, utf8proc_option_t options
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:757:37:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    return utf8proc_map_custom(str, strlen, dstptr, options, NULL, NULL);
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:761:49:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+  const utf8proc_uint8_t *str, utf8proc_ssize_t strlen, utf8proc_uint8_t **dstptr, utf8proc_option_t options,
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:767:43:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+  result = utf8proc_decompose_custom(str, strlen, NULL, 0, options, custom_func, custom_data);
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:771:43:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+  result = utf8proc_decompose_custom(str, strlen, buffer, result, options, custom_func, custom_data);
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:479:100:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+UTF8PROC_DLLEXPORT utf8proc_ssize_t utf8proc_iterate(const utf8proc_uint8_t *str, utf8proc_ssize_t strlen, utf8proc_int32_t *codepoint_ref);
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:566:49:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+  const utf8proc_uint8_t *str, utf8proc_ssize_t strlen,
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:577:49:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+  const utf8proc_uint8_t *str, utf8proc_ssize_t strlen,
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:748:49:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+  const utf8proc_uint8_t *str, utf8proc_ssize_t strlen, utf8proc_uint8_t **dstptr, utf8proc_option_t options
+/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:758:49:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+  const utf8proc_uint8_t *str, utf8proc_ssize_t strlen, utf8proc_uint8_t **dstptr, utf8proc_option_t options,
+
+ANALYSIS SUMMARY:
+
+Hits = 18
+Lines analyzed = 18718 in approximately 0.29 seconds (63682 lines/second)
+Physical Source Lines of Code (SLOC) = 18043
+Hits@level = [0]   0 [1]  18 [2]   0 [3]   0 [4]   0 [5]   0
+Hits@level+ = [0+]  18 [1+]  18 [2+]   0 [3+]   0 [4+]   0 [5+]   0
+Hits/KSLOC@level+ = [0+] 0.997617 [1+] 0.997617 [2+]   0 [3+]   0 [4+]   0 [5+]   0
+Minimum risk level = 1
+
+Not every hit is necessarily a security vulnerability.
+You can inhibit a report by adding a comment in this form:
+// flawfinder: ignore
+Make *sure* it's a false positive!
+You can use the option --neverignore to show these.
+
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(https://dwheeler.com/secure-programs) for more information.

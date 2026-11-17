@@ -1,0 +1,9 @@
+[
+ "cmake",
+ "--build",
+ "/home/yhong/comp5355/build/cJSON-v1.7.19",
+ "--target",
+ "cjson",
+ "--parallel",
+ "1"
+]

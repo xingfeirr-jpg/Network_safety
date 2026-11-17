@@ -1,0 +1,19 @@
+{
+  "project": "P09 libjpeg-turbo",
+  "run_id": "PRE-P09-CC-001",
+  "purpose": "pretest",
+  "intended_actions": 101,
+  "succeeded_actions": 101,
+  "failed_actions": 0,
+  "skipped_actions": 0,
+  "raw_saved_diagnostics": 48,
+  "displayed_reports": 46,
+  "wall_seconds": 121.59,
+  "user_seconds": 113.98,
+  "system_seconds": 5.58,
+  "max_rss_kib": 200416,
+  "timed_invocation_exit_code": 0,
+  "coverage_validation": "accepted",
+  "source_review": "not started",
+  "acceptance": "CodeChecker_Identity_Check.json"
+}

@@ -1,0 +1,15 @@
+lh_table_head
+lh_get_hash call:[hash_fn] noreturn:[hash_fn]
+lh_entry_k call:[return] noreturn:[return]
+lh_entry_k_is_constant
+lh_entry_v call:[return] noreturn:[return]
+lh_entry_set_val
+lh_entry_next
+lh_entry_prev
+json_object_iter_begin call:[json_object_get_object,lh_table_head,while]
+json_object_iter_end global:[kObjectEndIterValue] call:[while]
+json_object_iter_next call:[lh_entry_next,while] noreturn:[lh_entry_next]
+json_object_iter_peek_name call:[return,while]
+json_object_iter_peek_value call:[lh_entry_v,return,while] noreturn:[lh_entry_v]
+json_object_iter_equal call:[return,while] noreturn:[return]
+json_object_iter_init_default

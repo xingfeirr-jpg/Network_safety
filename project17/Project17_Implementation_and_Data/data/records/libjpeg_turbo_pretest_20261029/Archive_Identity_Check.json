@@ -1,0 +1,207 @@
+{
+  "project": "P09 libjpeg-turbo",
+  "runId": "DL-P09-001",
+  "acceptedDate": "2026-10-29",
+  "accepted": true,
+  "purpose": "functional pretest source download acceptance only",
+  "version": "3.1.1",
+  "tag": "3.1.1",
+  "commit": "7723f50f3f66b9da74376e6d8badb6162464212c",
+  "archiveSHA256": "aadc97ea91f6ef078b0ae3a62bba69e008d9a7db19b34e4ac973b19b71b4217c",
+  "archiveBytes": 2506010,
+  "matchedOfficialReleaseAssetDigest": true,
+  "officialAssetId": 262668412,
+  "officialSourceURL": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.1/libjpeg-turbo-3.1.1.tar.gz",
+  "attempts": 1,
+  "curlExitCode": 0,
+  "finalHTTPStatus": 200,
+  "identityExitCode": 0,
+  "regularFiles": 546,
+  "directoriesIncludingArchiveRoot": 42,
+  "subdirectories": 41,
+  "symlinks": 0,
+  "hardlinks": 0,
+  "archiveRootModeOctal": "0775",
+  "fourFixedCommitReferenceFiles": {
+    "BUILDING.md": "8d2c93157e3294e66e686ec133c704bc13ccfdb2895a85403198510e52ffffa9",
+    "CMakeLists.txt": "7ecd13a697bc2ad91b374bb5ad4c2d249169dade540d54f891ce686a44ecebc1",
+    "LICENSE.md": "96f5b328adbb78eeaaec6980d73fd558cb1e4d62560ed615646bc3cf5e532430",
+    "README.ijg": "75815e3bf6484201a3c3d17a1bbf10f2e8e3237f84df10a2357ea896db2a81d6"
+  },
+  "rawArchiveCheck": "review_evidence/libjpeg_turbo_pretest_20261029/raw_download/DL-P09-001/archive-check.json",
+  "localArchive": "review_evidence/libjpeg_turbo_pretest_20261029/archive/libjpeg-turbo-3.1.1.tar.gz",
+  "rawManifest": "review_evidence/libjpeg_turbo_pretest_20261029/Download_Raw_File_Manifest.json",
+  "collectedOriginalFiles": 16,
+  "executedInputs": [
+    {
+      "file": "review_evidence/libjpeg_turbo_setup/Download_Command.sh",
+      "sha256": "ce3dee3613afdb02e6b3343415ac250789b73cd8aaed1a818ace573ed22feadc"
+    },
+    {
+      "file": "review_evidence/libjpeg_turbo_setup/Inspect_Release_Archive.py",
+      "sha256": "69f500a25f2ad343c296ae01c69d795a79369f86a0c4e7ab8fdf23c0fb42c906"
+    },
+    {
+      "file": "review_evidence/libjpeg_turbo_setup/Download_Profile.json",
+      "sha256": "847dcf76333d9a2013349e7276cf1f86967797a02989a2538013df263c7b1bf9"
+    },
+    {
+      "file": "review_evidence/libjpeg_turbo_setup/Official_Identity_Check_20261029/Metadata_Check.json",
+      "sha256": "5e3a5dd9921249ec78dfcdda1528af1d6db522acb9df1201cff2d6c67cbbdf52"
+    }
+  ],
+  "currentPaths": {
+    "source": {
+      "path": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1",
+      "exists": false,
+      "symlink": false
+    },
+    "build": {
+      "path": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1",
+      "exists": false,
+      "symlink": false
+    },
+    "results": {
+      "path": "/home/yhong/comp5355/results/pretest-libjpeg-turbo-3.1.1",
+      "exists": false,
+      "symlink": false
+    }
+  },
+  "archiveExtracted": false,
+  "built": false,
+  "scanned": false,
+  "wholeArchiveEqualsGitTree": "not asserted: official release package may include generated files",
+  "digitalSignatureVerified": false,
+  "checks": [
+    {
+      "check": "16 transferred originals have exact byte counts and SHA-256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fixed official profile and four reference files revalidated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "archive size and digest match official release asset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "successful HTTP body equals retained archive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "HTTP final status 200, transferred size correct, curl exit 0 and empty stderr",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "HTTP headers confirm successful final response",
+      "passed": true,
+      "detail": [
+        "302",
+        "200"
+      ]
+    },
+    {
+      "check": "one actual download attempt retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "identity check exit 0 and empty stderr",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "both retained SHA files match archive and original Linux path",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed input path is in course workspace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed input still matches retained SHA: review_evidence/libjpeg_turbo_setup/Download_Command.sh",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed input path is in course workspace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed input still matches retained SHA: review_evidence/libjpeg_turbo_setup/Inspect_Release_Archive.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed input path is in course workspace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed input still matches retained SHA: review_evidence/libjpeg_turbo_setup/Download_Profile.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed input path is in course workspace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed input still matches retained SHA: review_evidence/libjpeg_turbo_setup/Official_Identity_Check_20261029/Metadata_Check.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "four executed preparation inputs retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fresh read-only member inventory exactly matches Ubuntu inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "member types and counts accepted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "archive root recorded with mode 0775",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "saved identity metadata matches actual official source asset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "download completion record retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "download run ID and fixed URL retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no source, build or results directory exists at read-only acceptance",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 25,
+  "failed": 0
+}

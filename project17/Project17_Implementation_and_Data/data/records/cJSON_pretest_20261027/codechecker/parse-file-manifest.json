@@ -1,0 +1,17 @@
+[
+  {
+    "path": "parse.txt",
+    "bytes": 1031,
+    "sha256": "3dbb6b8e3e5a412579a2d61de7890f13bb19a9305de4e2f5bf1c848ee6624ab8"
+  },
+  {
+    "path": "parse-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "parse-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  }
+]

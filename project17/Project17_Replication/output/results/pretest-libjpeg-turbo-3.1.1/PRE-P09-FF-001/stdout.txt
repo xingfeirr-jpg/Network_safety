@@ -1,0 +1,320 @@
+Flawfinder version 2.0.20, (C) 2001-2026 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 222
+Examining /home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jconfig.h
+Examining /home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jconfigint.h
+Examining /home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jversion.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jaricom.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapistd.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdctmgr.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdiffct.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcicc.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcinit.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclhuff.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmainct.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmaster.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmaster.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcomapi.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcparam.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcphuff.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcprepct.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcsample.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapimin.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatadst.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatasrc.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcoefct.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcoefct.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcol565.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcolext.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcolor.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdct.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddctmgr.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddiffct.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdicc.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdinput.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlhuff.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlossls.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmainct.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmainct.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmarker.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmerge.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmerge.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmrg565.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmrgext.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdpostct.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdsample.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdsample.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdtrans.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jerror.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jerror.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctflt.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctfst.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctint.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctflt.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctfst.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctint.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctred.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jlossls.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemnobs.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemsys.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmorecfg.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeg_nbits.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeg_nbits.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegapicomp.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant1.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jsamplecomp.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jsimd.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jsimddct.h
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jstdhuff.c
+Examining /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jutils.c
+
+FINAL RESULTS:
+
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h:55:19:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+#define SNPRINTF  snprintf
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h:96:9:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+  env = getenv(name);
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c:47:12:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  unsigned char *dc_stats[NUM_ARITH_TBLS];
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c:48:12:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  unsigned char *ac_stats[NUM_ARITH_TBLS];
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c:51:12:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  unsigned char fixed_bin[4];
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdiffct.c:288:7:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+      memcpy(buffer[samp_row], input_buf[ci][samp_row],
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:238:3:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  char huffsize[257];
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:464:7:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+      memcpy(state->next_output_byte, buffer, bytestocopy); \
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.h:34:3:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  char ehufsi[256];             /* length of code for each symbol */
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:269:3:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+  memcpy(output_buf, input_buf, width * sizeof(_JSAMPLE));
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:235:3:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  char dc_in_use[NUM_ARITH_TBLS];
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:236:3:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  char ac_in_use[NUM_ARITH_TBLS];
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcprepct.c:300:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(fake_buffer + rgroup_height, true_buffer,
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:109:7:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+      memcpy((*qtblptr)->quantval, srcinfo->quant_tbl_ptrs[tblno]->quantval,
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:47:12:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  unsigned char *dc_stats[NUM_ARITH_TBLS];
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:48:12:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  unsigned char *ac_stats[NUM_ARITH_TBLS];
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c:51:12:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  unsigned char fixed_bin[4];
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatadst.c:134:3:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+  memcpy(nextbuffer, dest->buffer, dest->bufsize);
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddiffct.c:329:7:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+      memcpy(output_buf[ci][row], buffer[row],
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.c:150:3:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  char huffsize[257];
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdicc.c:79:3:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  char marker_present[MAX_SEQ_NO + 1];      /* 1 if marker found */
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdinput.c:282:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(qtbl, cinfo->quant_tbl_ptrs[qtblno], sizeof(JQUANT_TBL));
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmarker.c:498:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy((*htblptr)->bits, bits, sizeof((*htblptr)->bits));
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmarker.c:499:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy((*htblptr)->huffval, huffval, sizeof((*htblptr)->huffval));
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c:443:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(table + (4 * (MAXJSAMPLE + 1) - CENTERJSAMPLE),
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c:466:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(table12 + (4 * (MAXJ12SAMPLE + 1) - CENTERJ12SAMPLE),
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c:490:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(table16 + (4 * (MAXJ16SAMPLE + 1) - CENTERJ16SAMPLE),
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jerror.c:97:3:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  char buffer[JMSG_LENGTH_MAX];
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:1272:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char memenv[30] = { 0 };
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemsys.h:117:3:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+  char temp_name[TEMP_NAME_LENGTH]; /* name of temp file */
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeg_nbits.c:29:16:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+const unsigned char HIDDEN jpeg_nbits_table[65536] = {
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeg_nbits.h:40:23:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+extern const unsigned char jpeg_nbits_table[65536];
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:803:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char s[JMSG_STR_PARM_MAX];
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jstdhuff.c:32:3:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+  memcpy((*htblptr)->bits, bits, sizeof((*htblptr)->bits));
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jstdhuff.c:44:3:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+  memcpy((*htblptr)->huffval, val, nsymbols * sizeof(UINT8));
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jutils.c:121:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(outptr, inptr, count);
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jutils.c:136:3:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+  memcpy(output_row, input_row, num_blocks * (DCTSIZE2 * sizeof(JCOEF)));
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jerror.h:275:4:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+   strncpy((cinfo)->err->msg_parm.s, (str), JMSG_STR_PARM_MAX), \
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jerror.h:332:4:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+   strncpy((cinfo)->err->msg_parm.s, (str), JMSG_STR_PARM_MAX), \
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h:103:7:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+  if (strlen(env) + 1 > buffer_size) {
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h:108:3:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+  strncpy(buffer, env, buffer_size);
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:1274:45:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    if (!GETENV_S(memenv, 30, "JPEGMEM") && strlen(memenv) > 0) {
+
+ANALYSIS SUMMARY:
+
+Hits = 42
+Lines analyzed = 41778 in approximately 0.93 seconds (44708 lines/second)
+Physical Source Lines of Code (SLOC) = 27157
+Hits@level = [0]   6 [1]   5 [2]  35 [3]   1 [4]   1 [5]   0
+Hits@level+ = [0+]  48 [1+]  42 [2+]  37 [3+]   2 [4+]   1 [5+]   0
+Hits/KSLOC@level+ = [0+] 1.7675 [1+] 1.54656 [2+] 1.36245 [3+] 0.0736458 [4+] 0.0368229 [5+]   0
+Minimum risk level = 1
+
+Not every hit is necessarily a security vulnerability.
+You can inhibit a report by adding a comment in this form:
+// flawfinder: ignore
+Make *sure* it's a false positive!
+You can use the option --neverignore to show these.
+
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(https://dwheeler.com/secure-programs) for more information.

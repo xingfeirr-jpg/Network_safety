@@ -1,0 +1,4 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcoefct.c:227:24: warning: Array access results in an undefined pointer dereference [core.NullDereference]
+  227 |           buffer_ptr = buffer[ci][yindex + yoffset] + start_col;
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.

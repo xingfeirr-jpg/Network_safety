@@ -1,0 +1,98 @@
+{
+  "project": "P06 yyjson",
+  "date": "2026-10-28",
+  "status": "accepted",
+  "preparationId": "PREP-P06-001",
+  "version": "0.12.0",
+  "commit": "8b4a38dc994a110abaec8a400615567bd996105f",
+  "environmentSession": "session-20261028T025725-p06-22994",
+  "rawFiles": 39,
+  "rawCopiesMatchLinuxSHA256": true,
+  "configureExitCode": 0,
+  "buildExitCode": 0,
+  "configureStderrBytes": 0,
+  "buildStderrBytes": 0,
+  "target": "yyjson",
+  "libraryBytes": 1869678,
+  "librarySHA256": "2628be8596679e71b4acec904a0922ca89ae242b24c4e690bd9895425471b72e",
+  "databaseBytes": 371,
+  "databaseSHA256": "9369239b022ed444d254383e60008ceba3c902dd6394d50db4e840ae3a8a4224",
+  "actualActions": 1,
+  "actualCFiles": [
+    "/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c"
+  ],
+  "actualCommand": "/usr/bin/clang-18 -I/home/yhong/comp5355/sources/yyjson-0.12.0/src -g -o CMakeFiles/yyjson.dir/src/yyjson.c.o -c /home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c",
+  "libraryMembers": [
+    "yyjson.c.o"
+  ],
+  "libraryMemberMatchesObject": true,
+  "libraryObjects": 1,
+  "projectOptionsActual": {
+    "BUILD_SHARED_LIBS": "OFF",
+    "YYJSON_BUILD_TESTS": "OFF",
+    "YYJSON_BUILD_FUZZER": "OFF",
+    "YYJSON_BUILD_MISC": "OFF",
+    "YYJSON_BUILD_DOC": "OFF",
+    "YYJSON_DISABLE_READER": "OFF",
+    "YYJSON_DISABLE_WRITER": "OFF",
+    "YYJSON_DISABLE_INCR_READER": "OFF",
+    "YYJSON_DISABLE_UTILS": "OFF",
+    "YYJSON_DISABLE_FAST_FP_CONV": "OFF",
+    "YYJSON_DISABLE_NON_STANDARD": "OFF",
+    "YYJSON_DISABLE_UTF8_VALIDATION": "OFF",
+    "YYJSON_DISABLE_UNALIGNED_MEMORY_ACCESS": "OFF"
+  },
+  "effectiveDisableMacros": {
+    "YYJSON_DISABLE_READER": "0",
+    "YYJSON_DISABLE_WRITER": "0",
+    "YYJSON_DISABLE_INCR_READER": "0",
+    "YYJSON_DISABLE_UTILS": "0",
+    "YYJSON_DISABLE_FAST_FP_CONV": "0",
+    "YYJSON_DISABLE_NON_STANDARD": "0",
+    "YYJSON_DISABLE_UTF8_VALIDATION": "0",
+    "YYJSON_DISABLE_UNALIGNED_MEMORY_ACCESS": "0"
+  },
+  "languageContext": {
+    "databaseExplicitStd": false,
+    "CMakeComputedDefault": "17",
+    "extensionsComputedDefault": "ON",
+    "STDC_VERSION": "201710L",
+    "meaning": "GNU C17 default context,not explicit C89/C99/C11 forcing",
+    "target": "x86_64-pc-linux-gnu",
+    "LP64": "1"
+  },
+  "ninjaDependencies": 90,
+  "projectClosureFiles": 2,
+  "systemDependencyEntries": 88,
+  "allNinjaDependenciesValid": true,
+  "generatedCConfigHeaders": 0,
+  "nonCGeneratedFile": "yyjson.pc",
+  "fullSourceUnchanged": {
+    "regularFiles": 903,
+    "directoriesExcludingRoot": 25,
+    "beforeAfterAndCurrentMatch": true
+  },
+  "preparationCosts": {
+    "configure": {
+      "wallSeconds": 21.47,
+      "userSeconds": 0.24,
+      "systemSeconds": 0.82,
+      "maxRssKiB": 88560
+    },
+    "build": {
+      "wallSeconds": 1.12,
+      "userSeconds": 0.95,
+      "systemSeconds": 0.14,
+      "maxRssKiB": 209248
+    }
+  },
+  "toolSelfConfigureSecondsSeparate": 21.5,
+  "costMeaning": "GNU time separately for configure/build;not analyzer performance;maximumRSS is not sum of process tree peaks",
+  "rawManifest": "Build_Raw_File_Manifest.json",
+  "dependencies": "Project_Dependency_Manifest.json",
+  "compileContextEvidence": "../yyjson_setup/Build_Acceptance_20261028/Compiler_Macro_Query.json",
+  "readOnlyEvidence": "../yyjson_setup/Build_Acceptance_20261028/Read_Only_Linux_Evidence.json",
+  "figure": "FIG-P06-03",
+  "buildOnlyNoAnalyzersRun": true,
+  "nextStep": "user runs PRE-P06-CC-001 with fixed clangsa settings and fresh reports;assistant validates actual result coverage"
+}

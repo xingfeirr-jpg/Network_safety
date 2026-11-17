@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="9318614110199621296">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="9" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:669:1" call-funcname="yaml_parser_fetch_block_scalar" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="995" col="46" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:672:1" call-funcname="yaml_parser_fetch_flow_scalar" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1005" col="45" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:685:1" call-funcname="yaml_parser_scan_directive" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1386" col="36" call-argexpr="&amp;token" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:345:1" call-funcname="yaml_token_delete" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1392" col="26" call-argexpr="&amp;token" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:582:1" call-funcname="yaml_parser_set_scanner_error" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1582" col="49" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:582:1" call-funcname="yaml_parser_set_scanner_error" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1643" col="49" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:582:1" call-funcname="yaml_parser_set_scanner_error" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1729" col="53" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:704:1" call-funcname="yaml_parser_scan_anchor" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1781" col="33" call-argexpr="&amp;token" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:345:1" call-funcname="yaml_token_delete" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1785" col="26" call-argexpr="&amp;token" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:708:1" call-funcname="yaml_parser_scan_tag" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1811" col="30" call-argexpr="&amp;token" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:345:1" call-funcname="yaml_token_delete" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1815" col="26" call-argexpr="&amp;token" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:723:1" call-funcname="yaml_parser_scan_block_scalar" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1842" col="39" call-argexpr="&amp;token" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:723:1" call-funcname="yaml_parser_scan_block_scalar" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1842" col="39" call-argexpr="literal" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="995" col="55" info="Calling function &apos;yaml_parser_fetch_block_scalar&apos;, 2nd argument &apos;0&apos; value is 0"/>
+  <path file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1833" col="9" info="Assuming condition is false"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:345:1" call-funcname="yaml_token_delete" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1846" col="26" call-argexpr="&amp;token" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:732:1" call-funcname="yaml_parser_scan_flow_scalar" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1873" col="38" call-argexpr="&amp;token" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:732:1" call-funcname="yaml_parser_scan_flow_scalar" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1873" col="38" call-argexpr="single" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1005" col="54" info="Calling function &apos;yaml_parser_fetch_flow_scalar&apos;, 2nd argument &apos;0&apos; value is 0"/>
+  <path file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1864" col="9" info="Assuming condition is false"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:345:1" call-funcname="yaml_token_delete" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1877" col="26" call-argexpr="&amp;token" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:736:1" call-funcname="yaml_parser_scan_plain_scalar" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1904" col="39" call-argexpr="&amp;token" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:345:1" call-funcname="yaml_token_delete" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1908" col="26" call-argexpr="&amp;token" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:688:1" call-funcname="yaml_parser_scan_directive_name" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2011" col="41" call-argexpr="&amp;name" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:692:1" call-funcname="yaml_parser_scan_version_directive_value" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2020" col="54" call-argexpr="&amp;major" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:692:1" call-funcname="yaml_parser_scan_version_directive_value" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2020" col="54" call-argexpr="&amp;minor" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:700:1" call-funcname="yaml_parser_scan_tag_directive_value" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2038" col="50" call-argexpr="&amp;handle" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:700:1" call-funcname="yaml_parser_scan_tag_directive_value" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2038" col="50" call-argexpr="&amp;prefix" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:711:1" call-funcname="yaml_parser_scan_tag_handle" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2274" col="37" call-argexpr="&amp;handle_value" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:715:1" call-funcname="yaml_parser_scan_tag_uri" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2296" col="34" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:715:1" call-funcname="yaml_parser_scan_tag_uri" call-argnr="6" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2296" col="34" call-argexpr="&amp;prefix_value" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:715:1" call-funcname="yaml_parser_scan_tag_uri" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2414" col="38" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:715:1" call-funcname="yaml_parser_scan_tag_uri" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2414" col="38" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:715:1" call-funcname="yaml_parser_scan_tag_uri" call-argnr="6" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2414" col="38" call-argexpr="&amp;suffix" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:711:1" call-funcname="yaml_parser_scan_tag_handle" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2433" col="41" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:711:1" call-funcname="yaml_parser_scan_tag_handle" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2433" col="41" call-argexpr="&amp;handle" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:715:1" call-funcname="yaml_parser_scan_tag_uri" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2442" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:715:1" call-funcname="yaml_parser_scan_tag_uri" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2442" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:715:1" call-funcname="yaml_parser_scan_tag_uri" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2442" col="42" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:715:1" call-funcname="yaml_parser_scan_tag_uri" call-argnr="6" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2442" col="42" call-argexpr="&amp;suffix" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:715:1" call-funcname="yaml_parser_scan_tag_uri" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2449" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:715:1" call-funcname="yaml_parser_scan_tag_uri" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2449" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:715:1" call-funcname="yaml_parser_scan_tag_uri" call-argnr="6" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2449" col="42" call-argexpr="&amp;suffix" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:719:1" call-funcname="yaml_parser_scan_uri_escapes" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2635" col="46" call-argexpr="&amp;string" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:727:1" call-funcname="yaml_parser_scan_block_scalar_breaks" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2865" col="46" call-argexpr="&amp;indent" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:727:1" call-funcname="yaml_parser_scan_block_scalar_breaks" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2865" col="46" call-argexpr="&amp;trailing_breaks" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:727:1" call-funcname="yaml_parser_scan_block_scalar_breaks" call-argnr="5" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2865" col="46" call-argexpr="&amp;end_mark" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:727:1" call-funcname="yaml_parser_scan_block_scalar_breaks" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2925" col="50" call-argexpr="&amp;indent" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:727:1" call-funcname="yaml_parser_scan_block_scalar_breaks" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2925" col="50" call-argexpr="&amp;trailing_breaks" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:727:1" call-funcname="yaml_parser_scan_block_scalar_breaks" call-argnr="5" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2925" col="50" call-argexpr="&amp;end_mark" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:623:1" call-funcname="yaml_parser_unroll_indent" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1374" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:636:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:623:1" call-funcname="yaml_parser_unroll_indent" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1412" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:639:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:603:1" call-funcname="yaml_parser_save_simple_key" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1457" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:643:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:606:1" call-funcname="yaml_parser_remove_simple_key" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1500" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:647:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:606:1" call-funcname="yaml_parser_remove_simple_key" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1542" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:651:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:603:1" call-funcname="yaml_parser_save_simple_key" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1772" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:663:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:603:1" call-funcname="yaml_parser_save_simple_key" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1802" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:666:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:606:1" call-funcname="yaml_parser_remove_simple_key" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1833" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:669:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:603:1" call-funcname="yaml_parser_save_simple_key" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1864" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:672:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:603:1" call-funcname="yaml_parser_save_simple_key" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1895" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:675:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:696:1" call-funcname="yaml_parser_scan_version_directive_number" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2177" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:692:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:696:1" call-funcname="yaml_parser_scan_version_directive_number" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2191" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:692:1" my-argnr="4"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:582:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="786" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:593:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="865" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:600:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1063" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:603:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1106" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:606:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1137" col="37" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:609:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1168" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:612:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1190" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:619:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1213" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:623:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1265" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:630:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1299" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:633:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1336" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:654:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1577" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:657:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1638" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:660:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1688" col="37" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:685:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2005" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:688:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2121" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:688:1" my-argnr="3" my-argname="name" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2145" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:692:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2168" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:696:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2218" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:700:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2265" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:700:1" my-argnr="3" my-argname="handle" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2309" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:700:1" my-argnr="4" my-argname="prefix" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2310" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:704:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2332" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:708:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2393" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:711:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2513" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:719:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2685" col="14" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:723:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2761" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:727:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2969" col="17" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:727:1" my-argnr="5" my-argname="end_mark" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2969" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:732:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="3043" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:736:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="3407" col="18" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:593:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="865" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:600:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1063" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:603:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1106" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:606:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1137" col="37" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:609:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1168" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:612:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1190" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:619:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1213" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:623:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1265" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:633:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1336" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:654:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1577" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:657:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1638" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:660:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="1688" col="37" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:685:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2005" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:688:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2121" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:692:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2168" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:696:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2218" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:700:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2265" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:704:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2332" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:708:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2393" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:711:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2513" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:719:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2685" col="14" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:723:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2761" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:727:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="2969" col="17" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:732:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="3043" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:736:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c" line="3407" col="18" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="yaml_parser_scan" lineNumber="743"/>
+    <functiondecl functionName="yaml_parser_set_scanner_error" lineNumber="783"/>
+    <functiondecl functionName="yaml_parser_fetch_more_tokens" lineNumber="801"/>
+    <functiondecl functionName="yaml_parser_fetch_next_token" lineNumber="861"/>
+    <functiondecl functionName="yaml_parser_stale_simple_keys" lineNumber="1057"/>
+    <functiondecl functionName="yaml_parser_save_simple_key" lineNumber="1098"/>
+    <functiondecl functionName="yaml_parser_remove_simple_key" lineNumber="1135"/>
+    <functiondecl functionName="yaml_parser_increase_flow_level" lineNumber="1162"/>
+    <functiondecl functionName="yaml_parser_decrease_flow_level" lineNumber="1188"/>
+    <functiondecl functionName="yaml_parser_roll_indent" lineNumber="1206"/>
+    <functiondecl functionName="yaml_parser_unroll_indent" lineNumber="1259"/>
+    <functiondecl functionName="yaml_parser_fetch_stream_start" lineNumber="1292"/>
+    <functiondecl functionName="yaml_parser_fetch_stream_end" lineNumber="1330"/>
+    <functiondecl functionName="yaml_parser_fetch_directive" lineNumber="1368"/>
+    <functiondecl functionName="yaml_parser_fetch_document_indicator" lineNumber="1404"/>
+    <functiondecl functionName="yaml_parser_fetch_flow_collection_start" lineNumber="1449"/>
+    <functiondecl functionName="yaml_parser_fetch_flow_collection_end" lineNumber="1492"/>
+    <functiondecl functionName="yaml_parser_fetch_flow_entry" lineNumber="1535"/>
+    <functiondecl functionName="yaml_parser_fetch_block_entry" lineNumber="1570"/>
+    <functiondecl functionName="yaml_parser_fetch_key" lineNumber="1631"/>
+    <functiondecl functionName="yaml_parser_fetch_value" lineNumber="1684"/>
+    <functiondecl functionName="yaml_parser_fetch_anchor" lineNumber="1766"/>
+    <functiondecl functionName="yaml_parser_fetch_tag" lineNumber="1796"/>
+    <functiondecl functionName="yaml_parser_fetch_block_scalar" lineNumber="1827"/>
+    <functiondecl functionName="yaml_parser_fetch_flow_scalar" lineNumber="1858"/>
+    <functiondecl functionName="yaml_parser_fetch_plain_scalar" lineNumber="1889"/>
+    <functiondecl functionName="yaml_parser_scan_to_next_token" lineNumber="1920"/>
+    <functiondecl functionName="yaml_parser_scan_directive" lineNumber="1996"/>
+    <functiondecl functionName="yaml_parser_scan_directive_name" lineNumber="2112"/>
+    <functiondecl functionName="yaml_parser_scan_version_directive_value" lineNumber="2163"/>
+    <functiondecl functionName="yaml_parser_scan_version_directive_number" lineNumber="2210"/>
+    <functiondecl functionName="yaml_parser_scan_tag_directive_value" lineNumber="2257"/>
+    <functiondecl functionName="yaml_parser_scan_anchor" lineNumber="2321"/>
+    <functiondecl functionName="yaml_parser_scan_tag" lineNumber="2387"/>
+    <functiondecl functionName="yaml_parser_scan_tag_handle" lineNumber="2504"/>
+    <functiondecl functionName="yaml_parser_scan_tag_uri" lineNumber="2571"/>
+    <functiondecl functionName="yaml_parser_scan_uri_escapes" lineNumber="2672"/>
+    <functiondecl functionName="yaml_parser_scan_block_scalar" lineNumber="2741"/>
+    <functiondecl functionName="yaml_parser_scan_block_scalar_breaks" lineNumber="2963"/>
+    <functiondecl functionName="yaml_parser_scan_flow_scalar" lineNumber="3025"/>
+    <functiondecl functionName="yaml_parser_scan_plain_scalar" lineNumber="3398"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="YAML_ALIAS_TOKEN"/>
+    <functioncall functionName="YAML_ANCHOR_TOKEN"/>
+    <functioncall functionName="YAML_BLOCK_END_TOKEN"/>
+    <functioncall functionName="YAML_BLOCK_ENTRY_TOKEN"/>
+    <functioncall functionName="YAML_BLOCK_MAPPING_START_TOKEN"/>
+    <functioncall functionName="YAML_BLOCK_SEQUENCE_START_TOKEN"/>
+    <functioncall functionName="YAML_DOCUMENT_END_TOKEN"/>
+    <functioncall functionName="YAML_DOCUMENT_START_TOKEN"/>
+    <functioncall functionName="YAML_DOUBLE_QUOTED_SCALAR_STYLE"/>
+    <functioncall functionName="YAML_FLOW_ENTRY_TOKEN"/>
+    <functioncall functionName="YAML_FLOW_MAPPING_END_TOKEN"/>
+    <functioncall functionName="YAML_FLOW_MAPPING_START_TOKEN"/>
+    <functioncall functionName="YAML_FLOW_SEQUENCE_END_TOKEN"/>
+    <functioncall functionName="YAML_FLOW_SEQUENCE_START_TOKEN"/>
+    <functioncall functionName="YAML_FOLDED_SCALAR_STYLE"/>
+    <functioncall functionName="YAML_KEY_TOKEN"/>
+    <functioncall functionName="YAML_LITERAL_SCALAR_STYLE"/>
+    <functioncall functionName="YAML_MEMORY_ERROR"/>
+    <functioncall functionName="YAML_PLAIN_SCALAR_STYLE"/>
+    <functioncall functionName="YAML_SCALAR_TOKEN"/>
+    <functioncall functionName="YAML_SCANNER_ERROR"/>
+    <functioncall functionName="YAML_SINGLE_QUOTED_SCALAR_STYLE"/>
+    <functioncall functionName="YAML_STREAM_END_TOKEN"/>
+    <functioncall functionName="YAML_STREAM_START_TOKEN"/>
+    <functioncall functionName="YAML_TAG_DIRECTIVE_TOKEN"/>
+    <functioncall functionName="YAML_TAG_TOKEN"/>
+    <functioncall functionName="YAML_VALUE_TOKEN"/>
+    <functioncall functionName="YAML_VERSION_DIRECTIVE_TOKEN"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="error"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memmove"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="strcmp"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="yaml_free"/>
+    <functioncall functionName="yaml_malloc"/>
+    <functioncall functionName="yaml_parser_decrease_flow_level"/>
+    <functioncall functionName="yaml_parser_fetch_anchor"/>
+    <functioncall functionName="yaml_parser_fetch_block_entry"/>
+    <functioncall functionName="yaml_parser_fetch_block_scalar"/>
+    <functioncall functionName="yaml_parser_fetch_directive"/>
+    <functioncall functionName="yaml_parser_fetch_document_indicator"/>
+    <functioncall functionName="yaml_parser_fetch_flow_collection_end"/>
+    <functioncall functionName="yaml_parser_fetch_flow_collection_start"/>
+    <functioncall functionName="yaml_parser_fetch_flow_entry"/>
+    <functioncall functionName="yaml_parser_fetch_flow_scalar"/>
+    <functioncall functionName="yaml_parser_fetch_key"/>
+    <functioncall functionName="yaml_parser_fetch_more_tokens"/>
+    <functioncall functionName="yaml_parser_fetch_next_token"/>
+    <functioncall functionName="yaml_parser_fetch_plain_scalar"/>
+    <functioncall functionName="yaml_parser_fetch_stream_end"/>
+    <functioncall functionName="yaml_parser_fetch_stream_start"/>
+    <functioncall functionName="yaml_parser_fetch_tag"/>
+    <functioncall functionName="yaml_parser_fetch_value"/>
+    <functioncall functionName="yaml_parser_increase_flow_level"/>
+    <functioncall functionName="yaml_parser_remove_simple_key"/>
+    <functioncall functionName="yaml_parser_roll_indent"/>
+    <functioncall functionName="yaml_parser_save_simple_key"/>
+    <functioncall functionName="yaml_parser_scan_anchor"/>
+    <functioncall functionName="yaml_parser_scan_block_scalar"/>
+    <functioncall functionName="yaml_parser_scan_block_scalar_breaks"/>
+    <functioncall functionName="yaml_parser_scan_directive"/>
+    <functioncall functionName="yaml_parser_scan_directive_name"/>
+    <functioncall functionName="yaml_parser_scan_flow_scalar"/>
+    <functioncall functionName="yaml_parser_scan_plain_scalar"/>
+    <functioncall functionName="yaml_parser_scan_tag"/>
+    <functioncall functionName="yaml_parser_scan_tag_directive_value"/>
+    <functioncall functionName="yaml_parser_scan_tag_handle"/>
+    <functioncall functionName="yaml_parser_scan_tag_uri"/>
+    <functioncall functionName="yaml_parser_scan_to_next_token"/>
+    <functioncall functionName="yaml_parser_scan_uri_escapes"/>
+    <functioncall functionName="yaml_parser_scan_version_directive_number"/>
+    <functioncall functionName="yaml_parser_scan_version_directive_value"/>
+    <functioncall functionName="yaml_parser_set_scanner_error"/>
+    <functioncall functionName="yaml_parser_stale_simple_keys"/>
+    <functioncall functionName="yaml_parser_unroll_indent"/>
+    <functioncall functionName="yaml_parser_update_buffer"/>
+    <functioncall functionName="yaml_queue_extend"/>
+    <functioncall functionName="yaml_stack_extend"/>
+    <functioncall functionName="yaml_string_extend"/>
+    <functioncall functionName="yaml_string_join"/>
+    <functioncall functionName="yaml_token_delete"/>
+  </FileInfo>
+</analyzerinfo>

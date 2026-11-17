@@ -1,0 +1,23 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+get_soi
+get_sof call:[sizeof,while] noreturn:[while]
+get_sos call:[while]
+get_dac call:[while]
+get_dht call:[jpeg_alloc_huff_table,memcpy,memset,sizeof,while] noreturn:[jpeg_alloc_huff_table,memcpy,while]
+get_dqt global:[jpeg_natural_order] call:[jpeg_alloc_quant_table,while] noreturn:[jpeg_alloc_quant_table,while]
+get_dri call:[while]
+examine_app0 call:[while]
+examine_app14 call:[while]
+get_interesting_appn call:[examine_app0,examine_app14,while] noreturn:[while]
+save_marker call:[examine_app0,examine_app14,sizeof,while]
+skip_variable call:[while]
+next_marker call:[while] noreturn:[while]
+first_marker call:[while]
+read_markers call:[first_marker,get_dac,get_dht,get_dqt,get_dri,get_sof,get_soi,get_sos,next_marker,skip_variable]
+read_restart_marker call:[next_marker]
+jpeg_resync_to_restart call:[next_marker]
+reset_marker_reader
+jinit_marker_reader call:[reset_marker_reader,sizeof] noreturn:[reset_marker_reader]
+jpeg_save_markers call:[int,sizeof]
+jpeg_set_marker_processor

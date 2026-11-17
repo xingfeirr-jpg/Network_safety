@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-27",
+  "status": "passed",
+  "project": "P05 json-c",
+  "version": "0.18",
+  "tag": "json-c-0.18-20240915",
+  "commit": "41a55cfcedb54d9c1874f2f0eb07b504091d7e37",
+  "downloadAttempt": "DL-P05-002",
+  "archiveFile": "json-c-0.18.tar.gz",
+  "archiveBytes": 402048,
+  "archiveSHA256": "a090046b2d24901eb8dca4d370c28991299e8c7cfb698b44e09ce809b1ff20b4",
+  "checksumMeaning": "local archive identity,not publisher checksum",
+  "checks": {
+    "singleExpectedCommitRoot": true,
+    "uniqueMemberNames": true,
+    "relativeMemberPathsWithoutParentTraversal": true,
+    "memberTypesAreRegularDirectoryOrSymlink": true,
+    "all22SymlinksRelativeAndResolveToArchiveMemberWithinRoot": true,
+    "fixedCMakeByteMatchesOfficialCopy": true,
+    "fixedCOPYINGByteMatchesOfficialCopy": true,
+    "cmakeVersion0_18": true,
+    "versionHeader0_18_0": true,
+    "all14PlannedTargetCFilesNonempty": true,
+    "requiredHeadersAndThreeGenerationTemplatesNonempty": true,
+    "all22SymlinksPointToTestBasicRegularFile": true
+  },
+  "memberCount": 272,
+  "regularFileCount": 239,
+  "directoryCount": 11,
+  "symlinkCount": 22,
+  "symlinkScope": "22 tests/*.test links to sibling test_basic.test;tests excluded from library compile scope;retain source archive links",
+  "targetCFiles": [
+    {
+      "file": "arraylist.c",
+      "bytes": 5548,
+      "sha256": "71527ce16c73bb8e1e2641ed821126e7635ccf71b616ef7d5806c9d9f8ba0a53"
+    },
+    {
+      "file": "debug.c",
+      "bytes": 1442,
+      "sha256": "b24cc7f0077692cca3864f3f87fd0ddebe2664416b9b48b1e4269065b25327e2"
+    },
+    {
+      "file": "json_c_version.c",
+      "bytes": 363,
+      "sha256": "804065f0cfdd7b286da631a721825bf5b114af9e52329ce606dd72a6d19985f2"
+    },
+    {
+      "file": "json_object.c",
+      "bytes": 49803,
+      "sha256": "22d97121c8b28ced7587acae225c6dc41f92733ecbc0460a41604a5aeb6adea5"
+    },
+    {
+      "file": "json_object_iterator.c",
+      "bytes": 4578,
+      "sha256": "80af2b7b80fb5ee7c2f860c5c22a5dfc83e9791687d3347db04abd3f2117694e"
+    },
+    {
+      "file": "json_tokener.c",
+      "bytes": 37759,
+      "sha256": "0195b0818ee577d38b9beef2119fc945a1c85b85ffac16d3b71d8b69c2e3f642"
+    },
+    {
+      "file": "json_util.c",
+      "bytes": 6904,
+      "sha256": "1f3479b7861d108a692e409ad7621eba97b3a3dceae396d14bd9550ef8a36a74"
+    },
+    {
+      "file": "json_visit.c",
+      "bytes": 3981,
+      "sha256": "9eae7e6778bb0ecc2a847e09c774f0943b891b059b1f0972b0c60afb21080029"
+    },
+    {
+      "file": "linkhash.c",
+      "bytes": 21291,
+      "sha256": "0fd98b308c2fbd18a115c9d30669989454b4a9673db43da3449a18803e824f9c"
+    },
+    {
+      "file": "printbuf.c",
+      "bytes": 4174,
+      "sha256": "ccd27ddd89cf60de1ca563a5b30774aaa89199e6570e97ade5f5187769b49ce6"
+    },
+    {
+      "file": "random_seed.c",
+      "bytes": 6844,
+      "sha256": "4c07211f846ce7607f71a931f387a7c41c33f43061be9ac68753d04f6c4f45ce"
+    },
+    {
+      "file": "strerror_override.c",
+      "bytes": 2307,
+      "sha256": "a12ae5e01d59d6650840e0c3fe4d6e1895728ab45402f739c7a6a1df46130264"
+    },
+    {
+      "file": "json_pointer.c",
+      "bytes": 8882,
+      "sha256": "43372d801a2efa8b806fd70196789ec01f0caa57050fbc1d2f0867da9f8eba06"
+    },
+    {
+      "file": "json_patch.c",
+      "bytes": 9382,
+      "sha256": "ec36dd5cfef6cc71d0d6a366c26cef9d6433214672af3fed8484297276e4cfcd"
+    }
+  ],
+  "plannedTarget": "json-c",
+  "plannedGeneratedHeaders": [
+    "config.h",
+    "json_config.h",
+    "json.h"
+  ],
+  "actualBuildActions": null,
+  "actualSourceDirectory": "not yet extracted in Ubuntu",
+  "buildAndScanners": "not run",
+  "evidence": "../json_c_setup/Archive_Acceptance_20261027/Read_Only_Linux_Evidence.json",
+  "memberManifest": "Archive_Members.json",
+  "downloadOriginalManifest": "download/raw-file-manifest.json",
+  "screenshot": "../screenshots/P05/FIG-P05-02_archive.png",
+  "firstAttemptPartialUnchanged": true,
+  "copyrightAndAttribution": {
+    "COPYING": "MIT notices preserved;does not replace file-level notices",
+    "linkhash_c": "contains Bob Jenkins lookup3 public-domain notice;kept inside same selected C unit,not an additional target",
+    "evidence": "../json_c_setup/Archive_Acceptance_20261027/Independent_Archive_Check.md"
+  },
+  "rootDirectoryCFiles": 15,
+  "extraRootCOutsideTarget": [
+    "libjson.c"
+  ]
+}

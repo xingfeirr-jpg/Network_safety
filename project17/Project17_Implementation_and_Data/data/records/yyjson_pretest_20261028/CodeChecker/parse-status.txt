@@ -1,0 +1,14 @@
+[INFO 2026-10-28 11:24:20] - Using '/usr/bin/clang-18' for analyzer 'clangsa'
+[INFO 2026-10-28 11:24:20] - ----==== Summary ====----
+[INFO 2026-10-28 11:24:20] - Up-to-date analysis results
+[INFO 2026-10-28 11:24:20] -   clangsa: ['/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c'] (1)
+[INFO 2026-10-28 11:24:20] - Outdated analysis results
+[INFO 2026-10-28 11:24:20] - Failed to analyze
+[INFO 2026-10-28 11:24:20] - Missing analysis results
+[INFO 2026-10-28 11:24:20] -   clang-tidy: ['/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c'] (1)
+[INFO 2026-10-28 11:24:20] -   cppcheck: ['/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c'] (1)
+[INFO 2026-10-28 11:24:20] -   gcc: ['/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c'] (1)
+[INFO 2026-10-28 11:24:20] -   infer: ['/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c'] (1)
+[INFO 2026-10-28 11:24:20] - Total analyzed compilation commands: 1
+[INFO 2026-10-28 11:24:20] - Total available compilation commands: 1
+[INFO 2026-10-28 11:24:20] - ----=================----

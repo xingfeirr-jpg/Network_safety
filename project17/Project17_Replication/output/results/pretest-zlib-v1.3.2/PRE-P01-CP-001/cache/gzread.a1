@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="13005552240883586166">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h" line="32" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="268" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="434" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="460" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="466" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="494" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h" line="35" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fcntl.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fcntl.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h" line="43" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h" line="132" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c:18:11" call-funcname="gz_load" call-argnr="4" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="75" col="20" call-argexpr="&amp;got" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:405:21" call-funcname="inflate" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="200" col="22" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c:18:11" call-funcname="gz_load" call-argnr="4" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="369" col="26" call-argexpr="&amp;n" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="409" col="13" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="409" col="13" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="454" col="13" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="454" col="13" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="487" col="13" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="487" col="13" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c:317:16" call-funcname="gz_read" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="497" col="19" call-argexpr="buf" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="522" col="13" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="522" col="13" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="583" col="13" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="583" col="13" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="663" col="13" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="663" col="13" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c:317:16" call-funcname="gz_read" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="419" col="21" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1456:21" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c:317:16" call-funcname="gz_read" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="464" col="18" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1492:26" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1613:21" call-funcname="gzgetc" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="501" col="12" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1961:21" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c:18:11" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="23" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c:18:11" my-argnr="4" my-argname="have" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="25" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c:281:11" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="287" col="13" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c:281:11" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c" line="287" col="13" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="gz_load" lineNumber="18"/>
+    <functiondecl functionName="gz_avail" lineNumber="56"/>
+    <functiondecl functionName="gz_look" lineNumber="93"/>
+    <functiondecl functionName="gz_decomp" lineNumber="180"/>
+    <functiondecl functionName="gz_fetch" lineNumber="248"/>
+    <functiondecl functionName="gz_skip" lineNumber="281"/>
+    <functiondecl functionName="gz_read" lineNumber="317"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="close"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="gz_avail"/>
+    <functioncall functionName="gz_decomp"/>
+    <functioncall functionName="gz_error"/>
+    <functioncall functionName="gz_fetch"/>
+    <functioncall functionName="gz_intmax"/>
+    <functioncall functionName="gz_load"/>
+    <functioncall functionName="gz_look"/>
+    <functioncall functionName="gz_read"/>
+    <functioncall functionName="gz_skip"/>
+    <functioncall functionName="gzgetc"/>
+    <functioncall functionName="inflate"/>
+    <functioncall functionName="inflateEnd"/>
+    <functioncall functionName="inflateInit2_"/>
+    <functioncall functionName="inflateReset"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="memchr"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="off_t"/>
+    <functioncall functionName="read"/>
+    <functioncall functionName="strerror"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,337 @@
+[INFO 2026-10-29 11:02:22] - Using '/usr/bin/clang-18' for analyzer 'clangsa'
+Found no defects in jcomapi.c
+Found no defects in jdapistd.c
+Found no defects in jcmainct.c
+Found no defects in jddiffct.c
+Found no defects in jidctint.c
+Found no defects in jccolor.c
+Found no defects in jmemnobs.c
+Found no defects in jdmaster.c
+Found no defects in jdmerge.c
+Found no defects in jcapistd.c
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatadst.c:134:3: Null pointer passed to 1st parameter expecting 'nonnull' [core.NonNullParamChecker]
+  memcpy(nextbuffer, dest->buffer, dest->bufsize);
+  ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatadst.c:267:7: Dereference of null pointer (loaded from variable 'outbuffer') [core.NullDereference]
+  if (*outbuffer == NULL || *outsize == 0) {
+      ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatadst.c:267:29: Dereference of null pointer (loaded from variable 'outsize') [core.NullDereference]
+  if (*outbuffer == NULL || *outsize == 0) {
+                            ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatadst.c:272:14: Dereference of null pointer (loaded from variable 'outsize') [core.NullDereference]
+    *outsize = OUTPUT_BUF_SIZE;
+             ^
+
+Found 4 defect(s) in jdatadst.c
+
+Found no defects in jfdctflt.c
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c:513:41: Division by zero [core.DivideZero]
+    (_JSAMPLE)((c0total + (total >> 1)) / total);
+                                        ^
+
+Found 1 defect(s) in jquant2.c
+
+Found no defects in jfdctint.c
+Found no defects in jidctfst.c
+Found no defects in jfdctfst.c
+Found no defects in jdphuff.c
+Found no defects in jdmainct.c
+Found no defects in jdatasrc.c
+Found no defects in jidctflt.c
+Found no defects in jcprepct.c
+Found no defects in jdlossls.c
+Found no defects in jdapimin.c
+Found no defects in jclossls.c
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c:211:7: Dereference of null pointer (loaded from variable 'width') [core.NullDereference]
+  if (*width == 0 ||
+      ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c:212:27: Dereference of null pointer (loaded from variable 'xoffset') [core.NullDereference]
+      (unsigned long long)(*xoffset) + *width > cinfo->output_width)
+                          ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c:243:19: Dereference of null pointer (loaded from variable 'xoffset') [core.NullDereference]
+  input_xoffset = *xoffset;
+                  ^
+
+Found 3 defect(s) in jdapistd.c
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcoefct.c:227:24: Array access results in an undefined pointer dereference [core.NullDereference]
+          buffer_ptr = buffer[ci][yindex + yoffset] + start_col;
+                       ^
+
+Found 1 defect(s) in jdcoefct.c
+
+Found no defects in jdlhuff.c
+Found no defects in jutils.c
+Found no defects in jdpostct.c
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:265:14: Array access (via field 'bits') results in a null pointer dereference [core.NullDereference]
+    i = (int)htbl->bits[l];
+             ^
+
+Found 1 defect(s) in jchuff.c
+
+Found no defects in jdtrans.c
+[LOW] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c:491:11: Although the value stored to 'v' is used in the enclosing expression, the value is never actually read from 'v' [deadcode.DeadStores]
+      if (v >>= cinfo->Al) break;
+          ^
+
+[LOW] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c:494:11: Although the value stored to 'v' is used in the enclosing expression, the value is never actually read from 'v' [deadcode.DeadStores]
+      if (v >>= cinfo->Al) break;
+          ^
+
+[LOW] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c:625:11: Although the value stored to 'v' is used in the enclosing expression, the value is never actually read from 'v' [deadcode.DeadStores]
+      if (v >>= cinfo->Al) break;
+          ^
+
+[LOW] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c:628:11: Although the value stored to 'v' is used in the enclosing expression, the value is never actually read from 'v' [deadcode.DeadStores]
+      if (v >>= cinfo->Al) break;
+          ^
+
+[LOW] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c:634:11: Although the value stored to 'v' is used in the enclosing expression, the value is never actually read from 'v' [deadcode.DeadStores]
+      if (v >>= cinfo->Ah) break;
+          ^
+
+[LOW] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c:637:11: Although the value stored to 'v' is used in the enclosing expression, the value is never actually read from 'v' [deadcode.DeadStores]
+      if (v >>= cinfo->Ah) break;
+          ^
+
+Found 6 defect(s) in jcarith.c
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:207:8: Access to field 'sent_table' results in a dereference of a null pointer (loaded from variable 'htbl') [core.NullDereference]
+  if (!htbl->sent_table) {
+       ^
+
+Found 1 defect(s) in jcmarker.c
+
+Found no defects in jaricom.c
+Found no defects in jdcolor.c
+Found no defects in jcdiffct.c
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:335:26: Array access results in an undefined pointer dereference [core.NullDereference]
+            buffer_ptr = buffer[ci][yindex + yoffset] + start_col;
+                         ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:350:38: Array access results in an undefined pointer dereference [core.NullDereference]
+            MCU_buffer[blkn][0][0] = MCU_buffer[blkn - 1][0][0];
+                                     ^
+
+Found 2 defect(s) in jctrans.c
+
+Found no defects in jcinit.c
+Found no defects in jdsample.c
+Found no defects in jerror.c
+Found no defects in jddctmgr.c
+Found no defects in jcapimin.c
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:401:17: Access to field 'next' results in a dereference of a null pointer (loaded from variable 'hdr_ptr') [core.NullDereference]
+  hdr_ptr->next = mem->large_list[pool_id];
+                ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:847:55: Array access (via field 'mem_buffer') results in a null pointer dereference [core.NullDereference]
+                                              (void *)ptr->mem_buffer[i],
+                                                      ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:858:55: Array access (from variable 'mem_buffer12') results in a null pointer dereference [core.NullDereference]
+                                              (void *)mem_buffer12[i],
+                                                      ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:870:55: Array access (from variable 'mem_buffer16') results in a null pointer dereference [core.NullDereference]
+                                              (void *)mem_buffer16[i],
+                                                      ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:907:53: Array access (via field 'mem_buffer') results in a null pointer dereference [core.NullDereference]
+                                            (void *)ptr->mem_buffer[i],
+                                                    ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:993:27: Array access (via field 'mem_buffer') results in a null pointer dereference [core.NullDereference]
+        jzero_far((void *)ptr->mem_buffer[undef_row], bytesperrow);
+                          ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:1077:27: Array access (via field 'mem_buffer') results in a null pointer dereference [core.NullDereference]
+        jzero_far((void *)ptr->mem_buffer[undef_row], bytesperrow);
+                          ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:1234:24: Dereference of null pointer [core.NullDereference]
+  mem->pub.alloc_small = alloc_small;
+                       ^
+
+Found 8 defect(s) in jmemmgr.c
+
+[LOW] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcparam.c:542:5: Value stored to 'scanptr' is never read [deadcode.DeadStores]
+    scanptr = fill_a_scan(scanptr, 0, 1, 63, 1, 0);
+    ^
+
+[LOW] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcparam.c:553:5: Value stored to 'scanptr' is never read [deadcode.DeadStores]
+    scanptr = fill_scans(scanptr, ncomps, 1, 63, 1, 0);
+    ^
+
+Found 2 defect(s) in jcparam.c
+
+Found no defects in jdarith.c
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant1.c:259:52: Division by zero [core.DivideZero]
+  return (int)(((JLONG)j * _MAXJSAMPLE + maxj / 2) / maxj);
+                                                   ^
+
+Found 1 defect(s) in jquant1.c
+
+Found no defects in jdinput.c
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcicc.c:100:32: Dereference of null pointer (loaded from variable 'icc_data_ptr') [core.NullDereference]
+      jpeg_write_m_byte(cinfo, *icc_data_ptr);
+                               ^
+
+Found 1 defect(s) in jcicc.c
+
+[LOW] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdctmgr.c:106:5: Value stored to 'val' is never read [deadcode.DeadStores]
+    val <<= 1;
+    ^
+
+Found 1 defect(s) in jcdctmgr.c
+
+Found no defects in jcsample.c
+Found no defects in jdmarker.c
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c:376:24: Array access results in an undefined pointer dereference [core.NullDereference]
+          buffer_ptr = buffer[ci][yindex + yoffset] + start_col;
+                       ^
+
+Found 1 defect(s) in jccoefct.c
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmaster.c:423:30: The left operand of '<' is a garbage value [core.UndefinedBinaryOperatorResult]
+      if (last_bitpos[ci][0] < 0)
+                             ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmaster.c:429:11: Branch condition evaluates to a garbage value [core.uninitialized.Branch]
+      if (!component_sent[ci])
+          ^
+
+Found 2 defect(s) in jcmaster.c
+
+Found no defects in jidctred.c
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant1.c:259:52: Division by zero [core.DivideZero]
+  return (int)(((JLONG)j * _MAXJSAMPLE + maxj / 2) / maxj);
+                                                   ^
+
+Found 1 defect(s) in jquant1.c
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdicc.c:88:17: Dereference of null pointer (loaded from variable 'icc_data_ptr') [core.NullDereference]
+  *icc_data_ptr = NULL;         /* avoid confusion if FALSE return */
+                ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdicc.c:89:17: Dereference of null pointer (loaded from variable 'icc_data_len') [core.NullDereference]
+  *icc_data_len = 0;
+                ^
+
+Found 2 defect(s) in jdicc.c
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.c:178:14: Array access (via field 'bits') results in a null pointer dereference [core.NullDereference]
+    i = (int)htbl->bits[l];
+             ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.c:447:10: Left shift overflows the capacity of 'int' [core.BitwiseShift]
+  code = GET_BITS(l);
+         ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.c:576:11: Left shift overflows the capacity of 'int' [core.BitwiseShift]
+      r = GET_BITS(s);
+          ^
+
+Found 3 defect(s) in jdhuff.c
+
+Found no defects in jpeg_nbits.c
+Found no defects in jcphuff.c
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c:376:24: Array access results in an undefined pointer dereference [core.NullDereference]
+          buffer_ptr = buffer[ci][yindex + yoffset] + start_col;
+                       ^
+
+Found 1 defect(s) in jccoefct.c
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c:211:7: Dereference of null pointer (loaded from variable 'width') [core.NullDereference]
+  if (*width == 0 ||
+      ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c:212:27: Dereference of null pointer (loaded from variable 'xoffset') [core.NullDereference]
+      (unsigned long long)(*xoffset) + *width > cinfo->output_width)
+                          ^
+
+[HIGH] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c:243:19: Dereference of null pointer (loaded from variable 'xoffset') [core.NullDereference]
+  input_xoffset = *xoffset;
+                  ^
+
+Found 3 defect(s) in jdapistd.c
+
+[LOW] /home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclhuff.c:364:11: Value stored to 'temp2' is never read [deadcode.DeadStores]
+          temp2 = temp = 0x8000;
+          ^
+
+Found 1 defect(s) in jclhuff.c
+
+
+----==== Severity Statistics ====----
+┌──────────┬───────────────────┐
+│ Severity │ Number of reports │
+├──────────┼───────────────────┤
+│ HIGH     │ 36                │
+│ LOW      │ 10                │
+└──────────┴───────────────────┘
+----=================----
+
+----==== Checker Statistics ====----
+┌────────────────────────────────────┬──────────┬───────────────────┐
+│ Checker name                       │ Severity │ Number of reports │
+├────────────────────────────────────┼──────────┼───────────────────┤
+│ core.NonNullParamChecker           │ HIGH     │ 1                 │
+│ core.NullDereference               │ HIGH     │ 28                │
+│ core.DivideZero                    │ HIGH     │ 3                 │
+│ deadcode.DeadStores                │ LOW      │ 10                │
+│ core.UndefinedBinaryOperatorResult │ HIGH     │ 1                 │
+│ core.uninitialized.Branch          │ HIGH     │ 1                 │
+│ core.BitwiseShift                  │ HIGH     │ 2                 │
+└────────────────────────────────────┴──────────┴───────────────────┘
+----=================----
+
+----==== File Statistics ====----
+┌────────────┬───────────────────┐
+│ File name  │ Number of reports │
+├────────────┼───────────────────┤
+│ jdatadst.c │ 4                 │
+│ jquant2.c  │ 1                 │
+│ jdapistd.c │ 6                 │
+│ jdcoefct.c │ 1                 │
+│ jchuff.c   │ 1                 │
+│ jcarith.c  │ 6                 │
+│ jcmarker.c │ 1                 │
+│ jctrans.c  │ 2                 │
+│ jmemmgr.c  │ 8                 │
+│ jcparam.c  │ 2                 │
+│ jquant1.c  │ 2                 │
+│ jcicc.c    │ 1                 │
+│ jcdctmgr.c │ 1                 │
+│ jccoefct.c │ 2                 │
+│ jcmaster.c │ 2                 │
+│ jdicc.c    │ 2                 │
+│ jdhuff.c   │ 3                 │
+│ jclhuff.c  │ 1                 │
+└────────────┴───────────────────┘
+----=================----
+
+----======== Summary ========----
+┌───────────────────────────────────────────┬─────┐
+│ Number of processed analyzer result files │ 101 │
+├───────────────────────────────────────────┼─────┤
+│ Number of analyzer reports                │ 46  │
+└───────────────────────────────────────────┴─────┘
+----=================----
+[INFO 2026-10-29 11:02:23] - ----==== Summary ====----
+[INFO 2026-10-29 11:02:23] - Up-to-date analysis results
+[INFO 2026-10-29 11:02:23] -   clangsa: 58
+[INFO 2026-10-29 11:02:23] - Outdated analysis results
+[INFO 2026-10-29 11:02:23] - Failed to analyze
+[INFO 2026-10-29 11:02:23] - Missing analysis results
+[INFO 2026-10-29 11:02:23] -   clang-tidy: 58
+[INFO 2026-10-29 11:02:23] -   cppcheck: 58
+[INFO 2026-10-29 11:02:23] -   gcc: 58
+[INFO 2026-10-29 11:02:23] -   infer: 58
+[INFO 2026-10-29 11:02:23] - Total analyzed compilation commands: 101
+[INFO 2026-10-29 11:02:23] - Total available compilation commands: 101
+[INFO 2026-10-29 11:02:23] - ----=================----

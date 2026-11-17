@@ -1,0 +1,158 @@
+{
+  "project": "P09 libjpeg-turbo",
+  "version": "3.1.1",
+  "runId": "PRE-P09-FF-001",
+  "purpose": "functional pretest",
+  "accepted": true,
+  "acceptedAtUTC": "2026-10-29T05:55:19.429739+00:00",
+  "rawFiles": 14,
+  "identityFiles": 90,
+  "executedInputHashes": 7,
+  "completeSourceFilesPreserved": 546,
+  "textInputs": 88,
+  "actualExaminingLines": 88,
+  "textKinds": {
+    "compiled_c": 58,
+    "included_c": 6,
+    "project_header": 21,
+    "generated_header": 3
+  },
+  "toolVersion": "2.0.20",
+  "ruleCount": 222,
+  "arguments": [
+    "--minlevel=1",
+    "--neverignore",
+    "--columns",
+    "--context"
+  ],
+  "displayedHits": 42,
+  "displayedLevelCounts": {
+    "1": 5,
+    "2": 35,
+    "3": 1,
+    "4": 1
+  },
+  "level0SummaryOnly": 6,
+  "cumulative0plus": 48,
+  "countBoundary": "42 displayed minlevel1 risk hits;6level0 summary entries not displayed;not confirmed defects",
+  "linesAnalyzed": 41778,
+  "physicalSLOC": 27157,
+  "metricBoundary": "Flawfinder text metrics for88files;not101compilation actions",
+  "measurement": {
+    "schema": "measurement-v1",
+    "wall_seconds": 0.27,
+    "user_seconds": 0.27,
+    "system_seconds": 0.0,
+    "max_rss_kib": 21124,
+    "toolSelfReportedSeconds": 0.24,
+    "exit_code": 0,
+    "boundary": "complete Flawfinder invocation;identity and terminal display outside timing",
+    "repetitions": 1,
+    "osCache": "natural_not_cleared"
+  },
+  "apiHitCounts": {
+    "snprintf": 1,
+    "getenv": 1,
+    "char": 18,
+    "memcpy": 17,
+    "strncpy": 3,
+    "strlen": 2
+  },
+  "rawManifestSHA256": "2a3e3c598900d745aceef9668f56d9f0a83f480842fd03d95cb3ab38f9144813",
+  "sourceReview": "not started;all42displayed hits unreviewed",
+  "otherTools": "CC accepted48raw/46display;independentCppcheck not run",
+  "formalMatrix": "all30notrun",
+  "checks": [
+    {
+      "check": "14OriginalsSizeAndSHA",
+      "passed": true
+    },
+    {
+      "check": "14OriginalsTransferredExactly",
+      "passed": true
+    },
+    {
+      "check": "FreshIdentity90And546Sources",
+      "passed": true
+    },
+    {
+      "check": "SevenExecutedInputsPreserved",
+      "passed": true
+    },
+    {
+      "check": "ExecutedProfileExact",
+      "passed": true
+    },
+    {
+      "check": "ActualInvocationExactly88Files",
+      "passed": true
+    },
+    {
+      "check": "All88ActuallyExaminedOnce",
+      "passed": true
+    },
+    {
+      "check": "ActualTextKinds64C21H3Generated",
+      "passed": true
+    },
+    {
+      "check": "TextHashManifestExact",
+      "passed": true
+    },
+    {
+      "check": "All88TextLocalSHARecomputed",
+      "passed": true
+    },
+    {
+      "check": "UserPreScanIdentityPassed",
+      "passed": true
+    },
+    {
+      "check": "FlawfinderActualVersion222Rules",
+      "passed": true
+    },
+    {
+      "check": "42Minlevel1DisplayedHits",
+      "passed": true
+    },
+    {
+      "check": "Level0SixSeparateFrom42",
+      "passed": true
+    },
+    {
+      "check": "Cumulative48NotDisplayCount",
+      "passed": true
+    },
+    {
+      "check": "SourceMetric41778And27157",
+      "passed": true
+    },
+    {
+      "check": "Exit0NoStderr",
+      "passed": true
+    },
+    {
+      "check": "ActualGNUtime027and21124",
+      "passed": true
+    },
+    {
+      "check": "SelfReported024Separate",
+      "passed": true
+    },
+    {
+      "check": "MeasurementV1FreshDirectoryRecorded",
+      "passed": true
+    },
+    {
+      "check": "CppcheckStillNotRun",
+      "passed": true
+    },
+    {
+      "check": "CCPreviousAcceptanceUnchanged",
+      "passed": true
+    }
+  ],
+  "passedChecks": 22,
+  "failedChecks": 0,
+  "reviewer": "same assistant system;not human or independent vulnerability review"
+}

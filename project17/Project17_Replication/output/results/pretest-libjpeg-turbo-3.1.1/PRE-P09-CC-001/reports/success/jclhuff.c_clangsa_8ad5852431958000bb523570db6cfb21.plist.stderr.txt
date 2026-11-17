@@ -1,0 +1,4 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclhuff.c:364:11: warning: Value stored to 'temp2' is never read [deadcode.DeadStores]
+  364 |           temp2 = temp = 0x8000;
+      |           ^       ~~~~~~~~~~~~~
+1 warning generated.

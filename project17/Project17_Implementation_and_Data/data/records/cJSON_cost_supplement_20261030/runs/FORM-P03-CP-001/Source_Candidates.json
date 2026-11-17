@@ -1,0 +1,524 @@
+{
+  "run_id": "FORM-P03-CP-001",
+  "records": [
+    {
+      "xml_ordinal": 10,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "uselessAssignmentPtrArg",
+        "severity": "warning",
+        "msg": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+        "verbose": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+        "cwe": "398",
+        "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "3190",
+          "column": "5"
+        }
+      ],
+      "symbols": [],
+      "raw_xml_block": "<error id=\"uselessAssignmentPtrArg\" severity=\"warning\" msg=\"Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?\" verbose=\"Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?\" cwe=\"398\" file0=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"3190\" column=\"5\"/>\n        </error>",
+      "xml_start_line": 32,
+      "xml_end_line": 34
+    },
+    {
+      "xml_ordinal": 11,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "nullPointerRedundantCheck",
+        "severity": "warning",
+        "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "cwe": "476",
+        "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "821",
+          "column": "42",
+          "info": "Null pointer dereference"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1716",
+          "column": "41",
+          "info": "Calling function 'parse_string', 2nd argument 'input_buffer' value is 0"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1726",
+          "column": "13",
+          "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+        }
+      ],
+      "symbols": [
+        "input_buffer"
+      ],
+      "raw_xml_block": "<error id=\"nullPointerRedundantCheck\" severity=\"warning\" msg=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" verbose=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" cwe=\"476\" file0=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"821\" column=\"42\" info=\"Null pointer dereference\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1716\" column=\"41\" info=\"Calling function &apos;parse_string&apos;, 2nd argument &apos;input_buffer&apos; value is 0\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1726\" column=\"13\" info=\"Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant\"/>\n            <symbol>input_buffer</symbol>\n        </error>",
+      "xml_start_line": 35,
+      "xml_end_line": 40
+    },
+    {
+      "xml_ordinal": 12,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "nullPointerRedundantCheck",
+        "severity": "warning",
+        "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "cwe": "476",
+        "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "822",
+          "column": "38",
+          "info": "Null pointer dereference"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1716",
+          "column": "41",
+          "info": "Calling function 'parse_string', 2nd argument 'input_buffer' value is 0"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1726",
+          "column": "13",
+          "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+        }
+      ],
+      "symbols": [
+        "input_buffer"
+      ],
+      "raw_xml_block": "<error id=\"nullPointerRedundantCheck\" severity=\"warning\" msg=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" verbose=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" cwe=\"476\" file0=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"822\" column=\"38\" info=\"Null pointer dereference\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1716\" column=\"41\" info=\"Calling function &apos;parse_string&apos;, 2nd argument &apos;input_buffer&apos; value is 0\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1726\" column=\"13\" info=\"Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant\"/>\n            <symbol>input_buffer</symbol>\n        </error>",
+      "xml_start_line": 41,
+      "xml_end_line": 46
+    },
+    {
+      "xml_ordinal": 13,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "nullPointerRedundantCheck",
+        "severity": "warning",
+        "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "cwe": "476",
+        "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "827",
+          "column": "9",
+          "info": "Null pointer dereference"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1716",
+          "column": "41",
+          "info": "Calling function 'parse_string', 2nd argument 'input_buffer' value is 0"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1726",
+          "column": "13",
+          "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+        }
+      ],
+      "symbols": [
+        "input_buffer"
+      ],
+      "raw_xml_block": "<error id=\"nullPointerRedundantCheck\" severity=\"warning\" msg=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" verbose=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" cwe=\"476\" file0=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"827\" column=\"9\" info=\"Null pointer dereference\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1716\" column=\"41\" info=\"Calling function &apos;parse_string&apos;, 2nd argument &apos;input_buffer&apos; value is 0\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1726\" column=\"13\" info=\"Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant\"/>\n            <symbol>input_buffer</symbol>\n        </error>",
+      "xml_start_line": 47,
+      "xml_end_line": 52
+    },
+    {
+      "xml_ordinal": 14,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "nullPointerRedundantCheck",
+        "severity": "warning",
+        "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "cwe": "476",
+        "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1497",
+          "column": "9",
+          "info": "Null pointer dereference"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1511",
+          "column": "9",
+          "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+        }
+      ],
+      "symbols": [
+        "input_buffer"
+      ],
+      "raw_xml_block": "<error id=\"nullPointerRedundantCheck\" severity=\"warning\" msg=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" verbose=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" cwe=\"476\" file0=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1497\" column=\"9\" info=\"Null pointer dereference\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1511\" column=\"9\" info=\"Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant\"/>\n            <symbol>input_buffer</symbol>\n        </error>",
+      "xml_start_line": 53,
+      "xml_end_line": 57
+    },
+    {
+      "xml_ordinal": 15,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "nullPointerRedundantCheck",
+        "severity": "warning",
+        "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "cwe": "476",
+        "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1501",
+          "column": "5",
+          "info": "Null pointer dereference"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1511",
+          "column": "9",
+          "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+        }
+      ],
+      "symbols": [
+        "input_buffer"
+      ],
+      "raw_xml_block": "<error id=\"nullPointerRedundantCheck\" severity=\"warning\" msg=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" verbose=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" cwe=\"476\" file0=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1501\" column=\"5\" info=\"Null pointer dereference\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1511\" column=\"9\" info=\"Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant\"/>\n            <symbol>input_buffer</symbol>\n        </error>",
+      "xml_start_line": 58,
+      "xml_end_line": 62
+    },
+    {
+      "xml_ordinal": 16,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "nullPointerRedundantCheck",
+        "severity": "warning",
+        "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "cwe": "476",
+        "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1503",
+          "column": "9",
+          "info": "Null pointer dereference"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1511",
+          "column": "9",
+          "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+        }
+      ],
+      "symbols": [
+        "input_buffer"
+      ],
+      "raw_xml_block": "<error id=\"nullPointerRedundantCheck\" severity=\"warning\" msg=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" verbose=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" cwe=\"476\" file0=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1503\" column=\"9\" info=\"Null pointer dereference\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1511\" column=\"9\" info=\"Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant\"/>\n            <symbol>input_buffer</symbol>\n        </error>",
+      "xml_start_line": 63,
+      "xml_end_line": 67
+    },
+    {
+      "xml_ordinal": 17,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "nullPointerRedundantCheck",
+        "severity": "warning",
+        "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "cwe": "476",
+        "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1509",
+          "column": "5",
+          "info": "Null pointer dereference"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1511",
+          "column": "9",
+          "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+        }
+      ],
+      "symbols": [
+        "input_buffer"
+      ],
+      "raw_xml_block": "<error id=\"nullPointerRedundantCheck\" severity=\"warning\" msg=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" verbose=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" cwe=\"476\" file0=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1509\" column=\"5\" info=\"Null pointer dereference\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1511\" column=\"9\" info=\"Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant\"/>\n            <symbol>input_buffer</symbol>\n        </error>",
+      "xml_start_line": 68,
+      "xml_end_line": 72
+    },
+    {
+      "xml_ordinal": 18,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "nullPointerRedundantCheck",
+        "severity": "warning",
+        "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "cwe": "476",
+        "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1520",
+          "column": "9",
+          "info": "Null pointer dereference"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1518",
+          "column": "9",
+          "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+        }
+      ],
+      "symbols": [
+        "input_buffer"
+      ],
+      "raw_xml_block": "<error id=\"nullPointerRedundantCheck\" severity=\"warning\" msg=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" verbose=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" cwe=\"476\" file0=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1520\" column=\"9\" info=\"Null pointer dereference\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1518\" column=\"9\" info=\"Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant\"/>\n            <symbol>input_buffer</symbol>\n        </error>",
+      "xml_start_line": 73,
+      "xml_end_line": 77
+    },
+    {
+      "xml_ordinal": 19,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "nullPointerRedundantCheck",
+        "severity": "warning",
+        "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "cwe": "476",
+        "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1657",
+          "column": "9",
+          "info": "Null pointer dereference"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1663",
+          "column": "9",
+          "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+        }
+      ],
+      "symbols": [
+        "input_buffer"
+      ],
+      "raw_xml_block": "<error id=\"nullPointerRedundantCheck\" severity=\"warning\" msg=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" verbose=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" cwe=\"476\" file0=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1657\" column=\"9\" info=\"Null pointer dereference\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1663\" column=\"9\" info=\"Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant\"/>\n            <symbol>input_buffer</symbol>\n        </error>",
+      "xml_start_line": 78,
+      "xml_end_line": 82
+    },
+    {
+      "xml_ordinal": 20,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "nullPointerRedundantCheck",
+        "severity": "warning",
+        "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "cwe": "476",
+        "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1661",
+          "column": "5",
+          "info": "Null pointer dereference"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1663",
+          "column": "9",
+          "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+        }
+      ],
+      "symbols": [
+        "input_buffer"
+      ],
+      "raw_xml_block": "<error id=\"nullPointerRedundantCheck\" severity=\"warning\" msg=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" verbose=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" cwe=\"476\" file0=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1661\" column=\"5\" info=\"Null pointer dereference\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1663\" column=\"9\" info=\"Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant\"/>\n            <symbol>input_buffer</symbol>\n        </error>",
+      "xml_start_line": 83,
+      "xml_end_line": 87
+    },
+    {
+      "xml_ordinal": 21,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "nullPointerRedundantCheck",
+        "severity": "warning",
+        "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "cwe": "476",
+        "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1668",
+          "column": "5",
+          "info": "Null pointer dereference"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1670",
+          "column": "9",
+          "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+        }
+      ],
+      "symbols": [
+        "input_buffer"
+      ],
+      "raw_xml_block": "<error id=\"nullPointerRedundantCheck\" severity=\"warning\" msg=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" verbose=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" cwe=\"476\" file0=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1668\" column=\"5\" info=\"Null pointer dereference\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1670\" column=\"9\" info=\"Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant\"/>\n            <symbol>input_buffer</symbol>\n        </error>",
+      "xml_start_line": 88,
+      "xml_end_line": 92
+    },
+    {
+      "xml_ordinal": 22,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "nullPointerRedundantCheck",
+        "severity": "warning",
+        "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "cwe": "476",
+        "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1678",
+          "column": "9",
+          "info": "Null pointer dereference"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1676",
+          "column": "9",
+          "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+        }
+      ],
+      "symbols": [
+        "input_buffer"
+      ],
+      "raw_xml_block": "<error id=\"nullPointerRedundantCheck\" severity=\"warning\" msg=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" verbose=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" cwe=\"476\" file0=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1678\" column=\"9\" info=\"Null pointer dereference\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1676\" column=\"9\" info=\"Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant\"/>\n            <symbol>input_buffer</symbol>\n        </error>",
+      "xml_start_line": 93,
+      "xml_end_line": 97
+    },
+    {
+      "xml_ordinal": 23,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "nullPointerRedundantCheck",
+        "severity": "warning",
+        "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "cwe": "476",
+        "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1683",
+          "column": "5",
+          "info": "Null pointer dereference"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1708",
+          "column": "13",
+          "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+        }
+      ],
+      "symbols": [
+        "input_buffer"
+      ],
+      "raw_xml_block": "<error id=\"nullPointerRedundantCheck\" severity=\"warning\" msg=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" verbose=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" cwe=\"476\" file0=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1683\" column=\"5\" info=\"Null pointer dereference\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1708\" column=\"13\" info=\"Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant\"/>\n            <symbol>input_buffer</symbol>\n        </error>",
+      "xml_start_line": 98,
+      "xml_end_line": 102
+    },
+    {
+      "xml_ordinal": 24,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "nullPointerRedundantCheck",
+        "severity": "warning",
+        "msg": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "verbose": "Either the condition 'input_buffer!=NULL' is redundant or there is possible null pointer dereference: input_buffer.",
+        "cwe": "476",
+        "file0": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1714",
+          "column": "9",
+          "info": "Null pointer dereference"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1726",
+          "column": "13",
+          "info": "Assuming that condition 'input_buffer!=NULL' is not redundant"
+        }
+      ],
+      "symbols": [
+        "input_buffer"
+      ],
+      "raw_xml_block": "<error id=\"nullPointerRedundantCheck\" severity=\"warning\" msg=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" verbose=\"Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer.\" cwe=\"476\" file0=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1714\" column=\"9\" info=\"Null pointer dereference\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1726\" column=\"13\" info=\"Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant\"/>\n            <symbol>input_buffer</symbol>\n        </error>",
+      "xml_start_line": 103,
+      "xml_end_line": 107
+    },
+    {
+      "xml_ordinal": 25,
+      "record_kind": "source_candidate",
+      "attributes": {
+        "id": "ctunullpointer",
+        "severity": "warning",
+        "msg": "Null pointer dereference: input_buffer",
+        "verbose": "Null pointer dereference: input_buffer",
+        "cwe": "476"
+      },
+      "locations": [
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "821",
+          "column": "42",
+          "info": "Dereferencing argument input_buffer that is null"
+        },
+        {
+          "file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+          "line": "1716",
+          "column": "26",
+          "info": "Calling function parse_string, 2nd argument is null"
+        }
+      ],
+      "symbols": [],
+      "raw_xml_block": "<error id=\"ctunullpointer\" severity=\"warning\" msg=\"Null pointer dereference: input_buffer\" verbose=\"Null pointer dereference: input_buffer\" cwe=\"476\">\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"821\" column=\"42\" info=\"Dereferencing argument input_buffer that is null\"/>\n            <location file=\"/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c\" line=\"1716\" column=\"26\" info=\"Calling function parse_string, 2nd argument is null\"/>\n        </error>",
+      "xml_start_line": 108,
+      "xml_end_line": 111
+    }
+  ],
+  "mapping_status": "pending_assistant_comparison_with_PRE-P03-CP-001"
+}

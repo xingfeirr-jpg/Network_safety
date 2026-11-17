@@ -1,0 +1,72 @@
+png_get_valid
+png_get_rowbytes
+png_get_rows
+png_get_image_width
+png_get_image_height
+png_get_bit_depth
+png_get_color_type
+png_get_filter_type
+png_get_interlace_type
+png_get_compression_type
+png_get_x_pixels_per_meter
+png_get_y_pixels_per_meter
+png_get_pixels_per_meter
+png_get_pixel_aspect_ratio call:[return]
+png_get_pixel_aspect_ratio_fixed call:[png_muldiv]
+png_get_x_offset_microns
+png_get_y_offset_microns
+png_get_x_offset_pixels
+png_get_y_offset_pixels
+ppi_from_ppm call:[png_muldiv,return]
+png_get_pixels_per_inch call:[png_get_pixels_per_meter,ppi_from_ppm] noreturn:[ppi_from_ppm]
+png_get_x_pixels_per_inch call:[png_get_x_pixels_per_meter,ppi_from_ppm] noreturn:[ppi_from_ppm]
+png_get_y_pixels_per_inch call:[png_get_y_pixels_per_meter,ppi_from_ppm] noreturn:[ppi_from_ppm]
+png_fixed_inches_from_microns call:[png_muldiv,png_warning]
+png_get_x_offset_inches_fixed call:[png_fixed_inches_from_microns,png_get_x_offset_microns] noreturn:[png_fixed_inches_from_microns]
+png_get_y_offset_inches_fixed call:[png_fixed_inches_from_microns,png_get_y_offset_microns] noreturn:[png_fixed_inches_from_microns]
+png_get_x_offset_inches call:[png_get_x_offset_microns,return]
+png_get_y_offset_inches call:[png_get_y_offset_microns,return]
+png_get_pHYs_dpi
+png_get_channels
+png_get_signature
+png_get_bKGD
+png_get_cHRM
+png_get_cHRM_XYZ call:[png_XYZ_from_xy]
+png_get_cHRM_XYZ_fixed call:[png_XYZ_from_xy]
+png_get_cHRM_fixed
+png_get_gAMA_fixed
+png_get_gAMA
+png_get_sRGB
+png_get_iCCP
+png_get_sPLT
+png_get_cICP call:[return] noreturn:[return]
+png_get_cLLI_fixed
+png_get_cLLI
+png_get_mDCV_fixed
+png_get_mDCV
+png_get_eXIf call:[png_warning]
+png_get_eXIf_1
+png_get_hIST
+png_get_IHDR call:[png_check_IHDR]
+png_get_oFFs
+png_get_pCAL
+png_get_sCAL_fixed call:[atof,png_fixed]
+png_get_sCAL call:[atof]
+png_get_sCAL_s
+png_get_pHYs
+png_get_PLTE
+png_get_sBIT
+png_get_text
+png_get_tIME
+png_get_tRNS
+png_get_unknown_chunks
+png_get_rgb_to_gray_status call:[return]
+png_get_user_chunk_ptr call:[return] noreturn:[return]
+png_get_compression_buffer_size
+png_get_user_width_max call:[return] noreturn:[return]
+png_get_user_height_max call:[return] noreturn:[return]
+png_get_chunk_cache_max call:[return] noreturn:[return]
+png_get_chunk_malloc_max call:[return] noreturn:[return]
+png_get_io_state
+png_get_io_chunk_type
+png_get_palette_max

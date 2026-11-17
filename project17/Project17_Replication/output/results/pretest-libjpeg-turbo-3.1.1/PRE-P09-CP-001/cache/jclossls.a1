@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="15108878023748298859">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="73" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="126" column="0"/>
+        </error>
+  <FileInfo check="Bounds checking">
+    <array-index>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:125:1" my-argnr="4" my-argname="prev_row" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="129" col="3" value="0"/>
+    </array-index>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:125:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="129" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:125:1" my-argnr="4" my-argname="prev_row" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="129" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:134:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="138" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:144:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="148" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:153:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="157" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:161:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="165" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:169:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="173" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:177:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="181" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:194:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="198" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:40:13" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="242" col="52" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:256:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="260" col="31" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:266:1" my-argnr="2" my-argname="input_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="269" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:266:1" my-argnr="3" my-argname="output_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="269" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:278:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="280" col="52" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:518:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="312" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:125:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="129" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:125:1" my-argnr="3" my-argname="input_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="129" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:125:1" my-argnr="4" my-argname="prev_row" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="129" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:125:1" my-argnr="5" my-argname="diff_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="129" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:134:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="138" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:134:1" my-argnr="3" my-argname="input_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="138" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:134:1" my-argnr="4" my-argname="prev_row" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="138" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:134:1" my-argnr="5" my-argname="diff_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="138" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:144:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="148" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:144:1" my-argnr="3" my-argname="input_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="148" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:144:1" my-argnr="4" my-argname="prev_row" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="148" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:144:1" my-argnr="5" my-argname="diff_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="148" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:153:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="157" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:153:1" my-argnr="3" my-argname="input_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="157" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:153:1" my-argnr="4" my-argname="prev_row" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="157" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:153:1" my-argnr="5" my-argname="diff_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="157" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:161:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="165" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:161:1" my-argnr="3" my-argname="input_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="165" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:161:1" my-argnr="4" my-argname="prev_row" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="165" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:161:1" my-argnr="5" my-argname="diff_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="165" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:169:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="173" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:169:1" my-argnr="3" my-argname="input_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="173" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:169:1" my-argnr="4" my-argname="prev_row" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="173" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:169:1" my-argnr="5" my-argname="diff_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="173" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:177:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="181" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:177:1" my-argnr="3" my-argname="input_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="181" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:177:1" my-argnr="4" my-argname="prev_row" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="181" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:177:1" my-argnr="5" my-argname="diff_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="181" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:194:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="198" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:194:1" my-argnr="3" my-argname="input_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="198" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:194:1" my-argnr="5" my-argname="diff_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="198" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:40:13" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="242" col="52" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:256:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="260" col="31" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:256:1" my-argnr="2" my-argname="input_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="260" col="31" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:256:1" my-argnr="3" my-argname="output_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="260" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:266:1" my-argnr="2" my-argname="input_buf" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="269" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c:278:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="280" col="52" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:518:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c" line="312" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GETENV_S" lineNumber="79"/>
+    <functiondecl functionName="PUTENV_S" lineNumber="132"/>
+    <functiondecl functionName="jpeg_difference1" lineNumber="125"/>
+    <functiondecl functionName="jpeg_difference2" lineNumber="134"/>
+    <functiondecl functionName="jpeg_difference3" lineNumber="144"/>
+    <functiondecl functionName="jpeg_difference4" lineNumber="153"/>
+    <functiondecl functionName="jpeg_difference5" lineNumber="161"/>
+    <functiondecl functionName="jpeg_difference6" lineNumber="169"/>
+    <functiondecl functionName="jpeg_difference7" lineNumber="177"/>
+    <functiondecl functionName="jpeg_difference_first_row" lineNumber="194"/>
+    <functiondecl functionName="reset_predictor" lineNumber="240"/>
+    <functiondecl functionName="simple_downscale" lineNumber="256"/>
+    <functiondecl functionName="noscale" lineNumber="266"/>
+    <functiondecl functionName="start_pass_lossless" lineNumber="278"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ERANGE"/>
+    <functioncall functionName="JERR_BAD_PRECISION"/>
+    <functioncall functionName="JERR_BAD_RESTART"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="getenv"/>
+    <functioncall functionName="jpeg_difference1"/>
+    <functioncall functionName="jpeg_difference2"/>
+    <functioncall functionName="jpeg_difference3"/>
+    <functioncall functionName="jpeg_difference4"/>
+    <functioncall functionName="jpeg_difference5"/>
+    <functioncall functionName="jpeg_difference6"/>
+    <functioncall functionName="jpeg_difference7"/>
+    <functioncall functionName="jpeg_difference_first_row"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="noscale"/>
+    <functioncall functionName="reset_predictor"/>
+    <functioncall functionName="setenv"/>
+    <functioncall functionName="simple_downscale"/>
+    <functioncall functionName="start_pass_lossless"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+  </FileInfo>
+</analyzerinfo>

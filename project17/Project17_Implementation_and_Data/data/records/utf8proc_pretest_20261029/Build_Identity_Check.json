@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "project": "P10 utf8proc",
+  "version": "2.10.0",
+  "runId": "PREP-P10-001",
+  "checkedAtUTC": "2026-10-29T09:07:25.412733+00:00",
+  "commit": "a1b99daa2a3393884220264c927a48ba1251a9c6",
+  "rootTreeSHA": "b5b227d68996d6e0cdafd9bf4bdb53cf5f05f339",
+  "checks": {
+    "49CopiedFilesMatch": true,
+    "Complete45SourceFilesUnchanged": true,
+    "FiveSourceDirectoriesUnchanged": true,
+    "PhaseExitsZero": true,
+    "PhaseStderrEmpty": true,
+    "PreparationScriptExitZero": true,
+    "preparation-inputs.sha256": true,
+    "build-artifacts.sha256": true,
+    "OneActualCTU": true,
+    "ActualClang18C99AndO2PICMacros": true,
+    "CacheFixedConfiguration": true,
+    "Valid36DependenciesWithThreeProjectFiles": true,
+    "OneArchiveObjectList": true,
+    "NoAnalyzerRunDirectory": true,
+    "SourceGuardsPassed": true
+  },
+  "copiedFileCount": 49,
+  "copiedGroups": {
+    "preparation": 25,
+    "build": 18,
+    "environment": 6
+  },
+  "environmentSession": "/home/yhong/comp5355/environment/session-20261029T085446-p10-22994",
+  "compileCommands": [
+    {
+      "directory": "/home/yhong/comp5355/build/utf8proc-2.10.0",
+      "command": "/usr/bin/clang-18 -DUTF8PROC_EXPORTS -DUTF8PROC_STATIC -I/home/yhong/comp5355/sources/utf8proc-2.10.0/. -g -fPIC -O2 -std=c99 -pedantic -Wall -o CMakeFiles/utf8proc.dir/utf8proc.c.o -c /home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c",
+      "file": "/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c",
+      "output": "CMakeFiles/utf8proc.dir/utf8proc.c.o"
+    }
+  ],
+  "databaseSHA256": "d8e3d8df230cdd37a42a8b05c6f0f98b7930a1c437454ca4f9af71cff20ef866",
+  "independentTranslationUnits": 1,
+  "archiveObjects": [
+    "utf8proc.c.o"
+  ],
+  "libraryBytes": 381962,
+  "librarySHA256": "d5db16575d63c7c3a2a1de2b62e6e9df571267a6bdb90b3add287f53332ac20f",
+  "objectBytes": 381088,
+  "projectDependencyFiles": 3,
+  "allDependencyEntries": 36,
+  "systemOrCompilerDependencies": 33,
+  "generatedCHeaders": 0,
+  "actualFlags": "-g -fPIC -O2 -std=c99 -pedantic -Wall",
+  "actualMacros": [
+    "UTF8PROC_EXPORTS",
+    "UTF8PROC_STATIC"
+  ],
+  "buildOptions": {
+    "CMAKE_BUILD_TYPE": "Debug",
+    "CMAKE_C_COMPILER": "/usr/bin/clang-18",
+    "CMAKE_GENERATOR": "Ninja",
+    "BUILD_SHARED_LIBS": "OFF",
+    "UTF8PROC_ENABLE_TESTING": "OFF",
+    "UTF8PROC_INSTALL": "ON"
+  },
+  "resources": {
+    "configure": {
+      "wall_seconds": 41.07,
+      "user_seconds": 0.19,
+      "system_seconds": 1.28,
+      "max_rss_kib": 88488,
+      "invocationExitCode": 0,
+      "purpose": "preparation, not analyzer time"
+    },
+    "build": {
+      "wall_seconds": 0.64,
+      "user_seconds": 0.51,
+      "system_seconds": 0.1,
+      "max_rss_kib": 132108,
+      "invocationExitCode": 0,
+      "purpose": "preparation, not analyzer time"
+    }
+  },
+  "sourceCompleteFilesUnchanged": 45,
+  "sourceDirectoriesUnchanged": 5,
+  "dependencyManifestSHA256": "4d4242bce782812b446eef2cd5cb0354dbda927c9ff21d86f18ef355162d6e4a",
+  "rawManifestSHA256": "48008e022bef8a14d37f6c072e5669b01c82111a37bf2b5f6d993d8eb53e685e",
+  "analysisRunDirectories": [],
+  "analyzersRun": false,
+  "candidates": null,
+  "formalThirtyCells": "all not run",
+  "figureIds": [
+    "FIG-P10-03"
+  ]
+}

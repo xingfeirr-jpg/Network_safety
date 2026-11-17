@@ -1,0 +1,20 @@
+{
+  "intended_database_actions": 1,
+  "observed_checking_sources": [
+    "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+  ],
+  "observed_cache_mappings": [
+    {
+      "cache_slot": "cJSON.a1",
+      "source_file": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c"
+    }
+  ],
+  "checker_report_no_critical_errors": true,
+  "machine_scope_evidence_matches": true,
+  "coverage_acceptance": "pending_assistant_review_of_progress_cache_checkers_and_XML",
+  "accepted_succeeded_actions": null,
+  "accepted_failed_actions": null,
+  "accepted_skipped_actions": null,
+  "meaning": "观察到的处理证据不是穷尽路径证明；助手验收前不填已验收成功／失败／跳过数。",
+  "cache_slots_exist_nonempty": true
+}

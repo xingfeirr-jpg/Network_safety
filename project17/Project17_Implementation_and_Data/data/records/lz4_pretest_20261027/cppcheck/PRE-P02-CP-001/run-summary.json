@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-27",
+  "runId": "PRE-P02-CP-001",
+  "purpose": "functional pretest; not formal comparison",
+  "status": "accepted under declared normal settings",
+  "tool": "Cppcheck 2.13.0",
+  "intendedTranslationUnits": 5,
+  "processedTranslationUnits": 5,
+  "failedTranslationUnits": 0,
+  "skippedTranslationUnits": 0,
+  "xmlVersion": 2,
+  "xmlDiagnosticElements": 25,
+  "sourceIssueCandidates": 1,
+  "informationItems": 24,
+  "bySeverity": {
+    "information": 24,
+    "error": 1
+  },
+  "byRule": {
+    "missingIncludeSystem": 23,
+    "nullPointerArithmetic": 1,
+    "checkersReport": 1
+  },
+  "missingIncludeUniqueHeaders": [
+    "assert.h",
+    "limits.h",
+    "stddef.h",
+    "stdint.h",
+    "stdio.h",
+    "stdlib.h",
+    "string.h"
+  ],
+  "activeCheckersReported": 79,
+  "totalCheckersReported": 592,
+  "checkLevelNormalMessages": 0,
+  "actualConfigAsShownInProgress": [
+    "XXH_NAMESPACE=LZ4_",
+    "__PIC__=1"
+  ],
+  "wallSeconds": 3.26,
+  "userSeconds": 3.25,
+  "systemSeconds": 0.02,
+  "gnuTimeMaxRssKiB": 25216,
+  "exitCode": 0,
+  "originalFiles": 22,
+  "rawManifest": "raw-file-manifest.json",
+  "inputIdentityEntries": 12,
+  "sourceReview": "all51 complete: 44 original-risk false positives, 3 supported diagnoses (1 internal language issue + 2 conditional interface risks), 4 unable; see lz4_review/Review_Report.md",
+  "formalThirtyCells": "all not run"
+}

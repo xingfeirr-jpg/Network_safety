@@ -1,0 +1,73 @@
+{
+  "profileId": "P06-FF-PRE-v1",
+  "plannedRunId": "PRE-P06-FF-001",
+  "preparedDate": "2026-10-28",
+  "status": "prepared; not executed",
+  "purpose": "functional pretest",
+  "tool": "Flawfinder",
+  "version": "2.0.20",
+  "binary": "/home/yhong/comp5355/.venv/bin/flawfinder",
+  "arguments": [
+    "--minlevel=1",
+    "--neverignore",
+    "--columns",
+    "--context"
+  ],
+  "inputCount": 2,
+  "sourceCFiles": 1,
+  "sourceHeaders": 1,
+  "generatedHeaders": 0,
+  "inputs": [
+    {
+      "file": "/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c",
+      "localFile": "review_evidence/yyjson_pretest_20261028/inputs/source/src/yyjson.c",
+      "bytes": 410813,
+      "sha256": "ac2e9bbb2e2d9149d90878d40506a1d624fa0b33c979a11b61075c54782c6d6a"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h",
+      "localFile": "review_evidence/yyjson_pretest_20261028/inputs/source/src/yyjson.h",
+      "bytes": 322407,
+      "sha256": "175867c5493a5df648cec566717fa1c29aa2f6096f5f0cf1efad0b65e1f6d7b3"
+    }
+  ],
+  "identityManifest": "flawfinder-inputs.sha256",
+  "identityManifestSHA256": "4d4837e07a3d68fcf5748ed386cb42d03c2bc77fd95c2408c54e2f5e3aa01840",
+  "runtimeInputList": "input-files.txt written from exactly the same in-memory argument array after analysis; no separate mutable preparation text list",
+  "expectedRuntimeInputListSHA256": "f1b5cb7d7758e0c5595600b1760088f0f8efbef7610dc59c541f0d306134f454",
+  "headerSelection": "Exactly the2 accepted VALID Ninja project dependency closure files,src/yyjson.c and src/yyjson.h;each once.No generated C header.Compilation database and yyjson.pc are not text inputs.",
+  "semanticReferenceActions": 1,
+  "textScopeCaveat": "Lexical text scanning does not preprocess macros;inactive branches in selected files may match.2 text files are not2 translation units,and do not imply equivalent semantic or path coverage to the1 actual compilation action.",
+  "macroContext": "Actual semantic context is Clang18.1.3 default GNU C17;all8 YYJSON_DISABLE macros effective0.No -D/-I/--std preprocessing arguments added to Flawfinder.",
+  "displayedHitPolicy": "minlevel1; level0 and cumulative0+ are reported separately, never equated to displayed hit count or confirmed vulnerabilities",
+  "ignoredCommentPolicy": "--neverignore retains hits otherwise suppressed by Flawfinder ignore directives; built-in lexical/risk heuristics still apply",
+  "measurement": "measurement-v1",
+  "locale": "C",
+  "jobs": "tool serial default; one tool combination at a time",
+  "applicationCache": "No Flawfinder analysis-result cache requested; recorder generic cache directory is unused.",
+  "osPageCache": "natural, not cleared",
+  "wholeCommandTimeout": "not imposed",
+  "runDirectory": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/PRE-P06-FF-001",
+  "buildEnvironmentSession": "session-20261028T025725-p06-22994",
+  "executionEnvironmentSession": "not asserted from build snapshot; actual run-start environment/current session recorded separately",
+  "buildIdentity": "../yyjson_pretest_20261028/Build_Identity_Check.json",
+  "projectDependencyManifest": "../yyjson_pretest_20261028/Project_Dependency_Manifest.json",
+  "parameterEvidence": "Flawfinder_Parameter_Check_20261028.md",
+  "outputs": {
+    "stdout": "stdout.txt",
+    "stderr": "stderr.txt",
+    "time": "time.txt",
+    "exitCode": "exit-code.txt",
+    "inputFiles": "input-files.txt",
+    "inputIdentity": "input-files.sha256",
+    "preparedProfile": "prepared-profile.json"
+  },
+  "actualCoverage": "pending user execution and output review",
+  "actualDisplayedHits": null,
+  "actualLevel0Hits": null,
+  "sourceReview": "not started for Flawfinder output",
+  "formalThirtyCells": "all not run",
+  "project": "P06 yyjson",
+  "projectVersion": "0.12.0",
+  "commit": "8b4a38dc994a110abaec8a400615567bd996105f"
+}

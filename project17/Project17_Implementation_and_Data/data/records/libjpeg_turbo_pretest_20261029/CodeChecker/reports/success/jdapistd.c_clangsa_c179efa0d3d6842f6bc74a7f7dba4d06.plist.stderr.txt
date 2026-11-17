@@ -1,0 +1,10 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c:211:7: warning: Dereference of null pointer (loaded from variable 'width') [core.NullDereference]
+  211 |   if (*width == 0 ||
+      |       ^~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c:212:27: warning: Dereference of null pointer (loaded from variable 'xoffset') [core.NullDereference]
+  212 |       (unsigned long long)(*xoffset) + *width > cinfo->output_width)
+      |                           ^~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c:243:19: warning: Dereference of null pointer (loaded from variable 'xoffset') [core.NullDereference]
+  243 |   input_xoffset = *xoffset;
+      |                   ^~~~~~~~
+3 warnings generated.

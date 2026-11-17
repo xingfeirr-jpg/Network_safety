@@ -1,0 +1,4 @@
+﻿tool,registeredCandidates,originalRiskFalsePositive,supportedDiagnoses,undetermined,unreviewed,unit
+Flawfinder,536,520,5,11,0,FF显示hit／CP非information XML元素／clangsa保存plist诊断元素；不跨工具去重为漏洞
+Cppcheck,116,77,39,0,0,FF显示hit／CP非information XML元素／clangsa保存plist诊断元素；不跨工具去重为漏洞
+CodeChecker/clangsa,73,51,18,4,0,FF显示hit／CP非information XML元素／clangsa保存plist诊断元素；不跨工具去重为漏洞

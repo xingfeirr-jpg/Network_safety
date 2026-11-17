@@ -1,0 +1,41 @@
+{
+  "id": "P06",
+  "name": "yyjson",
+  "version": "0.12.0",
+  "started_utc": "2026-11-08T02:56:49Z",
+  "S1": {
+    "archive": "/home/yhong/comp5355/downloads/yyjson-0.12.0.tar.gz",
+    "sha256": "94e9c90f8f12d8329f2c0756782d21e5c278729023cd2c5fe47e323a35947ed6",
+    "expected_sha256": "94e9c90f8f12d8329f2c0756782d21e5c278729023cd2c5fe47e323a35947ed6",
+    "matches_original": true
+  },
+  "S2": {
+    "source_dir": "/home/yhong/comp5355/sources/yyjson-0.12.0",
+    "regular_files": 903
+  },
+  "S3": {
+    "build_dir": "/home/yhong/comp5355/build/yyjson-0.12.0",
+    "compile_actions": 1
+  },
+  "S5": {
+    "FF": {
+      "run_id": "PRE-P06-FF-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:56:58Z",
+      "ended_utc": "2026-11-08T02:56:59Z"
+    },
+    "CP": {
+      "run_id": "PRE-P06-CP-002",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:56:59Z",
+      "ended_utc": "2026-11-08T02:57:11Z"
+    },
+    "CC": {
+      "run_id": "PRE-P06-CC-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:57:11Z",
+      "ended_utc": "2026-11-08T02:58:17Z"
+    }
+  },
+  "ended_utc": "2026-11-08T02:58:17Z"
+}

@@ -1,0 +1,10 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+initial_setup call:[jdiv_round_up]
+per_scan_setup call:[jdiv_round_up]
+latch_quant_tables call:[memcpy,sizeof]
+start_input_pass call:[latch_quant_tables,per_scan_setup] noreturn:[latch_quant_tables]
+finish_input_pass
+consume_markers call:[initial_setup,start_input_pass] noreturn:[start_input_pass]
+reset_input_controller
+jinit_input_controller call:[sizeof]

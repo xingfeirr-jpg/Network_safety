@@ -1,0 +1,338 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1.tar.gz",
+    "localRelative": "archive/expat-2.7.1.tar.gz",
+    "bytes": 8433965,
+    "sha256": "86f0e8afaf4cd72d806e32afb68e1e84bb2c6e5b0b40de2a34c0970bf8d08c40"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1.tar.gz.sha256",
+    "localRelative": "archive/expat-2.7.1.tar.gz.sha256",
+    "bytes": 116,
+    "sha256": "068b7117e3a83139194e6bbb8f9439aa8ae6c00ae009cb261d0529fd4d0df92c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/archive-check.json",
+    "localRelative": "download/archive-check.json",
+    "bytes": 45308,
+    "sha256": "11a313457fa6bc77fa53e728b81df314b3f8451268916b3e1bd65f79bd09fc3f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/archive-members.txt",
+    "localRelative": "download/archive-members.txt",
+    "bytes": 17498,
+    "sha256": "72bf0fe8ebd8b42ebc75f3c42ac28fc3055c26a27a3002ea1e7a9076522e23e8"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/archive-size.txt",
+    "localRelative": "download/archive-size.txt",
+    "bytes": 66,
+    "sha256": "e78da59d61a5934ebdd291f359867a536d7eee29fd7d90dc56633a7c6bf7ff3c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/archive-try1/body",
+    "localRelative": "download/archive-try1/body",
+    "bytes": 8433965,
+    "sha256": "86f0e8afaf4cd72d806e32afb68e1e84bb2c6e5b0b40de2a34c0970bf8d08c40"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/archive-try1/command.txt",
+    "localRelative": "download/archive-try1/command.txt",
+    "bytes": 347,
+    "sha256": "628821c40e546343c03e0ec57215328f72276b64c5c6bcc196a47c337651d7d8"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/archive-try1/curl-exit-code.txt",
+    "localRelative": "download/archive-try1/curl-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/archive-try1/headers.txt",
+    "localRelative": "download/archive-try1/headers.txt",
+    "bytes": 706,
+    "sha256": "f33e3bf83179abf54bb760169cd726b9d689ebf2bba03cf6691f31e365210fad"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/archive-try1/http-code.txt",
+    "localRelative": "download/archive-try1/http-code.txt",
+    "bytes": 4,
+    "sha256": "c11e3f4837efde2441e23a7b9da02131f53bf59fddeb7147c4ab81afe400460f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/archive-try1/stderr.txt",
+    "localRelative": "download/archive-try1/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/archive-try1/url.txt",
+    "localRelative": "download/archive-try1/url.txt",
+    "bytes": 94,
+    "sha256": "18d17c2b7dd3b3f1f897bb25c665dfb81d66b667245d8cfea35c0a2b3811b38c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/archive.sha256",
+    "localRelative": "download/archive.sha256",
+    "bytes": 116,
+    "sha256": "068b7117e3a83139194e6bbb8f9439aa8ae6c00ae009cb261d0529fd4d0df92c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/attempt-meta.tsv",
+    "localRelative": "download/attempt-meta.tsv",
+    "bytes": 158,
+    "sha256": "aa866e09bb7b3370901da5e80da9b4bd17538c0a625bb352f5b3131fa019129e"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/chain-exit-code.txt",
+    "localRelative": "download/chain-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/chain-stderr.txt",
+    "localRelative": "download/chain-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/completion.tsv",
+    "localRelative": "download/completion.tsv",
+    "bytes": 91,
+    "sha256": "7e375268e6695f90b726a1cd0e171a0021ba5b5035d8e4983da8417e9dfdd6c2"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/git-commit-try1/body",
+    "localRelative": "download/git-commit-try1/body",
+    "bytes": 2873,
+    "sha256": "5ebb55ac63c18e8d19214a7ad76c6a291060f4ab7976171343ebe6db7f3d8479"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/git-commit-try1/command.txt",
+    "localRelative": "download/git-commit-try1/command.txt",
+    "bytes": 359,
+    "sha256": "73d680c939b3ea2fa9c54d8de12ffb5b21b6590824f2bbde220d56987607f452"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/git-commit-try1/curl-exit-code.txt",
+    "localRelative": "download/git-commit-try1/curl-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/git-commit-try1/headers.txt",
+    "localRelative": "download/git-commit-try1/headers.txt",
+    "bytes": 1320,
+    "sha256": "68eb0875c3d33cc3fcb3969efe27e2e575d43033908af58d7ae38b41b5a48587"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/git-commit-try1/http-code.txt",
+    "localRelative": "download/git-commit-try1/http-code.txt",
+    "bytes": 4,
+    "sha256": "c11e3f4837efde2441e23a7b9da02131f53bf59fddeb7147c4ab81afe400460f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/git-commit-try1/stderr.txt",
+    "localRelative": "download/git-commit-try1/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/git-commit-try1/url.txt",
+    "localRelative": "download/git-commit-try1/url.txt",
+    "bytes": 100,
+    "sha256": "a93613b4419cf6d3b2a01d4c5cb2d8ddedd52619dc47f15aef2abc1dd149b59e"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/identity-exit-code.txt",
+    "localRelative": "download/identity-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/identity-stderr.txt",
+    "localRelative": "download/identity-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/identity-stdout.txt",
+    "localRelative": "download/identity-stdout.txt",
+    "bytes": 158,
+    "sha256": "aca1398604458a89ac2c930aebf5d622f6bfafa95d8219d91c30ef366c948877"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/official-identity-exit-code.txt",
+    "localRelative": "download/official-identity-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/official-identity-stderr.txt",
+    "localRelative": "download/official-identity-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/official-identity-stdout.txt",
+    "localRelative": "download/official-identity-stdout.txt",
+    "bytes": 92,
+    "sha256": "c367dfdf98c56830579f295a60ac7972d70cb80c1de61b8157b6dce034880df6"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/official-reference.json",
+    "localRelative": "download/official-reference.json",
+    "bytes": 67095,
+    "sha256": "2262a2508e6c5e38f6fd22c4b18e4d1afb50209f99ef35131e71deaa0f15bf5d"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/preparation-files.sha256",
+    "localRelative": "download/preparation-files.sha256",
+    "bytes": 504,
+    "sha256": "9d1fe683fa6f3961a3076d6c0f87d51ecab6cd8c1d9d62cca8be4cce06099d44"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/recursive-tree-try1/body",
+    "localRelative": "download/recursive-tree-try1/body",
+    "bytes": 66500,
+    "sha256": "e9d98c921042ee48950009f2f1cd241a7801104b2b14e3199305b24c118f6e9b"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/recursive-tree-try1/command.txt",
+    "localRelative": "download/recursive-tree-try1/command.txt",
+    "bytes": 378,
+    "sha256": "549a9eece97210ee4e6520c753574e51773bf77a33bb5a4140e28dda1bbe5f68"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/recursive-tree-try1/curl-exit-code.txt",
+    "localRelative": "download/recursive-tree-try1/curl-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/recursive-tree-try1/headers.txt",
+    "localRelative": "download/recursive-tree-try1/headers.txt",
+    "bytes": 1305,
+    "sha256": "daaef5bd66c4a4876de5ac573fef06d2bd70ede9cc7bb539b7fa574be59f1f72"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/recursive-tree-try1/http-code.txt",
+    "localRelative": "download/recursive-tree-try1/http-code.txt",
+    "bytes": 4,
+    "sha256": "c11e3f4837efde2441e23a7b9da02131f53bf59fddeb7147c4ab81afe400460f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/recursive-tree-try1/stderr.txt",
+    "localRelative": "download/recursive-tree-try1/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/recursive-tree-try1/url.txt",
+    "localRelative": "download/recursive-tree-try1/url.txt",
+    "bytes": 110,
+    "sha256": "9bfe791063c7696a6296c957ec884cf67d85dac70aafc5a2993ae3d4b15c4a9e"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/root-tree-sha.txt",
+    "localRelative": "download/root-tree-sha.txt",
+    "bytes": 41,
+    "sha256": "0d91c1cbe47cc8647d94f153011882aaeba863d1ea81cf1acca25e9031b08299"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tag-object-try1/body",
+    "localRelative": "download/tag-object-try1/body",
+    "bytes": 2607,
+    "sha256": "122fabe14b856c4ad42c431cd4e14e554a0b913248eaae83c132730d4ba2eef2"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tag-object-try1/command.txt",
+    "localRelative": "download/tag-object-try1/command.txt",
+    "bytes": 356,
+    "sha256": "7419ed357411e882f8d7dad1efd110858681c3452a7c6b5d5c848d685c575759"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tag-object-try1/curl-exit-code.txt",
+    "localRelative": "download/tag-object-try1/curl-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tag-object-try1/headers.txt",
+    "localRelative": "download/tag-object-try1/headers.txt",
+    "bytes": 1320,
+    "sha256": "24a0bafe2f60193558a64f3565df915cf2a82022df591cfeed67f19aeeddec74"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tag-object-try1/http-code.txt",
+    "localRelative": "download/tag-object-try1/http-code.txt",
+    "bytes": 4,
+    "sha256": "c11e3f4837efde2441e23a7b9da02131f53bf59fddeb7147c4ab81afe400460f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tag-object-try1/stderr.txt",
+    "localRelative": "download/tag-object-try1/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tag-object-try1/url.txt",
+    "localRelative": "download/tag-object-try1/url.txt",
+    "bytes": 97,
+    "sha256": "3a83f1eacf554a5762ce5d3992d021289076a41b6123a99edc3fbfd3fcb13d95"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tag-ref-try1/body",
+    "localRelative": "download/tag-ref-try1/body",
+    "bytes": 378,
+    "sha256": "e4622e55041484920e6cc48df80224bcd273f33d2f424f36844de62006d6d05f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tag-ref-try1/command.txt",
+    "localRelative": "download/tag-ref-try1/command.txt",
+    "bytes": 321,
+    "sha256": "c04ff32b5e19f3ed118514376b5ad00416555424fe57e039c4ad0c8c5d72dc20"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tag-ref-try1/curl-exit-code.txt",
+    "localRelative": "download/tag-ref-try1/curl-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tag-ref-try1/headers.txt",
+    "localRelative": "download/tag-ref-try1/headers.txt",
+    "bytes": 1341,
+    "sha256": "b0431130dfa7edb984b016c632e5b064d78134ca1f7eb3d97d563fac0e82ffd2"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tag-ref-try1/http-code.txt",
+    "localRelative": "download/tag-ref-try1/http-code.txt",
+    "bytes": 4,
+    "sha256": "c11e3f4837efde2441e23a7b9da02131f53bf59fddeb7147c4ab81afe400460f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tag-ref-try1/stderr.txt",
+    "localRelative": "download/tag-ref-try1/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tag-ref-try1/url.txt",
+    "localRelative": "download/tag-ref-try1/url.txt",
+    "bytes": 68,
+    "sha256": "8ee48740b1535c7f57f3fd2997478f1d33c7441faa0849920b3e81e78f66c4cb"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tar-exit-code.txt",
+    "localRelative": "download/tar-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/downloads/expat-2.7.1-DL-P07-001/tar-stderr.txt",
+    "localRelative": "download/tar-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

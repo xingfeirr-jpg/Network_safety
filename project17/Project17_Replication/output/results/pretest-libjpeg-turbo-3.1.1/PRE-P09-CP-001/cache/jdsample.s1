@@ -1,0 +1,13 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+start_pass_upsample
+sep_upsample
+fullsize_upsample
+noop_upsample
+int_upsample call:[jcopy_sample_rows] noreturn:[jcopy_sample_rows]
+h2v1_upsample
+h2v2_upsample call:[jcopy_sample_rows]
+h2v1_fancy_upsample
+h1v2_fancy_upsample
+h2v2_fancy_upsample
+jinit_upsampler call:[jround_up,sizeof]

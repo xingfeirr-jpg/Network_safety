@@ -1,0 +1,12 @@
+measurement_schema	measurement-v1
+run_id	PRE-P07-CP-001
+purpose	pretest
+working_directory	/home/yhong/comp5355
+locale	C
+application_cache_policy	required_fresh_tool_cache
+os_page_cache	natural_not_cleared
+created_empty_cache_directory	/home/yhong/comp5355/results/pretest-expat-2.7.1/PRE-P07-CP-001/cache
+started_utc	2026-10-28T09:45:13Z
+ended_utc	2026-10-28T09:45:16Z
+timed_invocation_exit_code	0
+coverage_validation	pending_tool_output_review

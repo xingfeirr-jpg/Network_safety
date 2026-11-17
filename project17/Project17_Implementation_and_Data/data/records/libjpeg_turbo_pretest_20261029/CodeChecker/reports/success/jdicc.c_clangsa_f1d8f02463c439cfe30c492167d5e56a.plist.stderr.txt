@@ -1,0 +1,7 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdicc.c:88:17: warning: Dereference of null pointer (loaded from variable 'icc_data_ptr') [core.NullDereference]
+   88 |   *icc_data_ptr = NULL;         /* avoid confusion if FALSE return */
+      |    ~~~~~~~~~~~~ ^
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdicc.c:89:17: warning: Dereference of null pointer (loaded from variable 'icc_data_len') [core.NullDereference]
+   89 |   *icc_data_len = 0;
+      |    ~~~~~~~~~~~~ ^
+2 warnings generated.

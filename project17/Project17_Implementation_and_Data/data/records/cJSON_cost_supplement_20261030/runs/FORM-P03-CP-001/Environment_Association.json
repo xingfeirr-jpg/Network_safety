@@ -1,0 +1,9 @@
+{
+  "current_environment": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-FORM-P03-CP-001/environment",
+  "pre_analysis_checks": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-FORM-P03-CP-001",
+  "accepted_preflight": "review_evidence/cJSON_cost_supplement_20261030/Preflight_Acceptance.json",
+  "accepted_codechecker": "review_evidence/cJSON_cost_supplement_20261030/CodeChecker_Acceptance.json",
+  "accepted_flawfinder": "review_evidence/cJSON_cost_supplement_20261030/Flawfinder_Acceptance.json",
+  "execution_order": "P03 CC和FF已验收后执行CP",
+  "tool_result_cache": "measurement-v1记录器新建空run/cache，实际Cppcheck命令显式引用；不复用旧缓存"
+}

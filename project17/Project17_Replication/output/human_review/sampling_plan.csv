@@ -1,0 +1,22 @@
+﻿stratum,population,sampled,sampling_rate
+Supported | all,62,62,100%
+Undetermined | all,15,15,100%
+False positive | Flawfinder | Write length bounded by capacity,192,33,17%
+False positive | Flawfinder | String known to be NUL-terminated,71,13,18%
+False positive | Flawfinder | Code not compiled in this build,70,12,17%
+"False positive | Flawfinder | Name match, not a call",70,12,17%
+False positive | Cppcheck | Error handler does not return,54,10,19%
+False positive | Flawfinder | Earlier null or range check,40,8,20%
+False positive | Flawfinder | Constant format or argument,36,7,19%
+False positive | Flawfinder | Other,33,6,18%
+False positive | clangsa | Error handler does not return,26,5,19%
+False positive | clangsa | Write length bounded by capacity,13,3,23%
+False positive | Cppcheck | Write length bounded by capacity,12,3,25%
+False positive | Flawfinder | Error handler does not return,8,2,25%
+False positive | clangsa | Earlier null or range check,7,2,29%
+False positive | Cppcheck | Code not compiled in this build,6,2,33%
+False positive | Cppcheck | Earlier null or range check,3,1,33%
+False positive | Cppcheck | Other,2,1,50%
+False positive | clangsa | Code not compiled in this build,2,1,50%
+False positive | clangsa | Other,2,1,50%
+False positive | clangsa | Constant format or argument,1,1,100%

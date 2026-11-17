@@ -1,0 +1,12 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+start_iMCU_row
+start_input_pass call:[start_iMCU_row] noreturn:[start_iMCU_row]
+start_output_pass call:[smoothing_ok]
+decompress_onepass call:[jzero_far,sizeof,start_iMCU_row,void]
+dummy_consume_data
+consume_data call:[short,start_iMCU_row]
+decompress_data call:[short,void]
+smoothing_ok call:[sizeof]
+decompress_smooth_data call:[jcopy_block_row,short,void]
+jinit_d_coef_controller call:[jround_up,memset,short,sizeof]

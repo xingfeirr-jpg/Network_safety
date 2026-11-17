@@ -1,0 +1,215 @@
+{
+  "status": "accepted",
+  "clientDate": "2026-10-29",
+  "project": "P08 libpng 1.6.50",
+  "runId": "PRE-P08-CC-001",
+  "purpose": "functional pretest",
+  "rawFiles": 45,
+  "inputIdentities": 25,
+  "actualSucceededActions": 15,
+  "failedActions": 0,
+  "skippedActions": 0,
+  "validPlists": 15,
+  "savedDiagnostics": 14,
+  "displayedReports": 14,
+  "candidateCount": 14,
+  "reviewedCandidates": 0,
+  "unreviewedCandidates": 14,
+  "rules": {
+    "core.UndefinedBinaryOperatorResult": 8,
+    "core.CallAndMessage": 1,
+    "core.NonNullParamChecker": 2,
+    "deadcode.DeadStores": 3
+  },
+  "displayedSeverity": {
+    "HIGH": 11,
+    "LOW": 3
+  },
+  "fileCounts": {
+    "pngrutil.c": 9,
+    "pngset.c": 2,
+    "pngwtran.c": 3
+  },
+  "uniqueRawIssueHashes": 12,
+  "hashPolicy": "14 distinct saved/displayed locations retained;3 DeadStores share hash;no root-cause grouping before source review",
+  "actions": [
+    {
+      "source": "/home/yhong/comp5355/sources/libpng-1.6.50/png.c",
+      "plist": "review_evidence/libpng_pretest_20261029/CodeChecker/reports/png.c_clangsa_dd9cac3437c68049365e56e7cae0117f.plist",
+      "savedDiagnostics": 0,
+      "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c",
+      "plist": "review_evidence/libpng_pretest_20261029/CodeChecker/reports/pngerror.c_clangsa_8b763e8920e82e51d7164720163aaece.plist",
+      "savedDiagnostics": 0,
+      "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/libpng-1.6.50/pngget.c",
+      "plist": "review_evidence/libpng_pretest_20261029/CodeChecker/reports/pngget.c_clangsa_851d73b460b04530cb74ce7438721049.plist",
+      "savedDiagnostics": 0,
+      "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/libpng-1.6.50/pngmem.c",
+      "plist": "review_evidence/libpng_pretest_20261029/CodeChecker/reports/pngmem.c_clangsa_8a57d4d65970aa2bd36b4ca5610fab3d.plist",
+      "savedDiagnostics": 0,
+      "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/libpng-1.6.50/pngpread.c",
+      "plist": "review_evidence/libpng_pretest_20261029/CodeChecker/reports/pngpread.c_clangsa_2f736fb712924f56b326bed2a0f21e14.plist",
+      "savedDiagnostics": 0,
+      "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/libpng-1.6.50/pngread.c",
+      "plist": "review_evidence/libpng_pretest_20261029/CodeChecker/reports/pngread.c_clangsa_1f3b837466d429d6eef48657707d5e4f.plist",
+      "savedDiagnostics": 0,
+      "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/libpng-1.6.50/pngrio.c",
+      "plist": "review_evidence/libpng_pretest_20261029/CodeChecker/reports/pngrio.c_clangsa_000130759b63c519b55099df469783ba.plist",
+      "savedDiagnostics": 0,
+      "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/libpng-1.6.50/pngrtran.c",
+      "plist": "review_evidence/libpng_pretest_20261029/CodeChecker/reports/pngrtran.c_clangsa_f5f38971c9269f35fe0ef87c127856d5.plist",
+      "savedDiagnostics": 0,
+      "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c",
+      "plist": "review_evidence/libpng_pretest_20261029/CodeChecker/reports/pngrutil.c_clangsa_694fd6258772f20ce68f8ae98a3f57fe.plist",
+      "savedDiagnostics": 9,
+      "sha256": "e5701001784ffb1aed51d8f346633cdf3f3ec805718b579a18261a04620edd6e",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c",
+      "plist": "review_evidence/libpng_pretest_20261029/CodeChecker/reports/pngset.c_clangsa_e21e264f758e3597ca5b567d7238a209.plist",
+      "savedDiagnostics": 2,
+      "sha256": "09a2cd36aeeec2845bc8bea7e380889c0deccea03c1d2f6cf7ea6eba514e4f60",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/libpng-1.6.50/pngtrans.c",
+      "plist": "review_evidence/libpng_pretest_20261029/CodeChecker/reports/pngtrans.c_clangsa_6e76f244f69d65abca929eb98e3d70f9.plist",
+      "savedDiagnostics": 0,
+      "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwio.c",
+      "plist": "review_evidence/libpng_pretest_20261029/CodeChecker/reports/pngwio.c_clangsa_f7341068fe336927ef36d3d184bbef78.plist",
+      "savedDiagnostics": 0,
+      "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c",
+      "plist": "review_evidence/libpng_pretest_20261029/CodeChecker/reports/pngwrite.c_clangsa_e5c1f0d9517b98856f91d55255f77b94.plist",
+      "savedDiagnostics": 0,
+      "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwtran.c",
+      "plist": "review_evidence/libpng_pretest_20261029/CodeChecker/reports/pngwtran.c_clangsa_3eb7d4bfbbb3b0e4cf47ede8b0fb1eae.plist",
+      "savedDiagnostics": 3,
+      "sha256": "75db18b75b7c5011474d5ac0ed33eaf69ea7dedba5936b784c1ef9f3d9d72bd2",
+      "analyzer": "clangsa"
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c",
+      "plist": "review_evidence/libpng_pretest_20261029/CodeChecker/reports/pngwutil.c_clangsa_7bc55f8cd6412b565c7ef9bb181fb00f.plist",
+      "savedDiagnostics": 0,
+      "sha256": "c55f66335eb9eee2acad8350496a19b1bfea783974df8fd683df0734dd9a1179",
+      "analyzer": "clangsa"
+    }
+  ],
+  "versions": {
+    "CodeChecker": "6.29.1",
+    "clangsa": "18.1.3"
+  },
+  "checkerCatalog": {
+    "total": 146,
+    "enabled": 47,
+    "disabled": 99,
+    "meaning": "multi-language catalog,not C execution coverage"
+  },
+  "languageStandard": "GNU C17;original15commands have no explicit -std;recorded compiler_info default -std=gnu17",
+  "settings": {
+    "analyzers": [
+      "clangsa"
+    ],
+    "jobs": 1,
+    "timeoutPerActionSeconds": 120,
+    "compileUniqueing": "none",
+    "ctu": "off(default,no CTU option)",
+    "z3Refutation": "off(explicit)"
+  },
+  "backendArgvCapture": "outer command,original/result DB,compiler_info and fixed6.29.1 policy checked;per-action final backend argv not separately dumped",
+  "metrics": {
+    "wall_seconds": 37.75,
+    "user_seconds": 33.87,
+    "system_seconds": 1.78,
+    "max_rss_kib": 181140
+  },
+  "selfReportedAnalysisSeconds": 35.18,
+  "auxiliaryCost": "snapshot/status/ordinary parse outside GNU analysis timing;not separately measured",
+  "exitCodes": {
+    "analyze": 0,
+    "checkers": 0,
+    "status": 0,
+    "parse": 2
+  },
+  "parseExitMeaning": "2 means reports displayed,not analysis failure",
+  "startedUTC": "2026-10-28T22:34:09Z",
+  "endedUTC": "2026-10-28T22:34:46Z",
+  "missingOtherBackends": "clang-tidy/cppcheck/gcc/infer unselected;not selected-clangsa failures",
+  "candidateMeaning": "saved source diagnostics pending AI/source-evidence judgment;not14 confirmed defects or vulnerabilities",
+  "assistantReranAnalyzer": false,
+  "formalThirtyCells": "all not run",
+  "checks": {
+    "45OriginalsSizeAndSHA256Recomputed": true,
+    "25CurrentInputHashesMatch": true,
+    "599CompleteSourceFilesPreserved": true,
+    "ExecutedProfileAndIdentityListUnchanged": true,
+    "77FrozenPreparationFilesPreserved": true,
+    "Original15CommandsPreservedInResults": true,
+    "UniqueCommandsOnlyOmitOutputField": true,
+    "15Successful0Failed0Skipped": true,
+    "SuccessfulSourcesEqualActualDatabase": true,
+    "ActualOuterCommandMatchesMetadataAndPolicy": true,
+    "PinnedVersionsOnlyClangsa": true,
+    "Catalog146_47Enabled99DisabledMatchesMetadata": true,
+    "GNU17AndFixedCompilerTargetPreserved": true,
+    "15LegalPlistsMapExactlyTo15Sources": true,
+    "14SavedAndDisplayedMatchEveryPositionRuleMessage": true,
+    "RuleCounts8_2_3_1": true,
+    "DisplayedSeverity11High3Low": true,
+    "SameHashRetains3DistinctDeadStorePositions": true,
+    "SeparateExitCodes0_0_0_2": true,
+    "AuxiliaryAndAnalyzeStderrEmpty": true,
+    "AllSelectedResultsCurrent": true,
+    "NoFailureArtifacts": true,
+    "PinnedBackendNoLabelsOverride": true,
+    "GNUTimeRecordedMetricsMatchScreenshot": true,
+    "SelfReportedTimeSeparately35_18": true,
+    "AdditionalSameSystemOutputCheckPassed": true
+  },
+  "passedChecks": 26,
+  "totalChecks": 26
+}

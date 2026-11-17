@@ -1,0 +1,1 @@
+bash '/mnt/d/Project/COMP5355 Cyber and Internet Security/scripts/capture_environment.sh' /home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-FORM-P03-FF-001/environment

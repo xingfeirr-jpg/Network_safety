@@ -1,0 +1,13 @@
+array_list_new call:[array_list_new2] noreturn:[array_list_new2]
+array_list_new2 call:[free,malloc,sizeof]
+array_list_free call:[free,free_fn] noreturn:[free,free_fn]
+array_list_get_idx
+array_list_expand_internal call:[realloc,sizeof]
+array_list_shrink call:[array_list_expand_internal,realloc,sizeof] noreturn:[array_list_expand_internal]
+array_list_insert_idx call:[array_list_expand_internal,array_list_put_idx,memmove,sizeof] noreturn:[array_list_put_idx]
+array_list_put_idx call:[array_list_expand_internal,free_fn,memset,sizeof] noreturn:[free_fn,memset]
+array_list_add call:[array_list_expand_internal]
+array_list_sort call:[qsort,sizeof] noreturn:[qsort]
+array_list_bsearch call:[bsearch,sizeof] noreturn:[bsearch]
+array_list_length
+array_list_del_idx call:[free_fn,memmove,sizeof] noreturn:[free_fn]

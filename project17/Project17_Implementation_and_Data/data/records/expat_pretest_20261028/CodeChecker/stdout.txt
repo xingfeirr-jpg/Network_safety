@@ -1,0 +1,16 @@
+[INFO 2026-10-28 17:59:17] - Enabled checker list can be found in /home/yhong/comp5355/results/pretest-expat-2.7.1/PRE-P07-CC-001/reports/metadata.json
+[INFO 2026-10-28 17:59:17] - Starting static analysis ...
+[INFO 2026-10-28 17:59:28] - [1/3] clangsa analyzed xmlparse.c successfully.
+[INFO 2026-10-28 17:59:28] - [2/3] clangsa analyzed xmlrole.c successfully.
+[INFO 2026-10-28 17:59:32] - [3/3] clangsa analyzed xmltok.c successfully.
+[INFO 2026-10-28 17:59:32] - ----==== Summary ====----
+[INFO 2026-10-28 17:59:32] - Successfully analyzed
+[INFO 2026-10-28 17:59:32] -   clangsa: 3
+[INFO 2026-10-28 17:59:32] - Total analyzed compilation commands: 3
+[INFO 2026-10-28 17:59:32] - ----=================----
+[INFO 2026-10-28 17:59:32] - Analysis finished.
+[INFO 2026-10-28 17:59:32] - To view results in the terminal use the "CodeChecker parse" command.
+[INFO 2026-10-28 17:59:32] - To store results use the "CodeChecker store" command.
+[INFO 2026-10-28 17:59:32] - See --help and the user guide for further options about parsing and storing the reports.
+[INFO 2026-10-28 17:59:32] - ----=================----
+[INFO 2026-10-28 17:59:32] - Analysis length: 14.35 sec.

@@ -1,0 +1,20 @@
+{
+  "checkedOn": "2026-10-26",
+  "checks": {
+    "backgroundPreserved": true,
+    "formalAcceptanceAndResultsPreserved": true,
+    "tenSamplesPreserved": true,
+    "courseRequirementsPreserved": true,
+    "laterGuidePreserved": true,
+    "thirtyFormalCellsUnrun": true,
+    "validXmlAndTwentySixRows": true,
+    "sixteenWarningsUnreviewed": true,
+    "tenInformationSeparated": true,
+    "noFatalParsingErrorsRecorded": true,
+    "sourceHashesPreserved": true,
+    "cacheSnapshotHashesPreserved": true,
+    "localLinksResolve": true
+  },
+  "runId": "PRE-P03-CP-001",
+  "clangsaStatus": "not run"
+}

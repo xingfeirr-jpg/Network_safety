@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="11143457405283587154">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="9" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1922:1" call-funcname="yaml_emitter_emit" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="72" col="27" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1922:1" call-funcname="yaml_emitter_emit" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="98" col="27" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1922:1" call-funcname="yaml_emitter_emit" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="143" col="27" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1922:1" call-funcname="yaml_emitter_emit" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="149" col="27" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1922:1" call-funcname="yaml_emitter_emit" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="308" col="29" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1922:1" call-funcname="yaml_emitter_emit" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="331" col="29" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1922:1" call-funcname="yaml_emitter_emit" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="351" col="27" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1922:1" call-funcname="yaml_emitter_emit" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="359" col="27" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1922:1" call-funcname="yaml_emitter_emit" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="381" col="27" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1922:1" call-funcname="yaml_emitter_emit" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="390" col="27" call-argexpr="&amp;event" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1922:1" call-funcname="yaml_emitter_emit" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="308" col="12" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c:43:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1922:1" call-funcname="yaml_emitter_emit" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="331" col="12" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c:46:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1922:1" call-funcname="yaml_emitter_emit" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="351" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c:50:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:1922:1" call-funcname="yaml_emitter_emit" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="381" col="10" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c:54:1" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c:22:1" my-argnr="1" my-argname="emitter" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="171" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c:29:1" my-argnr="1" my-argname="emitter" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="209" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c:40:1" my-argnr="1" my-argname="emitter" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="266" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c:46:1" my-argnr="2" my-argname="node" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="322" col="42" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c:50:1" my-argnr="2" my-argname="node" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="345" col="36" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c:54:1" my-argnr="2" my-argname="node" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="375" col="36" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c:22:1" my-argnr="1" my-argname="emitter" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="171" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c:29:1" my-argnr="1" my-argname="emitter" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="209" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c:40:1" my-argnr="1" my-argname="emitter" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c" line="266" col="25" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="yaml_emitter_open" lineNumber="62"/>
+    <functiondecl functionName="yaml_emitter_close" lineNumber="86"/>
+    <functiondecl functionName="yaml_emitter_dump" lineNumber="112"/>
+    <functiondecl functionName="yaml_emitter_delete_document_and_anchors" lineNumber="167"/>
+    <functiondecl functionName="yaml_emitter_anchor_node" lineNumber="207"/>
+    <functiondecl functionName="yaml_emitter_generate_anchor" lineNumber="248"/>
+    <functiondecl functionName="yaml_emitter_dump_node" lineNumber="264"/>
+    <functiondecl functionName="yaml_emitter_dump_alias" lineNumber="301"/>
+    <functiondecl functionName="yaml_emitter_dump_scalar" lineNumber="316"/>
+    <functiondecl functionName="yaml_emitter_dump_sequence" lineNumber="339"/>
+    <functiondecl functionName="yaml_emitter_dump_mapping" lineNumber="369"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="YAML_ALIAS_EVENT"/>
+    <functioncall functionName="YAML_ANY_ENCODING"/>
+    <functioncall functionName="YAML_DOCUMENT_END_EVENT"/>
+    <functioncall functionName="YAML_DOCUMENT_START_EVENT"/>
+    <functioncall functionName="YAML_MAPPING_END_EVENT"/>
+    <functioncall functionName="YAML_MAPPING_START_EVENT"/>
+    <functioncall functionName="YAML_SCALAR_EVENT"/>
+    <functioncall functionName="YAML_SEQUENCE_END_EVENT"/>
+    <functioncall functionName="YAML_SEQUENCE_START_EVENT"/>
+    <functioncall functionName="YAML_STREAM_END_EVENT"/>
+    <functioncall functionName="YAML_STREAM_START_EVENT"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="error"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="sprintf"/>
+    <functioncall functionName="strcmp"/>
+    <functioncall functionName="yaml_document_delete"/>
+    <functioncall functionName="yaml_emitter_anchor_node"/>
+    <functioncall functionName="yaml_emitter_close"/>
+    <functioncall functionName="yaml_emitter_delete_document_and_anchors"/>
+    <functioncall functionName="yaml_emitter_dump_alias"/>
+    <functioncall functionName="yaml_emitter_dump_mapping"/>
+    <functioncall functionName="yaml_emitter_dump_node"/>
+    <functioncall functionName="yaml_emitter_dump_scalar"/>
+    <functioncall functionName="yaml_emitter_dump_sequence"/>
+    <functioncall functionName="yaml_emitter_emit"/>
+    <functioncall functionName="yaml_emitter_generate_anchor"/>
+    <functioncall functionName="yaml_emitter_open"/>
+    <functioncall functionName="yaml_free"/>
+    <functioncall functionName="yaml_malloc"/>
+  </FileInfo>
+</analyzerinfo>

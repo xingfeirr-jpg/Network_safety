@@ -1,0 +1,78 @@
+[INFO 2026-10-27 15:49:33] - Using '/usr/bin/clang-18' for analyzer 'clangsa'
+Found no defects in inffast.c
+Found no defects in zutil.c
+Found no defects in adler32.c
+Found no defects in inftrees.c
+Found no defects in inflate.c
+Found no defects in deflate.c
+[HIGH] /home/yhong/comp5355/sources/zlib-v1.3.2/gzwrite.c:303:44: Division by zero [core.DivideZero]
+    return len ? gz_write(state, buf, len) / size : 0;
+                                           ^
+
+[LOW] /home/yhong/comp5355/sources/zlib-v1.3.2/gzwrite.c:480:5: Value stored to 'ret' is never read [deadcode.DeadStores]
+    ret = gz_vacate(state);
+    ^
+
+Found 2 defect(s) in gzwrite.c
+
+[HIGH] /home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c:464:43: Division by zero [core.DivideZero]
+    return len ? gz_read(state, buf, len) / size : 0;
+                                          ^
+
+Found 1 defect(s) in gzread.c
+
+Found no defects in gzlib.c
+Found no defects in uncompr.c
+Found no defects in trees.c
+Found no defects in compress.c
+Found no defects in infback.c
+Found no defects in gzclose.c
+Found no defects in crc32.c
+
+----==== Severity Statistics ====----
+┌──────────┬───────────────────┐
+│ Severity │ Number of reports │
+├──────────┼───────────────────┤
+│ HIGH     │ 2                 │
+│ LOW      │ 1                 │
+└──────────┴───────────────────┘
+----=================----
+
+----==== Checker Statistics ====----
+┌─────────────────────┬──────────┬───────────────────┐
+│ Checker name        │ Severity │ Number of reports │
+├─────────────────────┼──────────┼───────────────────┤
+│ core.DivideZero     │ HIGH     │ 2                 │
+│ deadcode.DeadStores │ LOW      │ 1                 │
+└─────────────────────┴──────────┴───────────────────┘
+----=================----
+
+----==== File Statistics ====----
+┌───────────┬───────────────────┐
+│ File name │ Number of reports │
+├───────────┼───────────────────┤
+│ gzwrite.c │ 2                 │
+│ gzread.c  │ 1                 │
+└───────────┴───────────────────┘
+----=================----
+
+----======== Summary ========----
+┌───────────────────────────────────────────┬────┐
+│ Number of processed analyzer result files │ 15 │
+├───────────────────────────────────────────┼────┤
+│ Number of analyzer reports                │ 3  │
+└───────────────────────────────────────────┴────┘
+----=================----
+[INFO 2026-10-27 15:49:34] - ----==== Summary ====----
+[INFO 2026-10-27 15:49:34] - Up-to-date analysis results
+[INFO 2026-10-27 15:49:34] -   clangsa: 15
+[INFO 2026-10-27 15:49:34] - Outdated analysis results
+[INFO 2026-10-27 15:49:34] - Failed to analyze
+[INFO 2026-10-27 15:49:34] - Missing analysis results
+[INFO 2026-10-27 15:49:34] -   clang-tidy: 15
+[INFO 2026-10-27 15:49:34] -   cppcheck: 15
+[INFO 2026-10-27 15:49:34] -   gcc: 15
+[INFO 2026-10-27 15:49:34] -   infer: 15
+[INFO 2026-10-27 15:49:34] - Total analyzed compilation commands: 15
+[INFO 2026-10-27 15:49:34] - Total available compilation commands: 15
+[INFO 2026-10-27 15:49:34] - ----=================----

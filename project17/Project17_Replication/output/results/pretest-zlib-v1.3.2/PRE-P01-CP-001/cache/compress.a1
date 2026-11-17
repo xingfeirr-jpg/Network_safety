@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="17491225266552029934">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="268" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="434" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="460" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="466" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="494" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1903:21" call-funcname="deflateInit_" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c" line="42" col="11" call-argexpr="&amp;stream" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:254:21" call-funcname="deflate" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c" line="60" col="22" call-argexpr="&amp;stream" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:254:21" call-funcname="deflate" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c" line="60" col="22" call-argexpr="sourceLen?0:4" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:367:21" call-funcname="deflateEnd" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c" line="64" col="15" call-argexpr="&amp;stream" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1291:21" call-funcname="compress2_z" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c" line="71" col="22" call-argexpr="&amp;got" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1291:21" call-funcname="compress2_z" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c" line="71" col="11" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1288:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1291:21" call-funcname="compress2_z" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c" line="71" col="11" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1288:21" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1291:21" call-funcname="compress2_z" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c" line="79" col="12" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1273:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1291:21" call-funcname="compress2_z" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c" line="79" col="12" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1273:21" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1291:21" call-funcname="compress2_z" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c" line="79" col="12" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1273:21" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1288:21" call-funcname="compress2" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c" line="84" col="12" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1271:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1288:21" call-funcname="compress2" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c" line="84" col="12" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1271:21" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1288:21" call-funcname="compress2" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c" line="84" col="12" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1271:21" my-argnr="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1288:21" my-argnr="2" my-argname="destLen" file="/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c" line="70" col="21" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1288:21" my-argnr="2" my-argname="destLen" file="/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c" line="70" col="21" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="compress2"/>
+    <functioncall functionName="compress2_z"/>
+    <functioncall functionName="compressBound_z"/>
+    <functioncall functionName="deflate"/>
+    <functioncall functionName="deflateEnd"/>
+    <functioncall functionName="deflateInit_"/>
+    <functioncall functionName="off_t"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,23 @@
+[INFO 2026-10-28 11:24:21] - Using '/usr/bin/clang-18' for analyzer 'clangsa'
+Found no defects in yyjson.c
+
+----======== Summary ========----
+┌───────────────────────────────────────────┬───┐
+│ Number of processed analyzer result files │ 1 │
+├───────────────────────────────────────────┼───┤
+│ Number of analyzer reports                │ 0 │
+└───────────────────────────────────────────┴───┘
+----=================----
+[INFO 2026-10-28 11:24:21] - ----==== Summary ====----
+[INFO 2026-10-28 11:24:21] - Up-to-date analysis results
+[INFO 2026-10-28 11:24:21] -   clangsa: 1
+[INFO 2026-10-28 11:24:21] - Outdated analysis results
+[INFO 2026-10-28 11:24:21] - Failed to analyze
+[INFO 2026-10-28 11:24:21] - Missing analysis results
+[INFO 2026-10-28 11:24:21] -   clang-tidy: 1
+[INFO 2026-10-28 11:24:21] -   cppcheck: 1
+[INFO 2026-10-28 11:24:21] -   gcc: 1
+[INFO 2026-10-28 11:24:21] -   infer: 1
+[INFO 2026-10-28 11:24:21] - Total analyzed compilation commands: 1
+[INFO 2026-10-28 11:24:21] - Total available compilation commands: 1
+[INFO 2026-10-28 11:24:21] - ----=================----

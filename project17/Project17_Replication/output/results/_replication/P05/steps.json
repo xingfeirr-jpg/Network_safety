@@ -1,0 +1,41 @@
+{
+  "id": "P05",
+  "name": "json-c",
+  "version": "0.18",
+  "started_utc": "2026-11-08T02:56:10Z",
+  "S1": {
+    "archive": "/home/yhong/comp5355/downloads/json-c-0.18.tar.gz",
+    "sha256": "a090046b2d24901eb8dca4d370c28991299e8c7cfb698b44e09ce809b1ff20b4",
+    "expected_sha256": "a090046b2d24901eb8dca4d370c28991299e8c7cfb698b44e09ce809b1ff20b4",
+    "matches_original": true
+  },
+  "S2": {
+    "source_dir": "/home/yhong/comp5355/sources/json-c-0.18",
+    "regular_files": 239
+  },
+  "S3": {
+    "build_dir": "/home/yhong/comp5355/build/json-c-0.18",
+    "compile_actions": 14
+  },
+  "S5": {
+    "FF": {
+      "run_id": "PRE-P05-FF-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:56:20Z",
+      "ended_utc": "2026-11-08T02:56:21Z"
+    },
+    "CP": {
+      "run_id": "PRE-P05-CP-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:56:21Z",
+      "ended_utc": "2026-11-08T02:56:22Z"
+    },
+    "CC": {
+      "run_id": "PRE-P05-CC-001",
+      "exit_code": 0,
+      "started_utc": "2026-11-08T02:56:22Z",
+      "ended_utc": "2026-11-08T02:56:49Z"
+    }
+  },
+  "ended_utc": "2026-11-08T02:56:49Z"
+}

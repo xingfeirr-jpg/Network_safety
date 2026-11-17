@@ -1,0 +1,23 @@
+{
+  "project": "P06 yyjson",
+  "actions": 1,
+  "ninjaDependencyEntries": 90,
+  "projectFiles": [
+    {
+      "file": "/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c",
+      "localFile": "review_evidence/yyjson_pretest_20261028/inputs/source/src/yyjson.c",
+      "bytes": 410813,
+      "sha256": "ac2e9bbb2e2d9149d90878d40506a1d624fa0b33c979a11b61075c54782c6d6a"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h",
+      "localFile": "review_evidence/yyjson_pretest_20261028/inputs/source/src/yyjson.h",
+      "bytes": 322407,
+      "sha256": "175867c5493a5df648cec566717fa1c29aa2f6096f5f0cf1efad0b65e1f6d7b3"
+    }
+  ],
+  "projectFileCount": 2,
+  "systemDependencyEntries": 88,
+  "generatedCConfigHeaders": 0,
+  "nonCGeneratedFile": "yyjson.pc"
+}

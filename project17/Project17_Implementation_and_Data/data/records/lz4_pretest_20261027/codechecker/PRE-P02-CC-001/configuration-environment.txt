@@ -1,0 +1,2 @@
+CC_ANALYZER_BIN=clangsa:/usr/bin/clang-18
+CC_TEST_LABELS_DIR=<unset>

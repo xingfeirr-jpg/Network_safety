@@ -1,0 +1,20 @@
+[
+  {
+    "directory": "/home/yhong/comp5355/build/expat-2.7.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/expat-2.7.1 -I/home/yhong/comp5355/sources/expat-2.7.1/expat/lib   -fno-strict-aliasing -fvisibility=hidden -g -std=c99 -o CMakeFiles/expat.dir/lib/xmlparse.c.o -c /home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlparse.c",
+    "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlparse.c",
+    "output": "CMakeFiles/expat.dir/lib/xmlparse.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/expat-2.7.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/expat-2.7.1 -I/home/yhong/comp5355/sources/expat-2.7.1/expat/lib   -fno-strict-aliasing -fvisibility=hidden -g -std=c99 -o CMakeFiles/expat.dir/lib/xmlrole.c.o -c /home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c",
+    "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c",
+    "output": "CMakeFiles/expat.dir/lib/xmlrole.c.o"
+  },
+  {
+    "directory": "/home/yhong/comp5355/build/expat-2.7.1",
+    "command": "/usr/bin/clang-18 -I/home/yhong/comp5355/build/expat-2.7.1 -I/home/yhong/comp5355/sources/expat-2.7.1/expat/lib   -fno-strict-aliasing -fvisibility=hidden -g -std=c99 -o CMakeFiles/expat.dir/lib/xmltok.c.o -c /home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c",
+    "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c",
+    "output": "CMakeFiles/expat.dir/lib/xmltok.c.o"
+  }
+]

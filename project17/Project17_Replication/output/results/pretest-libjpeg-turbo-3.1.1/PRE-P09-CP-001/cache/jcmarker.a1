@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="16813530091876951154">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="73" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="126" column="0"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;qtbl==NULL&apos; is redundant or there is possible null pointer dereference: qtbl." verbose="Either the condition &apos;qtbl==NULL&apos; is redundant or there is possible null pointer dereference: qtbl." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="164" column="9" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="159" column="12" info="Assuming that condition &apos;qtbl==NULL&apos; is not redundant"/>
+            <symbol>qtbl</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;htbl==NULL&apos; is redundant or there is possible null pointer dereference: htbl." verbose="Either the condition &apos;htbl==NULL&apos; is redundant or there is possible null pointer dereference: htbl." cwe="476" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="207" column="8" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="204" column="12" info="Assuming that condition &apos;htbl==NULL&apos; is not redundant"/>
+            <symbol>htbl</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:115:1" call-funcname="emit_byte" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="378" col="12" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:115:1" call-funcname="emit_byte" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="384" col="12" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:115:1" call-funcname="emit_byte" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="385" col="12" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:138:1" call-funcname="emit_2bytes" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="419" col="14" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:138:1" call-funcname="emit_2bytes" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="420" col="14" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:115:1" call-funcname="emit_byte" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="429" col="14" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:191:1" call-funcname="emit_dht" call-argnr="3" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="583" col="17" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:191:1" call-funcname="emit_dht" call-argnr="3" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="636" col="17" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:115:1" call-funcname="emit_byte" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="132" col="3" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:129:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:115:1" call-funcname="emit_byte" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="141" col="3" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:138:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:129:1" call-funcname="emit_marker" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="281" col="3" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:278:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:129:1" call-funcname="emit_marker" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="296" col="3" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:290:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:129:1" call-funcname="emit_marker" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="326" col="3" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:320:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:129:1" call-funcname="emit_marker" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="370" col="3" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:355:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:129:1" call-funcname="emit_marker" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="409" col="3" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:390:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:115:1" call-funcname="emit_byte" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="459" col="3" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:456:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:129:1" call-funcname="emit_marker" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="610" col="3" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:608:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:129:1" call-funcname="emit_marker" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="626" col="3" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:622:1" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:115:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="118" col="39" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:151:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="155" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:229:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="243" col="19" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:475:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="477" col="41" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:500:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="506" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:563:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="565" col="41" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:503:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="657" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:115:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="118" col="39" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:151:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="155" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:229:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="243" col="19" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:475:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="477" col="41" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:500:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="506" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c:563:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="565" col="41" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:503:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c" line="657" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GETENV_S" lineNumber="79"/>
+    <functiondecl functionName="PUTENV_S" lineNumber="132"/>
+    <functiondecl functionName="emit_byte" lineNumber="115"/>
+    <functiondecl functionName="emit_marker" lineNumber="129"/>
+    <functiondecl functionName="emit_2bytes" lineNumber="138"/>
+    <functiondecl functionName="emit_dqt" lineNumber="151"/>
+    <functiondecl functionName="emit_dht" lineNumber="191"/>
+    <functiondecl functionName="emit_dac" lineNumber="229"/>
+    <functiondecl functionName="emit_dri" lineNumber="278"/>
+    <functiondecl functionName="emit_sof" lineNumber="290"/>
+    <functiondecl functionName="emit_sos" lineNumber="320"/>
+    <functiondecl functionName="emit_jfif_app0" lineNumber="355"/>
+    <functiondecl functionName="emit_adobe_app14" lineNumber="390"/>
+    <functiondecl functionName="write_marker_header" lineNumber="444"/>
+    <functiondecl functionName="write_marker_byte" lineNumber="456"/>
+    <functiondecl functionName="write_file_header" lineNumber="475"/>
+    <functiondecl functionName="write_frame_header" lineNumber="500"/>
+    <functiondecl functionName="write_scan_header" lineNumber="563"/>
+    <functiondecl functionName="write_file_trailer" lineNumber="608"/>
+    <functiondecl functionName="write_tables_only" lineNumber="622"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ERANGE"/>
+    <functioncall functionName="JERR_BAD_LENGTH"/>
+    <functioncall functionName="JERR_CANT_SUSPEND"/>
+    <functioncall functionName="JERR_IMAGE_TOO_BIG"/>
+    <functioncall functionName="JERR_NO_HUFF_TABLE"/>
+    <functioncall functionName="JERR_NO_QUANT_TABLE"/>
+    <functioncall functionName="JTRC_16BIT_TABLES"/>
+    <functioncall functionName="M_APP0"/>
+    <functioncall functionName="M_APP14"/>
+    <functioncall functionName="M_DAC"/>
+    <functioncall functionName="M_DHT"/>
+    <functioncall functionName="M_DQT"/>
+    <functioncall functionName="M_DRI"/>
+    <functioncall functionName="M_EOI"/>
+    <functioncall functionName="M_SOF0"/>
+    <functioncall functionName="M_SOF1"/>
+    <functioncall functionName="M_SOF10"/>
+    <functioncall functionName="M_SOF2"/>
+    <functioncall functionName="M_SOF3"/>
+    <functioncall functionName="M_SOF9"/>
+    <functioncall functionName="M_SOI"/>
+    <functioncall functionName="M_SOS"/>
+    <functioncall functionName="emit_2bytes"/>
+    <functioncall functionName="emit_adobe_app14"/>
+    <functioncall functionName="emit_byte"/>
+    <functioncall functionName="emit_dac"/>
+    <functioncall functionName="emit_dht"/>
+    <functioncall functionName="emit_dqt"/>
+    <functioncall functionName="emit_dri"/>
+    <functioncall functionName="emit_jfif_app0"/>
+    <functioncall functionName="emit_marker"/>
+    <functioncall functionName="emit_sof"/>
+    <functioncall functionName="emit_sos"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="getenv"/>
+    <functioncall functionName="setenv"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="write_file_header"/>
+    <functioncall functionName="write_file_trailer"/>
+    <functioncall functionName="write_frame_header"/>
+    <functioncall functionName="write_marker_byte"/>
+    <functioncall functionName="write_marker_header"/>
+    <functioncall functionName="write_scan_header"/>
+    <functioncall functionName="write_tables_only"/>
+  </FileInfo>
+</analyzerinfo>

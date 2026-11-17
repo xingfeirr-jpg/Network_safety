@@ -1,0 +1,23 @@
+	Command being timed: "/home/yhong/comp5355/.venv/bin/flawfinder --minlevel=1 --neverignore --columns --context /home/yhong/comp5355/sources/zlib-v1.3.2/adler32.c /home/yhong/comp5355/sources/zlib-v1.3.2/compress.c /home/yhong/comp5355/sources/zlib-v1.3.2/crc32.c /home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c /home/yhong/comp5355/sources/zlib-v1.3.2/gzclose.c /home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c /home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c /home/yhong/comp5355/sources/zlib-v1.3.2/gzwrite.c /home/yhong/comp5355/sources/zlib-v1.3.2/inflate.c /home/yhong/comp5355/sources/zlib-v1.3.2/infback.c /home/yhong/comp5355/sources/zlib-v1.3.2/inftrees.c /home/yhong/comp5355/sources/zlib-v1.3.2/inffast.c /home/yhong/comp5355/sources/zlib-v1.3.2/trees.c /home/yhong/comp5355/sources/zlib-v1.3.2/uncompr.c /home/yhong/comp5355/sources/zlib-v1.3.2/zutil.c /home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h /home/yhong/comp5355/sources/zlib-v1.3.2/crc32.h /home/yhong/comp5355/sources/zlib-v1.3.2/deflate.h /home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h /home/yhong/comp5355/sources/zlib-v1.3.2/inffast.h /home/yhong/comp5355/sources/zlib-v1.3.2/inffixed.h /home/yhong/comp5355/sources/zlib-v1.3.2/inflate.h /home/yhong/comp5355/sources/zlib-v1.3.2/inftrees.h /home/yhong/comp5355/sources/zlib-v1.3.2/trees.h /home/yhong/comp5355/sources/zlib-v1.3.2/zutil.h /home/yhong/comp5355/build/zlib-v1.3.2/zconf.h"
+	User time (seconds): 0.16
+	System time (seconds): 0.02
+	Percent of CPU this job got: 101%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.18
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 21988
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3110
+	Voluntary context switches: 2
+	Involuntary context switches: 2
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

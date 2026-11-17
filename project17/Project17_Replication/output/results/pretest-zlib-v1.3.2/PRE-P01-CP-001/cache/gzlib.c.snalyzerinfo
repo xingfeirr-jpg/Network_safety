@@ -1,0 +1,18 @@
+gz_reset call:[gz_error]
+gz_open call:[free,gz_reset,lseek,malloc,open,return,sizeof,snprintf,strlen] noreturn:[open,snprintf]
+gzopen call:[gz_open] noreturn:[gz_open]
+gzopen64 call:[gz_open] noreturn:[gz_open]
+gzdopen call:[free,gz_open,malloc,sizeof,snprintf]
+gzbuffer
+gzrewind call:[gz_reset,lseek]
+gzseek64 call:[gz_error,gz_intmax,gzrewind,lseek,sizeof]
+gzseek call:[gzseek64]
+gztell64
+gztell call:[gztell64]
+gzoffset64 call:[lseek]
+gzoffset call:[gzoffset64]
+gzeof
+gzerror
+gzclearerr call:[gz_error] noreturn:[gz_error]
+gz_error call:[free,malloc,snprintf,strlen] noreturn:[free,snprintf]
+gz_intmax

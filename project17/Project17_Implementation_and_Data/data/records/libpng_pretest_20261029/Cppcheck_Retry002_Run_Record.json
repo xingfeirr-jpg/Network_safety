@@ -1,0 +1,104 @@
+{
+  "status": "passed_effective_functional_pretest",
+  "verifiedClientDate": "2026-10-29",
+  "project": "P08 libpng",
+  "version": "1.6.50",
+  "runId": "PRE-P08-CP-002",
+  "purpose": "functional pretest;not formal comparison",
+  "rawFiles": 44,
+  "inputHashEntries": 26,
+  "intendedActions": 15,
+  "succeededActions": 15,
+  "failedActions": 0,
+  "skippedActions": 0,
+  "coverageMeaning": "all15 intended C translation units processed under fixed builtin/C11/normal policy;not exhaustive path coverage",
+  "xmlDiagnosticElements": 17,
+  "sourceCandidates": 0,
+  "informationElements": 17,
+  "bySeverity": {
+    "information": 17
+  },
+  "byRule": {
+    "missingIncludeSystem": 16,
+    "checkersReport": 1
+  },
+  "dependencyHeaderResolution": {
+    "projectMissingInclude": 0,
+    "zlibHToZconfHIncludeChain": true,
+    "zconfLocationsObserved": [
+      {
+        "file": "/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h",
+        "line": "268",
+        "column": "0"
+      },
+      {
+        "file": "/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h",
+        "line": "434",
+        "column": "0"
+      },
+      {
+        "file": "/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h",
+        "line": "460",
+        "column": "0"
+      },
+      {
+        "file": "/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h",
+        "line": "466",
+        "column": "0"
+      },
+      {
+        "file": "/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h",
+        "line": "494",
+        "column": "0"
+      }
+    ],
+    "all15CachedAnalyzerinfoHaveZconfLocations": true
+  },
+  "metrics": {
+    "wall_seconds": 79.24,
+    "user_seconds": 79.04,
+    "system_seconds": 0.11,
+    "max_rss_kib": 60592
+  },
+  "metricsMeaning": "complete Cppcheck call;GNU time RSS,not whole-tree sum;single observation",
+  "exitCode": 0,
+  "startedUTC": "2026-10-28T22:16:00Z",
+  "endedUTC": "2026-10-28T22:17:19Z",
+  "startedAsiaShanghai": "2026-10-29 06:16:00 +08:00",
+  "endedAsiaShanghai": "2026-10-29 06:17:19 +08:00",
+  "activeCheckersSelfReported": "79/592;not code coverage",
+  "previousAttempt": "PRE-P08-CP-001 retained input incomplete;not used as effective result",
+  "actualBuildStandard": "GNU C17",
+  "analysisStandard": "Cppcheck C11 model;difference disclosed",
+  "sourceRiskReviewPerformed": false,
+  "threeToolCandidateTotal": null,
+  "otherScannersNotRun": {
+    "PRE-P08-FF-001": false,
+    "PRE-P08-CC-001": false
+  },
+  "assistantReranAnalyzer": false,
+  "checks": {
+    "44RawFilesExact": true,
+    "ActualCommandProfileAnd26InputSnapshotsMatch": true,
+    "26CurrentInputHashesMatch": true,
+    "ExecutedDerivedDatabaseAndAuditExact": true,
+    "599FullSourceIdentityUnchanged": true,
+    "ValidOriginalXML2Cppcheck2130": true,
+    "17ElementsInformationOnly": true,
+    "NoProjectMissingIncludeOrCriticalDiagnostics": true,
+    "FixedZconfActuallyRead": true,
+    "FixedZlibIncludesZconf": true,
+    "All15ActionsOnlyIncludeClassificationAdapted": true,
+    "15ProgressAndCacheEntriesMatchDB": true,
+    "15AnalyzerinfoAndNonemptySnalyzerinfo": true,
+    "All15CachedFilesHaveDependencyHeaderReadEvidence": true,
+    "NoCriticalErrorsAllFilesChecked": true,
+    "ToolAndGNUTimeExit0": true,
+    "MetricsMatch": true,
+    "MeasurementV1Fresh002Cache": true,
+    "CodeCheckerAndFlawfinderNotRun": true
+  },
+  "passedChecks": 19,
+  "totalChecks": 19,
+  "formalThirtyCells": "all not run"
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="3796688966140515398">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="73" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="126" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="29" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:54:14" call-funcname="jpeg_make_d_derived_tbl" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="173" col="30" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="329" col="7" call-argexpr="&amp;br_state" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="4" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="329" col="7" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:247:13" call-funcname="jpeg_huff_decode" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="329" col="7" call-argexpr="&amp;br_state" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="331" col="9" call-argexpr="&amp;(br_state)" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="404" col="9" call-argexpr="&amp;br_state" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="4" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="404" col="9" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:247:13" call-funcname="jpeg_huff_decode" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="404" col="9" call-argexpr="&amp;br_state" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="409" col="11" call-argexpr="&amp;(br_state)" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="420" col="15" call-argexpr="&amp;(br_state)" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="480" col="5" call-argexpr="&amp;(br_state)" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="3" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="480" col="5" call-argexpr="bits_left" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="480" col="5" info="Assuming that condition &apos;bits_left&lt;1&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="549" col="9" call-argexpr="&amp;br_state" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="4" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="549" col="9" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:247:13" call-funcname="jpeg_huff_decode" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="549" col="9" call-argexpr="&amp;br_state" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="555" col="11" call-argexpr="&amp;(br_state)" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="3" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="555" col="11" call-argexpr="bits_left" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="555" col="11" info="Assuming that condition &apos;bits_left&lt;1&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="564" col="15" call-argexpr="&amp;(br_state)" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="579" col="13" call-argexpr="&amp;(br_state)" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="3" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="579" col="13" call-argexpr="bits_left" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="579" col="13" info="Assuming that condition &apos;bits_left&lt;1&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="613" col="11" call-argexpr="&amp;(br_state)" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h:178:17" call-funcname="jpeg_fill_bit_buffer" call-argnr="3" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="613" col="11" call-argexpr="bits_left" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="613" col="11" info="Assuming that condition &apos;bits_left&lt;1&apos; is not redundant"/>
+</function-call>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c:82:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="84" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c:232:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="234" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c:67:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="292" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c:69:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="368" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c:71:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="454" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c:73:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="504" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:540:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="660" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c:82:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="84" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c:232:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="234" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c:67:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="292" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c:69:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="368" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c:71:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="454" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c:73:20" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="504" col="50" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h:540:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c" line="660" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GETENV_S" lineNumber="79"/>
+    <functiondecl functionName="PUTENV_S" lineNumber="132"/>
+    <functiondecl functionName="start_pass_phuff_decoder" lineNumber="82"/>
+    <functiondecl functionName="process_restart" lineNumber="232"/>
+    <functiondecl functionName="decode_mcu_DC_first" lineNumber="290"/>
+    <functiondecl functionName="decode_mcu_AC_first" lineNumber="366"/>
+    <functiondecl functionName="decode_mcu_DC_refine" lineNumber="452"/>
+    <functiondecl functionName="decode_mcu_AC_refine" lineNumber="502"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ERANGE"/>
+    <functioncall functionName="JERR_BAD_DCT_COEF"/>
+    <functioncall functionName="JERR_BAD_PROGRESSION"/>
+    <functioncall functionName="JWRN_BOGUS_PROGRESSION"/>
+    <functioncall functionName="JWRN_HUFF_BAD_CODE"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="decode_mcu_AC_first"/>
+    <functioncall functionName="decode_mcu_AC_refine"/>
+    <functioncall functionName="decode_mcu_DC_first"/>
+    <functioncall functionName="decode_mcu_DC_refine"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="getenv"/>
+    <functioncall functionName="jpeg_fill_bit_buffer"/>
+    <functioncall functionName="jpeg_huff_decode"/>
+    <functioncall functionName="jpeg_make_d_derived_tbl"/>
+    <functioncall functionName="label1"/>
+    <functioncall functionName="label2"/>
+    <functioncall functionName="label3"/>
+    <functioncall functionName="process_restart"/>
+    <functioncall functionName="setenv"/>
+    <functioncall functionName="start_pass_phuff_decoder"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="undoit"/>
+  </FileInfo>
+</analyzerinfo>

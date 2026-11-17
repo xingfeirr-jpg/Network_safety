@@ -1,0 +1,92 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/SRC-P06-001/extract-command.txt",
+    "localRelative": "source/extract-command.txt",
+    "bytes": 162,
+    "sha256": "2d41556c02a270536f9e11e088b06b04c4b02cd3000a5c850f41f145f838ac24"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/SRC-P06-001/extract-exit-code.txt",
+    "localRelative": "source/extract-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/SRC-P06-001/extract-stderr.txt",
+    "localRelative": "source/extract-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/SRC-P06-001/extract-stdout.txt",
+    "localRelative": "source/extract-stdout.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/SRC-P06-001/input-files.sha256",
+    "localRelative": "source/input-files.sha256",
+    "bytes": 690,
+    "sha256": "b1202642fc6df2d7aa7513047665614d9dabe1750827d62615fdddf186098f21"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/SRC-P06-001/source-check.json",
+    "localRelative": "source/source-check.json",
+    "bytes": 243429,
+    "sha256": "ee1285fc66b1efe1c5e153566466ecf4cf32602cb5f2c6c63b67068672997460"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/SRC-P06-001/source-meta.tsv",
+    "localRelative": "source/source-meta.tsv",
+    "bytes": 261,
+    "sha256": "8f05bc02caacee5c725486b75e9da3d8f512586306b18e2038f335bed8a33661"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/SRC-P06-001/verify-command.txt",
+    "localRelative": "source/verify-command.txt",
+    "bytes": 473,
+    "sha256": "a2aa39f70980a257df450706f58009d9a740e161507858536269fb5afafb8a5b"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/SRC-P06-001/verify-exit-code.txt",
+    "localRelative": "source/verify-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/SRC-P06-001/verify-stderr.txt",
+    "localRelative": "source/verify-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/SRC-P06-001/verify-stdout.txt",
+    "localRelative": "source/verify-stdout.txt",
+    "bytes": 1153,
+    "sha256": "0401767b2ddd5f78992645e7c6e57015b44c4e60b4a2b702805ac28913a6f071"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/yyjson-0.12.0/CMakeLists.txt",
+    "localRelative": "inputs/source/CMakeLists.txt",
+    "bytes": 21420,
+    "sha256": "feac682b7467fa5e057d530e99c945707328d65119777af1006fc8f6ee7d85ca"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/yyjson-0.12.0/LICENSE",
+    "localRelative": "inputs/source/LICENSE",
+    "bytes": 1084,
+    "sha256": "45e384d3d52c73cba3a64d6e6c25d47cd738cd8a55c30629e3201046eda62947"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.c",
+    "localRelative": "inputs/source/src/yyjson.c",
+    "bytes": 410813,
+    "sha256": "ac2e9bbb2e2d9149d90878d40506a1d624fa0b33c979a11b61075c54782c6d6a"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/sources/yyjson-0.12.0/src/yyjson.h",
+    "localRelative": "inputs/source/src/yyjson.h",
+    "bytes": 322407,
+    "sha256": "175867c5493a5df648cec566717fa1c29aa2f6096f5f0cf1efad0b65e1f6d7b3"
+  }
+]

@@ -1,0 +1,7 @@
+/home/yhong/comp5355/sources/zlib-v1.3.2/gzwrite.c:303:44: warning: Division by zero [core.DivideZero]
+  303 |     return len ? gz_write(state, buf, len) / size : 0;
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/yhong/comp5355/sources/zlib-v1.3.2/gzwrite.c:480:5: warning: Value stored to 'ret' is never read [deadcode.DeadStores]
+  480 |     ret = gz_vacate(state);
+      |     ^     ~~~~~~~~~~~~~~~~
+2 warnings generated.

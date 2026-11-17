@@ -1,0 +1,100 @@
+{
+  "runId": "PRE-P01-CC-001",
+  "purpose": "functional pretest",
+  "coverageValidation": "pending_tool_output_review",
+  "sourceReview": "not performed",
+  "auxiliaryTiming": "checkers and both parse commands outside analysis timing; not measured",
+  "metadataTools": [
+    {
+      "actionNum": 15,
+      "clangsaStatistics": {
+        "failed": 0,
+        "failed_sources": [],
+        "successful": 15,
+        "successful_sources": [
+          "/home/yhong/comp5355/sources/zlib-v1.3.2/adler32.c",
+          "/home/yhong/comp5355/sources/zlib-v1.3.2/compress.c",
+          "/home/yhong/comp5355/sources/zlib-v1.3.2/crc32.c",
+          "/home/yhong/comp5355/sources/zlib-v1.3.2/deflate.c",
+          "/home/yhong/comp5355/sources/zlib-v1.3.2/gzclose.c",
+          "/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c",
+          "/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c",
+          "/home/yhong/comp5355/sources/zlib-v1.3.2/gzwrite.c",
+          "/home/yhong/comp5355/sources/zlib-v1.3.2/inflate.c",
+          "/home/yhong/comp5355/sources/zlib-v1.3.2/infback.c",
+          "/home/yhong/comp5355/sources/zlib-v1.3.2/inftrees.c",
+          "/home/yhong/comp5355/sources/zlib-v1.3.2/inffast.c",
+          "/home/yhong/comp5355/sources/zlib-v1.3.2/trees.c",
+          "/home/yhong/comp5355/sources/zlib-v1.3.2/uncompr.c",
+          "/home/yhong/comp5355/sources/zlib-v1.3.2/zutil.c"
+        ],
+        "version": "18.1.3"
+      },
+      "skipped": 0
+    }
+  ],
+  "plistResults": [
+    {
+      "file": "reports/adler32.c_clangsa_81b5eb54ff157e97240655eeb78a9b9e.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/compress.c_clangsa_14070b83727aae92dc813b462716130c.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/crc32.c_clangsa_c288f226214ec2c82d91e7a858d67f1a.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/deflate.c_clangsa_ea88c050d3bf20f2622d85221f8d31f0.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/gzclose.c_clangsa_b89d2f105af38122815a90156116cca5.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/gzlib.c_clangsa_7706fcd2dd185117f6dd4c0f301f2d11.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/gzread.c_clangsa_479d573cdadb744e9d6b6415356ed4af.plist",
+      "savedDiagnostics": 1
+    },
+    {
+      "file": "reports/gzwrite.c_clangsa_53315e2272f08694c785b09b48b5f47d.plist",
+      "savedDiagnostics": 2
+    },
+    {
+      "file": "reports/infback.c_clangsa_d32b797ecb427dd65f0e8362b34cc41f.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/inffast.c_clangsa_97d7ad0daa793940b2ace72aa6d699f7.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/inflate.c_clangsa_78f7a566bd60465b639cfdbb5e141563.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/inftrees.c_clangsa_1177ee4819b5ea22c103573eef11aff3.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/trees.c_clangsa_cf0d1c159c9eb8d5d1cfbb501c4a8030.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/uncompr.c_clangsa_5a8566e7144290348a536b95bd8ccb6d.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/zutil.c_clangsa_497051d11ed6bc56298221202de33d17.plist",
+      "savedDiagnostics": 0
+    }
+  ],
+  "plistFileCount": 15,
+  "savedPlistDiagnostics": 3
+}

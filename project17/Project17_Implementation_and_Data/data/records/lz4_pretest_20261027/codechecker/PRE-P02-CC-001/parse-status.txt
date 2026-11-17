@@ -1,0 +1,14 @@
+[INFO 2026-10-27 18:29:03] - Using '/usr/bin/clang-18' for analyzer 'clangsa'
+[INFO 2026-10-27 18:29:04] - ----==== Summary ====----
+[INFO 2026-10-27 18:29:04] - Up-to-date analysis results
+[INFO 2026-10-27 18:29:04] -   clangsa: ['/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c'] (5)
+[INFO 2026-10-27 18:29:04] - Outdated analysis results
+[INFO 2026-10-27 18:29:04] - Failed to analyze
+[INFO 2026-10-27 18:29:04] - Missing analysis results
+[INFO 2026-10-27 18:29:04] -   clang-tidy: ['/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c'] (5)
+[INFO 2026-10-27 18:29:04] -   cppcheck: ['/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c'] (5)
+[INFO 2026-10-27 18:29:04] -   gcc: ['/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c'] (5)
+[INFO 2026-10-27 18:29:04] -   infer: ['/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c', '/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c'] (5)
+[INFO 2026-10-27 18:29:04] - Total analyzed compilation commands: 5
+[INFO 2026-10-27 18:29:04] - Total available compilation commands: 5
+[INFO 2026-10-27 18:29:04] - ----=================----

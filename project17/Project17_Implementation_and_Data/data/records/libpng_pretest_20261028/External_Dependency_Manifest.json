@@ -1,0 +1,18 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/dependency/include/zconf.h",
+    "category": "dependency_header",
+    "codeOwner": "P01 zlib",
+    "bytes": 17026,
+    "sha256": "f01d3d9b52603c88660ae89141f1e0ba61774c0718c8b3f77a2410d84b558421"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/deps/zlib-v1.3.2/include/zlib.h",
+    "localFile": "review_evidence/libpng_pretest_20261028/inputs/dependency/include/zlib.h",
+    "category": "dependency_header",
+    "codeOwner": "P01 zlib",
+    "bytes": 103848,
+    "sha256": "818667d6ab6a37fe7469cb06a7f0cb2c2cb2f2c948a03e5accf1a4a74bf3020a"
+  }
+]

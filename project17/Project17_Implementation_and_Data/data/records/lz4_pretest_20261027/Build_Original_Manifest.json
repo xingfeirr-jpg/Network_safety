@@ -1,0 +1,164 @@
+[
+  {
+    "relativePath": "results/pretest-lz4-v1.10.0/preparation/PREP-P02-001/build-command.txt",
+    "bytes": 87,
+    "sha256": "7290ad25b5eebb750abc5d2256bee1887644d94bfdcd2e6ab0c4e504a0849da0",
+    "localFile": "review_evidence/lz4_pretest_20261027/preparation/PREP-P02-001/build-command.txt"
+  },
+  {
+    "relativePath": "results/pretest-lz4-v1.10.0/preparation/PREP-P02-001/build-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "localFile": "review_evidence/lz4_pretest_20261027/preparation/PREP-P02-001/build-exit-code.txt"
+  },
+  {
+    "relativePath": "results/pretest-lz4-v1.10.0/preparation/PREP-P02-001/build-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "localFile": "review_evidence/lz4_pretest_20261027/preparation/PREP-P02-001/build-stderr.txt"
+  },
+  {
+    "relativePath": "results/pretest-lz4-v1.10.0/preparation/PREP-P02-001/build-stdout.txt",
+    "bytes": 564,
+    "sha256": "31b96e13119f9bb16a25915e22935d07810980e2e2f13233968a8561ff482551",
+    "localFile": "review_evidence/lz4_pretest_20261027/preparation/PREP-P02-001/build-stdout.txt"
+  },
+  {
+    "relativePath": "results/pretest-lz4-v1.10.0/preparation/PREP-P02-001/build-time.txt",
+    "bytes": 805,
+    "sha256": "99fcd3e25a6f5e07dad3a6226034c411e4ce75c0bcbcd320976be5ac0e0ff22e",
+    "localFile": "review_evidence/lz4_pretest_20261027/preparation/PREP-P02-001/build-time.txt"
+  },
+  {
+    "relativePath": "results/pretest-lz4-v1.10.0/preparation/PREP-P02-001/configure-command.txt",
+    "bytes": 366,
+    "sha256": "cd31a78b8c6831a21c8053c52b7b2e0fcd41d136c7b96fd1f764dc948cfce7e2",
+    "localFile": "review_evidence/lz4_pretest_20261027/preparation/PREP-P02-001/configure-command.txt"
+  },
+  {
+    "relativePath": "results/pretest-lz4-v1.10.0/preparation/PREP-P02-001/configure-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "localFile": "review_evidence/lz4_pretest_20261027/preparation/PREP-P02-001/configure-exit-code.txt"
+  },
+  {
+    "relativePath": "results/pretest-lz4-v1.10.0/preparation/PREP-P02-001/configure-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "localFile": "review_evidence/lz4_pretest_20261027/preparation/PREP-P02-001/configure-stderr.txt"
+  },
+  {
+    "relativePath": "results/pretest-lz4-v1.10.0/preparation/PREP-P02-001/configure-stdout.txt",
+    "bytes": 1377,
+    "sha256": "46ebc696fd3d6e8f07eac137251c849caa4077d771f3f43d69a7aacafe197400",
+    "localFile": "review_evidence/lz4_pretest_20261027/preparation/PREP-P02-001/configure-stdout.txt"
+  },
+  {
+    "relativePath": "results/pretest-lz4-v1.10.0/preparation/PREP-P02-001/configure-time.txt",
+    "bytes": 1086,
+    "sha256": "3730318f72d14b0ba6ae52c7113211c5920b73f9bb74dbb24432adfb260d41cc",
+    "localFile": "review_evidence/lz4_pretest_20261027/preparation/PREP-P02-001/configure-time.txt"
+  },
+  {
+    "relativePath": "results/pretest-lz4-v1.10.0/preparation/PREP-P02-001/environment-start.txt",
+    "bytes": 1502,
+    "sha256": "89d944dadcb6885218c26d0e4aa25de44a407f17d4ce7fd652dbdc37e494ab14",
+    "localFile": "review_evidence/lz4_pretest_20261027/preparation/PREP-P02-001/environment-start.txt"
+  },
+  {
+    "relativePath": "results/pretest-lz4-v1.10.0/preparation/PREP-P02-001/preparation-meta.txt",
+    "bytes": 255,
+    "sha256": "e60c17bc0c78023eb87061278f12b3aeb4da6b1bea8528c8d3534879c226afb2",
+    "localFile": "review_evidence/lz4_pretest_20261027/preparation/PREP-P02-001/preparation-meta.txt"
+  },
+  {
+    "relativePath": "results/pretest-lz4-v1.10.0/preparation/PREP-P02-001/preparation-script.sha256",
+    "bytes": 147,
+    "sha256": "45d6242ce00d6162e01d43a840ff41c95b1c67a65f7071ebfbcd31cfd52f0217",
+    "localFile": "review_evidence/lz4_pretest_20261027/preparation/PREP-P02-001/preparation-script.sha256"
+  },
+  {
+    "relativePath": "results/pretest-lz4-v1.10.0/preparation/PREP-P02-001/source-before-build.sha256",
+    "bytes": 2074,
+    "sha256": "b2e5dfd8ad11832a1abd9212c9ab011aab10b2cfaea976c68ce4995b3d65e8c6",
+    "localFile": "review_evidence/lz4_pretest_20261027/preparation/PREP-P02-001/source-before-build.sha256"
+  },
+  {
+    "relativePath": "environment/session-20261027T100151-22994/recording-scripts.sha256",
+    "bytes": 290,
+    "sha256": "f6f8d6294677df8df08f12a1c3530bfac21a5ea2fe38274ee9acc6a861a31de5",
+    "localFile": "review_evidence/environment_20261027/session-20261027T100151-22994/recording-scripts.sha256"
+  },
+  {
+    "relativePath": "environment/session-20261027T100151-22994/system.txt",
+    "bytes": 6403,
+    "sha256": "4d74530725d9f07fc083f1c81e735a734ae78a1203025ad0e191a1a3a2c80f4d",
+    "localFile": "review_evidence/environment_20261027/session-20261027T100151-22994/system.txt"
+  },
+  {
+    "relativePath": "environment/session-20261027T100151-22994/time-binary.sha256",
+    "bytes": 80,
+    "sha256": "53657e86cac996a537975f1d42d31ff35e26d2eb8ec42bd97be2291124f2f840",
+    "localFile": "review_evidence/environment_20261027/session-20261027T100151-22994/time-binary.sha256"
+  },
+  {
+    "relativePath": "environment/session-20261027T100151-22994/time-package.txt",
+    "bytes": 19,
+    "sha256": "49460f22ef48737103328d157c9a1bd442a70a329cd9035dee3e0061e37cf187",
+    "localFile": "review_evidence/environment_20261027/session-20261027T100151-22994/time-package.txt"
+  },
+  {
+    "relativePath": "environment/session-20261027T100151-22994/time-version.txt",
+    "bytes": 336,
+    "sha256": "a3b64288a651d40a18a243c43c871f7ae2886baa58b7e3c64a1061bfd651245f",
+    "localFile": "review_evidence/environment_20261027/session-20261027T100151-22994/time-version.txt"
+  },
+  {
+    "relativePath": "environment/session-20261027T100151-22994/tool-versions.txt",
+    "bytes": 2964,
+    "sha256": "0b52c82be5185634516844e9f21d19ee4f7eb34e53ba7cdf30a1a45c29866b8a",
+    "localFile": "review_evidence/environment_20261027/session-20261027T100151-22994/tool-versions.txt"
+  },
+  {
+    "relativePath": "build/lz4-v1.10.0/compile_commands.json",
+    "bytes": 3233,
+    "sha256": "659c4862568d2d880f24f8f829ba3755606925a87e5c348c5e65c7e1f286df48",
+    "localFile": "review_evidence/lz4_pretest_20261027/build/compile_commands.json"
+  },
+  {
+    "relativePath": "build/lz4-v1.10.0/CMakeCache.txt",
+    "bytes": 18977,
+    "sha256": "293ec9534c46ddb232a6f46d434861d05b0f7bf367c02d5134cca856a5eb00f8",
+    "localFile": "review_evidence/lz4_pretest_20261027/build/CMakeCache.txt"
+  },
+  {
+    "relativePath": "build/lz4-v1.10.0/build.ninja",
+    "bytes": 23105,
+    "sha256": "98b9625a41bab259daa69f2d567b3f384e7ef2ea38d0dc977460f0746691cd36",
+    "localFile": "review_evidence/lz4_pretest_20261027/build/build.ninja"
+  },
+  {
+    "relativePath": "build/lz4-v1.10.0/liblz4.a",
+    "bytes": 1196690,
+    "sha256": "a69dce9a89dbbc9f1821620689daed6b1b0e59984b0f8275071dea75d84f5bed",
+    "localFile": "review_evidence/lz4_pretest_20261027/build/liblz4.a"
+  },
+  {
+    "relativePath": "build/lz4-v1.10.0/.ninja_log",
+    "bytes": 696,
+    "sha256": "a27b360dfa3e178d2dd587029bc49f08e487c9f238cc3f758a003d4ee1a586ee",
+    "localFile": "review_evidence/lz4_pretest_20261027/build/.ninja_log"
+  },
+  {
+    "relativePath": "build/lz4-v1.10.0/.ninja_deps",
+    "bytes": 6996,
+    "sha256": "89e19122e2e167cbed3b8f19b807747f13fb9dc5846e3df6a28825e7f1f78d32",
+    "localFile": "review_evidence/lz4_pretest_20261027/build/.ninja_deps"
+  },
+  {
+    "relativePath": "build/lz4-v1.10.0/CMakeFiles/3.28.3/CMakeCCompiler.cmake",
+    "bytes": 2567,
+    "sha256": "f1d3a6d844d61d1297a5a78c093b9383ab3bd3c4ed45262116a1ec8544401f2c",
+    "localFile": "review_evidence/lz4_pretest_20261027/build/CMakeCCompiler.cmake"
+  }
+]

@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="14865544247795631806">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h" line="79" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h" line="108" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h" line="109" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h" line="110" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h" line="121" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:233:35" call-funcname="unsafe_get_property" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="243" col="78" call-argexpr="uc" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="243" col="13" info="Assuming that condition &apos;uc&lt;0&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:261:22" call-funcname="grapheme_break_simple" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="304" col="58" call-argexpr="state_bc" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="528" col="40" info="Calling function &apos;grapheme_break_extended&apos;, 1st argument &apos;0&apos; value is 0"/>
+  <path file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="296" col="18" info="Assignment &apos;state_bc=lbc&apos;, assigned value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:261:22" call-funcname="grapheme_break_simple" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="342" col="33" call-argexpr="lbc" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="528" col="40" info="Calling function &apos;grapheme_break_extended&apos;, 1st argument &apos;0&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:291:22" call-funcname="grapheme_break_extended" call-argnr="5" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="350" col="33" call-argexpr="state" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="360" col="51" info="Calling function &apos;utf8proc_grapheme_break_stateful&apos;, 3rd argument &apos;NULL&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:654:34" call-funcname="utf8proc_grapheme_break_stateful" call-argnr="3" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="360" col="42" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:363:25" call-funcname="seqindex_decode_entry" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="377" col="31" call-argexpr="&amp;entry" call-argvaluetype="7" call-argvalue="2"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:363:25" call-funcname="seqindex_decode_entry" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="389" col="54" call-argexpr="&amp;entry" call-argvaluetype="7" call-argvalue="2"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:233:35" call-funcname="unsafe_get_property" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="457" col="33" call-argexpr="uc" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="456" col="10" info="Assuming that condition &apos;uc&lt;0&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:291:22" call-funcname="grapheme_break_extended" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="528" col="39" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:291:22" call-funcname="grapheme_break_extended" call-argnr="3" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="528" col="39" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:576:37" call-funcname="utf8proc_decompose_custom" call-argnr="6" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="544" col="37" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:576:37" call-funcname="utf8proc_decompose_custom" call-argnr="7" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="544" col="37" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:479:37" call-funcname="utf8proc_iterate" call-argnr="3" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="566" col="33" call-argexpr="&amp;uc" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:479:37" call-funcname="utf8proc_iterate" call-argnr="3" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="566" col="33" call-argexpr="uc" call-argvaluetype="4" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:479:37" call-funcname="utf8proc_iterate" call-argnr="3" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="574" col="33" call-argexpr="&amp;uc" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:479:37" call-funcname="utf8proc_iterate" call-argnr="3" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="574" col="33" call-argexpr="uc" call-argvaluetype="4" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:543:37" call-funcname="utf8proc_decompose_char" call-argnr="5" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="580" col="46" call-argexpr="&amp;boundclass" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:605:37" call-funcname="utf8proc_normalize_utf32" call-argnr="2" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="733" col="36" call-argexpr="length" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="772" col="14" info="Assuming that condition &apos;result&lt;0&apos; is not redundant"/>
+  <path file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="776" col="38" info="Calling function &apos;utf8proc_reencode&apos;, 2nd argument &apos;result&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:757:37" call-funcname="utf8proc_map_custom" call-argnr="2" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="757" col="31" call-argexpr="strlen" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="820" col="21" info="Calling function &apos;utf8proc_map&apos;, 2nd argument &apos;0&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:757:37" call-funcname="utf8proc_map_custom" call-argnr="5" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="757" col="31" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:757:37" call-funcname="utf8proc_map_custom" call-argnr="6" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="757" col="31" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:576:37" call-funcname="utf8proc_decompose_custom" call-argnr="3" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="767" col="37" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:576:37" call-funcname="utf8proc_decompose_custom" call-argnr="4" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="767" col="37" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:635:37" call-funcname="utf8proc_reencode" call-argnr="2" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="776" col="29" call-argexpr="result" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="772" col="14" info="Assuming that condition &apos;result&lt;0&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" call-funcname="utf8proc_map" call-argnr="2" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="792" col="15" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" call-funcname="utf8proc_map" call-argnr="3" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="792" col="15" call-argexpr="&amp;retval" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" call-funcname="utf8proc_map" call-argnr="2" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="799" col="15" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" call-funcname="utf8proc_map" call-argnr="3" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="799" col="15" call-argexpr="&amp;retval" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" call-funcname="utf8proc_map" call-argnr="2" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="806" col="15" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" call-funcname="utf8proc_map" call-argnr="3" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="806" col="15" call-argexpr="&amp;retval" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" call-funcname="utf8proc_map" call-argnr="2" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="813" col="15" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" call-funcname="utf8proc_map" call-argnr="3" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="813" col="15" call-argexpr="&amp;retval" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" call-funcname="utf8proc_map" call-argnr="2" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="820" col="15" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" call-funcname="utf8proc_map" call-argnr="3" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="820" col="15" call-argexpr="&amp;retval" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:291:22" call-funcname="grapheme_break_extended" call-argnr="5" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="350" col="10" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:654:34" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:543:37" call-funcname="utf8proc_decompose_char" call-argnr="5" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="391" col="16" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:380:25" my-argnr="5"/>
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:543:37" call-funcname="utf8proc_decompose_char" call-argnr="5" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="485" col="43" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:543:37" my-argnr="5"/>
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:576:37" call-funcname="utf8proc_decompose_custom" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="544" col="12" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:565:37" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:576:37" call-funcname="utf8proc_decompose_custom" call-argnr="3" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="544" col="12" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:565:37" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:605:37" call-funcname="utf8proc_normalize_utf32" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="733" col="12" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:635:37" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:757:37" call-funcname="utf8proc_map_custom" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="757" col="12" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:757:37" call-funcname="utf8proc_map_custom" call-argnr="3" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="757" col="12" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:576:37" call-funcname="utf8proc_decompose_custom" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="767" col="12" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:757:37" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:576:37" call-funcname="utf8proc_decompose_custom" call-argnr="6" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="767" col="12" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:757:37" my-argnr="5"/>
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:576:37" call-funcname="utf8proc_decompose_custom" call-argnr="7" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="767" col="12" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:757:37" my-argnr="6"/>
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" call-funcname="utf8proc_map" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="792" col="3" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:771:38" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" call-funcname="utf8proc_map" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="799" col="3" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:773:38" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" call-funcname="utf8proc_map" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="806" col="3" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:775:38" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" call-funcname="utf8proc_map" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="813" col="3" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:777:38" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:747:37" call-funcname="utf8proc_map" call-argnr="1" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="820" col="3" my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:782:38" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:479:37" my-argnr="3" my-argname="dst" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="131" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:363:25" my-argnr="1" my-argname="entry" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="365" col="33" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.h:757:37" my-argnr="3" my-argname="dstptr" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="766" col="4" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c:363:25" my-argnr="1" my-argname="entry" file="/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c" line="365" col="33" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="utf8proc_version" lineNumber="99"/>
+    <functiondecl functionName="utf8proc_unicode_version" lineNumber="103"/>
+    <functiondecl functionName="utf8proc_errmsg" lineNumber="107"/>
+    <functiondecl functionName="utf8proc_iterate" lineNumber="125"/>
+    <functiondecl functionName="utf8proc_codepoint_valid" lineNumber="173"/>
+    <functiondecl functionName="utf8proc_encode_char" lineNumber="177"/>
+    <functiondecl functionName="charbound_encode_char" lineNumber="204"/>
+    <functiondecl functionName="unsafe_get_property" lineNumber="233"/>
+    <functiondecl functionName="utf8proc_get_property" lineNumber="242"/>
+    <functiondecl functionName="grapheme_break_simple" lineNumber="261"/>
+    <functiondecl functionName="grapheme_break_extended" lineNumber="291"/>
+    <functiondecl functionName="utf8proc_grapheme_break_stateful" lineNumber="345"/>
+    <functiondecl functionName="utf8proc_grapheme_break" lineNumber="358"/>
+    <functiondecl functionName="seqindex_decode_entry" lineNumber="363"/>
+    <functiondecl functionName="seqindex_decode_index" lineNumber="374"/>
+    <functiondecl functionName="seqindex_write_char_decomposed" lineNumber="380"/>
+    <functiondecl functionName="utf8proc_tolower" lineNumber="399"/>
+    <functiondecl functionName="utf8proc_toupper" lineNumber="405"/>
+    <functiondecl functionName="utf8proc_totitle" lineNumber="411"/>
+    <functiondecl functionName="utf8proc_islower" lineNumber="417"/>
+    <functiondecl functionName="utf8proc_isupper" lineNumber="423"/>
+    <functiondecl functionName="utf8proc_charwidth" lineNumber="431"/>
+    <functiondecl functionName="utf8proc_charwidth_ambiguous" lineNumber="435"/>
+    <functiondecl functionName="utf8proc_category" lineNumber="439"/>
+    <functiondecl functionName="utf8proc_category_string" lineNumber="443"/>
+    <functiondecl functionName="utf8proc_decompose_char" lineNumber="452"/>
+    <functiondecl functionName="utf8proc_decompose" lineNumber="540"/>
+    <functiondecl functionName="utf8proc_decompose_custom" lineNumber="547"/>
+    <functiondecl functionName="utf8proc_normalize_utf32" lineNumber="614"/>
+    <functiondecl functionName="utf8proc_reencode" lineNumber="730"/>
+    <functiondecl functionName="utf8proc_map" lineNumber="754"/>
+    <functiondecl functionName="utf8proc_map_custom" lineNumber="760"/>
+    <functiondecl functionName="utf8proc_NFD" lineNumber="790"/>
+    <functiondecl functionName="utf8proc_NFC" lineNumber="797"/>
+    <functiondecl functionName="utf8proc_NFKD" lineNumber="804"/>
+    <functiondecl functionName="utf8proc_NFKC" lineNumber="811"/>
+    <functiondecl functionName="utf8proc_NFKC_Casefold" lineNumber="818"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_AL"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_AN"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_B"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_BN"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_CS"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_EN"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_ES"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_ET"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_FSI"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_L"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_LRE"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_LRI"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_LRO"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_NSM"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_ON"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_PDF"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_PDI"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_R"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_RLE"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_RLI"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_RLO"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_S"/>
+    <functioncall functionName="UTF8PROC_BIDI_CLASS_WS"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_CONTROL"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_CR"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_EXTEND"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_EXTENDED_PICTOGRAPHIC"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_E_ZWG"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_L"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_LF"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_LV"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_LVT"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_OTHER"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_PREPEND"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_REGIONAL_INDICATOR"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_SPACINGMARK"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_START"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_T"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_V"/>
+    <functioncall functionName="UTF8PROC_BOUNDCLASS_ZWJ"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_CC"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_CF"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_CO"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_CS"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_LL"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_LM"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_LO"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_LT"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_LU"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_MC"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_ME"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_MN"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_ND"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_NL"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_NO"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_PC"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_PD"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_PE"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_PF"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_PI"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_PO"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_PS"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_SC"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_SK"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_SM"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_SO"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_ZL"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_ZP"/>
+    <functioncall functionName="UTF8PROC_CATEGORY_ZS"/>
+    <functioncall functionName="UTF8PROC_COMPAT"/>
+    <functioncall functionName="UTF8PROC_COMPOSE"/>
+    <functioncall functionName="UTF8PROC_DECOMPOSE"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_CIRCLE"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_COMPAT"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_FINAL"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_FONT"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_FRACTION"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_INITIAL"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_ISOLATED"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_MEDIAL"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_NARROW"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_NOBREAK"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_SMALL"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_SQUARE"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_SUB"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_SUPER"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_VERTICAL"/>
+    <functioncall functionName="UTF8PROC_DECOMP_TYPE_WIDE"/>
+    <functioncall functionName="UTF8PROC_IGNORE"/>
+    <functioncall functionName="UTF8PROC_INDIC_CONJUNCT_BREAK_CONSONANT"/>
+    <functioncall functionName="UTF8PROC_INDIC_CONJUNCT_BREAK_EXTEND"/>
+    <functioncall functionName="UTF8PROC_INDIC_CONJUNCT_BREAK_LINKER"/>
+    <functioncall functionName="UTF8PROC_INDIC_CONJUNCT_BREAK_NONE"/>
+    <functioncall functionName="UTF8PROC_LUMP"/>
+    <functioncall functionName="UTF8PROC_STRIPCC"/>
+    <functioncall functionName="charbound_encode_char"/>
+    <functioncall functionName="custom_func"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="grapheme_break_extended"/>
+    <functioncall functionName="grapheme_break_simple"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="realloc"/>
+    <functioncall functionName="seqindex_decode_entry"/>
+    <functioncall functionName="seqindex_decode_index"/>
+    <functioncall functionName="seqindex_write_char_decomposed"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="unsafe_get_property"/>
+    <functioncall functionName="utf8proc_category"/>
+    <functioncall functionName="utf8proc_decompose_char"/>
+    <functioncall functionName="utf8proc_decompose_custom"/>
+    <functioncall functionName="utf8proc_encode_char"/>
+    <functioncall functionName="utf8proc_get_property"/>
+    <functioncall functionName="utf8proc_grapheme_break_stateful"/>
+    <functioncall functionName="utf8proc_iterate"/>
+    <functioncall functionName="utf8proc_map"/>
+    <functioncall functionName="utf8proc_map_custom"/>
+    <functioncall functionName="utf8proc_normalize_utf32"/>
+    <functioncall functionName="utf8proc_reencode"/>
+  </FileInfo>
+</analyzerinfo>

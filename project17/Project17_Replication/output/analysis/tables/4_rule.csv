@@ -1,0 +1,45 @@
+﻿tool,rule,risk_class,alerts,false_positive,supported,undetermined,supported_share
+Flawfinder,memcpy,Buffer and memory access,163,157,4,2,2%
+Flawfinder,strlen,Buffer and memory access,136,136,0,0,0%
+Flawfinder,char,Buffer and memory access,127,127,0,0,0%
+Cppcheck,nullPointerRedundantCheck,Null pointer,39,25,14,0,36%
+CodeChecker/clangsa,core.NullDereference,Null pointer,29,29,0,0,0%
+Flawfinder,fprintf,Formatted output,22,22,0,0,0%
+Cppcheck,shiftTooManyBitsSigned,"Integer, shift and division",21,1,20,0,95%
+Cppcheck,negativeIndex,Buffer and memory access,17,17,0,0,0%
+Flawfinder,open,"File, environment and command",16,12,0,4,0%
+CodeChecker/clangsa,deadcode.DeadStores,"Code quality (dead store, uninitialized)",14,0,14,0,100%
+Cppcheck,arrayIndexOutOfBoundsCond,Buffer and memory access,14,14,0,0,0%
+Flawfinder,sprintf,Formatted output,12,12,0,0,0%
+Flawfinder,snprintf,Formatted output,11,11,0,0,0%
+CodeChecker/clangsa,core.UndefinedBinaryOperatorResult,"Integer, shift and division",9,9,0,0,0%
+Flawfinder,vsnprintf,Formatted output,8,7,0,1,0%
+Flawfinder,strcpy,Buffer and memory access,7,7,0,0,0%
+Flawfinder,fopen,"File, environment and command",7,4,0,3,0%
+CodeChecker/clangsa,core.DivideZero,"Integer, shift and division",6,6,0,0,0%
+CodeChecker/clangsa,unix.cstring.NullArg,Null pointer,6,0,2,4,33%
+CodeChecker/clangsa,core.NonNullParamChecker,Null pointer,5,3,2,0,40%
+Flawfinder,read,Buffer and memory access,4,4,0,0,0%
+Flawfinder,getenv,"File, environment and command",4,2,1,1,25%
+Cppcheck,nullPointerArithmeticRedundantCheck,Null pointer,4,1,3,0,75%
+Cppcheck,shiftNegativeLHS,"Integer, shift and division",4,4,0,0,0%
+Cppcheck,AssignmentIntegerToAddress,"Integer, shift and division",4,4,0,0,0%
+Flawfinder,strcat,Buffer and memory access,3,3,0,0,0%
+Flawfinder,vsprintf,Formatted output,3,3,0,0,0%
+Flawfinder,syslog,Formatted output,3,3,0,0,0%
+Flawfinder,system,"File, environment and command",3,3,0,0,0%
+Flawfinder,strncpy,Buffer and memory access,3,3,0,0,0%
+Cppcheck,legacyUninitvar,"Code quality (dead store, uninitialized)",3,3,0,0,0%
+Cppcheck,zerodiv,"Integer, shift and division",3,3,0,0,0%
+Flawfinder,vfprintf,Formatted output,2,2,0,0,0%
+Cppcheck,pointerOutOfBoundsCond,Buffer and memory access,2,2,0,0,0%
+CodeChecker/clangsa,core.BitwiseShift,"Integer, shift and division",2,2,0,0,0%
+Flawfinder,_snprintf,Formatted output,1,1,0,0,0%
+Cppcheck,nullPointerArithmetic,Null pointer,1,0,1,0,100%
+Cppcheck,uselessAssignmentPtrArg,"Code quality (dead store, uninitialized)",1,0,1,0,100%
+Cppcheck,ctunullpointer,Null pointer,1,1,0,0,0%
+Flawfinder,vprintf,Formatted output,1,1,0,0,0%
+Cppcheck,integerOverflowCond,"Integer, shift and division",1,1,0,0,0%
+Cppcheck,invalidPrintfArgType_sint,Formatted output,1,1,0,0,0%
+CodeChecker/clangsa,core.CallAndMessage,Null pointer,1,1,0,0,0%
+CodeChecker/clangsa,core.uninitialized.Branch,"Code quality (dead store, uninitialized)",1,1,0,0,0%

@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-27",
+  "status": "passed",
+  "project": "P04 libyaml 0.2.5",
+  "preparationId": "PREP-P04-001",
+  "configureExitCode": 0,
+  "buildExitCode": 0,
+  "configureStderr": "upstream CMake <3.5 policy deprecation warning only; not configuration failure",
+  "buildStderrBytes": 0,
+  "sourceAfterBuild": "all62 files match accepted archive/source identity",
+  "actualCompileActions": 8,
+  "actualObjectMembers": 8,
+  "archiveObjectBodiesMatchLinuxObjectHashes": true,
+  "libraryBytes": 503224,
+  "librarySHA256": "0179cdf6f3e249cda751ca8b9d6590757909b97ff37f12eb4db905c987469bd0",
+  "databaseSHA256": "559307d71eae27133caf75ac164a9c30352d54341a5aa4ed877a4f6ebb57bccd",
+  "databasePolicy": "original eight current yaml actions; none filtered, duplicated or synthesized",
+  "generatedHeader": {
+    "file": "/home/yhong/comp5355/build/libyaml-0.2.5/include/config.h",
+    "bytes": 123,
+    "sha256": "8dc8527df62e73904353d78d9eb7fcff6155aa0bec527b6614bef09c10809d58",
+    "version": "0.2.5",
+    "fourVersionMacrosVerified": true
+  },
+  "actualContext": {
+    "compiler": "Clang18.1.3",
+    "buildType": "Debug",
+    "definitions": [
+      "HAVE_CONFIG_H",
+      "YAML_DECLARE_STATIC"
+    ],
+    "includes": [
+      "/home/yhong/comp5355/sources/libyaml-0.2.5/include",
+      "/home/yhong/comp5355/build/libyaml-0.2.5/include"
+    ],
+    "flags": [
+      "-g"
+    ],
+    "languageStandard": "GNU C17 default: no explicit -std; CMake computed standard17 and extensionsON",
+    "NDEBUG": "not defined by actual compile command"
+  },
+  "actualProjectDependencyFiles": 11,
+  "dependencyFiles": [
+    {
+      "file": "/home/yhong/comp5355/build/libyaml-0.2.5/include/config.h",
+      "sha256": "8dc8527df62e73904353d78d9eb7fcff6155aa0bec527b6614bef09c10809d58"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h",
+      "sha256": "de39c9fc2b2c8584775e6d0dc0f13c8e778ceba47d419cff9d85465ca35d6954"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c",
+      "sha256": "71f9263a2c77237762c8fa5e7c3d2bdd35723ecf1e2898222c7a603a5bf3f2db"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c",
+      "sha256": "56fe41a1db73e1b9342b9381856e1fade8ea339a0b723bef90e7e1e8638bc441"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c",
+      "sha256": "fbec4f702153929ad1421636ab0f5ecded140f0f37014d5ab3c65dfecd7e0743"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c",
+      "sha256": "68424f0b29e16434e7f2c0838b26dd4b68e04b567ad40f4f4c1bc61cd8e93479"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c",
+      "sha256": "b418ed8d6ef7e86dbd0e59c8dc7a00c8e48200b0252dd41e25d00d4616c7b2dc"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c",
+      "sha256": "c428a44b177391557bdf49177c1dc0216edf2a2bbe0e24ca2ef2725ef7f01e9d"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c",
+      "sha256": "bc3b30ceec0c696925e9703845874d7fafefb42bfbd3006dc4a02fc6d646f2d1"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/writer.c",
+      "sha256": "44a75c870a0b7039e37b457850b31748a69ce3bf1bf39950e7b855acef472de2"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h",
+      "sha256": "8dffe95c784665eba4ee88169456ebd41137a6d80ad13d536df6ad10d7a4d459"
+    }
+  ],
+  "actions": [
+    {
+      "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+      "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/api.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c",
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c",
+      "output": "CMakeFiles/yaml.dir/src/api.c.o"
+    },
+    {
+      "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+      "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/dumper.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c",
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c",
+      "output": "CMakeFiles/yaml.dir/src/dumper.c.o"
+    },
+    {
+      "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+      "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/emitter.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c",
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c",
+      "output": "CMakeFiles/yaml.dir/src/emitter.c.o"
+    },
+    {
+      "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+      "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/loader.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c",
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c",
+      "output": "CMakeFiles/yaml.dir/src/loader.c.o"
+    },
+    {
+      "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+      "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/parser.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c",
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c",
+      "output": "CMakeFiles/yaml.dir/src/parser.c.o"
+    },
+    {
+      "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+      "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/reader.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c",
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c",
+      "output": "CMakeFiles/yaml.dir/src/reader.c.o"
+    },
+    {
+      "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+      "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/scanner.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c",
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c",
+      "output": "CMakeFiles/yaml.dir/src/scanner.c.o"
+    },
+    {
+      "directory": "/home/yhong/comp5355/build/libyaml-0.2.5",
+      "command": "/usr/bin/clang-18 -DHAVE_CONFIG_H -DYAML_DECLARE_STATIC -I/home/yhong/comp5355/sources/libyaml-0.2.5/include -I/home/yhong/comp5355/build/libyaml-0.2.5/include -g -o CMakeFiles/yaml.dir/src/writer.c.o -c /home/yhong/comp5355/sources/libyaml-0.2.5/src/writer.c",
+      "file": "/home/yhong/comp5355/sources/libyaml-0.2.5/src/writer.c",
+      "output": "CMakeFiles/yaml.dir/src/writer.c.o"
+    }
+  ],
+  "configureTiming": {
+    "wallSeconds": 39.83,
+    "userSeconds": 0.16,
+    "systemSeconds": 0.98,
+    "gnuTimeMaxRssKiB": 88348
+  },
+  "buildTiming": {
+    "wallSeconds": 0.72,
+    "userSeconds": 0.47,
+    "systemSeconds": 0.23,
+    "gnuTimeMaxRssKiB": 102928
+  },
+  "timingMeaning": "preparation costs; not static analyzer time",
+  "copiedFiles": {
+    "preparation": 18,
+    "build": 8,
+    "environment": 6
+  },
+  "evidence": "Build_Read_Only_Linux_Evidence.json",
+  "environmentSession": "session-20261027T123546-p04-22994",
+  "toolAnalysis": "not run",
+  "formalThirtyCells": "all not run",
+  "screenshot": "../screenshots/P04/FIG-P04-04_build.png"
+}

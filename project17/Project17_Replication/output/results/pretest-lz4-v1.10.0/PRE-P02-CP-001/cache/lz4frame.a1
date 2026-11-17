@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="12508432851609616985">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="47" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h" line="53" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h" line="43" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h" line="700" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h" line="78" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h" line="262" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="89" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="95" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="171" column="0"/>
+        </error>
+        <error id="nullPointerArithmetic" severity="error" msg="Pointer addition with NULL pointer." verbose="Pointer addition with NULL pointer." cwe="682" file0="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1620" column="41" info="Null pointer addition"/>
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1619" column="34" info="Assignment &apos;srcStart=(const uint8_t*)srcBuffer&apos;, assigned value is 0"/>
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1496" column="48" info="Calling function &apos;LZ4F_decompress&apos;, 4th argument &apos;NULL&apos; value is 0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:169:29" call-funcname="LZ4_XXH32" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="351" col="26" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:379:15" call-funcname="LZ4F_compressBound_internal" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="415" col="52" call-argexpr="&amp;prefs" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:379:15" call-funcname="LZ4F_compressBound_internal" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="415" col="52" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:234:20" call-funcname="LZ4F_compressFrameBound" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="456" col="5" call-argexpr="&amp;prefs" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:614:1" call-funcname="LZ4F_compressBegin_usingCDict" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="458" col="62" call-argexpr="&amp;prefs" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:332:20" call-funcname="LZ4F_compressUpdate" call-argnr="6" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="463" col="47" call-argexpr="&amp;options" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:360:20" call-funcname="LZ4F_compressEnd" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="468" col="47" call-argexpr="&amp;options" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h:750:26" call-funcname="LZ4_initStream" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="503" col="23" call-argexpr="&amp;lz4ctx" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:599:1" call-funcname="LZ4F_compressFrame_usingCDict" call-argnr="6" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="511" col="43" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:599:1" call-funcname="LZ4F_compressFrame_usingCDict" call-argnr="7" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="511" col="43" call-argexpr="preferencesPtr" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="518" col="25" info="Assuming that condition &apos;preferencesPtr!=NULL&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:177:30" call-funcname="LZ4_XXH32_reset" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="755" col="22" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:648:13" call-funcname="LZ4F_initStream" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="761" col="24" call-argexpr="LZ4F_blockLinked" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="819" col="39" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="819" col="39" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="6" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="819" col="39" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="6" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="833" col="39" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="856" col="39" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="856" col="39" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:379:15" call-funcname="LZ4F_compressBound_internal" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="870" col="43" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:379:15" call-funcname="LZ4F_compressBound_internal" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="872" col="39" call-argexpr="preferencesPtr" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="869" col="9" info="Assuming that condition &apos;preferencesPtr&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:169:29" call-funcname="LZ4_XXH32" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="904" col="32" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:648:13" call-funcname="LZ4F_initStream" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="915" col="20" call-argexpr="cdict" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="916" col="9" info="Assuming that condition &apos;cdict&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:648:13" call-funcname="LZ4F_initStream" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="933" col="20" call-argexpr="cdict" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="934" col="9" info="Assuming that condition &apos;cdict&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:952:23" call-funcname="LZ4F_selectCompression" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1001" col="59" call-argexpr="blockCompression" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1127" col="56" info="Calling function &apos;LZ4F_compressUpdateImpl&apos;, 7th argument &apos;LZ4B_COMPRESSED&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:989:15" call-funcname="LZ4F_compressUpdateImpl" call-argnr="7" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1124" col="36" call-argexpr="LZ4B_COMPRESSED" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:197:13" call-funcname="LZ4F_writeLE32" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1222" col="19" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" call-funcname="LZ4F_decompress" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1496" col="31" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" call-funcname="LZ4F_decompress" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1496" col="31" call-argexpr="&amp;o" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" call-funcname="LZ4F_decompress" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1496" col="31" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" call-funcname="LZ4F_decompress" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1496" col="31" call-argexpr="&amp;i" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" call-funcname="LZ4F_decompress" call-argnr="6" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1496" col="31" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:177:30" call-funcname="LZ4_XXH32_reset" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1678" col="71" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:177:30" call-funcname="LZ4_XXH32_reset" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1745" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1527:13" call-funcname="LZ4F_updateDict" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1781" col="40" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:169:29" call-funcname="LZ4_XXH32" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1876" col="51" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1527:13" call-funcname="LZ4F_updateDict" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1913" col="36" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:169:29" call-funcname="LZ4_XXH32" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="351" col="21" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:349:13" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:614:1" call-funcname="LZ4F_compressBegin_usingCDict" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="458" col="33" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:599:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:332:20" call-funcname="LZ4F_compressUpdate" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="463" col="28" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:599:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:614:1" call-funcname="LZ4F_compressBegin_usingCDict" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="458" col="33" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:599:1" my-argnr="6"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:599:1" call-funcname="LZ4F_compressFrame_usingCDict" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="511" col="14" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:224:20" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:599:1" call-funcname="LZ4F_compressFrame_usingCDict" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="511" col="14" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:224:20" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:744:32" call-funcname="LZ4F_createCDict_advanced" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="578" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:583:25" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="819" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:299:20" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="819" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:299:20" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="7" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="819" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:299:20" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="833" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:828:8" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="833" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:828:8" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="833" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:828:8" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="7" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="833" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:828:8" my-argnr="6"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:828:8" call-funcname="LZ4F_compressBegin_usingDictOnce" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="846" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:547:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:828:8" call-funcname="LZ4F_compressBegin_usingDictOnce" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="846" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:547:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:828:8" call-funcname="LZ4F_compressBegin_usingDictOnce" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="846" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:547:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:828:8" call-funcname="LZ4F_compressBegin_usingDictOnce" call-argnr="6" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="846" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:547:1" my-argnr="6"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="856" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:614:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="856" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:614:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="6" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="856" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:614:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:690:8" call-funcname="LZ4F_compressBegin_internal" call-argnr="7" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="856" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:614:1" my-argnr="5"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:648:13" call-funcname="LZ4F_initStream" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="915" col="5" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:911:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h:441:16" call-funcname="LZ4_compress_fast_continue" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="917" col="16" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:911:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h:441:16" call-funcname="LZ4_compress_fast_continue" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="917" col="16" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:911:12" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:648:13" call-funcname="LZ4F_initStream" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="915" col="5" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:911:12" my-argnr="7"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h:441:16" call-funcname="LZ4_compress_fast_continue" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="928" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:923:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h:441:16" call-funcname="LZ4_compress_fast_continue" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="928" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:923:12" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:648:13" call-funcname="LZ4F_initStream" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="933" col="5" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:931:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.h:160:16" call-funcname="LZ4_compress_HC_continue" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="935" col="16" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:931:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.h:160:16" call-funcname="LZ4_compress_HC_continue" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="935" col="16" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:931:12" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:648:13" call-funcname="LZ4F_initStream" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="933" col="5" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:931:12" my-argnr="7"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.h:160:16" call-funcname="LZ4_compress_HC_continue" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="943" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:940:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.h:160:16" call-funcname="LZ4_compress_HC_continue" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="943" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:940:12" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:346:20" call-funcname="LZ4F_flush" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1014" col="24" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:989:15" my-argnr="6"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:989:15" call-funcname="LZ4F_compressUpdateImpl" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1124" col="13" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:332:20" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:989:15" call-funcname="LZ4F_compressUpdateImpl" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1124" col="13" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:332:20" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:989:15" call-funcname="LZ4F_compressUpdateImpl" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1124" col="13" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:332:20" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:989:15" call-funcname="LZ4F_compressUpdateImpl" call-argnr="6" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1124" col="13" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:332:20" my-argnr="6"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:989:15" call-funcname="LZ4F_compressUpdateImpl" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1144" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:713:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:989:15" call-funcname="LZ4F_compressUpdateImpl" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1144" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:713:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:989:15" call-funcname="LZ4F_compressUpdateImpl" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1144" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:713:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:989:15" call-funcname="LZ4F_compressUpdateImpl" call-argnr="6" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1144" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:713:1" my-argnr="6"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:346:20" call-funcname="LZ4F_flush" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1213" col="30" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:360:20" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:346:20" call-funcname="LZ4F_flush" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1213" col="30" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:360:20" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:415:20" call-funcname="LZ4F_headerSize" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1503" col="34" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:461:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" call-funcname="LZ4F_decompress" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="2133" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:557:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" call-funcname="LZ4F_decompress" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="2133" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:557:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" call-funcname="LZ4F_decompress" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="2133" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:557:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" call-funcname="LZ4F_decompress" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="2133" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:557:1" my-argnr="5"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" call-funcname="LZ4F_decompress" call-argnr="6" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="2133" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:557:1" my-argnr="8"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:883:15" my-argnr="4" my-argname="compress" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="892" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:965:12" my-argnr="1" my-argname="cctxPtr" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="967" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:989:15" my-argnr="1" my-argname="cctxPtr" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="995" col="30" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:346:20" my-argnr="1" my-argname="cctxPtr" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1167" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:513:18" my-argnr="1" my-argname="dctx" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1330" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:461:1" my-argnr="1" my-argname="dctx" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1490" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1527:13" my-argnr="1" my-argname="dctx" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1532" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" my-argnr="1" my-argname="dctx" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1638" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" my-argnr="3" my-argname="dstSizePtr" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1636" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" my-argnr="5" my-argname="srcSizePtr" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1620" col="44" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:557:1" my-argnr="1" my-argname="dctx" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="2129" col="9" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:883:15" my-argnr="4" my-argname="compress" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="892" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:965:12" my-argnr="1" my-argname="cctxPtr" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="967" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:989:15" my-argnr="1" my-argname="cctxPtr" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="995" col="30" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:346:20" my-argnr="1" my-argname="cctxPtr" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1167" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:461:1" my-argnr="1" my-argname="dctx" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1490" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1527:13" my-argnr="1" my-argname="dctx" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1532" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" my-argnr="1" my-argname="dctx" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1638" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" my-argnr="5" my-argname="srcSizePtr" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="1620" col="44" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:557:1" my-argnr="1" my-argname="dctx" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c" line="2129" col="9" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="LZ4F_calloc" lineNumber="101"/>
+    <functiondecl functionName="LZ4F_malloc" lineNumber="117"/>
+    <functiondecl functionName="LZ4F_free" lineNumber="127"/>
+    <functiondecl functionName="LZ4F_readLE32" lineNumber="187"/>
+    <functiondecl functionName="LZ4F_writeLE32" lineNumber="197"/>
+    <functiondecl functionName="LZ4F_readLE64" lineNumber="206"/>
+    <functiondecl functionName="LZ4F_writeLE64" lineNumber="220"/>
+    <functiondecl functionName="LZ4F_isError" lineNumber="293"/>
+    <functiondecl functionName="LZ4F_getErrorName" lineNumber="298"/>
+    <functiondecl functionName="LZ4F_getErrorCode" lineNumber="305"/>
+    <functiondecl functionName="LZ4F_returnErrorCode" lineNumber="311"/>
+    <functiondecl functionName="LZ4F_getVersion" lineNumber="329"/>
+    <functiondecl functionName="LZ4F_compressionLevel_max" lineNumber="331"/>
+    <functiondecl functionName="LZ4F_getBlockSize" lineNumber="333"/>
+    <functiondecl functionName="LZ4F_headerChecksum" lineNumber="349"/>
+    <functiondecl functionName="LZ4F_optimalBSID" lineNumber="359"/>
+    <functiondecl functionName="LZ4F_compressBound_internal" lineNumber="379"/>
+    <functiondecl functionName="LZ4F_compressFrameBound" lineNumber="406"/>
+    <functiondecl functionName="LZ4F_compressFrame_usingCDict" lineNumber="428"/>
+    <functiondecl functionName="LZ4F_compressFrame" lineNumber="484"/>
+    <functiondecl functionName="LZ4F_createCDict_advanced" lineNumber="539"/>
+    <functiondecl functionName="LZ4F_createCDict" lineNumber="575"/>
+    <functiondecl functionName="LZ4F_freeCDict" lineNumber="581"/>
+    <functiondecl functionName="LZ4F_createCompressionContext_advanced" lineNumber="596"/>
+    <functiondecl functionName="LZ4F_createCompressionContext" lineNumber="618"/>
+    <functiondecl functionName="LZ4F_freeCompressionContext" lineNumber="629"/>
+    <functiondecl functionName="LZ4F_initStream" lineNumber="648"/>
+    <functiondecl functionName="ctxTypeID_to_size" lineNumber="676"/>
+    <functiondecl functionName="LZ4F_compressBegin_internal" lineNumber="690"/>
+    <functiondecl functionName="LZ4F_compressBegin" lineNumber="815"/>
+    <functiondecl functionName="LZ4F_compressBegin_usingDictOnce" lineNumber="828"/>
+    <functiondecl functionName="LZ4F_compressBegin_usingDict" lineNumber="838"/>
+    <functiondecl functionName="LZ4F_compressBegin_usingCDict" lineNumber="851"/>
+    <functiondecl functionName="LZ4F_compressBound" lineNumber="867"/>
+    <functiondecl functionName="LZ4F_makeBlock" lineNumber="883"/>
+    <functiondecl functionName="LZ4F_compressBlock" lineNumber="911"/>
+    <functiondecl functionName="LZ4F_compressBlock_continue" lineNumber="923"/>
+    <functiondecl functionName="LZ4F_compressBlockHC" lineNumber="931"/>
+    <functiondecl functionName="LZ4F_compressBlockHC_continue" lineNumber="940"/>
+    <functiondecl functionName="LZ4F_doNotCompressBlock" lineNumber="946"/>
+    <functiondecl functionName="LZ4F_selectCompression" lineNumber="952"/>
+    <functiondecl functionName="LZ4F_localSaveDict" lineNumber="965"/>
+    <functiondecl functionName="LZ4F_compressUpdateImpl" lineNumber="989"/>
+    <functiondecl functionName="LZ4F_compressUpdate" lineNumber="1119"/>
+    <functiondecl functionName="LZ4F_uncompressedUpdate" lineNumber="1139"/>
+    <functiondecl functionName="LZ4F_flush" lineNumber="1159"/>
+    <functiondecl functionName="LZ4F_compressEnd" lineNumber="1206"/>
+    <functiondecl functionName="LZ4F_createDecompressionContext_advanced" lineNumber="1284"/>
+    <functiondecl functionName="LZ4F_createDecompressionContext" lineNumber="1301"/>
+    <functiondecl functionName="LZ4F_freeDecompressionContext" lineNumber="1313"/>
+    <functiondecl functionName="LZ4F_resetDecompressionContext" lineNumber="1327"/>
+    <functiondecl functionName="LZ4F_decodeHeader" lineNumber="1346"/>
+    <functiondecl functionName="LZ4F_headerSize" lineNumber="1444"/>
+    <functiondecl functionName="LZ4F_getFrameInfo" lineNumber="1485"/>
+    <functiondecl functionName="LZ4F_updateDict" lineNumber="1527"/>
+    <functiondecl functionName="LZ4F_decompress" lineNumber="1613"/>
+    <functiondecl functionName="LZ4F_decompress_usingDict" lineNumber="2123"/>
+    <functioncall functionName="LZ4B_COMPRESSED"/>
+    <functioncall functionName="LZ4B_UNCOMPRESSED"/>
+    <functioncall functionName="LZ4F_ERROR_allocation_failed"/>
+    <functioncall functionName="LZ4F_ERROR_blockChecksum_invalid"/>
+    <functioncall functionName="LZ4F_ERROR_compressionState_uninitialized"/>
+    <functioncall functionName="LZ4F_ERROR_contentChecksum_invalid"/>
+    <functioncall functionName="LZ4F_ERROR_decompressionFailed"/>
+    <functioncall functionName="LZ4F_ERROR_dstMaxSize_tooSmall"/>
+    <functioncall functionName="LZ4F_ERROR_frameDecoding_alreadyStarted"/>
+    <functioncall functionName="LZ4F_ERROR_frameHeader_incomplete"/>
+    <functioncall functionName="LZ4F_ERROR_frameSize_wrong"/>
+    <functioncall functionName="LZ4F_ERROR_frameType_unknown"/>
+    <functioncall functionName="LZ4F_ERROR_headerChecksum_invalid"/>
+    <functioncall functionName="LZ4F_ERROR_headerVersion_wrong"/>
+    <functioncall functionName="LZ4F_ERROR_maxBlockSize_invalid"/>
+    <functioncall functionName="LZ4F_ERROR_maxCode"/>
+    <functioncall functionName="LZ4F_ERROR_parameter_invalid"/>
+    <functioncall functionName="LZ4F_ERROR_parameter_null"/>
+    <functioncall functionName="LZ4F_ERROR_reservedFlag_set"/>
+    <functioncall functionName="LZ4F_ERROR_srcPtr_wrong"/>
+    <functioncall functionName="LZ4F_OK_NoError"/>
+    <functioncall functionName="LZ4F_blockChecksumEnabled"/>
+    <functioncall functionName="LZ4F_blockIndependent"/>
+    <functioncall functionName="LZ4F_blockLinked"/>
+    <functioncall functionName="LZ4F_calloc"/>
+    <functioncall functionName="LZ4F_compressBegin_internal"/>
+    <functioncall functionName="LZ4F_compressBegin_usingCDict"/>
+    <functioncall functionName="LZ4F_compressBegin_usingDictOnce"/>
+    <functioncall functionName="LZ4F_compressBlock"/>
+    <functioncall functionName="LZ4F_compressBlockHC"/>
+    <functioncall functionName="LZ4F_compressBlockHC_continue"/>
+    <functioncall functionName="LZ4F_compressBlock_continue"/>
+    <functioncall functionName="LZ4F_compressBound_internal"/>
+    <functioncall functionName="LZ4F_compressEnd"/>
+    <functioncall functionName="LZ4F_compressFrameBound"/>
+    <functioncall functionName="LZ4F_compressFrame_usingCDict"/>
+    <functioncall functionName="LZ4F_compressUpdate"/>
+    <functioncall functionName="LZ4F_compressUpdateImpl"/>
+    <functioncall functionName="LZ4F_contentChecksumEnabled"/>
+    <functioncall functionName="LZ4F_createCDict_advanced"/>
+    <functioncall functionName="LZ4F_createCompressionContext_advanced"/>
+    <functioncall functionName="LZ4F_createDecompressionContext_advanced"/>
+    <functioncall functionName="LZ4F_decodeHeader"/>
+    <functioncall functionName="LZ4F_decompress"/>
+    <functioncall functionName="LZ4F_doNotCompressBlock"/>
+    <functioncall functionName="LZ4F_flush"/>
+    <functioncall functionName="LZ4F_frame"/>
+    <functioncall functionName="LZ4F_free"/>
+    <functioncall functionName="LZ4F_freeCDict"/>
+    <functioncall functionName="LZ4F_getBlockSize"/>
+    <functioncall functionName="LZ4F_headerChecksum"/>
+    <functioncall functionName="LZ4F_headerSize"/>
+    <functioncall functionName="LZ4F_initStream"/>
+    <functioncall functionName="LZ4F_isError"/>
+    <functioncall functionName="LZ4F_localSaveDict"/>
+    <functioncall functionName="LZ4F_makeBlock"/>
+    <functioncall functionName="LZ4F_malloc"/>
+    <functioncall functionName="LZ4F_max64KB"/>
+    <functioncall functionName="LZ4F_noBlockChecksum"/>
+    <functioncall functionName="LZ4F_noContentChecksum"/>
+    <functioncall functionName="LZ4F_optimalBSID"/>
+    <functioncall functionName="LZ4F_readLE32"/>
+    <functioncall functionName="LZ4F_readLE64"/>
+    <functioncall functionName="LZ4F_resetDecompressionContext"/>
+    <functioncall functionName="LZ4F_returnErrorCode"/>
+    <functioncall functionName="LZ4F_selectCompression"/>
+    <functioncall functionName="LZ4F_skippableFrame"/>
+    <functioncall functionName="LZ4F_updateDict"/>
+    <functioncall functionName="LZ4F_writeLE32"/>
+    <functioncall functionName="LZ4F_writeLE64"/>
+    <functioncall functionName="LZ4_XXH32"/>
+    <functioncall functionName="LZ4_XXH32_digest"/>
+    <functioncall functionName="LZ4_XXH32_reset"/>
+    <functioncall functionName="LZ4_XXH32_update"/>
+    <functioncall functionName="LZ4_attach_HC_dictionary"/>
+    <functioncall functionName="LZ4_attach_dictionary"/>
+    <functioncall functionName="LZ4_compress_HC_continue"/>
+    <functioncall functionName="LZ4_compress_HC_extStateHC_fastReset"/>
+    <functioncall functionName="LZ4_compress_fast_continue"/>
+    <functioncall functionName="LZ4_compress_fast_extState_fastReset"/>
+    <functioncall functionName="LZ4_decompress_safe_usingDict"/>
+    <functioncall functionName="LZ4_favorDecompressionSpeed"/>
+    <functioncall functionName="LZ4_initStream"/>
+    <functioncall functionName="LZ4_initStreamHC"/>
+    <functioncall functionName="LZ4_loadDict"/>
+    <functioncall functionName="LZ4_loadDictHC"/>
+    <functioncall functionName="LZ4_loadDictSlow"/>
+    <functioncall functionName="LZ4_resetStreamHC_fast"/>
+    <functioncall functionName="LZ4_resetStream_fast"/>
+    <functioncall functionName="LZ4_saveDict"/>
+    <functioncall functionName="LZ4_saveDictHC"/>
+    <functioncall functionName="LZ4_setCompressionLevel"/>
+    <functioncall functionName="LZ4_sizeofState"/>
+    <functioncall functionName="LZ4_sizeofStateHC"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="calloc"/>
+    <functioncall functionName="compress"/>
+    <functioncall functionName="ctxFast"/>
+    <functioncall functionName="ctxTypeID_to_size"/>
+    <functioncall functionName="customAlloc"/>
+    <functioncall functionName="customCalloc"/>
+    <functioncall functionName="customFree"/>
+    <functioncall functionName="dstage_copyDirect"/>
+    <functioncall functionName="dstage_flushOut"/>
+    <functioncall functionName="dstage_getBlockChecksum"/>
+    <functioncall functionName="dstage_getBlockHeader"/>
+    <functioncall functionName="dstage_getCBlock"/>
+    <functioncall functionName="dstage_getFrameHeader"/>
+    <functioncall functionName="dstage_getSFrameSize"/>
+    <functioncall functionName="dstage_getSuffix"/>
+    <functioncall functionName="dstage_init"/>
+    <functioncall functionName="dstage_skipSkippable"/>
+    <functioncall functionName="dstage_storeBlockHeader"/>
+    <functioncall functionName="dstage_storeCBlock"/>
+    <functioncall functionName="dstage_storeFrameHeader"/>
+    <functioncall functionName="dstage_storeSFrameSize"/>
+    <functioncall functionName="dstage_storeSuffix"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="fromSrcBuffer"/>
+    <functioncall functionName="fromTmpBuffer"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="notDone"/>
+  </FileInfo>
+</analyzerinfo>

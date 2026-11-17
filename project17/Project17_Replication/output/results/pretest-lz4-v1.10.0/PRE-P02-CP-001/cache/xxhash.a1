@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="3756978926051822865">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="107" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="111" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="114" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h" line="78" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h" line="262" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="146" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="591" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:234:18" call-funcname="XXH_readLE32_align" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="374" col="34" call-argexpr="endian" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="408" col="61" info="Calling function &apos;XXH32_endian_align&apos;, 4th argument &apos;XXH_bigEndian&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:234:18" call-funcname="XXH_readLE32_align" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="374" col="34" call-argexpr="align" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="406" col="79" info="Calling function &apos;XXH32_endian_align&apos;, 5th argument &apos;XXH_aligned&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:234:18" call-funcname="XXH_readLE32_align" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="375" col="34" call-argexpr="endian" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="408" col="61" info="Calling function &apos;XXH32_endian_align&apos;, 4th argument &apos;XXH_bigEndian&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:234:18" call-funcname="XXH_readLE32_align" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="375" col="34" call-argexpr="align" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="406" col="79" info="Calling function &apos;XXH32_endian_align&apos;, 5th argument &apos;XXH_aligned&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:234:18" call-funcname="XXH_readLE32_align" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="376" col="34" call-argexpr="endian" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="408" col="61" info="Calling function &apos;XXH32_endian_align&apos;, 4th argument &apos;XXH_bigEndian&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:234:18" call-funcname="XXH_readLE32_align" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="376" col="34" call-argexpr="align" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="406" col="79" info="Calling function &apos;XXH32_endian_align&apos;, 5th argument &apos;XXH_aligned&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:234:18" call-funcname="XXH_readLE32_align" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="377" col="34" call-argexpr="endian" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="408" col="61" info="Calling function &apos;XXH32_endian_align&apos;, 4th argument &apos;XXH_bigEndian&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:234:18" call-funcname="XXH_readLE32_align" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="377" col="34" call-argexpr="align" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="406" col="79" info="Calling function &apos;XXH32_endian_align&apos;, 5th argument &apos;XXH_aligned&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:291:1" call-funcname="XXH32_finalize" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="388" col="26" call-argexpr="len&amp;15" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="366" col="12" info="Assuming that condition &apos;len&gt;=16&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:291:1" call-funcname="XXH32_finalize" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="388" col="26" call-argexpr="endian" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="408" col="61" info="Calling function &apos;XXH32_endian_align&apos;, 4th argument &apos;XXH_bigEndian&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:291:1" call-funcname="XXH32_finalize" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="388" col="26" call-argexpr="align" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="406" col="79" info="Calling function &apos;XXH32_endian_align&apos;, 5th argument &apos;XXH_aligned&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:352:1" call-funcname="XXH32_endian_align" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="406" col="42" call-argexpr="XXH_aligned" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:352:1" call-funcname="XXH32_endian_align" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="408" col="42" call-argexpr="XXH_bigEndian" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:352:1" call-funcname="XXH32_endian_align" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="408" col="42" call-argexpr="XXH_aligned" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:352:1" call-funcname="XXH32_endian_align" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="414" col="34" call-argexpr="XXH_bigEndian" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:452:1" call-funcname="XXH32_update_endian" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="522" col="35" call-argexpr="XXH_bigEndian" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:291:1" call-funcname="XXH32_finalize" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="542" col="26" call-argexpr="endian" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="553" col="46" info="Calling function &apos;XXH32_digest_endian&apos;, 2nd argument &apos;XXH_bigEndian&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:291:1" call-funcname="XXH32_finalize" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="542" col="26" call-argexpr="XXH_aligned" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:527:1" call-funcname="XXH32_digest_endian" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="553" col="35" call-argexpr="XXH_bigEndian" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="682" col="23" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="724" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="726" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="728" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="731" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="733" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="735" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="740" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="742" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="744" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="748" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="750" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="752" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="758" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="760" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="762" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="767" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="769" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="771" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="778" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="780" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="782" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="788" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="790" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:672:12" call-funcname="XXH64_round" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="792" col="16" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:645:18" call-funcname="XXH_readLE64_align" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="833" col="34" call-argexpr="endian" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="871" col="61" info="Calling function &apos;XXH64_endian_align&apos;, 4th argument &apos;XXH_bigEndian&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:645:18" call-funcname="XXH_readLE64_align" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="833" col="34" call-argexpr="align" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="869" col="79" info="Calling function &apos;XXH64_endian_align&apos;, 5th argument &apos;XXH_aligned&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:645:18" call-funcname="XXH_readLE64_align" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="834" col="34" call-argexpr="endian" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="871" col="61" info="Calling function &apos;XXH64_endian_align&apos;, 4th argument &apos;XXH_bigEndian&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:645:18" call-funcname="XXH_readLE64_align" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="834" col="34" call-argexpr="align" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="869" col="79" info="Calling function &apos;XXH64_endian_align&apos;, 5th argument &apos;XXH_aligned&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:645:18" call-funcname="XXH_readLE64_align" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="835" col="34" call-argexpr="endian" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="871" col="61" info="Calling function &apos;XXH64_endian_align&apos;, 4th argument &apos;XXH_bigEndian&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:645:18" call-funcname="XXH_readLE64_align" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="835" col="34" call-argexpr="align" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="869" col="79" info="Calling function &apos;XXH64_endian_align&apos;, 5th argument &apos;XXH_aligned&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:645:18" call-funcname="XXH_readLE64_align" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="836" col="34" call-argexpr="endian" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="871" col="61" info="Calling function &apos;XXH64_endian_align&apos;, 4th argument &apos;XXH_bigEndian&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:645:18" call-funcname="XXH_readLE64_align" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="836" col="34" call-argexpr="align" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="869" col="79" info="Calling function &apos;XXH64_endian_align&apos;, 5th argument &apos;XXH_aligned&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:702:1" call-funcname="XXH64_finalize" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="851" col="26" call-argexpr="endian" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="871" col="61" info="Calling function &apos;XXH64_endian_align&apos;, 4th argument &apos;XXH_bigEndian&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:702:1" call-funcname="XXH64_finalize" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="851" col="26" call-argexpr="align" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="869" col="79" info="Calling function &apos;XXH64_endian_align&apos;, 5th argument &apos;XXH_aligned&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:811:1" call-funcname="XXH64_endian_align" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="869" col="42" call-argexpr="XXH_aligned" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:811:1" call-funcname="XXH64_endian_align" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="871" col="42" call-argexpr="XXH_bigEndian" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:811:1" call-funcname="XXH64_endian_align" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="871" col="42" call-argexpr="XXH_aligned" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:811:1" call-funcname="XXH64_endian_align" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="877" col="34" call-argexpr="XXH_bigEndian" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:912:1" call-funcname="XXH64_update_endian" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="978" col="35" call-argexpr="XXH_bigEndian" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:702:1" call-funcname="XXH64_finalize" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="1002" col="26" call-argexpr="endian" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="1012" col="46" info="Calling function &apos;XXH64_digest_endian&apos;, 2nd argument &apos;XXH_bigEndian&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:702:1" call-funcname="XXH64_finalize" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="1002" col="26" call-argexpr="XXH_aligned" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:981:18" call-funcname="XXH64_digest_endian" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="1012" col="35" call-argexpr="XXH_bigEndian" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:174:12" call-funcname="XXH_read32" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="237" col="43" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:234:18" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:234:18" call-funcname="XXH_readLE32_align" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="244" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:242:18" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:174:12" call-funcname="XXH_read32" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="249" col="47" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:247:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:109:14" call-funcname="XXH_free" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="428" col="5" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:174:31" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:452:1" call-funcname="XXH32_update_endian" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="520" col="16" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:178:30" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:452:1" call-funcname="XXH32_update_endian" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="520" col="16" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:178:30" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:527:1" call-funcname="XXH32_digest_endian" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="551" col="16" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:179:30" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:247:12" call-funcname="XXH_readBE32" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="574" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:206:29" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:618:12" call-funcname="XXH_read64" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="648" col="43" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:645:18" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:645:18" call-funcname="XXH_readLE64_align" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="655" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:653:18" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:618:12" call-funcname="XXH_read64" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="660" col="47" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:658:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:109:14" call-funcname="XXH_free" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="889" col="5" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:231:31" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:912:1" call-funcname="XXH64_update_endian" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="976" col="16" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:235:30" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:912:1" call-funcname="XXH64_update_endian" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="976" col="16" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:235:30" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:981:18" call-funcname="XXH64_digest_endian" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="1010" col="16" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:236:30" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:658:12" call-funcname="XXH_readBE64" call-argnr="1" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="1027" col="12" my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:241:29" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:112:14" my-argnr="1" my-argname="dest" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="112" col="83" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:112:14" my-argnr="2" my-argname="src" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="112" col="88" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:174:12" my-argnr="1" my-argname="memPtr" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="177" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:175:21" my-argnr="1" my-argname="dstState" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="434" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:175:21" my-argnr="2" my-argname="srcState" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="434" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:177:30" my-argnr="1" my-argname="statePtr" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="446" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:527:1" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="531" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:205:21" my-argnr="1" my-argname="dst" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="569" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:618:12" my-argnr="1" my-argname="memPtr" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="621" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:232:21" my-argnr="1" my-argname="dstState" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="895" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:232:21" my-argnr="2" my-argname="srcState" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="895" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:234:30" my-argnr="1" my-argname="statePtr" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="907" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:981:18" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="985" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:240:21" my-argnr="1" my-argname="dst" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="1022" col="12" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:112:14" my-argnr="2" my-argname="src" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="112" col="88" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:174:12" my-argnr="1" my-argname="memPtr" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="177" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:175:21" my-argnr="2" my-argname="srcState" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="434" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:527:1" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="531" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:618:12" my-argnr="1" my-argname="memPtr" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="621" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h:232:21" my-argnr="2" my-argname="srcState" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="895" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c:981:18" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c" line="985" col="9" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="XXH_malloc" lineNumber="108"/>
+    <functiondecl functionName="XXH_free" lineNumber="109"/>
+    <functiondecl functionName="XXH_memcpy" lineNumber="112"/>
+    <functiondecl functionName="XXH_read32" lineNumber="174"/>
+    <functiondecl functionName="XXH_swap32" lineNumber="203"/>
+    <functiondecl functionName="XXH_isLittleEndian" lineNumber="220"/>
+    <functiondecl functionName="XXH_readLE32_align" lineNumber="234"/>
+    <functiondecl functionName="XXH_readLE32" lineNumber="242"/>
+    <functiondecl functionName="XXH_readBE32" lineNumber="247"/>
+    <functiondecl functionName="LZ4_XXH_versionNumber" lineNumber="257"/>
+    <functiondecl functionName="XXH32_round" lineNumber="269"/>
+    <functiondecl functionName="XXH32_avalanche" lineNumber="278"/>
+    <functiondecl functionName="XXH32_finalize" lineNumber="291"/>
+    <functiondecl functionName="XXH32_endian_align" lineNumber="352"/>
+    <functiondecl functionName="LZ4_XXH32" lineNumber="392"/>
+    <functiondecl functionName="LZ4_XXH32_createState" lineNumber="422"/>
+    <functiondecl functionName="LZ4_XXH32_freeState" lineNumber="426"/>
+    <functiondecl functionName="LZ4_XXH32_copyState" lineNumber="432"/>
+    <functiondecl functionName="LZ4_XXH32_reset" lineNumber="437"/>
+    <functiondecl functionName="XXH32_update_endian" lineNumber="452"/>
+    <functiondecl functionName="LZ4_XXH32_update" lineNumber="515"/>
+    <functiondecl functionName="XXH32_digest_endian" lineNumber="527"/>
+    <functiondecl functionName="LZ4_XXH32_digest" lineNumber="546"/>
+    <functiondecl functionName="LZ4_XXH32_canonicalFromHash" lineNumber="565"/>
+    <functiondecl functionName="LZ4_XXH32_hashFromCanonical" lineNumber="572"/>
+    <functiondecl functionName="XXH_read64" lineNumber="618"/>
+    <functiondecl functionName="XXH_swap64" lineNumber="632"/>
+    <functiondecl functionName="XXH_readLE64_align" lineNumber="645"/>
+    <functiondecl functionName="XXH_readLE64" lineNumber="653"/>
+    <functiondecl functionName="XXH_readBE64" lineNumber="658"/>
+    <functiondecl functionName="XXH64_round" lineNumber="672"/>
+    <functiondecl functionName="XXH64_mergeRound" lineNumber="680"/>
+    <functiondecl functionName="XXH64_avalanche" lineNumber="688"/>
+    <functiondecl functionName="XXH64_finalize" lineNumber="702"/>
+    <functiondecl functionName="XXH64_endian_align" lineNumber="811"/>
+    <functiondecl functionName="LZ4_XXH64" lineNumber="855"/>
+    <functiondecl functionName="LZ4_XXH64_createState" lineNumber="883"/>
+    <functiondecl functionName="LZ4_XXH64_freeState" lineNumber="887"/>
+    <functiondecl functionName="LZ4_XXH64_copyState" lineNumber="893"/>
+    <functiondecl functionName="LZ4_XXH64_reset" lineNumber="898"/>
+    <functiondecl functionName="XXH64_update_endian" lineNumber="912"/>
+    <functiondecl functionName="LZ4_XXH64_update" lineNumber="971"/>
+    <functiondecl functionName="XXH64_digest_endian" lineNumber="981"/>
+    <functiondecl functionName="LZ4_XXH64_digest" lineNumber="1005"/>
+    <functiondecl functionName="LZ4_XXH64_canonicalFromHash" lineNumber="1018"/>
+    <functiondecl functionName="LZ4_XXH64_hashFromCanonical" lineNumber="1025"/>
+    <functioncall functionName="XXH32_avalanche"/>
+    <functioncall functionName="XXH32_digest_endian"/>
+    <functioncall functionName="XXH32_endian_align"/>
+    <functioncall functionName="XXH32_finalize"/>
+    <functioncall functionName="XXH32_round"/>
+    <functioncall functionName="XXH32_update_endian"/>
+    <functioncall functionName="XXH64_avalanche"/>
+    <functioncall functionName="XXH64_digest_endian"/>
+    <functioncall functionName="XXH64_endian_align"/>
+    <functioncall functionName="XXH64_finalize"/>
+    <functioncall functionName="XXH64_mergeRound"/>
+    <functioncall functionName="XXH64_round"/>
+    <functioncall functionName="XXH64_update_endian"/>
+    <functioncall functionName="XXH_ERROR"/>
+    <functioncall functionName="XXH_OK"/>
+    <functioncall functionName="XXH_aligned"/>
+    <functioncall functionName="XXH_bigEndian"/>
+    <functioncall functionName="XXH_free"/>
+    <functioncall functionName="XXH_isLittleEndian"/>
+    <functioncall functionName="XXH_littleEndian"/>
+    <functioncall functionName="XXH_malloc"/>
+    <functioncall functionName="XXH_memcpy"/>
+    <functioncall functionName="XXH_read32"/>
+    <functioncall functionName="XXH_read64"/>
+    <functioncall functionName="XXH_readBE32"/>
+    <functioncall functionName="XXH_readBE64"/>
+    <functioncall functionName="XXH_readLE32"/>
+    <functioncall functionName="XXH_readLE32_align"/>
+    <functioncall functionName="XXH_readLE64"/>
+    <functioncall functionName="XXH_readLE64_align"/>
+    <functioncall functionName="XXH_swap32"/>
+    <functioncall functionName="XXH_swap64"/>
+    <functioncall functionName="XXH_unaligned"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memset"/>
+  </FileInfo>
+</analyzerinfo>

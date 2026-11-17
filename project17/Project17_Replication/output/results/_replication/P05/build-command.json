@@ -1,0 +1,9 @@
+[
+ "cmake",
+ "--build",
+ "/home/yhong/comp5355/build/json-c-0.18",
+ "--target",
+ "json-c",
+ "--parallel",
+ "1"
+]

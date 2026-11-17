@@ -1,0 +1,12 @@
+measurement_schema	measurement-v1
+run_id	PRE-P06-CC-001
+purpose	pretest
+working_directory	/home/yhong/comp5355
+locale	C
+application_cache_policy	required_fresh_tool_cache
+os_page_cache	natural_not_cleared
+created_empty_cache_directory	/home/yhong/comp5355/results/pretest-yyjson-0.12.0/PRE-P06-CC-001/cache
+started_utc	2026-10-28T03:23:45Z
+ended_utc	2026-10-28T03:24:18Z
+timed_invocation_exit_code	0
+coverage_validation	pending_tool_output_review

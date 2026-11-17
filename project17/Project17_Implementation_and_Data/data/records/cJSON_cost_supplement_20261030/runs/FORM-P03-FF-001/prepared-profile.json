@@ -1,0 +1,50 @@
+{
+  "profile_id": "P03-FF-COST-v1",
+  "prepared_date": "2026-10-30",
+  "status": "prepared_not_executed",
+  "project": "P03 cJSON 1.7.19",
+  "purpose": "原配置完整扫描补测外部成本；新输出随后与旧26条核查后验映射",
+  "run_id": "FORM-P03-FF-001",
+  "run_directory": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-FF-001",
+  "preparation_directory": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-FORM-P03-FF-001",
+  "accepted_preflight": "review_evidence/cJSON_cost_supplement_20261030/Preflight_Acceptance.json",
+  "accepted_codechecker": "review_evidence/cJSON_cost_supplement_20261030/CodeChecker_Acceptance.json",
+  "input_baseline": "review_evidence/cJSON_cost_supplement_20261030/Preflight_Profile.json",
+  "tool_version": "2.0.20",
+  "analysis_argv": [
+    "/home/yhong/comp5355/.venv/bin/flawfinder",
+    "--minlevel=1",
+    "--neverignore",
+    "--columns",
+    "--context",
+    "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+    "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h"
+  ],
+  "input_files": [
+    "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+    "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h"
+  ],
+  "historical_run_id": "PRE-P03-FF-001",
+  "historical_summary": "review_evidence/cJSON_pretest_20261026/flawfinder/run-summary.json",
+  "historical_report": "review_evidence/cJSON_pretest_20261026/flawfinder/report.txt",
+  "historical_displayed_hits_reference_only": 26,
+  "policies": {
+    "comparison": "comparison-v1",
+    "measurement": "measurement-v1",
+    "locale": "C",
+    "concurrent_tool_combinations": 1,
+    "effective_measurements": 1,
+    "tool_result_cache": "Flawfinder不使用工具结果缓存；记录器的通用空cache目录未用于本工具",
+    "os_page_cache": "natural_not_cleared",
+    "whole_command_timeout": "未新增",
+    "analysis_boundary": "完整一次Flawfinder进程：启动、读取两文件、扫描、写原始输出",
+    "outside_timing": "版本、环境、输入哈希、摘要提取、旧核查映射及回执复制"
+  },
+  "caveats": [
+    "旧FF没有独立完整argv文件；原参数依据旧run-summary、报告和comparison-v1固定，不补造历史文件。",
+    "26仅为历史显示命中参考，不是新扫描的成功条件；新旧条目及诊断实质逐项核对后才复用既有判断。",
+    "等级0及累计0+单列；文本文件数不是编译动作或语义覆盖率，命中不是已确认漏洞。",
+    "新成本只属于本次FORM完整扫描，不倒填旧PRE；GNU time最大RSS为Linux KiB，不是整个进程树峰值之和。",
+    "本入口只执行FF完整扫描，不执行CodeChecker或Cppcheck分析、parse、配置或构建。"
+  ]
+}

@@ -1,0 +1,12 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+get_byte
+arith_decode global:[jpeg_aritab] call:[get_byte,while] noreturn:[get_byte]
+process_restart call:[memset] noreturn:[memset]
+decode_mcu_DC_first call:[arith_decode,process_restart,short] noreturn:[process_restart]
+decode_mcu_AC_first global:[jpeg_natural_order] call:[arith_decode,process_restart,short] noreturn:[process_restart]
+decode_mcu_DC_refine call:[arith_decode,process_restart] noreturn:[process_restart]
+decode_mcu_AC_refine global:[jpeg_natural_order] call:[arith_decode,process_restart,short] noreturn:[process_restart]
+decode_mcu global:[jpeg_natural_order] call:[arith_decode,process_restart,short] noreturn:[process_restart]
+start_pass call:[memset] noreturn:[memset]
+jinit_arith_decoder call:[int,sizeof]

@@ -1,0 +1,65 @@
+{
+  "runId": "PRE-P04-CC-001",
+  "purpose": "functional pretest",
+  "coverageValidation": "pending_tool_output_review",
+  "sourceReview": "not performed",
+  "auxiliaryTiming": "checkers and both parse commands outside analysis timing; not measured",
+  "metadataTools": [
+    {
+      "actionNum": 8,
+      "clangsaStatistics": {
+        "failed": 0,
+        "failed_sources": [],
+        "successful": 8,
+        "successful_sources": [
+          "/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c",
+          "/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c",
+          "/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c",
+          "/home/yhong/comp5355/sources/libyaml-0.2.5/src/loader.c",
+          "/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c",
+          "/home/yhong/comp5355/sources/libyaml-0.2.5/src/reader.c",
+          "/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c",
+          "/home/yhong/comp5355/sources/libyaml-0.2.5/src/writer.c"
+        ],
+        "version": "18.1.3"
+      },
+      "skipped": 0
+    }
+  ],
+  "plistResults": [
+    {
+      "file": "reports/api.c_clangsa_cda8920e79b3d39e124861849bd35b7e.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/dumper.c_clangsa_94e430051f0c45f5e1c3db85a2b72a95.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/emitter.c_clangsa_29a73d3fcf73034536797315b0f9922e.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/loader.c_clangsa_dfe971911d1314b5e906349af2210c25.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/parser.c_clangsa_15fce17986a3e547537e317d5ad63c7f.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/reader.c_clangsa_56fbf8ebfa8a7391ab1c7fa0a3bc10c0.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/scanner.c_clangsa_85536a315f74742d86a42b34128b0a64.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/writer.c_clangsa_ae13e9b96d3962677b78980d3b3d15dc.plist",
+      "savedDiagnostics": 0
+    }
+  ],
+  "plistFileCount": 8,
+  "savedPlistDiagnostics": 0
+}

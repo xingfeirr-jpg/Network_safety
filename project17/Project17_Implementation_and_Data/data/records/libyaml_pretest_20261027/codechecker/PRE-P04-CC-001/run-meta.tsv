@@ -1,0 +1,12 @@
+measurement_schema	measurement-v1
+run_id	PRE-P04-CC-001
+purpose	pretest
+working_directory	/home/yhong/comp5355
+locale	C
+application_cache_policy	required_fresh_tool_cache
+os_page_cache	natural_not_cleared
+created_empty_cache_directory	/home/yhong/comp5355/results/pretest-libyaml-0.2.5/PRE-P04-CC-001/cache
+started_utc	2026-10-27T13:08:41Z
+ended_utc	2026-10-27T13:09:09Z
+timed_invocation_exit_code	0
+coverage_validation	pending_tool_output_review

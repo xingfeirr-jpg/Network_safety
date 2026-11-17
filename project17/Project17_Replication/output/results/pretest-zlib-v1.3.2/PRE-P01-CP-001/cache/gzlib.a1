@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="8074690963349884890">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h" line="32" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="268" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="434" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="460" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="466" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h" line="494" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h" line="35" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fcntl.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fcntl.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h" line="43" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h" line="132" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="81" col="13" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="81" col="13" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="405" col="17" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="405" col="17" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="2" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="546" col="13" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" call-funcname="gz_error" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="546" col="13" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c:87:14" call-funcname="gz_open" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="289" col="12" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:2015:27" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c:87:14" call-funcname="gz_open" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="289" col="12" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:2015:27" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c:87:14" call-funcname="gz_open" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="294" col="12" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:141:28" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c:87:14" call-funcname="gz_open" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="294" col="12" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:141:28" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c:87:14" call-funcname="gz_open" call-argnr="3" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="309" col="10" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:1404:24" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:142:31" call-funcname="gzseek64" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="441" col="11" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:2016:28" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:143:31" call-funcname="gztell64" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="464" col="11" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:2017:28" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:144:31" call-funcname="gzoffset64" call-argnr="1" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="493" col="11" my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/zlib.h:2018:28" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c:69:12" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="70" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="557" col="9" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/zlib-v1.3.2/gzguts.h:207:20" my-argnr="1" my-argname="state" file="/home/yhong/comp5355/sources/zlib-v1.3.2/gzlib.c" line="557" col="9" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="gz_reset" lineNumber="69"/>
+    <functiondecl functionName="gz_open" lineNumber="87"/>
+    <functiondecl functionName="gz_error" lineNumber="555"/>
+    <functiondecl functionName="gz_intmax" lineNumber="596"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="O_APPEND"/>
+    <functioncall functionName="O_RDONLY"/>
+    <functioncall functionName="O_TRUNC"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="gz_error"/>
+    <functioncall functionName="gz_intmax"/>
+    <functioncall functionName="gz_open"/>
+    <functioncall functionName="gz_reset"/>
+    <functioncall functionName="gzoffset64"/>
+    <functioncall functionName="gzrewind"/>
+    <functioncall functionName="gzseek64"/>
+    <functioncall functionName="gztell64"/>
+    <functioncall functionName="lseek"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="off_t"/>
+    <functioncall functionName="open"/>
+    <functioncall functionName="snprintf"/>
+    <functioncall functionName="strlen"/>
+  </FileInfo>
+</analyzerinfo>

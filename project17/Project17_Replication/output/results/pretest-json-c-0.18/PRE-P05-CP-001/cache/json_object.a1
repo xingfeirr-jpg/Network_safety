@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="14912457103474073711">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/strerror_override.h" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;inttypes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_inttypes.h" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object.h" line="30" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/strerror_override.h" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="15" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="17" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="21" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="22" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="23" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h" line="25" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/debug.h" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/json_object_private.h" line="28" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/snprintf_compat.h" line="14" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="241" col="5" call-argexpr="sbuf" call-argvaluetype="7" call-argvalue="7"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:276:18" call-funcname="json_object_set_userdata" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="375" col="26" call-argexpr="userdata" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1239" col="41" info="Calling function &apos;json_object_set_serializer&apos;, 3rd argument &apos;NULL&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:276:18" call-funcname="json_object_set_userdata" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="375" col="26" call-argexpr="user_delete" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1239" col="47" info="Calling function &apos;json_object_set_serializer&apos;, 4th argument &apos;NULL&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:240:25" call-funcname="json_object_to_json_string_length" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="436" col="42" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:419:17" call-funcname="json_object_object_add_ex" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="596" col="34" call-argexpr="val" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1773" col="11" info="Assignment &apos;jso=NULL&apos;, assigned value is 0"/>
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1781" col="47" info="Calling function &apos;json_object_object_add&apos;, 3rd argument &apos;jso&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:419:17" call-funcname="json_object_object_add_ex" call-argnr="4" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="596" col="34" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:464:17" call-funcname="json_object_object_get_ex" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="613" col="27" call-argexpr="&amp;result" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="711" col="27" call-argexpr="sbuf" call-argvaluetype="7" call-argvalue="21"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:109:17" call-funcname="json_parse_int64" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="750" col="23" call-argexpr="&amp;cint64" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:109:17" call-funcname="json_parse_int64" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="832" col="23" call-argexpr="&amp;cint" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_util.h:114:17" call-funcname="json_parse_uint64" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="870" col="24" call-argexpr="&amp;cuint" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1105" col="20" call-argexpr="buf" call-argvaluetype="7" call-argvalue="128"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1105" col="20" call-argexpr="size" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1098" col="11" info="Assuming that condition &apos;size&lt;0&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1016:12" call-funcname="json_object_double_to_json_string_format" call-argnr="5" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1112" col="49" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:309:18" call-funcname="json_object_set_serializer" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1239" col="29" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:309:18" call-funcname="json_object_set_serializer" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1239" col="29" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:309:18" call-funcname="json_object_set_serializer" call-argnr="4" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1239" col="29" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:186:12" call-funcname="json_escape_str" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1252" col="17" call-argexpr="len&lt;0?-(ssize_t)len:len" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1252" col="53" info="Assuming that condition &apos;len&lt;0&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:69:12" call-funcname="array_list_add" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1520" col="23" call-argexpr="val" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1797" col="11" info="Assignment &apos;jso=NULL&apos;, assigned value is 0"/>
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1805" col="36" info="Calling function &apos;json_object_array_add&apos;, 2nd argument &apos;jso&apos; value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:84:12" call-funcname="array_list_shrink" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1568" col="26" call-argexpr="empty_slots" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1566" col="18" info="Assuming that condition &apos;empty_slots&lt;0&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1747:12" call-funcname="json_object_deep_copy_recursive" call-argnr="5" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1774" col="44" call-argexpr="&amp;jso" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:403:17" call-funcname="json_object_object_add" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1781" col="30" call-argexpr="jso" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1773" col="11" info="Assignment &apos;jso=NULL&apos;, assigned value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1747:12" call-funcname="json_object_deep_copy_recursive" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1798" col="44" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1747:12" call-funcname="json_object_deep_copy_recursive" call-argnr="5" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1798" col="44" call-argexpr="&amp;jso" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:606:17" call-funcname="json_object_array_add" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1805" col="29" call-argexpr="jso" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1797" col="11" info="Assignment &apos;jso=NULL&apos;, assigned value is 0"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1747:12" call-funcname="json_object_deep_copy_recursive" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1839" col="38" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1747:12" call-funcname="json_object_deep_copy_recursive" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1839" col="38" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:121:48" call-funcname="JC_STRING_C" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="172" col="6" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:170:21" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="211" col="5" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:186:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:276:18" call-funcname="json_object_set_userdata" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="375" col="2" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:309:18" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:276:18" call-funcname="json_object_set_userdata" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="375" col="2" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:309:18" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:276:18" call-funcname="json_object_set_userdata" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="375" col="2" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:309:18" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:240:25" call-funcname="json_object_to_json_string_length" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="436" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:231:25" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:231:25" call-funcname="json_object_to_json_string_ext" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="443" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:223:25" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:105:17" call-funcname="printbuf_memset" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="452" col="4" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:446:13" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:366:30" call-funcname="json_object_get_object" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="470" col="2" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:463:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="469" col="2" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:463:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:396:23" call-funcname="lh_entry_k_is_constant" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="519" col="7" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:517:13" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:77:42" call-funcname="JC_OBJECT" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="526" col="16" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:137:13" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:212:28" call-funcname="json_object_get_type" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="564" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:419:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:419:17" call-funcname="json_object_object_add_ex" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="596" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:403:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:419:17" call-funcname="json_object_object_add_ex" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="596" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:403:17" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:419:17" call-funcname="json_object_object_add_ex" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="596" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:403:17" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:212:28" call-funcname="json_object_get_type" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="601" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:371:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:464:17" call-funcname="json_object_object_get_ex" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="613" col="2" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:443:33" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:464:17" call-funcname="json_object_object_get_ex" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="613" col="2" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:443:33" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:212:28" call-funcname="json_object_get_type" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="640" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:476:18" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:316:12" call-funcname="lh_table_delete" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="641" col="2" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:476:18" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:93:43" call-funcname="JC_BOOL" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="654" col="6" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:646:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="652" col="3" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:646:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:109:39" call-funcname="JC_INT" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="707" col="6" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:702:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="711" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:702:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:823:17" call-funcname="json_object_set_int64" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="778" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:765:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:101:42" call-funcname="JC_DOUBLE" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1019" col="38" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1016:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1105" col="2" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1016:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1016:12" call-funcname="json_object_double_to_json_string_format" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1112" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1109:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1016:12" call-funcname="json_object_double_to_json_string_format" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1112" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1109:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1016:12" call-funcname="json_object_double_to_json_string_format" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1118" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:911:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1016:12" call-funcname="json_object_double_to_json_string_format" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1118" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:911:17" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1162:5" call-funcname="json_object_userdata_to_json_string" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1159" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1156:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1162:5" call-funcname="json_object_userdata_to_json_string" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1159" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1156:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1166" col="2" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1162:5" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:117:42" call-funcname="JC_STRING" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1248" col="16" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1245:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1250" col="3" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1245:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:117:42" call-funcname="JC_STRING" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1261" col="6" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:138:13" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1266:28" call-funcname="_json_object_new_string" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1306" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:964:33" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1266:28" call-funcname="_json_object_new_string" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1311" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:976:33" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1342:12" call-funcname="_json_object_set_string_len" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1397" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:1010:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1342:12" call-funcname="_json_object_set_string_len" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1397" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:1010:17" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1342:12" call-funcname="_json_object_set_string_len" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1402" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:1023:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1342:12" call-funcname="_json_object_set_string_len" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1402" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:1023:17" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:566:20" call-funcname="json_object_array_length" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1414" col="20" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1407:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:56:17" call-funcname="printbuf_memappend" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1413" col="2" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1407:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:85:41" call-funcname="JC_ARRAY" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1457" col="18" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:139:13" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:212:28" call-funcname="json_object_get_type" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1492" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:576:18" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:73:13" call-funcname="array_list_sort" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1493" col="2" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:576:18" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:212:28" call-funcname="json_object_get_type" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1502" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:594:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:75:14" call-funcname="array_list_bsearch" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1503" col="34" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:594:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:212:28" call-funcname="json_object_get_type" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1513" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:566:20" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:212:28" call-funcname="json_object_get_type" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1519" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:606:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:69:12" call-funcname="array_list_add" call-argnr="2" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1520" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:606:17" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:212:28" call-funcname="json_object_get_type" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1525" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:642:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:65:12" call-funcname="array_list_insert_idx" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1526" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:642:17" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:212:28" call-funcname="json_object_get_type" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1531" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:623:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:67:12" call-funcname="array_list_put_idx" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1532" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:623:17" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:212:28" call-funcname="json_object_get_type" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1537" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:672:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:212:28" call-funcname="json_object_get_type" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1543" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:658:33" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:566:20" call-funcname="json_object_array_length" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1551" col="8" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1547:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:566:20" call-funcname="json_object_array_length" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1552" col="13" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1547:12" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:85:41" call-funcname="JC_ARRAY" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1568" col="27" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:681:17" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:212:28" call-funcname="json_object_get_type" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1581" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1576:12" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.h:212:28" call-funcname="json_object_get_type" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1582" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1576:12" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:348:36" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="350" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:364:33" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="366" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:386:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="388" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:396:23" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="398" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:407:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="409" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:416:24" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="418" col="2" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:426:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="428" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:436:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="438" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:59:13" my-argnr="1" my-argname="jso" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="312" col="16" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1162:5" my-argnr="1" my-argname="jso" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1165" col="42" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1325:23" my-argnr="1" my-argname="jso" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1328" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1659:12" my-argnr="1" my-argname="src" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1661" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1697:5" my-argnr="1" my-argname="src" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1700" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1747:12" my-argnr="6" my-argname="shallow_copy" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1756" col="20" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:348:36" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="350" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:364:33" my-argnr="1" my-argname="t" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="366" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:386:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="388" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:396:23" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="398" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:407:25" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="409" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:426:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="428" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h:436:36" my-argnr="1" my-argname="e" file="/home/yhong/comp5355/sources/json-c-0.18/linkhash.h" line="438" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1325:23" my-argnr="1" my-argname="jso" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1328" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1659:12" my-argnr="1" my-argname="src" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1661" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1697:5" my-argnr="1" my-argname="src" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1700" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1747:12" my-argnr="6" my-argname="shallow_copy" file="/home/yhong/comp5355/sources/json-c-0.18/json_object.c" line="1756" col="20" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="lh_table_head" lineNumber="348"/>
+    <functiondecl functionName="lh_get_hash" lineNumber="364"/>
+    <functiondecl functionName="lh_entry_k" lineNumber="386"/>
+    <functiondecl functionName="lh_entry_k_is_constant" lineNumber="396"/>
+    <functiondecl functionName="lh_entry_v" lineNumber="407"/>
+    <functiondecl functionName="lh_entry_set_val" lineNumber="416"/>
+    <functiondecl functionName="lh_entry_next" lineNumber="426"/>
+    <functiondecl functionName="lh_entry_prev" lineNumber="436"/>
+    <functiondecl functionName="JC_OBJECT" lineNumber="77"/>
+    <functiondecl functionName="JC_OBJECT_C" lineNumber="81"/>
+    <functiondecl functionName="JC_ARRAY" lineNumber="85"/>
+    <functiondecl functionName="JC_ARRAY_C" lineNumber="89"/>
+    <functiondecl functionName="JC_BOOL" lineNumber="93"/>
+    <functiondecl functionName="JC_BOOL_C" lineNumber="97"/>
+    <functiondecl functionName="JC_DOUBLE" lineNumber="101"/>
+    <functiondecl functionName="JC_DOUBLE_C" lineNumber="105"/>
+    <functiondecl functionName="JC_INT" lineNumber="109"/>
+    <functiondecl functionName="JC_INT_C" lineNumber="113"/>
+    <functiondecl functionName="JC_STRING" lineNumber="117"/>
+    <functiondecl functionName="JC_STRING_C" lineNumber="121"/>
+    <functiondecl functionName="get_string_component_mutable" lineNumber="170"/>
+    <functiondecl functionName="get_string_component" lineNumber="179"/>
+    <functiondecl functionName="json_escape_str" lineNumber="186"/>
+    <functiondecl functionName="json_object_generic_delete" lineNumber="310"/>
+    <functiondecl functionName="json_object_new" lineNumber="316"/>
+    <functiondecl functionName="indent" lineNumber="446"/>
+    <functiondecl functionName="json_object_object_to_json_string" lineNumber="463"/>
+    <functiondecl functionName="json_object_lh_entry_free" lineNumber="517"/>
+    <functiondecl functionName="json_object_object_delete" lineNumber="524"/>
+    <functiondecl functionName="json_object_boolean_to_json_string" lineNumber="646"/>
+    <functiondecl functionName="json_object_int_to_json_string" lineNumber="702"/>
+    <functiondecl functionName="json_object_double_to_json_string_format" lineNumber="1016"/>
+    <functiondecl functionName="json_object_double_to_json_string_default" lineNumber="1109"/>
+    <functiondecl functionName="_json_object_userdata_to_json_string" lineNumber="1156"/>
+    <functiondecl functionName="json_object_userdata_to_json_string" lineNumber="1162"/>
+    <functiondecl functionName="json_object_free_userdata" lineNumber="1170"/>
+    <functiondecl functionName="json_object_string_to_json_string" lineNumber="1245"/>
+    <functiondecl functionName="json_object_string_delete" lineNumber="1259"/>
+    <functiondecl functionName="_json_object_new_string" lineNumber="1266"/>
+    <functiondecl functionName="_json_object_get_string_len" lineNumber="1325"/>
+    <functiondecl functionName="_json_object_set_string_len" lineNumber="1342"/>
+    <functiondecl functionName="json_object_array_to_json_string" lineNumber="1407"/>
+    <functiondecl functionName="json_object_array_entry_free" lineNumber="1450"/>
+    <functiondecl functionName="json_object_array_delete" lineNumber="1455"/>
+    <functiondecl functionName="json_array_equal" lineNumber="1547"/>
+    <functiondecl functionName="json_object_all_values_equal" lineNumber="1576"/>
+    <functiondecl functionName="json_object_copy_serializer_data" lineNumber="1659"/>
+    <functiondecl functionName="json_c_shallow_copy_default" lineNumber="1697"/>
+    <functiondecl functionName="json_object_deep_copy_recursive" lineNumber="1747"/>
+    <functiondecl functionName="json_abort" lineNumber="1849"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ENOMEM"/>
+    <functioncall functionName="JC_ARRAY"/>
+    <functioncall functionName="JC_ARRAY_C"/>
+    <functioncall functionName="JC_BOOL"/>
+    <functioncall functionName="JC_BOOL_C"/>
+    <functioncall functionName="JC_DOUBLE"/>
+    <functioncall functionName="JC_DOUBLE_C"/>
+    <functioncall functionName="JC_INT"/>
+    <functioncall functionName="JC_INT_C"/>
+    <functioncall functionName="JC_OBJECT"/>
+    <functioncall functionName="JC_OBJECT_C"/>
+    <functioncall functionName="JC_STRING"/>
+    <functioncall functionName="JC_STRING_C"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="_json_c_set_last_err"/>
+    <functioncall functionName="_json_object_get_string_len"/>
+    <functioncall functionName="_json_object_new_string"/>
+    <functioncall functionName="_json_object_set_string_len"/>
+    <functioncall functionName="_json_object_userdata_to_json_string"/>
+    <functioncall functionName="_to_json_string"/>
+    <functioncall functionName="_user_delete"/>
+    <functioncall functionName="abort"/>
+    <functioncall functionName="array_list_add"/>
+    <functioncall functionName="array_list_bsearch"/>
+    <functioncall functionName="array_list_del_idx"/>
+    <functioncall functionName="array_list_free"/>
+    <functioncall functionName="array_list_get_idx"/>
+    <functioncall functionName="array_list_insert_idx"/>
+    <functioncall functionName="array_list_length"/>
+    <functioncall functionName="array_list_new2"/>
+    <functioncall functionName="array_list_put_idx"/>
+    <functioncall functionName="array_list_shrink"/>
+    <functioncall functionName="array_list_sort"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="fprintf"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="get_string_component"/>
+    <functioncall functionName="get_string_component_mutable"/>
+    <functioncall functionName="hash_fn"/>
+    <functioncall functionName="indent"/>
+    <functioncall functionName="isinf"/>
+    <functioncall functionName="isnan"/>
+    <functioncall functionName="json_abort"/>
+    <functioncall functionName="json_array_equal"/>
+    <functioncall functionName="json_c_shallow_copy_default"/>
+    <functioncall functionName="json_escape_str"/>
+    <functioncall functionName="json_object_all_values_equal"/>
+    <functioncall functionName="json_object_array_add"/>
+    <functioncall functionName="json_object_array_delete"/>
+    <functioncall functionName="json_object_array_entry_free"/>
+    <functioncall functionName="json_object_array_get_idx"/>
+    <functioncall functionName="json_object_array_length"/>
+    <functioncall functionName="json_object_array_to_json_string"/>
+    <functioncall functionName="json_object_boolean_to_json_string"/>
+    <functioncall functionName="json_object_copy_serializer_data"/>
+    <functioncall functionName="json_object_deep_copy_recursive"/>
+    <functioncall functionName="json_object_double_to_json_string"/>
+    <functioncall functionName="json_object_double_to_json_string_default"/>
+    <functioncall functionName="json_object_double_to_json_string_format"/>
+    <functioncall functionName="json_object_equal"/>
+    <functioncall functionName="json_object_free_userdata"/>
+    <functioncall functionName="json_object_generic_delete"/>
+    <functioncall functionName="json_object_get_object"/>
+    <functioncall functionName="json_object_get_type"/>
+    <functioncall functionName="json_object_int_to_json_string"/>
+    <functioncall functionName="json_object_int_type_int64"/>
+    <functioncall functionName="json_object_int_type_uint64"/>
+    <functioncall functionName="json_object_lh_entry_free"/>
+    <functioncall functionName="json_object_new"/>
+    <functioncall functionName="json_object_new_array"/>
+    <functioncall functionName="json_object_new_array_ext"/>
+    <functioncall functionName="json_object_new_boolean"/>
+    <functioncall functionName="json_object_new_double"/>
+    <functioncall functionName="json_object_new_int64"/>
+    <functioncall functionName="json_object_new_object"/>
+    <functioncall functionName="json_object_new_string_len"/>
+    <functioncall functionName="json_object_new_uint64"/>
+    <functioncall functionName="json_object_object_add"/>
+    <functioncall functionName="json_object_object_add_ex"/>
+    <functioncall functionName="json_object_object_delete"/>
+    <functioncall functionName="json_object_object_get_ex"/>
+    <functioncall functionName="json_object_object_to_json_string"/>
+    <functioncall functionName="json_object_put"/>
+    <functioncall functionName="json_object_set_int64"/>
+    <functioncall functionName="json_object_set_serializer"/>
+    <functioncall functionName="json_object_set_userdata"/>
+    <functioncall functionName="json_object_string_delete"/>
+    <functioncall functionName="json_object_string_to_json_string"/>
+    <functioncall functionName="json_object_to_json_string"/>
+    <functioncall functionName="json_object_to_json_string_ext"/>
+    <functioncall functionName="json_object_to_json_string_length"/>
+    <functioncall functionName="json_object_userdata_to_json_string"/>
+    <functioncall functionName="json_parse_int64"/>
+    <functioncall functionName="json_parse_uint64"/>
+    <functioncall functionName="json_type_array"/>
+    <functioncall functionName="json_type_boolean"/>
+    <functioncall functionName="json_type_double"/>
+    <functioncall functionName="json_type_int"/>
+    <functioncall functionName="json_type_null"/>
+    <functioncall functionName="json_type_object"/>
+    <functioncall functionName="json_type_string"/>
+    <functioncall functionName="lh_entry_k"/>
+    <functioncall functionName="lh_entry_k_is_constant"/>
+    <functioncall functionName="lh_entry_next"/>
+    <functioncall functionName="lh_entry_set_val"/>
+    <functioncall functionName="lh_entry_v"/>
+    <functioncall functionName="lh_get_hash"/>
+    <functioncall functionName="lh_kchar_table_new"/>
+    <functioncall functionName="lh_table_delete"/>
+    <functioncall functionName="lh_table_free"/>
+    <functioncall functionName="lh_table_head"/>
+    <functioncall functionName="lh_table_insert_w_hash"/>
+    <functioncall functionName="lh_table_length"/>
+    <functioncall functionName="lh_table_lookup_entry_w_hash"/>
+    <functioncall functionName="lh_table_lookup_ex"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="memcmp"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="printbuf_free"/>
+    <functioncall functionName="printbuf_memappend"/>
+    <functioncall functionName="printbuf_memset"/>
+    <functioncall functionName="printbuf_new"/>
+    <functioncall functionName="printbuf_reset"/>
+    <functioncall functionName="shallow_copy"/>
+    <functioncall functionName="snprintf"/>
+    <functioncall functionName="stderr"/>
+    <functioncall functionName="strcat"/>
+    <functioncall functionName="strchr"/>
+    <functioncall functionName="strdup"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strstr"/>
+    <functioncall functionName="strtod"/>
+  </FileInfo>
+</analyzerinfo>

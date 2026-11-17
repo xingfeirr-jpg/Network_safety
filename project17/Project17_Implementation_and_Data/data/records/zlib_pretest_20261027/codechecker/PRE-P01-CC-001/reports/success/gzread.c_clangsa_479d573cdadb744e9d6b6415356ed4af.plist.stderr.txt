@@ -1,0 +1,4 @@
+/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c:464:43: warning: Division by zero [core.DivideZero]
+  464 |     return len ? gz_read(state, buf, len) / size : 0;
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+1 warning generated.

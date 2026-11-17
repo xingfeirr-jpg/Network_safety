@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/yhong/comp5355/build/lz4-v1.10.0",
+  "command": "/usr/bin/clang-18 -DXXH_NAMESPACE=LZ4_ -I/home/yhong/comp5355/sources/lz4-v1.10.0/build/cmake/../../lib -Wpointer-arith -Wstrict-prototypes -Wdeclaration-after-statement -Wswitch-enum -Wshadow -Wcast-align -Wcast-qual -Wundef -Wextra -Wall -pedantic-errors -g -fPIC -o CMakeFiles/lz4_static.dir/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c.o -c /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c",
+  "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c",
+  "output": "CMakeFiles/lz4_static.dir/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/lz4-v1.10.0",
+  "command": "/usr/bin/clang-18 -DXXH_NAMESPACE=LZ4_ -I/home/yhong/comp5355/sources/lz4-v1.10.0/build/cmake/../../lib -Wpointer-arith -Wstrict-prototypes -Wdeclaration-after-statement -Wswitch-enum -Wshadow -Wcast-align -Wcast-qual -Wundef -Wextra -Wall -pedantic-errors -g -fPIC -o CMakeFiles/lz4_static.dir/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c.o -c /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c",
+  "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c",
+  "output": "CMakeFiles/lz4_static.dir/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/lz4-v1.10.0",
+  "command": "/usr/bin/clang-18 -DXXH_NAMESPACE=LZ4_ -I/home/yhong/comp5355/sources/lz4-v1.10.0/build/cmake/../../lib -Wpointer-arith -Wstrict-prototypes -Wdeclaration-after-statement -Wswitch-enum -Wshadow -Wcast-align -Wcast-qual -Wundef -Wextra -Wall -pedantic-errors -g -fPIC -o CMakeFiles/lz4_static.dir/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c.o -c /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c",
+  "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c",
+  "output": "CMakeFiles/lz4_static.dir/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/lz4-v1.10.0",
+  "command": "/usr/bin/clang-18 -DXXH_NAMESPACE=LZ4_ -I/home/yhong/comp5355/sources/lz4-v1.10.0/build/cmake/../../lib -Wpointer-arith -Wstrict-prototypes -Wdeclaration-after-statement -Wswitch-enum -Wshadow -Wcast-align -Wcast-qual -Wundef -Wextra -Wall -pedantic-errors -g -fPIC -o CMakeFiles/lz4_static.dir/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c.o -c /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c",
+  "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c",
+  "output": "CMakeFiles/lz4_static.dir/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c.o"
+},
+{
+  "directory": "/home/yhong/comp5355/build/lz4-v1.10.0",
+  "command": "/usr/bin/clang-18 -DXXH_NAMESPACE=LZ4_ -I/home/yhong/comp5355/sources/lz4-v1.10.0/build/cmake/../../lib -Wpointer-arith -Wstrict-prototypes -Wdeclaration-after-statement -Wswitch-enum -Wshadow -Wcast-align -Wcast-qual -Wundef -Wextra -Wall -pedantic-errors -g -fPIC -o CMakeFiles/lz4_static.dir/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c.o -c /home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c",
+  "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c",
+  "output": "CMakeFiles/lz4_static.dir/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c.o"
+}
+]

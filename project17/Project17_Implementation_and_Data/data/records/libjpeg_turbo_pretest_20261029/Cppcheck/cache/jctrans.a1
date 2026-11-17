@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="13012181917426735206">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="37" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="38" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="39" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="73" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h" line="126" column="0"/>
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;tblno&gt;=4&apos; is redundant or the array &apos;srcinfo-&gt;quant_tbl_ptrs[4]&apos; is accessed at index 4, which is out of bounds." verbose="Either the condition &apos;tblno&gt;=4&apos; is redundant or the array &apos;srcinfo-&gt;quant_tbl_ptrs[4]&apos; is accessed at index 4, which is out of bounds." cwe="788" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="135" column="41" info="Array index out of bounds"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="132" column="28" info="Assuming that condition &apos;tblno&gt;=4&apos; is not redundant"/>
+        </error>
+        <error id="negativeIndex" severity="warning" msg="Either the condition &apos;tblno&lt;0&apos; is redundant or the array &apos;srcinfo-&gt;quant_tbl_ptrs[4]&apos; is accessed at index -1, which is out of bounds." verbose="Either the condition &apos;tblno&lt;0&apos; is redundant or the array &apos;srcinfo-&gt;quant_tbl_ptrs[4]&apos; is accessed at index -1, which is out of bounds." cwe="786" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="135" column="41" info="Negative array index"/>
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="132" column="15" info="Assuming that condition &apos;tblno&lt;0&apos; is not redundant"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: buffer" verbose="Uninitialized variable: buffer" cwe="457" file0="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c">
+            <location file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="313" column="5"/>
+            <symbol>buffer</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1015:14" call-funcname="jpeg_suppress_tables" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="51" col="23" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:24:13" call-funcname="transencode_master_selection" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="56" col="3" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1133:14" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:26:13" call-funcname="transencode_coef_controller" call-argnr="2" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="202" col="3" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:24:13" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:297:1" call-funcname="compress_output" call-argnr="1" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="376" col="10" my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:374:1" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1133:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="45" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1135:14" my-argnr="1" my-argname="srcinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="78" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:24:13" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="179" col="3" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:246:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="249" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:274:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="276" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:297:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="299" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:26:13" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="397" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1133:14" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="45" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h:1135:14" my-argnr="1" my-argname="srcinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="78" col="7" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:246:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="249" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:274:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="276" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:297:1" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="299" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c:26:13" my-argnr="1" my-argname="cinfo" file="/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c" line="397" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GETENV_S" lineNumber="79"/>
+    <functiondecl functionName="PUTENV_S" lineNumber="132"/>
+    <functiondecl functionName="transencode_master_selection" lineNumber="173"/>
+    <functiondecl functionName="start_iMCU_row" lineNumber="246"/>
+    <functiondecl functionName="start_pass_coef" lineNumber="274"/>
+    <functiondecl functionName="compress_output" lineNumber="297"/>
+    <functiondecl functionName="compress_output_12" lineNumber="374"/>
+    <functiondecl functionName="transencode_coef_controller" lineNumber="389"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="ERANGE"/>
+    <functioncall functionName="JERR_BAD_BUFFER_MODE"/>
+    <functioncall functionName="JERR_BAD_STATE"/>
+    <functioncall functionName="JERR_COMPONENT_COUNT"/>
+    <functioncall functionName="JERR_MISMATCHED_QUANT_TABLE"/>
+    <functioncall functionName="JERR_NOTIMPL"/>
+    <functioncall functionName="JERR_NO_QUANT_TABLE"/>
+    <functioncall functionName="compress_output"/>
+    <functioncall functionName="compress_output_12"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="getenv"/>
+    <functioncall functionName="jinit_arith_encoder"/>
+    <functioncall functionName="jinit_c_master_control"/>
+    <functioncall functionName="jinit_huff_encoder"/>
+    <functioncall functionName="jinit_marker_writer"/>
+    <functioncall functionName="jinit_phuff_encoder"/>
+    <functioncall functionName="jpeg_alloc_quant_table"/>
+    <functioncall functionName="jpeg_set_colorspace"/>
+    <functioncall functionName="jpeg_set_defaults"/>
+    <functioncall functionName="jpeg_suppress_tables"/>
+    <functioncall functionName="jzero_far"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="setenv"/>
+    <functioncall functionName="start_iMCU_row"/>
+    <functioncall functionName="start_pass_coef"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="transencode_coef_controller"/>
+    <functioncall functionName="transencode_master_selection"/>
+  </FileInfo>
+</analyzerinfo>

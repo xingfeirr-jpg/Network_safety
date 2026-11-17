@@ -1,0 +1,21 @@
+[
+ "cmake",
+ "-S",
+ "/home/yhong/comp5355/sources/json-c-0.18",
+ "-B",
+ "/home/yhong/comp5355/build/json-c-0.18",
+ "-G",
+ "Ninja",
+ "-DCMAKE_C_COMPILER=/usr/bin/clang-18",
+ "-DCMAKE_BUILD_TYPE=Debug",
+ "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+ "-DBUILD_SHARED_LIBS=OFF",
+ "-DBUILD_STATIC_LIBS=ON",
+ "-DBUILD_TESTING=OFF",
+ "-DBUILD_APPS=OFF",
+ "-DDISABLE_JSON_POINTER=OFF",
+ "-DDISABLE_JSON_PATCH=OFF",
+ "-DDISABLE_EXTRA_LIBS=ON",
+ "-DDISABLE_WERROR=ON",
+ "-DCMAKE_INSTALL_PREFIX=/home/yhong/comp5355/deps/json-c-0.18"
+]

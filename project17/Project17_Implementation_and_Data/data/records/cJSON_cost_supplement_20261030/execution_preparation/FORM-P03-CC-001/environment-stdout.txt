@@ -1,0 +1,2 @@
+Environment snapshot saved: /home/yhong/comp5355/results/formal-cJSON-v1.7.19/preparation/CHECK-FORM-P03-CC-001/environment
+Linux MemTotal/MemAvailable are WSL-visible values; Windows host data is recorded separately.

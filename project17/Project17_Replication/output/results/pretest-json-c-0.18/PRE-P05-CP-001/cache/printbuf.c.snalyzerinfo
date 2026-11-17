@@ -1,0 +1,7 @@
+printbuf_new call:[calloc,free,malloc,sizeof]
+printbuf_extend call:[realloc]
+printbuf_memappend call:[memcpy,printbuf_extend]
+printbuf_memset call:[memset,printbuf_extend] noreturn:[memset]
+sprintbuf call:[free,printbuf_memappend,va_end,va_start,vasprintf,vsnprintf] noreturn:[free,printbuf_memappend]
+printbuf_reset
+printbuf_free call:[free] noreturn:[free]

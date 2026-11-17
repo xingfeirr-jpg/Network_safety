@@ -1,0 +1,9 @@
+[
+ "/home/yhong/comp5355/.venv/bin/flawfinder",
+ "--minlevel=1",
+ "--neverignore",
+ "--columns",
+ "--context",
+ "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+ "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h"
+]

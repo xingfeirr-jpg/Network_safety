@@ -1,0 +1,2 @@
+[1/2] Building C object CMakeFiles/yyjson.dir/src/yyjson.c.o
+[2/2] Linking C static library libyyjson.a

@@ -1,0 +1,9 @@
+[
+ "cmake",
+ "--build",
+ "/home/yhong/comp5355/build/lz4-v1.10.0",
+ "--target",
+ "lz4_static",
+ "--parallel",
+ "1"
+]

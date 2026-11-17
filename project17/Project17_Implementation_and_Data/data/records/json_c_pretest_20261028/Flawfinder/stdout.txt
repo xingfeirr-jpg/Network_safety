@@ -1,0 +1,352 @@
+Flawfinder version 2.0.20, (C) 2001-2026 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 222
+Examining /home/yhong/comp5355/build/json-c-0.18/config.h
+Examining /home/yhong/comp5355/build/json-c-0.18/json.h
+Examining /home/yhong/comp5355/build/json-c-0.18/json_config.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/arraylist.c
+Examining /home/yhong/comp5355/sources/json-c-0.18/arraylist.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/debug.c
+Examining /home/yhong/comp5355/sources/json-c-0.18/debug.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_c_version.c
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_c_version.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_inttypes.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_object.c
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_object.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_object_private.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_patch.c
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_patch.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_pointer.c
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_pointer.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_pointer_private.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_tokener.c
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_tokener.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_types.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_util.c
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_util.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_visit.c
+Examining /home/yhong/comp5355/sources/json-c-0.18/json_visit.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/linkhash.c
+Examining /home/yhong/comp5355/sources/json-c-0.18/linkhash.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/math_compat.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/printbuf.c
+Examining /home/yhong/comp5355/sources/json-c-0.18/printbuf.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/random_seed.c
+Examining /home/yhong/comp5355/sources/json-c-0.18/random_seed.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/snprintf_compat.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/strdup_compat.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/strerror_override.c
+Examining /home/yhong/comp5355/sources/json-c-0.18/strerror_override.h
+Examining /home/yhong/comp5355/sources/json-c-0.18/vasprintf_compat.h
+
+FINAL RESULTS:
+
+/home/yhong/comp5355/sources/json-c-0.18/debug.c:45:31:  [4] (format) syslog:
+  If syslog's format strings can be influenced by an attacker, they can be
+  exploited (CWE-134). Use a constant format string for syslog.
+extern void mc_set_syslog(int syslog)
+/home/yhong/comp5355/sources/json-c-0.18/debug.c:47:12:  [4] (format) syslog:
+  If syslog's format strings can be influenced by an attacker, they can be
+  exploited (CWE-134). Use a constant format string for syslog.
+\x09_syslog = syslog;
+/home/yhong/comp5355/sources/json-c-0.18/debug.c:63:4:  [4] (format) vprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+\x09\x09\x09vprintf(msg, ap);
+/home/yhong/comp5355/sources/json-c-0.18/debug.c:79:3:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+\x09\x09vfprintf(stderr, msg, ap);
+/home/yhong/comp5355/sources/json-c-0.18/debug.c:94:3:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+\x09\x09vfprintf(stderr, msg, ap);
+/home/yhong/comp5355/sources/json-c-0.18/debug.h:37:36:  [4] (format) syslog:
+  If syslog's format strings can be influenced by an attacker, they can be
+  exploited (CWE-134). Use a constant format string for syslog.
+JSON_EXPORT void mc_set_syslog(int syslog);
+/home/yhong/comp5355/sources/json-c-0.18/json_object.c:708:3:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+\x09\x09snprintf(sbuf, sizeof(sbuf), "%" PRId64, JC_INT(jso)->cint.c_int64);
+/home/yhong/comp5355/sources/json-c-0.18/json_object.c:710:3:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+\x09\x09snprintf(sbuf, sizeof(sbuf), "%" PRIu64, JC_INT(jso)->cint.c_uint64);
+/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1056:10:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+\x09\x09size = snprintf(buf, sizeof(buf), format, jsodbl->c_double);
+/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:53:44:  [4] (shell) system:
+  This causes a new program to execute and is difficult to use safely
+  (CWE-78). try using a library call that implements the same functionality
+  if available.
+#error You do not have strncasecmp on your system.
+/home/yhong/comp5355/sources/json-c-0.18/json_util.c:75:8:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+\x09(void)vsnprintf(_last_err, sizeof(_last_err), err_fmt, ap);
+/home/yhong/comp5355/sources/json-c-0.18/printbuf.c:153:9:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+\x09size = vsnprintf(buf, 128, msg, ap);
+/home/yhong/comp5355/sources/json-c-0.18/snprintf_compat.h:24:9:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+#define vsnprintf json_c_vsnprintf
+/home/yhong/comp5355/sources/json-c-0.18/snprintf_compat.h:35:9:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+#define snprintf json_c_snprintf
+/home/yhong/comp5355/sources/json-c-0.18/snprintf_compat.h:38:8:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+#error snprintf is required but was not found
+/home/yhong/comp5355/sources/json-c-0.18/strdup_compat.h:13:39:  [4] (shell) system:
+  This causes a new program to execute and is difficult to use safely
+  (CWE-78). try using a library call that implements the same functionality
+  if available.
+#error You do not have strdup on your system.
+/home/yhong/comp5355/sources/json-c-0.18/vasprintf_compat.h:40:10:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+\x09chars = vsnprintf(&_T_emptybuffer, 0, fmt, ap2);
+/home/yhong/comp5355/sources/json-c-0.18/vasprintf_compat.h:54:15:  [4] (format) vsprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+\x09if ((chars = vsprintf(b, fmt, ap)) < 0)
+/home/yhong/comp5355/sources/json-c-0.18/strerror_override.c:63:14:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+extern char *getenv(const char *name); // Avoid including stdlib.h
+/home/yhong/comp5355/sources/json-c-0.18/strerror_override.c:74:30:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+\x09\x09_json_c_strerror_enable = (getenv("_JSON_C_STRERROR_ENABLE") == NULL) ? -1 : 1;
+/home/yhong/comp5355/sources/json-c-0.18/json_object.c:235:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+\x09\x09\x09\x09char sbuf[7];
+/home/yhong/comp5355/sources/json-c-0.18/json_object.c:706:2:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+\x09char sbuf[21];
+/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1020:2:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+\x09char buf[128], *p, *q;
+/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1079:4:  [2] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused). Risk is low because the
+  source is a constant string.
+\x09\x09\x09strcat(buf, ".0");
+/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1298:2:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+\x09memcpy(jso->c_string.idata, s, len);
+/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1389:2:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+\x09memcpy(dstbuf, (const void *)s, len);
+/home/yhong/comp5355/sources/json-c-0.18/json_object_private.h:94:3:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+\x09\x09char idata[1]; // Immediate data.  Actually longer
+/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:151:17:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+static unsigned char utf8_replacement_char[3] = {0xEF, 0xBF, 0xBD};
+/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:788:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+\x09\x09\x09\x09unsigned char unescaped_utf[1];
+/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:794:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+\x09\x09\x09\x09unsigned char unescaped_utf[2];
+/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:827:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+\x09\x09\x09\x09unsigned char unescaped_utf[3];
+/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:835:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+\x09\x09\x09\x09unsigned char unescaped_utf[4];
+/home/yhong/comp5355/sources/json-c-0.18/json_util.c:47:9:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+#define open _open
+/home/yhong/comp5355/sources/json-c-0.18/json_util.c:61:8:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+static char _last_err[256] = "";
+/home/yhong/comp5355/sources/json-c-0.18/json_util.c:87:2:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+\x09char buf[JSON_FILE_BUF_SIZE];
+/home/yhong/comp5355/sources/json-c-0.18/json_util.c:148:12:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+\x09if ((fd = open(filename, O_RDONLY)) < 0)
+/home/yhong/comp5355/sources/json-c-0.18/json_util.c:172:12:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+\x09if ((fd = open(filename, O_WRONLY | O_TRUNC | O_CREAT, 0644)) < 0)
+/home/yhong/comp5355/sources/json-c-0.18/printbuf.c:110:2:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+\x09memcpy(p->buf + p->bpos, buf, size);
+/home/yhong/comp5355/sources/json-c-0.18/printbuf.c:149:2:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+\x09char buf[128];
+/home/yhong/comp5355/sources/json-c-0.18/printbuf.h:63:4:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+\x09\x09\x09memcpy(p->buf + p->bpos, (bufptr), bufsize); \
+/home/yhong/comp5355/sources/json-c-0.18/random_seed.c:233:11:  [2] (misc) open:
+  Check when opening files - can an attacker redirect it (via symlinks),
+  force the opening of special file type (e.g., device files), move things
+  around to create a race condition, control its ancestors, or change its
+  contents? (CWE-362).
+\x09int fd = open(dev_random_file, O_RDONLY);
+/home/yhong/comp5355/sources/json-c-0.18/strerror_override.c:66:8:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+static char errno_buf[128] = PREFIX;
+/home/yhong/comp5355/sources/json-c-0.18/strerror_override.c:70:2:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+\x09char digbuf[20];
+/home/yhong/comp5355/sources/json-c-0.18/json_object.c:486:33:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+\x09\x09json_escape_str(pb, iter.key, strlen(iter.key), flags);
+/home/yhong/comp5355/sources/json-c-0.18/json_object.c:711:38:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+\x09return printbuf_memappend(pb, sbuf, strlen(sbuf));
+/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1165:21:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+\x09int userdata_len = strlen((const char *)jso->_userdata);
+/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1306:36:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+\x09return _json_object_new_string(s, strlen(s));
+/home/yhong/comp5355/sources/json-c-0.18/json_object.c:1397:45:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+\x09return _json_object_set_string_len(jso, s, strlen(s));
+/home/yhong/comp5355/sources/json-c-0.18/json_patch.c:210:15:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+\x09from_s_len = strlen(from_s);
+/home/yhong/comp5355/sources/json-c-0.18/json_patch.c:219:21:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+\x09\x09if (from_s_len == strlen(path))
+/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:34:16:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+\x09size_t slen = strlen(s);
+/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:35:16:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+\x09size_t skip = strlen(occur) - 1; /* length of the occurrence, minus the char we're replacing */
+/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c:48:18:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+\x09size_t i, len = strlen(path);
+/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:242:44:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+\x09    || json_tokener_get_parse_end(tok) != strlen(str)
+/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c:335:34:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+\x09if ((len < -1) || (len == -1 && strlen(str) > INT32_MAX))
+/home/yhong/comp5355/sources/json-c-0.18/json_util.c:110:16:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+\x09while ((ret = read(fd, buf, sizeof(buf))) > 0)
+/home/yhong/comp5355/sources/json-c-0.18/json_util.c:208:10:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+\x09wsize = strlen(json_str);
+/home/yhong/comp5355/sources/json-c-0.18/linkhash.c:489:37:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+\x09return hashlittle((const char *)k, strlen((const char *)k), (uint32_t)random_seed);
+/home/yhong/comp5355/sources/json-c-0.18/random_seed.c:240:18:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+\x09ssize_t nread = read(fd, seed, sizeof(*seed));
+
+ANALYSIS SUMMARY:
+
+Hits = 59
+Lines analyzed = 9988 in approximately 0.04 seconds (252460 lines/second)
+Physical Source Lines of Code (SLOC) = 5811
+Hits@level = [0]  15 [1]  16 [2]  23 [3]   2 [4]  18 [5]   0
+Hits@level+ = [0+]  74 [1+]  59 [2+]  43 [3+]  20 [4+]  18 [5+]   0
+Hits/KSLOC@level+ = [0+] 12.7345 [1+] 10.1532 [2+] 7.39976 [3+] 3.44175 [4+] 3.09757 [5+]   0
+Minimum risk level = 1
+
+Not every hit is necessarily a security vulnerability.
+You can inhibit a report by adding a comment in this form:
+// flawfinder: ignore
+Make *sure* it's a false positive!
+You can use the option --neverignore to show these.
+
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(https://dwheeler.com/secure-programs) for more information.

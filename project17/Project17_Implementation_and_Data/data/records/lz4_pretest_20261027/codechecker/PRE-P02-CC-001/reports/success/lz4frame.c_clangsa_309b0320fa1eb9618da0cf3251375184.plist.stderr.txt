@@ -1,0 +1,7 @@
+/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1579:9: warning: Null pointer passed to 2nd parameter expecting 'nonnull' [core.NonNullParamChecker]
+ 1579 |         memcpy(dctx->tmpOutBuffer + dctx->dictSize, dstPtr, dstSize);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c:1588:9: warning: Null pointer passed to 2nd parameter expecting 'nonnull' [core.NonNullParamChecker]
+ 1588 |         memcpy(dctx->tmpOutBuffer + preserveSize, dstPtr, dstSize);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.

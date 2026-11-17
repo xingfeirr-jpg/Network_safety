@@ -1,0 +1,3 @@
+inflateBackInit_ call:[return,sizeof] noreturn:[return]
+inflateBack call:[in,inflate_fast,inflate_fixed,inflate_table,memcpy,out,return,while] noreturn:[return,while]
+inflateBackEnd call:[return] noreturn:[return]

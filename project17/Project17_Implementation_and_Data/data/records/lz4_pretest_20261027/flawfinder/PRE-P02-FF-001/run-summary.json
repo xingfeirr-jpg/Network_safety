@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-27",
+  "runId": "PRE-P02-FF-001",
+  "purpose": "functional pretest; not formal comparison",
+  "status": "accepted; hits unreviewed",
+  "originalFiles": 10,
+  "inputFiles": 11,
+  "sourceCFiles": 5,
+  "projectHeaders": 6,
+  "exitCode": 0,
+  "displayedHits": 42,
+  "displayedByLevel": {
+    "2": 38,
+    "4": 4
+  },
+  "level0Filtered": 4,
+  "cumulative0Plus": 46,
+  "linesAnalyzed": 11045,
+  "physicalSLOC": 6941,
+  "toolSelfSeconds": 0.07,
+  "wallSeconds": 0.1,
+  "userSeconds": 0.09,
+  "systemSeconds": 0.01,
+  "gnuTimeMaxRssKiB": 20472,
+  "byRule": {
+    "fprintf": 4,
+    "memcpy": 31,
+    "char": 7
+  },
+  "sourceReview": "all51 complete: 44 original-risk false positives, 3 supported diagnoses (1 internal language issue + 2 conditional interface risks), 4 unable; see lz4_review/Review_Report.md",
+  "formalThirtyCells": "all not run"
+}

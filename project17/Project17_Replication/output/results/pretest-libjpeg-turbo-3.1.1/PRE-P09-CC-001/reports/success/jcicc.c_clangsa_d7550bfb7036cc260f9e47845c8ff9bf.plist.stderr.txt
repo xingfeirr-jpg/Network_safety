@@ -1,0 +1,4 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcicc.c:100:32: warning: Dereference of null pointer (loaded from variable 'icc_data_ptr') [core.NullDereference]
+  100 |       jpeg_write_m_byte(cinfo, *icc_data_ptr);
+      |                                ^~~~~~~~~~~~~
+1 warning generated.

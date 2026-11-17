@@ -1,0 +1,11 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+jpeg_CreateCompress call:[jinit_memory_mgr,memset,sizeof] noreturn:[memset]
+jpeg_destroy_compress call:[jpeg_destroy] noreturn:[jpeg_destroy]
+jpeg_abort_compress call:[jpeg_abort] noreturn:[jpeg_abort]
+jpeg_suppress_tables
+jpeg_finish_compress call:[jpeg_abort] noreturn:[jpeg_abort]
+jpeg_write_marker call:[void]
+jpeg_write_m_header
+jpeg_write_m_byte
+jpeg_write_tables call:[jinit_marker_writer]

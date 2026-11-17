@@ -1,0 +1,147 @@
+{
+  "profile_id": "P03-COST-PREFLIGHT-v1",
+  "prepared_date": "2026-10-30",
+  "status": "prepared_not_executed",
+  "project": "P03 cJSON",
+  "version": "1.7.19",
+  "commit": "c859b25da02955fef659d658b8f324b5cde87be3",
+  "policy": "comparison-v1; measurement-v1",
+  "scope": "原核心库1条C89动作；FF显式cJSON.c/cJSON.h",
+  "purpose": "只读核对；不是检测分析或成本数据",
+  "files": [
+    {
+      "label": "源码 cJSON.c",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+      "sha256": "298581a04a36c0165da4b0aade235c23088cb2faa58651d720ea2f3706ed0b0d"
+    },
+    {
+      "label": "源码 cJSON.h",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h",
+      "sha256": "25b0145150d500498e4d209cec69c18c42cf818bffcc54690be3b895a2a16dee"
+    },
+    {
+      "label": "源码 LICENSE",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/LICENSE",
+      "sha256": "a36dda207c36db5818729c54e7ad4e8b0c6fba847491ba64f372c1a2037b6d5c"
+    },
+    {
+      "label": "源码 CMakeLists.txt",
+      "path": "/home/yhong/comp5355/sources/cJSON-v1.7.19/CMakeLists.txt",
+      "sha256": "cdcb1302634cb81778130e9c30c2e952f80157bb9fee6b3f8489be8c15de9d34"
+    },
+    {
+      "label": "构建上下文 compile_commands.json",
+      "path": "/home/yhong/comp5355/build/cJSON-v1.7.19/compile_commands.json",
+      "sha256": "ff6f0e4cfd162a124d934f8adde2ba96c029b75df634b0884614a965ec19dd9b"
+    },
+    {
+      "label": "构建上下文 CMakeCache.txt",
+      "path": "/home/yhong/comp5355/build/cJSON-v1.7.19/CMakeCache.txt",
+      "sha256": "a338bf89a1a1810ac248a4094c0f989dfdd2f29d82c393135618bbd862b71f66"
+    },
+    {
+      "label": "原静态库 libcjson.a",
+      "path": "/home/yhong/comp5355/build/cJSON-v1.7.19/libcjson.a",
+      "sha256": "8ea454e9b2f13ee80b23e1ed25366d6567611f89cf2375bc8af94736794b39e8",
+      "bytes": 88738
+    }
+  ],
+  "database": "/home/yhong/comp5355/build/cJSON-v1.7.19/compile_commands.json",
+  "database_baseline": "review_evidence/cJSON_pretest_20261026/compile_commands.json",
+  "venv": "/home/yhong/comp5355/.venv",
+  "python_packages": {
+    "flawfinder": "2.0.20",
+    "codechecker": "6.29.1"
+  },
+  "version_queries": {
+    "Cppcheck": {
+      "argv": [
+        "/usr/bin/cppcheck",
+        "--version"
+      ],
+      "exact_stdout": "Cppcheck 2.13.0"
+    },
+    "clang": {
+      "argv": [
+        "/usr/bin/clang-18",
+        "--version"
+      ],
+      "version_pattern": "clang version (\\S+)",
+      "expected_version": "18.1.3"
+    },
+    "Cppcheck Ubuntu package": {
+      "argv": [
+        "dpkg-query",
+        "-W",
+        "-f=${Version}",
+        "cppcheck"
+      ],
+      "exact_stdout": "2.13.0-2ubuntu3"
+    },
+    "GNU time package": {
+      "argv": [
+        "dpkg-query",
+        "-W",
+        "-f=${Version}",
+        "time"
+      ],
+      "exact_stdout": "1.9-0.2build1"
+    }
+  },
+  "executables": {
+    "CodeChecker": "/home/yhong/comp5355/.venv/bin/CodeChecker",
+    "Flawfinder": "/home/yhong/comp5355/.venv/bin/flawfinder",
+    "Cppcheck": "/usr/bin/cppcheck",
+    "clangsa": "/usr/bin/clang-18",
+    "GNU time": "/usr/bin/time"
+  },
+  "planned_runs": [
+    {
+      "run_id": "FORM-P03-CC-001",
+      "directory": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-CC-001"
+    },
+    {
+      "run_id": "FORM-P03-FF-001",
+      "directory": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-FF-001"
+    },
+    {
+      "run_id": "FORM-P03-CP-001",
+      "directory": "/home/yhong/comp5355/results/formal-cJSON-v1.7.19/FORM-P03-CP-001"
+    }
+  ],
+  "historical_evidence": [
+    {
+      "path": "review_evidence/cJSON_pretest_20261026/build-check.json",
+      "sha256": "3480f7cb4cf54589ab904405ac738c7376e35d6e9d7c029d6a71107c3bb76ae5"
+    },
+    {
+      "path": "review_evidence/cJSON_pretest_20261026/compile_commands.json",
+      "sha256": "ff6f0e4cfd162a124d934f8adde2ba96c029b75df634b0884614a965ec19dd9b"
+    },
+    {
+      "path": "review_evidence/cJSON_pretest_20261026/flawfinder/run-summary.json",
+      "sha256": "ba067dbd58828d0d2721bbfbc286df54df718dee4ffd11dd7f7fc27af70dd354"
+    },
+    {
+      "path": "review_evidence/cJSON_pretest_20261026/cppcheck/run-summary.json",
+      "sha256": "d20980bd15806bce4b9c010330cf5faf161f6de1cd2945e84f4ee69397182617"
+    },
+    {
+      "path": "review_evidence/cJSON_pretest_20261027/codechecker/run-summary.json",
+      "sha256": "da39beebcc7cb410fcca91f919733ec4278c4d7b419f79e72a06f90d45ac6869"
+    },
+    {
+      "path": "review_evidence/cJSON_pretest_20261027/codechecker/input-integrity.json",
+      "sha256": "f92ac0cf45eb30e959003d56d80edc8558957b88f3aae95db9435f0f9a1cdfc5"
+    },
+    {
+      "path": "review_evidence/cJSON_pretest_20261027/codechecker/reports/metadata.json",
+      "sha256": "1cdc1c1d06a9407a3984e99cba2bfc0f2bc0805242d620f5f2b7e1de20a4cf98"
+    }
+  ],
+  "caveats": [
+    "旧PRE目的、原件和42条核查不改写；新成本仅属于对应新FORM运行。",
+    "旧FF/CP没有单独完整argv文件；三组无独立原profile，现依旧验收记录准备，保留该历史缺口。",
+    "前置检查不证明新分析已完成或新默认checker字典一致；每组实际输出另验收。"
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "profileId": "P02-CP-PRE-v1",
+  "plannedRunId": "PRE-P02-CP-001",
+  "preparedDate": "2026-10-27",
+  "status": "prepared; not executed",
+  "purpose": "functional pretest",
+  "tool": "Cppcheck",
+  "version": "2.13.0",
+  "ubuntuPackage": "2.13.0-2ubuntu3",
+  "parser": "builtin",
+  "database": "/home/yhong/comp5355/build/lz4-v1.10.0/compile_commands.json",
+  "databaseSHA256": "659c4862568d2d880f24f8f829ba3755606925a87e5c348c5e65c7e1f286df48",
+  "databaseActions": 5,
+  "actionSelection": "All five accepted lz4_static C actions; no filtering, deletion of included-source actions or synthetic header actions.",
+  "buildLanguageContext": "Clang 18.1.3 default GNU C17, extensions ON; no explicit -std flag",
+  "analysisCStandard": "C11, explicitly --std=c11",
+  "standardDifference": "Cppcheck 2.13.0 has C89/C99/C11 models only. C11 analysis is not claimed equivalent to the GNU C17 compiler frontend.",
+  "macrosFromDatabase": [
+    "XXH_NAMESPACE=LZ4_"
+  ],
+  "includeDirectoriesFromDatabase": [
+    "/home/yhong/comp5355/sources/lz4-v1.10.0/build/cmake/../../lib"
+  ],
+  "libraryModels": "Default std.cfg automatically loaded; no additional POSIX or LZ4 model requested.",
+  "nativeWholeProgram": {
+    "buildDirectory": "/home/yhong/comp5355/results/pretest-lz4-v1.10.0/PRE-P02-CP-001/cache",
+    "jobs": 1,
+    "maxCtuDepth": 2,
+    "depthSetting": "version 2.13.0 default, not overridden",
+    "note": "Native Cppcheck mechanisms for eligible checks; not Clang CTU and not proof of exhaustive cross-TU coverage"
+  },
+  "force": false,
+  "inconclusive": false,
+  "customSuppressions": false,
+  "inlineSuppressionsEnabled": false,
+  "enabledAdditionalCategories": [
+    "warning",
+    "performance",
+    "portability",
+    "information"
+  ],
+  "defaultErrorCategoryRetained": true,
+  "checkLevel": "normal",
+  "platform": "unix64",
+  "arguments": [
+    "--project=/home/yhong/comp5355/build/lz4-v1.10.0/compile_commands.json",
+    "--enable=warning,performance,portability,information",
+    "--check-level=normal",
+    "--platform=unix64",
+    "--std=c11",
+    "-j",
+    "1",
+    "--cppcheck-build-dir=/home/yhong/comp5355/results/pretest-lz4-v1.10.0/PRE-P02-CP-001/cache",
+    "--checkers-report=/home/yhong/comp5355/results/pretest-lz4-v1.10.0/PRE-P02-CP-001/checkers.txt",
+    "--xml",
+    "--xml-version=2"
+  ],
+  "measurement": "measurement-v1",
+  "locale": "C",
+  "wholeCommandTimeout": "not imposed",
+  "runDirectory": "/home/yhong/comp5355/results/pretest-lz4-v1.10.0/PRE-P02-CP-001",
+  "applicationCache": "new empty build directory created by measure_run.sh",
+  "osPageCache": "natural, not cleared",
+  "outputs": {
+    "stdout": "stdout.txt",
+    "stderrXML": "stderr.txt",
+    "time": "time.txt",
+    "checkers": "checkers.txt",
+    "exitCode": "exit-code.txt",
+    "postTimingDerivedSummary": "xml-summary.json"
+  },
+  "identityManifest": "cppcheck-inputs.sha256",
+  "identityFiles": [
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c",
+      "sha256": "9396f7de527bc8435de9c7569fb7998e56545a84b4f3c2d808c0235c01774539"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h",
+      "sha256": "26b82efc53d1570f3b54eef02e9c4764c1ad374ff03cac04e2ced5ea4d4c552f"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c",
+      "sha256": "9c920fb21890bdce47d753bcd4a4dd3699ae75ac81ae7a999397c64fef012bec"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.h",
+      "sha256": "400ed90bc74324abcf338d37235dd81aa431fd815c22db4b369b88c12b213115"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c",
+      "sha256": "44f421bea199c7f11da263c717f063228cd2c8c05a8384d327b49cc81ccfbac4"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h",
+      "sha256": "b845db4b7ee1bfa64b8f641a94f62e7f636a8b5d673cc61766413782283aaad1"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame_static.h",
+      "sha256": "31ab72a6e97e4fa0bedd4420d24a3f1f8024cbfa1d8ffad88c87cbb4e04f769d"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c",
+      "sha256": "126cafafdb91767e6e55238298a910903851b35b2cee27ce80ae2280469ee232"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.h",
+      "sha256": "e43824e8a9ba16f54100c4ccbccfa5782a858ca9ab83c48aac303fea3e76e21e"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c",
+      "sha256": "b667033dc735fb5ea5648e0a61a2e065e5ef5bbda53669730063bd856c643c48"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h",
+      "sha256": "aefdd236f35130495c18764cabed3f7b216906855fc5e6a9025cd2040bc84444"
+    },
+    {
+      "file": "/home/yhong/comp5355/build/lz4-v1.10.0/compile_commands.json",
+      "sha256": "659c4862568d2d880f24f8f829ba3755606925a87e5c348c5e65c7e1f286df48"
+    }
+  ],
+  "identityManifestSHA256": "f9adc6a6f44663d5dc89b75bead8ff1c975a894e78cf37520b7921e0d58dbf71",
+  "environmentSession": "session-20261027T100151-22994",
+  "parameterEvidence": "Cppcheck_Parameter_Check_20261027.md",
+  "coverageStatus": "pending actual execution and output review",
+  "sourceReviewStatus": "not started",
+  "formalThirtyCells": "all not run",
+  "includeDirectoriesNormalized": [
+    "/home/yhong/comp5355/sources/lz4-v1.10.0/lib"
+  ],
+  "inputIdentityScope": "Actual 11-file project dependency closure plus real compilation database; 12 identity entries, 5 intended compilation actions."
+}

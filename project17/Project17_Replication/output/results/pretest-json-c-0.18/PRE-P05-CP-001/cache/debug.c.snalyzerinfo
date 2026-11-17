@@ -1,0 +1,6 @@
+mc_set_debug global:[_debug]
+mc_get_debug global:[_debug]
+mc_set_syslog global:[_syslog]
+mc_debug global:[_debug,_syslog] call:[va_end,va_start,vprintf,vsyslog] noreturn:[va_end,vprintf,vsyslog]
+mc_error global:[_syslog] call:[va_end,va_start,vfprintf,vsyslog] noreturn:[va_end,vfprintf,vsyslog]
+mc_info global:[_syslog] call:[va_end,va_start,vfprintf,vsyslog] noreturn:[va_end,vfprintf,vsyslog]

@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="13062686637882648311">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="9" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:115:1" call-funcname="yaml_string_extend" call-argnr="1" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="104" col="14" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:119:1" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:70:1" my-argnr="1" my-argname="major" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="21" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:70:1" my-argnr="2" my-argname="minor" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="22" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h:70:1" my-argnr="3" my-argname="patch" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="23" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:115:1" my-argnr="1" my-argname="start" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="77" col="66" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:115:1" my-argnr="3" my-argname="end" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="77" col="75" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:119:1" my-argnr="4" my-argname="b_start" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="100" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:119:1" my-argnr="5" my-argname="b_pointer" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="100" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:418:1" my-argnr="1" my-argname="start" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="123" col="33" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:418:1" my-argnr="3" my-argname="end" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="123" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:421:1" my-argnr="1" my-argname="start" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="146" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:421:1" my-argnr="2" my-argname="head" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="146" col="20" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:275:1" my-argnr="2" my-argname="buffer" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="280" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:275:1" my-argnr="4" my-argname="size_read" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="280" col="6" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:446:1" my-argnr="2" my-argname="buffer" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="450" col="20" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:115:1" my-argnr="3" my-argname="end" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="77" col="75" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:119:1" my-argnr="4" my-argname="b_start" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="100" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:119:1" my-argnr="5" my-argname="b_pointer" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="100" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:418:1" my-argnr="1" my-argname="start" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="123" col="33" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:418:1" my-argnr="3" my-argname="end" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="123" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:421:1" my-argnr="1" my-argname="start" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="146" col="10" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h:421:1" my-argnr="2" my-argname="head" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="146" col="20" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:446:1" my-argnr="2" my-argname="buffer" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c" line="450" col="20" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="yaml_get_version_string" lineNumber="9"/>
+    <functiondecl functionName="yaml_get_version" lineNumber="19"/>
+    <functiondecl functionName="yaml_malloc" lineNumber="31"/>
+    <functiondecl functionName="yaml_realloc" lineNumber="41"/>
+    <functiondecl functionName="yaml_free" lineNumber="51"/>
+    <functiondecl functionName="yaml_strdup" lineNumber="61"/>
+    <functiondecl functionName="yaml_string_extend" lineNumber="74"/>
+    <functiondecl functionName="yaml_string_join" lineNumber="95"/>
+    <functiondecl functionName="yaml_stack_extend" lineNumber="119"/>
+    <functiondecl functionName="yaml_queue_extend" lineNumber="142"/>
+    <functiondecl functionName="yaml_parser_initialize" lineNumber="177"/>
+    <functiondecl functionName="yaml_parser_delete" lineNumber="220"/>
+    <functiondecl functionName="yaml_string_read_handler" lineNumber="249"/>
+    <functiondecl functionName="yaml_file_read_handler" lineNumber="275"/>
+    <functiondecl functionName="yaml_parser_set_input_string" lineNumber="289"/>
+    <functiondecl functionName="yaml_parser_set_input_file" lineNumber="309"/>
+    <functiondecl functionName="yaml_parser_set_input" lineNumber="326"/>
+    <functiondecl functionName="yaml_parser_set_encoding" lineNumber="342"/>
+    <functiondecl functionName="yaml_emitter_initialize" lineNumber="355"/>
+    <functiondecl functionName="yaml_emitter_delete" lineNumber="392"/>
+    <functiondecl functionName="yaml_string_write_handler" lineNumber="420"/>
+    <functiondecl functionName="yaml_file_write_handler" lineNumber="446"/>
+    <functiondecl functionName="yaml_emitter_set_output_string" lineNumber="457"/>
+    <functiondecl functionName="yaml_emitter_set_output_file" lineNumber="478"/>
+    <functiondecl functionName="yaml_emitter_set_output" lineNumber="495"/>
+    <functiondecl functionName="yaml_emitter_set_encoding" lineNumber="511"/>
+    <functiondecl functionName="yaml_emitter_set_canonical" lineNumber="524"/>
+    <functiondecl functionName="yaml_emitter_set_indent" lineNumber="536"/>
+    <functiondecl functionName="yaml_emitter_set_width" lineNumber="548"/>
+    <functiondecl functionName="yaml_emitter_set_unicode" lineNumber="560"/>
+    <functiondecl functionName="yaml_emitter_set_break" lineNumber="572"/>
+    <functiondecl functionName="yaml_token_delete" lineNumber="584"/>
+    <functiondecl functionName="yaml_check_utf8" lineNumber="626"/>
+    <functiondecl functionName="yaml_stream_start_event_initialize" lineNumber="669"/>
+    <functiondecl functionName="yaml_stream_end_event_initialize" lineNumber="686"/>
+    <functiondecl functionName="yaml_document_start_event_initialize" lineNumber="702"/>
+    <functiondecl functionName="yaml_document_end_event_initialize" lineNumber="781"/>
+    <functiondecl functionName="yaml_alias_event_initialize" lineNumber="797"/>
+    <functiondecl functionName="yaml_scalar_event_initialize" lineNumber="821"/>
+    <functiondecl functionName="yaml_sequence_start_event_initialize" lineNumber="875"/>
+    <functiondecl functionName="yaml_sequence_end_event_initialize" lineNumber="914"/>
+    <functiondecl functionName="yaml_mapping_start_event_initialize" lineNumber="930"/>
+    <functiondecl functionName="yaml_mapping_end_event_initialize" lineNumber="969"/>
+    <functiondecl functionName="yaml_event_delete" lineNumber="985"/>
+    <functiondecl functionName="yaml_document_initialize" lineNumber="1036"/>
+    <functiondecl functionName="yaml_document_delete" lineNumber="1123"/>
+    <functiondecl functionName="yaml_document_get_node" lineNumber="1165"/>
+    <functiondecl functionName="yaml_document_get_root_node" lineNumber="1180"/>
+    <functiondecl functionName="yaml_document_add_scalar" lineNumber="1195"/>
+    <functiondecl functionName="yaml_document_add_sequence" lineNumber="1245"/>
+    <functiondecl functionName="yaml_document_add_mapping" lineNumber="1290"/>
+    <functiondecl functionName="yaml_document_append_sequence_item" lineNumber="1335"/>
+    <functiondecl functionName="yaml_document_append_mapping_pair" lineNumber="1363"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="YAML_ALIAS_EVENT"/>
+    <functioncall functionName="YAML_DOCUMENT_END_EVENT"/>
+    <functioncall functionName="YAML_DOCUMENT_START_EVENT"/>
+    <functioncall functionName="YAML_MAPPING_END_EVENT"/>
+    <functioncall functionName="YAML_MAPPING_NODE"/>
+    <functioncall functionName="YAML_MAPPING_START_EVENT"/>
+    <functioncall functionName="YAML_MEMORY_ERROR"/>
+    <functioncall functionName="YAML_SCALAR_EVENT"/>
+    <functioncall functionName="YAML_SCALAR_NODE"/>
+    <functioncall functionName="YAML_SEQUENCE_END_EVENT"/>
+    <functioncall functionName="YAML_SEQUENCE_NODE"/>
+    <functioncall functionName="YAML_SEQUENCE_START_EVENT"/>
+    <functioncall functionName="YAML_STREAM_END_EVENT"/>
+    <functioncall functionName="YAML_STREAM_START_EVENT"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="error"/>
+    <functioncall functionName="ferror"/>
+    <functioncall functionName="fread"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="fwrite"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memmove"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="realloc"/>
+    <functioncall functionName="strdup"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="yaml_check_utf8"/>
+    <functioncall functionName="yaml_event_delete"/>
+    <functioncall functionName="yaml_file_read_handler"/>
+    <functioncall functionName="yaml_file_write_handler"/>
+    <functioncall functionName="yaml_free"/>
+    <functioncall functionName="yaml_malloc"/>
+    <functioncall functionName="yaml_realloc"/>
+    <functioncall functionName="yaml_stack_extend"/>
+    <functioncall functionName="yaml_strdup"/>
+    <functioncall functionName="yaml_string_extend"/>
+    <functioncall functionName="yaml_string_read_handler"/>
+    <functioncall functionName="yaml_string_write_handler"/>
+    <functioncall functionName="yaml_token_delete"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,233 @@
+{
+  "profileId": "P07-CP-PRE-v1",
+  "plannedRunId": "PRE-P07-CP-001",
+  "preparedDate": "2026-10-28",
+  "status": "prepared; not executed",
+  "purpose": "functional pretest",
+  "tool": "Cppcheck",
+  "version": "2.13.0",
+  "ubuntuPackage": "2.13.0-2ubuntu3",
+  "parser": "builtin",
+  "database": "/home/yhong/comp5355/build/expat-2.7.1/compile_commands.json",
+  "databaseSHA256": "af3c2c08d3cf61b6df438da9ac8e44944b153b20e9f461302cea1f7609c60301",
+  "databaseActions": 3,
+  "actionSelection": "All three accepted expat C actions;no filtering or synthetic header/included-implementation actions",
+  "buildLanguageContext": "Clang18.1.3 strict C99,explicit -std=c99;CMake C_STANDARD_REQUIRED ON/C_EXTENSIONS OFF",
+  "analysisCStandard": "C99,explicit --std=c99",
+  "standardDifference": "Language standard selected as C99 on both sides;Cppcheck builtin parser/library modelling and compiler predefined macros need not equal Clang semantics",
+  "macrosFromDatabase": [],
+  "includeDirectoriesFromDatabase": [
+    "/home/yhong/comp5355/build/expat-2.7.1",
+    "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib"
+  ],
+  "libraryModels": "default std.cfg automatically loaded;no extra POSIX or Expat model explicitly requested",
+  "nativeWholeProgram": {
+    "buildDirectory": "/home/yhong/comp5355/results/pretest-expat-2.7.1/PRE-P07-CP-001/cache",
+    "jobs": 1,
+    "maxCtuDepth": 2,
+    "depthSetting": "version 2.13.0 default, not overridden",
+    "note": "Native Cppcheck mechanisms for eligible checks; not Clang CTU and not proof of exhaustive cross-TU coverage"
+  },
+  "force": false,
+  "inconclusive": false,
+  "customSuppressions": false,
+  "inlineSuppressionsEnabled": false,
+  "enabledAdditionalCategories": [
+    "warning",
+    "performance",
+    "portability",
+    "information"
+  ],
+  "defaultErrorCategoryRetained": true,
+  "checkLevel": "normal",
+  "platform": "unix64",
+  "arguments": [
+    "--project=/home/yhong/comp5355/build/expat-2.7.1/compile_commands.json",
+    "--enable=warning,performance,portability,information",
+    "--check-level=normal",
+    "--platform=unix64",
+    "--std=c99",
+    "-j",
+    "1",
+    "--cppcheck-build-dir=/home/yhong/comp5355/results/pretest-expat-2.7.1/PRE-P07-CP-001/cache",
+    "--checkers-report=/home/yhong/comp5355/results/pretest-expat-2.7.1/PRE-P07-CP-001/checkers.txt",
+    "--xml",
+    "--xml-version=2"
+  ],
+  "measurement": "measurement-v1",
+  "locale": "C",
+  "wholeCommandTimeout": "not imposed",
+  "runDirectory": "/home/yhong/comp5355/results/pretest-expat-2.7.1/PRE-P07-CP-001",
+  "applicationCache": "new empty build directory created by measure_run.sh",
+  "osPageCache": "natural, not cleared",
+  "outputs": {
+    "stdout": "stdout.txt",
+    "stderrXML": "stderr.txt",
+    "time": "time.txt",
+    "checkers": "checkers.txt",
+    "exitCode": "exit-code.txt",
+    "postTimingDerivedSummary": "xml-summary.json"
+  },
+  "identityManifest": "cppcheck-inputs.sha256",
+  "identityFiles": [
+    {
+      "file": "/home/yhong/comp5355/build/expat-2.7.1/expat_config.h",
+      "localFile": "review_evidence/expat_pretest_20261028/build/expat_config.h",
+      "bytes": 3336,
+      "sha256": "d83ab8bbccb2940e2f9167ecf8b6332aa9492032a953b07c65766d8f7c582ead"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/ascii.h",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/ascii.h",
+      "bytes": 3682,
+      "sha256": "42f8b392c70366743eacbc60ce021389ccaa333598dd49eef6ee5c93698ca205"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/asciitab.h",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/asciitab.h",
+      "bytes": 3520,
+      "sha256": "1cc0ae749019fc0e488cd1cf245f6beaa6d4f7c55a1fc797e5aa40a408bc266b"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/expat.h",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/expat.h",
+      "bytes": 44120,
+      "sha256": "7c16a5cf0eea844ae579db083b8d75f23a71859cac77e3c4cb7a8fa3b7621685"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/expat_external.h",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/expat_external.h",
+      "bytes": 6029,
+      "sha256": "7ca9ed28dd5e08eac425931894fabd4c876db8f4be26f9b9a33c2e4f70a0d6c3"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/iasciitab.h",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/iasciitab.h",
+      "bytes": 3590,
+      "sha256": "ad8b01e9f323cc4208bcd22241df383d7e8641fe3c8b3415aa513de82531f89f"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/internal.h",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/internal.h",
+      "bytes": 6509,
+      "sha256": "6af6e8fbf5c83c1431464a2811b10ea2d1ff64c0eabfd9f18b1d4e53bf400c35"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/latin1tab.h",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/latin1tab.h",
+      "bytes": 3573,
+      "sha256": "eab66226da100372e01e42e1cbcd8ac2bbbb5c1b5f95d735289cc85c7a8fc2ba"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/nametab.h",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/nametab.h",
+      "bytes": 9044,
+      "sha256": "67dcf415d37a4b692a6a8bb46f990c02d83f2ef3d01a65cd61c8594a084246f2"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/siphash.h",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/siphash.h",
+      "bytes": 13014,
+      "sha256": "f537add526ecda8389503b7ef45fb52b6217e4dc171dcc3a8dc6903ff6134726"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/utf8tab.h",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/utf8tab.h",
+      "bytes": 3522,
+      "sha256": "8cd26bd461d334d5e1caedb3af4518d401749f2fc66d56208542b29085159c18"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlparse.c",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmlparse.c",
+      "bytes": 296260,
+      "sha256": "633b272fa893dfbef539edbba35f1b11ecf09a13b89189105b0dfa6c7ecfc3bf"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmlrole.c",
+      "bytes": 35475,
+      "sha256": "71fb52aa302cf6f56e41943009965804f49ff2210d9bd15b258f70aaf70db772"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.h",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmlrole.h",
+      "bytes": 4679,
+      "sha256": "228470eb9181a9a7575b63137edcb61b817ee4e0923faffdbeba29e07c939713"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmltok.c",
+      "bytes": 54346,
+      "sha256": "5b16c671ccc42496374762768e4bf48f614aecfd2025a07925b8d94244aec645"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.h",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmltok.h",
+      "bytes": 12894,
+      "sha256": "6b8919dc951606dc6f2b0175f8955a9ced901ce8bd08db47f291b6c04227ae7f"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.c",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmltok_impl.c",
+      "bytes": 53720,
+      "sha256": "a3fe18ff32b21fbcb7c190895c68158404e1b9fb449db6431bc08b261dc03938"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_impl.h",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmltok_impl.h",
+      "bytes": 3430,
+      "sha256": "f05ad4fe5e98429a7349ff04f57192cac58c324601f2a2e5e697ab0bc05d36d5"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok_ns.c",
+      "localFile": "review_evidence/expat_pretest_20261028/inputs/source/expat/lib/xmltok_ns.c",
+      "bytes": 4640,
+      "sha256": "6ce6d03193279078d55280150fe91e7370370b504a6c123a79182f28341f3e90"
+    },
+    {
+      "file": "/home/yhong/comp5355/build/expat-2.7.1/compile_commands.json",
+      "localFile": "review_evidence/expat_pretest_20261028/build/compile_commands.json",
+      "bytes": 1424,
+      "sha256": "af3c2c08d3cf61b6df438da9ac8e44944b153b20e9f461302cea1f7609c60301"
+    }
+  ],
+  "identityManifestSHA256": "47f71cc55f64c70fcdab2d9be8b763f3745aa857f590b4b101a33875d0f1cea0",
+  "environmentSession": "session-20261028T083458-p07-22994",
+  "parameterEvidence": "Cppcheck_Preparation_Review_20261028.md",
+  "coverageStatus": "pending actual execution and output review",
+  "sourceReviewStatus": "not started",
+  "formalThirtyCells": "all not run",
+  "includeDirectoriesNormalized": [
+    "/home/yhong/comp5355/build/expat-2.7.1",
+    "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib"
+  ],
+  "inputIdentityScope": "Actual19-file project dependency closure plus real compilation database;20 identity entries,3 intended compilation actions",
+  "buildEvidence": "../expat_pretest_20261028/Build_Identity_Check.json",
+  "project": "P07 Expat",
+  "projectVersion": "2.7.1",
+  "commit": "f9a3eeb3e09fbea04b1c451ffc422ab2f1e45744",
+  "executionEnvironmentSession": "not asserted from build snapshot;actual run-start environment recorded separately",
+  "generatedHeaderContext": {
+    "file": "/home/yhong/comp5355/build/expat-2.7.1/expat_config.h",
+    "XML_DTD": "defined(empty replacement)",
+    "XML_GE": "1",
+    "XML_NS": "defined(empty replacement)",
+    "XML_CONTEXT_BYTES": "1024",
+    "HAVE_GETRANDOM": "defined(empty replacement)",
+    "HAVE_SYSCALL_GETRANDOM": "defined(empty replacement)",
+    "XML_DEV_URANDOM": "defined(empty replacement) on non-Windows",
+    "HAVE_LIBBSD": "undefined"
+  },
+  "extraPreprocessorDefinitions": [],
+  "predefinedMacroPolicy": "No automatic -D__STDC__ or -DXML_STATIC added.Cppcheck platform/compiler macro gaps are assessed from actual run diagnostics before any justified new attempt.",
+  "linuxStaticMacroNote": "XML_STATIC is not a command-line definition in these Linux build actions;upstream applies it only for Windows static targets.",
+  "semanticProjectInputs": {
+    "independentCTranslationUnits": 3,
+    "includedCImplementationFiles": 2,
+    "sourceHeaders": 13,
+    "generatedHeaders": 1
+  },
+  "actualCandidateCount": null,
+  "actualInformationCount": null,
+  "failurePolicy": "Exit0 alone does not validate coverage;critical errors,skipped files,normal-check limitations,processed actions and XML must be inspected after user execution."
+}

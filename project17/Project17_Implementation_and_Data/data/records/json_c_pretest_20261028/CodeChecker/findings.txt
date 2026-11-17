@@ -1,0 +1,36 @@
+[INFO 2026-10-28 00:21:39] - Using '/usr/bin/clang-18' for analyzer 'clangsa'
+Found no defects in json_object_iterator.c
+Found no defects in arraylist.c
+Found no defects in json_tokener.c
+Found no defects in json_pointer.c
+Found no defects in printbuf.c
+Found no defects in strerror_override.c
+Found no defects in json_patch.c
+Found no defects in json_visit.c
+Found no defects in random_seed.c
+Found no defects in linkhash.c
+Found no defects in json_c_version.c
+Found no defects in json_util.c
+Found no defects in debug.c
+Found no defects in json_object.c
+
+----======== Summary ========----
+┌───────────────────────────────────────────┬────┐
+│ Number of processed analyzer result files │ 14 │
+├───────────────────────────────────────────┼────┤
+│ Number of analyzer reports                │ 0  │
+└───────────────────────────────────────────┴────┘
+----=================----
+[INFO 2026-10-28 00:21:40] - ----==== Summary ====----
+[INFO 2026-10-28 00:21:40] - Up-to-date analysis results
+[INFO 2026-10-28 00:21:40] -   clangsa: 14
+[INFO 2026-10-28 00:21:40] - Outdated analysis results
+[INFO 2026-10-28 00:21:40] - Failed to analyze
+[INFO 2026-10-28 00:21:40] - Missing analysis results
+[INFO 2026-10-28 00:21:40] -   clang-tidy: 14
+[INFO 2026-10-28 00:21:40] -   cppcheck: 14
+[INFO 2026-10-28 00:21:40] -   gcc: 14
+[INFO 2026-10-28 00:21:40] -   infer: 14
+[INFO 2026-10-28 00:21:40] - Total analyzed compilation commands: 14
+[INFO 2026-10-28 00:21:40] - Total available compilation commands: 14
+[INFO 2026-10-28 00:21:40] - ----=================----

@@ -1,0 +1,355 @@
+{
+  "date": "2026-10-27",
+  "status": "passed",
+  "project": "P05 json-c",
+  "version": "0.18",
+  "commit": "41a55cfcedb54d9c1874f2f0eb07b504091d7e37",
+  "purpose": "functional pretest build-context acceptance;no analyzers run",
+  "preparationId": "PREP-P05-001",
+  "environmentSession": "/home/yhong/comp5355/environment/session-20261027T153242-p05-22994",
+  "sourceRoot": "/home/yhong/comp5355/sources/json-c-0.18",
+  "buildRoot": "/home/yhong/comp5355/build/json-c-0.18",
+  "target": "json-c",
+  "buildType": "Debug",
+  "compiler": "Clang 18.1.3",
+  "projectOptions": {
+    "BUILD_SHARED_LIBS": "OFF",
+    "BUILD_STATIC_LIBS": "ON",
+    "BUILD_TESTING": "OFF",
+    "BUILD_APPS": "OFF",
+    "DISABLE_JSON_POINTER": "OFF",
+    "DISABLE_JSON_PATCH": "OFF",
+    "DISABLE_EXTRA_LIBS": "ON",
+    "DISABLE_WERROR": "ON"
+  },
+  "actualActions": 14,
+  "uniqueSourceFiles": 14,
+  "actionSelection": "all14 actual json-c C actions;no filtering,duplicates or synthetic header actions",
+  "actions": [
+    {
+      "source": "/home/yhong/comp5355/sources/json-c-0.18/arraylist.c",
+      "output": "CMakeFiles/json-c.dir/arraylist.c.o",
+      "macros": [
+        "_GNU_SOURCE",
+        "_REENTRANT"
+      ],
+      "includeDirectories": [
+        "/home/yhong/comp5355/sources/json-c-0.18",
+        "/home/yhong/comp5355/build/json-c-0.18"
+      ],
+      "explicitStandardFlag": null
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/json-c-0.18/debug.c",
+      "output": "CMakeFiles/json-c.dir/debug.c.o",
+      "macros": [
+        "_GNU_SOURCE",
+        "_REENTRANT"
+      ],
+      "includeDirectories": [
+        "/home/yhong/comp5355/sources/json-c-0.18",
+        "/home/yhong/comp5355/build/json-c-0.18"
+      ],
+      "explicitStandardFlag": null
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/json-c-0.18/json_c_version.c",
+      "output": "CMakeFiles/json-c.dir/json_c_version.c.o",
+      "macros": [
+        "_GNU_SOURCE",
+        "_REENTRANT"
+      ],
+      "includeDirectories": [
+        "/home/yhong/comp5355/sources/json-c-0.18",
+        "/home/yhong/comp5355/build/json-c-0.18"
+      ],
+      "explicitStandardFlag": null
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/json-c-0.18/json_object.c",
+      "output": "CMakeFiles/json-c.dir/json_object.c.o",
+      "macros": [
+        "_GNU_SOURCE",
+        "_REENTRANT"
+      ],
+      "includeDirectories": [
+        "/home/yhong/comp5355/sources/json-c-0.18",
+        "/home/yhong/comp5355/build/json-c-0.18"
+      ],
+      "explicitStandardFlag": null
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/json-c-0.18/json_object_iterator.c",
+      "output": "CMakeFiles/json-c.dir/json_object_iterator.c.o",
+      "macros": [
+        "_GNU_SOURCE",
+        "_REENTRANT"
+      ],
+      "includeDirectories": [
+        "/home/yhong/comp5355/sources/json-c-0.18",
+        "/home/yhong/comp5355/build/json-c-0.18"
+      ],
+      "explicitStandardFlag": null
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/json-c-0.18/json_tokener.c",
+      "output": "CMakeFiles/json-c.dir/json_tokener.c.o",
+      "macros": [
+        "_GNU_SOURCE",
+        "_REENTRANT"
+      ],
+      "includeDirectories": [
+        "/home/yhong/comp5355/sources/json-c-0.18",
+        "/home/yhong/comp5355/build/json-c-0.18"
+      ],
+      "explicitStandardFlag": null
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/json-c-0.18/json_util.c",
+      "output": "CMakeFiles/json-c.dir/json_util.c.o",
+      "macros": [
+        "_GNU_SOURCE",
+        "_REENTRANT"
+      ],
+      "includeDirectories": [
+        "/home/yhong/comp5355/sources/json-c-0.18",
+        "/home/yhong/comp5355/build/json-c-0.18"
+      ],
+      "explicitStandardFlag": null
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/json-c-0.18/json_visit.c",
+      "output": "CMakeFiles/json-c.dir/json_visit.c.o",
+      "macros": [
+        "_GNU_SOURCE",
+        "_REENTRANT"
+      ],
+      "includeDirectories": [
+        "/home/yhong/comp5355/sources/json-c-0.18",
+        "/home/yhong/comp5355/build/json-c-0.18"
+      ],
+      "explicitStandardFlag": null
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/json-c-0.18/linkhash.c",
+      "output": "CMakeFiles/json-c.dir/linkhash.c.o",
+      "macros": [
+        "_GNU_SOURCE",
+        "_REENTRANT"
+      ],
+      "includeDirectories": [
+        "/home/yhong/comp5355/sources/json-c-0.18",
+        "/home/yhong/comp5355/build/json-c-0.18"
+      ],
+      "explicitStandardFlag": null
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/json-c-0.18/printbuf.c",
+      "output": "CMakeFiles/json-c.dir/printbuf.c.o",
+      "macros": [
+        "_GNU_SOURCE",
+        "_REENTRANT"
+      ],
+      "includeDirectories": [
+        "/home/yhong/comp5355/sources/json-c-0.18",
+        "/home/yhong/comp5355/build/json-c-0.18"
+      ],
+      "explicitStandardFlag": null
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/json-c-0.18/random_seed.c",
+      "output": "CMakeFiles/json-c.dir/random_seed.c.o",
+      "macros": [
+        "_GNU_SOURCE",
+        "_REENTRANT"
+      ],
+      "includeDirectories": [
+        "/home/yhong/comp5355/sources/json-c-0.18",
+        "/home/yhong/comp5355/build/json-c-0.18"
+      ],
+      "explicitStandardFlag": null
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/json-c-0.18/strerror_override.c",
+      "output": "CMakeFiles/json-c.dir/strerror_override.c.o",
+      "macros": [
+        "_GNU_SOURCE",
+        "_REENTRANT"
+      ],
+      "includeDirectories": [
+        "/home/yhong/comp5355/sources/json-c-0.18",
+        "/home/yhong/comp5355/build/json-c-0.18"
+      ],
+      "explicitStandardFlag": null
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/json-c-0.18/json_pointer.c",
+      "output": "CMakeFiles/json-c.dir/json_pointer.c.o",
+      "macros": [
+        "_GNU_SOURCE",
+        "_REENTRANT"
+      ],
+      "includeDirectories": [
+        "/home/yhong/comp5355/sources/json-c-0.18",
+        "/home/yhong/comp5355/build/json-c-0.18"
+      ],
+      "explicitStandardFlag": null
+    },
+    {
+      "source": "/home/yhong/comp5355/sources/json-c-0.18/json_patch.c",
+      "output": "CMakeFiles/json-c.dir/json_patch.c.o",
+      "macros": [
+        "_GNU_SOURCE",
+        "_REENTRANT"
+      ],
+      "includeDirectories": [
+        "/home/yhong/comp5355/sources/json-c-0.18",
+        "/home/yhong/comp5355/build/json-c-0.18"
+      ],
+      "explicitStandardFlag": null
+    }
+  ],
+  "databaseSHA256": "effda456b5576055f7d4265195dcc9bfaff8cd6287aae1f444694b57c2dfa7e7",
+  "library": {
+    "file": "libjson-c.a",
+    "bytes": 344026,
+    "sha256": "d751be9a7f09361cfab75931930a6bc23ab0dec7bc2b3b204d82d584c21bd10f",
+    "members": [
+      {
+        "member": "arraylist.c.o",
+        "bytes": 13560,
+        "sha256": "41f1fd9a3f7e62925a0b65c34a7e062aa37132d0b79be54ba2bfcbca58f57a75"
+      },
+      {
+        "member": "debug.c.o",
+        "bytes": 7992,
+        "sha256": "da0c16397f8c826945ce02ced8b1adb66afe87b0ad2a71769a43b87f27be7d9d"
+      },
+      {
+        "member": "json_c_version.c.o",
+        "bytes": 3920,
+        "sha256": "128ee5344abd305672c00c6e725bdd97906df02fa10e289b4bb35d0acd4ac300"
+      },
+      {
+        "member": "json_object.c.o",
+        "bytes": 114008,
+        "sha256": "627d29a3083bfaa2cf10738f265dfd0e0431c36d5685310ac414fe57f49c61a4"
+      },
+      {
+        "member": "json_object_iterator.c.o",
+        "bytes": 11176,
+        "sha256": "edd5b69abbc730c4478068efff20bc5ae17ecfc63054d9b0e1c8944f935706b3"
+      },
+      {
+        "member": "json_tokener.c.o",
+        "bytes": 57248,
+        "sha256": "aaa737a3326bdfb55d584cdf2776cdc464605a584292ec66293b86d31159171a"
+      },
+      {
+        "member": "json_util.c.o",
+        "bytes": 24344,
+        "sha256": "0363b7ee502b564043b3924ca21c039c1ad6bf1316f8e2cc368491edcf222828"
+      },
+      {
+        "member": "json_visit.c.o",
+        "bytes": 11976,
+        "sha256": "55593ccb1e2c3a44f8f2694ebcf72c50660c71d2a0b39e2bdea9ba5eb5ee2ae9"
+      },
+      {
+        "member": "linkhash.c.o",
+        "bytes": 28368,
+        "sha256": "c3e14289e64e65f17c013c48e71fda33dea401dbbec0ad113f39b4871f413ee4"
+      },
+      {
+        "member": "printbuf.c.o",
+        "bytes": 10088,
+        "sha256": "1621614430da435747c9d3bd98a1e2027b8c0720bf53867a04eb904719cc37ab"
+      },
+      {
+        "member": "random_seed.c.o",
+        "bytes": 3104,
+        "sha256": "36ee1ba6c63e16ae9a11de5b944678a52af8dffc060f9998994e833e0b095f5a"
+      },
+      {
+        "member": "strerror_override.c.o",
+        "bytes": 10664,
+        "sha256": "9e350006676c8fce603b8b9a4e425edfc087fb12921bb6d39909d39733f7d9ab"
+      },
+      {
+        "member": "json_pointer.c.o",
+        "bytes": 20960,
+        "sha256": "cc3056e323896fcfe6753bd7ec789c39d62566ce57e3124c51b87c814cb27218"
+      },
+      {
+        "member": "json_patch.c.o",
+        "bytes": 21864,
+        "sha256": "568beb165647eb80dfd4a3f9f28d96fc14b21ec59e271934964228e15296db39"
+      }
+    ],
+    "allMembersMatchActualObjectHashes": true
+  },
+  "languageContext": {
+    "explicitStdFlag": null,
+    "cmakeComputedDefault": 17,
+    "extensions": "ON",
+    "meaning": "GNU C17 compiler context;Cppcheck C11 model disclosed separately",
+    "macrosFromEveryAction": [
+      "_GNU_SOURCE",
+      "_REENTRANT"
+    ],
+    "NDEBUGDefinedByCommands": false
+  },
+  "ninjaDependencyRecords": 14,
+  "allDependencyRecordsValid": true,
+  "projectDependencyClosure": {
+    "total": 39,
+    "C": 14,
+    "sourceHeaders": 22,
+    "generatedHeaders": 3,
+    "manifest": "Project_Dependency_Manifest.json",
+    "generated": [
+      "config.h",
+      "json_config.h",
+      "json.h"
+    ],
+    "systemDependencies": "OS/Clang headers in preparation/ninja-deps.txt;not project C units"
+  },
+  "sourceBeforeAndAfter": {
+    "ordinaryFilesMatchAcceptedArchive": 239,
+    "symlinkTargetsMatch": 22,
+    "directoriesExcludingRoot": 10,
+    "all271EntriesEqual": true
+  },
+  "preparationMetrics": {
+    "configure": {
+      "wall_seconds": 56.63,
+      "user_seconds": 1.89,
+      "system_seconds": 2.49,
+      "max_rss_kib": 91020,
+      "exit_code": 0
+    },
+    "build": {
+      "wall_seconds": 0.44,
+      "user_seconds": 0.32,
+      "system_seconds": 0.11,
+      "max_rss_kib": 103488,
+      "exit_code": 0
+    }
+  },
+  "metricMeaning": "configuration/library build only;not analysis cost;GNU time maxRSS is not process-tree sum",
+  "configureNotes": {
+    "doxygen": "not found;optional documentation target omitted;static json-c target unaffected",
+    "HAS_GNU_WARNING_LONG": "feature probe fails with generated asm string-literal error;not14 target C compilation;no source modification",
+    "otherNotFound": "platform feature probes;actual generated configuration retained"
+  },
+  "rawFiles": 33,
+  "rawFileManifest": "Build_Raw_File_Manifest.json",
+  "readOnlyCapture": "../json_c_setup/Build_Acceptance_20261027/Read_Only_Linux_Evidence.json",
+  "tools": {
+    "Cppcheck": "not run",
+    "CodeChecker_clangsa": "not run",
+    "Flawfinder": "not run"
+  },
+  "candidateTotal": null,
+  "formalThirtyCells": "all not run"
+}

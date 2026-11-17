@@ -1,0 +1,10 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+init_source
+init_mem_source
+fill_input_buffer call:[fread]
+fill_mem_input_buffer
+skip_input_data
+term_source
+jpeg_stdio_src call:[sizeof]
+jpeg_mem_src call:[sizeof]

@@ -1,0 +1,2 @@
+yaml_emitter_set_writer_error
+yaml_emitter_flush call:[assert,write_handler,yaml_emitter_set_writer_error] noreturn:[yaml_emitter_set_writer_error]

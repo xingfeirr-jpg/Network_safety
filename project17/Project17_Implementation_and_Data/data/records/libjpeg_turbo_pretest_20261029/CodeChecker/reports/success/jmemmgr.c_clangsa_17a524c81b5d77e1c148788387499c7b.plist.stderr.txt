@@ -1,0 +1,25 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:401:17: warning: Access to field 'next' results in a dereference of a null pointer (loaded from variable 'hdr_ptr') [core.NullDereference]
+  401 |   hdr_ptr->next = mem->large_list[pool_id];
+      |   ~~~~~~~       ^
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:847:55: warning: Array access (via field 'mem_buffer') results in a null pointer dereference [core.NullDereference]
+  847 |                                               (void *)ptr->mem_buffer[i],
+      |                                                       ^~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:858:55: warning: Array access (from variable 'mem_buffer12') results in a null pointer dereference [core.NullDereference]
+  858 |                                               (void *)mem_buffer12[i],
+      |                                                       ^~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:870:55: warning: Array access (from variable 'mem_buffer16') results in a null pointer dereference [core.NullDereference]
+  870 |                                               (void *)mem_buffer16[i],
+      |                                                       ^~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:907:53: warning: Array access (via field 'mem_buffer') results in a null pointer dereference [core.NullDereference]
+  907 |                                             (void *)ptr->mem_buffer[i],
+      |                                                     ^~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:993:27: warning: Array access (via field 'mem_buffer') results in a null pointer dereference [core.NullDereference]
+  993 |         jzero_far((void *)ptr->mem_buffer[undef_row], bytesperrow);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:1077:27: warning: Array access (via field 'mem_buffer') results in a null pointer dereference [core.NullDereference]
+ 1077 |         jzero_far((void *)ptr->mem_buffer[undef_row], bytesperrow);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c:1234:24: warning: Dereference of null pointer [core.NullDereference]
+ 1234 |   mem->pub.alloc_small = alloc_small;
+      |   ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+8 warnings generated.

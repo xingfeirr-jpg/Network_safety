@@ -1,0 +1,14 @@
+[INFO 2026-10-29 18:08:07] - Using '/usr/bin/clang-18' for analyzer 'clangsa'
+[INFO 2026-10-29 18:08:08] - ----==== Summary ====----
+[INFO 2026-10-29 18:08:08] - Up-to-date analysis results
+[INFO 2026-10-29 18:08:08] -   clangsa: ['/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c'] (1)
+[INFO 2026-10-29 18:08:08] - Outdated analysis results
+[INFO 2026-10-29 18:08:08] - Failed to analyze
+[INFO 2026-10-29 18:08:08] - Missing analysis results
+[INFO 2026-10-29 18:08:08] -   clang-tidy: ['/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c'] (1)
+[INFO 2026-10-29 18:08:08] -   cppcheck: ['/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c'] (1)
+[INFO 2026-10-29 18:08:08] -   gcc: ['/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c'] (1)
+[INFO 2026-10-29 18:08:08] -   infer: ['/home/yhong/comp5355/sources/utf8proc-2.10.0/utf8proc.c'] (1)
+[INFO 2026-10-29 18:08:08] - Total analyzed compilation commands: 1
+[INFO 2026-10-29 18:08:08] - Total available compilation commands: 1
+[INFO 2026-10-29 18:08:08] - ----=================----

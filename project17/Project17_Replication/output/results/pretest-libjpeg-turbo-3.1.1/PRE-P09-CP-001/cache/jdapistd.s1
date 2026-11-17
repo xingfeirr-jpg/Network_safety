@@ -1,0 +1,16 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+set_wraparound_pointers
+start_iMCU_row
+jpeg_start_decompress call:[jinit_master_decompress,output_pass_setup] noreturn:[output_pass_setup]
+output_pass_setup
+jpeg_crop_scanline call:[jdiv_round_up,jinit_upsampler]
+jpeg_read_scanlines
+noop_convert
+noop_quantize
+read_and_discard_scanlines call:[jpeg_read_scanlines,void] noreturn:[jpeg_read_scanlines]
+increment_simple_rowgroup_ctr call:[read_and_discard_scanlines] noreturn:[read_and_discard_scanlines]
+jpeg_skip_scanlines call:[increment_simple_rowgroup_ctr,read_and_discard_scanlines,set_wraparound_pointers,start_iMCU_row] noreturn:[increment_simple_rowgroup_ctr,read_and_discard_scanlines,set_wraparound_pointers,start_iMCU_row]
+jpeg_read_raw_data
+jpeg_start_output call:[output_pass_setup] noreturn:[output_pass_setup]
+jpeg_finish_output

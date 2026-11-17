@@ -1,0 +1,23 @@
+	Command being timed: "/home/yhong/comp5355/.venv/bin/flawfinder --minlevel=1 --neverignore --columns --context /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.c /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.h /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.c /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame_static.h /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.c /home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4hc.h /home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.c /home/yhong/comp5355/sources/lz4-v1.10.0/lib/xxhash.h"
+	User time (seconds): 0.09
+	System time (seconds): 0.01
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.10
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 20472
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2727
+	Voluntary context switches: 2
+	Involuntary context switches: 2
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

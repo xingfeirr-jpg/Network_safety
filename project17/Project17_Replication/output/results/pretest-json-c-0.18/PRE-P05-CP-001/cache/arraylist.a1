@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="15477258466953398951">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="17" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;strings.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;strings.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="22" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h" line="25" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:59:27" call-funcname="array_list_new2" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="41" col="9" my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:44:27" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:67:12" call-funcname="array_list_put_idx" call-argnr="3" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="133" col="10" my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:65:12" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c:81:12" call-funcname="array_list_expand_internal" call-argnr="1" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="154" col="6" my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:67:12" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:61:13" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="67" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:63:14" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="76" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c:81:12" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="86" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:84:12" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="111" col="51" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:65:12" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="132" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:69:12" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="180" col="15" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:73:13" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="192" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:73:13" my-argnr="2" my-argname="compar" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="192" col="56" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:75:14" my-argnr="1" my-argname="key" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="198" col="17" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:75:14" my-argnr="2" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="198" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:75:14" my-argnr="3" my-argname="compar" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="198" col="70" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:71:15" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="203" col="9" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:61:13" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="67" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:63:14" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="76" col="11" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c:81:12" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="86" col="12" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:84:12" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="111" col="51" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:65:12" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="132" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:69:12" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="180" col="15" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:73:13" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="192" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:73:13" my-argnr="2" my-argname="compar" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="192" col="56" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:75:14" my-argnr="1" my-argname="key" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="198" col="17" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:75:14" my-argnr="2" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="198" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:75:14" my-argnr="3" my-argname="compar" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="198" col="70" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/json-c-0.18/arraylist.h:71:15" my-argnr="1" my-argname="arr" file="/home/yhong/comp5355/sources/json-c-0.18/arraylist.c" line="203" col="9" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="array_list_expand_internal" lineNumber="81"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="array_list_expand_internal"/>
+    <functioncall functionName="array_list_new2"/>
+    <functioncall functionName="array_list_put_idx"/>
+    <functioncall functionName="bsearch"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="free_fn"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="memmove"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="qsort"/>
+    <functioncall functionName="realloc"/>
+  </FileInfo>
+</analyzerinfo>

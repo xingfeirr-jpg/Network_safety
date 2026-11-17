@@ -1,0 +1,96 @@
+{
+  "checkedOn": "2026-10-26",
+  "method": "Official GitHub REST commits/{tag}; resolves tags to commits. Remote GET only; no target source downloaded or built.",
+  "samples": [
+    {
+      "project": "zlib",
+      "repo": "madler/zlib",
+      "tag": "v1.3.2",
+      "commit": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+      "committedAt": "2026-02-17T13:01:19Z",
+      "officialCommitUrl": "https://github.com/madler/zlib/commit/da607da739fa6047df13e66a2af6b8bec7c2a498",
+      "source": "https://api.github.com/repos/madler/zlib/commits/v1.3.2"
+    },
+    {
+      "project": "LZ4",
+      "repo": "lz4/lz4",
+      "tag": "v1.10.0",
+      "commit": "ebb370ca83af193212df4dcbadcc5d87bc0de2f0",
+      "committedAt": "2024-07-21T17:29:49Z",
+      "officialCommitUrl": "https://github.com/lz4/lz4/commit/ebb370ca83af193212df4dcbadcc5d87bc0de2f0",
+      "source": "https://api.github.com/repos/lz4/lz4/commits/v1.10.0"
+    },
+    {
+      "project": "cJSON",
+      "repo": "DaveGamble/cJSON",
+      "tag": "v1.7.19",
+      "commit": "c859b25da02955fef659d658b8f324b5cde87be3",
+      "committedAt": "2025-09-09T13:56:10Z",
+      "officialCommitUrl": "https://github.com/DaveGamble/cJSON/commit/c859b25da02955fef659d658b8f324b5cde87be3",
+      "source": "https://api.github.com/repos/DaveGamble/cJSON/commits/v1.7.19"
+    },
+    {
+      "project": "libyaml",
+      "repo": "yaml/libyaml",
+      "tag": "0.2.5",
+      "commit": "2c891fc7a770e8ba2fec34fc6b545c672beb37e6",
+      "committedAt": "2020-06-01T21:19:50Z",
+      "officialCommitUrl": "https://github.com/yaml/libyaml/commit/2c891fc7a770e8ba2fec34fc6b545c672beb37e6",
+      "source": "https://api.github.com/repos/yaml/libyaml/commits/0.2.5"
+    },
+    {
+      "project": "json-c",
+      "repo": "json-c/json-c",
+      "tag": "json-c-0.18-20240915",
+      "commit": "41a55cfcedb54d9c1874f2f0eb07b504091d7e37",
+      "committedAt": "2024-09-15T16:22:45Z",
+      "officialCommitUrl": "https://github.com/json-c/json-c/commit/41a55cfcedb54d9c1874f2f0eb07b504091d7e37",
+      "source": "https://api.github.com/repos/json-c/json-c/commits/json-c-0.18-20240915"
+    },
+    {
+      "project": "yyjson",
+      "repo": "ibireme/yyjson",
+      "tag": "0.12.0",
+      "commit": "8b4a38dc994a110abaec8a400615567bd996105f",
+      "committedAt": "2025-08-18T18:44:14Z",
+      "officialCommitUrl": "https://github.com/ibireme/yyjson/commit/8b4a38dc994a110abaec8a400615567bd996105f",
+      "source": "https://api.github.com/repos/ibireme/yyjson/commits/0.12.0"
+    },
+    {
+      "project": "Expat",
+      "repo": "libexpat/libexpat",
+      "tag": "R_2_7_1",
+      "commit": "f9a3eeb3e09fbea04b1c451ffc422ab2f1e45744",
+      "committedAt": "2025-03-27T18:40:10Z",
+      "officialCommitUrl": "https://github.com/libexpat/libexpat/commit/f9a3eeb3e09fbea04b1c451ffc422ab2f1e45744",
+      "source": "https://api.github.com/repos/libexpat/libexpat/commits/R_2_7_1"
+    },
+    {
+      "project": "libpng",
+      "repo": "pnggroup/libpng",
+      "tag": "v1.6.50",
+      "commit": "2b978915d82377df13fcbb1fb56660195ded868a",
+      "committedAt": "2025-07-01T20:50:00Z",
+      "officialCommitUrl": "https://github.com/pnggroup/libpng/commit/2b978915d82377df13fcbb1fb56660195ded868a",
+      "source": "https://api.github.com/repos/pnggroup/libpng/commits/v1.6.50"
+    },
+    {
+      "project": "libjpeg-turbo",
+      "repo": "libjpeg-turbo/libjpeg-turbo",
+      "tag": "3.1.1",
+      "commit": "7723f50f3f66b9da74376e6d8badb6162464212c",
+      "committedAt": "2025-06-06T18:50:51Z",
+      "officialCommitUrl": "https://github.com/libjpeg-turbo/libjpeg-turbo/commit/7723f50f3f66b9da74376e6d8badb6162464212c",
+      "source": "https://api.github.com/repos/libjpeg-turbo/libjpeg-turbo/commits/3.1.1"
+    },
+    {
+      "project": "utf8proc",
+      "repo": "JuliaStrings/utf8proc",
+      "tag": "v2.10.0",
+      "commit": "a1b99daa2a3393884220264c927a48ba1251a9c6",
+      "committedAt": "2024-12-31T20:17:14Z",
+      "officialCommitUrl": "https://github.com/JuliaStrings/utf8proc/commit/a1b99daa2a3393884220264c927a48ba1251a9c6",
+      "source": "https://api.github.com/repos/JuliaStrings/utf8proc/commits/v2.10.0"
+    }
+  ]
+}

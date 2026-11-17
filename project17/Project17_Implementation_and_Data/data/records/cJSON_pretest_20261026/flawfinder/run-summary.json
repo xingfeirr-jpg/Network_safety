@@ -1,0 +1,41 @@
+{
+  "checkedOn": "2026-10-26",
+  "runId": "PRE-P03-FF-001",
+  "purpose": "functional pretest; not formal comparative-performance data",
+  "sampleId": "P03",
+  "tool": "Flawfinder",
+  "toolVersion": "2.0.20",
+  "arguments": [
+    "--minlevel=1",
+    "--neverignore",
+    "--columns",
+    "--context"
+  ],
+  "inputs": [
+    "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+    "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h"
+  ],
+  "exitCode": 0,
+  "stderrBytes": 0,
+  "displayedHitCount": 26,
+  "summaryRiskLevelCountsIncludingFiltered": {
+    "0": 1,
+    "1": 6,
+    "2": 19,
+    "3": 0,
+    "4": 1,
+    "5": 0
+  },
+  "filteredRiskZeroCount": 1,
+  "toolReportedLinesAnalyzed": 3497,
+  "toolReportedSloc": 2674,
+  "toolReportedApproximateSeconds": 0.02,
+  "timingCaveat": "Tool self-reported approximation only; not a consistent process-time measurement for comparison",
+  "triageStatus": "All 26 displayed hits unreviewed. No confirmed-vulnerability or false-positive labels assigned.",
+  "originalFileSha256": {
+    "report.txt": "0efc55a09ad0dc532bbb943cd8b3c975fdf3b48b3dd7d08888773e7d3faccaef",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "formalMatrixStatus": "All 30 cells remain not run"
+}

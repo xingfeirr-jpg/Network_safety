@@ -1,0 +1,8 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+start_pass_prep
+expand_bottom_edge call:[jcopy_sample_rows] noreturn:[jcopy_sample_rows]
+pre_process_data call:[expand_bottom_edge] noreturn:[expand_bottom_edge]
+pre_process_context call:[expand_bottom_edge,jcopy_sample_rows] noreturn:[expand_bottom_edge,jcopy_sample_rows]
+create_context_buffer call:[memcpy,sizeof]
+jinit_c_prep_controller call:[create_context_buffer,sizeof] noreturn:[create_context_buffer]

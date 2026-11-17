@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="4438126263486294638">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c" line="34" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c" line="35" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c" line="36" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h" line="43" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4.h" line="700" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.h" line="41" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h" line="53" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:461:1" call-funcname="LZ4F_getFrameInfo" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c" line="102" col="49" call-argexpr="&amp;info" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:461:1" call-funcname="LZ4F_getFrameInfo" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c" line="102" col="49" call-argexpr="buf" call-argvaluetype="7" call-argvalue="19"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:461:1" call-funcname="LZ4F_getFrameInfo" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c" line="102" col="49" call-argexpr="&amp;consumedSize" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" call-funcname="LZ4F_decompress" call-argnr="3" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c" line="166" col="26" call-argexpr="&amp;dstsize" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" call-funcname="LZ4F_decompress" call-argnr="5" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c" line="166" col="26" call-argexpr="&amp;srcsize" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:502:1" call-funcname="LZ4F_decompress" call-argnr="6" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c" line="166" col="26" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:318:20" call-funcname="LZ4F_compressBound" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c" line="252" col="51" call-argexpr="prefsPtr" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c" line="229" col="16" info="Assuming that condition &apos;prefsPtr!=NULL&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:299:20" call-funcname="LZ4F_compressBegin" call-argnr="2" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c" line="265" col="27" call-argexpr="buf" call-argvaluetype="7" call-argvalue="19"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:332:20" call-funcname="LZ4F_compressUpdate" call-argnr="6" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c" line="296" col="30" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4frame.h:360:20" call-funcname="LZ4F_compressEnd" call-argnr="4" file="/home/yhong/comp5355/sources/lz4-v1.10.0/lib/lz4file.c" line="326" col="28" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="returnErrorCode" lineNumber="40"/>
+    <functiondecl functionName="LZ4F_freeReadFile" lineNumber="58"/>
+    <functiondecl functionName="LZ4F_freeAndNullReadFile" lineNumber="66"/>
+    <functiondecl functionName="LZ4F_readOpen" lineNumber="73"/>
+    <functiondecl functionName="LZ4F_read" lineNumber="140"/>
+    <functiondecl functionName="LZ4F_readClose" lineNumber="183"/>
+    <functiondecl functionName="LZ4F_freeWriteFile" lineNumber="202"/>
+    <functiondecl functionName="LZ4F_freeAndNullWriteFile" lineNumber="210"/>
+    <functiondecl functionName="LZ4F_writeOpen" lineNumber="217"/>
+    <functiondecl functionName="LZ4F_write" lineNumber="281"/>
+    <functiondecl functionName="LZ4F_writeClose" lineNumber="317"/>
+    <functioncall functionName="LZ4F_ERROR_allocation_failed"/>
+    <functioncall functionName="LZ4F_ERROR_io_read"/>
+    <functioncall functionName="LZ4F_ERROR_io_write"/>
+    <functioncall functionName="LZ4F_ERROR_maxBlockSize_invalid"/>
+    <functioncall functionName="LZ4F_ERROR_parameter_null"/>
+    <functioncall functionName="LZ4F_OK_NoError"/>
+    <functioncall functionName="LZ4F_compressBegin"/>
+    <functioncall functionName="LZ4F_compressBound"/>
+    <functioncall functionName="LZ4F_compressEnd"/>
+    <functioncall functionName="LZ4F_compressUpdate"/>
+    <functioncall functionName="LZ4F_createCompressionContext"/>
+    <functioncall functionName="LZ4F_createDecompressionContext"/>
+    <functioncall functionName="LZ4F_decompress"/>
+    <functioncall functionName="LZ4F_freeAndNullReadFile"/>
+    <functioncall functionName="LZ4F_freeAndNullWriteFile"/>
+    <functioncall functionName="LZ4F_freeCompressionContext"/>
+    <functioncall functionName="LZ4F_freeDecompressionContext"/>
+    <functioncall functionName="LZ4F_freeReadFile"/>
+    <functioncall functionName="LZ4F_freeWriteFile"/>
+    <functioncall functionName="LZ4F_getFrameInfo"/>
+    <functioncall functionName="LZ4F_isError"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="calloc"/>
+    <functioncall functionName="fread"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="fwrite"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="out"/>
+    <functioncall functionName="returnErrorCode"/>
+  </FileInfo>
+</analyzerinfo>

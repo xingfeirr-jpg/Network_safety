@@ -1,0 +1,1 @@
+CC_ANALYZER_BIN=clangsa:/usr/bin/clang-18

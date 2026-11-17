@@ -1,0 +1,6 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+jpeg_abort
+jpeg_destroy
+jpeg_alloc_quant_table call:[sizeof]
+jpeg_alloc_huff_table call:[sizeof]

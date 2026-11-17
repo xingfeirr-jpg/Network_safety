@@ -1,0 +1,6 @@
+compress2_z call:[deflate,deflateEnd,deflateInit_,return,sizeof,while] noreturn:[deflate,return]
+compress2 call:[compress2_z]
+compress_z call:[compress2_z] noreturn:[compress2_z]
+compress call:[compress2] noreturn:[compress2]
+compressBound_z
+compressBound call:[compressBound_z,return]

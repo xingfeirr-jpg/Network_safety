@@ -1,0 +1,1 @@
+_json_c_strerror global:[_json_c_strerror_enable,errno_buf,errno_list] call:[getenv,sizeof,strerror] noreturn:[strerror]

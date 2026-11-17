@@ -1,0 +1,9 @@
+[
+ "cmake",
+ "--build",
+ "/home/yhong/comp5355/build/libyaml-0.2.5",
+ "--target",
+ "yaml",
+ "--parallel",
+ "1"
+]

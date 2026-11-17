@@ -1,0 +1,8 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+start_iMCU_row
+start_pass_diff call:[start_iMCU_row]
+compress_data call:[jround_up,memset,sizeof,start_iMCU_row] noreturn:[memset]
+compress_first_pass call:[compress_output,memcpy,sizeof] noreturn:[compress_output,memcpy]
+compress_output call:[compress_data] noreturn:[compress_data]
+j16init_c_diff_controller call:[jround_up,memset,sizeof] noreturn:[memset]

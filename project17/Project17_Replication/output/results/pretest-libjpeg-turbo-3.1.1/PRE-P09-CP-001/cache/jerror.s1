@@ -1,0 +1,8 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+error_exit call:[exit,jpeg_destroy] noreturn:[exit]
+output_message call:[fprintf] noreturn:[fprintf]
+emit_message
+format_message call:[snprintf] noreturn:[snprintf]
+reset_error_mgr
+jpeg_std_error global:[jpeg_std_message_table] call:[memset,sizeof]

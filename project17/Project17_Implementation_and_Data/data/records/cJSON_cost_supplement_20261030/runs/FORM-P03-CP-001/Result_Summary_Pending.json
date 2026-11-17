@@ -1,0 +1,30 @@
+{
+  "xml_format_version": "2",
+  "cppcheck_version": "2.13.0",
+  "xml_diagnostic_count": 26,
+  "source_candidate_count": 16,
+  "information_count": 10,
+  "configuration_blocker_count": 0,
+  "severity_counts": {
+    "information": 10,
+    "warning": 16
+  },
+  "rule_counts": {
+    "missingIncludeSystem": 9,
+    "uselessAssignmentPtrArg": 1,
+    "nullPointerRedundantCheck": 14,
+    "ctunullpointer": 1,
+    "checkersReport": 1
+  },
+  "blocking_diagnostic_ids": [],
+  "status": "machine_evidence_ready_pending_assistant_acceptance",
+  "run_id": "FORM-P03-CP-001",
+  "analysis_exit_code": 0,
+  "input_after_passed": true,
+  "checker_dictionary_matches_old": true,
+  "enabled_checker_entries": 79,
+  "checker_entry_count": 178,
+  "coverage_acceptance": "pending_assistant_review_of_progress_cache_checkers_and_XML",
+  "historical_count_is_not_acceptance_gate": true,
+  "meaning": "XML元素和location链分别保留；信息不计源码候选；新旧映射及实际覆盖、成本仍待助手验收。"
+}

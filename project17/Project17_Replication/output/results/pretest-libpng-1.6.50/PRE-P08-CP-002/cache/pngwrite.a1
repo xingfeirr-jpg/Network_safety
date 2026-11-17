@@ -1,0 +1,430 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="2644525754371178888">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h" line="55" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h" line="56" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngconf.h" line="30" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngconf.h" line="31" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngconf.h" line="45" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;setjmp.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;setjmp.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngconf.h" line="50" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;time.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;time.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngconf.h" line="55" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;float.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;float.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h" line="550" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h" line="552" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h" line="268" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h" line="434" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h" line="460" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h" line="466" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h" line="494" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="15" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1345:1" call-funcname="png_write_zTXt" call-argnr="4" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="355" col="24" call-argexpr="info_ptr-&gt;text[i].compression" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="351" col="46" info="Assuming that condition &apos;info_ptr-&gt;text[i].compression==0&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1340:1" call-funcname="png_write_tEXt" call-argnr="4" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="368" col="24" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1345:1" call-funcname="png_write_zTXt" call-argnr="4" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="452" col="27" call-argexpr="info_ptr-&gt;text[i].compression" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="428" col="44" info="Assuming that condition &apos;info_ptr-&gt;text[i].compression&gt;0&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1340:1" call-funcname="png_write_tEXt" call-argnr="4" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="465" col="27" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:991:1" call-funcname="png_create_write_struct_2" call-argnr="5" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="551" col="36" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:991:1" call-funcname="png_create_write_struct_2" call-argnr="6" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="551" col="36" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:991:1" call-funcname="png_create_write_struct_2" call-argnr="7" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="551" col="36" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1439:1" call-funcname="png_do_write_interlace" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="895" col="29" call-argexpr="&amp;row_info" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1684:1" call-funcname="png_do_write_transformations" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="908" col="35" call-argexpr="&amp;row_info" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:680:1" call-funcname="png_do_write_intrapixel" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="932" col="30" call-argexpr="&amp;row_info" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1752:1" call-funcname="png_do_check_palette_indexes" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="941" col="35" call-argexpr="&amp;row_info" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1567:1" call-funcname="png_write_find_filter" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="945" col="25" call-argexpr="&amp;row_info" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1256:1" call-funcname="png_compress_IDAT" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="977" col="21" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1256:1" call-funcname="png_compress_IDAT" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="977" col="21" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:1025:1" call-funcname="png_destroy_write_struct" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="1552" col="31" call-argexpr="&amp;png_ptr" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:1025:1" call-funcname="png_destroy_write_struct" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="1552" col="31" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:1696:1" call-funcname="png_unpremultiply" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="1795" col="46" call-argexpr="reciprocal" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="1784" col="38" info="Assignment &apos;reciprocal=0&apos;, assigned value is 0"/>
+  <path file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="1790" col="31" info="Assuming condition is false"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:1046:1" call-funcname="png_set_filter" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="2161" col="21" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:1046:1" call-funcname="png_set_filter" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="2161" col="21" call-argexpr="0x00" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:2122:1" call-funcname="png_safe_execute" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="2296" col="38" call-argexpr="&amp;display" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:2122:1" call-funcname="png_safe_execute" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="2359" col="38" call-argexpr="&amp;display" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:991:1" call-funcname="png_create_write_struct_2" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="551" col="11" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:941:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:991:1" call-funcname="png_create_write_struct_2" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="551" col="11" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:941:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:991:1" call-funcname="png_create_write_struct_2" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="551" col="11" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:941:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:991:1" call-funcname="png_create_write_struct_2" call-argnr="4" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="551" col="11" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:941:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1164:1" call-funcname="png_create_png_struct" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="561" col="27" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:991:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1164:1" call-funcname="png_create_png_struct" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="561" col="27" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:991:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1164:1" call-funcname="png_create_png_struct" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="561" col="27" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:991:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1164:1" call-funcname="png_create_png_struct" call-argnr="4" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="561" col="27" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:991:1" my-argnr="4"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1164:1" call-funcname="png_create_png_struct" call-argnr="5" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="561" col="27" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:991:1" my-argnr="5"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1164:1" call-funcname="png_create_png_struct" call-argnr="6" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="561" col="27" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:991:1" my-argnr="6"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1164:1" call-funcname="png_create_png_struct" call-argnr="7" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="561" col="27" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:991:1" my-argnr="7"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/png.h:941:1" call-funcname="png_create_write_struct" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="1524" col="26" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:1522:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:2333:1" call-funcname="png_image_write_to_stdio" call-argnr="6" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="2395" col="17" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:2382:1" my-argnr="6"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:23:1" my-argnr="2" my-argname="info_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="26" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:508:1" my-argnr="1" my-argname="ptime" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="512" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:508:1" my-argnr="2" my-argname="ttime" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="512" col="39" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:1838:1" my-argnr="1" my-argname="display" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="1840" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:23:1" my-argnr="2" my-argname="info_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="26" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:508:1" my-argnr="2" my-argname="ttime" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="512" col="39" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:680:1" my-argnr="1" my-argname="row_info" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="684" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:985:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="990" col="9" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c:1838:1" my-argnr="1" my-argname="display" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c" line="1840" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="write_unknown_chunks" lineNumber="23"/>
+    <functiondecl functionName="png_write_info_before_PLTE" lineNumber="83"/>
+    <functiondecl functionName="png_write_info" lineNumber="223"/>
+    <functiondecl functionName="png_write_end" lineNumber="392"/>
+    <functiondecl functionName="png_convert_from_struct_tm" lineNumber="508"/>
+    <functiondecl functionName="png_convert_from_time_t" lineNumber="521"/>
+    <functiondecl functionName="png_write_rows" lineNumber="625"/>
+    <functiondecl functionName="png_write_image" lineNumber="647"/>
+    <functiondecl functionName="png_do_write_intrapixel" lineNumber="680"/>
+    <functiondecl functionName="png_write_row" lineNumber="744"/>
+    <functiondecl functionName="png_set_flush" lineNumber="954"/>
+    <functiondecl functionName="png_write_flush" lineNumber="966"/>
+    <functiondecl functionName="png_write_destroy" lineNumber="985"/>
+    <functiondecl functionName="png_destroy_write_struct" lineNumber="1025"/>
+    <functiondecl functionName="png_set_filter" lineNumber="1046"/>
+    <functiondecl functionName="png_set_filter_heuristics" lineNumber="1175"/>
+    <functiondecl functionName="png_set_filter_heuristics_fixed" lineNumber="1189"/>
+    <functiondecl functionName="png_set_compression_level" lineNumber="1204"/>
+    <functiondecl functionName="png_set_compression_mem_level" lineNumber="1215"/>
+    <functiondecl functionName="png_set_compression_strategy" lineNumber="1226"/>
+    <functiondecl functionName="png_set_compression_window_bits" lineNumber="1243"/>
+    <functiondecl functionName="png_set_compression_method" lineNumber="1272"/>
+    <functiondecl functionName="png_set_text_compression_level" lineNumber="1292"/>
+    <functiondecl functionName="png_set_text_compression_mem_level" lineNumber="1303"/>
+    <functiondecl functionName="png_set_text_compression_strategy" lineNumber="1314"/>
+    <functiondecl functionName="png_set_text_compression_window_bits" lineNumber="1328"/>
+    <functiondecl functionName="png_set_text_compression_method" lineNumber="1351"/>
+    <functiondecl functionName="png_set_write_status_fn" lineNumber="1367"/>
+    <functiondecl functionName="png_set_write_user_transform_fn" lineNumber="1379"/>
+    <functiondecl functionName="png_write_png" lineNumber="1395"/>
+    <functiondecl functionName="png_image_write_init" lineNumber="1522"/>
+    <functiondecl functionName="png_write_image_16bit" lineNumber="1582"/>
+    <functiondecl functionName="png_unpremultiply" lineNumber="1696"/>
+    <functiondecl functionName="png_write_image_8bit" lineNumber="1741"/>
+    <functiondecl functionName="png_image_set_PLTE" lineNumber="1838"/>
+    <functiondecl functionName="png_image_write_main" lineNumber="1984"/>
+    <functiondecl functionName="png_image_write_memory" lineNumber="2250"/>
+    <functiondecl functionName="png_image_write_to_memory" lineNumber="2266"/>
+    <functiondecl functionName="png_image_write_to_stdio" lineNumber="2333"/>
+    <functiondecl functionName="png_image_write_to_file" lineNumber="2382"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="deflateEnd"/>
+    <functioncall functionName="errno"/>
+    <functioncall functionName="fclose"/>
+    <functioncall functionName="ferror"/>
+    <functioncall functionName="fflush"/>
+    <functioncall functionName="fopen"/>
+    <functioncall functionName="gmtime"/>
+    <functioncall functionName="image_memory_flush"/>
+    <functioncall functionName="image_memory_write"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="off_t"/>
+    <functioncall functionName="png_access_version_number"/>
+    <functioncall functionName="png_app_error"/>
+    <functioncall functionName="png_app_warning"/>
+    <functioncall functionName="png_benign_error"/>
+    <functioncall functionName="png_build_grayscale_palette"/>
+    <functioncall functionName="png_chunk_benign_error"/>
+    <functioncall functionName="png_chunk_error"/>
+    <functioncall functionName="png_chunk_warning"/>
+    <functioncall functionName="png_compress_IDAT"/>
+    <functioncall functionName="png_convert_from_struct_tm"/>
+    <functioncall functionName="png_convert_from_time_t"/>
+    <functioncall functionName="png_convert_to_rfc1123_buffer"/>
+    <functioncall functionName="png_create_info_struct"/>
+    <functioncall functionName="png_create_png_struct"/>
+    <functioncall functionName="png_create_write_struct"/>
+    <functioncall functionName="png_create_write_struct_2"/>
+    <functioncall functionName="png_data_freer"/>
+    <functioncall functionName="png_destroy_info_struct"/>
+    <functioncall functionName="png_destroy_png_struct"/>
+    <functioncall functionName="png_destroy_read_struct"/>
+    <functioncall functionName="png_destroy_write_struct"/>
+    <functioncall functionName="png_do_check_palette_indexes"/>
+    <functioncall functionName="png_do_write_interlace"/>
+    <functioncall functionName="png_do_write_intrapixel"/>
+    <functioncall functionName="png_do_write_transformations"/>
+    <functioncall functionName="png_error"/>
+    <functioncall functionName="png_flush"/>
+    <functioncall functionName="png_free"/>
+    <functioncall functionName="png_free_buffer_list"/>
+    <functioncall functionName="png_free_data"/>
+    <functioncall functionName="png_free_default"/>
+    <functioncall functionName="png_get_IHDR"/>
+    <functioncall functionName="png_get_PLTE"/>
+    <functioncall functionName="png_get_bKGD"/>
+    <functioncall functionName="png_get_bit_depth"/>
+    <functioncall functionName="png_get_cHRM"/>
+    <functioncall functionName="png_get_cHRM_XYZ"/>
+    <functioncall functionName="png_get_cHRM_XYZ_fixed"/>
+    <functioncall functionName="png_get_cHRM_fixed"/>
+    <functioncall functionName="png_get_cICP"/>
+    <functioncall functionName="png_get_cLLI"/>
+    <functioncall functionName="png_get_cLLI_fixed"/>
+    <functioncall functionName="png_get_channels"/>
+    <functioncall functionName="png_get_chunk_cache_max"/>
+    <functioncall functionName="png_get_chunk_malloc_max"/>
+    <functioncall functionName="png_get_color_type"/>
+    <functioncall functionName="png_get_compression_buffer_size"/>
+    <functioncall functionName="png_get_compression_type"/>
+    <functioncall functionName="png_get_current_pass_number"/>
+    <functioncall functionName="png_get_current_row_number"/>
+    <functioncall functionName="png_get_eXIf"/>
+    <functioncall functionName="png_get_eXIf_1"/>
+    <functioncall functionName="png_get_filter_type"/>
+    <functioncall functionName="png_get_gAMA"/>
+    <functioncall functionName="png_get_gAMA_fixed"/>
+    <functioncall functionName="png_get_hIST"/>
+    <functioncall functionName="png_get_iCCP"/>
+    <functioncall functionName="png_get_image_height"/>
+    <functioncall functionName="png_get_image_width"/>
+    <functioncall functionName="png_get_int_32"/>
+    <functioncall functionName="png_get_interlace_type"/>
+    <functioncall functionName="png_get_io_chunk_type"/>
+    <functioncall functionName="png_get_io_state"/>
+    <functioncall functionName="png_get_mDCV"/>
+    <functioncall functionName="png_get_mDCV_fixed"/>
+    <functioncall functionName="png_get_oFFs"/>
+    <functioncall functionName="png_get_pCAL"/>
+    <functioncall functionName="png_get_pHYs"/>
+    <functioncall functionName="png_get_pHYs_dpi"/>
+    <functioncall functionName="png_get_palette_max"/>
+    <functioncall functionName="png_get_pixel_aspect_ratio"/>
+    <functioncall functionName="png_get_pixel_aspect_ratio_fixed"/>
+    <functioncall functionName="png_get_pixels_per_inch"/>
+    <functioncall functionName="png_get_pixels_per_meter"/>
+    <functioncall functionName="png_get_rgb_to_gray_status"/>
+    <functioncall functionName="png_get_rowbytes"/>
+    <functioncall functionName="png_get_rows"/>
+    <functioncall functionName="png_get_sBIT"/>
+    <functioncall functionName="png_get_sCAL"/>
+    <functioncall functionName="png_get_sCAL_fixed"/>
+    <functioncall functionName="png_get_sCAL_s"/>
+    <functioncall functionName="png_get_sPLT"/>
+    <functioncall functionName="png_get_sRGB"/>
+    <functioncall functionName="png_get_tIME"/>
+    <functioncall functionName="png_get_tRNS"/>
+    <functioncall functionName="png_get_text"/>
+    <functioncall functionName="png_get_uint_16"/>
+    <functioncall functionName="png_get_uint_31"/>
+    <functioncall functionName="png_get_uint_32"/>
+    <functioncall functionName="png_get_unknown_chunks"/>
+    <functioncall functionName="png_get_user_height_max"/>
+    <functioncall functionName="png_get_user_width_max"/>
+    <functioncall functionName="png_get_valid"/>
+    <functioncall functionName="png_get_x_offset_inches"/>
+    <functioncall functionName="png_get_x_offset_inches_fixed"/>
+    <functioncall functionName="png_get_x_offset_microns"/>
+    <functioncall functionName="png_get_x_offset_pixels"/>
+    <functioncall functionName="png_get_x_pixels_per_inch"/>
+    <functioncall functionName="png_get_x_pixels_per_meter"/>
+    <functioncall functionName="png_get_y_offset_inches"/>
+    <functioncall functionName="png_get_y_offset_inches_fixed"/>
+    <functioncall functionName="png_get_y_offset_microns"/>
+    <functioncall functionName="png_get_y_offset_pixels"/>
+    <functioncall functionName="png_get_y_pixels_per_inch"/>
+    <functioncall functionName="png_get_y_pixels_per_meter"/>
+    <functioncall functionName="png_handle_as_unknown"/>
+    <functioncall functionName="png_image_begin_read_from_file"/>
+    <functioncall functionName="png_image_begin_read_from_memory"/>
+    <functioncall functionName="png_image_begin_read_from_stdio"/>
+    <functioncall functionName="png_image_error"/>
+    <functioncall functionName="png_image_finish_read"/>
+    <functioncall functionName="png_image_free"/>
+    <functioncall functionName="png_image_set_PLTE"/>
+    <functioncall functionName="png_image_write_init"/>
+    <functioncall functionName="png_image_write_main"/>
+    <functioncall functionName="png_image_write_memory"/>
+    <functioncall functionName="png_image_write_to_file"/>
+    <functioncall functionName="png_image_write_to_memory"/>
+    <functioncall functionName="png_image_write_to_stdio"/>
+    <functioncall functionName="png_info_init_3"/>
+    <functioncall functionName="png_init_io"/>
+    <functioncall functionName="png_longjmp"/>
+    <functioncall functionName="png_malloc"/>
+    <functioncall functionName="png_malloc_warn"/>
+    <functioncall functionName="png_permit_mng_features"/>
+    <functioncall functionName="png_process_data"/>
+    <functioncall functionName="png_process_data_pause"/>
+    <functioncall functionName="png_process_data_skip"/>
+    <functioncall functionName="png_progressive_combine_row"/>
+    <functioncall functionName="png_read_end"/>
+    <functioncall functionName="png_read_image"/>
+    <functioncall functionName="png_read_info"/>
+    <functioncall functionName="png_read_png"/>
+    <functioncall functionName="png_read_row"/>
+    <functioncall functionName="png_read_rows"/>
+    <functioncall functionName="png_read_update_info"/>
+    <functioncall functionName="png_reset_zstream"/>
+    <functioncall functionName="png_safe_error"/>
+    <functioncall functionName="png_safe_execute"/>
+    <functioncall functionName="png_safe_warning"/>
+    <functioncall functionName="png_save_int_32"/>
+    <functioncall functionName="png_save_uint_16"/>
+    <functioncall functionName="png_save_uint_32"/>
+    <functioncall functionName="png_set_IHDR"/>
+    <functioncall functionName="png_set_PLTE"/>
+    <functioncall functionName="png_set_add_alpha"/>
+    <functioncall functionName="png_set_alpha_mode"/>
+    <functioncall functionName="png_set_alpha_mode_fixed"/>
+    <functioncall functionName="png_set_bKGD"/>
+    <functioncall functionName="png_set_background"/>
+    <functioncall functionName="png_set_background_fixed"/>
+    <functioncall functionName="png_set_benign_errors"/>
+    <functioncall functionName="png_set_bgr"/>
+    <functioncall functionName="png_set_cHRM"/>
+    <functioncall functionName="png_set_cHRM_XYZ"/>
+    <functioncall functionName="png_set_cHRM_XYZ_fixed"/>
+    <functioncall functionName="png_set_cHRM_fixed"/>
+    <functioncall functionName="png_set_cICP"/>
+    <functioncall functionName="png_set_cLLI"/>
+    <functioncall functionName="png_set_cLLI_fixed"/>
+    <functioncall functionName="png_set_check_for_invalid_index"/>
+    <functioncall functionName="png_set_chunk_cache_max"/>
+    <functioncall functionName="png_set_chunk_malloc_max"/>
+    <functioncall functionName="png_set_compression_buffer_size"/>
+    <functioncall functionName="png_set_compression_level"/>
+    <functioncall functionName="png_set_compression_mem_level"/>
+    <functioncall functionName="png_set_compression_method"/>
+    <functioncall functionName="png_set_compression_strategy"/>
+    <functioncall functionName="png_set_compression_window_bits"/>
+    <functioncall functionName="png_set_crc_action"/>
+    <functioncall functionName="png_set_eXIf"/>
+    <functioncall functionName="png_set_eXIf_1"/>
+    <functioncall functionName="png_set_error_fn"/>
+    <functioncall functionName="png_set_expand"/>
+    <functioncall functionName="png_set_expand_16"/>
+    <functioncall functionName="png_set_expand_gray_1_2_4_to_8"/>
+    <functioncall functionName="png_set_filler"/>
+    <functioncall functionName="png_set_filter"/>
+    <functioncall functionName="png_set_filter_heuristics"/>
+    <functioncall functionName="png_set_filter_heuristics_fixed"/>
+    <functioncall functionName="png_set_flush"/>
+    <functioncall functionName="png_set_gAMA"/>
+    <functioncall functionName="png_set_gAMA_fixed"/>
+    <functioncall functionName="png_set_gamma"/>
+    <functioncall functionName="png_set_gamma_fixed"/>
+    <functioncall functionName="png_set_gray_to_rgb"/>
+    <functioncall functionName="png_set_hIST"/>
+    <functioncall functionName="png_set_iCCP"/>
+    <functioncall functionName="png_set_interlace_handling"/>
+    <functioncall functionName="png_set_invalid"/>
+    <functioncall functionName="png_set_invert_alpha"/>
+    <functioncall functionName="png_set_invert_mono"/>
+    <functioncall functionName="png_set_keep_unknown_chunks"/>
+    <functioncall functionName="png_set_mDCV"/>
+    <functioncall functionName="png_set_mDCV_fixed"/>
+    <functioncall functionName="png_set_mem_fn"/>
+    <functioncall functionName="png_set_oFFs"/>
+    <functioncall functionName="png_set_option"/>
+    <functioncall functionName="png_set_pCAL"/>
+    <functioncall functionName="png_set_pHYs"/>
+    <functioncall functionName="png_set_packing"/>
+    <functioncall functionName="png_set_packswap"/>
+    <functioncall functionName="png_set_palette_to_rgb"/>
+    <functioncall functionName="png_set_progressive_read_fn"/>
+    <functioncall functionName="png_set_quantize"/>
+    <functioncall functionName="png_set_read_fn"/>
+    <functioncall functionName="png_set_read_status_fn"/>
+    <functioncall functionName="png_set_read_user_chunk_fn"/>
+    <functioncall functionName="png_set_read_user_transform_fn"/>
+    <functioncall functionName="png_set_rgb_to_gray"/>
+    <functioncall functionName="png_set_rgb_to_gray_fixed"/>
+    <functioncall functionName="png_set_rows"/>
+    <functioncall functionName="png_set_sBIT"/>
+    <functioncall functionName="png_set_sCAL"/>
+    <functioncall functionName="png_set_sCAL_fixed"/>
+    <functioncall functionName="png_set_sCAL_s"/>
+    <functioncall functionName="png_set_sPLT"/>
+    <functioncall functionName="png_set_sRGB"/>
+    <functioncall functionName="png_set_sRGB_gAMA_and_cHRM"/>
+    <functioncall functionName="png_set_scale_16"/>
+    <functioncall functionName="png_set_shift"/>
+    <functioncall functionName="png_set_sig_bytes"/>
+    <functioncall functionName="png_set_strip_16"/>
+    <functioncall functionName="png_set_strip_alpha"/>
+    <functioncall functionName="png_set_swap"/>
+    <functioncall functionName="png_set_swap_alpha"/>
+    <functioncall functionName="png_set_tIME"/>
+    <functioncall functionName="png_set_tRNS"/>
+    <functioncall functionName="png_set_tRNS_to_alpha"/>
+    <functioncall functionName="png_set_text"/>
+    <functioncall functionName="png_set_text_compression_level"/>
+    <functioncall functionName="png_set_text_compression_mem_level"/>
+    <functioncall functionName="png_set_text_compression_method"/>
+    <functioncall functionName="png_set_text_compression_strategy"/>
+    <functioncall functionName="png_set_text_compression_window_bits"/>
+    <functioncall functionName="png_set_unknown_chunk_location"/>
+    <functioncall functionName="png_set_unknown_chunks"/>
+    <functioncall functionName="png_set_user_limits"/>
+    <functioncall functionName="png_set_user_transform_info"/>
+    <functioncall functionName="png_set_write_fn"/>
+    <functioncall functionName="png_set_write_status_fn"/>
+    <functioncall functionName="png_set_write_user_transform_fn"/>
+    <functioncall functionName="png_sig_cmp"/>
+    <functioncall functionName="png_start_read_image"/>
+    <functioncall functionName="png_unpremultiply"/>
+    <functioncall functionName="png_warning"/>
+    <functioncall functionName="png_write_IEND"/>
+    <functioncall functionName="png_write_IHDR"/>
+    <functioncall functionName="png_write_PLTE"/>
+    <functioncall functionName="png_write_bKGD"/>
+    <functioncall functionName="png_write_cHRM_fixed"/>
+    <functioncall functionName="png_write_cICP"/>
+    <functioncall functionName="png_write_cLLI_fixed"/>
+    <functioncall functionName="png_write_chunk"/>
+    <functioncall functionName="png_write_chunk_data"/>
+    <functioncall functionName="png_write_chunk_end"/>
+    <functioncall functionName="png_write_chunk_start"/>
+    <functioncall functionName="png_write_destroy"/>
+    <functioncall functionName="png_write_eXIf"/>
+    <functioncall functionName="png_write_end"/>
+    <functioncall functionName="png_write_find_filter"/>
+    <functioncall functionName="png_write_finish_row"/>
+    <functioncall functionName="png_write_flush"/>
+    <functioncall functionName="png_write_gAMA_fixed"/>
+    <functioncall functionName="png_write_hIST"/>
+    <functioncall functionName="png_write_iCCP"/>
+    <functioncall functionName="png_write_iTXt"/>
+    <functioncall functionName="png_write_image"/>
+    <functioncall functionName="png_write_image_16bit"/>
+    <functioncall functionName="png_write_image_8bit"/>
+    <functioncall functionName="png_write_info"/>
+    <functioncall functionName="png_write_info_before_PLTE"/>
+    <functioncall functionName="png_write_mDCV_fixed"/>
+    <functioncall functionName="png_write_oFFs"/>
+    <functioncall functionName="png_write_pCAL"/>
+    <functioncall functionName="png_write_pHYs"/>
+    <functioncall functionName="png_write_png"/>
+    <functioncall functionName="png_write_row"/>
+    <functioncall functionName="png_write_rows"/>
+    <functioncall functionName="png_write_sBIT"/>
+    <functioncall functionName="png_write_sCAL_s"/>
+    <functioncall functionName="png_write_sPLT"/>
+    <functioncall functionName="png_write_sRGB"/>
+    <functioncall functionName="png_write_sig"/>
+    <functioncall functionName="png_write_start_row"/>
+    <functioncall functionName="png_write_tEXt"/>
+    <functioncall functionName="png_write_tIME"/>
+    <functioncall functionName="png_write_tRNS"/>
+    <functioncall functionName="png_write_zTXt"/>
+    <functioncall functionName="remove"/>
+    <functioncall functionName="strerror"/>
+    <functioncall functionName="write_unknown_chunks"/>
+  </FileInfo>
+</analyzerinfo>

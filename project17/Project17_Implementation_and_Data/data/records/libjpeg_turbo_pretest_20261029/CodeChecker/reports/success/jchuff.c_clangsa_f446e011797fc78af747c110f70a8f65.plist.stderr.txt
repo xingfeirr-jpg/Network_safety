@@ -1,0 +1,4 @@
+/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c:265:14: warning: Array access (via field 'bits') results in a null pointer dereference [core.NullDereference]
+  265 |     i = (int)htbl->bits[l];
+      |              ^~~~~~~~~~~~~
+1 warning generated.

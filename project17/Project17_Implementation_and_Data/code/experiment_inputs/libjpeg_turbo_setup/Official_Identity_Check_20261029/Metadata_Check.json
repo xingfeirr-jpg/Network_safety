@@ -1,0 +1,52 @@
+{
+  "checkedUTC": "2026-10-29T00:59:07.261130+00:00",
+  "project": "P09 libjpeg-turbo",
+  "tag": "3.1.1",
+  "expectedCommit": "7723f50f3f66b9da74376e6d8badb6162464212c",
+  "tagRefObject": {
+    "sha": "7723f50f3f66b9da74376e6d8badb6162464212c",
+    "type": "commit",
+    "url": "https://api.github.com/repos/libjpeg-turbo/libjpeg-turbo/git/commits/7723f50f3f66b9da74376e6d8badb6162464212c"
+  },
+  "rootTree": "44cace4b53c0a88556e8ebd215adce65c6906939",
+  "releaseId": 224372990,
+  "releaseUrl": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/tag/3.1.1",
+  "releasePublished": "2025-06-10T15:46:45Z",
+  "officialSourceStatement": "- **libjpeg-turbo-3.1.1.tar.gz** is the official source tarball for this release.  The automatically generated \"Source code\" assets are not supported.",
+  "asset": {
+    "id": 262668412,
+    "name": "libjpeg-turbo-3.1.1.tar.gz",
+    "size": 2506010,
+    "digest": "sha256:aadc97ea91f6ef078b0ae3a62bba69e008d9a7db19b34e4ac973b19b71b4217c",
+    "browser_download_url": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.1/libjpeg-turbo-3.1.1.tar.gz",
+    "url": "https://api.github.com/repos/libjpeg-turbo/libjpeg-turbo/releases/assets/262668412",
+    "content_type": "application/x-gtar",
+    "state": "uploaded",
+    "created_at": "2025-06-10T15:46:52Z",
+    "updated_at": "2025-06-10T15:46:53Z"
+  },
+  "requests": {
+    "release": {
+      "url": "https://api.github.com/repos/libjpeg-turbo/libjpeg-turbo/releases/tags/3.1.1",
+      "effectiveUrl": "https://api.github.com/repos/libjpeg-turbo/libjpeg-turbo/releases/tags/3.1.1",
+      "status": 200,
+      "bytes": 29866,
+      "sha256": "a7aaadf9bc62dffd48619581d5e1fea53170e761991684fe9dcebb4a715e27d6"
+    },
+    "tag-ref": {
+      "url": "https://api.github.com/repos/libjpeg-turbo/libjpeg-turbo/git/ref/tags/3.1.1",
+      "effectiveUrl": "https://api.github.com/repos/libjpeg-turbo/libjpeg-turbo/git/ref/tags/3.1.1",
+      "status": 200,
+      "bytes": 357,
+      "sha256": "977010501d168657faaf6aff5b390f4d2750db4442d50781edeef5d2c869c1e9"
+    },
+    "commit": {
+      "url": "https://api.github.com/repos/libjpeg-turbo/libjpeg-turbo/git/commits/7723f50f3f66b9da74376e6d8badb6162464212c",
+      "effectiveUrl": "https://api.github.com/repos/libjpeg-turbo/libjpeg-turbo/git/commits/7723f50f3f66b9da74376e6d8badb6162464212c",
+      "status": 200,
+      "bytes": 2135,
+      "sha256": "d24ed4ef3551598f67eabdc10b09f098c399a27eb021a8fd593053f1c4baa951"
+    }
+  },
+  "experimentArchiveDownloaded": false
+}

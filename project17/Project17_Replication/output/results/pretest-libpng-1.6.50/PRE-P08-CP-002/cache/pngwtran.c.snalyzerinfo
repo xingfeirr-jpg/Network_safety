@@ -1,0 +1,5 @@
+png_do_pack
+png_do_shift
+png_do_write_swap_alpha
+png_do_write_invert_alpha
+png_do_write_transformations call:[png_do_bgr,png_do_invert,png_do_pack,png_do_packswap,png_do_shift,png_do_strip_channel,png_do_swap,png_do_write_invert_alpha,png_do_write_swap_alpha] noreturn:[png_do_bgr,png_do_invert,png_do_pack,png_do_packswap,png_do_shift,png_do_strip_channel,png_do_swap,png_do_write_invert_alpha,png_do_write_swap_alpha]

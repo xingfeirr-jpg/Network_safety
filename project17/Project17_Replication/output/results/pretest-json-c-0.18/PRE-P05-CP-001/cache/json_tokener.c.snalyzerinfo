@@ -1,0 +1,16 @@
+is_ws_char
+is_hex_char call:[return]
+json_tokener_error_desc global:[json_tokener_errors] call:[sizeof]
+json_tokener_get_error
+json_tokener_new_ex call:[calloc,free,json_tokener_reset,printbuf_new,sizeof]
+json_tokener_new call:[json_tokener_new_ex] noreturn:[json_tokener_new_ex]
+json_tokener_free call:[free,json_tokener_reset,printbuf_free] noreturn:[free,printbuf_free]
+json_tokener_reset_level call:[free,json_object_put]
+json_tokener_reset call:[json_tokener_reset_level] noreturn:[json_tokener_reset_level]
+json_tokener_parse call:[json_tokener_parse_verbose]
+json_tokener_parse_verbose call:[json_object_put,json_tokener_free,json_tokener_new,json_tokener_parse_ex] noreturn:[json_object_put]
+json_tokener_parse_ex global:[json_false_str,json_false_str_len,json_inf_str,json_inf_str_invert,json_inf_str_len,json_nan_str,json_nan_str_len,json_null_str,json_null_str_len,json_tokener_errors,json_true_str,json_true_str_len,utf8_replacement_char] call:[duplocale,free,freelocale,is_hex_char,is_ws_char,json_object_array_add,json_object_array_shrink,json_object_get,json_object_new_array,json_object_new_boolean,json_object_new_double,json_object_new_double_s,json_object_new_int64,json_object_new_object,json_object_new_string_len,json_object_new_uint64,json_object_object_add,json_parse_int64,json_parse_uint64,json_tokener_parse_double,json_tokener_reset_level,json_tokener_validate_utf8,mc_debug,nan,newlocale,printbuf_memappend,printbuf_reset,strchr,strdup,strlen,strncasecmp,strncmp,uselocale,while] noreturn:[json_tokener_reset_level,mc_debug,strchr,uselocale,while]
+json_tokener_validate_utf8
+json_tokener_set_flags
+json_tokener_get_parse_end call:[assert,return]
+json_tokener_parse_double call:[strtod]

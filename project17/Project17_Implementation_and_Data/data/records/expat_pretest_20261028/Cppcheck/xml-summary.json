@@ -1,0 +1,24 @@
+{
+  "purpose": "functional pretest",
+  "runId": "PRE-P07-CP-001",
+  "xmlValid": true,
+  "xmlDiagnosticElements": 28,
+  "informationElements": 26,
+  "nonInformationElements": 2,
+  "candidateCount": null,
+  "classification": "pending assistant review;non-information may include configuration failures",
+  "bySeverity": {
+    "information": 26,
+    "portability": 2
+  },
+  "byRule": {
+    "checkLevelNormal": 1,
+    "checkersReport": 1,
+    "invalidPrintfArgType_sint": 1,
+    "missingIncludeSystem": 24,
+    "shiftTooManyBitsSigned": 1
+  },
+  "coverageValidation": "pending_tool_output_review",
+  "sourceReview": "not performed",
+  "summaryTiming": "outside analysis measurement"
+}

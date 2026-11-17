@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="40" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="41" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="42" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="43" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="44" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;ctype.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;ctype.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="45" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;float.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;float.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="46" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;locale.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;locale.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="49" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h" line="86" column="0"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="3190" column="5"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="821" column="42" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1716" column="41" info="Calling function &apos;parse_string&apos;, 2nd argument &apos;input_buffer&apos; value is 0"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1726" column="13" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="822" column="38" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1716" column="41" info="Calling function &apos;parse_string&apos;, 2nd argument &apos;input_buffer&apos; value is 0"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1726" column="13" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="827" column="9" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1716" column="41" info="Calling function &apos;parse_string&apos;, 2nd argument &apos;input_buffer&apos; value is 0"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1726" column="13" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1497" column="9" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1511" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1501" column="5" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1511" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1503" column="9" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1511" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1509" column="5" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1511" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1520" column="9" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1518" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1657" column="9" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1663" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1661" column="5" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1663" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1668" column="5" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1670" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1678" column="9" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1676" column="9" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1683" column="5" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1708" column="13" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." verbose="Either the condition &apos;input_buffer!=NULL&apos; is redundant or there is possible null pointer dereference: input_buffer." cwe="476" file0="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1714" column="9" info="Null pointer dereference"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1726" column="13" info="Assuming that condition &apos;input_buffer!=NULL&apos; is not redundant"/>
+            <symbol>input_buffer</symbol>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: input_buffer" verbose="Null pointer dereference: input_buffer" cwe="476">
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="821" column="42" info="Dereferencing argument input_buffer that is null"/>
+            <location file="/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c" line="1716" column="26" info="Calling function parse_string, 2nd argument is null"/>
+        </error>
+        <error id="checkersReport" severity="information" msg="Active checkers: 79/592 (use --checkers-report=&lt;filename&gt; to see details)" verbose="Active checkers: 79/592 (use --checkers-report=&lt;filename&gt; to see details)"/>
+    </errors>
+</results>

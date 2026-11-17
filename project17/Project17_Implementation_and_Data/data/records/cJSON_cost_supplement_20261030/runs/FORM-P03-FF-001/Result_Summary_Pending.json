@@ -1,0 +1,40 @@
+{
+  "examined_files": [
+    "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c",
+    "/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h"
+  ],
+  "displayed_hits": 26,
+  "displayed_risk_level_counts": {
+    "1": 6,
+    "2": 19,
+    "4": 1
+  },
+  "summary_risk_level_counts_including_filtered": {
+    "0": 1,
+    "1": 6,
+    "2": 19,
+    "3": 0,
+    "4": 1,
+    "5": 0
+  },
+  "summary_cumulative_level_counts": {
+    "0": 27,
+    "1": 26,
+    "2": 20,
+    "3": 1,
+    "4": 1,
+    "5": 0
+  },
+  "filtered_level_zero_count": 1,
+  "minimum_risk_level": 1,
+  "tool_reported_lines_analyzed": 3497,
+  "tool_reported_sloc": 2674,
+  "tool_reported_approximate_seconds": "0.02",
+  "status": "machine_checks_passed_pending_assistant_acceptance",
+  "run_id": "FORM-P03-FF-001",
+  "analysis_exit_code": 0,
+  "stderr_bytes": 0,
+  "input_after_passed": true,
+  "historical_count_is_not_acceptance_gate": true,
+  "meaning": "命中不是漏洞；旧核查判断只在诊断实质匹配后复用；新外部成本待助手验收。"
+}

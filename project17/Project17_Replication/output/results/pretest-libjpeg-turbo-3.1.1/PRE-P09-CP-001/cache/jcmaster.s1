@@ -1,0 +1,11 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+using_std_huff_tables call:[memcmp,sizeof]
+initial_setup call:[jdiv_round_up] noreturn:[jdiv_round_up]
+validate_script
+select_scan_parameters
+per_scan_setup call:[jdiv_round_up]
+prepare_for_pass call:[per_scan_setup,select_scan_parameters] noreturn:[per_scan_setup]
+pass_startup
+finish_pass_master
+jinit_c_master_control call:[initial_setup,jpeg_default_colorspace,using_std_huff_tables,validate_script] noreturn:[validate_script]

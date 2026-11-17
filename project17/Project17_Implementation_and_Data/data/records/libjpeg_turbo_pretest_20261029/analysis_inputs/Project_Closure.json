@@ -1,0 +1,1136 @@
+{
+  "policy": "actual Ninja dependency union;58 independent C paths remain101 compile actions;included C and headers are dependencies only",
+  "counts": {
+    "generated_header": 3,
+    "compiled_c": 58,
+    "included_c": 6,
+    "project_header": 21,
+    "system_or_compiler": 84
+  },
+  "files": [
+    {
+      "linuxPath": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jconfig.h",
+      "localFile": "build/jconfig.h",
+      "kind": "generated_header",
+      "usedByActions": 100,
+      "bytes": 2068,
+      "sha256": "647133bff7661b0fd15170f2b5559c3a438e59a4ababc51916a9495eb700d6d7"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jconfigint.h",
+      "localFile": "build/jconfigint.h",
+      "kind": "generated_header",
+      "usedByActions": 101,
+      "bytes": 1821,
+      "sha256": "35fb57df8fd39839a43e555d69db7d967c999a82585a7cfa3a1456ca850799f3"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/build/libjpeg-turbo-3.1.1/jversion.h",
+      "localFile": "build/jversion.h",
+      "kind": "generated_header",
+      "usedByActions": 1,
+      "bytes": 1818,
+      "sha256": "7e1c15351d3a9bea7a0fef108e10f7d643bc5bb7f47c65195ef4730466c019ab"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jaricom.c",
+      "localFile": "inputs/source/src/jaricom.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 5132,
+      "sha256": "fa144de494da46aa685379a8a0f6f59acaef7a2bb282cbf738a0a8070e1d527e"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapimin.c",
+      "localFile": "inputs/source/src/jcapimin.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 10882,
+      "sha256": "083f4be634c2647026288db35eb824a0cd2f2ddf8d4931ac693fbad0698ec206"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcapistd.c",
+      "localFile": "inputs/source/src/jcapistd.c",
+      "kind": "compiled_c",
+      "usedByActions": 3,
+      "bytes": 7145,
+      "sha256": "23c957f45c9d89ceae8fd61b0709469bb45f080b0ab9b795955870a31116ae9c"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcarith.c",
+      "localFile": "inputs/source/src/jcarith.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 29668,
+      "sha256": "76b5a23029a6c44f063a35c29c4a5cadd13930e931e83c624d9e2d872e8ce750"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccoefct.c",
+      "localFile": "inputs/source/src/jccoefct.c",
+      "kind": "compiled_c",
+      "usedByActions": 2,
+      "bytes": 17478,
+      "sha256": "58c1d893657b521987475ed9b819fc4f1e0b96dbe7b012239e7c598caf72fe8d"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolext.c",
+      "localFile": "inputs/source/src/jccolext.c",
+      "kind": "included_c",
+      "usedByActions": 3,
+      "bytes": 4790,
+      "sha256": "7e4beaa374a165bf31637f58ce03694f39e30ea60f72c216be203a8008c06880"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jccolor.c",
+      "localFile": "inputs/source/src/jccolor.c",
+      "kind": "compiled_c",
+      "usedByActions": 3,
+      "bytes": 24431,
+      "sha256": "a0e0f2e965fb9c749d0d92297b7d079934f4f9dc4becbd1b9b262bcafa754f66"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdctmgr.c",
+      "localFile": "inputs/source/src/jcdctmgr.c",
+      "kind": "compiled_c",
+      "usedByActions": 2,
+      "bytes": 23029,
+      "sha256": "a4ac5eac6228148bb68e783332f1b9590231dcc34acb4439cc39ac57e39ee8bb"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcdiffct.c",
+      "localFile": "inputs/source/src/jcdiffct.c",
+      "kind": "compiled_c",
+      "usedByActions": 3,
+      "bytes": 15125,
+      "sha256": "b4f5817a8b4138ce6c7ceb323ea5dfc93bf756cee0ee5bb48dd154be04860ef4"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.c",
+      "localFile": "inputs/source/src/jchuff.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 37246,
+      "sha256": "a7f6afcdf594ade29b3d53f98802fce33a5f086d1600927755d83b72ce000ea3"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jchuff.h",
+      "localFile": "inputs/source/src/jchuff.h",
+      "kind": "project_header",
+      "usedByActions": 3,
+      "bytes": 1766,
+      "sha256": "2afdef6a3e99a1b42bd06454a5d3bac429b62e99410db377286d319afd51cac1"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcicc.c",
+      "localFile": "inputs/source/src/jcicc.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 4072,
+      "sha256": "021f073e040e474ea73e3b6785c0373cf289fd2faa87895832ae623d9c0e0b39"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcinit.c",
+      "localFile": "inputs/source/src/jcinit.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 5192,
+      "sha256": "ecc814abf5d51bf8d904ca7230acee1db50fd8671e50f4d7f26acbce0fc5366e"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclhuff.c",
+      "localFile": "inputs/source/src/jclhuff.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 18635,
+      "sha256": "3c6a86413b3bee3ba95234b6446ed147033a08633ce55a03682adadfd6fbc18b"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jclossls.c",
+      "localFile": "inputs/source/src/jclossls.c",
+      "kind": "compiled_c",
+      "usedByActions": 3,
+      "bytes": 9180,
+      "sha256": "4bb05c98f44f8be581078ae1c292f14a2d1ded10e0a00cf483e416d638a5c8d3"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmainct.c",
+      "localFile": "inputs/source/src/jcmainct.c",
+      "kind": "compiled_c",
+      "usedByActions": 3,
+      "bytes": 6064,
+      "sha256": "af40fc22b948ca05ac24fae27d7aa3f9fcb1388a47d5fcdff5a9d37b989ba8eb"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmarker.c",
+      "localFile": "inputs/source/src/jcmarker.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 17896,
+      "sha256": "713a3acfa3ae737b83a46ac0d5e176f2fb1bf83bf4d1868e8bd5c5f87b8f187e"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmaster.c",
+      "localFile": "inputs/source/src/jcmaster.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 28262,
+      "sha256": "290aa146bbec52182f39117355a3f29bd68d68da9ed2f5990cdff6a80d2400f4"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcmaster.h",
+      "localFile": "inputs/source/src/jcmaster.h",
+      "kind": "project_header",
+      "usedByActions": 2,
+      "bytes": 1376,
+      "sha256": "c755ce4562022a93a756814727f9bf3c61606673d79233f8c6ae1bbef957083a"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcomapi.c",
+      "localFile": "inputs/source/src/jcomapi.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 3275,
+      "sha256": "b70d463fb2a29b01995e6fa307baee756dd97f83f9ffe0a4dcb2e9220e9c51af"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcparam.c",
+      "localFile": "inputs/source/src/jcparam.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 19640,
+      "sha256": "653c5dff550c3947e32f6702c8f2f650d490c6390867c108efef2042ec547fdd"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcphuff.c",
+      "localFile": "inputs/source/src/jcphuff.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 32790,
+      "sha256": "3417671676a8cab601daa31bd83b0018603002bb14eb5f1fd428d63ecc0eb8b1"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcprepct.c",
+      "localFile": "inputs/source/src/jcprepct.c",
+      "kind": "compiled_c",
+      "usedByActions": 3,
+      "bytes": 13945,
+      "sha256": "8631576f649feca2fb09125f86db25c806244d1c2684370e6f451afe0cfcddaa"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jcsample.c",
+      "localFile": "inputs/source/src/jcsample.c",
+      "kind": "compiled_c",
+      "usedByActions": 3,
+      "bytes": 20344,
+      "sha256": "fc76d3dad468ad36b86f8e0b1fcee3578cdb15f95a93d4e2b4034d971ee3b1d4"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jctrans.c",
+      "localFile": "inputs/source/src/jctrans.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 15276,
+      "sha256": "a2abab67d3e603308235bfbc783ddc55bec9d80bc8091b232e2fc35501f3da1f"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapimin.c",
+      "localFile": "inputs/source/src/jdapimin.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 13680,
+      "sha256": "03c7c476f4cfc19fc0b7f53c6bef9f3122e682cbfd37410743fed4a1ecaecbc1"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdapistd.c",
+      "localFile": "inputs/source/src/jdapistd.c",
+      "kind": "compiled_c",
+      "usedByActions": 3,
+      "bytes": 28468,
+      "sha256": "80eb6917b11556e8d776a29876e7b06b29ac99a71367b4156b961a53e6a5f868"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdarith.c",
+      "localFile": "inputs/source/src/jdarith.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 25539,
+      "sha256": "a0291db89f2a057eefcf234ccf02ad1ea385c00759af13fddec914bab0cfe0d1"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatadst.c",
+      "localFile": "inputs/source/src/jdatadst.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 9222,
+      "sha256": "34932074076fc60d9d9c2f95385f96baab8e7f98bfeabb3c6ee552f791f06878"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdatasrc.c",
+      "localFile": "inputs/source/src/jdatasrc.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 10087,
+      "sha256": "25b8689e08ec083106e13a9c5a599b7d79dcf1f182d4565b1600eac014b874d1"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcoefct.c",
+      "localFile": "inputs/source/src/jdcoefct.c",
+      "kind": "compiled_c",
+      "usedByActions": 2,
+      "bytes": 34407,
+      "sha256": "edfd068202a3e8350c1deab080800f285a12fbf1a5845c52baeb199be37b4450"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcoefct.h",
+      "localFile": "inputs/source/src/jdcoefct.h",
+      "kind": "project_header",
+      "usedByActions": 4,
+      "bytes": 2873,
+      "sha256": "a62860fa7914706e571ea12541bd235f1b320150df7c855a210afdc33047146a"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcol565.c",
+      "localFile": "inputs/source/src/jdcol565.c",
+      "kind": "included_c",
+      "usedByActions": 3,
+      "bytes": 11909,
+      "sha256": "fc5c3f16be4dbb4f42b6b378570263b56140485dfca3febdf8cd9c4db32565cc"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcolext.c",
+      "localFile": "inputs/source/src/jdcolext.c",
+      "kind": "included_c",
+      "usedByActions": 3,
+      "bytes": 4514,
+      "sha256": "ec8b87b7a5c9574cb1da924b077c4df1622cfb2cbb356b3704407e5ddec7d62d"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdcolor.c",
+      "localFile": "inputs/source/src/jdcolor.c",
+      "kind": "compiled_c",
+      "usedByActions": 3,
+      "bytes": 30387,
+      "sha256": "b51cdf7f6dc93f8874fdfa82aaea7030cc70bf3408e7fcb60cf76017b07000cf"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdct.h",
+      "localFile": "inputs/source/src/jdct.h",
+      "kind": "project_header",
+      "usedByActions": 17,
+      "bytes": 10135,
+      "sha256": "dec739e58411e143e23041508f828d948d74bf670819aea770e52e6134024de5"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddctmgr.c",
+      "localFile": "inputs/source/src/jddctmgr.c",
+      "kind": "compiled_c",
+      "usedByActions": 2,
+      "bytes": 11724,
+      "sha256": "3913f2b5d05f951d4429dbc664d91b832a285ddf922c4381c87abac9f12bb751"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jddiffct.c",
+      "localFile": "inputs/source/src/jddiffct.c",
+      "kind": "compiled_c",
+      "usedByActions": 3,
+      "bytes": 13681,
+      "sha256": "3bf8fedd2b3b45607f23e93a65077b6fc4daa6ca56026853cbb7005225407205"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.c",
+      "localFile": "inputs/source/src/jdhuff.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 26826,
+      "sha256": "712ecd1b7e2b520ce0648cb742f1dad89f675ab8871dc054227cb28aed84b377"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdhuff.h",
+      "localFile": "inputs/source/src/jdhuff.h",
+      "kind": "project_header",
+      "usedByActions": 3,
+      "bytes": 9903,
+      "sha256": "59acd799211b415f821890e1947d7a7a4c9dfb7e15911cc8b413395d47881b43"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdicc.c",
+      "localFile": "inputs/source/src/jdicc.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 5409,
+      "sha256": "f605e2337afa011e020eb84f9c2f5a211f30d380621e97206d07216e4f78f661"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdinput.c",
+      "localFile": "inputs/source/src/jdinput.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 15218,
+      "sha256": "b3c155ed22ce4b49431d4900392f09354275daa59602450fafc6b9cd7adfcc13"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlhuff.c",
+      "localFile": "inputs/source/src/jdlhuff.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 10030,
+      "sha256": "ed965925b5961236b6fcd3a7870ea159386b93bbefbc97cd4fb465ad72446da8"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdlossls.c",
+      "localFile": "inputs/source/src/jdlossls.c",
+      "kind": "compiled_c",
+      "usedByActions": 3,
+      "bytes": 8807,
+      "sha256": "e5f8ed3b123f1066c0649f88102623151ae3531c7e166b50cdf42db5fc190491"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmainct.c",
+      "localFile": "inputs/source/src/jdmainct.c",
+      "kind": "compiled_c",
+      "usedByActions": 3,
+      "bytes": 20602,
+      "sha256": "835c84e35f6494a35d05779dddbbec192845e59cdceff89c568188ce759d88d3"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmainct.h",
+      "localFile": "inputs/source/src/jdmainct.h",
+      "kind": "project_header",
+      "usedByActions": 5,
+      "bytes": 2679,
+      "sha256": "a47728a202bac48caf2f38a8e99e23e3242ac580cf97606f3103c5025557e6a6"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmarker.c",
+      "localFile": "inputs/source/src/jdmarker.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 42610,
+      "sha256": "1dd922aff8f92ece4f8f2b11eea08cd49b2e232de797ee98db9e331f6d0e3296"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.c",
+      "localFile": "inputs/source/src/jdmaster.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 34517,
+      "sha256": "150a57d80a67b139c233ebaff1d7ded3677f07e3b6d6bd5859fc88e32f80c62d"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmaster.h",
+      "localFile": "inputs/source/src/jdmaster.h",
+      "kind": "project_header",
+      "usedByActions": 5,
+      "bytes": 788,
+      "sha256": "2ad7689d61273e464866be6b6b9ad227e70706379fd7b725b5c4535285fa29a4"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmerge.c",
+      "localFile": "inputs/source/src/jdmerge.c",
+      "kind": "compiled_c",
+      "usedByActions": 2,
+      "bytes": 19979,
+      "sha256": "7a08564c3867c660623fac6c45b5eb894ce79616db2f101187bf9e045048cd4c"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmerge.h",
+      "localFile": "inputs/source/src/jdmerge.h",
+      "kind": "project_header",
+      "usedByActions": 5,
+      "bytes": 1664,
+      "sha256": "4b5e10488c3d8ac982abda2e9e21563f75f25c6e0daa914cad32be9224b11d05"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmrg565.c",
+      "localFile": "inputs/source/src/jdmrg565.c",
+      "kind": "included_c",
+      "usedByActions": 2,
+      "bytes": 11138,
+      "sha256": "576f1d8d1b02208029033fd5cb48a267875fed59b8c6513d4738a5a846200ac0"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdmrgext.c",
+      "localFile": "inputs/source/src/jdmrgext.c",
+      "kind": "included_c",
+      "usedByActions": 2,
+      "bytes": 5895,
+      "sha256": "89310d9a437a86b4a29faf23cb0412c001662bc82dec6319db08286b868ed0ae"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdphuff.c",
+      "localFile": "inputs/source/src/jdphuff.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 22244,
+      "sha256": "fdaf536fed994d433b08a2f0bc39b85bc100d81f465e1164c78caabcfface7d3"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdpostct.c",
+      "localFile": "inputs/source/src/jdpostct.c",
+      "kind": "compiled_c",
+      "usedByActions": 3,
+      "bytes": 11992,
+      "sha256": "42feb659a302a4a1aab2af5fac37b000ec7640d34f4b306f656acd63ddca2315"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdsample.c",
+      "localFile": "inputs/source/src/jdsample.c",
+      "kind": "compiled_c",
+      "usedByActions": 3,
+      "bytes": 18964,
+      "sha256": "1b6a96862659baab0f0057aa20cd0e03f2b4419f686648e8b5dd1b146c63ebec"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdsample.h",
+      "localFile": "inputs/source/src/jdsample.h",
+      "kind": "project_header",
+      "usedByActions": 6,
+      "bytes": 1825,
+      "sha256": "d2449db79cfe8e08e5d6e530fd36e29938995212dc9ab1175cc875cda27e0514"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jdtrans.c",
+      "localFile": "inputs/source/src/jdtrans.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 5624,
+      "sha256": "b624447657d4f01737efc0b846285a19974f478a21418af1f6c1143c24bcf16c"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jerror.c",
+      "localFile": "inputs/source/src/jerror.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 7566,
+      "sha256": "1c3661997d30898f587a2765e934b23e706fabb7e4c316490348843f2003d0a0"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jerror.h",
+      "localFile": "inputs/source/src/jerror.h",
+      "kind": "project_header",
+      "usedByActions": 100,
+      "bytes": 16159,
+      "sha256": "35354d148ea6da234bacd5435155d0ec1de9c05833602232a67f1cf184c04925"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctflt.c",
+      "localFile": "inputs/source/src/jfdctflt.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 5588,
+      "sha256": "30098eb7e20b4ae42bc7ddc16552c6de59cb5cb045059d5a138c4b1b2b8f4739"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctfst.c",
+      "localFile": "inputs/source/src/jfdctfst.c",
+      "kind": "compiled_c",
+      "usedByActions": 2,
+      "bytes": 7793,
+      "sha256": "eacf0404692455247cd836ff4e7de0c715edde4cd23c4434eb0028824e677c10"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jfdctint.c",
+      "localFile": "inputs/source/src/jfdctint.c",
+      "kind": "compiled_c",
+      "usedByActions": 2,
+      "bytes": 11515,
+      "sha256": "f438c4ef5b5ed70d67e324174059118395d822edc4b5a5c0c783857244b74fb0"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctflt.c",
+      "localFile": "inputs/source/src/jidctflt.c",
+      "kind": "compiled_c",
+      "usedByActions": 2,
+      "bytes": 8754,
+      "sha256": "b6fc1d4f1333378cc67e77d436be910e5a114fc7711d60c35d484b760e1ebca0"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctfst.c",
+      "localFile": "inputs/source/src/jidctfst.c",
+      "kind": "compiled_c",
+      "usedByActions": 2,
+      "bytes": 13565,
+      "sha256": "b524cdd2cbb30eef5e9878b290eb837033118338dd3583fc8302ed604e2c36d9"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctint.c",
+      "localFile": "inputs/source/src/jidctint.c",
+      "kind": "compiled_c",
+      "usedByActions": 2,
+      "bytes": 106340,
+      "sha256": "099df3deff863d0cd36ac6cdface421ae22a0a34ac37ad9d0c2043a17ddbc207"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jidctred.c",
+      "localFile": "inputs/source/src/jidctred.c",
+      "kind": "compiled_c",
+      "usedByActions": 2,
+      "bytes": 14555,
+      "sha256": "78e7ef58455dc634c9bfbd01fad0081611254fd6338f3336698b8f6173607942"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jinclude.h",
+      "localFile": "inputs/source/src/jinclude.h",
+      "kind": "project_header",
+      "usedByActions": 100,
+      "bytes": 3188,
+      "sha256": "5b9f31bb7fb5bee3b7c8717ec801f2afe6e813272b502bc3bc96f6324fcfa3e2"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jlossls.h",
+      "localFile": "inputs/source/src/jlossls.h",
+      "kind": "project_header",
+      "usedByActions": 14,
+      "bytes": 3235,
+      "sha256": "248616df72adcab8aaf8c1dd2cdf6d798bab96a91aea03945d2dea94837eaf18"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemmgr.c",
+      "localFile": "inputs/source/src/jmemmgr.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 50051,
+      "sha256": "b98f08ee621c2882c0e2b584d38c5e614332c926285e5ce25958089a96c4f1b1"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemnobs.c",
+      "localFile": "inputs/source/src/jmemnobs.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 2680,
+      "sha256": "328ff841f437fa7c2de846c4e295e9145cc628b9041aed718a06eb087c55786c"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmemsys.h",
+      "localFile": "inputs/source/src/jmemsys.h",
+      "kind": "project_header",
+      "usedByActions": 5,
+      "bytes": 6692,
+      "sha256": "441fd978684f5bb8f4b1a512221def17948aab73c507b98b8602cc0bda360d96"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jmorecfg.h",
+      "localFile": "inputs/source/src/jmorecfg.h",
+      "kind": "project_header",
+      "usedByActions": 100,
+      "bytes": 14386,
+      "sha256": "80a97f45ecb28d83310247eecec2a3865b5fd39ba0ecc490b48a36fac6318e26"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeg_nbits.c",
+      "localFile": "inputs/source/src/jpeg_nbits.c",
+      "kind": "compiled_c",
+      "usedByActions": 1,
+      "bytes": 271113,
+      "sha256": "b79ca4826d23d3a9124fc7b28cce2eacc86a460fa351e3a05eb8378e9bb0f00d"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeg_nbits.h",
+      "localFile": "inputs/source/src/jpeg_nbits.h",
+      "kind": "project_header",
+      "usedByActions": 3,
+      "bytes": 1701,
+      "sha256": "ffe3da5b765a7f94c49f2d3be1a15091d04ab428997a240cbfb1ba7027179978"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegapicomp.h",
+      "localFile": "inputs/source/src/jpegapicomp.h",
+      "kind": "project_header",
+      "usedByActions": 20,
+      "bytes": 1133,
+      "sha256": "7ee0ac1b9307c03a6a715d46f89f611abd28c5795b9b9a410255df3a8d1db92d"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpegint.h",
+      "localFile": "inputs/source/src/jpegint.h",
+      "kind": "project_header",
+      "usedByActions": 97,
+      "bytes": 27226,
+      "sha256": "07a75eceaadf7fc986b3451a723c54e5193f3b4f6686b2fec2e93feeb1c9d509"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jpeglib.h",
+      "localFile": "inputs/source/src/jpeglib.h",
+      "kind": "project_header",
+      "usedByActions": 100,
+      "bytes": 55794,
+      "sha256": "dc3e8220f34b7e9f9e48620f5cb8dc070834feb3214bb12bbad78478ebb29e60"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant1.c",
+      "localFile": "inputs/source/src/jquant1.c",
+      "kind": "compiled_c",
+      "usedByActions": 2,
+      "bytes": 32887,
+      "sha256": "c132b33829f8fa3806798e7783e64ee8e986a4ee04db3e8a100159675aae5eaf"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jquant2.c",
+      "localFile": "inputs/source/src/jquant2.c",
+      "kind": "compiled_c",
+      "usedByActions": 2,
+      "bytes": 49272,
+      "sha256": "77ffa8a28129ded74b5de8d21925a3f7fef6c73e6f4fa6b87a693f5d40f7c927"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jsamplecomp.h",
+      "localFile": "inputs/source/src/jsamplecomp.h",
+      "kind": "project_header",
+      "usedByActions": 74,
+      "bytes": 12702,
+      "sha256": "cbe390ba987549c89c7ac17ea4f8cea956d513f0b1e51efe3da83adfaaa85a03"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jsimd.h",
+      "localFile": "inputs/source/src/jsimd.h",
+      "kind": "project_header",
+      "usedByActions": 14,
+      "bytes": 5909,
+      "sha256": "2faf44670d8d0862f547d83038dee513cc2d0b35e08107ecef6183e643e16165"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jsimddct.h",
+      "localFile": "inputs/source/src/jsimddct.h",
+      "kind": "project_header",
+      "usedByActions": 4,
+      "bytes": 3085,
+      "sha256": "ed66000db7f841d37919da89ff8870262e719fecc3007d72e1cfcb91e86c8393"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jstdhuff.c",
+      "localFile": "inputs/source/src/jstdhuff.c",
+      "kind": "included_c",
+      "usedByActions": 2,
+      "bytes": 5355,
+      "sha256": "79e2cbf605326ce6349a60f58695b97d574510662f8b089474f30c07bf06be28"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/sources/libjpeg-turbo-3.1.1/src/jutils.c",
+      "localFile": "inputs/source/src/jutils.c",
+      "kind": "compiled_c",
+      "usedByActions": 3,
+      "bytes": 4129,
+      "sha256": "70c0ba2953ca8f4abd6858d8ed71aa3266f37d529313b8e0cdfa0d1a43e31b2e"
+    },
+    {
+      "linuxPath": "/usr/include/alloca.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/asm-generic/errno-base.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/asm-generic/errno.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/endian.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/errno.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/features-time64.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/features.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/limits.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 4
+    },
+    {
+      "linuxPath": "/usr/include/linux/errno.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/linux/limits.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 4
+    },
+    {
+      "linuxPath": "/usr/include/stdc-predef.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/stdint.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 1
+    },
+    {
+      "linuxPath": "/usr/include/stdio.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/stdlib.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/string.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/strings.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/asm/errno.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/byteswap.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/endian.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/endianness.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/errno.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/floatn-common.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/floatn.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/local_lim.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 4
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/long-double.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 4
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/posix2_lim.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 4
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 4
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/pthread_stack_min.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 4
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/select.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/stdint-least.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 1
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 1
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/time64.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/timesize.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/FILE.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/__FILE.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/clock_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/time_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/types/timer_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/typesizes.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/uintn-identity.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/waitflags.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/waitstatus.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/wchar.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 1
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/bits/wordsize.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/gnu/stubs.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/sys/cdefs.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/sys/select.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/include/x86_64-linux-gnu/sys/types.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/lib/llvm-18/lib/clang/18/include/__stdarg___gnuc_va_list.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/lib/llvm-18/lib/clang/18/include/__stddef_max_align_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/lib/llvm-18/lib/clang/18/include/__stddef_offsetof.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/lib/llvm-18/lib/clang/18/include/__stddef_ptrdiff_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/lib/llvm-18/lib/clang/18/include/__stddef_size_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/lib/llvm-18/lib/clang/18/include/__stddef_wchar_t.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/lib/llvm-18/lib/clang/18/include/limits.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 4
+    },
+    {
+      "linuxPath": "/usr/lib/llvm-18/lib/clang/18/include/stdarg.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/lib/llvm-18/lib/clang/18/include/stddef.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 100
+    },
+    {
+      "linuxPath": "/usr/lib/llvm-18/lib/clang/18/include/stdint.h",
+      "kind": "system_or_compiler",
+      "usedByActions": 1
+    }
+  ]
+}

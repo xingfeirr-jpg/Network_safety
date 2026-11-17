@@ -1,0 +1,441 @@
+{
+  "profileId": "P08-FF-PRE-v1",
+  "plannedRunId": "PRE-P08-FF-001",
+  "preparedDate": "2026-10-29",
+  "status": "prepared;read-only QA passed;not executed",
+  "purpose": "functional pretest;not formal comparison",
+  "project": "P08 libpng",
+  "projectVersion": "1.6.50",
+  "commit": "2b978915d82377df13fcbb1fb56660195ded868a",
+  "tool": "Flawfinder",
+  "version": "2.0.20",
+  "binary": "/home/yhong/comp5355/.venv/bin/flawfinder",
+  "arguments": [
+    "--minlevel=1",
+    "--neverignore",
+    "--columns",
+    "--context"
+  ],
+  "inputCount": 22,
+  "sourceCFiles": 15,
+  "independentCTranslationUnits": 15,
+  "includedCImplementationFiles": 0,
+  "sourceHeaders": 6,
+  "generatedHeaders": 1,
+  "inputs": [
+    {
+      "file": "/home/yhong/comp5355/build/libpng-1.6.50/pnglibconf.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/build/pnglibconf.h",
+      "bytes": 8090,
+      "sha256": "d510d301910871746a7059fbc9be0035e0f91502ea248c23c9d95fafc4afc646",
+      "category": "generated_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/png.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/png.c",
+      "bytes": 135132,
+      "sha256": "c439e93c040d6c0913f6e6e3847c44d985a3a7cefc60158deece24ab55dfd92b",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/png.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/png.h",
+      "bytes": 148212,
+      "sha256": "3c3b27f3e9b3030f7d234cb491b524fcc765345ced5a5dbce9e882cc35a1167f",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngconf.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngconf.h",
+      "bytes": 22673,
+      "sha256": "b92d648561f31b884be944720d5eb56eae1949b39e6b70ca70d8ed4a0f4b7349",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngdebug.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngdebug.h",
+      "bytes": 5414,
+      "sha256": "dcc808a35628d28e5aca1297e8ebe7c376f12448f65b72214b7271a2e1fc865e",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngerror.c",
+      "bytes": 29585,
+      "sha256": "9918080bc68b31801f9a8349146c9494b355e3b16a26cc4bcb10fa1e993b4167",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngget.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngget.c",
+      "bytes": 37560,
+      "sha256": "7fe9aa76f804c564570c36975b7b92c063254820de582447820d2c0d5940f242",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pnginfo.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pnginfo.h",
+      "bytes": 10964,
+      "sha256": "95fd19c965b86c6f279e426b9ee42c62e83af41a372b51fe8feb52a3427cb44d",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngmem.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngmem.c",
+      "bytes": 8547,
+      "sha256": "9a28d9e571887c72cdbae73d1865c6fba497b6e02adf3a5515edf93fd972df60",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngpread.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngpread.c",
+      "bytes": 28098,
+      "sha256": "230e4e01a9748922a33a936d1c4a2f599d61fc6425b49270197949fd3f38443e",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngpriv.h",
+      "bytes": 92899,
+      "sha256": "23fcf7fc89fc28073aed686207626753933f0dbcff360024f0378b112dca30b4",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngread.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngread.c",
+      "bytes": 139434,
+      "sha256": "9106d0df385e051d46b007e402eabec18b5fce44fdfefed6e964a09008910e21",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngrio.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngrio.c",
+      "bytes": 3898,
+      "sha256": "3c710643f274fd2b4aa2bc154c9dc53a512edae773dda1434f205fb005f2e93e",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngrtran.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngrtran.c",
+      "bytes": 169872,
+      "sha256": "59753c1591d9eb8798b5e4270353c0d7da122ef6f1af2bfd83ff7b335fb2fea3",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngrutil.c",
+      "bytes": 153123,
+      "sha256": "2042d92c70b587a4ad2cf98f0e74279b12ceb11a88fd1f6622306928c9af68fd",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngset.c",
+      "bytes": 57534,
+      "sha256": "9bd59a79669db37b2ecc481439481eb5f49bf77bee0de4b1aba649915609b3d0",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngstruct.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngstruct.h",
+      "bytes": 19251,
+      "sha256": "498aa14b9af46bce8677ceb39d0ecd28f54bbad6a5ba29930984b38f97012571",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngtrans.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngtrans.c",
+      "bytes": 25332,
+      "sha256": "6398722afbad3f54beed1e6fefa4f4a96fa0b6e45dd24120c688f67b740a7eb2",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwio.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwio.c",
+      "bytes": 5588,
+      "sha256": "a25def3351807ed3f2e12a02a7801d4208f0033516185f4ad524d804d2f00ce3",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwrite.c",
+      "bytes": 78685,
+      "sha256": "e2079b6a8010ef8ecff771c81b8aa0e654a710b4232078a2ab277069441deb4b",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwtran.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwtran.c",
+      "bytes": 15336,
+      "sha256": "6355098f20b9058ab607cebd01f3130c61ac858dceb339c3a7d83407c1067b94",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwutil.c",
+      "bytes": 81464,
+      "sha256": "3167c7e997f8a7db6c6ab4b816298aea0ad3189bea960ece984881cffba92a5f",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    }
+  ],
+  "identityCount": 23,
+  "identityFiles": [
+    {
+      "file": "/home/yhong/comp5355/build/libpng-1.6.50/compile_commands.json",
+      "localFile": "review_evidence/libpng_pretest_20261028/build/compile_commands.json",
+      "bytes": 7213,
+      "sha256": "8b9db250e24514cebc54052a8b7c400635dc33a045e0e937be0bb57bd71d0b74",
+      "category": "compilation_database",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/build/libpng-1.6.50/pnglibconf.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/build/pnglibconf.h",
+      "bytes": 8090,
+      "sha256": "d510d301910871746a7059fbc9be0035e0f91502ea248c23c9d95fafc4afc646",
+      "category": "generated_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/png.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/png.c",
+      "bytes": 135132,
+      "sha256": "c439e93c040d6c0913f6e6e3847c44d985a3a7cefc60158deece24ab55dfd92b",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/png.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/png.h",
+      "bytes": 148212,
+      "sha256": "3c3b27f3e9b3030f7d234cb491b524fcc765345ced5a5dbce9e882cc35a1167f",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngconf.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngconf.h",
+      "bytes": 22673,
+      "sha256": "b92d648561f31b884be944720d5eb56eae1949b39e6b70ca70d8ed4a0f4b7349",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngdebug.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngdebug.h",
+      "bytes": 5414,
+      "sha256": "dcc808a35628d28e5aca1297e8ebe7c376f12448f65b72214b7271a2e1fc865e",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngerror.c",
+      "bytes": 29585,
+      "sha256": "9918080bc68b31801f9a8349146c9494b355e3b16a26cc4bcb10fa1e993b4167",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngget.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngget.c",
+      "bytes": 37560,
+      "sha256": "7fe9aa76f804c564570c36975b7b92c063254820de582447820d2c0d5940f242",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pnginfo.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pnginfo.h",
+      "bytes": 10964,
+      "sha256": "95fd19c965b86c6f279e426b9ee42c62e83af41a372b51fe8feb52a3427cb44d",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngmem.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngmem.c",
+      "bytes": 8547,
+      "sha256": "9a28d9e571887c72cdbae73d1865c6fba497b6e02adf3a5515edf93fd972df60",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngpread.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngpread.c",
+      "bytes": 28098,
+      "sha256": "230e4e01a9748922a33a936d1c4a2f599d61fc6425b49270197949fd3f38443e",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngpriv.h",
+      "bytes": 92899,
+      "sha256": "23fcf7fc89fc28073aed686207626753933f0dbcff360024f0378b112dca30b4",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngread.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngread.c",
+      "bytes": 139434,
+      "sha256": "9106d0df385e051d46b007e402eabec18b5fce44fdfefed6e964a09008910e21",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngrio.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngrio.c",
+      "bytes": 3898,
+      "sha256": "3c710643f274fd2b4aa2bc154c9dc53a512edae773dda1434f205fb005f2e93e",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngrtran.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngrtran.c",
+      "bytes": 169872,
+      "sha256": "59753c1591d9eb8798b5e4270353c0d7da122ef6f1af2bfd83ff7b335fb2fea3",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngrutil.c",
+      "bytes": 153123,
+      "sha256": "2042d92c70b587a4ad2cf98f0e74279b12ceb11a88fd1f6622306928c9af68fd",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngset.c",
+      "bytes": 57534,
+      "sha256": "9bd59a79669db37b2ecc481439481eb5f49bf77bee0de4b1aba649915609b3d0",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngstruct.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngstruct.h",
+      "bytes": 19251,
+      "sha256": "498aa14b9af46bce8677ceb39d0ecd28f54bbad6a5ba29930984b38f97012571",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngtrans.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngtrans.c",
+      "bytes": 25332,
+      "sha256": "6398722afbad3f54beed1e6fefa4f4a96fa0b6e45dd24120c688f67b740a7eb2",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwio.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwio.c",
+      "bytes": 5588,
+      "sha256": "a25def3351807ed3f2e12a02a7801d4208f0033516185f4ad524d804d2f00ce3",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwrite.c",
+      "bytes": 78685,
+      "sha256": "e2079b6a8010ef8ecff771c81b8aa0e654a710b4232078a2ab277069441deb4b",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwtran.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwtran.c",
+      "bytes": 15336,
+      "sha256": "6355098f20b9058ab607cebd01f3130c61ac858dceb339c3a7d83407c1067b94",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwutil.c",
+      "bytes": 81464,
+      "sha256": "3167c7e997f8a7db6c6ab4b816298aea0ad3189bea960ece984881cffba92a5f",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    }
+  ],
+  "identityManifest": "flawfinder-inputs.sha256",
+  "identityManifestSHA256": "823d42641f509de9ed67528f2cf101c0b74a7c6596d657d59198bc323b7dbf94",
+  "identityScopeMeaning": "23 identity entries=22 P08 lexical inputs+original15-action compilation database retained only for context provenance. Database itself is not a lexical input.",
+  "semanticIdentityDifference": "CC uses25 identities=22 P08 files+2 externalzlib headers+originalDB. Cppcheck002 additionally retains its derived importer database(26). FF does not lexically scan the2 externalP01zlib headers and keeps no CP derived database.",
+  "runtimeInputList": "input-files.txt written from the same in-memory22 argument array after analysis;database excluded by exact path;no separate mutable preparation text list",
+  "expectedRuntimeInputListSHA256": "29fc98b55b836d0908286de016cd581a35762da4b51d30b0f916a57d39179310",
+  "headerSelection": "Actual accepted Ninja P08 closure22 files,each once:15C+6sourceheaders+1generatedpnglibconf.h. Officialscripts/pnglibconf.h.prebuilt retained as provenance and is byte-identical to generatedheader;not scanned a second time.",
+  "semanticReferenceActions": 15,
+  "textScopeCaveat": "Rawtext scan without preprocessing;inactive branches may match.22 text files do not imply equal semantic/path coverage to15 compiler actions. No -D/-I/--std arguments passed to Flawfinder.",
+  "macroContext": "ActualClang18.1.3 GNU C17,PNG_INTEL_SSE_OPT=0,hardwareoptimizations off;this is provenance only,not preprocessing performed by Flawfinder.",
+  "excludedTextInputs": [
+    "originalcompile_commands.json",
+    "scripts/pnglibconf.h.prebuilt duplicate configuration source",
+    "externalP01 zlib.h andzconf.h",
+    "P01zlibCimplementation",
+    "system/Clangheaders",
+    "tests/tools/contrib/hardware-optimization subdirectories"
+  ],
+  "displayedHitPolicy": "minlevel1;level0 and cumulative0+ retained separately;hits are candidates,not confirmed vulnerabilities",
+  "ignoredCommentPolicy": "--neverignore retains hits otherwise suppressed by Flawfinder ignore directives;built-in lexical/risk heuristics still apply",
+  "measurement": "measurement-v1",
+  "locale": "C",
+  "jobs": "tool serial default;one tool combination at a time",
+  "applicationCache": "No Flawfinder result cache requested;recorder generic cache directory unused",
+  "osPageCache": "natural,not cleared",
+  "wholeCommandTimeout": "not imposed",
+  "runDirectory": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-FF-001",
+  "buildEnvironmentSession": "session-20261028T122337-p08-22994",
+  "executionEnvironmentSession": "actual run-start environment recorded separately;not inferred from build snapshot",
+  "buildIdentity": "../libpng_pretest_20261028/Build_Identity_Check.json",
+  "projectDependencyManifest": "../libpng_pretest_20261028/Project_Dependency_Manifest.json",
+  "database": "/home/yhong/comp5355/build/libpng-1.6.50/compile_commands.json",
+  "databaseSHA256": "8b9db250e24514cebc54052a8b7c400635dc33a045e0e937be0bb57bd71d0b74",
+  "parameterEvidence": "Flawfinder_Preparation_Review_20261029.md",
+  "toolOrder": "Cppcheck -> CodeChecker/clangsa -> Flawfinder",
+  "workflowGate": "Cppcheck002 accepted;CodeChecker001 user output received and root is accepting originals. Flawfinder script preparation may complete now;user entry follows root acceptance of CC001.",
+  "outputs": {
+    "stdout": "stdout.txt",
+    "stderr": "stderr.txt",
+    "time": "time.txt",
+    "exitCode": "exit-code.txt",
+    "inputFiles": "input-files.txt",
+    "inputIdentity": "input-files.sha256",
+    "preparedProfile": "prepared-profile.json"
+  },
+  "actualCoverage": "pending user execution and output review",
+  "actualDisplayedHits": null,
+  "actualLevel0Hits": null,
+  "sourceReview": "not started for Flawfinder output",
+  "formalThirtyCells": "all not run",
+  "preparationQA": "Flawfinder_Preparation_QA_20261029/Verification.json"
+}

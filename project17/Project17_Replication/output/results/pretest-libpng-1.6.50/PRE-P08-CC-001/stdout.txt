@@ -1,0 +1,28 @@
+[INFO 2026-11-08 03:02:38] - Enabled checker list can be found in /home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-CC-001/reports/metadata.json
+[INFO 2026-11-08 03:02:38] - Starting static analysis ...
+[INFO 2026-11-08 03:02:59] - [1/15] clangsa analyzed png.c successfully.
+[INFO 2026-11-08 03:03:01] - [2/15] clangsa analyzed pngerror.c successfully.
+[INFO 2026-11-08 03:03:01] - [3/15] clangsa analyzed pngget.c successfully.
+[INFO 2026-11-08 03:03:01] - [4/15] clangsa analyzed pngmem.c successfully.
+[INFO 2026-11-08 03:03:08] - [5/15] clangsa analyzed pngpread.c successfully.
+[INFO 2026-11-08 03:03:21] - [6/15] clangsa analyzed pngread.c successfully.
+[INFO 2026-11-08 03:03:22] - [7/15] clangsa analyzed pngrio.c successfully.
+[INFO 2026-11-08 03:03:39] - [8/15] clangsa analyzed pngrtran.c successfully.
+[INFO 2026-11-08 03:04:06] - [9/15] clangsa analyzed pngrutil.c successfully.
+[INFO 2026-11-08 03:04:14] - [10/15] clangsa analyzed pngset.c successfully.
+[INFO 2026-11-08 03:04:15] - [11/15] clangsa analyzed pngtrans.c successfully.
+[INFO 2026-11-08 03:04:15] - [12/15] clangsa analyzed pngwio.c successfully.
+[INFO 2026-11-08 03:04:27] - [13/15] clangsa analyzed pngwrite.c successfully.
+[INFO 2026-11-08 03:04:31] - [14/15] clangsa analyzed pngwtran.c successfully.
+[INFO 2026-11-08 03:04:40] - [15/15] clangsa analyzed pngwutil.c successfully.
+[INFO 2026-11-08 03:04:40] - ----==== Summary ====----
+[INFO 2026-11-08 03:04:40] - Successfully analyzed
+[INFO 2026-11-08 03:04:40] -   clangsa: 15
+[INFO 2026-11-08 03:04:40] - Total analyzed compilation commands: 15
+[INFO 2026-11-08 03:04:40] - ----=================----
+[INFO 2026-11-08 03:04:40] - Analysis finished.
+[INFO 2026-11-08 03:04:40] - To view results in the terminal use the "CodeChecker parse" command.
+[INFO 2026-11-08 03:04:40] - To store results use the "CodeChecker store" command.
+[INFO 2026-11-08 03:04:40] - See --help and the user guide for further options about parsing and storing the reports.
+[INFO 2026-11-08 03:04:40] - ----=================----
+[INFO 2026-11-08 03:04:40] - Analysis length: 121.62 sec.

@@ -1,0 +1,350 @@
+{
+  "profileId": "P08-CP-PRE-v2",
+  "plannedRunId": "PRE-P08-CP-002",
+  "preparedDate": "2026-10-29",
+  "status": "retry prepared;not executed",
+  "purpose": "functional pretest",
+  "tool": "Cppcheck",
+  "version": "2.13.0",
+  "ubuntuPackage": "2.13.0-2ubuntu3",
+  "parser": "builtin",
+  "database": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libpng_setup/Cppcheck_Retry002/compile_commands.json",
+  "databaseSHA256": "5a781c85054b8fcb636b881fa8214f286b1f10c7f54c62cdf3f45f83b07ddbd0",
+  "databaseActions": 15,
+  "actionSelection": "All15 original png_static C actions retained;derived DB changes only fixed zlib -isystem classification to -I for builtin importer",
+  "buildLanguageContext": "Clang18.1.3 default GNU C17:all15 actual queries __STDC_VERSION__=201710L,__STDC__=1,no __STRICT_ANSI__,no explicit -std",
+  "analysisCStandard": "C11,explicit --std=c11;highest C standard recognized by installed2.13.0",
+  "standardDifference": "Actual Clang build is GNU C17;Cppcheck2.13.0 recognizes C89/C99/C11 and explicitly selects its C11 model for this run. This differs in standard level as well as GNU extensions, predefined macros, attributes and library semantics;no exact language-semantic equivalence is claimed.",
+  "macrosFromDatabase": [
+    "PNG_INTEL_SSE_OPT=0"
+  ],
+  "includeDirectoriesFromDatabase": [
+    "/home/yhong/comp5355/sources/libpng-1.6.50",
+    "/home/yhong/comp5355/build/libpng-1.6.50",
+    "/home/yhong/comp5355/deps/zlib-v1.3.2/include"
+  ],
+  "libraryModels": "default std.cfg automatically loaded;no extra POSIX/libpng/zlib model explicitly requested",
+  "nativeWholeProgram": {
+    "buildDirectory": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-CP-002/cache",
+    "jobs": 1,
+    "maxCtuDepth": 2,
+    "depthSetting": "version 2.13.0 default, not overridden",
+    "note": "Native Cppcheck mechanisms for eligible checks; not Clang CTU and not proof of exhaustive cross-TU coverage"
+  },
+  "force": false,
+  "inconclusive": false,
+  "customSuppressions": false,
+  "inlineSuppressionsEnabled": false,
+  "enabledAdditionalCategories": [
+    "warning",
+    "performance",
+    "portability",
+    "information"
+  ],
+  "defaultErrorCategoryRetained": true,
+  "checkLevel": "normal",
+  "platform": "unix64",
+  "arguments": [
+    "--project=/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libpng_setup/Cppcheck_Retry002/compile_commands.json",
+    "--enable=warning,performance,portability,information",
+    "--check-level=normal",
+    "--platform=unix64",
+    "--std=c11",
+    "-j",
+    "1",
+    "--cppcheck-build-dir=/home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-CP-002/cache",
+    "--checkers-report=/home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-CP-002/checkers.txt",
+    "--xml",
+    "--xml-version=2"
+  ],
+  "measurement": "measurement-v1",
+  "locale": "C",
+  "wholeCommandTimeout": "not imposed",
+  "runDirectory": "/home/yhong/comp5355/results/pretest-libpng-1.6.50/PRE-P08-CP-002",
+  "applicationCache": "new empty build directory created by measure_run.sh",
+  "osPageCache": "natural, not cleared",
+  "outputs": {
+    "stdout": "stdout.txt",
+    "stderrXML": "stderr.txt",
+    "time": "time.txt",
+    "checkers": "checkers.txt",
+    "exitCode": "exit-code.txt",
+    "postTimingDerivedSummary": "xml-summary.json"
+  },
+  "identityManifest": "cppcheck-inputs.sha256",
+  "identityFiles": [
+    {
+      "file": "/home/yhong/comp5355/build/libpng-1.6.50/compile_commands.json",
+      "localFile": "review_evidence/libpng_pretest_20261028/build/compile_commands.json",
+      "bytes": 7213,
+      "sha256": "8b9db250e24514cebc54052a8b7c400635dc33a045e0e937be0bb57bd71d0b74",
+      "category": "compilation_database",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/build/libpng-1.6.50/pnglibconf.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/build/pnglibconf.h",
+      "bytes": 8090,
+      "sha256": "d510d301910871746a7059fbc9be0035e0f91502ea248c23c9d95fafc4afc646",
+      "category": "generated_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/dependency/include/zconf.h",
+      "bytes": 17026,
+      "sha256": "f01d3d9b52603c88660ae89141f1e0ba61774c0718c8b3f77a2410d84b558421",
+      "category": "dependency_header",
+      "codeOwner": "P01 zlib"
+    },
+    {
+      "file": "/home/yhong/comp5355/deps/zlib-v1.3.2/include/zlib.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/dependency/include/zlib.h",
+      "bytes": 103848,
+      "sha256": "818667d6ab6a37fe7469cb06a7f0cb2c2cb2f2c948a03e5accf1a4a74bf3020a",
+      "category": "dependency_header",
+      "codeOwner": "P01 zlib"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/png.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/png.c",
+      "bytes": 135132,
+      "sha256": "c439e93c040d6c0913f6e6e3847c44d985a3a7cefc60158deece24ab55dfd92b",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/png.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/png.h",
+      "bytes": 148212,
+      "sha256": "3c3b27f3e9b3030f7d234cb491b524fcc765345ced5a5dbce9e882cc35a1167f",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngconf.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngconf.h",
+      "bytes": 22673,
+      "sha256": "b92d648561f31b884be944720d5eb56eae1949b39e6b70ca70d8ed4a0f4b7349",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngdebug.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngdebug.h",
+      "bytes": 5414,
+      "sha256": "dcc808a35628d28e5aca1297e8ebe7c376f12448f65b72214b7271a2e1fc865e",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngerror.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngerror.c",
+      "bytes": 29585,
+      "sha256": "9918080bc68b31801f9a8349146c9494b355e3b16a26cc4bcb10fa1e993b4167",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngget.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngget.c",
+      "bytes": 37560,
+      "sha256": "7fe9aa76f804c564570c36975b7b92c063254820de582447820d2c0d5940f242",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pnginfo.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pnginfo.h",
+      "bytes": 10964,
+      "sha256": "95fd19c965b86c6f279e426b9ee42c62e83af41a372b51fe8feb52a3427cb44d",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngmem.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngmem.c",
+      "bytes": 8547,
+      "sha256": "9a28d9e571887c72cdbae73d1865c6fba497b6e02adf3a5515edf93fd972df60",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngpread.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngpread.c",
+      "bytes": 28098,
+      "sha256": "230e4e01a9748922a33a936d1c4a2f599d61fc6425b49270197949fd3f38443e",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngpriv.h",
+      "bytes": 92899,
+      "sha256": "23fcf7fc89fc28073aed686207626753933f0dbcff360024f0378b112dca30b4",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngread.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngread.c",
+      "bytes": 139434,
+      "sha256": "9106d0df385e051d46b007e402eabec18b5fce44fdfefed6e964a09008910e21",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngrio.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngrio.c",
+      "bytes": 3898,
+      "sha256": "3c710643f274fd2b4aa2bc154c9dc53a512edae773dda1434f205fb005f2e93e",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngrtran.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngrtran.c",
+      "bytes": 169872,
+      "sha256": "59753c1591d9eb8798b5e4270353c0d7da122ef6f1af2bfd83ff7b335fb2fea3",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngrutil.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngrutil.c",
+      "bytes": 153123,
+      "sha256": "2042d92c70b587a4ad2cf98f0e74279b12ceb11a88fd1f6622306928c9af68fd",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngset.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngset.c",
+      "bytes": 57534,
+      "sha256": "9bd59a79669db37b2ecc481439481eb5f49bf77bee0de4b1aba649915609b3d0",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngstruct.h",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngstruct.h",
+      "bytes": 19251,
+      "sha256": "498aa14b9af46bce8677ceb39d0ecd28f54bbad6a5ba29930984b38f97012571",
+      "category": "source_header",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngtrans.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngtrans.c",
+      "bytes": 25332,
+      "sha256": "6398722afbad3f54beed1e6fefa4f4a96fa0b6e45dd24120c688f67b740a7eb2",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwio.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwio.c",
+      "bytes": 5588,
+      "sha256": "a25def3351807ed3f2e12a02a7801d4208f0033516185f4ad524d804d2f00ce3",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwrite.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwrite.c",
+      "bytes": 78685,
+      "sha256": "e2079b6a8010ef8ecff771c81b8aa0e654a710b4232078a2ab277069441deb4b",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwtran.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwtran.c",
+      "bytes": 15336,
+      "sha256": "6355098f20b9058ab607cebd01f3130c61ac858dceb339c3a7d83407c1067b94",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c",
+      "localFile": "review_evidence/libpng_pretest_20261028/inputs/source/pngwutil.c",
+      "bytes": 81464,
+      "sha256": "3167c7e997f8a7db6c6ab4b816298aea0ad3189bea960ece984881cffba92a5f",
+      "category": "translation_unit",
+      "codeOwner": "P08 libpng"
+    },
+    {
+      "file": "/mnt/d/Project/COMP5355 Cyber and Internet Security/review_evidence/libpng_setup/Cppcheck_Retry002/compile_commands.json",
+      "localFile": "review_evidence/libpng_setup/Cppcheck_Retry002/compile_commands.json",
+      "bytes": 7381,
+      "sha256": "5a781c85054b8fcb636b881fa8214f286b1f10c7f54c62cdf3f45f83b07ddbd0",
+      "category": "derived_cppcheck_database",
+      "codeOwner": "P08 input adapter;original database retained"
+    }
+  ],
+  "identityManifestSHA256": "7aac2a576f860cb5a24651f31b1e69b87aa66ce40ee059405a7deaadd84694b0",
+  "environmentSession": "not asserted from build snapshot;actual run-start environment recorded separately",
+  "parameterEvidence": "Cppcheck_Preparation_Review_20261028.md",
+  "coverageStatus": "pending actual execution and output review",
+  "sourceReviewStatus": "not started",
+  "formalThirtyCells": "all not run",
+  "includeDirectoriesNormalized": [
+    "/home/yhong/comp5355/sources/libpng-1.6.50",
+    "/home/yhong/comp5355/build/libpng-1.6.50",
+    "/home/yhong/comp5355/deps/zlib-v1.3.2/include"
+  ],
+  "inputIdentityScope": "22 actual P08 project-dependency files+2 external P01 zlib headers+original compilation database=25 hash entries;15 intended translation units",
+  "buildEvidence": "../libpng_pretest_20261028/Build_Identity_Check.json",
+  "project": "P08 libpng",
+  "projectVersion": "1.6.50",
+  "commit": "2b978915d82377df13fcbb1fb56660195ded868a",
+  "executionEnvironmentSession": "not asserted from build snapshot;actual run-start environment recorded separately",
+  "generatedHeaderContext": {
+    "file": "/home/yhong/comp5355/build/libpng-1.6.50/pnglibconf.h",
+    "bytes": 8090,
+    "sha256": "d510d301910871746a7059fbc9be0035e0f91502ea248c23c9d95fafc4afc646",
+    "configurationInput": "scripts/pnglibconf.h.prebuilt",
+    "copiedWithoutContentChange": true,
+    "actualEffectiveOptimizationMacros": "all15 queries PNG_INTEL_SSE_OPT=0;other architecture optimization macros effective0 as available in built context"
+  },
+  "extraPreprocessorDefinitions": [],
+  "predefinedMacroPolicy": "Do not add __STDC__=1 merely because Clang defines it;fixed libpng inputs show no yyjson-style missing-macro #error gate requiring this override. Any actual coverage-blocking macro issue gets evidence-based new attempt ID.",
+  "linuxStaticMacroNote": "Only actual database macro PNG_INTEL_SSE_OPT=0 is explicitly supplied;no invented platform/static-library macros added.",
+  "semanticProjectInputs": {
+    "independentCTranslationUnits": 15,
+    "sourceHeaders": 6,
+    "generatedHeaders": 1,
+    "includedCImplementationFiles": 0,
+    "externalZlibHeaders": 2
+  },
+  "actualCandidateCount": null,
+  "actualInformationCount": null,
+  "failurePolicy": "Exit0 alone does not validate coverage;critical errors,skipped files,normal-check limitations,processed actions and XML must be inspected after user execution.",
+  "systemIncludeDirectoryFromDatabase": "/home/yhong/comp5355/deps/zlib-v1.3.2/include",
+  "buildEnvironmentSession": "session-20261028T122337-p08-22994",
+  "toolOrder": "Cppcheck -> CodeChecker/clangsa -> Flawfinder",
+  "externalDependencyAttribution": "zlib C implementation remains P01 only;zlib headers provide context;diagnostics in dependency code are attributed separately",
+  "configurationProvenanceOutsideCompileClosure": {
+    "file": "/home/yhong/comp5355/sources/libpng-1.6.50/scripts/pnglibconf.h.prebuilt",
+    "meaning": "saved build provenance;not an independent translation unit and not duplicated in semantic hash closure"
+  },
+  "standardSelectionCorrection": {
+    "correctedDate": "2026-10-29",
+    "unexecutedDraft": "Cppcheck_Preparation_QA_20261028/draft_before_standard_correction/",
+    "previousArgument": "--std=c17",
+    "selectedArgument": "--std=c11",
+    "reason": "Installed help lists C89/C99/C11;fixed2.13.0 Standards::CLatest=C11 and getC(unknown) returns CLatest. CLI accepts c-prefix strings through getC, so c17 silently falls back to C11. --version exits before normal standard parsing and cannot establish support.",
+    "officialSources": [
+      "https://raw.githubusercontent.com/danmar/cppcheck/2.13.0/lib/standards.h",
+      "https://raw.githubusercontent.com/danmar/cppcheck/2.13.0/cli/cmdlineparser.cpp"
+    ],
+    "localHelp": "Cppcheck_Preparation_QA_20261028/help-stdout.txt",
+    "runIdPolicy": "Keep PRE-P08-CP-001 because no analysis has executed;not a result-changing rerun"
+  },
+  "preparedRevision": "standard-selection-corrected-20261029",
+  "previousAttempt": "PRE-P08-CP-001;dependency zlib.h unresolved;originals retained",
+  "originalDatabase": "/home/yhong/comp5355/build/libpng-1.6.50/compile_commands.json",
+  "originalDatabaseSHA256": "8b9db250e24514cebc54052a8b7c400635dc33a045e0e937be0bb57bd71d0b74",
+  "databaseAdaptationAudit": "Database_Adaptation_Audit.json",
+  "compatibilityChange": "Cppcheck2.13 builtin file-settings ignores systemIncludePaths;zlib.h must be explicitly reachable via derived per-action includePaths;ordinary includes may change diagnostic classification"
+}

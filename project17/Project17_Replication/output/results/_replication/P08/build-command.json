@@ -1,0 +1,9 @@
+[
+ "cmake",
+ "--build",
+ "/home/yhong/comp5355/build/libpng-1.6.50",
+ "--target",
+ "png_static",
+ "--parallel",
+ "1"
+]

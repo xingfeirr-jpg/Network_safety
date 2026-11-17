@@ -1,0 +1,448 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="1959388555857748868">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h" line="55" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h" line="56" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngconf.h" line="30" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngconf.h" line="31" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngconf.h" line="45" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;setjmp.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;setjmp.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngconf.h" line="50" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;time.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;time.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngconf.h" line="55" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;float.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;float.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h" line="550" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h" line="552" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h" line="268" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h" line="434" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;sys/types.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h" line="460" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdarg.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h" line="466" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/deps/zlib-v1.3.2/include/zconf.h" line="494" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:41:1" call-funcname="png_save_uint_32" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="111" col="20" call-argexpr="buf" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1210:1" call-funcname="png_write_data" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="113" col="18" call-argexpr="buf" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:41:1" call-funcname="png_save_uint_32" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="177" col="20" call-argexpr="buf" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1210:1" call-funcname="png_write_data" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="179" col="18" call-argexpr="buf" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:90:1" call-funcname="png_write_chunk_header" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="202" col="26" call-argexpr="(unsigned int)length" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1094" col="54" info="Calling function &apos;png_write_complete_chunk&apos;, 4th argument &apos;0&apos; value is 0"/>
+  <path file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="195" col="16" info="Assuming condition is false"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:144:1" call-funcname="png_write_chunk_data" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="203" col="24" call-argexpr="data" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1094" col="48" info="Calling function &apos;png_write_complete_chunk&apos;, 3rd argument &apos;NULL&apos; value is 0"/>
+  <path file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="195" col="16" info="Assuming condition is false"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:144:1" call-funcname="png_write_chunk_data" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="203" col="24" call-argexpr="length" call-argvaluetype="0" call-argvalue="0">
+  <path file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1094" col="54" info="Calling function &apos;png_write_complete_chunk&apos;, 4th argument &apos;0&apos; value is 0"/>
+  <path file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="195" col="16" info="Assuming condition is false"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1765:1" call-funcname="png_safecat" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="325" col="24" call-argexpr="msg" call-argvaluetype="7" call-argvalue="64"/><function-call call-id="/home/yhong/comp5355/deps/zlib-v1.3.2/include/zlib.h:254:21" call-funcname="deflate" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="597" col="23" call-argexpr="input_len&gt;0?0:4" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:41:1" call-funcname="png_save_uint_32" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="830" col="20" call-argexpr="buf" call-argvaluetype="7" call-argvalue="13"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="839" col="28" call-argexpr="buf" call-argvaluetype="7" call-argvalue="13"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:144:1" call-funcname="png_write_chunk_data" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="908" col="27" call-argexpr="buf" call-argvaluetype="7" call-argvalue="3"/><function-call call-id="/home/yhong/comp5355/deps/zlib-v1.3.2/include/zlib.h:254:21" call-funcname="deflate" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="998" col="20" call-argexpr="input_len&gt;0?0:flush" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1094" col="28" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="4" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1094" col="28" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:41:1" call-funcname="png_save_uint_32" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1108" col="20" call-argexpr="buf" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1109" col="28" call-argexpr="buf" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1127" col="28" call-argexpr="buf" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:2183:1" call-funcname="png_check_keyword" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1167" col="32" call-argexpr="new_name" call-argvaluetype="7" call-argvalue="81"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:495:1" call-funcname="png_text_compress_init" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1177" col="26" call-argexpr="&amp;comp" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:505:1" call-funcname="png_text_compress" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1180" col="25" call-argexpr="&amp;comp" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:144:1" call-funcname="png_write_chunk_data" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1185" col="24" call-argexpr="new_name" call-argvaluetype="7" call-argvalue="81"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:654:1" call-funcname="png_write_compressed_data_out" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1187" col="33" call-argexpr="&amp;comp" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:2183:1" call-funcname="png_check_keyword" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1210" col="32" call-argexpr="new_name" call-argvaluetype="7" call-argvalue="80"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:144:1" call-funcname="png_write_chunk_data" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1245" col="27" call-argexpr="entrybuf" call-argvaluetype="7" call-argvalue="10"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1332" col="28" call-argexpr="buf" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1358" col="28" call-argexpr="buf" call-argvaluetype="7" call-argvalue="32"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:54:1" call-funcname="png_save_uint_16" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1397" col="23" call-argexpr="buf" call-argvaluetype="7" call-argvalue="6"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1398" col="31" call-argexpr="buf" call-argvaluetype="7" call-argvalue="6"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:54:1" call-funcname="png_save_uint_16" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1404" col="23" call-argexpr="buf" call-argvaluetype="7" call-argvalue="6"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1418" col="31" call-argexpr="buf" call-argvaluetype="7" call-argvalue="6"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1451" col="31" call-argexpr="buf" call-argvaluetype="7" call-argvalue="6"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:54:1" call-funcname="png_save_uint_16" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1456" col="23" call-argexpr="buf" call-argvaluetype="7" call-argvalue="6"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1472" col="31" call-argexpr="buf" call-argvaluetype="7" call-argvalue="6"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:54:1" call-funcname="png_save_uint_16" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1485" col="23" call-argexpr="buf" call-argvaluetype="7" call-argvalue="6"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1486" col="31" call-argexpr="buf" call-argvaluetype="7" call-argvalue="6"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:144:1" call-funcname="png_write_chunk_data" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1508" col="24" call-argexpr="buf" call-argvaluetype="7" call-argvalue="4"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:41:1" call-funcname="png_save_uint_32" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1523" col="20" call-argexpr="buf" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1526" col="28" call-argexpr="buf" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1554" col="28" call-argexpr="buf" call-argvaluetype="7" call-argvalue="24"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:144:1" call-funcname="png_write_chunk_data" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1573" col="27" call-argexpr="buf" call-argvaluetype="7" call-argvalue="1"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:54:1" call-funcname="png_save_uint_16" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1603" col="23" call-argexpr="buf" call-argvaluetype="7" call-argvalue="3"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:144:1" call-funcname="png_write_chunk_data" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1604" col="27" call-argexpr="buf" call-argvaluetype="7" call-argvalue="3"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:2183:1" call-funcname="png_check_keyword" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1622" col="31" call-argexpr="new_key" call-argvaluetype="7" call-argvalue="80"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:144:1" call-funcname="png_write_chunk_data" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1645" col="24" call-argexpr="new_key" call-argvaluetype="7" call-argvalue="80"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1340:1" call-funcname="png_write_tEXt" call-argnr="4" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1668" col="21" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:2183:1" call-funcname="png_check_keyword" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1675" col="31" call-argexpr="new_key" call-argvaluetype="7" call-argvalue="81"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:495:1" call-funcname="png_text_compress_init" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1685" col="26" call-argexpr="&amp;comp" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:495:1" call-funcname="png_text_compress_init" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1685" col="26" call-argexpr="(const unsigned char*)text" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1686" col="13" info="Assuming that condition &apos;text==NULL&apos; is not redundant"/>
+</function-call><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:495:1" call-funcname="png_text_compress_init" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1685" col="26" call-argexpr="text==NULL?0:strlen(text)" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:505:1" call-funcname="png_text_compress" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1688" col="25" call-argexpr="&amp;comp" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:144:1" call-funcname="png_write_chunk_data" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1695" col="24" call-argexpr="new_key" call-argvaluetype="7" call-argvalue="81"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:654:1" call-funcname="png_write_compressed_data_out" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1698" col="33" call-argexpr="&amp;comp" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:2183:1" call-funcname="png_check_keyword" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1718" col="31" call-argexpr="new_key" call-argvaluetype="7" call-argvalue="82"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:495:1" call-funcname="png_text_compress_init" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1770" col="26" call-argexpr="&amp;comp" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:505:1" call-funcname="png_text_compress" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1774" col="28" call-argexpr="&amp;comp" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:144:1" call-funcname="png_write_chunk_data" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1789" col="24" call-argexpr="new_key" call-argvaluetype="7" call-argvalue="82"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:654:1" call-funcname="png_write_compressed_data_out" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1796" col="36" call-argexpr="&amp;comp" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1822" col="28" call-argexpr="buf" call-argvaluetype="7" call-argvalue="9"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:2183:1" call-funcname="png_check_keyword" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1844" col="35" call-argexpr="new_purpose" call-argvaluetype="7" call-argvalue="80"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:144:1" call-funcname="png_write_chunk_data" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1872" col="24" call-argexpr="new_purpose" call-argvaluetype="7" call-argvalue="80"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:144:1" call-funcname="png_write_chunk_data" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1877" col="24" call-argexpr="buf" call-argvaluetype="7" call-argvalue="10"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1916" col="28" call-argexpr="buf" call-argvaluetype="7" call-argvalue="64"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:41:1" call-funcname="png_save_uint_32" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1934" col="20" call-argexpr="buf" call-argvaluetype="7" call-argvalue="9"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1938" col="28" call-argexpr="buf" call-argvaluetype="7" call-argvalue="9"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:54:1" call-funcname="png_save_uint_16" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1961" col="20" call-argexpr="buf" call-argvaluetype="7" call-argvalue="7"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1968" col="28" call-argexpr="buf" call-argvaluetype="7" call-argvalue="7"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1256:1" call-funcname="png_compress_IDAT" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2136" col="21" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1256:1" call-funcname="png_compress_IDAT" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2136" col="21" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1256:1" call-funcname="png_compress_IDAT" call-argnr="4" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2798" col="21" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:90:1" call-funcname="png_write_chunk_header" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="135" col="4" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:132:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:144:1" call-funcname="png_write_chunk_data" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="203" col="4" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="212" col="4" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:209:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="212" col="4" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:209:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:309:1" call-funcname="png_deflate_claim" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="520" col="10" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:505:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1094" col="4" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1260:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1109" col="4" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1263:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:2183:1" call-funcname="png_check_keyword" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1167" col="15" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1309:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:2183:1" call-funcname="png_check_keyword" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1210" col="15" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1318:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1358" col="4" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1273:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1382" col="7" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1323:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:90:1" call-funcname="png_write_chunk_header" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1502" col="4" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1279:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1526" col="4" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1285:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:192:1" call-funcname="png_write_complete_chunk" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1554" col="4" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1290:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:90:1" call-funcname="png_write_chunk_header" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1568" col="4" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1304:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:2183:1" call-funcname="png_check_keyword" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1622" col="14" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1340:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:2183:1" call-funcname="png_check_keyword" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1622" col="14" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1340:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1340:1" call-funcname="png_write_tEXt" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1668" col="7" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1345:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1340:1" call-funcname="png_write_tEXt" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1668" col="7" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1345:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1340:1" call-funcname="png_write_tEXt" call-argnr="3" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1668" col="7" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1345:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:2183:1" call-funcname="png_check_keyword" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1718" col="14" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1350:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:2183:1" call-funcname="png_check_keyword" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1718" col="14" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1350:1" my-argnr="3"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:2183:1" call-funcname="png_check_keyword" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1844" col="18" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1366:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1256:1" call-funcname="png_compress_IDAT" call-argnr="1" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2798" col="4" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:2318:1" my-argnr="1"/>
+<function-call call-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1256:1" call-funcname="png_compress_IDAT" call-argnr="2" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2798" col="4" my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:2318:1" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <array-index>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:41:1" my-argnr="1" my-argname="buf" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="43" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:54:1" my-argnr="1" my-argname="buf" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="56" col="4" value="0"/>
+    </array-index>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:41:1" my-argnr="1" my-argname="buf" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="43" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:54:1" my-argnr="1" my-argname="buf" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="56" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:68:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="74" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:221:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="226" col="20" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:309:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="312" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1085:1" my-argnr="2" my-argname="listp" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="458" col="36" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:495:1" my-argnr="1" my-argname="comp" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="498" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:505:1" my-argnr="3" my-argname="comp" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="520" col="49" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:654:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="659" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:654:1" my-argnr="2" my-argname="comp" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="656" col="29" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1253:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="868" col="26" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1256:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="951" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1318:1" my-argnr="2" my-argname="spalette" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1201" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1273:1" my-argnr="2" my-argname="xy" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1346" col="30" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1334:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1590" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1366:1" my-argnr="7" my-argname="units" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1852" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1383:1" my-argnr="3" my-argname="width" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1901" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1383:1" my-argnr="4" my-argname="height" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1902" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1378:1" my-argnr="2" my-argname="mod_time" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1953" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1392:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1985" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1388:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2078" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:2323:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2331" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:2362:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2368" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:2384:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2391" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:2411:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2416" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:2427:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2435" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:2467:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2473" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:2489:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2497" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:2550:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2556" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1567:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2599" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1567:1" my-argnr="2" my-argname="row_info" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2604" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:132:1" my-argnr="2" my-argname="chunk_string" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="135" col="36" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:209:1" my-argnr="2" my-argname="chunk_string" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="212" col="38" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:221:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="226" col="20" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:309:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="312" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1085:1" my-argnr="2" my-argname="listp" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="458" col="36" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:505:1" my-argnr="3" my-argname="comp" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="520" col="49" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:654:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="659" col="35" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c:654:1" my-argnr="2" my-argname="comp" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="656" col="29" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1253:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="868" col="26" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1256:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="951" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1318:1" my-argnr="2" my-argname="spalette" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1201" col="25" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1334:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1590" col="24" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1366:1" my-argnr="7" my-argname="units" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1852" col="23" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1383:1" my-argnr="3" my-argname="width" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1901" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1383:1" my-argnr="4" my-argname="height" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1902" col="18" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1378:1" my-argnr="2" my-argname="mod_time" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1953" col="8" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1392:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="1985" col="22" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1388:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2078" col="4" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1567:1" my-argnr="1" my-argname="png_ptr" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2599" col="32" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libpng-1.6.50/pngpriv.h:1567:1" my-argnr="2" my-argname="row_info" file="/home/yhong/comp5355/sources/libpng-1.6.50/pngwutil.c" line="2604" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="png_save_uint_32" lineNumber="41"/>
+    <functiondecl functionName="png_save_uint_16" lineNumber="54"/>
+    <functiondecl functionName="png_write_sig" lineNumber="68"/>
+    <functiondecl functionName="png_write_chunk_header" lineNumber="90"/>
+    <functiondecl functionName="png_write_chunk_start" lineNumber="132"/>
+    <functiondecl functionName="png_write_chunk_data" lineNumber="144"/>
+    <functiondecl functionName="png_write_chunk_end" lineNumber="163"/>
+    <functiondecl functionName="png_write_complete_chunk" lineNumber="192"/>
+    <functiondecl functionName="png_write_chunk" lineNumber="209"/>
+    <functiondecl functionName="png_image_size" lineNumber="221"/>
+    <functiondecl functionName="optimize_cmf" lineNumber="267"/>
+    <functiondecl functionName="png_deflate_claim" lineNumber="309"/>
+    <functiondecl functionName="png_text_compress_init" lineNumber="495"/>
+    <functiondecl functionName="png_text_compress" lineNumber="505"/>
+    <functiondecl functionName="png_write_compressed_data_out" lineNumber="654"/>
+    <functiondecl functionName="png_setup_sub_row" lineNumber="2323"/>
+    <functiondecl functionName="png_setup_sub_row_only" lineNumber="2362"/>
+    <functiondecl functionName="png_setup_up_row" lineNumber="2384"/>
+    <functiondecl functionName="png_setup_up_row_only" lineNumber="2411"/>
+    <functiondecl functionName="png_setup_avg_row" lineNumber="2427"/>
+    <functiondecl functionName="png_setup_avg_row_only" lineNumber="2467"/>
+    <functiondecl functionName="png_setup_paeth_row" lineNumber="2489"/>
+    <functiondecl functionName="png_setup_paeth_row_only" lineNumber="2550"/>
+    <functiondecl functionName="png_write_filtered_row" lineNumber="2791"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="deflate"/>
+    <functioncall functionName="deflateEnd"/>
+    <functioncall functionName="deflateInit2_"/>
+    <functioncall functionName="deflateReset"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="off_t"/>
+    <functioncall functionName="offsetof"/>
+    <functioncall functionName="optimize_cmf"/>
+    <functioncall functionName="output"/>
+    <functioncall functionName="png_access_version_number"/>
+    <functioncall functionName="png_app_warning"/>
+    <functioncall functionName="png_benign_error"/>
+    <functioncall functionName="png_build_grayscale_palette"/>
+    <functioncall functionName="png_calculate_crc"/>
+    <functioncall functionName="png_calloc"/>
+    <functioncall functionName="png_check_keyword"/>
+    <functioncall functionName="png_chunk_benign_error"/>
+    <functioncall functionName="png_chunk_error"/>
+    <functioncall functionName="png_chunk_warning"/>
+    <functioncall functionName="png_compress_IDAT"/>
+    <functioncall functionName="png_convert_from_struct_tm"/>
+    <functioncall functionName="png_convert_from_time_t"/>
+    <functioncall functionName="png_convert_to_rfc1123_buffer"/>
+    <functioncall functionName="png_data_freer"/>
+    <functioncall functionName="png_deflate_claim"/>
+    <functioncall functionName="png_destroy_info_struct"/>
+    <functioncall functionName="png_destroy_read_struct"/>
+    <functioncall functionName="png_destroy_write_struct"/>
+    <functioncall functionName="png_error"/>
+    <functioncall functionName="png_free"/>
+    <functioncall functionName="png_free_buffer_list"/>
+    <functioncall functionName="png_free_data"/>
+    <functioncall functionName="png_free_default"/>
+    <functioncall functionName="png_get_IHDR"/>
+    <functioncall functionName="png_get_PLTE"/>
+    <functioncall functionName="png_get_bKGD"/>
+    <functioncall functionName="png_get_bit_depth"/>
+    <functioncall functionName="png_get_cHRM"/>
+    <functioncall functionName="png_get_cHRM_XYZ"/>
+    <functioncall functionName="png_get_cHRM_XYZ_fixed"/>
+    <functioncall functionName="png_get_cHRM_fixed"/>
+    <functioncall functionName="png_get_cICP"/>
+    <functioncall functionName="png_get_cLLI"/>
+    <functioncall functionName="png_get_cLLI_fixed"/>
+    <functioncall functionName="png_get_channels"/>
+    <functioncall functionName="png_get_chunk_cache_max"/>
+    <functioncall functionName="png_get_chunk_malloc_max"/>
+    <functioncall functionName="png_get_color_type"/>
+    <functioncall functionName="png_get_compression_buffer_size"/>
+    <functioncall functionName="png_get_compression_type"/>
+    <functioncall functionName="png_get_current_pass_number"/>
+    <functioncall functionName="png_get_current_row_number"/>
+    <functioncall functionName="png_get_eXIf"/>
+    <functioncall functionName="png_get_eXIf_1"/>
+    <functioncall functionName="png_get_filter_type"/>
+    <functioncall functionName="png_get_gAMA"/>
+    <functioncall functionName="png_get_gAMA_fixed"/>
+    <functioncall functionName="png_get_hIST"/>
+    <functioncall functionName="png_get_iCCP"/>
+    <functioncall functionName="png_get_image_height"/>
+    <functioncall functionName="png_get_image_width"/>
+    <functioncall functionName="png_get_int_32"/>
+    <functioncall functionName="png_get_interlace_type"/>
+    <functioncall functionName="png_get_io_chunk_type"/>
+    <functioncall functionName="png_get_io_state"/>
+    <functioncall functionName="png_get_mDCV"/>
+    <functioncall functionName="png_get_mDCV_fixed"/>
+    <functioncall functionName="png_get_oFFs"/>
+    <functioncall functionName="png_get_pCAL"/>
+    <functioncall functionName="png_get_pHYs"/>
+    <functioncall functionName="png_get_pHYs_dpi"/>
+    <functioncall functionName="png_get_palette_max"/>
+    <functioncall functionName="png_get_pixel_aspect_ratio"/>
+    <functioncall functionName="png_get_pixel_aspect_ratio_fixed"/>
+    <functioncall functionName="png_get_pixels_per_inch"/>
+    <functioncall functionName="png_get_pixels_per_meter"/>
+    <functioncall functionName="png_get_rgb_to_gray_status"/>
+    <functioncall functionName="png_get_rowbytes"/>
+    <functioncall functionName="png_get_rows"/>
+    <functioncall functionName="png_get_sBIT"/>
+    <functioncall functionName="png_get_sCAL"/>
+    <functioncall functionName="png_get_sCAL_fixed"/>
+    <functioncall functionName="png_get_sCAL_s"/>
+    <functioncall functionName="png_get_sPLT"/>
+    <functioncall functionName="png_get_sRGB"/>
+    <functioncall functionName="png_get_tIME"/>
+    <functioncall functionName="png_get_tRNS"/>
+    <functioncall functionName="png_get_text"/>
+    <functioncall functionName="png_get_uint_16"/>
+    <functioncall functionName="png_get_uint_31"/>
+    <functioncall functionName="png_get_uint_32"/>
+    <functioncall functionName="png_get_unknown_chunks"/>
+    <functioncall functionName="png_get_user_height_max"/>
+    <functioncall functionName="png_get_user_width_max"/>
+    <functioncall functionName="png_get_valid"/>
+    <functioncall functionName="png_get_x_offset_inches"/>
+    <functioncall functionName="png_get_x_offset_inches_fixed"/>
+    <functioncall functionName="png_get_x_offset_microns"/>
+    <functioncall functionName="png_get_x_offset_pixels"/>
+    <functioncall functionName="png_get_x_pixels_per_inch"/>
+    <functioncall functionName="png_get_x_pixels_per_meter"/>
+    <functioncall functionName="png_get_y_offset_inches"/>
+    <functioncall functionName="png_get_y_offset_inches_fixed"/>
+    <functioncall functionName="png_get_y_offset_microns"/>
+    <functioncall functionName="png_get_y_offset_pixels"/>
+    <functioncall functionName="png_get_y_pixels_per_inch"/>
+    <functioncall functionName="png_get_y_pixels_per_meter"/>
+    <functioncall functionName="png_handle_as_unknown"/>
+    <functioncall functionName="png_image_begin_read_from_file"/>
+    <functioncall functionName="png_image_begin_read_from_memory"/>
+    <functioncall functionName="png_image_begin_read_from_stdio"/>
+    <functioncall functionName="png_image_finish_read"/>
+    <functioncall functionName="png_image_free"/>
+    <functioncall functionName="png_image_size"/>
+    <functioncall functionName="png_image_write_to_file"/>
+    <functioncall functionName="png_image_write_to_memory"/>
+    <functioncall functionName="png_image_write_to_stdio"/>
+    <functioncall functionName="png_info_init_3"/>
+    <functioncall functionName="png_init_io"/>
+    <functioncall functionName="png_longjmp"/>
+    <functioncall functionName="png_malloc"/>
+    <functioncall functionName="png_malloc_base"/>
+    <functioncall functionName="png_permit_mng_features"/>
+    <functioncall functionName="png_process_data"/>
+    <functioncall functionName="png_process_data_pause"/>
+    <functioncall functionName="png_process_data_skip"/>
+    <functioncall functionName="png_progressive_combine_row"/>
+    <functioncall functionName="png_read_end"/>
+    <functioncall functionName="png_read_image"/>
+    <functioncall functionName="png_read_info"/>
+    <functioncall functionName="png_read_png"/>
+    <functioncall functionName="png_read_row"/>
+    <functioncall functionName="png_read_rows"/>
+    <functioncall functionName="png_read_update_info"/>
+    <functioncall functionName="png_reset_crc"/>
+    <functioncall functionName="png_reset_zstream"/>
+    <functioncall functionName="png_safe_error"/>
+    <functioncall functionName="png_safe_warning"/>
+    <functioncall functionName="png_safecat"/>
+    <functioncall functionName="png_save_int_32"/>
+    <functioncall functionName="png_save_uint_16"/>
+    <functioncall functionName="png_save_uint_32"/>
+    <functioncall functionName="png_set_IHDR"/>
+    <functioncall functionName="png_set_PLTE"/>
+    <functioncall functionName="png_set_add_alpha"/>
+    <functioncall functionName="png_set_alpha_mode"/>
+    <functioncall functionName="png_set_alpha_mode_fixed"/>
+    <functioncall functionName="png_set_bKGD"/>
+    <functioncall functionName="png_set_background"/>
+    <functioncall functionName="png_set_background_fixed"/>
+    <functioncall functionName="png_set_benign_errors"/>
+    <functioncall functionName="png_set_bgr"/>
+    <functioncall functionName="png_set_cHRM"/>
+    <functioncall functionName="png_set_cHRM_XYZ"/>
+    <functioncall functionName="png_set_cHRM_XYZ_fixed"/>
+    <functioncall functionName="png_set_cHRM_fixed"/>
+    <functioncall functionName="png_set_cICP"/>
+    <functioncall functionName="png_set_cLLI"/>
+    <functioncall functionName="png_set_cLLI_fixed"/>
+    <functioncall functionName="png_set_check_for_invalid_index"/>
+    <functioncall functionName="png_set_chunk_cache_max"/>
+    <functioncall functionName="png_set_chunk_malloc_max"/>
+    <functioncall functionName="png_set_compression_buffer_size"/>
+    <functioncall functionName="png_set_compression_level"/>
+    <functioncall functionName="png_set_compression_mem_level"/>
+    <functioncall functionName="png_set_compression_method"/>
+    <functioncall functionName="png_set_compression_strategy"/>
+    <functioncall functionName="png_set_compression_window_bits"/>
+    <functioncall functionName="png_set_crc_action"/>
+    <functioncall functionName="png_set_eXIf"/>
+    <functioncall functionName="png_set_eXIf_1"/>
+    <functioncall functionName="png_set_error_fn"/>
+    <functioncall functionName="png_set_expand"/>
+    <functioncall functionName="png_set_expand_16"/>
+    <functioncall functionName="png_set_expand_gray_1_2_4_to_8"/>
+    <functioncall functionName="png_set_filler"/>
+    <functioncall functionName="png_set_filter"/>
+    <functioncall functionName="png_set_filter_heuristics"/>
+    <functioncall functionName="png_set_filter_heuristics_fixed"/>
+    <functioncall functionName="png_set_flush"/>
+    <functioncall functionName="png_set_gAMA"/>
+    <functioncall functionName="png_set_gAMA_fixed"/>
+    <functioncall functionName="png_set_gamma"/>
+    <functioncall functionName="png_set_gamma_fixed"/>
+    <functioncall functionName="png_set_gray_to_rgb"/>
+    <functioncall functionName="png_set_hIST"/>
+    <functioncall functionName="png_set_iCCP"/>
+    <functioncall functionName="png_set_interlace_handling"/>
+    <functioncall functionName="png_set_invalid"/>
+    <functioncall functionName="png_set_invert_alpha"/>
+    <functioncall functionName="png_set_invert_mono"/>
+    <functioncall functionName="png_set_keep_unknown_chunks"/>
+    <functioncall functionName="png_set_mDCV"/>
+    <functioncall functionName="png_set_mDCV_fixed"/>
+    <functioncall functionName="png_set_mem_fn"/>
+    <functioncall functionName="png_set_oFFs"/>
+    <functioncall functionName="png_set_option"/>
+    <functioncall functionName="png_set_pCAL"/>
+    <functioncall functionName="png_set_pHYs"/>
+    <functioncall functionName="png_set_packing"/>
+    <functioncall functionName="png_set_packswap"/>
+    <functioncall functionName="png_set_palette_to_rgb"/>
+    <functioncall functionName="png_set_progressive_read_fn"/>
+    <functioncall functionName="png_set_quantize"/>
+    <functioncall functionName="png_set_read_fn"/>
+    <functioncall functionName="png_set_read_status_fn"/>
+    <functioncall functionName="png_set_read_user_chunk_fn"/>
+    <functioncall functionName="png_set_read_user_transform_fn"/>
+    <functioncall functionName="png_set_rgb_to_gray"/>
+    <functioncall functionName="png_set_rgb_to_gray_fixed"/>
+    <functioncall functionName="png_set_rows"/>
+    <functioncall functionName="png_set_sBIT"/>
+    <functioncall functionName="png_set_sCAL"/>
+    <functioncall functionName="png_set_sCAL_fixed"/>
+    <functioncall functionName="png_set_sCAL_s"/>
+    <functioncall functionName="png_set_sPLT"/>
+    <functioncall functionName="png_set_sRGB"/>
+    <functioncall functionName="png_set_sRGB_gAMA_and_cHRM"/>
+    <functioncall functionName="png_set_scale_16"/>
+    <functioncall functionName="png_set_shift"/>
+    <functioncall functionName="png_set_sig_bytes"/>
+    <functioncall functionName="png_set_strip_16"/>
+    <functioncall functionName="png_set_strip_alpha"/>
+    <functioncall functionName="png_set_swap"/>
+    <functioncall functionName="png_set_swap_alpha"/>
+    <functioncall functionName="png_set_tIME"/>
+    <functioncall functionName="png_set_tRNS"/>
+    <functioncall functionName="png_set_tRNS_to_alpha"/>
+    <functioncall functionName="png_set_text"/>
+    <functioncall functionName="png_set_text_compression_level"/>
+    <functioncall functionName="png_set_text_compression_mem_level"/>
+    <functioncall functionName="png_set_text_compression_method"/>
+    <functioncall functionName="png_set_text_compression_strategy"/>
+    <functioncall functionName="png_set_text_compression_window_bits"/>
+    <functioncall functionName="png_set_unknown_chunk_location"/>
+    <functioncall functionName="png_set_unknown_chunks"/>
+    <functioncall functionName="png_set_user_limits"/>
+    <functioncall functionName="png_set_user_transform_info"/>
+    <functioncall functionName="png_set_write_fn"/>
+    <functioncall functionName="png_set_write_status_fn"/>
+    <functioncall functionName="png_set_write_user_transform_fn"/>
+    <functioncall functionName="png_setup_avg_row"/>
+    <functioncall functionName="png_setup_avg_row_only"/>
+    <functioncall functionName="png_setup_paeth_row"/>
+    <functioncall functionName="png_setup_paeth_row_only"/>
+    <functioncall functionName="png_setup_sub_row"/>
+    <functioncall functionName="png_setup_sub_row_only"/>
+    <functioncall functionName="png_setup_up_row"/>
+    <functioncall functionName="png_setup_up_row_only"/>
+    <functioncall functionName="png_sig_cmp"/>
+    <functioncall functionName="png_start_read_image"/>
+    <functioncall functionName="png_text_compress"/>
+    <functioncall functionName="png_text_compress_init"/>
+    <functioncall functionName="png_warning"/>
+    <functioncall functionName="png_write_chunk"/>
+    <functioncall functionName="png_write_chunk_data"/>
+    <functioncall functionName="png_write_chunk_end"/>
+    <functioncall functionName="png_write_chunk_header"/>
+    <functioncall functionName="png_write_chunk_start"/>
+    <functioncall functionName="png_write_complete_chunk"/>
+    <functioncall functionName="png_write_compressed_data_out"/>
+    <functioncall functionName="png_write_data"/>
+    <functioncall functionName="png_write_end"/>
+    <functioncall functionName="png_write_filtered_row"/>
+    <functioncall functionName="png_write_finish_row"/>
+    <functioncall functionName="png_write_flush"/>
+    <functioncall functionName="png_write_image"/>
+    <functioncall functionName="png_write_info"/>
+    <functioncall functionName="png_write_info_before_PLTE"/>
+    <functioncall functionName="png_write_png"/>
+    <functioncall functionName="png_write_row"/>
+    <functioncall functionName="png_write_rows"/>
+    <functioncall functionName="png_write_sig"/>
+    <functioncall functionName="png_write_tEXt"/>
+    <functioncall functionName="png_zstream_error"/>
+    <functioncall functionName="strlen"/>
+  </FileInfo>
+</analyzerinfo>

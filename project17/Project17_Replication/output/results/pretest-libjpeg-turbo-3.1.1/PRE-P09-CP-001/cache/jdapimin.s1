@@ -1,0 +1,11 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+jpeg_CreateDecompress call:[jinit_input_controller,jinit_marker_reader,jinit_memory_mgr,memset,sizeof] noreturn:[memset]
+jpeg_destroy_decompress call:[jpeg_destroy] noreturn:[jpeg_destroy]
+jpeg_abort_decompress call:[jpeg_abort] noreturn:[jpeg_abort]
+default_decompress_parms call:[while]
+jpeg_read_header call:[jpeg_abort,jpeg_consume_input]
+jpeg_consume_input call:[default_decompress_parms]
+jpeg_input_complete
+jpeg_has_multiple_scans
+jpeg_finish_decompress call:[jpeg_abort]

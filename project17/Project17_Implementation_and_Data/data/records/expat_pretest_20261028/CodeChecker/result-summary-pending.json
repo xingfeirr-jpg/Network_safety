@@ -1,0 +1,40 @@
+{
+  "runId": "PRE-P07-CC-001",
+  "purpose": "functional pretest",
+  "coverageValidation": "pending_tool_output_review",
+  "sourceReview": "not performed",
+  "auxiliaryTiming": "checkers and both parse commands outside analysis timing; not measured",
+  "metadataTools": [
+    {
+      "actionNum": 3,
+      "clangsaStatistics": {
+        "failed": 0,
+        "failed_sources": [],
+        "successful": 3,
+        "successful_sources": [
+          "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlparse.c",
+          "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmlrole.c",
+          "/home/yhong/comp5355/sources/expat-2.7.1/expat/lib/xmltok.c"
+        ],
+        "version": "18.1.3"
+      },
+      "skipped": 0
+    }
+  ],
+  "plistResults": [
+    {
+      "file": "reports/xmlparse.c_clangsa_daa1d20ca0763af2b6b1d7239c1af9c0.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/xmlrole.c_clangsa_426b9a3b08984505b620e9f55ce3a653.plist",
+      "savedDiagnostics": 0
+    },
+    {
+      "file": "reports/xmltok.c_clangsa_61ede1d2c3a69032a30a5b3dbec72695.plist",
+      "savedDiagnostics": 0
+    }
+  ],
+  "plistFileCount": 3,
+  "savedPlistDiagnostics": 0
+}

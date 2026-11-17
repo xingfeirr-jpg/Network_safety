@@ -1,0 +1,56 @@
+{
+  "readOnly": true,
+  "installExecuted": false,
+  "files": [
+    {
+      "linuxPath": "/home/yhong/comp5355/build/zlib-v1.3.2/cmake_install.cmake",
+      "exists": true,
+      "bytes": 5300,
+      "sha256": "f1d286b2e29e46a45162977809056fc7c7245ab9638eae75fd49edc32749226e",
+      "localRelative": "cmake_install.cmake"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/build/zlib-v1.3.2/CMakeCache.txt",
+      "exists": true,
+      "bytes": 19755,
+      "sha256": "c4a3c4fa88b2d48579165f62aeb539a692dc4d642168e3a0ed3d337119dc18a6",
+      "localRelative": "CMakeCache.txt"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/build/zlib-v1.3.2/install_manifest.txt",
+      "exists": false
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/build/zlib-v1.3.2/install_manifest_Development.txt",
+      "exists": false
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/build/zlib-v1.3.2/zlib.pc",
+      "exists": true,
+      "bytes": 341,
+      "sha256": "27533ea58793055867e00abc58823bd1249e337622e4c5a4a6f247e680c03eb8",
+      "localRelative": "zlib.pc"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/build/zlib-v1.3.2/libz.a",
+      "exists": true,
+      "bytes": 353262,
+      "sha256": "27aca14bf635d1b62ec5cc82afbf643042accd993161ff513649a051be2229e5",
+      "localRelative": "libz.a"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/build/zlib-v1.3.2/zconf.h",
+      "exists": true,
+      "bytes": 17026,
+      "sha256": "f01d3d9b52603c88660ae89141f1e0ba61774c0718c8b3f77a2410d84b558421",
+      "localRelative": "zconf.h"
+    },
+    {
+      "linuxPath": "/home/yhong/comp5355/build/zlib-v1.3.2/contrib/cmake_install.cmake",
+      "exists": true,
+      "bytes": 1294,
+      "sha256": "592ae632118377af7383228d86b2b3537278c1456108b40d35f04875992b2488",
+      "localRelative": "contrib/cmake_install.cmake"
+    }
+  ]
+}

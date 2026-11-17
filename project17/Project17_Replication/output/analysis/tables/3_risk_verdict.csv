@@ -1,0 +1,7 @@
+﻿risk_class,rules,alerts,false_positive,supported,undetermined
+Buffer and memory access,memcpy strcpy strcat strncpy char strlen read negativeIndex arrayIndexOutOfBoundsCond pointerOutOfBoundsCond,476,470,4,2
+Formatted output,fprintf sprintf snprintf vsnprintf vsprintf vfprintf _snprintf vprintf syslog invalidPrintfArgType_sint,64,63,0,1
+Null pointer,core.NullDereference unix.cstring.NullArg core.NonNullParamChecker nullPointerRedundantCheck nullPointerArithmeticRedundantCheck nullPointerArithmetic ctunullpointer core.CallAndMessage,86,60,22,4
+"Integer, shift and division",core.UndefinedBinaryOperatorResult core.DivideZero core.BitwiseShift shiftTooManyBitsSigned shiftNegativeLHS zerodiv integerOverflowCond AssignmentIntegerToAddress,50,30,20,0
+"File, environment and command",open fopen getenv system,30,21,1,8
+"Code quality (dead store, uninitialized)",deadcode.DeadStores uselessAssignmentPtrArg legacyUninitvar core.uninitialized.Branch,19,4,15,0

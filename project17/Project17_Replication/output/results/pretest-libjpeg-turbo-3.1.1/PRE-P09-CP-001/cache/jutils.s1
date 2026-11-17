@@ -1,0 +1,7 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+jdiv_round_up call:[return]
+jround_up
+jcopy_sample_rows call:[memcpy,sizeof] noreturn:[memcpy]
+jcopy_block_row call:[memcpy,sizeof] noreturn:[memcpy]
+jzero_far call:[memset] noreturn:[memset]

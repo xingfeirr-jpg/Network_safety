@@ -1,0 +1,140 @@
+Flawfinder version 2.0.20, (C) 2001-2026 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 222
+Examining /home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c
+Examining /home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.h
+
+FINAL RESULTS:
+
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:456:9:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+        strcpy(object->valuestring, valuestring);
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:126:12:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    static char version[15];
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:127:5:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+    sprintf(version, "%i.%i.%i", CJSON_VERSION_MAJOR, CJSON_VERSION_MINOR, CJSON_VERSION_PATCH);
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:204:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(copy, string, length);
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:363:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(number_c_string, buffer_at_offset(input_buffer), number_string_length);
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:561:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(newbuffer, p->buffer, p->offset + 1);
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:597:14:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    unsigned char number_buffer[26] = {0}; /* temporary buffer to print the number into */
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:609:18:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+        length = sprintf((char*)number_buffer, "null");
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:613:18:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+        length = sprintf((char*)number_buffer, "%d", item->valueint);
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:618:18:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+        length = sprintf((char*)number_buffer, "%1.15g", d);
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:624:22:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+            length = sprintf((char*)number_buffer, "%1.17g", d);
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:971:9:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+        strcpy((char*)output, "\"\"");
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:1012:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(output + 1, input, output_length);
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:1058:21:  [2] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf. Risk is low because the source has a constant maximum length.
+                    sprintf((char*)output_pointer, "u%04x", *input_pointer);
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:1275:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(printed, buffer->buffer, cjson_min(buffer->length, buffer->offset + 1));
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:1435:13:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+            strcpy((char*)output, "null");
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:1444:13:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+            strcpy((char*)output, "false");
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:1453:13:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+            strcpy((char*)output, "true");
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:1473:13:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+            memcpy(output, item->valuestring, raw_length);
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:2005:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(reference, item, sizeof(cJSON));
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:198:14:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    length = strlen((const char*)string) + sizeof("");
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:446:14:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    v1_len = strlen(valuestring);
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:447:14:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    v2_len = strlen(object->valuestring);
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:580:23:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    buffer->offset += strlen((const char*)buffer_pointer);
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:1136:21:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    buffer_length = strlen(value) + sizeof("");
+/home/yhong/comp5355/sources/cJSON-v1.7.19/cJSON.c:1467:26:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+            raw_length = strlen(item->valuestring) + sizeof("");
+
+ANALYSIS SUMMARY:
+
+Hits = 26
+Lines analyzed = 3497 in approximately 0.02 seconds (194114 lines/second)
+Physical Source Lines of Code (SLOC) = 2674
+Hits@level = [0]   1 [1]   6 [2]  19 [3]   0 [4]   1 [5]   0
+Hits@level+ = [0+]  27 [1+]  26 [2+]  20 [3+]   1 [4+]   1 [5+]   0
+Hits/KSLOC@level+ = [0+] 10.0972 [1+] 9.72326 [2+] 7.47943 [3+] 0.373972 [4+] 0.373972 [5+]   0
+Minimum risk level = 1
+
+Not every hit is necessarily a security vulnerability.
+You can inhibit a report by adding a comment in this form:
+// flawfinder: ignore
+Make *sure* it's a false positive!
+You can use the option --neverignore to show these.
+
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(https://dwheeler.com/secure-programs) for more information.

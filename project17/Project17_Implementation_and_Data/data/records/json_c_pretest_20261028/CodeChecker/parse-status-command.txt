@@ -1,0 +1,1 @@
+/home/yhong/comp5355/.venv/bin/CodeChecker parse --status --detailed /home/yhong/comp5355/results/pretest-json-c-0.18/PRE-P05-CC-001/reports 

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-27",
+  "runId": "PRE-P02-CC-001",
+  "purpose": "functional pretest; not formal comparison",
+  "status": "accepted; source candidates unreviewed",
+  "originalFiles": 35,
+  "toolVersion": "6.29.1",
+  "backendVersion": "18.1.3",
+  "analyzers": [
+    "clangsa"
+  ],
+  "inputActions": 5,
+  "successfulActions": 5,
+  "failedActions": 0,
+  "skippedActions": 0,
+  "savedPlistFiles": 5,
+  "savedPlistDiagnostics": 8,
+  "parseDisplayedReports": 8,
+  "sourceCandidates": 8,
+  "byRule": {
+    "unix.cstring.NullArg": 6,
+    "core.NonNullParamChecker": 2
+  },
+  "bySeverity": {
+    "HIGH": 8
+  },
+  "checkerEnabled": 47,
+  "checkerDisabled": 99,
+  "compilerInfo": {
+    "compiler_includes": [
+      "/usr/lib/llvm-18/lib/clang/18/include",
+      "/usr/local/include",
+      "/usr/include/x86_64-linux-gnu",
+      "/usr/include"
+    ],
+    "compiler_standard": "-std=gnu17",
+    "target": "x86_64-pc-linux-gnu"
+  },
+  "ctu": "off by fixed-version defaults; no --ctu",
+  "z3Refutation": "off explicitly",
+  "backendArgvEvidence": "Full individual backend argv not separately dumped; actual compiler_info and fixed-version generation logic retained.",
+  "exitCodes": {
+    "exit-code.txt": 0,
+    "checkers-exit-code.txt": 0,
+    "parse-status-exit-code.txt": 0,
+    "findings-exit-code.txt": 2
+  },
+  "ordinaryParseExit2Meaning": "reports displayed; not analysis failure",
+  "parseStatus": {
+    "upToDateClangsa": 5,
+    "outdatedClangsa": 0,
+    "failedClangsa": 0,
+    "missingClangsa": 0,
+    "unselectedBackendMissing": {
+      "clang-tidy": 5,
+      "cppcheck": 5,
+      "gcc": 5,
+      "infer": 5
+    }
+  },
+  "parseFiltering": "default filtering retained; all 8 saved issues individually match 8 displayed reports",
+  "wallSeconds": 21.73,
+  "userSeconds": 18.73,
+  "systemSeconds": 0.87,
+  "gnuTimeMaxRssKiB": 200624,
+  "toolInternalAnalysisSeconds": 19.19,
+  "timingMeaning": "External whole-analyze timing; checkers and parses outside measurement and not separately measured.",
+  "sourceReview": "all51 complete: 44 original-risk false positives, 3 supported diagnoses (1 internal language issue + 2 conditional interface risks), 4 unable; see lz4_review/Review_Report.md",
+  "formalThirtyCells": "all not run"
+}

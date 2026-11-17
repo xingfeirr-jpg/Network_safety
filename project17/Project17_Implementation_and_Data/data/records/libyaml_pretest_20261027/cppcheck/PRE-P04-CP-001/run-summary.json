@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-27",
+  "runId": "PRE-P04-CP-001",
+  "purpose": "functional pretest",
+  "status": "accepted",
+  "tool": "Cppcheck2.13.0",
+  "intendedTranslationUnits": 8,
+  "processedTranslationUnits": 8,
+  "failedTranslationUnits": 0,
+  "skippedTranslationUnits": 0,
+  "scopeMeaning": "all8 expected files have matching stdout/cache/database records; not exhaustive path coverage",
+  "originalFiles": 28,
+  "inputIdentityEntries": 12,
+  "sourceIssueCandidates": 0,
+  "informationItems": 7,
+  "xmlDiagnosticElements": 7,
+  "bySeverity": {
+    "information": 7
+  },
+  "byRule": {
+    "missingIncludeSystem": 6,
+    "checkersReport": 1
+  },
+  "missingIncludeUniqueHeaders": [
+    "stdlib.h",
+    "stdio.h",
+    "string.h",
+    "assert.h",
+    "limits.h",
+    "stddef.h"
+  ],
+  "activeCheckersReported": 79,
+  "totalCheckersReported": 592,
+  "checkLevelNormalMessages": 0,
+  "actualConfigurationInProgress": [
+    "HAVE_CONFIG_H=1",
+    "YAML_DECLARE_STATIC=1"
+  ],
+  "cacheAnalyzerInfoXMLFiles": 8,
+  "otherSnalyzerInfoCacheFiles": 8,
+  "nonXmlCacheMeaning": "snalyzerinfo retained by hash, not treated as XML diagnostic report",
+  "exitCode": 0,
+  "wallSeconds": 61.81,
+  "userSeconds": 61.61,
+  "systemSeconds": 0.05,
+  "gnuTimeMaxRssKiB": 35384,
+  "zeroSourceDiagnosticMeaning": "no source issue reported in this successful fixed scope/configuration, not proof of no bugs or rejection of FF candidates",
+  "sourceReview": "no new source candidates; FF40 remain unreviewed",
+  "formalThirtyCells": "all not run"
+}

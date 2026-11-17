@@ -1,0 +1,9 @@
+[
+ "cmake",
+ "--build",
+ "/home/yhong/comp5355/build/utf8proc-2.10.0",
+ "--target",
+ "utf8proc",
+ "--parallel",
+ "1"
+]

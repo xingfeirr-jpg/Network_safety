@@ -1,0 +1,1152 @@
+[
+  {
+    "candidateId": "P01-CC-001",
+    "plistFile": "reports/gzwrite.c_clangsa_53315e2272f08694c785b09b48b5f47d.plist",
+    "plistDiagnosticIndex": 0,
+    "files": [
+      "/home/yhong/comp5355/sources/zlib-v1.3.2/gzwrite.c"
+    ],
+    "diagnostic": {
+      "category": "Logic error",
+      "check_name": "core.DivideZero",
+      "description": "Division by zero",
+      "issue_hash_content_of_line_in_context": "cd041ff0435af1626e749e873638ae07",
+      "location": {
+        "col": 44,
+        "file": 0,
+        "line": 303
+      },
+      "path": [
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 286
+                },
+                {
+                  "col": 6,
+                  "file": 0,
+                  "line": 286
+                }
+              ],
+              "start": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 282
+                },
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 282
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 286
+                },
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 286
+                }
+              ],
+              "start": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 286
+                },
+                {
+                  "col": 6,
+                  "file": 0,
+                  "line": 286
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 288
+                },
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 288
+                }
+              ],
+              "start": [
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 286
+                },
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 286
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 291
+                },
+                {
+                  "col": 6,
+                  "file": 0,
+                  "line": 291
+                }
+              ],
+              "start": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 288
+                },
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 288
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 291
+                },
+                {
+                  "col": 13,
+                  "file": 0,
+                  "line": 291
+                }
+              ],
+              "start": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 291
+                },
+                {
+                  "col": 6,
+                  "file": 0,
+                  "line": 291
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 37,
+                  "file": 0,
+                  "line": 291
+                },
+                {
+                  "col": 41,
+                  "file": 0,
+                  "line": 291
+                }
+              ],
+              "start": [
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 291
+                },
+                {
+                  "col": 13,
+                  "file": 0,
+                  "line": 291
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 293
+                },
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 293
+                }
+              ],
+              "start": [
+                {
+                  "col": 37,
+                  "file": 0,
+                  "line": 291
+                },
+                {
+                  "col": 41,
+                  "file": 0,
+                  "line": 291
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 297
+                },
+                {
+                  "col": 6,
+                  "file": 0,
+                  "line": 297
+                }
+              ],
+              "start": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 293
+                },
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 293
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 297
+                },
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 297
+                }
+              ],
+              "start": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 297
+                },
+                {
+                  "col": 6,
+                  "file": 0,
+                  "line": 297
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 303
+                },
+                {
+                  "col": 10,
+                  "file": 0,
+                  "line": 303
+                }
+              ],
+              "start": [
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 297
+                },
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 297
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 303
+                },
+                {
+                  "col": 14,
+                  "file": 0,
+                  "line": 303
+                }
+              ],
+              "start": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 303
+                },
+                {
+                  "col": 10,
+                  "file": 0,
+                  "line": 303
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 44,
+                  "file": 0,
+                  "line": 303
+                },
+                {
+                  "col": 44,
+                  "file": 0,
+                  "line": 303
+                }
+              ],
+              "start": [
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 303
+                },
+                {
+                  "col": 14,
+                  "file": 0,
+                  "line": 303
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "depth": 0,
+          "kind": "event",
+          "location": {
+            "col": 9,
+            "file": 0,
+            "line": 286
+          },
+          "message": "Assuming 'file' is not equal to NULL",
+          "ranges": [
+            [
+              {
+                "col": 9,
+                "file": 0,
+                "line": 286
+              },
+              {
+                "col": 20,
+                "file": 0,
+                "line": 286
+              }
+            ]
+          ]
+        },
+        {
+          "depth": 0,
+          "kind": "event",
+          "location": {
+            "col": 9,
+            "file": 0,
+            "line": 291
+          },
+          "message": "Assuming field 'mode' is equal to GZ_WRITE",
+          "ranges": [
+            [
+              {
+                "col": 9,
+                "file": 0,
+                "line": 291
+              },
+              {
+                "col": 31,
+                "file": 0,
+                "line": 291
+              }
+            ]
+          ]
+        },
+        {
+          "depth": 0,
+          "kind": "event",
+          "location": {
+            "col": 37,
+            "file": 0,
+            "line": 291
+          },
+          "message": "Assuming field 'err' is equal to Z_OK",
+          "ranges": [
+            [
+              {
+                "col": 37,
+                "file": 0,
+                "line": 291
+              },
+              {
+                "col": 54,
+                "file": 0,
+                "line": 291
+              }
+            ]
+          ]
+        },
+        {
+          "depth": 0,
+          "kind": "event",
+          "location": {
+            "col": 9,
+            "file": 0,
+            "line": 297
+          },
+          "message": "Assuming 'size' is 0",
+          "ranges": [
+            [
+              {
+                "col": 9,
+                "file": 0,
+                "line": 297
+              },
+              {
+                "col": 12,
+                "file": 0,
+                "line": 297
+              }
+            ]
+          ]
+        },
+        {
+          "depth": 0,
+          "kind": "event",
+          "location": {
+            "col": 12,
+            "file": 0,
+            "line": 303
+          },
+          "message": "Assuming 'len' is not equal to 0",
+          "ranges": [
+            [
+              {
+                "col": 12,
+                "file": 0,
+                "line": 303
+              },
+              {
+                "col": 14,
+                "file": 0,
+                "line": 303
+              }
+            ]
+          ]
+        },
+        {
+          "depth": 0,
+          "kind": "event",
+          "location": {
+            "col": 44,
+            "file": 0,
+            "line": 303
+          },
+          "message": "Division by zero",
+          "ranges": [
+            [
+              {
+                "col": 18,
+                "file": 0,
+                "line": 303
+              },
+              {
+                "col": 49,
+                "file": 0,
+                "line": 303
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "candidateId": "P01-CC-002",
+    "plistFile": "reports/gzwrite.c_clangsa_53315e2272f08694c785b09b48b5f47d.plist",
+    "plistDiagnosticIndex": 1,
+    "files": [
+      "/home/yhong/comp5355/sources/zlib-v1.3.2/gzwrite.c"
+    ],
+    "diagnostic": {
+      "category": "Unused code",
+      "check_name": "deadcode.DeadStores",
+      "description": "Value stored to 'ret' is never read",
+      "issue_hash_content_of_line_in_context": "7634ae2d1689cce6cfd1f021e4932a37",
+      "location": {
+        "col": 5,
+        "file": 0,
+        "line": 480
+      },
+      "path": [
+        {
+          "depth": 0,
+          "kind": "event",
+          "location": {
+            "col": 5,
+            "file": 0,
+            "line": 480
+          },
+          "message": "Value stored to 'ret' is never read",
+          "ranges": [
+            [
+              {
+                "col": 11,
+                "file": 0,
+                "line": 480
+              },
+              {
+                "col": 26,
+                "file": 0,
+                "line": 480
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "candidateId": "P01-CC-003",
+    "plistFile": "reports/gzread.c_clangsa_479d573cdadb744e9d6b6415356ed4af.plist",
+    "plistDiagnosticIndex": 0,
+    "files": [
+      "/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c"
+    ],
+    "diagnostic": {
+      "category": "Logic error",
+      "check_name": "core.DivideZero",
+      "description": "Division by zero",
+      "issue_hash_content_of_line_in_context": "ca97e360c66ce54ffc47272c91e05f98",
+      "location": {
+        "col": 43,
+        "file": 0,
+        "line": 464
+      },
+      "path": [
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 445
+                },
+                {
+                  "col": 6,
+                  "file": 0,
+                  "line": 445
+                }
+              ],
+              "start": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 441
+                },
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 441
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 445
+                },
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 445
+                }
+              ],
+              "start": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 445
+                },
+                {
+                  "col": 6,
+                  "file": 0,
+                  "line": 445
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 447
+                },
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 447
+                }
+              ],
+              "start": [
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 445
+                },
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 445
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 448
+                },
+                {
+                  "col": 6,
+                  "file": 0,
+                  "line": 448
+                }
+              ],
+              "start": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 447
+                },
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 447
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 448
+                },
+                {
+                  "col": 13,
+                  "file": 0,
+                  "line": 448
+                }
+              ],
+              "start": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 448
+                },
+                {
+                  "col": 6,
+                  "file": 0,
+                  "line": 448
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 452
+                },
+                {
+                  "col": 6,
+                  "file": 0,
+                  "line": 452
+                }
+              ],
+              "start": [
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 448
+                },
+                {
+                  "col": 13,
+                  "file": 0,
+                  "line": 448
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 452
+                },
+                {
+                  "col": 13,
+                  "file": 0,
+                  "line": 452
+                }
+              ],
+              "start": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 452
+                },
+                {
+                  "col": 6,
+                  "file": 0,
+                  "line": 452
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 454
+                },
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 454
+                }
+              ],
+              "start": [
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 452
+                },
+                {
+                  "col": 13,
+                  "file": 0,
+                  "line": 452
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 458
+                },
+                {
+                  "col": 6,
+                  "file": 0,
+                  "line": 458
+                }
+              ],
+              "start": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 454
+                },
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 454
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 458
+                },
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 458
+                }
+              ],
+              "start": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 458
+                },
+                {
+                  "col": 6,
+                  "file": 0,
+                  "line": 458
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 464
+                },
+                {
+                  "col": 10,
+                  "file": 0,
+                  "line": 464
+                }
+              ],
+              "start": [
+                {
+                  "col": 9,
+                  "file": 0,
+                  "line": 458
+                },
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 458
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 464
+                },
+                {
+                  "col": 14,
+                  "file": 0,
+                  "line": 464
+                }
+              ],
+              "start": [
+                {
+                  "col": 5,
+                  "file": 0,
+                  "line": 464
+                },
+                {
+                  "col": 10,
+                  "file": 0,
+                  "line": 464
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "edges": [
+            {
+              "end": [
+                {
+                  "col": 43,
+                  "file": 0,
+                  "line": 464
+                },
+                {
+                  "col": 43,
+                  "file": 0,
+                  "line": 464
+                }
+              ],
+              "start": [
+                {
+                  "col": 12,
+                  "file": 0,
+                  "line": 464
+                },
+                {
+                  "col": 14,
+                  "file": 0,
+                  "line": 464
+                }
+              ]
+            }
+          ],
+          "kind": "control"
+        },
+        {
+          "depth": 0,
+          "kind": "event",
+          "location": {
+            "col": 9,
+            "file": 0,
+            "line": 445
+          },
+          "message": "Assuming 'file' is not equal to NULL",
+          "ranges": [
+            [
+              {
+                "col": 9,
+                "file": 0,
+                "line": 445
+              },
+              {
+                "col": 20,
+                "file": 0,
+                "line": 445
+              }
+            ]
+          ]
+        },
+        {
+          "depth": 0,
+          "kind": "event",
+          "location": {
+            "col": 9,
+            "file": 0,
+            "line": 448
+          },
+          "message": "Assuming field 'mode' is equal to GZ_READ",
+          "ranges": [
+            [
+              {
+                "col": 9,
+                "file": 0,
+                "line": 448
+              },
+              {
+                "col": 30,
+                "file": 0,
+                "line": 448
+              }
+            ]
+          ]
+        },
+        {
+          "depth": 0,
+          "kind": "event",
+          "location": {
+            "col": 9,
+            "file": 0,
+            "line": 452
+          },
+          "message": "Assuming field 'err' is equal to Z_OK",
+          "ranges": [
+            [
+              {
+                "col": 9,
+                "file": 0,
+                "line": 452
+              },
+              {
+                "col": 26,
+                "file": 0,
+                "line": 452
+              }
+            ]
+          ]
+        },
+        {
+          "depth": 0,
+          "kind": "event",
+          "location": {
+            "col": 9,
+            "file": 0,
+            "line": 458
+          },
+          "message": "Assuming 'size' is 0",
+          "ranges": [
+            [
+              {
+                "col": 9,
+                "file": 0,
+                "line": 458
+              },
+              {
+                "col": 12,
+                "file": 0,
+                "line": 458
+              }
+            ]
+          ]
+        },
+        {
+          "depth": 0,
+          "kind": "event",
+          "location": {
+            "col": 12,
+            "file": 0,
+            "line": 464
+          },
+          "message": "Assuming 'len' is not equal to 0",
+          "ranges": [
+            [
+              {
+                "col": 12,
+                "file": 0,
+                "line": 464
+              },
+              {
+                "col": 14,
+                "file": 0,
+                "line": 464
+              }
+            ]
+          ]
+        },
+        {
+          "depth": 0,
+          "kind": "event",
+          "location": {
+            "col": 43,
+            "file": 0,
+            "line": 464
+          },
+          "message": "Division by zero",
+          "ranges": [
+            [
+              {
+                "col": 18,
+                "file": 0,
+                "line": 464
+              },
+              {
+                "col": 48,
+                "file": 0,
+                "line": 464
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  }
+]

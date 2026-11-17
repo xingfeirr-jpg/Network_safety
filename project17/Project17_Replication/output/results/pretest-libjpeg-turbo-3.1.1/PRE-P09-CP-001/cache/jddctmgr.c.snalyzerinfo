@@ -1,0 +1,4 @@
+GETENV_S call:[getenv,return,strlen,strncpy] noreturn:[return]
+PUTENV_S call:[return,setenv] noreturn:[return]
+start_pass call:[void]
+j12init_inverse_dct call:[memset,sizeof]

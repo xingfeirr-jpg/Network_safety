@@ -1,0 +1,23 @@
+[INFO 2026-10-27 10:31:24] - Using '/usr/bin/clang-18' for analyzer 'clangsa'
+Found no defects in cJSON.c
+
+----======== Summary ========----
+┌───────────────────────────────────────────┬───┐
+│ Number of processed analyzer result files │ 1 │
+├───────────────────────────────────────────┼───┤
+│ Number of analyzer reports                │ 0 │
+└───────────────────────────────────────────┴───┘
+----=================----
+[INFO 2026-10-27 10:31:25] - ----==== Summary ====----
+[INFO 2026-10-27 10:31:25] - Up-to-date analysis results
+[INFO 2026-10-27 10:31:25] -   clangsa: 1
+[INFO 2026-10-27 10:31:25] - Outdated analysis results
+[INFO 2026-10-27 10:31:25] - Failed to analyze
+[INFO 2026-10-27 10:31:25] - Missing analysis results
+[INFO 2026-10-27 10:31:25] -   clang-tidy: 1
+[INFO 2026-10-27 10:31:25] -   cppcheck: 1
+[INFO 2026-10-27 10:31:25] -   gcc: 1
+[INFO 2026-10-27 10:31:25] -   infer: 1
+[INFO 2026-10-27 10:31:25] - Total analyzed compilation commands: 1
+[INFO 2026-10-27 10:31:25] - Total available compilation commands: 1
+[INFO 2026-10-27 10:31:25] - ----=================----

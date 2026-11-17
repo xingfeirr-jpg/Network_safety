@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="1891621644385211010">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/include/yaml.h" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;limits.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/yaml_private.h" line="9" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:94:1" call-funcname="yaml_parser_parse_document_start" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="237" col="52" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="246" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="252" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="252" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:108:1" call-funcname="yaml_parser_parse_block_sequence_entry" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="258" col="58" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:116:1" call-funcname="yaml_parser_parse_block_mapping_key" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="267" col="55" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:124:1" call-funcname="yaml_parser_parse_flow_sequence_entry" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="276" col="57" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:140:1" call-funcname="yaml_parser_parse_flow_mapping_key" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="291" col="54" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:144:1" call-funcname="yaml_parser_parse_flow_mapping_value" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="294" col="56" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:156:1" call-funcname="yaml_parser_process_directives" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="373" col="44" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:156:1" call-funcname="yaml_parser_process_directives" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="373" col="44" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:156:1" call-funcname="yaml_parser_process_directives" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="373" col="44" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:156:1" call-funcname="yaml_parser_process_directives" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="389" col="44" call-argexpr="&amp;version_directive" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="457" col="38" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="752" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="805" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="992" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="992" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1023" col="38" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1023" col="38" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1057" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1057" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1140" col="46" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1140" col="46" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1152" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1152" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1193" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="4" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1193" col="42" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:162:1" call-funcname="yaml_parser_append_tag_directive" call-argnr="3" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1286" col="50" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:91:1" call-funcname="yaml_parser_parse_stream_start" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="231" col="20" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:88:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:152:1" call-funcname="yaml_parser_process_empty_scalar" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="453" col="16" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:98:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="752" col="20" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:108:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="805" col="20" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:112:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="861" col="20" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:116:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="919" col="20" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:120:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1023" col="16" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:128:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1057" col="20" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:132:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" call-funcname="yaml_parser_parse_node" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1140" col="24" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:140:1" my-argnr="2"/>
+<function-call call-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:152:1" call-funcname="yaml_parser_process_empty_scalar" call-argnr="2" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1180" col="16" my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:144:1" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:75:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="199" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:79:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="211" col="5" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:88:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="228" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:91:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="317" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:94:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="352" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:98:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="444" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:101:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="476" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="540" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:112:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="789" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:120:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="904" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:128:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1015" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:132:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1045" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:136:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1076" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:144:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1175" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:156:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1251" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:162:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1348" col="26" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:88:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="228" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:91:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="317" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:94:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="352" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:98:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="444" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:101:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="476" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:104:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="540" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:112:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="789" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:120:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="904" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:128:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1015" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:132:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1045" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:136:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1076" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:144:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1175" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:156:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1251" col="13" value="0"/>
+    <unsafe-usage my-id="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:162:1" my-argnr="1" my-argname="parser" file="/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c" line="1348" col="26" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="yaml_parser_parse" lineNumber="170"/>
+    <functiondecl functionName="yaml_parser_set_parser_error" lineNumber="196"/>
+    <functiondecl functionName="yaml_parser_set_parser_error_context" lineNumber="207"/>
+    <functiondecl functionName="yaml_parser_state_machine" lineNumber="226"/>
+    <functiondecl functionName="yaml_parser_parse_stream_start" lineNumber="313"/>
+    <functiondecl functionName="yaml_parser_parse_document_start" lineNumber="342"/>
+    <functiondecl functionName="yaml_parser_parse_document_content" lineNumber="440"/>
+    <functiondecl functionName="yaml_parser_parse_document_end" lineNumber="470"/>
+    <functiondecl functionName="yaml_parser_parse_node" lineNumber="529"/>
+    <functiondecl functionName="yaml_parser_parse_block_sequence_entry" lineNumber="726"/>
+    <functiondecl functionName="yaml_parser_parse_indentless_sequence_entry" lineNumber="784"/>
+    <functiondecl functionName="yaml_parser_parse_block_mapping_key" lineNumber="834"/>
+    <functiondecl functionName="yaml_parser_parse_block_mapping_value" lineNumber="899"/>
+    <functiondecl functionName="yaml_parser_parse_flow_sequence_entry" lineNumber="949"/>
+    <functiondecl functionName="yaml_parser_parse_flow_sequence_entry_mapping_key" lineNumber="1010"/>
+    <functiondecl functionName="yaml_parser_parse_flow_sequence_entry_mapping_value" lineNumber="1040"/>
+    <functiondecl functionName="yaml_parser_parse_flow_sequence_entry_mapping_end" lineNumber="1071"/>
+    <functiondecl functionName="yaml_parser_parse_flow_mapping_key" lineNumber="1100"/>
+    <functiondecl functionName="yaml_parser_parse_flow_mapping_value" lineNumber="1170"/>
+    <functiondecl functionName="yaml_parser_process_empty_scalar" lineNumber="1206"/>
+    <functiondecl functionName="yaml_parser_process_directives" lineNumber="1229"/>
+    <functiondecl functionName="yaml_parser_append_tag_directive" lineNumber="1342"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="YAML_ALIAS_EVENT"/>
+    <functioncall functionName="YAML_BLOCK_MAPPING_STYLE"/>
+    <functioncall functionName="YAML_BLOCK_SEQUENCE_STYLE"/>
+    <functioncall functionName="YAML_DOCUMENT_END_EVENT"/>
+    <functioncall functionName="YAML_DOCUMENT_START_EVENT"/>
+    <functioncall functionName="YAML_FLOW_MAPPING_STYLE"/>
+    <functioncall functionName="YAML_FLOW_SEQUENCE_STYLE"/>
+    <functioncall functionName="YAML_MAPPING_END_EVENT"/>
+    <functioncall functionName="YAML_MAPPING_START_EVENT"/>
+    <functioncall functionName="YAML_MEMORY_ERROR"/>
+    <functioncall functionName="YAML_PARSER_ERROR"/>
+    <functioncall functionName="YAML_PARSE_BLOCK_MAPPING_FIRST_KEY_STATE"/>
+    <functioncall functionName="YAML_PARSE_BLOCK_MAPPING_KEY_STATE"/>
+    <functioncall functionName="YAML_PARSE_BLOCK_MAPPING_VALUE_STATE"/>
+    <functioncall functionName="YAML_PARSE_BLOCK_NODE_STATE"/>
+    <functioncall functionName="YAML_PARSE_BLOCK_SEQUENCE_ENTRY_STATE"/>
+    <functioncall functionName="YAML_PARSE_BLOCK_SEQUENCE_FIRST_ENTRY_STATE"/>
+    <functioncall functionName="YAML_PARSE_DOCUMENT_CONTENT_STATE"/>
+    <functioncall functionName="YAML_PARSE_DOCUMENT_END_STATE"/>
+    <functioncall functionName="YAML_PARSE_DOCUMENT_START_STATE"/>
+    <functioncall functionName="YAML_PARSE_END_STATE"/>
+    <functioncall functionName="YAML_PARSE_FLOW_MAPPING_EMPTY_VALUE_STATE"/>
+    <functioncall functionName="YAML_PARSE_FLOW_MAPPING_FIRST_KEY_STATE"/>
+    <functioncall functionName="YAML_PARSE_FLOW_MAPPING_KEY_STATE"/>
+    <functioncall functionName="YAML_PARSE_FLOW_MAPPING_VALUE_STATE"/>
+    <functioncall functionName="YAML_PARSE_FLOW_SEQUENCE_ENTRY_MAPPING_END_STATE"/>
+    <functioncall functionName="YAML_PARSE_FLOW_SEQUENCE_ENTRY_MAPPING_KEY_STATE"/>
+    <functioncall functionName="YAML_PARSE_FLOW_SEQUENCE_ENTRY_MAPPING_VALUE_STATE"/>
+    <functioncall functionName="YAML_PARSE_FLOW_SEQUENCE_ENTRY_STATE"/>
+    <functioncall functionName="YAML_PARSE_FLOW_SEQUENCE_FIRST_ENTRY_STATE"/>
+    <functioncall functionName="YAML_PARSE_IMPLICIT_DOCUMENT_START_STATE"/>
+    <functioncall functionName="YAML_PARSE_INDENTLESS_SEQUENCE_ENTRY_STATE"/>
+    <functioncall functionName="YAML_PLAIN_SCALAR_STYLE"/>
+    <functioncall functionName="YAML_SCALAR_EVENT"/>
+    <functioncall functionName="YAML_SEQUENCE_END_EVENT"/>
+    <functioncall functionName="YAML_SEQUENCE_START_EVENT"/>
+    <functioncall functionName="YAML_STREAM_END_EVENT"/>
+    <functioncall functionName="YAML_STREAM_START_EVENT"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="error"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="strcmp"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="yaml_free"/>
+    <functioncall functionName="yaml_malloc"/>
+    <functioncall functionName="yaml_parser_append_tag_directive"/>
+    <functioncall functionName="yaml_parser_fetch_more_tokens"/>
+    <functioncall functionName="yaml_parser_parse_block_mapping_key"/>
+    <functioncall functionName="yaml_parser_parse_block_mapping_value"/>
+    <functioncall functionName="yaml_parser_parse_block_sequence_entry"/>
+    <functioncall functionName="yaml_parser_parse_document_content"/>
+    <functioncall functionName="yaml_parser_parse_document_end"/>
+    <functioncall functionName="yaml_parser_parse_document_start"/>
+    <functioncall functionName="yaml_parser_parse_flow_mapping_key"/>
+    <functioncall functionName="yaml_parser_parse_flow_mapping_value"/>
+    <functioncall functionName="yaml_parser_parse_flow_sequence_entry"/>
+    <functioncall functionName="yaml_parser_parse_flow_sequence_entry_mapping_end"/>
+    <functioncall functionName="yaml_parser_parse_flow_sequence_entry_mapping_key"/>
+    <functioncall functionName="yaml_parser_parse_flow_sequence_entry_mapping_value"/>
+    <functioncall functionName="yaml_parser_parse_indentless_sequence_entry"/>
+    <functioncall functionName="yaml_parser_parse_node"/>
+    <functioncall functionName="yaml_parser_parse_stream_start"/>
+    <functioncall functionName="yaml_parser_process_directives"/>
+    <functioncall functionName="yaml_parser_process_empty_scalar"/>
+    <functioncall functionName="yaml_parser_set_parser_error"/>
+    <functioncall functionName="yaml_parser_set_parser_error_context"/>
+    <functioncall functionName="yaml_parser_state_machine"/>
+    <functioncall functionName="yaml_stack_extend"/>
+    <functioncall functionName="yaml_strdup"/>
+  </FileInfo>
+</analyzerinfo>

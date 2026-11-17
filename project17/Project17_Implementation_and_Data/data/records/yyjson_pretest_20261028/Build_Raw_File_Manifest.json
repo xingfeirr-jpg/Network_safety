@@ -1,0 +1,236 @@
+[
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/archive-objects.txt",
+    "localRelative": "preparation/archive-objects.txt",
+    "bytes": 11,
+    "sha256": "1560d841a665fd69bd6ba910cf87eca226aed5f6d55e7ce486c8de160fbb01eb"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/build-artifacts.sha256",
+    "localRelative": "preparation/build-artifacts.sha256",
+    "bytes": 606,
+    "sha256": "2d746c60394128dd55aefe5643981e6ae743aedeadd2d9a0e3418550c5cd5ff8"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/build-command.txt",
+    "localRelative": "preparation/build-command.txt",
+    "bytes": 85,
+    "sha256": "1962ec7094f07cade2961bbc09399773993359a9048324fa36da73bd72bb9c58"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/build-exit-code.txt",
+    "localRelative": "preparation/build-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/build-stderr.txt",
+    "localRelative": "preparation/build-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/build-stdout.txt",
+    "localRelative": "preparation/build-stdout.txt",
+    "bytes": 104,
+    "sha256": "7afd2bea0c9d2d823a7155106c71684281739653b0d61f85de7dfb7c31a07296"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/build-time.txt",
+    "localRelative": "preparation/build-time.txt",
+    "bytes": 803,
+    "sha256": "0ccd49c604e12cb253172d7f8a4d361975cbc5cc5a599d9bfbee5ff35dd7ce8e"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/configure-command.txt",
+    "localRelative": "preparation/configure-command.txt",
+    "bytes": 654,
+    "sha256": "b85a036872012e6cc137a69759934baa7555df59a99a8f4dd764d71ad3c7bd9c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/configure-exit-code.txt",
+    "localRelative": "preparation/configure-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/configure-stderr.txt",
+    "localRelative": "preparation/configure-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/configure-stdout.txt",
+    "localRelative": "preparation/configure-stdout.txt",
+    "bytes": 500,
+    "sha256": "2848e621c9432a626c8f74f81184579dbbe15c95f5286d897fe4c1dbca5fbe31"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/configure-time.txt",
+    "localRelative": "preparation/configure-time.txt",
+    "bytes": 1372,
+    "sha256": "38a0c6b9be520d6a4d1338b8474725f5cf7091abd3f0a4e088e67a6fbae60a93"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/environment-start.txt",
+    "localRelative": "preparation/environment-start.txt",
+    "bytes": 1502,
+    "sha256": "19d6ca2c480cc996af3c3390cc86e1a8eaab07bc4dcdde5b799c5e7cbd19d898"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/ninja-deps.txt",
+    "localRelative": "preparation/ninja-deps.txt",
+    "bytes": 4669,
+    "sha256": "77774f2ff6301aa88d09a6446f7bc30be1f8883ce819f88f9c6198fcc24281c9"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/preparation-inputs.sha256",
+    "localRelative": "preparation/preparation-inputs.sha256",
+    "bytes": 842,
+    "sha256": "43daf76817c6105c972a877e7ffae9d790b8fe2db359bf2fac8535b57b06fc6d"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/preparation-meta.txt",
+    "localRelative": "preparation/preparation-meta.txt",
+    "bytes": 313,
+    "sha256": "0d394e73a16f11319117e96a3b894f08c13f5721d507a16161eecc6e31c17ce9"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/source-after-build-exit-code.txt",
+    "localRelative": "preparation/source-after-build-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/source-after-build-stderr.txt",
+    "localRelative": "preparation/source-after-build-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/source-after-build-stdout.txt",
+    "localRelative": "preparation/source-after-build-stdout.txt",
+    "bytes": 65,
+    "sha256": "cd3a96e8837885d24bb5f05486e82fb8317ac837049f733a2bc725b43f1416b1"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/source-after-build.json",
+    "localRelative": "preparation/source-after-build.json",
+    "bytes": 243583,
+    "sha256": "0f1cd523f7781219e9f7d7c88f9cec8250a530818846ceb56c6f55f3bb9930cd"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/source-before-build-exit-code.txt",
+    "localRelative": "preparation/source-before-build-exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/source-before-build-stderr.txt",
+    "localRelative": "preparation/source-before-build-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/source-before-build-stdout.txt",
+    "localRelative": "preparation/source-before-build-stdout.txt",
+    "bytes": 66,
+    "sha256": "ee9cacc0c0890bbb7ef7ca48d98c545c1e41bc7b7e5b6545bd28214bff62e830"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/source-before-build.json",
+    "localRelative": "preparation/source-before-build.json",
+    "bytes": 243584,
+    "sha256": "366a6ba1a83d19ded84e048a40a84710c779d0087630871f20f99b86c116e37c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/results/pretest-yyjson-0.12.0/preparation/PREP-P06-001/target-commands.txt",
+    "localRelative": "preparation/target-commands.txt",
+    "bytes": 403,
+    "sha256": "c17fdfedee5756d661da5d7ab6d601b079df201b0509f7ba0658d8276c6a6c46"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T025725-p06-22994/recording-scripts.sha256",
+    "localRelative": "environment/recording-scripts.sha256",
+    "bytes": 290,
+    "sha256": "f6f8d6294677df8df08f12a1c3530bfac21a5ea2fe38274ee9acc6a861a31de5"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T025725-p06-22994/system.txt",
+    "localRelative": "environment/system.txt",
+    "bytes": 6403,
+    "sha256": "05a87c0fa80c0a31d8b2f1df36918ef915552b83966ee3e62dd49c94bec96b04"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T025725-p06-22994/time-binary.sha256",
+    "localRelative": "environment/time-binary.sha256",
+    "bytes": 80,
+    "sha256": "53657e86cac996a537975f1d42d31ff35e26d2eb8ec42bd97be2291124f2f840"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T025725-p06-22994/time-package.txt",
+    "localRelative": "environment/time-package.txt",
+    "bytes": 19,
+    "sha256": "49460f22ef48737103328d157c9a1bd442a70a329cd9035dee3e0061e37cf187"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T025725-p06-22994/time-version.txt",
+    "localRelative": "environment/time-version.txt",
+    "bytes": 336,
+    "sha256": "a3b64288a651d40a18a243c43c871f7ae2886baa58b7e3c64a1061bfd651245f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/environment/session-20261028T025725-p06-22994/tool-versions.txt",
+    "localRelative": "environment/tool-versions.txt",
+    "bytes": 2964,
+    "sha256": "dc0e4a6cf7dfd3090c0972b2c28c311d77d5a73af9a3c688545f921187d3f5fc"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/yyjson-0.12.0/compile_commands.json",
+    "localRelative": "build/compile_commands.json",
+    "bytes": 371,
+    "sha256": "9369239b022ed444d254383e60008ceba3c902dd6394d50db4e840ae3a8a4224"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/yyjson-0.12.0/CMakeCache.txt",
+    "localRelative": "build/CMakeCache.txt",
+    "bytes": 17063,
+    "sha256": "8e8f68f30dabd99932e4191907eaae7ad700dfd69bc2aa44ebd644a830adc160"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/yyjson-0.12.0/build.ninja",
+    "localRelative": "build/build.ninja",
+    "bytes": 16480,
+    "sha256": "671b1d3784cdb1ea71acd763798df3a08db735ae8c517cf5f8096d8d633b4c9f"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/yyjson-0.12.0/CMakeFiles/rules.ninja",
+    "localRelative": "build/CMakeFiles/rules.ninja",
+    "bytes": 2013,
+    "sha256": "9bfa780417ab1dc5c833d3c55d28ef51fedf986c31a9c1339ca765cec47dbdca"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/yyjson-0.12.0/libyyjson.a",
+    "localRelative": "build/libyyjson.a",
+    "bytes": 1869678,
+    "sha256": "2628be8596679e71b4acec904a0922ca89ae242b24c4e690bd9895425471b72e"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/yyjson-0.12.0/yyjson.pc",
+    "localRelative": "build/yyjson.pc",
+    "bytes": 329,
+    "sha256": "9d7504ffdbd986c82d668ad7e7f543d2379e44c1c42a96edcc3d9133367b8c3c"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/yyjson-0.12.0/CMakeFiles/yyjson.dir/src/yyjson.c.o",
+    "localRelative": "build/CMakeFiles/yyjson.dir/src/yyjson.c.o",
+    "bytes": 1868312,
+    "sha256": "63694813e9d0882d49281596e042b4e19172418295cda1567f19eef24a795272"
+  },
+  {
+    "linuxPath": "/home/yhong/comp5355/build/yyjson-0.12.0/CMakeFiles/3.28.3/CMakeCCompiler.cmake",
+    "localRelative": "build/CMakeFiles/3.28.3/CMakeCCompiler.cmake",
+    "bytes": 2567,
+    "sha256": "f1d3a6d844d61d1297a5a78c093b9383ab3bd3c4ed45262116a1ec8544401f2c"
+  }
+]
