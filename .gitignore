@@ -10,3 +10,5 @@ desktop.ini
 # Python 缓存
 __pycache__/
 *.pyc
+# 第三方依赖构建缓存（可由 downloads/sources 重建）
+ui/cache/

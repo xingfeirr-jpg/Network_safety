@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project 17 · 静态漏洞检测工具对比</title>
+<link rel="stylesheet" href="/static/style.css">
+<script src="/static/plotly.min.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">P17</div>
+    <div>
+      <h1 data-i18n="title">静态漏洞检测工具对比</h1>
+      <p data-i18n="subtitle">3 款工具 × 10 个开源 C 库 · 30 次扫描 · 725 条告警</p>
+    </div>
+  </div>
+  <nav class="tabs">
+    <button class="tab active" data-tab="overview" data-i18n="tab_overview">项目总览</button>
+    <button class="tab" data-tab="libs" data-i18n="tab_libs">库数据</button>
+    <button class="tab" data-tab="tools" data-i18n="tab_tools">工具介绍</button>
+    <button class="tab" data-tab="run" data-i18n="tab_run">实时运行</button>
+    <button class="tab" data-tab="dash" data-i18n="tab_dash">数据看板</button>
+    <button class="tab" data-tab="cases" data-i18n="tab_cases">案例分析</button>
+    <button class="tab" data-tab="conclusion" data-i18n="tab_conclusion">结论</button>
+    <button class="tab" data-tab="reliability" data-i18n="tab_reliability">可靠性</button>
+    <button class="lang-btn" id="lang-toggle" data-i18n="lang_button">English</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ============ Tab 0: overview ============ -->
+  <section id="overview" class="panel active">
+    <div class="intro">
+      <h2 data-i18n="ov_h">这个项目做了什么</h2>
+      <p data-i18n="ov_p">我们用 3 款静态漏洞检测工具扫描 10 个开源 C 库，一共 30 次扫描，得到 725 条告警。每一条告警都回到源码逐条核查，判断它到底是不是真的风险，再比较三个工具各自的告警质量与运行开销。</p>
+    </div>
+
+    <div class="ov-hero">
+      <div class="ov-hero-text">
+        <h3 data-i18n="ov_hero_h">核心问题</h3>
+        <p data-i18n="ov_hero_p">静态分析工具给出的告警能不能直接用？三个工具的说法听起来都很有道理，但谁更准、代价多大，只有把告警一条条对回源码才能知道。</p>
+        <ul class="ov-hero-points">
+          <li><span data-i18n="ov_point1">工具版本与参数全部冻结</span></li>
+          <li><span data-i18n="ov_point2">每条告警核查到源码行</span></li>
+          <li><span data-i18n="ov_point3">独立复现 + 分层抽样复核</span></li>
+        </ul>
+        <div class="ov-hero-stats" id="ov-stats"></div>
+      </div>
+      <div class="ov-hero-chart card">
+        <h3 data-i18n="ov_hero_chart">三款工具的核查结论</h3>
+        <div id="chart-overview" class="chart"></div>
+      </div>
+    </div>
+
+    <h3 class="ov-section-title" data-i18n="ov_modules_h">项目模块</h3>
+    <p class="ov-section-sub" data-i18n="ov_modules_p">下面是每个模块的缩略介绍，点击卡片可以跳到对应界面。</p>
+    <div class="ov-modules" id="ov-modules"></div>
+  </section>
+  <!-- ============ Tab 1: libraries ============ -->
+  <section id="libs" class="panel">
+    <div class="intro">
+      <h2 data-i18n="libs_h">十个输入库的数据特点</h2>
+      <p data-i18n="libs_p">每个库是一个固定版本的开源 C 项目。下表显示它的领域、规模和三款工具各自读到的内容。点击一行可查看该库的详细数据。</p>
+    </div>
+
+    <div class="lib-filter card">
+      <label><span data-i18n="lib_filter_lib">库</span>
+        <select id="pie-lib"></select>
+      </label>
+      <label><span data-i18n="lib_filter_view">视图</span>
+        <select id="pie-view">
+          <option value="tool" data-i18n="lib_view_tool">按工具</option>
+          <option value="outcome" data-i18n="lib_view_outcome">按判定结果</option>
+        </select>
+      </label>
+      <h3 data-i18n="chart_pie_h">每个库的告警构成</h3>
+    </div>
+
+    <div class="lib-pie-wrap card">
+      <div id="chart-lib-pie" class="lib-pie"></div>
+      <div id="lib-pie-side" class="lib-pie-side"></div>
+    </div>
+
+    <div class="cards" id="lib-cards"></div>
+    <div class="card">
+      <h3 data-i18n="chart_size">库规模对比</h3>
+      <div id="chart-lib-size" class="chart"></div>
+    </div>
+    <div class="card">
+      <h3 data-i18n="lib_table">十个库明细</h3>
+      <table class="data" id="lib-table"></table>
+    </div>
+  </section>
+
+  <!-- ============ Tab 2: tools ============ -->
+  <section id="tools" class="panel">
+    <div class="intro">
+      <h2 data-i18n="tools_h">三款工具是怎么工作的</h2>
+      <p data-i18n="tools_p">三款工具都是静态分析：不运行程序，只读代码找问题。区别在于“读得有多深”。</p>
+    </div>
+
+    <div class="compare" id="tool-compare"></div>
+
+    <div class="card" style="margin-top:18px">
+      <h3 data-i18n="rules_h">三款工具各自的匹配规则</h3>
+      <p class="muted" data-i18n="rules_p">每款工具判定“要不要报警”所依据的规则集与开关都不同。下面列出本实验冻结配置中实际使用的匹配规则，并给出每款工具最常命中的规则示例。</p>
+      <div class="rule-grid" id="tool-rules"></div>
+    </div>
+
+    <div class="card">
+      <h3 data-i18n="tool_same_example">同一条代码，三种反应</h3>
+      <p class="muted" data-i18n="tool_same_example_p">utf8proc 里有一个整数参数恰好叫 <code>strlen</code>：</p>
+      <pre class="code-line">utf8proc_iterate(const uint8_t *str, utf8proc_ssize_t strlen, int32_t *dst) {
+  if (!strlen) return 0;
+  end = str + ((strlen &lt; 0) ? 4 : strlen);
+}</pre>
+      <div class="same-example-grid" id="tool-same-example"></div>
+    </div>
+  </section>
+
+  <!-- ============ Tab 3: live run ============ -->
+  <section id="run" class="panel">
+    <div class="intro">
+      <h2 data-i18n="run_h">单工具实时复现</h2>
+      <p data-i18n="run_p">选择一个库和一款工具，系统会在 Docker 容器中下载源码、构建、运行该工具，并把结果格式化显示。运行可能需要数分钟，进度会实时更新。</p>
+    </div>
+
+    <div class="card">
+      <h3 data-i18n="flow_h">S1–S6 六步处理流程</h3>
+      <p class="muted" data-i18n="flow_p">实时运行会依次执行前五步；S6 用于把本次结果与原实验进行核查汇总。</p>
+      <div class="flow" id="workflow"></div>
+      <p class="muted flow-bridge" data-i18n="flow_bridge">以上流程与匹配规则会原样作用于下面的实时运行：选一个库和一款工具，点击“开始运行”即可看到这条链路真实执行一遍。</p>
+    </div>
+
+    <div class="card controls">
+      <h3 class="controls-title" data-i18n="run_controls_h">实时运行</h3>
+      <label><span data-i18n="lib_label">库</span>
+        <select id="run-lib"></select>
+      </label>
+      <label><span data-i18n="tool_label">工具</span>
+        <select id="run-tool">
+          <option value="FF">Flawfinder</option>
+          <option value="CP">Cppcheck</option>
+          <option value="CC">CodeChecker / clangsa</option>
+        </select>
+      </label>
+      <button id="run-start" class="primary" data-i18n="run_start">开始运行</button>
+      <span id="run-status" class="status" data-i18n="run_idle">未开始</span>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3 data-i18n="run_progress">运行进度</h3>
+        <div class="progress"><div id="run-bar"></div></div>
+        <pre id="run-log" class="log"></pre>
+      </div>
+      <div class="card">
+        <h3 data-i18n="run_result">运行结果</h3>
+        <div id="run-result" class="empty" data-i18n="run_result_empty">运行完成后显示结果</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Tab 3: dashboard ============ -->
+  <section id="dash" class="panel">
+    <div class="intro">
+      <h2 data-i18n="dash_h">告警分析看板</h2>
+      <p data-i18n="dash_p">数据来自原实验的 725 条告警核查记录。点击任一告警可查看它的源码证据和判定理由。</p>
+    </div>
+
+    <div class="kpis" id="kpis"></div>
+
+    <div class="dashboard-grid">
+      <div class="card">
+        <h3 data-i18n="chart_verdict">各工具告警判定分布</h3>
+        <div id="chart-verdict" class="chart"></div>
+      </div>
+      <div class="card">
+        <h3 data-i18n="chart_project">各库告警数量</h3>
+        <div id="chart-project" class="chart"></div>
+      </div>
+    </div>
+
+    <div class="dashboard-grid">
+      <div class="card">
+        <h3 data-i18n="chart_cost">运行耗时（秒）</h3>
+        <div id="chart-cost" class="chart"></div>
+      </div>
+      <div class="card">
+        <h3 data-i18n="chart_rules">高频规则 Top 15</h3>
+        <div id="chart-rules" class="chart"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="filters">
+        <h3 data-i18n="cand_list">告警列表</h3>
+        <select id="f-project"><option value="" data-i18n="all_libs">全部库</option></select>
+        <select id="f-tool">
+          <option value="" data-i18n="all_tools">全部工具</option>
+          <option>Flawfinder</option><option>Cppcheck</option><option>CodeChecker/clangsa</option>
+        </select>
+        <select id="f-outcome">
+          <option value="" data-i18n="all_outcomes">全部结论</option>
+          <option value="false_positive" data-i18n="fp">原风险误报</option>
+          <option value="supported" data-i18n="sup">有依据</option>
+          <option value="undetermined" data-i18n="und">无法判断</option>
+        </select>
+        <span id="f-count" class="muted"></span>
+      </div>
+      <table class="data" id="cand-table"></table>
+    </div>
+  </section>
+
+  <!-- ============ Tab 4: special cases ============ -->
+  <section id="cases" class="panel">
+    <div class="intro">
+      <h2 data-i18n="cases_h">特殊案例分析</h2>
+      <p data-i18n="cases_p">把 725 条告警按判定逻辑归为多个案例族。每个案例族说明工具为什么报警、为什么最终成立或不成立，并选取代表性告警展示完整证据链。</p>
+    </div>
+
+    <div class="case-summary" id="case-summary"></div>
+    <div class="case-filter-panel">
+      <div class="case-filter-top">
+        <label class="case-search">
+          <span class="case-filter-label" data-i18n="case_search">搜索案例</span>
+          <span class="case-search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" /></svg>
+            <input id="case-search" type="search" data-i18n-placeholder="case_search_placeholder" placeholder="案例名称、规则、库或证据关键词">
+          </span>
+        </label>
+        <div class="case-filter-result">
+          <span class="case-filter-result-label" data-i18n="case_filter_result">当前结果</span>
+          <strong id="case-count"></strong>
+          <button id="case-reset" class="case-reset" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v6h6M20 20v-6h-6M5.6 15a7 7 0 0 0 11.7 2.6L20 14M4 10l2.7-3.6A7 7 0 0 1 18.4 9" /></svg>
+            <span data-i18n="case_reset">重置筛选</span>
+          </button>
+        </div>
+      </div>
+      <div class="case-filter-groups">
+        <div class="case-filter-group" id="case-outcome-filter"></div>
+        <div class="case-filter-group" id="case-risk-filter"></div>
+        <div class="case-filter-group" id="case-tool-filter"></div>
+        <div class="case-filter-group" id="case-library-filter"></div>
+      </div>
+    </div>
+    <div class="case-layout">
+      <aside class="case-nav">
+        <div class="case-nav-head"><div class="case-section-label" data-i18n="case_family_nav">案例族导航</div></div>
+        <div id="case-nav-list"></div>
+      </aside>
+      <div class="case-families" id="case-families"></div>
+    </div>
+  </section>
+
+  <!-- ============ Tab 6: conclusion ============ -->
+  <section id="conclusion" class="panel">
+    <div class="intro">
+      <h2 data-i18n="concl_h">实验结论：这三款工具各自怎么样</h2>
+      <p data-i18n="concl_p">下面的每个数字都来自 725 条逐条核查过的告警，不是工具自己报告的数量。</p>
+    </div>
+
+    <div class="card">
+      <h3 data-i18n="concl_matrix_h">三个维度对比</h3>
+      <p class="muted" data-i18n="concl_matrix_p">准确性、有效性和成本是三个互相牵制的维度：告警最多的工具不一定最有用，而最准的工具也不一定负担得起。</p>
+      <div class="concl-cards" id="concl-cards"></div>
+    </div>
+
+    <div class="card">
+      <h3 data-i18n="concl_table_h">三款工具横向对比</h3>
+      <div class="concl-table-wrap"><table class="data" id="concl-table"></table></div>
+    </div>
+
+    <div class="card">
+      <h3 data-i18n="concl_chart_h">告警量与有效率</h3>
+      <div id="chart-concl" class="chart"></div>
+    </div>
+
+    <div class="card">
+      <h3 data-i18n="concl_verdict_title">逐款工具的结论</h3>
+      <div class="concl-verdicts" id="concl-verdicts"></div>
+    </div>
+
+    <div class="card">
+      <h3 data-i18n="concl_scenario_title">该用哪个</h3>
+      <div class="concl-scenarios" id="concl-scenarios"></div>
+    </div>
+  </section>
+
+  <!-- ============ Tab 7: reliability ============ -->
+  <section id="reliability" class="panel">
+    <div class="intro">
+      <h2 data-i18n="rel_h">实验是怎么做到可信的</h2>
+      <p data-i18n="rel_p">两件事保证结论站得住：让另一个人独立复现一遍，再让人分层抽样复核 AI 的判定。</p>
+    </div>
+
+    <div class="rel-pillars" id="rel-pillars"></div>
+
+    <div class="card">
+      <h3 data-i18n="rel_repl_h">机制一：独立复现</h3>
+      <p class="muted" data-i18n="rel_repl_p">第一位成员完成检测，但不保留中间步骤，只留下源码哈希和工具版本。第二位成员拿着这些哈希和版本号从头跑一遍，看能不能得到同样的结果。</p>
+      <div class="rel-kpis" id="rel-review-grid"></div>
+      <div class="rel-steps" id="rel-steps"></div>
+    </div>
+
+    <div class="card">
+      <h3 data-i18n="rel_pin_h">冻结的输入：版本与哈希</h3>
+      <p class="muted" data-i18n="rel_pin_p">每个库都锁定到具体 commit 并记录源码包哈希。哈希一致才说明分析的是同一份代码。</p>
+      <div class="rel-table-wrap"><table class="data" id="rel-pinned-table"></table></div>
+    </div>
+
+    <div class="card">
+      <h3 data-i18n="rel_review_h">机制二：AI 分析 + 分层抽样人工复核</h3>
+      <p class="muted" data-i18n="rel_review_p">725 条告警先由 AI 对照源码给出判定和理由，再由人抽样复核：结论重要的两组逐条审，结论为误报的大组按“工具 × 排除理由”分层抽样。</p>
+      <h4 class="rel-sub-h" data-i18n="rel_strata_h">抽样方案</h4>
+      <div class="rel-table-wrap"><table class="data" id="rel-strata-table"></table></div>
+    </div>
+
+    <div class="card">
+      <h3 data-i18n="rel_limits_h">已知局限</h3>
+      <div class="rel-limits" id="rel-limits"></div>
+    </div>
+  </section>
+</main>
+
+<!-- detail drawer -->
+<div id="drawer-mask" class="mask"></div>
+<aside id="drawer" class="drawer">
+  <div class="drawer-head">
+    <h3 data-i18n="drawer_title">告警详情</h3>
+    <button id="drawer-close" class="ghost" data-i18n="close">关闭</button>
+  </div>
+  <div id="drawer-body"></div>
+</aside>
+
+<script src="/static/i18n.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>
