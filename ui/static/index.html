@@ -11,6 +11,9 @@
 <!-- Navigation: a vertical timeline of the five research stages (left sidebar on wide
      screens, a narrow rail on medium screens and during the talk, a top bar on phones). -->
 <aside class="sidebar" id="sidebar">
+  <button class="side-toggle" id="side-toggle" type="button" title="收起边栏" aria-label="收起边栏" aria-expanded="true">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" /></svg>
+  </button>
   <div class="brand">
     <div class="logo">P17</div>
     <div class="brand-text">
@@ -33,7 +36,7 @@
     </div>
     <div class="stage" data-stage="4">
       <button class="stage-head" type="button"><span class="stage-no">04</span><span class="stage-name" data-i18n="stage_4">结果</span></button>
-      <div class="stage-tabs"><button class="tab" data-tab="dash" data-i18n="tab_dash">数据看板</button><button class="tab" data-tab="cases" data-i18n="tab_cases">案例分析</button></div>
+      <div class="stage-tabs"><button class="tab" data-tab="dash" data-i18n="tab_dash">数据看板</button><button class="tab" data-tab="cases" data-i18n="tab_cases">案例分析</button><button class="tab" data-tab="keycases" data-i18n="tab_keycases">典型案例</button></div>
     </div>
     <div class="stage" data-stage="5">
       <button class="stage-head" type="button"><span class="stage-no">05</span><span class="stage-name" data-i18n="stage_5">结论</span></button>
@@ -303,6 +306,17 @@
       </aside>
       <div class="case-families" id="case-families"></div>
     </div>
+  </section>
+
+  <!-- ============ Key cases (stage 04): the four cases told in the talk ============ -->
+  <section id="keycases" class="panel">
+    <header class="page-head box">
+      <div class="stage-tag"><span class="stage-tag-no">04</span><span data-i18n="stage_4">结果</span></div>
+      <h2 data-i18n="kc_h">典型案例：三个告警讲清三款工具</h2>
+      <p data-i18n="kc_p">从 19 个案例族里挑出最有代表性的三个：最浅的工具为什么错、最深的工具为什么也会错、真正的问题长什么样；再补一个“无法判断”的例子，说明静态核查的边界。</p>
+    </header>
+    <div class="kc-list" id="kc-list"></div>
+    <section class="box kc-takeaway" id="kc-takeaway"></section>
   </section>
 
   <!-- ============ Tab 6: conclusion (stage 05) ============ -->

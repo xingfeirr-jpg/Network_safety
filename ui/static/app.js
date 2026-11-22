@@ -129,11 +129,34 @@ function stickyTop() {
 }
 
 // Narrow rail on medium screens and during the talk; full sidebar on wide screens.
+// The toggle button overrides the automatic choice; the choice is remembered.
+let SIDE_COLLAPSED = localStorage.getItem("p17-side");  // "1" collapsed, "0" expanded, null auto
+
 function updateRail() {
   const wide = window.innerWidth >= 900;
-  document.body.classList.toggle("is-rail", wide && (window.innerWidth < 1280 || PRESENTING));
+  const collapsed = SIDE_COLLAPSED === null ? window.innerWidth < 1280 : SIDE_COLLAPSED === "1";
+  const rail = wide && (collapsed || PRESENTING);
+  document.body.classList.toggle("is-rail", rail);
+  const btn = $("side-toggle");
+  if (btn) {
+    const label = t(rail ? "side_expand" : "side_collapse");
+    btn.title = label;
+    btn.setAttribute("aria-label", label);
+    btn.setAttribute("aria-expanded", String(!rail));
+  }
 }
 window.addEventListener("resize", updateRail);
+
+$("side-toggle").addEventListener("click", () => {
+  const rail = document.body.classList.contains("is-rail");
+  SIDE_COLLAPSED = rail ? "0" : "1";
+  localStorage.setItem("p17-side", SIDE_COLLAPSED);
+  // Collapse at once instead of waiting for the pointer to leave the sidebar.
+  $("sidebar").classList.toggle("no-hover", !rail);
+  updateRail();
+  setTimeout(() => window.dispatchEvent(new Event("resize")), 220);
+});
+$("sidebar").addEventListener("mouseleave", () => $("sidebar").classList.remove("no-hover"));
 
 document.querySelectorAll(".tab").forEach((btn) => btn.addEventListener("click", () => {
   if (PRESENTING && deckJumpToPage(btn.dataset.tab)) return;
@@ -931,6 +954,8 @@ function onLanguageChange() {
   if (CANDIDATES.length) loadCandidates();
   if (SUMMARY) renderConclusion();
   if (RELIABILITY) renderReliability();
+  renderKeyCases();
+  updateRail();
   if (LIBS.length) renderLibPie();
   if (PRESENTING) renderSlide();
 }
@@ -1783,9 +1808,150 @@ $("deck-exit").addEventListener("click", exitDeck);
 $("deck-full").addEventListener("click", toggleFullscreen);
 
 // ---------- page navigation ----------
+// ---------- key cases (the cases told in the talk) ----------
+// Text follows reports/speech/Speech_CN.md / Speech_EN.md; code lines are copied verbatim
+// from the pinned sources; the family sizes are read from the reviewed data.
+const KEY_CASES = [
+  {
+    key: "P10:FF001", family: "false_positive-name_not_call", outcome: "false_positive",
+    tag: { zh: "最浅的工具为什么错", en: "Why the shallowest tool fails" },
+    title: { zh: "变量名叫 strlen，Flawfinder 报了 18 次", en: "A variable named strlen: 18 Flawfinder alerts" },
+    where: "utf8proc 2.10.0 · utf8proc.c:126 · Flawfinder · strlen",
+    code: [
+      "utf8proc_iterate(const utf8proc_uint8_t *str, utf8proc_ssize_t strlen, utf8proc_int32_t *dst) {",
+      "  ...",
+      "  if (!strlen) return 0;                     // length is zero?",
+      "  end = str + ((strlen < 0) ? 4 : strlen);   // length gives the read bound",
+    ],
+    hl: [0],
+    why: {
+      zh: "Flawfinder 只做词法匹配：看到 strlen 这个名字就报“可能越界读”。utf8proc 的 18 条 Flawfinder 告警全部落在这个名字上。",
+      en: "Flawfinder only matches words: it sees the name strlen and reports a possible over-read. All 18 Flawfinder alerts in utf8proc land on this name.",
+    },
+    verdict: {
+      zh: "误报。这里的 strlen 是一个整数参数（字符串长度）。代码先判断它是否为 0，再用它算读取边界，从头到尾没有调用 strlen 函数。Cppcheck 和 clangsa 知道这是变量，一条都没报。",
+      en: "False positive. Here strlen is an integer parameter (a length). The code checks it for zero and uses it as the read bound; the strlen function is never called. Cppcheck and clangsa know it is a variable and report nothing.",
+    },
+    lesson: {
+      zh: "Flawfinder 不懂语法，分不清函数名和变量名。",
+      en: "Flawfinder does not understand syntax, so it cannot tell a function from a variable.",
+    },
+  },
+  {
+    key: "P09:P09-CC-001", family: "false_positive-noreturn_handler", outcome: "false_positive",
+    tag: { zh: "最深的工具为什么也会错", en: "Why even the deepest tool fails" },
+    title: { zh: "“出错就退出”：空指针根本走不到 211 行", en: "Exit on error: a null pointer never reaches line 211" },
+    where: "libjpeg-turbo 3.1.1 · src/jdapistd.c:211 · clangsa · core.NullDereference",
+    code: [
+      "  if (!xoffset || !width)                    // 207",
+      "    ERREXIT(cinfo, JERR_BAD_CROP_SPEC);      // 208",
+      "",
+      "  /* xoffset and width must fall within the output image dimensions. */",
+      "  if (*width == 0 ||                         // 211",
+    ],
+    hl: [1, 4],
+    why: {
+      zh: "clangsa 沿分支推演：假设 width 为空，执行会继续到 211 行并解引用空指针。这一行 clangsa 在 8 位和 12 位两种构建下各报了一次，Cppcheck 也报了。",
+      en: "clangsa follows the branches: if width is null, execution continues to line 211 and dereferences it. clangsa reported this line in both the 8-bit and the 12-bit build, and Cppcheck reported it too.",
+    },
+    verdict: {
+      zh: "误报。width 为空时，208 行会先调用 ERREXIT，进而调用错误回调 error_exit。libjpeg 文档规定这个回调不允许返回（默认实现直接 exit，自定义实现必须 longjmp），所以执行到不了 211 行。",
+      en: "False positive. A null width first hits ERREXIT at line 208, which calls the error callback error_exit. libjpeg's documentation says this callback must not return (the default calls exit; custom ones must longjmp), so execution never reaches line 211.",
+    },
+    lesson: {
+      zh: "再深的路径分析也看不到写在文档里的约定。工具不知道某个函数“永不返回”，就会推演出一条实际不存在的路径。",
+      en: "Even the deepest path analysis cannot see a contract written in the documentation. Without knowing a function never returns, it invents a path that does not exist.",
+    },
+  },
+  {
+    key: "P01:P01-FF-031", family: "supported-conditional_overflow", outcome: "supported",
+    tag: { zh: "真正的问题长什么样", en: "What a real problem looks like" },
+    title: { zh: "zlib 的 memcpy 真的可能写越界", en: "zlib's memcpy really can overflow" },
+    where: "zlib 1.3.2 · gzwrite.c:217 · Flawfinder · memcpy",
+    code: [
+      "            copy = state->size - have;           // 214: space left",
+      "            if (copy > len)",
+      "                copy = (unsigned)len;",
+      "            memcpy(state->in + have, buf, copy); // 217",
+    ],
+    hl: [0, 3],
+    why: {
+      zh: "Flawfinder 看到 memcpy 就报“目标容量可能不足”。在三款工具里，这一条只有 Flawfinder 报了，Cppcheck 和 clangsa 都没有。",
+      en: "Flawfinder flags every memcpy as a possible capacity problem. Of the three tools, only Flawfinder reported this one; Cppcheck and clangsa did not.",
+    },
+    verdict: {
+      zh: "有依据。容量检查假设已缓冲的量 have 不超过 size，但在非阻塞模式下，gzprintf 可以合法地让 have 落在 size 和 2×size 之间。之后一次小的 gzwrite 会让 size − have 无符号下溢成一个很大的数，copy 不再被截断，memcpy 写出已分配的堆缓冲区。这是源码层面的推导，没有做动态复现。",
+      en: "Supported. The check assumes the buffered amount have never exceeds size, but in non-blocking mode gzprintf can legitimately leave have between size and 2×size. A following small gzwrite makes size − have wrap around to a huge value, copy is no longer limited, and memcpy writes past the heap buffer. This is a source-level derivation; it was not reproduced dynamically.",
+    },
+    lesson: {
+      zh: "误报最多的工具，偏偏抓到了另外两款漏掉的真问题。三款工具谁也替代不了谁。",
+      en: "The noisiest tool caught a real problem the other two missed. No tool can replace the others.",
+    },
+  },
+  {
+    key: "P01:P01-FF-011", family: "undetermined-caller_context", outcome: "undetermined", compact: true,
+    tag: { zh: "补充：无法判断", en: "Extra: undetermined" },
+    title: { zh: "格式串来自调用方，只看库代码定不了", en: "The format string comes from the caller; the library alone cannot decide" },
+    where: "zlib 1.3.2 · gzwrite.c:467 · Flawfinder · vsnprintf",
+    code: ["    len = vsnprintf(next, state->size, format, va);"],
+    hl: [0],
+    why: {
+      zh: "Flawfinder 提示格式字符串风险（CWE-134）：如果 format 被攻击者控制，就可能被利用。",
+      en: "Flawfinder warns of a format-string risk (CWE-134): if an attacker controls format, it could be exploited.",
+    },
+    verdict: {
+      zh: "无法判断。format 原样来自公开接口 gzprintf / gzvprintf 的参数，这是有意设计的格式化接口。它是否安全，取决于实际应用怎么调用（传的是字面量还是外部输入），而这不在库的源码里。",
+      en: "Undetermined. format is passed straight through from the public gzprintf / gzvprintf parameters, an intentional formatting interface. Whether it is safe depends on how the application calls it (a literal or external input), which is not in the library's source.",
+    },
+    lesson: {
+      zh: "有些告警的真假取决于调用方和部署环境，只核查库本身给不出结论。这类告警共 15 条，我们如实标为“无法判断”。",
+      en: "Some alerts depend on the caller and the deployment, so reviewing the library alone cannot settle them. All 15 such alerts are honestly marked undetermined.",
+    },
+  },
+];
+
+function renderKeyCases() {
+  const list = $("kc-list");
+  if (!list) return;
+  const lang = LANG === "en" ? "en" : "zh";
+  const families = Object.fromEntries((SPECIAL_CASES?.cases || []).map((c) => [c.id, c]));
+  let number = 0;
+  list.innerHTML = KEY_CASES.map((c) => {
+    const fam = families[c.family];
+    const code = c.code.map((line, j) => `<span class="kc-line${c.hl.includes(j) ? " is-hl" : ""}">${esc(line) || " "}</span>`).join("");
+    const famText = fam ? `${esc(t("kc_family"))} · ${esc(caseFamilyTitle(fam.family))} · ${fmt(Number(fam.count))}` : "";
+    return `<article class="box kc-card kc-${c.outcome}${c.compact ? " is-compact" : ""}">
+      <header class="kc-head">
+        <span class="kc-no mono">${c.compact ? "+" : ++number}</span>
+        <div class="kc-titles">
+          <div class="kc-tag">${esc(c.tag[lang])}</div>
+          <h3>${esc(c.title[lang])}</h3>
+          <div class="kc-where mono">${esc(c.where)}</div>
+        </div>
+        <span class="badge ${OUTCOME_CLASS[c.outcome]}">${esc(outcomeText(c.outcome))}</span>
+      </header>
+      <pre class="kc-code">${code}</pre>
+      <div class="kc-grid">
+        <div><div class="kc-k">${esc(t("kc_why"))}</div><p>${esc(c.why[lang])}</p></div>
+        <div><div class="kc-k">${esc(t("kc_verdict"))}</div><p>${esc(c.verdict[lang])}</p></div>
+      </div>
+      <div class="kc-lesson"><span class="kc-k">${esc(t("kc_lesson"))}</span><span>${esc(c.lesson[lang])}</span></div>
+      <footer class="kc-foot">
+        <span class="kc-fam">${famText}</span>
+        <button class="ghost kc-open" type="button" data-key="${esc(c.key)}">${esc(t("kc_open"))} →</button>
+      </footer>
+    </article>`;
+  }).join("");
+  list.querySelectorAll(".kc-open").forEach((b) => b.addEventListener("click", () => openDetail(b.dataset.key)));
+  $("kc-takeaway").innerHTML = `<div class="box-head"><span class="box-label">${esc(t("kc_takeaway"))}</span></div>
+    <div class="box-body"><p class="box-intro">${esc(lang === "zh"
+      ? "浅层工具因为不懂语法而误报；深层工具因为不懂项目约定而误报；而真正的问题，可能恰恰藏在噪音最大的工具里。还有一部分告警取决于调用方，只看库代码无法定论。"
+      : "Shallow tools raise false positives because they do not understand syntax; deep tools because they do not know the project's conventions; and real problems may hide in the noisiest tool. Some alerts depend on the caller and cannot be settled from the library alone.")}</p></div>`;
+}
+
 // Pages in presentation order; the footer of each page links to its neighbours, and the
 // arrow keys page through them during a talk.
-const PAGE_ORDER = ["overview", "libs", "tools", "run", "dash", "cases", "conclusion", "reliability"];
+const PAGE_ORDER = ["overview", "libs", "tools", "run", "dash", "cases", "keycases", "conclusion", "reliability"];
 
 function renderPageNav() {
   PAGE_ORDER.forEach((id, index) => {
@@ -1830,6 +1996,7 @@ document.addEventListener("keydown", (event) => {
     setupRun();
     await loadDashboard();
     await loadSpecialCases();
+    renderKeyCases();
     await loadSummary();
     await loadReliability();
     observeCaseFilterPanel();
