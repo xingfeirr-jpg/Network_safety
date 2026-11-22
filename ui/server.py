@@ -31,7 +31,7 @@ sys.path.insert(0, str(UI))
 
 import config as cfg  # noqa: E402
 
-sys.path.insert(0, str(cfg.REPL / "replication"))
+sys.path.insert(0, str(cfg.VENDOR))
 
 import data_loader as dl  # noqa: E402
 from case_analysis import load_special_cases  # noqa: E402
@@ -234,11 +234,25 @@ def host_source_path(container_path: str, project_id: str = ""):
     return None
 
 
-def source_line(container_path: str, line: int, project_id: str = ""):
-    """Return the text of one source line (one-based), or None when the file is unavailable."""
+_BUNDLED_LINES = None
+
+
+def bundled_line(container_path: str, line: int, project_id: str):
+    """Source line from ui/data/source_lines.json (prepared by tools/sync_data.py)."""
+    global _BUNDLED_LINES
+    if _BUNDLED_LINES is None:
+        path = cfg.DATA / "source_lines.json"
+        _BUNDLED_LINES = json.loads(path.read_text(encoding="utf-8")) if path.is_file() else {}
+    return _BUNDLED_LINES.get(f"{project_id}|{container_path}|{line}")
+
+
+def source_line(container_path: str, line: int, project_id: str = "", use_bundle: bool = True):
+    """Return the text of one source line (one-based), or None when the file is unavailable.
+
+    Reads the extracted sources in the runtime cache; falls back to the bundled lines."""
     host = host_source_path(container_path, project_id)
     if host is None or line < 1:
-        return None
+        return bundled_line(container_path, line, project_id) if use_bundle else None
     try:
         with host.open(encoding="utf-8", errors="replace") as stream:
             for number, text in enumerate(stream, 1):
@@ -303,7 +317,7 @@ def start_run(req: RunRequest):
     (out_dir / "results").mkdir()
     # Copy the helper into the data directory so the Docker host can mount it even when
     # this server itself runs inside a container.
-    helper = cfg.RUNTIME / "run_one.py"
+    helper = cfg.HELPERS / "run_one.py"
     shutil.copyfile(UI / "container" / "run_one.py", helper)
     root = cfg.CONTAINER_ROOT
     cmd = [
@@ -359,7 +373,7 @@ def finalize(run_id):
     lib = next(l for l in dl.load_libraries() if l["id"] == lib_id)
     project_id = lib["id"]
     # run directory name comes from the frozen configuration
-    frozen = json.loads((dl.REPL / "config" / "libraries.json").read_text(encoding="utf-8"))
+    frozen = json.loads((cfg.DATA / "libraries.json").read_text(encoding="utf-8"))
     item = next(x for x in frozen["libraries"] if x["id"] == lib_id)
     run_name = item["runs"][tool_key]
     run_dir = run_root / item["results_dir"] / run_name

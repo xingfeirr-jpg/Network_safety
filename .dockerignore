@@ -1,9 +1,0 @@
-.git
-.env
-backup/
-data/
-reports/
-**/__pycache__/
-**/*.pyc
-*.rar
-Project17_Replication/output/results/

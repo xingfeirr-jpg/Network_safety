@@ -11,7 +11,7 @@ import csv
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from config import IMPL, RECORDS, REPL  # noqa: F401  (paths are configured in config.py)
+from config import DATA  # bundled data, see config.py
 
 TOOLS = ["Flawfinder", "Cppcheck", "CodeChecker/clangsa"]
 
@@ -44,7 +44,7 @@ def _read_csv(path):
 
 
 def _matrix_rows():
-    path = RECORDS / "formal_comparison_20261030" / "Final_Matrix.csv"
+    path = DATA / "Final_Matrix.csv"
     return _read_csv(path)
 
 
@@ -151,7 +151,7 @@ def load_reliability(matrix):
     """Describe the two mechanisms that make the experiment trustworthy."""
     import json
 
-    comparison = REPL / "output" / "comparison.csv"
+    comparison = DATA / "comparison.csv"
     comparison_rows = _read_csv(comparison) if comparison.exists() else []
 
     # S1-S5 agreement as recorded by the replication comparison table. Every column
@@ -188,7 +188,7 @@ def load_reliability(matrix):
         except ValueError:
             continue
 
-    config = json.loads((REPL / "config" / "libraries.json").read_text(encoding="utf-8"))
+    config = json.loads((DATA / "libraries.json").read_text(encoding="utf-8"))
     pinned = []
     for lib in config["libraries"]:
         pinned.append(dict(
@@ -202,7 +202,7 @@ def load_reliability(matrix):
 
     # The stratified review plan: important groups are reviewed exhaustively,
     # the large false-positive group is sampled by strata.
-    sampling = REPL / "output" / "human_review" / "sampling_plan.csv"
+    sampling = DATA / "human_review" / "sampling_plan.csv"
     sampling_rows = _read_csv(sampling) if sampling.exists() else []
 
     # The plan groups the review ledger into strata. The part before the pipe
@@ -243,7 +243,7 @@ def load_reliability(matrix):
     population = sum(item["population"] for item in strata)
     sample_size = sum(item["sampled"] for item in strata)
 
-    review_sheet = REPL / "output" / "human_review" / "review_sheet.csv"
+    review_sheet = DATA / "human_review" / "review_sheet.csv"
     sheet_rows = _read_csv(review_sheet) if review_sheet.exists() else []
     filled = sum(1 for row in sheet_rows if (row.get("reviewer_verdict") or "").strip())
 

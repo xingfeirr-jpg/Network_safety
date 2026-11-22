@@ -1,10 +1,11 @@
 """Download and extract the pinned library sources into the shared cache (S1 + S2 only).
 
-The UI shows the source line of every alert, read from <data>/cache/sources. On a fresh
-deployment that folder is empty; run this once to fill it:
+Optional: live runs download what they need themselves, and the source lines of the 725
+reviewed alerts are bundled in ui/data/source_lines.json. Use this to warm the cache
+(<runtime>/cache/sources) in advance:
 
-    docker compose --profile tools run --rm prepare-sources            all ten libraries
-    docker compose --profile tools run --rm prepare-sources P01 P08    selected libraries
+    docker compose run --rm prepare-sources            all ten libraries
+    docker compose run --rm prepare-sources P01 P08    selected libraries
 
 Libraries whose source folder already exists are skipped. Building and running the tools
 is left to live runs from the UI.

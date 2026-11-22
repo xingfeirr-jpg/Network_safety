@@ -15,10 +15,41 @@ const outcomeText = (outcome) => ({ false_positive: t("fp"), supported: t("sup")
 const toolShort = (tool) => tool === "CodeChecker/clangsa" ? "clangsa" : tool;
 const text = (key, vars = {}) => Object.entries(vars).reduce((value, [name, replacement]) => value.replaceAll(`{${name}}`, replacement), t(key));
 
-async function api(path, opts) {
+// Static mode (GitHub Pages build, see ui/tools/build_static.py): the API responses are
+// pre-generated JSON files next to index.html and filtering happens in the browser.
+const STATIC = Boolean(window.P17_STATIC);
+let STATIC_CANDIDATES = null;
+
+async function fetchJson(path, opts) {
   const res = await fetch(path, opts);
   if (!res.ok) throw new Error(`${res.status} ${path}`);
   return res.json();
+}
+
+async function staticApi(path) {
+  const url = new URL(path, "http://x");
+  const route = url.pathname.replace(/^\/api\//, "");
+  if (route === "candidates" || route.startsWith("candidates/")) {
+    if (!STATIC_CANDIDATES) STATIC_CANDIDATES = await fetchJson("api/candidates.json");
+    if (route.startsWith("candidates/")) {
+      const key = decodeURIComponent(route.slice("candidates/".length));
+      const row = STATIC_CANDIDATES.find((r) => r.key === key);
+      if (!row) throw new Error(`404 ${path}`);
+      return row;
+    }
+    const q = url.searchParams;
+    const rows = STATIC_CANDIDATES.filter((r) =>
+      (!q.get("project") || r.project_id === q.get("project")) &&
+      (!q.get("tool") || r.tool === q.get("tool")) &&
+      (!q.get("outcome") || r.outcome === q.get("outcome")));
+    return { total: rows.length, items: rows.slice(0, Number(q.get("limit") || 1000)) };
+  }
+  if (route.startsWith("runs")) throw new Error(t("run_static"));
+  return fetchJson(`api/${route}.json`);
+}
+
+async function api(path, opts) {
+  return STATIC ? staticApi(path) : fetchJson(path, opts);
 }
 
 // ---------- tabs ----------
@@ -229,7 +260,12 @@ function setupRun() {
 
   renderToolRules();
   renderWorkflow();
-  if (!$("run-start").dataset.bound) {
+  if (STATIC) {
+    // Live runs need the server deployment (Docker); the static site only shows the data.
+    $("run-start").disabled = true;
+    $("run-status").dataset.i18n = "run_static";
+    setStatus(t("run_static"), "fail");
+  } else if (!$("run-start").dataset.bound) {
     $("run-start").addEventListener("click", startRun);
     $("run-start").dataset.bound = "true";
   }

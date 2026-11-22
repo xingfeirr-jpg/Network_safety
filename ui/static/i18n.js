@@ -100,6 +100,7 @@ const I18N = {
     k_total: "告警总数", k_fp: "原风险误报", k_sup: "有依据", k_und: "无法判断",
     k_sub_all: "3 款工具 × 10 个库", pct_prefix: "占",
 
+    run_static: "静态演示版不支持实时运行：请使用 Docker 服务器部署（见 README）",
     running_container: "正在启动容器…", running: "运行中，请稍候", done_ok: "运行完成",
     done_fail: "运行结束，退出码", match: "与原实验一致", mismatch: "与原实验不一致",
     alerts_this: "告警数（本次）", alerts_ref: "告警数（原实验）", tool: "工具",
@@ -370,6 +371,7 @@ const I18N = {
     k_total: "Total alerts", k_fp: "False positive", k_sup: "Supported", k_und: "Undetermined",
     k_sub_all: "3 tools × 10 libraries", pct_prefix: "",
 
+    run_static: "Live runs are unavailable in the static demo; use the Docker server deployment (see README)",
     running_container: "Starting container…", running: "Running, please wait", done_ok: "Run finished",
     done_fail: "Run ended, exit code", match: "Matches original study", mismatch: "Differs from original study",
     alerts_this: "Alerts (this run)", alerts_ref: "Alerts (original)", tool: "Tool",

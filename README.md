@@ -19,89 +19,112 @@ We ran three static analysis tools — **Flawfinder 2.0.20**, **Cppcheck 2.13.0*
 │   └── data/                            raw tool output, timing, 725-alert ledger
 ├── Project17_Replication/               one-step Docker replication + analysis
 │   ├── Dockerfile                       Ubuntu 24.04 with the pinned tool versions
-│   ├── config/libraries.json            frozen configuration of the ten libraries
-│   ├── replication/                     pipeline (S1–S5), parsers, comparison (S6)
+│   ├── config/  replication/            frozen configuration, pipeline S1–S6
 │   ├── analysis/  human_review/         figures and stratified human review
-│   └── output/                          replication results used by the UI
-├── ui/                                  web UI (FastAPI + Plotly)
-│   ├── config.py                        all paths, overridable by environment variables
-│   ├── server.py                        API + live runs
-│   ├── container/                       helpers run inside the replication container
+│   └── output/                          replication results
+├── ui/                                  web UI — self-contained
+│   ├── data/                            bundled copies of all data the UI reads
+│   ├── vendor/                          replication parsers (for live-run output)
 │   ├── static/                          front end
+│   ├── container/                       helpers run inside the replication container
+│   ├── tools/                           sync_data.py, build_static.py
+│   ├── config.py  server.py ...         backend (FastAPI)
+│   ├── runtime/                         source cache + live runs (created automatically, git-ignored)
 │   └── Dockerfile
 ├── reports/                             final reports (EN / CN, PDF + DOCX)
-├── docker-compose.yml                   deployment
-├── .env.example                         deployment settings template
-└── data/                                runtime data, created automatically (git-ignored)
+├── .github/workflows/pages.yml          automatic GitHub Pages deployment
+├── docker-compose.yml  .env.example     server deployment
+└── backup/                              presentations, drafts (local only, git-ignored)
 ```
 
-`backup/` (presentations, report drafts, original archive) is kept locally only and is not tracked by git.
+The UI only reads files inside `ui/`. After changing the research packages, refresh its copy with `python ui/tools/sync_data.py`.
 
-## Deployment (Docker, recommended)
+## Two ways to deploy
 
-Requirements: a Linux server with Docker Engine 24+ and the Compose plugin, and outbound internet access (Ubuntu/PyPI packages and the library source archives from GitHub).
+| | GitHub Pages | Docker server |
+| --- | --- | --- |
+| How | push to GitHub — automatic | `docker compose up -d --build` on a server |
+| Cost | free (public repository) | needs a Linux server |
+| Browse libraries, tools, dashboard, alerts, cases, conclusions | ✅ | ✅ |
+| **Live run** (run a tool on a library in Docker) | ❌ needs a backend | ✅ |
+
+GitHub Pages only hosts static files, so it cannot run the Python backend or Docker. The workflow therefore pre-generates every API response as JSON and publishes a static version of the UI; everything works except live runs.
+
+### Option A: GitHub Pages (automatic on push)
+
+1. Push the repository to GitHub.
+2. In the repository go to **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions** (one time).
+3. Every push to `main` runs [`.github/workflows/pages.yml`](.github/workflows/pages.yml), which builds the site with `ui/tools/build_static.py` and publishes it at `https://<user>.github.io/<repo>/`. Progress is visible in the **Actions** tab; you can also run it manually there ("Run workflow").
+
+Pages for private repositories requires a paid GitHub plan; on the free plan make the repository public.
+
+Preview the static build locally:
 
 ```bash
-git clone <your-repo-url> project17 && cd project17
-cp .env.example .env              # edit P17_DATA_DIR (absolute path) and P17_PORT if needed
+pip install -r ui/requirements.txt
+python ui/tools/build_static.py          # writes ui/dist/
+python -m http.server -d ui/dist 8000    # open http://localhost:8000
+```
+
+### Option B: Docker server (full features)
+
+Requirements: Linux with Docker Engine 24+ and the Compose plugin, outbound internet access.
+
+```bash
+git clone <repo-url> project17 && cd project17
+cp .env.example .env              # adjust P17_RUNTIME_DIR (absolute path) and P17_PORT if needed
 docker compose up -d --build
 ```
 
-Then open `http://<server>:8000`.
+Open `http://<server>:8000`. This builds two images:
 
-What `docker compose up` does:
+- `project17-ui` — the web UI and API (data bundled from `ui/`).
+- `project17-replication:1.0` — the pinned analysis tools used by live runs (5–10 minutes the first time).
 
-1. **Builds `project17-replication:1.0`** (the analysis image with the pinned tools; 5–10 minutes the first time) and runs `prepare-sources` once, which downloads and extracts the ten pinned library sources into `$P17_DATA_DIR/cache/sources` and then exits. The UI uses these to show the source line of each alert. Libraries already present are skipped on later starts.
-2. **Builds and starts `project17-ui`**, which serves the UI and the API on port 8000.
-
-### Data paths
-
-All UI paths are defined in [`ui/config.py`](ui/config.py):
-
-| Variable | Default (local) | Purpose |
-| --- | --- | --- |
-| `P17_IMPL_DIR` | `<repo>/Project17_Implementation_and_Data` | original study data, read-only (baked into the image) |
-| `P17_REPL_DIR` | `<repo>/Project17_Replication` | replication package, read-only (baked into the image) |
-| `P17_DATA_DIR` | `<repo>/data` | writable runtime data |
-| `P17_HOST_DATA_DIR` | same as `P17_DATA_DIR` | the data directory as seen by the Docker host |
-| `P17_IMAGE` | `project17-replication:1.0` | image used for live runs |
-
-Runtime data layout:
+Runtime data (written only by live runs) lives in `P17_RUNTIME_DIR`:
 
 ```
-$P17_DATA_DIR/
-├── cache/
-│   ├── downloads/   source archives (SHA-256 checked)
-│   ├── sources/     extracted library sources
-│   ├── build/       build trees + compilation databases (reused across runs)
-│   └── deps/        installed dependencies (zlib for libpng)
-├── runs/<run_id>/   output and progress log of each live run
-└── runtime/         helper script mounted into the replication container
+$P17_RUNTIME_DIR/
+├── cache/downloads/   source archives (SHA-256 checked)
+├── cache/sources/     extracted library sources
+├── cache/build/       build trees + compilation databases, reused across runs
+├── cache/deps/        installed dependencies (zlib for libpng)
+├── runs/<run_id>/     output and progress log of each live run
+└── helpers/           helper script mounted into the replication container
 ```
 
-**Why `P17_DATA_DIR` must be absolute:** a live run started from the UI launches a *sibling* replication container through `/var/run/docker.sock`. Docker resolves `-v` paths on the host, so compose mounts the data directory at the **same absolute path** inside the UI container. That way every path the UI hands to Docker is valid on the host.
-
-### Operations
+**Why it must be an absolute path:** a live run launches a *sibling* replication container through `/var/run/docker.sock`. Docker resolves `-v` paths on the host, so compose mounts the runtime directory at the **same absolute path** inside the UI container; every path the UI hands to Docker is then valid on the host.
 
 ```bash
-docker compose logs -f ui                              # UI logs
-docker compose run --rm prepare-sources P01 P08        # (re)fetch selected library sources
-docker compose up -d --build                           # update after git pull
-docker compose down                                    # stop (data in P17_DATA_DIR is kept)
+docker compose logs -f ui                       # logs
+docker compose run --rm prepare-sources         # optional: pre-fetch all library sources
+git pull && docker compose up -d --build        # update
+docker compose down                             # stop (runtime data is kept)
 ```
 
-On a slow network, set `UBUNTU_MIRROR` and `PIP_INDEX_URL` in `.env` (examples are in `.env.example`); tool versions are pinned, so mirrors do not change results.
+On a slow network set `UBUNTU_MIRROR` / `PIP_INDEX_URL` in `.env` (see `.env.example`); tool versions are pinned, so mirrors do not change results.
 
-> **Security note:** the UI container has access to the host Docker socket in order to start analysis containers. Do not expose port 8000 directly to the public internet; put it behind a reverse proxy with authentication or restrict it by firewall.
+> **Security:** the UI container can use the host Docker socket. Do not expose port 8000 directly to the internet; put it behind an authenticated reverse proxy or restrict it with a firewall.
 
-## Local development (without Docker for the UI)
+### UI configuration
+
+All paths are defined in [`ui/config.py`](ui/config.py); every one is optional.
+
+| Variable | Default | Purpose |
+| --- | --- | --- |
+| `P17_DATA_DIR` | `ui/data` | bundled study data (read-only) |
+| `P17_RUNTIME_DIR` | `ui/runtime` | writable runtime data |
+| `P17_HOST_RUNTIME_DIR` | same as `P17_RUNTIME_DIR` | the runtime directory as seen by the Docker host |
+| `P17_IMAGE` | `project17-replication:1.0` | image used for live runs |
+
+## Local development
 
 ```bash
 pip install -r ui/requirements.txt
 cd ui && uvicorn server:app --reload --port 8000
 ```
 
-Runtime data goes to `<repo>/data`. Live runs still need Docker and the replication image: `docker build -t project17-replication:1.0 Project17_Replication`.
+Live runs also need Docker and the image: `docker build -t project17-replication:1.0 Project17_Replication`.
 
 ## Full replication from the command line
 

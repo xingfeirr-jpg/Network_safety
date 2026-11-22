@@ -46,7 +46,7 @@ def main():
     print(f"[{p.now()}] {lib['id']} {lib['name']} {lib['version']} tool={TOOL_NAMES[tool_key]}", flush=True)
 
     # Reuse the source tree and build from earlier runs when they are complete.
-    # Those folders are mounted from the host (ui/cache), so they persist across runs.
+    # Those folders are mounted from the host (ui/runtime/cache), so they persist across runs.
     if not source_ready(lib):
         archive = p.s1_download(lib, record)
         p.s2_extract(lib, archive, record, log_dir)

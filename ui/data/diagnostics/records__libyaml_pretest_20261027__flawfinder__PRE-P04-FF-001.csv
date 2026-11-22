@@ -1,0 +1,203 @@
+candidateId,runId,tool,severity,riskLevel,rule,category,file,line,column,message,cwe,sourceContext,rawReportBlock,displayOrdinal,rawEvidence,judgment,securityRelevance,sourceEvidence,rootCauseGroup,crossToolMatch,AIInitialJudgment,reviewStatus
+P04-FF-001,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 4,4,sprintf,format,/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c,254,5,Potential format string problem (CWE-134). Make format string constant.,CWE-134,"sprintf((char *)anchor, ANCHOR_TEMPLATE, anchor_id);","/home/yhong/comp5355/sources/libyaml-0.2.5/src/dumper.c:254:5:  [4] (format) sprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+    sprintf((char *)anchor, ANCHOR_TEMPLATE, anchor_id);
+",1,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-002,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 2,2,memcpy,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,108,5,Does not check for buffer overflows when copying to destination (CWE-120). Make sure destination can always hold the source data.,CWE-120,"memcpy(*a_pointer, *b_start, *b_pointer - *b_start);","/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:108:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(*a_pointer, *b_start, *b_pointer - *b_start);
+",2,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-003,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 2,2,memcpy,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,264,5,Does not check for buffer overflows when copying to destination (CWE-120). Make sure destination can always hold the source data.,CWE-120,"memcpy(buffer, parser->input.string.current, size);","/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:264:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(buffer, parser->input.string.current, size);
+",3,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-004,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 2,2,memcpy,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,426,9,Does not check for buffer overflows when copying to destination (CWE-120). Make sure destination can always hold the source data.,CWE-120,    memcpy(emitter->output.string.buffer,"/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:426:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(emitter->output.string.buffer
+",4,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-005,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 2,2,memcpy,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,435,5,Does not check for buffer overflows when copying to destination (CWE-120). Make sure destination can always hold the source data.,CWE-120,memcpy(emitter->output.string.buffer,"/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:435:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(emitter->output.string.buffer
+",5,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-006,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 2,2,memcpy,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,854,5,Does not check for buffer overflows when copying to destination (CWE-120). Make sure destination can always hold the source data.,CWE-120,"memcpy(value_copy, value, length);","/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:854:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(value_copy, value, length);
+",6,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-007,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 2,2,memcpy,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,1225,5,Does not check for buffer overflows when copying to destination (CWE-120). Make sure destination can always hold the source data.,CWE-120,"memcpy(value_copy, value, length);","/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:1225:5:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+    memcpy(value_copy, value, length);
+",7,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-008,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 2,2,char,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c,2210,5,"Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use functions that limit length, or ensure that the size is larger than the maximum possible length.",CWE-119;CWE-120,char indent_hint[2];,"/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:2210:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+    char indent_hint[2];
+",8,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-009,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 2,2,memcpy,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c,613,25,Does not check for buffer overflows when copying to destination (CWE-120). Make sure destination can always hold the source data.,CWE-120,"                    memcpy(tag, tag_directive->prefix, prefix_len);","/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:613:25:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                        memcpy(tag, tag_directive->prefix, prefix_len);
+",9,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-010,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 2,2,memcpy,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c,614,25,Does not check for buffer overflows when copying to destination (CWE-120). Make sure destination can always hold the source data.,CWE-120,"                    memcpy(tag+prefix_len, tag_suffix, suffix_len);","/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:614:25:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+                        memcpy(tag+prefix_len, tag_suffix, suffix_len);
+",10,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-011,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 2,2,memcpy,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c,2595,9,Does not check for buffer overflows when copying to destination (CWE-120). Make sure destination can always hold the source data.,CWE-120,"    memcpy(string.start, head+1, length-1);","/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:2595:9:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+        memcpy(string.start, head+1, length-1);
+",11,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-012,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,741,25,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,                    strlen((char *)tag_directive->handle))),"/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:741:25:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                        strlen((char *)tag_directive->handle)))
+",12,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-013,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,744,25,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,                    strlen((char *)tag_directive->prefix))),"/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:744:25:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                        strlen((char *)tag_directive->prefix)))
+",13,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-014,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,805,34,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,"if (!yaml_check_utf8(anchor, strlen((char *)anchor))) return 0;","/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:805:34:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    if (!yaml_check_utf8(anchor, strlen((char *)anchor))) return 0;
+",14,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-015,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,836,38,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,"    if (!yaml_check_utf8(anchor, strlen((char *)anchor))) goto error;","/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:836:38:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        if (!yaml_check_utf8(anchor, strlen((char *)anchor))) goto error;
+",15,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-016,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,842,35,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,"    if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;","/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:842:35:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;
+",16,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-017,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,848,18,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,    length = strlen((char *)value);,"/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:848:18:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        length = strlen((char *)value);
+",17,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-018,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,886,38,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,"    if (!yaml_check_utf8(anchor, strlen((char *)anchor))) goto error;","/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:886:38:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        if (!yaml_check_utf8(anchor, strlen((char *)anchor))) goto error;
+",18,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-019,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,892,35,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,"    if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;","/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:892:35:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;
+",19,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-020,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,941,38,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,"    if (!yaml_check_utf8(anchor, strlen((char *)anchor))) goto error;","/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:941:38:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        if (!yaml_check_utf8(anchor, strlen((char *)anchor))) goto error;
+",20,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-021,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,947,35,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,"    if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;","/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:947:35:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;
+",21,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-022,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,1082,25,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,                    strlen((char *)tag_directive->handle))),"/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:1082:25:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                        strlen((char *)tag_directive->handle)))
+",22,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-023,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,1085,25,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,                    strlen((char *)tag_directive->prefix))),"/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:1085:25:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                        strlen((char *)tag_directive->prefix)))
+",23,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-024,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,1214,31,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,"if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;","/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:1214:31:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;
+",24,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-025,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,1219,18,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,    length = strlen((char *)value);,"/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:1219:18:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        length = strlen((char *)value);
+",25,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-026,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,1266,31,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,"if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;","/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:1266:31:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;
+",26,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-027,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c,1311,31,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,"if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;","/home/yhong/comp5355/sources/libyaml-0.2.5/src/api.c:1311:31:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    if (!yaml_check_utf8(tag, strlen((char *)tag))) goto error;
+",27,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-028,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c,628,29,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,                        strlen((char *)tag_directive->handle))),"/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:628:29:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                            strlen((char *)tag_directive->handle)))
+",28,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-029,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c,631,29,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,"                        strlen((char *)tag_directive->prefix), 1))","/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:631:29:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                            strlen((char *)tag_directive->prefix), 1))
+",29,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-030,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c,1379,21,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,handle_length = strlen((char *)tag_directive.handle);,"/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:1379:21:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    handle_length = strlen((char *)tag_directive.handle);
+",30,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-031,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c,1380,21,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,prefix_length = strlen((char *)tag_directive.prefix);,"/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:1380:21:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    prefix_length = strlen((char *)tag_directive.prefix);
+",31,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-032,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c,1428,21,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,anchor_length = strlen((char *)anchor);,"/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:1428:21:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    anchor_length = strlen((char *)anchor);
+",32,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-033,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c,1465,18,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,tag_length = strlen((char *)tag);,"/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:1465:18:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    tag_length = strlen((char *)tag);
+",33,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-034,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c,1475,32,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,    size_t prefix_length = strlen((char *)tag_directive->prefix);,"/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:1475:32:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        size_t prefix_length = strlen((char *)tag_directive->prefix);
+",34,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-035,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c,1482,17,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,            strlen((char *)tag_directive->handle);,"/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:1482:17:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                strlen((char *)tag_directive->handle);
+",35,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-036,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c,1815,24,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,indicator_length = strlen(indicator);,"/home/yhong/comp5355/sources/libyaml-0.2.5/src/emitter.c:1815:24:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    indicator_length = strlen(indicator);
+",36,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-037,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c,606,45,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,                    size_t prefix_len = strlen((char *)tag_directive->prefix);,"/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:606:45:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                        size_t prefix_len = strlen((char *)tag_directive->prefix);
+",37,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-038,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c,607,45,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,                    size_t suffix_len = strlen((char *)tag_suffix);,"/home/yhong/comp5355/sources/libyaml-0.2.5/src/parser.c:607:45:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+                        size_t suffix_len = strlen((char *)tag_suffix);
+",38,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-039,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c,2438,61,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,    if (handle[0] == '!' && handle[1] != '\0' && handle[strlen((char *)handle)-1] == '!'),"/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:2438:61:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+        if (handle[0] == '!' && handle[1] != '\0' && handle[strlen((char *)handle)-1] == '!')
+",39,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查
+P04-FF-040,PRE-P04-FF-001,Flawfinder 2.0.20,risk level 1,1,strlen,buffer,/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c,2574,28,Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).,CWE-126,size_t length = head ? strlen((char *)head) : 0;,"/home/yhong/comp5355/sources/libyaml-0.2.5/src/scanner.c:2574:28:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    size_t length = head ? strlen((char *)head) : 0;
+
+",40,../libyaml_pretest_20261027/flawfinder/PRE-P04-FF-001/stdout.txt,未核查,待源码证据核查,,未分组,其余两工具待运行,未开始,未核查

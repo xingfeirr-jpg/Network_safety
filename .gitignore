@@ -13,8 +13,13 @@ __pycache__/
 .venv/
 # Local deployment settings
 .env
-# Runtime data: source cache and live-run output (see ui/config.py)
-data/
+# UI runtime data (source cache, live-run output) and static build output
+ui/runtime/
+ui/dist/
+_site/
 # Archived material (presentations, old report drafts, original archive)
 backup/
 *.rar
+# legacy runtime folders from older UI versions
+ui/runs/
+ui/cache/

@@ -1,0 +1,4 @@
+﻿candidateId,runId,tool,file,line,column,severity,rule,category,toolMessage,plistFile,plistDiagnosticIndex,issueHash,parseDisplayOrdinal,triageStatus
+P01-CC-001,PRE-P01-CC-001,CodeChecker/clangsa,/home/yhong/comp5355/sources/zlib-v1.3.2/gzwrite.c,303,44,HIGH,core.DivideZero,Logic error,Division by zero,reports/gzwrite.c_clangsa_53315e2272f08694c785b09b48b5f47d.plist,0,cd041ff0435af1626e749e873638ae07,1,未核查
+P01-CC-002,PRE-P01-CC-001,CodeChecker/clangsa,/home/yhong/comp5355/sources/zlib-v1.3.2/gzwrite.c,480,5,LOW,deadcode.DeadStores,Unused code,Value stored to 'ret' is never read,reports/gzwrite.c_clangsa_53315e2272f08694c785b09b48b5f47d.plist,1,7634ae2d1689cce6cfd1f021e4932a37,2,未核查
+P01-CC-003,PRE-P01-CC-001,CodeChecker/clangsa,/home/yhong/comp5355/sources/zlib-v1.3.2/gzread.c,464,43,HIGH,core.DivideZero,Logic error,Division by zero,reports/gzread.c_clangsa_479d573cdadb744e9d6b6415356ed4af.plist,0,ca97e360c66ce54ffc47272c91e05f98,3,未核查

@@ -8,7 +8,7 @@ import csv
 from collections import Counter
 from pathlib import Path
 
-from config import IMPL, RECORDS, REPL  # noqa: F401  (paths are configured in config.py)
+from config import DATA  # bundled data, see config.py
 
 LABEL_EN = {
     "原风险误报": "false_positive",
@@ -27,8 +27,7 @@ def _read_csv(path):
 def _source_context_map():
     """Map (project, original alert id) to the source line captured by the tool."""
     contexts = {}
-    root = RECORDS.parent
-    for path in root.glob("**/diagnostics.csv"):
+    for path in sorted((DATA / "diagnostics").glob("*.csv")):
         try:
             rows = _read_csv(path)
         except OSError:
@@ -45,7 +44,7 @@ def _source_context_map():
 
 def load_matrix():
     """30 rows: one per library and tool, with counts, verdicts and cost."""
-    rows = _read_csv(RECORDS / "formal_comparison_20261030" / "Final_Matrix.csv")
+    rows = _read_csv(DATA / "Final_Matrix.csv")
     result = []
     for r in rows:
         result.append(dict(
@@ -63,7 +62,7 @@ def load_matrix():
 def load_libraries():
     """Ten libraries: one row per library from the file counts in the replication package."""
     import json
-    config = json.loads((REPL / "config" / "libraries.json").read_text(encoding="utf-8"))
+    config = json.loads((DATA / "libraries.json").read_text(encoding="utf-8"))
     libs = []
     for lib in config["libraries"]:
         libs.append(dict(
@@ -81,7 +80,7 @@ def load_candidates():
 
     Manual review columns are omitted on purpose.
     """
-    rows = _read_csv(RECORDS / "ten_project_synthesis_20261029" / "Candidate_Review_Combined.csv")
+    rows = _read_csv(DATA / "Candidate_Review_Combined.csv")
     contexts = cached_contexts()
     out = []
     for r in rows:

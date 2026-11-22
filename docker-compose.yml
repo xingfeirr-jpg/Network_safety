@@ -1,25 +1,25 @@
 # Project 17 deployment.
 #
-#   cp .env.example .env          # set P17_DATA_DIR (absolute path) and P17_PORT
+#   cp .env.example .env          # set P17_RUNTIME_DIR (absolute path) and P17_PORT
 #   docker compose up -d --build
 #
 # Services
 #   ui               web UI on http://<host>:${P17_PORT}
-#   prepare-sources  builds the replication image (project17-replication:1.0) used by live
-#                    runs, then downloads and extracts the ten pinned library sources into
-#                    the data directory once and exits. Already present sources are skipped.
+#   replication-image  builds project17-replication:1.0 (pinned analysis tools) used by
+#                      live runs, then exits immediately
+#   prepare-sources    optional (profile "tools"): pre-fetch library sources into the cache
 #
-# P17_DATA_DIR is mounted at the SAME absolute path inside the UI container. The UI starts
+# The UI's study data is bundled in ui/data (no mount needed). Only the writable runtime
+# directory is mounted, at the SAME absolute path inside the UI container: the UI starts
 # replication containers through the host Docker socket, and Docker resolves `-v` paths on
 # the host, so the path must mean the same thing on both sides.
 
-x-data-dir: &data_dir ${P17_DATA_DIR:-/srv/project17/data}
+x-runtime-dir: &runtime_dir ${P17_RUNTIME_DIR:-/srv/project17/runtime}
 
 services:
   ui:
     build:
-      context: .
-      dockerfile: ui/Dockerfile
+      context: ./ui
       args:
         PIP_INDEX_URL: ${PIP_INDEX_URL:-}
     image: project17-ui:latest
@@ -28,18 +28,19 @@ services:
     ports:
       - "${P17_PORT:-8000}:8000"
     environment:
-      P17_DATA_DIR: *data_dir
-      P17_HOST_DATA_DIR: *data_dir
+      P17_RUNTIME_DIR: *runtime_dir
+      P17_HOST_RUNTIME_DIR: *runtime_dir
       P17_IMAGE: project17-replication:1.0
     volumes:
       - type: bind
-        source: *data_dir
-        target: *data_dir
+        source: *runtime_dir
+        target: *runtime_dir
         bind:
           create_host_path: true
       - /var/run/docker.sock:/var/run/docker.sock
 
-  prepare-sources:
+  # Builds the replication image (pinned analysis tools) used by live runs, then exits.
+  replication-image:
     build:
       context: ./Project17_Replication
       args:
@@ -47,8 +48,15 @@ services:
         PIP_INDEX_URL: ${PIP_INDEX_URL:-}
     image: project17-replication:1.0
     restart: "no"
+    entrypoint: ["true"]
+
+  # Optional: pre-download and extract library sources into the runtime cache.
+  #   docker compose run --rm prepare-sources [P01 P08 ...]
+  prepare-sources:
+    image: project17-replication:1.0
+    profiles: ["tools"]
     entrypoint: ["python3", "/replication/prepare_sources.py"]
     volumes:
-      - ${P17_DATA_DIR:-/srv/project17/data}/cache/downloads:/home/yhong/comp5355/downloads
-      - ${P17_DATA_DIR:-/srv/project17/data}/cache/sources:/home/yhong/comp5355/sources
+      - ${P17_RUNTIME_DIR:-/srv/project17/runtime}/cache/downloads:/home/yhong/comp5355/downloads
+      - ${P17_RUNTIME_DIR:-/srv/project17/runtime}/cache/sources:/home/yhong/comp5355/sources
       - ./ui/container/prepare_sources.py:/replication/prepare_sources.py:ro
