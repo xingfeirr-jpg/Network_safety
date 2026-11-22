@@ -1,0 +1,7 @@
+# Scripts and Docker files must keep LF endings so containers can run them,
+# even when the repository is checked out on Windows.
+*.sh        text eol=lf
+*.py        text eol=lf
+Dockerfile  text eol=lf
+*.yml       text eol=lf
+.env.example text eol=lf

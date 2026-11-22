@@ -65,20 +65,22 @@
       <p data-i18n="libs_p">每个库是一个固定版本的开源 C 项目。下表显示它的领域、规模和三款工具各自读到的内容。点击一行可查看该库的详细数据。</p>
     </div>
 
-    <div class="lib-filter card">
-      <label><span data-i18n="lib_filter_lib">库</span>
-        <select id="pie-lib"></select>
-      </label>
-      <label><span data-i18n="lib_filter_view">视图</span>
-        <select id="pie-view">
-          <option value="tool" data-i18n="lib_view_tool">按工具</option>
-          <option value="outcome" data-i18n="lib_view_outcome">按判定结果</option>
-        </select>
-      </label>
+    <div class="card lib-picker">
       <h3 data-i18n="chart_pie_h">每个库的告警构成</h3>
+      <div class="lib-picker-controls">
+        <label><span data-i18n="lib_filter_lib">库</span>
+          <select id="pie-lib"></select>
+        </label>
+        <label><span data-i18n="lib_filter_view">视图</span>
+          <select id="pie-view">
+            <option value="tool" data-i18n="lib_view_tool">按工具</option>
+            <option value="outcome" data-i18n="lib_view_outcome">按判定结果</option>
+          </select>
+        </label>
+      </div>
     </div>
 
-    <div class="lib-pie-wrap card">
+    <div class="lib-pie-wrap card" id="lib-pie-section">
       <div id="chart-lib-pie" class="lib-pie"></div>
       <div id="lib-pie-side" class="lib-pie-side"></div>
     </div>
@@ -109,15 +111,6 @@
       <div class="rule-grid" id="tool-rules"></div>
     </div>
 
-    <div class="card">
-      <h3 data-i18n="tool_same_example">同一条代码，三种反应</h3>
-      <p class="muted" data-i18n="tool_same_example_p">utf8proc 里有一个整数参数恰好叫 <code>strlen</code>：</p>
-      <pre class="code-line">utf8proc_iterate(const uint8_t *str, utf8proc_ssize_t strlen, int32_t *dst) {
-  if (!strlen) return 0;
-  end = str + ((strlen &lt; 0) ? 4 : strlen);
-}</pre>
-      <div class="same-example-grid" id="tool-same-example"></div>
-    </div>
   </section>
 
   <!-- ============ Tab 3: live run ============ -->
@@ -319,10 +312,6 @@
       <div class="rel-table-wrap"><table class="data" id="rel-strata-table"></table></div>
     </div>
 
-    <div class="card">
-      <h3 data-i18n="rel_limits_h">已知局限</h3>
-      <div class="rel-limits" id="rel-limits"></div>
-    </div>
   </section>
 </main>
 

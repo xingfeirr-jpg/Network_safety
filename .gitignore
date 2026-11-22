@@ -1,16 +1,20 @@
-﻿# Office 临时锁文件
+# Office lock files
 ~$*
-# 系统生成文件
+# OS files
 Thumbs.db
 desktop.ini
 .DS_Store
-# 临时文件
+# Temporary files
 *.tmp
 *.log.tmp
-# Python 缓存
+# Python cache
 __pycache__/
 *.pyc
-# 第三方依赖构建缓存（可由 downloads/sources 重建）
-ui/cache/
-# 容器运行日志（运行时生成）
-ui/runs/
+.venv/
+# Local deployment settings
+.env
+# Runtime data: source cache and live-run output (see ui/config.py)
+data/
+# Archived material (presentations, old report drafts, original archive)
+backup/
+*.rar

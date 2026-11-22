@@ -8,10 +8,7 @@ import csv
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-IMPL = ROOT / "project17" / "Project17_Implementation_and_Data"
-REPL = ROOT / "project17" / "Project17_Replication"
-RECORDS = IMPL / "data" / "records"
+from config import IMPL, RECORDS, REPL  # noqa: F401  (paths are configured in config.py)
 
 LABEL_EN = {
     "原风险误报": "false_positive",

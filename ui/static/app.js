@@ -89,10 +89,7 @@ async function loadLibs() {
       </div></div>`;
   }).join("");
 
-  document.querySelectorAll(".lib-card").forEach((el) => el.addEventListener("click", () => {
-    $("run-lib").value = el.dataset.id;
-    document.querySelector('.tab[data-tab="run"]').click();
-  }));
+  document.querySelectorAll(".lib-card").forEach((el) => el.addEventListener("click", () => selectLibrary(el.dataset.id)));
 
   const rows = LIBS.map((l) => ({ name: l.name, sz: byLib[l.id]?.FF?.intended || 0, cc: byLib[l.id]?.CC?.intended || 0 }));
   Plotly.newPlot("chart-lib-size", [
@@ -105,6 +102,8 @@ async function loadLibs() {
       <td class="num">${fmt(byLib[l.id]?.FF?.intended)}</td><td class="num">${fmt(byLib[l.id]?.CC?.intended)}</td>
       <td class="num">${fmt(byLib[l.id]?.FF?.candidates)}</td><td class="num">${fmt(byLib[l.id]?.CP?.candidates)}</td>
       <td class="num">${fmt(byLib[l.id]?.CC?.candidates)}</td></tr>`).join("") + "</tbody>";
+
+  document.querySelectorAll("#lib-table tr.clickable").forEach((row) => row.addEventListener("click", () => selectLibrary(row.dataset.id)));
 
   setupLibPie(byLib);
   renderOverview();
@@ -131,8 +130,24 @@ function setupLibPie(byLib) {
   renderLibPie();
 }
 
+// Click on a library card or table row: select it in the pie picker and scroll the pie into view.
+function selectLibrary(id) {
+  LIB_PIE_LIB = id;
+  $("pie-lib").value = id;
+  renderLibPie();
+  const section = $("lib-pie-section");
+  const topbar = document.querySelector(".topbar");
+  const offset = (topbar ? topbar.getBoundingClientRect().height : 0) + 16;
+  window.scrollTo({ top: section.getBoundingClientRect().top + window.scrollY - offset, behavior: "smooth" });
+}
+
+function markSelectedLibrary() {
+  document.querySelectorAll(".lib-card, #lib-table tr.clickable").forEach((el) => el.classList.toggle("selected", el.dataset.id === LIB_PIE_LIB));
+}
+
 async function renderLibPie() {
   if (!LIB_PIE_LIB) return;
+  markSelectedLibrary();
   const detail = await api(`/api/library-detail/${encodeURIComponent(LIB_PIE_LIB)}`);
 
   let labels = [];
@@ -168,10 +183,13 @@ async function renderLibPie() {
     labels,
     values,
     marker: { colors, line: { color: "#fff", width: 2 } },
-    textinfo: "label+percent",
+    textinfo: "percent",
+    textposition: "outside",
+    automargin: true,
     textfont: { size: 12 },
+    sort: false,
     hovertemplate: `%{label}<br>%{value} (${LANG === "zh" ? "占" : ""}%{percent})<extra></extra>`,
-  }], { ...theme, margin: { t: 16, r: 16, b: 16, l: 16 } }, PLOT_CFG);
+  }], { ...theme, showlegend: false, margin: { t: 44, r: 44, b: 44, l: 44 } }, PLOT_CFG);
 
   const rows = labels.map((label, index) => `<div class="lib-pie-row">
     <span class="dot" style="background:${colors[index]}"></span>
@@ -223,7 +241,7 @@ function setupRun() {
 //   Cppcheck    -> severity (warning / style / performance / portability / information) + check id
 //   CodeChecker -> checker category (Logic error / API / Unused code / Suspicious operation) + checker name
 // The rule sets and counts come from the frozen configuration and the saved study output
-// (project17/Project17_Replication/config/libraries.json, .../data/records/*/).
+// (Project17_Replication/config/libraries.json, .../data/records/*/).
 const TOOL_RULES = {
   zh: [
     {
@@ -490,6 +508,20 @@ function renderResult(result) {
 let CANDIDATES = [];
 let DASH = null;
 
+// Stacked verdict bars per tool. Drawn both on the overview and the dashboard.
+function drawVerdictChart(target, v, outs, chartTheme) {
+  Plotly.newPlot(target, outs.map((outcome) => ({
+    type: "bar", name: outcomeText(outcome), x: TOOLS, y: TOOLS.map((tool) => v[tool][outcome]),
+    marker: { color: OUTCOME_COLOR[outcome] },
+    hovertemplate: `%{x}<br>${outcomeText(outcome)}: %{y}<extra></extra>`,
+  })), {
+    ...chartTheme,
+    barmode: "stack",
+    margin: { t: 24, r: 20, b: 90, l: 60 },
+    automargin: true,
+  }, PLOT_CFG);
+}
+
 async function loadDashboard() {
   DASH = await api("/api/dashboard");
   const v = DASH.verdict;
@@ -512,16 +544,8 @@ async function loadDashboard() {
   };
   // No text on the bars: the counts show in the hover tooltip instead, so nothing
   // overlaps the slices or the axis.
-  Plotly.newPlot("chart-verdict", outs.map((outcome) => ({
-    type: "bar", name: outcomeText(outcome), x: TOOLS, y: TOOLS.map((tool) => v[tool][outcome]),
-    marker: { color: OUTCOME_COLOR[outcome] },
-    hovertemplate: `%{x}<br>${outcomeText(outcome)}: %{y}<extra></extra>`,
-  })), {
-    ...chartTheme,
-    barmode: "stack",
-    margin: { t: 24, r: 20, b: 90, l: 60 },
-    automargin: true,
-  }, PLOT_CFG);
+  drawVerdictChart("chart-verdict", v, outs, chartTheme);
+  drawVerdictChart("chart-overview", v, outs, chartTheme);
 
   const projects = Object.keys(DASH.by_project);
   Plotly.newPlot("chart-project", outs.map((outcome) => ({
@@ -1174,10 +1198,6 @@ function renderReliability() {
       <td class="num"><b>${rev.population ? ((100 * rev.sample_size / rev.population).toFixed(1)) : "0"}%</b></td>
     </tr></tfoot>`;
 
-  const limits = ["rel_limit1", "rel_limit2", "rel_limit3", "rel_limit4", "rel_limit5"];
-  $("rel-limits").innerHTML = limits.map((key, index) => `<div class="rel-limit">
-    <span class="rel-limit-num">${index + 1}</span><span>${esc(t(key))}</span>
-  </div>`).join("");
 }
 
 // ---------- boot ----------

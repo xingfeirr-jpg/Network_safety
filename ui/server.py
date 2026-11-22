@@ -13,6 +13,7 @@ Endpoints
 """
 import asyncio
 import json
+import shutil
 import subprocess
 import sys
 import time
@@ -27,7 +28,10 @@ from pydantic import BaseModel
 
 UI = Path(__file__).resolve().parent
 sys.path.insert(0, str(UI))
-sys.path.insert(0, str(UI.parent / "project17" / "Project17_Replication" / "replication"))
+
+import config as cfg  # noqa: E402
+
+sys.path.insert(0, str(cfg.REPL / "replication"))
 
 import data_loader as dl  # noqa: E402
 from case_analysis import load_special_cases  # noqa: E402
@@ -37,9 +41,10 @@ from parsers import (  # noqa: E402
 )
 from summary import load_reliability, load_summary  # noqa: E402
 
-RUNS = UI / "runs"
-RUNS.mkdir(exist_ok=True)
-IMAGE = "project17-replication:1.0"
+cfg.ensure_dirs()
+RUNS = cfg.RUNS
+CACHE = cfg.CACHE
+IMAGE = cfg.IMAGE
 LIBRARY_IDS = {lib["id"] for lib in dl.load_libraries()}
 TOOL_KEYS = {"FF", "CP", "CC"}
 
@@ -69,6 +74,11 @@ def candidates():
 
 def libraries():
     return cached("libraries", dl.load_libraries)
+
+
+@app.get("/healthz")
+def healthz():
+    return dict(status="ok")
 
 
 @app.get("/")
@@ -191,7 +201,7 @@ class RunRequest(BaseModel):
     tool: str
 
 
-CONTAINER_ROOT = "/home/yhong/comp5355/"
+CONTAINER_ROOT = cfg.CONTAINER_ROOT + "/"
 SOURCE_PREFIXES = {
     "P01": "sources/zlib-v1.3.2",
     "P02": "sources/lz4-v1.10.0",
@@ -212,13 +222,13 @@ def host_source_path(container_path: str, project_id: str = ""):
         return None
     if container_path.startswith(CONTAINER_ROOT):
         relative = container_path[len(CONTAINER_ROOT):]
-        host = UI / "cache" / Path(relative)
+        host = CACHE / Path(relative)
         if host.is_file():
             return host
     # Some original Flawfinder records, notably libpng, store repository-relative paths.
     prefix = SOURCE_PREFIXES.get(project_id)
     if prefix:
-        host = UI / "cache" / prefix / Path(container_path)
+        host = CACHE / prefix / Path(container_path)
         if host.is_file():
             return host
     return None
@@ -284,21 +294,25 @@ def read_time(run_dir: Path):
 def start_run(req: RunRequest):
     if req.library not in LIBRARY_IDS or req.tool not in TOOL_KEYS:
         raise HTTPException(400, "unknown library or tool")
+    if shutil.which("docker") is None:
+        raise HTTPException(503, "docker CLI not available on the server")
     run_id = uuid.uuid4().hex[:12]
     out_dir = RUNS / run_id
     out_dir.mkdir(parents=True)
-    cache = UI / "cache"
-    for sub in ("sources", "build", "deps", "downloads"):
-        (cache / sub).mkdir(parents=True, exist_ok=True)
+    cfg.ensure_dirs()
+    (out_dir / "results").mkdir()
+    # Copy the helper into the data directory so the Docker host can mount it even when
+    # this server itself runs inside a container.
+    helper = cfg.RUNTIME / "run_one.py"
+    shutil.copyfile(UI / "container" / "run_one.py", helper)
+    root = cfg.CONTAINER_ROOT
     cmd = [
         "docker", "run", "--rm",
         "-e", "MSYS_NO_PATHCONV=1",
-        "-v", f"{out_dir / 'results'}:/home/yhong/comp5355/results",
-        "-v", f"{cache / 'downloads'}:/home/yhong/comp5355/downloads",
-        "-v", f"{cache / 'sources'}:/home/yhong/comp5355/sources",
-        "-v", f"{cache / 'build'}:/home/yhong/comp5355/build",
-        "-v", f"{cache / 'deps'}:/home/yhong/comp5355/deps",
-        "-v", f"{UI / 'container' / 'run_one.py'}:/replication/run_one.py:ro",
+        "-v", f"{cfg.host_path(out_dir / 'results')}:{root}/results",
+        *[arg for sub in cfg.CACHE_SUBDIRS
+          for arg in ("-v", f"{cfg.host_path(CACHE / sub)}:{root}/{sub}")],
+        "-v", f"{cfg.host_path(helper)}:/replication/run_one.py:ro",
         "--entrypoint", "python3",
         IMAGE, "/replication/run_one.py", req.library, req.tool,
     ]
