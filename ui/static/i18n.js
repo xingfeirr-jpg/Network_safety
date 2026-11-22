@@ -543,6 +543,28 @@ const I18N = {
   },
 };
 
+// Research-stage labels for the navigation (structure only; page content is unchanged).
+Object.assign(I18N.zh, {
+  stage_1: "问题", stage_2: "输入", stage_3: "过程", stage_4: "结果", stage_5: "结论",
+  stage_word: "阶段",
+  page_prev: "上一页", page_next: "下一页",
+  concl_col_total_time: "总耗时",
+  mode_present: "开始讲解", mode_explore: "退出讲解",
+  deck_fullscreen: "全屏 F", deck_exit: "退出讲解 Esc", deck_explore: "查看完整页面", deck_replay: "回放一次真实运行",
+  run_replay: "回放真实记录", replay_running: "回放中", replay_done: "回放完成", replay_badge: "回放",
+  replay_note: "回放复现时保存的真实输出（{date}），不是现场重新运行",
+});
+Object.assign(I18N.en, {
+  stage_1: "Question", stage_2: "Input", stage_3: "Process", stage_4: "Results", stage_5: "Conclusion",
+  stage_word: "Stage",
+  page_prev: "Previous", page_next: "Next",
+  concl_col_total_time: "Total runtime",
+  mode_present: "Start talk", mode_explore: "Exit talk",
+  deck_fullscreen: "Full screen F", deck_exit: "Exit Esc", deck_explore: "Open full page", deck_replay: "Replay a real run",
+  run_replay: "Replay recorded run", replay_running: "Replaying", replay_done: "Replay finished", replay_badge: "Replay",
+  replay_note: "Replaying the output saved during replication ({date}); nothing is executed now",
+});
+
 let LANG = localStorage.getItem("p17-lang") || "zh";
 
 function t(key) {
@@ -553,6 +575,7 @@ function applyStaticText() {
   document.documentElement.lang = LANG === "zh" ? "zh-CN" : "en";
   document.title = LANG === "zh" ? "Project 17 · 静态漏洞检测工具对比" : "Project 17 · Static detector comparison";
   document.querySelectorAll("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => { el.placeholder = t(el.dataset.i18nPlaceholder); });
 }
 
 function setLanguage(lang) {
