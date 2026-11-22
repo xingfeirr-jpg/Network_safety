@@ -1,12 +1,53 @@
 const TOOL_LABEL = { FF: "Flawfinder", CP: "Cppcheck", CC: "CodeChecker/clangsa" };
 const TOOL_CLASS = { Flawfinder: "b-ff", Cppcheck: "b-cp", "CodeChecker/clangsa": "b-cc" };
 const OUTCOME_CLASS = { false_positive: "b-fp", supported: "b-sup", undetermined: "b-und" };
-const OUTCOME_COLOR = { false_positive: "#94a3b8", supported: "#1f9d55", undetermined: "#d97706" };
 const TOOLS = ["Flawfinder", "Cppcheck", "CodeChecker/clangsa"];
 const DOMAIN = { zlib: "compression", LZ4: "compression", cJSON: "JSON", "json-c": "JSON", yyjson: "JSON", libyaml: "YAML", Expat: "XML", libpng: "image", "libjpeg-turbo": "image", utf8proc: "Unicode" };
 
+// Design tokens shared with style.css (keep the two in sync).
+const DS = {
+  ink: "#0e1116", muted: "#5d6672", faint: "#9aa3ae", line: "#e3e6eb", panel: "#ffffff",
+  sans: '-apple-system, BlinkMacSystemFont, "Inter", "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif',
+  mono: 'ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace',
+  outcome: { false_positive: "#d9dde3", supported: "#f0601a", undetermined: "#6b7a90" },
+  tool: { Flawfinder: "#3e63dd", Cppcheck: "#12a594", "CodeChecker/clangsa": "#8e4ec6" },
+  neutral: ["#3b4452", "#b4bdc9"],
+};
+const OUTCOME_COLOR = DS.outcome;
+const TOOL_COLOR = DS.tool;
+// Display order for verdicts: the rare, important ones first.
+const OUTCOMES = ["supported", "undetermined", "false_positive"];
+
 const PLOT_CFG = { displayModeBar: false, responsive: true };
-const PLOT_LAYOUT = { margin: { t: 10, r: 20, b: 50, l: 60 }, font: { family: "Microsoft YaHei, sans-serif", size: 12 }, paper_bgcolor: "rgba(0,0,0,0)", plot_bgcolor: "rgba(0,0,0,0)", legend: { orientation: "h", y: -0.2 } };
+
+// One Plotly theme for every chart: transparent background, hairline grid, mono ticks.
+function plotLayout(extra = {}) {
+  const axis = { gridcolor: DS.line, zeroline: false, linecolor: DS.line, tickfont: { family: DS.mono, size: 10.5, color: DS.faint }, fixedrange: true, automargin: true };
+  return {
+    paper_bgcolor: "rgba(0,0,0,0)", plot_bgcolor: "rgba(0,0,0,0)",
+    font: { family: DS.sans, size: 12, color: DS.muted },
+    margin: { t: 8, r: 16, b: 36, l: 48 },
+    showlegend: false,
+    hoverlabel: { bgcolor: DS.ink, bordercolor: DS.ink, font: { family: DS.sans, color: "#fff", size: 12 } },
+    ...extra,
+    xaxis: { ...axis, ...(extra.xaxis || {}) },
+    yaxis: { ...axis, ...(extra.yaxis || {}) },
+  };
+}
+// Category axis with readable labels (tool / library names).
+const CATEGORY_AXIS = { showgrid: false, linecolor: "rgba(0,0,0,0)", tickfont: { family: DS.sans, size: 12.5, color: DS.ink }, ticksuffix: "  " };
+
+function outcomeMarker(outcome) {
+  return outcome === "undetermined"
+    ? { color: DS.panel, line: { color: DS.outcome[outcome], width: 1 }, pattern: { shape: "/", fgcolor: DS.outcome[outcome], size: 5, solidity: 0.35 } }
+    : { color: DS.outcome[outcome], line: { width: 0 } };
+}
+
+function renderLegend(id, items) {
+  $(id).innerHTML = items.map(([label, cls, color]) => `<span class="lg"><i class="sw ${cls || ""}"${color ? ` style="background:${color}"` : ""}></i>${esc(label)}</span>`).join("");
+}
+const outcomeLegend = (id) => renderLegend(id, OUTCOMES.map((o) => [outcomeText(o), `sw-${o}`]));
+const toolLegend = (id) => renderLegend(id, TOOLS.map((tool) => [toolShort(tool), "", TOOL_COLOR[tool]]));
 
 const $ = (id) => document.getElementById(id);
 const fmt = (n) => (n === null || n === undefined || Number.isNaN(n)) ? "-" : Number(n).toLocaleString(LANG === "en" ? "en-US" : "zh-CN");
@@ -44,6 +85,7 @@ async function staticApi(path) {
       (!q.get("outcome") || r.outcome === q.get("outcome")));
     return { total: rows.length, items: rows.slice(0, Number(q.get("limit") || 1000)) };
   }
+  if (route.startsWith("replay/")) return fetchJson(`api/replay/${route.slice("replay/".length).replace("/", "-")}.json`);
   if (route.startsWith("runs")) throw new Error(t("run_static"));
   return fetchJson(`api/${route}.json`);
 }
@@ -53,26 +95,68 @@ async function api(path, opts) {
 }
 
 // ---------- tabs ----------
-function switchTab(name) {
+// Highlight a page in the stage navigation without changing what is shown.
+function setNavState(name) {
   document.querySelectorAll(".tab").forEach((b) => b.classList.toggle("active", b.dataset.tab === name));
+  const current = Number(document.querySelector(`.tab[data-tab="${name}"]`)?.closest(".stage")?.dataset.stage || 1);
+  document.querySelectorAll(".stage").forEach((st) => {
+    const n = Number(st.dataset.stage);
+    st.classList.toggle("is-done", n < current);
+    st.classList.toggle("is-current", n === current);
+  });
+  // On phones the stage bar scrolls sideways; keep the current page in view.
+  const stages = $("stages");
+  const activeTab = document.querySelector(`.tab[data-tab="${name}"]`);
+  if (stages && activeTab && stages.scrollWidth > stages.clientWidth + 1) {
+    stages.scrollTo({ left: activeTab.closest(".stage").offsetLeft - 14, behavior: "smooth" });
+  }
+}
+
+function switchTab(name) {
+  if (PRESENTING) exitDeck();
+  setNavState(name);
   document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("active", p.id === name));
   window.scrollTo({ top: 0, behavior: "smooth" });
   window.dispatchEvent(new Event("resize"));
 }
 
-document.querySelectorAll(".tab").forEach((btn) => btn.addEventListener("click", () => switchTab(btn.dataset.tab)));
+// Height covered by the navigation at the top of the page: only on phones, where the
+// sidebar turns into a sticky top bar. On wider screens it sits on the left.
+function stickyTop() {
+  const bar = $("sidebar");
+  if (!bar || getComputedStyle(bar).position !== "sticky") return 0;
+  return Math.max(0, bar.getBoundingClientRect().bottom);
+}
+
+// Narrow rail on medium screens and during the talk; full sidebar on wide screens.
+function updateRail() {
+  const wide = window.innerWidth >= 900;
+  document.body.classList.toggle("is-rail", wide && (window.innerWidth < 1280 || PRESENTING));
+}
+window.addEventListener("resize", updateRail);
+
+document.querySelectorAll(".tab").forEach((btn) => btn.addEventListener("click", () => {
+  if (PRESENTING && deckJumpToPage(btn.dataset.tab)) return;
+  switchTab(btn.dataset.tab);
+}));
+// A stage heading opens the first page of that stage (or its first slide during the talk).
+document.querySelectorAll(".stage-head").forEach((head) => head.addEventListener("click", () => {
+  const stage = Number(head.closest(".stage").dataset.stage);
+  if (PRESENTING) return deckJumpToStage(stage);
+  switchTab(head.closest(".stage").querySelector(".tab").dataset.tab);
+}));
+$("mode-toggle").addEventListener("click", () => (PRESENTING ? exitDeck() : enterDeck()));
 
 $("lang-toggle").addEventListener("click", () => setLanguage(LANG === "zh" ? "en" : "zh"));
 
 // ---------- tab 0: overview ----------
-const OVERVIEW_MODULES = [
-  { tab: "libs", icon: "P17", key: "ov_mod_libs_h", desc: "ov_mod_libs_p" },
-  { tab: "tools", icon: "T", key: "ov_mod_tools_h", desc: "ov_mod_tools_p" },
-  { tab: "run", icon: "R", key: "ov_mod_run_h", desc: "ov_mod_run_p" },
-  { tab: "dash", icon: "D", key: "ov_mod_dash_h", desc: "ov_mod_dash_p" },
-  { tab: "cases", icon: "C", key: "ov_mod_cases_h", desc: "ov_mod_cases_p" },
-  { tab: "conclusion", icon: "S", key: "ov_mod_concl_h", desc: "ov_mod_concl_p" },
-  { tab: "reliability", icon: "R", key: "ov_mod_rel_h", desc: "ov_mod_rel_p" },
+// Overview flow: the pages after the overview, grouped by research stage (same grouping
+// as the top navigation).
+const OVERVIEW_FLOW = [
+  { stage: 2, modules: [["libs", "ov_mod_libs_h", "ov_mod_libs_p"], ["tools", "ov_mod_tools_h", "ov_mod_tools_p"]] },
+  { stage: 3, modules: [["run", "ov_mod_run_h", "ov_mod_run_p"]] },
+  { stage: 4, modules: [["dash", "ov_mod_dash_h", "ov_mod_dash_p"], ["cases", "ov_mod_cases_h", "ov_mod_cases_p"]] },
+  { stage: 5, modules: [["conclusion", "ov_mod_concl_h", "ov_mod_concl_p"], ["reliability", "ov_mod_rel_h", "ov_mod_rel_p"]] },
 ];
 
 function renderOverview() {
@@ -81,13 +165,17 @@ function renderOverview() {
     [t("ov_kpi_tools"), TOOLS.length],
     [t("ov_kpi_scans"), MATRIX.length],
     [t("ov_kpi_alerts"), sumCandidatesAll()],
-  ].map(([label, value]) => `<div class="ov-stat"><div class="l">${esc(label)}</div><div class="v">${fmt(value)}</div></div>`).join("");
+  ].map(([label, value], i) => `<div class="ov-kpi${i === 3 ? " is-key" : ""}"><div class="l">${esc(label)}</div><div class="v">${fmt(value)}</div></div>`).join("");
 
-  $("ov-modules").innerHTML = OVERVIEW_MODULES.map((module) => `<button class="ov-module" data-tab="${module.tab}">
-    <div class="ov-module-head"><span class="ov-module-icon">${esc(module.icon)}</span><h4>${esc(t(module.key))}</h4></div>
-    <p>${esc(t(module.desc))}</p>
-    <span class="ov-module-go">${esc(t("ov_go"))} →</span>
-  </button>`).join("");
+  $("ov-modules").innerHTML = OVERVIEW_FLOW.map((col, i) => `${i ? '<div class="ov-flow-arrow" aria-hidden="true"></div>' : ""}
+    <div class="ov-flow-col">
+      <div class="ov-flow-col-head"><span class="stage-tag-no">0${col.stage}</span><span>${esc(t(`stage_${col.stage}`))}</span></div>
+      ${col.modules.map(([tab, title, desc]) => `<button class="ov-module" data-tab="${tab}">
+        <span class="ov-module-title">${esc(t(title))}<span class="ov-module-go" aria-hidden="true">→</span></span>
+        <span class="ov-module-desc">${esc(t(desc))}</span>
+        <span class="sr-only">${esc(t("ov_go"))}</span>
+      </button>`).join("")}
+    </div>`).join("");
 
   document.querySelectorAll(".ov-module").forEach((card) => card.addEventListener("click", () => switchTab(card.dataset.tab)));
 }
@@ -108,31 +196,38 @@ async function loadLibs() {
   MATRIX.forEach((m) => { (byLib[m.project_id] ||= {})[m.tool_key] = m; });
 
   $("lib-cards").innerHTML = LIBS.map((l) => {
-    const cc = byLib[l.id]?.CC || {};
-    return `<div class="lib-card" data-id="${esc(l.id)}">
-      <div><span class="name">${esc(l.name)}</span><span class="ver">${esc(l.version)}</span></div>
-      <span class="domain">${esc(DOMAIN[l.name] || "")}</span>
-      <div class="metrics">
-        <div>${esc(t("card_src"))}<br><b>${fmt(byLib[l.id]?.FF?.intended)}</b></div>
-        <div>${esc(t("card_units"))}<br><b>${fmt(cc.intended)}</b></div>
-        <div>${esc(t("card_alerts"))}<br><b>${fmt(sumCandidates(l.id))}</b></div>
-        <div>${esc(t("card_cc_time"))}<br><b>${fmt(cc.wall_seconds)} s</b></div>
-      </div></div>`;
+    const m = byLib[l.id] || {};
+    const counts = ["FF", "CP", "CC"].map((key) => m[key]?.candidates || 0);
+    return `<button class="lib-card" data-id="${esc(l.id)}">
+      <span class="lib-card-head"><span class="name">${esc(l.name)}</span><span class="ver">${esc(l.version)}</span><span class="domain">${esc(DOMAIN[l.name] || "")}</span></span>
+      <span class="metrics">
+        <span><span>${esc(t("card_src"))}</span><b>${fmt(m.FF?.intended)}</b></span>
+        <span><span>${esc(t("card_units"))}</span><b>${fmt(m.CC?.intended)}</b></span>
+        <span><span>${esc(t("card_alerts"))}</span><b>${fmt(sumCandidates(l.id))}</b></span>
+        <span><span>${esc(t("card_cc_time"))}</span><b>${fmt(m.CC?.wall_seconds)} s</b></span>
+      </span>
+      <span class="mini-stack">${counts.map((c, i) => c ? `<i style="flex:${c};background:${TOOL_COLOR[TOOLS[i]]}" title="${esc(TOOLS[i])}: ${c}"></i>` : "").join("")}</span>
+    </button>`;
   }).join("");
 
   document.querySelectorAll(".lib-card").forEach((el) => el.addEventListener("click", () => selectLibrary(el.dataset.id)));
 
+  // Library size: plain grouped bars on a linear axis, values printed on the bars.
   const rows = LIBS.map((l) => ({ name: l.name, sz: byLib[l.id]?.FF?.intended || 0, cc: byLib[l.id]?.CC?.intended || 0 }));
-  Plotly.newPlot("chart-lib-size", [
-    { type: "bar", name: t("s_src"), x: rows.map((r) => r.name), y: rows.map((r) => r.sz), marker: { color: "#2f5bea" }, hovertemplate: `%{x}<br>${t("s_src")}: %{y}<extra></extra>` },
-    { type: "bar", name: t("s_units"), x: rows.map((r) => r.name), y: rows.map((r) => r.cc), marker: { color: "#9333ea" }, hovertemplate: `%{x}<br>${t("s_units")}: %{y}<extra></extra>` },
-  ], { ...PLOT_LAYOUT, barmode: "group", yaxis: { type: "log", title: t("y_count") } }, PLOT_CFG);
+  renderLegend("lg-lib-size", [[t("s_src"), "", DS.neutral[0]], [t("s_units"), "", DS.neutral[1]]]);
+  const sizeTrace = (key, label, color) => ({
+    type: "bar", name: label, x: rows.map((r) => r.name), y: rows.map((r) => r[key]), marker: { color },
+    text: rows.map((r) => r[key]), textposition: "outside", cliponaxis: false, textfont: { family: DS.mono, size: 10.5, color: DS.muted },
+    hovertemplate: `%{x}<br>${label}: %{y}<extra></extra>`,
+  });
+  Plotly.newPlot("chart-lib-size", [sizeTrace("sz", t("s_src"), DS.neutral[0]), sizeTrace("cc", t("s_units"), DS.neutral[1])],
+    plotLayout({ barmode: "group", bargap: 0.38, bargroupgap: 0.1, margin: { t: 22, r: 8, b: 30, l: 36 }, xaxis: CATEGORY_AXIS }), PLOT_CFG);
 
+  const toolCell = (value, tool) => `<td class="num"><span class="tool-num" style="--c:${TOOL_COLOR[tool]}">${fmt(value)}</span></td>`;
   $("lib-table").innerHTML = `<thead><tr><th>${esc(t("col_lib"))}</th><th>${esc(t("col_version"))}</th><th>${esc(t("col_domain"))}</th><th class="num">${esc(t("col_src"))}</th><th class="num">${esc(t("col_units"))}</th><th class="num">${esc(t("col_ff_alerts"))}</th><th class="num">${esc(t("col_cp_alerts"))}</th><th class="num">${esc(t("col_cc_alerts"))}</th></tr></thead><tbody>` +
-    LIBS.map((l) => `<tr class="clickable" data-id="${esc(l.id)}"><td><b>${esc(l.name)}</b></td><td>${esc(l.version)}</td><td>${esc(DOMAIN[l.name] || "")}</td>
+    LIBS.map((l) => `<tr class="clickable" data-id="${esc(l.id)}"><td><b>${esc(l.name)}</b></td><td class="mono">${esc(l.version)}</td><td><span class="tag">${esc(DOMAIN[l.name] || "")}</span></td>
       <td class="num">${fmt(byLib[l.id]?.FF?.intended)}</td><td class="num">${fmt(byLib[l.id]?.CC?.intended)}</td>
-      <td class="num">${fmt(byLib[l.id]?.FF?.candidates)}</td><td class="num">${fmt(byLib[l.id]?.CP?.candidates)}</td>
-      <td class="num">${fmt(byLib[l.id]?.CC?.candidates)}</td></tr>`).join("") + "</tbody>";
+      ${toolCell(byLib[l.id]?.FF?.candidates, "Flawfinder")}${toolCell(byLib[l.id]?.CP?.candidates, "Cppcheck")}${toolCell(byLib[l.id]?.CC?.candidates, "CodeChecker/clangsa")}</tr>`).join("") + "</tbody>";
 
   document.querySelectorAll("#lib-table tr.clickable").forEach((row) => row.addEventListener("click", () => selectLibrary(row.dataset.id)));
 
@@ -141,8 +236,6 @@ async function loadLibs() {
 }
 
 // ---------- library pie chart ----------
-const TOOL_COLOR = { Flawfinder: "#2f5bea", Cppcheck: "#0ea5a4", "CodeChecker/clangsa": "#9333ea" };
-const OUTCOME_PIE_COLOR = { false_positive: "#94a3b8", supported: "#1f9d55", undetermined: "#d97706" };
 
 let LIB_PIE_LIB = "";
 let LIB_PIE_VIEW = "tool";
@@ -162,14 +255,17 @@ function setupLibPie(byLib) {
 }
 
 // Click on a library card or table row: select it in the pie picker and scroll the pie into view.
+// Click on a library card or table row: show it in the detail panel. On wide screens the
+// panel is sticky beside the cards, so only scroll when it is out of view (table clicks).
 function selectLibrary(id) {
   LIB_PIE_LIB = id;
   $("pie-lib").value = id;
   renderLibPie();
   const section = $("lib-pie-section");
-  const topbar = document.querySelector(".topbar");
-  const offset = (topbar ? topbar.getBoundingClientRect().height : 0) + 16;
-  window.scrollTo({ top: section.getBoundingClientRect().top + window.scrollY - offset, behavior: "smooth" });
+  const rect = section.getBoundingClientRect();
+  if (rect.top < 0 || rect.top > window.innerHeight * 0.6) {
+    window.scrollTo({ top: rect.top + window.scrollY - stickyTop() - 16, behavior: "smooth" });
+  }
 }
 
 function markSelectedLibrary() {
@@ -180,69 +276,55 @@ async function renderLibPie() {
   if (!LIB_PIE_LIB) return;
   markSelectedLibrary();
   const detail = await api(`/api/library-detail/${encodeURIComponent(LIB_PIE_LIB)}`);
+  const lib = LIBS.find((l) => l.id === LIB_PIE_LIB);
 
-  let labels = [];
-  let values = [];
-  let colors = [];
-
+  let labels, values, colors;
   if (LIB_PIE_VIEW === "tool") {
     labels = TOOLS;
     values = TOOLS.map((tool) => detail.verdict[tool].false_positive + detail.verdict[tool].supported + detail.verdict[tool].undetermined);
     colors = TOOLS.map((tool) => TOOL_COLOR[tool]);
   } else {
-    const outcomes = ["false_positive", "supported", "undetermined"];
-    labels = outcomes.map(outcomeText);
-    values = outcomes.map((outcome) => TOOLS.reduce((sum, tool) => sum + detail.verdict[tool][outcome], 0));
-    colors = outcomes.map((outcome) => OUTCOME_PIE_COLOR[outcome]);
+    labels = OUTCOMES.map(outcomeText);
+    values = OUTCOMES.map((outcome) => TOOLS.reduce((sum, tool) => sum + detail.verdict[tool][outcome], 0));
+    colors = OUTCOMES.map((outcome) => DS.outcome[outcome]);
   }
-
   const total = values.reduce((a, b) => a + b, 0);
-  const theme = {
-    ...PLOT_LAYOUT,
-    font: { ...PLOT_LAYOUT.font, family: LANG === "en" ? "Arial, sans-serif" : "Microsoft YaHei, sans-serif" },
-    legend: { orientation: "h", y: -0.05, x: 0, xanchor: "left" },
-  };
 
   if (!total) {
     $("lib-pie-side").innerHTML = `<div class="empty">${esc(t("lib_pie_no_data"))}</div>`;
-    Plotly.newPlot("chart-lib-pie", [], theme, PLOT_CFG);
+    Plotly.newPlot("chart-lib-pie", [], plotLayout(), PLOT_CFG);
     return;
   }
 
+  // Donut with the total in the middle; the breakdown sits beside it.
   Plotly.newPlot("chart-lib-pie", [{
-    type: "pie",
-    labels,
-    values,
+    type: "pie", hole: 0.64, labels, values, sort: false, direction: "clockwise", textinfo: "none",
     marker: { colors, line: { color: "#fff", width: 2 } },
-    textinfo: "percent",
-    textposition: "outside",
-    automargin: true,
-    textfont: { size: 12 },
-    sort: false,
-    hovertemplate: `%{label}<br>%{value} (${LANG === "zh" ? "占" : ""}%{percent})<extra></extra>`,
-  }], { ...theme, showlegend: false, margin: { t: 44, r: 44, b: 44, l: 44 } }, PLOT_CFG);
+    hovertemplate: `%{label}<br>%{value} (%{percent})<extra></extra>`,
+  }], plotLayout({
+    margin: { t: 6, r: 6, b: 6, l: 6 },
+    annotations: [
+      { text: `<b>${fmt(total)}</b>`, x: 0.5, y: 0.55, xref: "paper", yref: "paper", showarrow: false, font: { family: DS.mono, size: 30, color: DS.ink } },
+      { text: esc(t("lib_pie_total")), x: 0.5, y: 0.38, xref: "paper", yref: "paper", showarrow: false, font: { family: DS.sans, size: 12, color: DS.muted } },
+    ],
+  }), PLOT_CFG);
 
-  const rows = labels.map((label, index) => `<div class="lib-pie-row">
-    <span class="dot" style="background:${colors[index]}"></span>
-    <span class="name">${esc(label)}</span>
-    <span class="val">${fmt(values[index])}</span>
-    <span class="pct">${(100 * values[index] / total).toFixed(1)}%</span>
-  </div>`).join("");
-
-  $("lib-pie-side").innerHTML = `<div class="lib-pie-total"><div class="l">${esc(t("lib_pie_total"))}</div><div class="v">${fmt(total)}</div></div>` + rows;
+  $("lib-pie-side").innerHTML = `<div class="lib-pie-title">${esc(lib?.name || "")} <span>${esc(lib?.version || "")}</span></div>` +
+    labels.map((label, index) => `<div class="lib-pie-row">
+      <span class="dot" style="background:${colors[index]}"></span>
+      <span class="name">${esc(label)}</span>
+      <span class="val">${fmt(values[index])}</span>
+      <span class="pct">${(100 * values[index] / total).toFixed(1)}%</span>
+      <span class="lib-pie-bar"><i style="width:${100 * values[index] / total}%;background:${colors[index]}"></i></span>
+    </div>`).join("");
 }
 
 function sumCandidates(id) {
   return MATRIX.filter((m) => m.project_id === id).reduce((a, m) => a + (m.candidates || 0), 0);
 }
 
-// ---------- tab 2: live run ----------
-let CURRENT_SOURCE = null;
-let RUN_ACTIVE = false;
-
-function setupRun() {
-  $("run-lib").innerHTML = LIBS.map((l) => `<option value="${esc(l.id)}">${esc(l.id)} · ${esc(l.name)} ${esc(l.version)}</option>`).join("");
-  const descriptions = LANG === "zh" ? [
+function toolDescriptions() {
+  return LANG === "zh" ? [
     { n: "Flawfinder", t: "查名字", how: "逐行扫描，看到 memcpy、strcpy、strlen 这类危险函数名就报警。", good: "速度快，能列出所有危险调用。", bad: "分不清函数名和变量名，不知道代码是否真的会执行。", v: "2.0.20" },
     { n: "Cppcheck", t: "推算取值", how: "跟踪变量在赋值和分支中可能取的值，判断是否会出错。", good: "理解整数和指针的取值，代码质量类问题覆盖广。", bad: "需要编译数据库，部分检查依赖真实头文件。", v: "2.13.0" },
     { n: "CodeChecker / clangsa", t: "模拟执行路径", how: "把输入当作未知数，沿每条分支模拟执行，看错误路径能否走到。", good: "空指针、死存储等与路径相关的问题最准确。", bad: "最慢，看不到写在文档里的约定（如函数永不返回）。", v: "6.29.1 · Clang 18.1.3" },
@@ -251,20 +333,40 @@ function setupRun() {
     { n: "Cppcheck", t: "Value inference", how: "Tracks possible values through assignments and branches to determine whether errors can occur.", good: "Understands integer and pointer values and covers many code-quality problems.", bad: "Needs a compilation database, and some checks require real headers.", v: "2.13.0" },
     { n: "CodeChecker / clangsa", t: "Path simulation", how: "Treats inputs as unknown and simulates each branch to see whether an error path is reachable.", good: "Most accurate for path-related issues such as null pointers and dead stores.", bad: "Slowest, and cannot infer conventions documented in prose, such as a function never returning.", v: "6.29.1 · Clang 18.1.3" },
   ];
-  $("tool-compare").innerHTML = descriptions.map((tool, i) => `<div class="tool-box">
-      <h4><span class="badge ${["b-ff", "b-cp", "b-cc"][i]}">${esc(tool.n)}</span></h4>
-      <p><span class="k">${esc(LANG === "zh" ? "工作方式：" : "How it works:")}</span>${esc(tool.t)}. ${esc(tool.how)}</p>
-      <p><span class="k">${esc(LANG === "zh" ? "擅长：" : "Strengths:")}</span>${esc(tool.good)}</p>
-      <p><span class="k">${esc(LANG === "zh" ? "短板：" : "Limitations:")}</span>${esc(tool.bad)}</p>
-      <p><span class="k">${esc(LANG === "zh" ? "版本：" : "Version:")}</span>${esc(tool.v)}</p></div>`).join("");
+}
+
+// ---------- tab 2: live run ----------
+let CURRENT_SOURCE = null;
+let RUN_ACTIVE = false;
+
+function setupRun() {
+  $("run-lib").innerHTML = LIBS.map((l) => `<option value="${esc(l.id)}">${esc(l.id)} · ${esc(l.name)} ${esc(l.version)}</option>`).join("");
+  const descriptions = toolDescriptions();
+  const L = LANG === "zh"
+    ? { how: "工作方式", good: "擅长", bad: "短板" }
+    : { how: "How it works", good: "Strengths", bad: "Limitations" };
+  // The depth meter mirrors the page's point: the three tools differ in how deeply they read code.
+  $("tool-compare").innerHTML = descriptions.map((tool, i) => `<section class="box tool-box" style="--tool:${TOOL_COLOR[TOOLS[i]]}">
+      <header class="tool-box-head"><span class="tool-dot"></span><b>${esc(tool.n)}</b><code>${esc(tool.v)}</code></header>
+      <div class="tool-method"><span>${esc(tool.t)}</span><span class="depth" title="${i + 1} / 3">${[0, 1, 2].map((k) => `<i class="${k <= i ? "on" : ""}"></i>`).join("")}</span></div>
+      <dl class="tool-facts">
+        <dt>${esc(L.how)}</dt><dd>${esc(tool.how)}</dd>
+        <dt>${esc(L.good)}</dt><dd>${esc(tool.good)}</dd>
+        <dt>${esc(L.bad)}</dt><dd>${esc(tool.bad)}</dd>
+      </dl>
+    </section>`).join("");
 
   renderToolRules();
   renderWorkflow();
+  if (!$("run-replay").dataset.bound) {
+    $("run-replay").addEventListener("click", replayRun);
+    $("run-replay").dataset.bound = "true";
+  }
   if (STATIC) {
     // Live runs need the server deployment (Docker); the static site only shows the data.
     $("run-start").disabled = true;
     $("run-status").dataset.i18n = "run_static";
-    setStatus(t("run_static"), "fail");
+    setStatus(t("run_static"), "info");
   } else if (!$("run-start").dataset.bound) {
     $("run-start").addEventListener("click", startRun);
     $("run-start").dataset.bound = "true";
@@ -431,52 +533,58 @@ const TOOL_RULES = {
   ],
 };
 
+let RULE_TOOL = 0;
+
+// One tool at a time, full width, so the rule tables have room to breathe.
 function renderToolRules() {
   const rules = TOOL_RULES[LANG] || TOOL_RULES.zh;
-  $("tool-rules").innerHTML = rules.map((tool) => `<div class="rule-box">
-    <div class="rule-head">
-      <span class="badge ${tool.badge}">${esc(tool.n)}</span>
-      <span class="rule-basis">${esc(tool.basis)}</span>
-    </div>
-    <p class="rule-detail">${esc(tool.basisDetail)}</p>
-    <div class="rule-block">
+  $("tool-rules-tabs").innerHTML = rules.map((tool, i) => `<button class="seg-btn ${i === RULE_TOOL ? "active" : ""}" data-i="${i}" role="tab" aria-selected="${i === RULE_TOOL}"><i class="tool-dot" style="background:${TOOL_COLOR[TOOLS[i]]}"></i>${esc(tool.n)}</button>`).join("");
+  document.querySelectorAll("#tool-rules-tabs .seg-btn").forEach((button) => button.addEventListener("click", () => {
+    RULE_TOOL = Number(button.dataset.i);
+    renderToolRules();
+  }));
+
+  const tool = rules[RULE_TOOL];
+  const max = Math.max(...tool.dimensions.map((d) => d[3]));
+  $("tool-rules").innerHTML = `<div class="rule-panel" style="--tool:${TOOL_COLOR[TOOLS[RULE_TOOL]]}">
+    <div class="rule-main">
+      <div class="rule-basis"><span class="tool-dot"></span>${esc(tool.basis)}</div>
+      <p class="rule-detail">${esc(tool.basisDetail)}</p>
       <div class="rule-label">${esc(tool.dimensionLabel)}</div>
       <div class="rule-dimension">${esc(tool.dimension)}</div>
-      <table class="rule-table">
+      <table class="data rule-table">
         <thead><tr><th>${esc(t("rule_dim_level"))}</th><th>${esc(t("rule_dim_check"))}</th><th>${esc(t("rule_dim_desc"))}</th><th class="num">${esc(t("rule_dim_count"))}</th></tr></thead>
         <tbody>${tool.dimensions.map(([level, check, desc, count]) => `<tr>
-          <td><code>${esc(level)}</code></td><td><code>${esc(check)}</code></td><td>${esc(desc)}</td><td class="num">${fmt(count)}</td>
+          <td><code>${esc(level)}</code></td><td><code>${esc(check)}</code></td><td>${esc(desc)}</td>
+          <td class="num bar-cell"><span class="bar" style="width:${(100 * count / max).toFixed(1)}%"></span><b>${fmt(count)}</b></td>
         </tr>`).join("")}</tbody>
       </table>
       <p class="rule-note">${esc(tool.dimensionNote)}</p>
     </div>
-    <div class="rule-block">
-      <div class="rule-label">${esc(t("rule_switches"))}</div>
-      <ul class="rule-switches">${tool.switches.map(([flag, note]) => `<li><code>${esc(flag)}</code><span>${esc(note)}</span></li>`).join("")}</ul>
-    </div>
-    <div class="rule-block">
-      <div class="rule-label">${esc(t("rule_count_rule"))}</div>
-      <p class="rule-count">${esc(tool.countRule)}</p>
-    </div>
-    <div class="rule-block">
-      <div class="rule-label">${esc(tool.exampleLabel)}</div>
-      <div class="rule-examples">${tool.examples.map((rule) => `<code>${esc(rule)}</code>`).join("")}</div>
-    </div>
-    <div class="rule-foot"><span>${esc(t("rule_version"))}</span><strong>${esc(tool.version)}</strong></div>
-  </div>`).join("");
+    <aside class="rule-side">
+      <div class="rule-block">
+        <div class="rule-label">${esc(t("rule_switches"))}</div>
+        <ul class="rule-switches">${tool.switches.map(([flag, note]) => `<li><code>${esc(flag)}</code><span>${esc(note)}</span></li>`).join("")}</ul>
+      </div>
+      <div class="rule-block">
+        <div class="rule-label">${esc(t("rule_count_rule"))}</div>
+        <p class="rule-count">${esc(tool.countRule)}</p>
+      </div>
+      <div class="rule-block">
+        <div class="rule-label">${esc(tool.exampleLabel)}</div>
+        <div class="rule-examples">${tool.examples.map((rule) => `<code>${esc(rule)}</code>`).join("")}</div>
+      </div>
+      <div class="rule-foot"><span>${esc(t("rule_version"))}</span><code>${esc(tool.version)}</code></div>
+    </aside>
+  </div>`;
 }
 
 function renderWorkflow() {
   const steps = I18N[LANG].flow_steps;
-  $("workflow").innerHTML = steps.map(([id, title, detail], index) => `
-    <div class="flow-step">
-      <div class="flow-head">
-        <span class="flow-id">${esc(id)}</span>
-        <strong>${esc(title)}</strong>
-        ${index < steps.length - 1 ? '<span class="flow-arrow">→</span>' : ""}
-      </div>
+  $("workflow").innerHTML = steps.map(([id, title, detail]) => `<div class="pipe-step">
+      <div class="pipe-head"><span class="pipe-id">${esc(id)}</span><strong>${esc(title)}</strong></div>
       <p>${esc(detail)}</p>
-    </div>`).join("");
+    </div>`).join('<div class="pipe-arrow" aria-hidden="true"></div>');
 }
 
 async function startRun() {
@@ -516,6 +624,52 @@ async function startRun() {
   };
 }
 
+// ---------- replay of a recorded replication run ----------
+// Plays back the saved output of one replication run (logs, command, tool output, S6
+// comparison) stage by stage. Nothing is executed; the page says so while it plays.
+async function replayRun() {
+  if (RUN_ACTIVE) return;
+  let data;
+  try {
+    data = await api(`/api/replay/${encodeURIComponent($("run-lib").value)}/${encodeURIComponent($("run-tool").value)}`);
+  } catch (err) {
+    setStatus(t("load_failed"), "fail");
+    return;
+  }
+  RUN_ACTIVE = true;
+  $("run-replay").disabled = true;
+  const startWasDisabled = $("run-start").disabled;
+  $("run-start").disabled = true;
+  const log = $("run-log");
+  log.textContent = "";
+  $("run-bar").style.width = "0%";
+  $("run-result").innerHTML = `<div class="empty">${esc(t("running"))}</div>`;
+  const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+  const write = (line) => { log.textContent += line + "\n"; log.scrollTop = log.scrollHeight; };
+  const steps = [...document.querySelectorAll("#workflow .pipe-step")];
+
+  write(`# ${text("replay_note", { date: (data.recorded_utc || "").replace("T", " ").replace("Z", " UTC") })}`);
+  write(`# ${data.name} ${data.version} · ${data.tool_name} · ${data.run_id}`);
+  for (const [index, stage] of data.stages.entries()) {
+    steps.forEach((el, k) => { el.classList.toggle("is-active", k === index); el.classList.toggle("is-done", k < index); });
+    const title = (I18N[LANG].flow_steps[index] || [])[1] || stage.id;
+    setStatus(`${t("replay_running")} · ${stage.id} ${title}`, "running");
+    write(`\n== ${stage.id} ${title} ==`);
+    for (const line of stage.lines) {
+      write(line);
+      await sleep(stage.id === "S5" ? 40 : 70);
+    }
+    $("run-bar").style.width = `${Math.round(100 * (index + 1) / data.stages.length)}%`;
+    await sleep(320);
+  }
+  steps.forEach((el) => { el.classList.remove("is-active"); el.classList.add("is-done"); });
+  setStatus(t("replay_done"), "ok");
+  renderResult({ ...data.result, replay: true });
+  RUN_ACTIVE = false;
+  $("run-replay").disabled = false;
+  $("run-start").disabled = startWasDisabled;
+}
+
 function setStatus(value, cls) {
   const el = $("run-status");
   el.textContent = value;
@@ -524,9 +678,10 @@ function setStatus(value, cls) {
 
 function renderResult(result) {
   const same = result.matches_reference;
-  const verdictLine = same
-    ? `<span class="badge b-sup">${esc(t("match"))}</span>`
-    : `<span class="badge b-und">${esc(t("mismatch"))}</span>`;
+  const verdictLine = (same
+    ? `<span class="badge b-ok">${esc(t("match"))}</span>`
+    : `<span class="badge b-und">${esc(t("mismatch"))}</span>`) +
+    (result.replay ? ` <span class="badge b-fp">${esc(t("replay_badge"))}</span>` : "");
   const rows = (result.alerts || []).slice(0, 300).map((alert) => `<tr><td>${esc(alert.file)}</td><td class="num">${fmt(alert.line)}</td><td class="num">${fmt(alert.column)}</td><td>${esc(alert.rule)}</td><td>${esc(alert.message || "")}</td></tr>`).join("");
   $("run-result").innerHTML = `
     <div class="result-head">
@@ -544,74 +699,145 @@ function renderResult(result) {
 let CANDIDATES = [];
 let DASH = null;
 
-// Stacked verdict bars per tool. Drawn both on the overview and the dashboard.
-function drawVerdictChart(target, v, outs, chartTheme) {
-  Plotly.newPlot(target, outs.map((outcome) => ({
-    type: "bar", name: outcomeText(outcome), x: TOOLS, y: TOOLS.map((tool) => v[tool][outcome]),
-    marker: { color: OUTCOME_COLOR[outcome] },
-    hovertemplate: `%{x}<br>${outcomeText(outcome)}: %{y}<extra></extra>`,
-  })), {
-    ...chartTheme,
-    barmode: "stack",
-    margin: { t: 24, r: 20, b: 90, l: 60 },
-    automargin: true,
+
+
+// Overview figure: one horizontal stacked bar per tool, so the share of false positives
+// in each tool's output is readable at a glance. Totals and supported counts are labelled
+// at the bar ends instead of relying on hover.
+function drawOverviewChart(v) {
+  const outs = ["supported", "undetermined", "false_positive"];
+  const tools = [...TOOLS].reverse();
+  const total = (tool) => outs.reduce((a, o) => a + v[tool][o], 0);
+  const maxTotal = Math.max(...TOOLS.map(total));
+
+  $("ov-legend").innerHTML = outs.map((o) => `<span class="ov-legend-item"><i class="sw sw-${o}"></i>${esc(outcomeText(o))}</span>`).join("");
+
+  const traces = outs.map((o) => ({
+    type: "bar", orientation: "h", name: outcomeText(o),
+    y: tools.map(toolShort), x: tools.map((tool) => v[tool][o]),
+    marker: o === "undetermined"
+      ? { color: DS.panel, line: { color: DS.outcome[o], width: 1 }, pattern: { shape: "/", fgcolor: DS.outcome[o], size: 5, solidity: 0.35 } }
+      : { color: DS.outcome[o], line: { width: 0 } },
+    hovertemplate: `%{y} · ${outcomeText(o)}: %{x}<extra></extra>`,
+  }));
+
+  const annotations = tools.flatMap((tool) => {
+    const n = total(tool), sup = v[tool].supported;
+    const pct = n ? (100 * sup / n).toFixed(1) : "0.0";
+    return [{
+      x: n, y: toolShort(tool), xanchor: "left", xshift: 10, yshift: 7, showarrow: false,
+      text: `<b>${fmt(n)}</b>`, font: { family: DS.mono, size: 16, color: DS.ink },
+    }, {
+      x: n, y: toolShort(tool), xanchor: "left", xshift: 10, yshift: -12, showarrow: false,
+      text: `${esc(outcomeText("supported"))} ${sup} · ${pct}%`, font: { family: DS.mono, size: 11, color: DS.outcome.supported },
+    }];
+  });
+
+  Plotly.newPlot("chart-overview", traces, {
+    barmode: "stack", bargap: 0.48, showlegend: false, annotations,
+    margin: { t: 6, r: 120, b: 30, l: 112 },
+    paper_bgcolor: "rgba(0,0,0,0)", plot_bgcolor: "rgba(0,0,0,0)",
+    font: { family: DS.sans, size: 12, color: DS.muted },
+    xaxis: { range: [0, maxTotal * 1.02], showgrid: true, gridcolor: DS.line, zeroline: false, tickfont: { family: DS.mono, size: 10, color: DS.faint }, fixedrange: true },
+    yaxis: { showgrid: false, ticks: "", tickfont: { family: DS.sans, size: 13, color: DS.ink }, ticksuffix: "   ", fixedrange: true },
+    hoverlabel: { bgcolor: DS.ink, bordercolor: DS.ink, font: { family: DS.sans, color: "#fff", size: 12 } },
   }, PLOT_CFG);
 }
 
 async function loadDashboard() {
   DASH = await api("/api/dashboard");
   const v = DASH.verdict;
-  const totalFP = TOOLS.reduce((a, tool) => a + v[tool].false_positive, 0);
-  const totalSup = TOOLS.reduce((a, tool) => a + v[tool].supported, 0);
-  const totalUnd = TOOLS.reduce((a, tool) => a + v[tool].undetermined, 0);
+  const totals = Object.fromEntries(OUTCOMES.map((o) => [o, TOOLS.reduce((a, tool) => a + v[tool][o], 0)]));
   const percent = (value) => `${LANG === "zh" ? "占 " : ""}${(100 * value / DASH.total).toFixed(1)}%`;
   $("kpis").innerHTML = [
-    [t("k_total"), DASH.total, t("k_sub_all")],
-    [t("k_fp"), totalFP, percent(totalFP)],
-    [t("k_sup"), totalSup, percent(totalSup)],
-    [t("k_und"), totalUnd, percent(totalUnd)],
-  ].map(([label, value, sub]) => `<div class="kpi"><div class="label">${esc(label)}</div><div class="value">${fmt(value)}</div><div class="sub">${esc(sub)}</div></div>`).join("");
+    ["k_total", DASH.total, t("k_sub_all"), ""],
+    ["k_fp", totals.false_positive, percent(totals.false_positive), "false_positive"],
+    ["k_sup", totals.supported, percent(totals.supported), "supported"],
+    ["k_und", totals.undetermined, percent(totals.undetermined), "undetermined"],
+  ].map(([key, value, sub, o]) => `<div class="stat${o ? ` stat-${o}` : ""}">
+    <div class="l">${o ? `<i class="sw sw-${o}"></i>` : ""}${esc(t(key))}</div>
+    <div class="v">${fmt(value)}</div><div class="s">${esc(sub)}</div></div>`).join("");
+  // One bar for the whole study: how the 725 alerts split across verdicts.
+  $("dash-share").innerHTML = OUTCOMES.map((o) => `<i class="share-${o}" style="flex:${totals[o]}" title="${esc(outcomeText(o))}: ${totals[o]}"></i>`).join("");
 
-  const outs = ["false_positive", "supported", "undetermined"];
-  const chartTheme = {
-    ...PLOT_LAYOUT,
-    font: { ...PLOT_LAYOUT.font, family: LANG === "en" ? "Arial, sans-serif" : "Microsoft YaHei, sans-serif" },
-    legend: { orientation: "h", y: -0.22, x: 0, xanchor: "left" },
-  };
-  // No text on the bars: the counts show in the hover tooltip instead, so nothing
-  // overlaps the slices or the axis.
-  drawVerdictChart("chart-verdict", v, outs, chartTheme);
-  drawVerdictChart("chart-overview", v, outs, chartTheme);
+  drawOverviewChart(v);
 
+  // Verdict mix per tool, normalised to 100% so the three tools compare directly.
+  const tools = [...TOOLS].reverse();
+  outcomeLegend("lg-verdict");
+  Plotly.newPlot("chart-verdict", OUTCOMES.map((o) => ({
+    type: "bar", orientation: "h", name: outcomeText(o), y: tools.map(toolShort),
+    x: tools.map((tool) => 100 * v[tool][o] / OUTCOMES.reduce((a, k) => a + v[tool][k], 0)),
+    customdata: tools.map((tool) => v[tool][o]), marker: outcomeMarker(o),
+    texttemplate: "%{x:.1f}%", textposition: "inside", insidetextanchor: "middle", textangle: 0,
+    textfont: { family: DS.mono, size: 11, color: o === "supported" ? "#fff" : DS.ink },
+    hovertemplate: `%{y} · ${outcomeText(o)}: %{customdata} (%{x:.1f}%)<extra></extra>`,
+  })), plotLayout({
+    barmode: "stack", bargap: 0.42, uniformtext: { mode: "hide", minsize: 10 },
+    margin: { t: 8, r: 16, b: 30, l: 10 }, xaxis: { range: [0, 100], ticksuffix: "%" }, yaxis: CATEGORY_AXIS,
+  }), PLOT_CFG);
+
+  // Alerts per library, largest first, with the total printed at the end of each bar.
   const projects = Object.keys(DASH.by_project);
-  Plotly.newPlot("chart-project", outs.map((outcome) => ({
-    type: "bar", name: outcomeText(outcome), x: projects, y: projects.map((project) => DASH.by_project[project][outcome]),
-    marker: { color: OUTCOME_COLOR[outcome] },
-    hovertemplate: `%{x}<br>${outcomeText(outcome)}: %{y}<extra></extra>`,
-  })), { ...chartTheme, barmode: "stack", xaxis: { tickangle: -35, automargin: true }, margin: { t: 20, r: 20, b: 100, l: 60 }, automargin: true }, PLOT_CFG);
+  const projectTotal = (p) => OUTCOMES.reduce((a, o) => a + DASH.by_project[p][o], 0);
+  projects.sort((a, b) => projectTotal(a) - projectTotal(b));
+  outcomeLegend("lg-project");
+  Plotly.newPlot("chart-project", OUTCOMES.map((o) => ({
+    type: "bar", orientation: "h", name: outcomeText(o), y: projects, x: projects.map((p) => DASH.by_project[p][o]),
+    marker: outcomeMarker(o), hovertemplate: `%{y} · ${outcomeText(o)}: %{x}<extra></extra>`,
+  })), plotLayout({
+    barmode: "stack", bargap: 0.32, margin: { t: 8, r: 40, b: 30, l: 10 }, yaxis: CATEGORY_AXIS,
+    annotations: projects.map((p) => ({ x: projectTotal(p), y: p, text: fmt(projectTotal(p)), xanchor: "left", xshift: 6, showarrow: false, font: { family: DS.mono, size: 11, color: DS.ink } })),
+  }), PLOT_CFG);
 
-  const runs = DASH.matrix;
-  Plotly.newPlot("chart-cost", TOOLS.map((tool, index) => {
-    const key = ["FF", "CP", "CC"][index];
-    const rows = runs.filter((row) => row.tool_key === key);
+  // Runtime per library: one dot per tool on a log axis, joined by a range line.
+  const runs = DASH.matrix.filter((row) => row.wall_seconds > 0);
+  const libs = [...new Set(DASH.matrix.map((row) => row.project))];
+  const ranges = libs.flatMap((lib) => {
+    const secs = runs.filter((row) => row.project === lib).map((row) => row.wall_seconds);
+    return secs.length ? [[Math.min(...secs), Math.max(...secs), lib]] : [];
+  });
+  toolLegend("lg-cost");
+  Plotly.newPlot("chart-cost", [{
+    type: "scatter", mode: "lines", hoverinfo: "skip", line: { color: DS.line, width: 3 },
+    x: ranges.flatMap(([lo, hi]) => [lo, hi, null]), y: ranges.flatMap(([, , lib]) => [lib, lib, null]),
+  }, ...TOOLS.map((tool, index) => {
+    const rows = runs.filter((row) => row.tool_key === ["FF", "CP", "CC"][index]);
     return {
-      type: "bar", name: tool, x: rows.map((row) => row.project), y: rows.map((row) => row.wall_seconds),
-      marker: { color: ["#2f5bea", "#0ea5a4", "#9333ea"][index] },
-      hovertemplate: `%{x}<br>${tool}: %{y:.2f} s<extra></extra>`,
+      type: "scatter", mode: "markers", name: tool, x: rows.map((row) => row.wall_seconds), y: rows.map((row) => row.project),
+      marker: { color: TOOL_COLOR[tool], size: 11, line: { color: "#fff", width: 1.5 } },
+      hovertemplate: `%{y} · ${toolShort(tool)}: %{x:.2f} s<extra></extra>`,
     };
-  }), { ...chartTheme, barmode: "group", yaxis: { type: "log", title: t("y_sec"), automargin: true }, xaxis: { tickangle: -35, automargin: true }, margin: { t: 20, r: 20, b: 100, l: 70 }, automargin: true }, PLOT_CFG);
+  })], plotLayout({
+    margin: { t: 8, r: 16, b: 30, l: 10 },
+    xaxis: { type: "log", tickvals: [0.01, 0.1, 1, 10, 100], ticktext: ["0.01 s", "0.1 s", "1 s", "10 s", "100 s"] },
+    yaxis: { ...CATEGORY_AXIS, categoryorder: "array", categoryarray: [...libs].reverse() },
+  }), PLOT_CFG);
 
-  const top = DASH.top_rules;
+  // Top rules coloured by the tool that raised them; full rule names on the axis.
+  const top = [...DASH.top_rules].reverse();
+  toolLegend("lg-rules");
   Plotly.newPlot("chart-rules", [{
-    type: "bar", orientation: "h", x: top.map((rule) => rule.count).reverse(), y: top.map((rule) => `${rule.rule} (${toolShort(rule.tool)})`).reverse(),
-    marker: { color: "#2f5bea" },
-    hovertemplate: `%{y}<br>%{x}<extra></extra>`,
-  }], { ...chartTheme, margin: { t: 18, r: 24, b: 70, l: 210 }, automargin: true }, PLOT_CFG);
+    type: "bar", orientation: "h", x: top.map((rule) => rule.count), y: top.map((_, i) => i),
+    customdata: top.map((rule) => `${rule.rule} · ${toolShort(rule.tool)}`),
+    marker: { color: top.map((rule) => TOOL_COLOR[rule.tool]) },
+    text: top.map((rule) => rule.count), textposition: "outside", cliponaxis: false, textfont: { family: DS.mono, size: 10.5, color: DS.muted },
+    hovertemplate: `%{customdata}<br>%{x}<extra></extra>`,
+  }], plotLayout({
+    bargap: 0.28, margin: { t: 8, r: 34, b: 30, l: 10 },
+    yaxis: { showgrid: false, linecolor: "rgba(0,0,0,0)", tickvals: top.map((_, i) => i), ticktext: top.map((rule) => rule.rule), tickfont: { family: DS.mono, size: 11, color: DS.ink }, ticksuffix: "  " },
+  }), PLOT_CFG);
 
   $("f-project").innerHTML = `<option value="">${esc(t("all_libs"))}</option>` + LIBS.map((l) => `<option value="${esc(l.id)}">${esc(l.name)}</option>`).join("");
-  ["f-project", "f-tool", "f-outcome"].forEach((id) => $(id).addEventListener("change", loadCandidates));
+  if (!$("f-project").dataset.bound) {
+    ["f-project", "f-tool", "f-outcome"].forEach((id) => $(id).addEventListener("change", loadCandidates));
+    $("f-project").dataset.bound = "true";
+  }
   loadCandidates();
 }
+
+let CAND_PAGE = 0;
+const CAND_PAGE_SIZE = 15;
 
 async function loadCandidates() {
   const params = new URLSearchParams();
@@ -620,15 +846,39 @@ async function loadCandidates() {
   if ($("f-outcome").value) params.set("outcome", $("f-outcome").value);
   const data = await api("/api/candidates?" + params.toString() + "&limit=1000");
   CANDIDATES = data.items;
+  CAND_PAGE = 0;
   $("f-count").textContent = `${LANG === "zh" ? "共" : "Total"} ${fmt(data.total)} ${t("alert_count_unit")}`;
+  renderCandidates();
+}
+
+// The list is paged so the dashboard stays one screen of charts plus a short table.
+function renderCandidates() {
+  const pages = Math.max(1, Math.ceil(CANDIDATES.length / CAND_PAGE_SIZE));
+  CAND_PAGE = Math.min(Math.max(CAND_PAGE, 0), pages - 1);
+  const rows = CANDIDATES.slice(CAND_PAGE * CAND_PAGE_SIZE, (CAND_PAGE + 1) * CAND_PAGE_SIZE);
   $("cand-table").innerHTML = `<thead><tr><th>${esc(t("col_lib"))}</th><th>${esc(t("col_tool_h"))}</th><th>${esc(t("col_location"))}</th><th>${esc(t("col_rule_h"))}</th><th>${esc(t("col_verdict"))}</th></tr></thead><tbody>` +
-    CANDIDATES.map((candidate) => `<tr class="clickable" data-key="${esc(candidate.key)}">
-      <td>${esc(candidate.project)} ${esc(candidate.version)}</td>
-      <td><span class="badge ${TOOL_CLASS[candidate.tool] || ""}">${esc(candidate.tool)}</span></td>
-      <td>${esc(shortPath(candidate.file))}:${fmt(candidate.line)}</td>
-      <td>${esc(candidate.rule)}</td>
+    rows.map((candidate) => `<tr class="clickable" data-key="${esc(candidate.key)}">
+      <td>${esc(candidate.project)} <span class="muted mono">${esc(candidate.version)}</span></td>
+      <td><span class="badge ${TOOL_CLASS[candidate.tool] || ""}">${esc(toolShort(candidate.tool))}</span></td>
+      <td class="mono">${esc(shortPath(candidate.file))}:${fmt(candidate.line)}</td>
+      <td class="mono">${esc(candidate.rule)}</td>
       <td><span class="badge ${OUTCOME_CLASS[candidate.outcome] || ""}">${esc(outcomeText(candidate.outcome))}</span></td></tr>`).join("") + "</tbody>";
   document.querySelectorAll("#cand-table tr.clickable").forEach((row) => row.addEventListener("click", () => openDetail(row.dataset.key)));
+
+  const from = CANDIDATES.length ? CAND_PAGE * CAND_PAGE_SIZE + 1 : 0;
+  const to = CAND_PAGE * CAND_PAGE_SIZE + rows.length;
+  $("cand-pager").innerHTML = `<span class="pager-info mono">${from}–${to} / ${fmt(CANDIDATES.length)}</span>
+    <span class="pager-btns">
+      <button class="ghost" data-p="0" ${CAND_PAGE === 0 ? "disabled" : ""} aria-label="first">«</button>
+      <button class="ghost" data-p="${CAND_PAGE - 1}" ${CAND_PAGE === 0 ? "disabled" : ""} aria-label="previous">‹</button>
+      <span class="pager-page mono">${CAND_PAGE + 1} / ${pages}</span>
+      <button class="ghost" data-p="${CAND_PAGE + 1}" ${CAND_PAGE >= pages - 1 ? "disabled" : ""} aria-label="next">›</button>
+      <button class="ghost" data-p="${pages - 1}" ${CAND_PAGE >= pages - 1 ? "disabled" : ""} aria-label="last">»</button>
+    </span>`;
+  document.querySelectorAll("#cand-pager button[data-p]").forEach((button) => button.addEventListener("click", () => {
+    CAND_PAGE = Number(button.dataset.p);
+    renderCandidates();
+  }));
 }
 
 function shortPath(path) {
@@ -668,6 +918,8 @@ $("drawer-mask").addEventListener("click", closeDetail);
 
 function onLanguageChange() {
   applyStaticText();
+  renderPageNav();
+  setModeLabel();
   if (LIBS.length) loadLibs();
   if (LIBS.length) setupRun();
   if (DASH) loadDashboard();
@@ -680,6 +932,7 @@ function onLanguageChange() {
   if (SUMMARY) renderConclusion();
   if (RELIABILITY) renderReliability();
   if (LIBS.length) renderLibPie();
+  if (PRESENTING) renderSlide();
 }
 
 // ---------- tab 4: special cases ----------
@@ -707,9 +960,7 @@ function caseFamilyLogic(family) {
 }
 
 function updateCaseNavOffset() {
-  const topbar = document.querySelector(".topbar");
-  const topbarHeight = topbar ? topbar.getBoundingClientRect().height : 0;
-  const navTop = Math.round(topbarHeight + 16);
+  const navTop = Math.round(stickyTop() + 16);
   document.documentElement.style.setProperty("--case-nav-top", `${navTop}px`);
 }
 
@@ -729,28 +980,26 @@ async function loadSpecialCases() {
 let CASE_RESIZE_OBSERVER = null;
 
 function observeCaseFilterPanel() {
-  const topbar = document.querySelector(".topbar");
-  if (!topbar) return;
+  const bar = $("sidebar");
+  if (!bar) return;
   if (CASE_RESIZE_OBSERVER) CASE_RESIZE_OBSERVER.disconnect();
   if (typeof ResizeObserver !== "undefined") {
     CASE_RESIZE_OBSERVER = new ResizeObserver(() => updateCaseNavOffset());
-    CASE_RESIZE_OBSERVER.observe(topbar);
+    CASE_RESIZE_OBSERVER.observe(bar);
   }
   window.addEventListener("resize", syncCaseStickyOffsets);
 }
 
 function renderCaseSummary() {
   const totals = SPECIAL_CASES.outcome_totals;
-  const cards = [
-    ["k_total", SPECIAL_CASES.total, `case_family_count`],
-    ["k_fp", totals.false_positive || 0, ""],
-    ["k_sup", totals.supported || 0, ""],
-    ["k_und", totals.undetermined || 0, ""],
+  $("case-summary").innerHTML = [
+    ["k_total", SPECIAL_CASES.total, ""],
+    ["k_fp", totals.false_positive || 0, "false_positive"],
+    ["k_sup", totals.supported || 0, "supported"],
+    ["k_und", totals.undetermined || 0, "undetermined"],
     ["case_family_count", SPECIAL_CASES.family_count, ""],
-  ];
-  $("case-summary").innerHTML = cards.map(([label, value, extra]) => `<div class="case-kpi">
-    <div class="label">${esc(t(label))}</div><div class="value">${fmt(value)}</div>
-    ${extra ? `<div class="sub">${esc(t(extra))}</div>` : ""}</div>`).join("");
+  ].map(([label, value, o]) => `<div class="stat${o ? ` stat-${o}` : ""}">
+    <div class="l">${o ? `<i class="sw sw-${o}"></i>` : ""}${esc(t(label))}</div><div class="v">${fmt(value)}</div></div>`).join("");
 }
 
 function renderCaseFilters() {
@@ -859,60 +1108,55 @@ function renderCaseFamilies() {
   $("case-families").innerHTML = cases.map((item) => {
     const toolCounts = Object.entries(item.tools).sort((a, b) => b[1] - a[1]);
     const libraryCounts = Object.entries(item.libraries).sort((a, b) => b[1] - a[1]).slice(0, 6);
-    const examples = item.examples.map((example, index) => renderCaseExample(example, index)).join("");
-    return `<article class="case-family" data-outcome="${item.outcome}" id="family-${esc(item.id)}">
-      <div class="case-family-head">
-        <div>
-          <div class="case-family-meta">
-            <span class="badge ${OUTCOME_CLASS[item.outcome]}">${esc(outcomeText(item.outcome))}</span>
-            <span class="case-family-count">${fmt(item.count)} ${esc(t("alert_count_unit"))}</span>
-            <span class="case-family-risk">${esc(caseRiskLabel(item.examples[0]?.risk || "other"))}</span>
-          </div>
-          <h3>${esc(caseFamilyTitle(item.family))}</h3>
+    const [first, ...rest] = item.examples;
+    // Only the first representative alert is open; the others fold away to keep the page scannable.
+    const examples = (first ? renderCaseExample(first, 0) : "") + (rest.length ? `<details class="case-more">
+        <summary>${esc(t("case_examples"))} +${rest.length}</summary>
+        <div class="case-examples">${rest.map((example, index) => renderCaseExample(example, index + 1)).join("")}</div>
+      </details>` : "");
+    return `<article class="box case-family" data-outcome="${item.outcome}" id="family-${esc(item.id)}">
+      <header class="case-family-head">
+        <div class="case-family-meta">
+          <span class="badge ${OUTCOME_CLASS[item.outcome]}">${esc(outcomeText(item.outcome))}</span>
+          <span class="case-family-count mono">${fmt(item.count)} ${esc(t("alert_count_unit"))}</span>
+          <span class="tag">${esc(caseRiskLabel(item.examples[0]?.risk || "other"))}</span>
         </div>
-        <div class="case-family-rules"><span class="case-section-label">${esc(t("case_common_rules"))}</span>${item.rules.map((rule) => `<code>${esc(rule)}</code>`).join("")}</div>
+        <h3>${esc(caseFamilyTitle(item.family))}</h3>
+      </header>
+      <div class="case-family-body">
+        <div class="case-analysis-panel">
+          <div class="case-analysis-step">
+            <div class="case-step-head"><span class="case-step-number">1</span><span class="case-step-title">${esc(t("case_why_reported"))}</span></div>
+            <p>${esc(caseFamilyLogic(item.family))}</p>
+          </div>
+          <div class="case-step-arrow" aria-hidden="true"></div>
+          <div class="case-analysis-step">
+            <div class="case-step-head"><span class="case-step-number">2</span><span class="case-step-title">${esc(t("case_why_verdict"))}</span></div>
+            <p>${esc(caseVerdictExplanation(item))}</p>
+          </div>
+          <div class="case-step-arrow" aria-hidden="true"></div>
+          <div class="case-analysis-step case-step-evidence">
+            <div class="case-step-head"><span class="case-step-number">3</span><span class="case-step-title">${esc(t("case_evidence_chain"))}</span></div>
+            <p>${esc(caseEvidenceExplanation(item))}</p>
+            <div class="case-step-chain">
+              <span class="case-chain-node">${esc(t("case_chain_meaning"))}</span><span class="case-chain-arrow">→</span>
+              <span class="case-chain-node">${esc(t("case_chain_evidence"))}</span><span class="case-chain-arrow">→</span>
+              <span class="case-chain-node">${esc(t("case_chain_missing"))}</span><span class="case-chain-arrow">→</span>
+              <span class="case-chain-node">${esc(t("case_chain_root"))}</span>
+            </div>
+          </div>
+        </div>
+        <div class="case-distributions">
+          <div><div class="case-section-label">${esc(t("case_tool_distribution"))}</div>${toolCounts.map(([tool, count]) => `<span class="case-chip"><i class="tool-dot" style="background:${TOOL_COLOR[tool] || DS.faint}"></i>${esc(toolShort(tool))} <b>${fmt(count)}</b></span>`).join("")}</div>
+          <div><div class="case-section-label">${esc(t("case_library_distribution"))}</div>${libraryCounts.map(([library, count]) => `<span class="case-chip">${esc(library)} <b>${fmt(count)}</b></span>`).join("")}</div>
+          <div><div class="case-section-label">${esc(t("case_common_rules"))}</div>${item.rules.map((rule) => `<code class="case-rule">${esc(rule)}</code>`).join("")}</div>
+        </div>
+        <h4 class="case-examples-title"><span>${esc(t("case_examples"))}</span><small>${esc(t("case_analysis_steps"))}</small></h4>
+        ${examples}
       </div>
-      <div class="case-analysis-panel">
-        <div class="case-analysis-step case-step-why">
-          <div class="case-step-head">
-            <span class="case-step-number">1</span>
-            <span class="case-step-title">${esc(t("case_why_reported"))}</span>
-          </div>
-          <p>${esc(caseFamilyLogic(item.family))}</p>
-        </div>
-        <div class="case-analysis-step case-step-verdict">
-          <div class="case-step-head">
-            <span class="case-step-number">2</span>
-            <span class="case-step-title">${esc(t("case_why_verdict"))}</span>
-          </div>
-          <p>${esc(caseVerdictExplanation(item))}</p>
-          <div class="case-step-verdict-tag"><span class="badge ${OUTCOME_CLASS[item.outcome]}">${esc(outcomeText(item.outcome))}</span></div>
-        </div>
-        <div class="case-analysis-step case-step-evidence">
-          <div class="case-step-head">
-            <span class="case-step-number">3</span>
-            <span class="case-step-title">${esc(t("case_evidence_chain"))}</span>
-          </div>
-          <p>${esc(caseEvidenceExplanation(item))}</p>
-          <div class="case-step-chain">
-            <span class="case-chain-node">${esc(t("case_chain_meaning"))}</span>
-            <span class="case-chain-arrow">→</span>
-            <span class="case-chain-node">${esc(t("case_chain_evidence"))}</span>
-            <span class="case-chain-arrow">→</span>
-            <span class="case-chain-node">${esc(t("case_chain_missing"))}</span>
-            <span class="case-chain-arrow">→</span>
-            <span class="case-chain-node">${esc(t("case_chain_root"))}</span>
-          </div>
-        </div>
-      </div>
-      <div class="case-distributions">
-        <div><div class="case-section-label">${esc(t("case_tool_distribution"))}</div>${toolCounts.map(([tool, count]) => `<span class="case-chip">${esc(toolShort(tool))} <b>${fmt(count)}</b></span>`).join("")}</div>
-        <div><div class="case-section-label">${esc(t("case_library_distribution"))}</div>${libraryCounts.map(([library, count]) => `<span class="case-chip">${esc(library)} <b>${fmt(count)}</b></span>`).join("")}</div>
-      </div>
-      <h4 class="case-examples-title"><span>${esc(t("case_examples"))}</span><small>${esc(t("case_analysis_steps"))}</small></h4>
-      <div class="case-examples">${examples}</div>
     </article>`;
   }).join("");
+
 }
 
 function renderCaseNav(cases) {
@@ -932,10 +1176,7 @@ function renderCaseNav(cases) {
     renderCaseNav(cases);
     const target = document.getElementById(`family-${CASE_ACTIVE_FAMILY}`);
     if (!target) return;
-    const topbar = document.querySelector(".topbar");
-    const topbarHeight = topbar ? topbar.getBoundingClientRect().height : 0;
-    const offset = topbarHeight + 24;
-    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+    const top = target.getBoundingClientRect().top + window.scrollY - stickyTop() - 24;
     window.scrollTo({ top, behavior: "smooth" });
   }));
 }
@@ -963,6 +1204,9 @@ function caseEvidenceExplanation(item) {
   return `${LANG === "zh" ? "每个代表案例按“安全含义 → 源码证据 → 缺失条件 → 跨工具关系”展开。" : "Each representative case follows security meaning → source evidence → missing conditions → cross-tool relation."}${source}`;
 }
 
+// Long evidence paragraphs are clamped; a toggle reveals the full text.
+const CLAMP_CHARS = 180;
+
 function renderCaseExample(example, index) {
   const evidenceBlocks = [
     [t("case_security_meaning"), example.security_meaning, "meaning"],
@@ -971,29 +1215,41 @@ function renderCaseExample(example, index) {
     ...(example.root_cause_group ? [[t("case_root_cause"), example.root_cause_group, "root"]] : []),
     ...(example.cross_tool ? [[t("case_cross_tool"), example.cross_tool, "cross"]] : []),
   ];
-  const codeBlock = example.source_code ? `<div class="case-code-block">
-      <div class="case-code-head"><span class="case-code-dot"></span><span>${esc(t("case_code_line"))}</span><code>${esc(example.file)}:${fmt(example.line)}</code></div>
+  const codeBlock = example.source_code ? `<div class="code-block">
+      <div class="code-head"><span class="code-dots"><i></i><i></i><i></i></span><span>${esc(t("case_code_line"))}</span><code>${esc(example.file)}:${fmt(example.line)}</code></div>
       <pre><code>${esc(example.source_code)}</code></pre>
     </div>` : `<div class="case-code-missing">${esc(t("warn_no_code"))}</div>`;
   return `<div class="case-example">
     <div class="case-example-head">
       <span class="case-example-number">${index + 1}</span>
       <div>
-        <strong>${esc(example.project)} ${esc(example.version)} · ${esc(example.rule)}</strong>
-        <div class="case-location"><span class="case-location-pin">●</span>${esc(example.file)}:${fmt(example.line)}:${fmt(example.column)}</div>
+        <strong>${esc(example.project)} ${esc(example.version)} · <span class="mono">${esc(example.rule)}</span></strong>
+        <div class="case-location mono">${esc(example.file)}:${fmt(example.line)}:${fmt(example.column)}</div>
       </div>
       <span class="badge ${TOOL_CLASS[example.tool] || ""}">${esc(toolShort(example.tool))}</span>
     </div>
     ${codeBlock}
     <div class="case-evidence">
-      ${evidenceBlocks.map(([label, value, kind], blockIndex) => `<div class="case-evidence-item case-evidence-${kind}">
-        <div class="case-evidence-label"><span>${blockIndex + 1}</span>${esc(label)}</div>
-        <p>${esc(value)}</p>
-      </div>`).join("")}
+      ${evidenceBlocks.map(([label, value, kind], blockIndex) => {
+        const long = String(value).length > CLAMP_CHARS;
+        return `<div class="case-evidence-item case-evidence-${kind}${long ? " is-clamped" : ""}">
+          <div class="case-evidence-label"><span>${blockIndex + 1}</span>${esc(label)}</div>
+          <p>${esc(value)}</p>
+          ${long ? `<button class="clamp-toggle" type="button">${esc(t("case_show_detail"))}</button>` : ""}
+        </div>`;
+      }).join("")}
     </div>
     <div class="case-conclusion"><span class="badge ${OUTCOME_CLASS[example.outcome]}">${esc(outcomeText(example.outcome))}</span><span>${esc(caseFamilyTitle(example.family || ""))}</span></div>
   </div>`;
 }
+
+$("case-families").addEventListener("click", (event) => {
+  const button = event.target.closest(".clamp-toggle");
+  if (!button) return;
+  const item = button.closest(".case-evidence-item");
+  const open = item.classList.toggle("is-open");
+  button.textContent = t(open ? "case_hide_detail" : "case_show_detail");
+});
 
 // ---------- tab 6: conclusion ----------
 let SUMMARY = null;
@@ -1012,25 +1268,23 @@ function conclVerdictTag(row) {
 
 function renderConclusion() {
   const rows = SUMMARY.tools;
+  const bar = (pct) => `<span class="cell-bar"><i style="width:${Math.min(100, pct)}%"></i></span>`;
 
   $("concl-cards").innerHTML = rows.map((row) => {
     const [tagClass, tagText] = conclVerdictTag(row);
     const spread = SUMMARY.rule_spread[row.tool];
-    return `<div class="concl-card" data-tool="${esc(row.tool)}">
-      <div class="concl-card-head">
-        <h3>${esc(row.tool)}</h3>
-        <span class="concl-verdict-tag ${tagClass}">${esc(tagText)}</span>
-      </div>
+    return `<article class="concl-card" style="--tool:${TOOL_COLOR[row.tool]}">
+      <header class="concl-card-head"><span class="tool-dot"></span><h3>${esc(row.tool)}</h3><span class="concl-verdict-tag ${tagClass}">${esc(tagText)}</span></header>
       <div class="concl-score">
         <div class="concl-score-item"><div class="l">${esc(t("concl_col_volume"))}</div><div class="v">${fmt(row.total)}</div></div>
-        <div class="concl-score-item"><div class="l">${esc(t("concl_col_accuracy"))}</div><div class="v">${row.precision}%</div></div>
-        <div class="concl-score-item"><div class="l">${esc(t("concl_col_cost"))}</div><div class="v">${fmt(row.total_wall_seconds)}s</div></div>
+        <div class="concl-score-item is-key"><div class="l">${esc(t("concl_col_accuracy"))}</div><div class="v">${row.precision}%</div>${bar(row.precision)}</div>
+        <div class="concl-score-item"><div class="l">${esc(t("concl_col_total_time"))}</div><div class="v">${fmt(row.total_wall_seconds)}<small>s</small></div></div>
       </div>
-      <h4>${esc(t("concl_strengths"))}</h4>
-      <ul>${conclStrengths(row, spread).map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
-      <h4>${esc(t("concl_weaknesses"))}</h4>
-      <ul>${conclWeaknesses(row, spread).map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
-    </div>`;
+      <div class="concl-lists">
+        <div class="pros"><h4>${esc(t("concl_strengths"))}</h4><ul>${conclStrengths(row, spread).map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>
+        <div class="cons"><h4>${esc(t("concl_weaknesses"))}</h4><ul>${conclWeaknesses(row, spread).map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>
+      </div>
+    </article>`;
   }).join("");
 
   $("concl-table").innerHTML = `<thead><tr>
@@ -1038,62 +1292,55 @@ function renderConclusion() {
       <th class="num">${esc(t("concl_col_volume"))}</th>
       <th class="num">${esc(t("concl_col_accuracy"))}</th>
       <th class="num">${esc(t("concl_col_precision"))}</th>
-      <th class="num">${esc(t("concl_col_cost"))}</th>
+      <th class="num">${esc(t("concl_col_total_time"))}</th>
       <th class="num">${esc(t("concl_col_cost_per_hit"))}</th>
       <th class="num">${esc(t("concl_col_coverage"))}</th>
     </tr></thead><tbody>` +
     rows.map((row) => `<tr>
-      <td><span class="badge ${TOOL_CLASS[row.tool] || ""}">${esc(row.tool)}</span></td>
+      <td><span class="tool-name" style="--c:${TOOL_COLOR[row.tool]}">${esc(toolShort(row.tool))}</span></td>
       <td class="num">${fmt(row.total)}</td>
-      <td class="num">${row.precision}%</td>
-      <td class="num">${row.fp_ratio}%</td>
+      <td class="num bar-num is-good">${bar(row.precision)}${row.precision}%</td>
+      <td class="num bar-num">${bar(row.fp_ratio)}${row.fp_ratio}%</td>
       <td class="num">${fmt(row.total_wall_seconds)} s</td>
       <td class="num">${row.cost_per_supported ? fmt(row.cost_per_supported) : "-"}</td>
       <td class="num">${fmt(SUMMARY.coverage[row.tool])} / ${fmt(SUMMARY.project_count)}</td>
     </tr>`).join("") + "</tbody>";
 
-  const chartTheme = {
-    ...PLOT_LAYOUT,
-    font: { ...PLOT_LAYOUT.font, family: LANG === "en" ? "Arial, sans-serif" : "Microsoft YaHei, sans-serif" },
-    legend: { orientation: "h", y: -0.2, x: 0, xanchor: "left" },
-  };
-  Plotly.newPlot("chart-concl", [
-    {
-      type: "bar", name: t("concl_col_volume"), x: rows.map((r) => r.tool),
-      y: rows.map((r) => r.total), marker: { color: rows.map((r) => TOOL_COLOR[r.tool]) },
-      hovertemplate: `%{x}<br>${t("concl_col_volume")}: %{y}<extra></extra>`,
-    },
-    {
-      type: "bar", name: t("concl_col_accuracy"), x: rows.map((r) => r.tool),
-      y: rows.map((r) => r.precision), marker: { color: "#1f9d55" }, yaxis: "y2",
-      hovertemplate: `%{x}<br>${t("concl_col_accuracy")}: %{y}%<extra></extra>`,
-    },
-  ], {
-    ...chartTheme,
-    barmode: "group",
-    margin: { t: 20, r: 20, b: 90, l: 60 },
-    automargin: true,
-    yaxis: { title: t("concl_col_volume") },
-    yaxis2: { title: t("concl_col_accuracy"), overlaying: "y", side: "right", range: [0, 100], showgrid: false },
-  }, PLOT_CFG);
+  // Three dimensions in one picture: volume (x), usefulness (y) and total runtime (bubble area).
+  const maxSeconds = Math.max(...rows.map((r) => r.total_wall_seconds));
+  const maxTotal = Math.max(...rows.map((r) => r.total));
+  $("concl-chart-note").textContent = `○ = ${t("concl_col_total_time")}`;
+  Plotly.newPlot("chart-concl", rows.map((row) => ({
+    type: "scatter", mode: "markers+text", name: row.tool, x: [row.total], y: [row.precision],
+    marker: { size: [16 + 64 * Math.sqrt(row.total_wall_seconds / maxSeconds)], color: TOOL_COLOR[row.tool], opacity: 0.88, line: { color: "#fff", width: 2 } },
+    text: [`<b>${esc(toolShort(row.tool))}</b><br>${fmt(row.total)} · ${row.precision}% · ${fmt(row.total_wall_seconds)} s`],
+    textposition: row.total > maxTotal * 0.6 ? "top left" : "middle right",
+    textfont: { family: DS.mono, size: 11, color: DS.ink },
+    hovertemplate: `${esc(row.tool)}<br>${t("concl_col_volume")}: %{x}<br>${t("concl_col_accuracy")}: %{y}%<br>${t("concl_col_total_time")}: ${row.total_wall_seconds} s<extra></extra>`,
+  })), plotLayout({
+    margin: { t: 16, r: 20, b: 50, l: 56 },
+    xaxis: { range: [0, maxTotal * 1.18], title: { text: t("concl_col_volume"), font: { family: DS.sans, size: 12, color: DS.muted } } },
+    yaxis: { range: [-4, 44], ticksuffix: "%", title: { text: t("concl_col_accuracy"), font: { family: DS.sans, size: 12, color: DS.muted } } },
+  }), PLOT_CFG);
 
-  $("concl-verdicts").innerHTML = rows.map((row) => `<div class="concl-verdict">
-    <h3><span class="badge ${TOOL_CLASS[row.tool] || ""}">${esc(row.tool)}</span></h3>
+  $("concl-verdicts").innerHTML = rows.map((row) => `<article class="concl-verdict" style="--tool:${TOOL_COLOR[row.tool]}">
+    <header><span class="tool-dot"></span><b>${esc(row.tool)}</b></header>
     <p>${esc(conclVerdictText(row))}</p>
-    <p class="muted">${esc(LANG === "zh" ? "找到有效问题的库" : "Libraries with useful findings")}: ${
+    <div class="concl-libs"><span class="case-section-label">${esc(LANG === "zh" ? "找到有效问题的库" : "Libraries with useful findings")}</span>${
       SUMMARY.supported_projects[row.tool].length
-        ? SUMMARY.supported_projects[row.tool].map((p) => esc(p)).join("、")
-        : (LANG === "zh" ? "无" : "none")
-    }</p>
-  </div>`).join("");
+        ? SUMMARY.supported_projects[row.tool].map((p) => `<span class="tag">${esc(p)}</span>`).join("")
+        : `<span class="muted">${LANG === "zh" ? "无" : "none"}</span>`
+    }</div>
+  </article>`).join("");
 
   const scenarios = ["concl_sc_llm", "concl_sc_ci", "concl_sc_deep", "concl_sc_combo"];
-  const scenarioTools = ["Flawfinder", "Cppcheck", "CodeChecker/clangsa", "Flawfinder + Cppcheck + clangsa"];
-  $("concl-scenarios").innerHTML = scenarios.map((key, index) => `<div class="concl-scenario">
+  const scenarioTools = [["Flawfinder"], ["Cppcheck"], ["CodeChecker/clangsa"], ["Flawfinder", "Cppcheck", "CodeChecker/clangsa"]];
+  $("concl-scenarios").innerHTML = scenarios.map((key, index) => `<article class="concl-scenario">
+    <div class="concl-scenario-no mono">0${index + 1}</div>
     <h4>${esc(t(key))}</h4>
-    <p><span class="tool">${esc(scenarioTools[index])}</span></p>
+    <div class="concl-scenario-tools">${scenarioTools[index].map((tool) => `<span class="tool-name" style="--c:${TOOL_COLOR[tool]}">${esc(toolShort(tool))}</span>`).join(index === 3 ? '<span class="plus">+</span>' : "")}</div>
     <p>${esc(t(`${key}_d`))}</p>
-  </div>`).join("");
+  </article>`).join("");
 }
 
 function conclStrengths(row, spread) {
@@ -1171,26 +1418,41 @@ async function loadReliability() {
   renderReliability();
 }
 
+const GROUP_OUTCOME = { Supported: "supported", Undetermined: "undetermined", "False positive": "false_positive" };
+
 function renderReliability() {
   const rep = RELIABILITY.replication;
   const rev = RELIABILITY.review;
 
+  // The two mechanisms, each linking down to its section.
   $("rel-pillars").innerHTML = [
-    { n: "1", h: "rel_pillar1_h", p: "rel_pillar1_p" },
-    { n: "2", h: "rel_pillar2_h", p: "rel_pillar2_p" },
-  ].map((item) => `<div class="rel-pillar">
-    <h3><span class="rel-pillar-num">${esc(item.n)}</span>${esc(t(item.h))}</h3>
-    <p>${esc(t(item.p))}</p>
-  </div>`).join("");
+    { n: "1", h: "rel_pillar1_h", p: "rel_pillar1_p", target: "rel-repl" },
+    { n: "2", h: "rel_pillar2_h", p: "rel_pillar2_p", target: "rel-review" },
+  ].map((item) => `<button class="box rel-pillar" data-target="${item.target}">
+    <span class="rel-pillar-num mono">0${esc(item.n)}</span>
+    <span class="rel-pillar-body"><b>${esc(t(item.h))}</b><span>${esc(t(item.p))}</span></span>
+    <span class="rel-pillar-go" aria-hidden="true">↓</span>
+  </button>`).join("");
+  document.querySelectorAll(".rel-pillar").forEach((button) => button.addEventListener("click", () => {
+    const target = $(button.dataset.target);
+    window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - stickyTop() - 16, behavior: "smooth" });
+  }));
 
-  const steps = [
-    ["rel_step1", "rel_step1_d"], ["rel_step2", "rel_step2_d"],
-    ["rel_step3", "rel_step3_d"], ["rel_step4", "rel_step4_d"],
-  ];
-  $("rel-steps").innerHTML = steps.map(([h, d], index) => `<div class="rel-step">
-    <h4><span class="rel-pillar-num">${index + 1}</span> ${esc(t(h))}</h4>
-    <p>${esc(t(d))}</p>
-  </div>`).join("");
+  const steps = [["rel_step1", "rel_step1_d"], ["rel_step2", "rel_step2_d"], ["rel_step3", "rel_step3_d"], ["rel_step4", "rel_step4_d"]];
+  $("rel-steps").innerHTML = steps.map(([h, d], index) => `<div class="pipe-step">
+      <div class="pipe-head"><span class="pipe-id">${index + 1}</span><strong>${esc(t(h))}</strong></div>
+      <p>${esc(t(d))}</p>
+    </div>`).join('<div class="pipe-arrow" aria-hidden="true"></div>');
+
+  const exhaustive = rev.exhaustive_groups.reduce((a, item) => a + item.sampled, 0);
+  const sampled = rev.sampled_groups.reduce((a, item) => a + item.sampled, 0);
+  $("rel-review-grid").innerHTML = [
+    [t("rel_kpi_total"), fmt(rev.total_alerts)],
+    [t("rel_kpi_exhaustive"), fmt(exhaustive)],
+    [t("rel_kpi_sampled"), fmt(sampled)],
+    [t("rel_kpi_runs"), fmt(rep.runs_compared)],
+    [t("rel_kpi_identical"), `${fmt(rep.alert_groups_identical)}<small> / ${fmt(rep.runs_compared)}</small>`],
+  ].map(([label, value], i) => `<div class="stat${i === 4 ? " stat-ok" : ""}"><div class="l">${esc(label)}</div><div class="v">${value}</div></div>`).join("");
 
   $("rel-pinned-table").innerHTML = `<thead><tr>
       <th>${esc(t("rel_col_lib"))}</th><th>${esc(t("rel_col_version"))}</th>
@@ -1198,48 +1460,372 @@ function renderReliability() {
     </tr></thead><tbody>` +
     rep.pinned_libraries.map((lib) => `<tr>
       <td><b>${esc(lib.name)}</b></td>
-      <td>${esc(lib.version)}</td>
+      <td class="mono">${esc(lib.version)}</td>
       <td><code class="rel-hash">${esc(String(lib.commit).slice(0, 12))}</code></td>
       <td>${lib.has_hash
-        ? `<span class="badge b-sup">${esc(t("rel_hash_yes"))}</span> <code class="rel-hash">${esc(String(lib.sha256).slice(0, 16))}…</code>`
+        ? `<span class="badge b-ok">${esc(t("rel_hash_yes"))}</span> <code class="rel-hash">${esc(String(lib.sha256).slice(0, 16))}…</code>`
         : `<span class="badge b-und">${esc(t("rel_hash_no"))}</span>`}</td>
     </tr>`).join("") + "</tbody>";
 
-  const exhaustive = rev.exhaustive_groups.reduce((a, item) => a + item.sampled, 0);
-  const sampled = rev.sampled_groups.reduce((a, item) => a + item.sampled, 0);
-  $("rel-review-grid").innerHTML = [
-    [t("rel_kpi_total"), rev.total_alerts],
-    [t("rel_kpi_exhaustive"), exhaustive],
-    [t("rel_kpi_sampled"), sampled],
-    [t("rel_kpi_runs"), rep.runs_compared],
-    [t("rel_kpi_identical"), rep.alert_groups_identical],
-  ].map(([label, value]) => `<div class="rel-kpi"><div class="l">${esc(label)}</div><div class="v">${fmt(value)}</div></div>`).join("");
+  // How much of each verdict group was reviewed by hand.
+  $("rel-groups").innerHTML = [...rev.exhaustive_groups, ...rev.sampled_groups].map((group) => {
+    const o = GROUP_OUTCOME[group.group] || "false_positive";
+    const pct = group.population ? 100 * group.sampled / group.population : 0;
+    return `<div class="rel-group">
+      <div class="rel-group-head"><span><i class="sw sw-${o}"></i>${esc(outcomeText(o))}</span><span class="mono">${fmt(group.sampled)} / ${fmt(group.population)} · ${pct.toFixed(0)}%</span></div>
+      <div class="rel-group-bar"><i class="fill-${o}" style="width:${pct}%"></i></div>
+    </div>`;
+  }).join("");
 
-  const strata = [...rev.exhaustive_groups, ...rev.sampled_groups];
+  // One row per stratum (the sampling plan), grouped by verdict.
+  let lastGroup = "";
   $("rel-strata-table").innerHTML = `<thead><tr>
       <th>${esc(t("rel_col_stratum"))}</th><th>${esc(t("rel_col_population"))}</th>
       <th class="num">${esc(t("rel_col_pop_size"))}</th><th class="num">${esc(t("rel_col_sampled"))}</th>
       <th class="num">${esc(t("rel_col_rate"))}</th>
     </tr></thead><tbody>` +
-    strata.map((item) => `<tr>
-      <td><b>${esc(item.stratum)}</b></td>
-      <td>${esc(item.population)}</td>
-      <td class="num">${fmt(item.population_size)}</td>
-      <td class="num">${fmt(item.sampled)}</td>
-      <td class="num">${esc(item.rate)}</td>
-    </tr>`).join("") + "</tbody>" +
+    rev.strata.map((item) => {
+      const o = GROUP_OUTCOME[item.group] || "false_positive";
+      const first = item.group !== lastGroup;
+      lastGroup = item.group;
+      const name = String(item.stratum).split(" | ").slice(1).join(" · ") || item.stratum;
+      return `<tr class="${first ? "group-start" : ""}">
+        <td>${first ? `<span class="badge ${OUTCOME_CLASS[o]}">${esc(outcomeText(o))}</span>` : ""}</td>
+        <td class="mono small">${esc(name)}</td>
+        <td class="num">${fmt(item.population_size)}</td>
+        <td class="num">${fmt(item.sampled)}</td>
+        <td class="num">${esc(item.rate)}</td>
+      </tr>`;
+    }).join("") + "</tbody>" +
     `<tfoot><tr><td colspan="2"><b>${esc(LANG === "zh" ? "合计" : "Total")}</b></td>
       <td class="num"><b>${fmt(rev.population)}</b></td>
       <td class="num"><b>${fmt(rev.sample_size)}</b></td>
       <td class="num"><b>${rev.population ? ((100 * rev.sample_size / rev.population).toFixed(1)) : "0"}%</b></td>
     </tr></tfoot>`;
-
 }
+
+// ---------- presentation mode ----------
+// One idea per screen for the talk. Slide titles state the finding; every number is
+// computed from the same data the explore pages use. The order differs from the page
+// order on purpose: core finding first, credibility before the recommendations.
+let PRESENTING = false;
+let SLIDE = 0;
+
+const DECK_TEXT = {
+  zh: {
+    finding: "核心发现",
+    scope: (n) => `${n.libs} 个库 × ${n.tools} 款工具 = ${n.scans} 次扫描，${fmt(n.alerts)} 条告警逐条核查`,
+    libs: (n, d) => `${n} 个固定版本的开源 C 库，覆盖 ${d} 个领域`,
+    tools: "三款工具读代码的深度不同",
+    process: "从固定源码到逐条核查：S1–S6 每一步都可核对",
+    verdict: (r) => `${r.tool} 的 ${fmt(r.total)} 条告警中，只有 ${r.supported} 条成立（${r.precision}%）`,
+    cost: (best, worst) => `${toolShort(best.tool)} 每看 ${fmt(best.cost_per_supported)} 条告警就能找到 1 条真问题，${toolShort(worst.tool)} 要看 ${fmt(worst.cost_per_supported)} 条`,
+    cases: (name, n) => `最常见的误报原因：${name}（${fmt(n)} 条）`,
+    trust: (same, runs, sample) => `${same} / ${runs} 组复现运行与原实验完全一致，${fmt(sample)} 条告警进入人工复核`,
+    verdicts: (rows) => rows.map((r) => `${toolShort(r.tool)} ${conclVerdictTag(r)[1]}`).join(" · "),
+    rate: "有效率", supportedOf: (s, n) => `${s} / ${fmt(n)} 条成立`, costUnit: "条告警 / 1 条真问题",
+    families: "案例族（按告警数）",
+  },
+  en: {
+    finding: "Core finding",
+    scope: (n) => `${n.libs} libraries × ${n.tools} tools = ${n.scans} scans; all ${fmt(n.alerts)} alerts checked one by one`,
+    libs: (n, d) => `${n} open-source C libraries at fixed versions, across ${d} domains`,
+    tools: "The three tools read code at different depths",
+    process: "From pinned source to reviewed alerts: every step S1–S6 can be checked",
+    verdict: (r) => `Only ${r.supported} of ${r.tool}'s ${fmt(r.total)} alerts hold up (${r.precision}%)`,
+    cost: (best, worst) => `${toolShort(best.tool)} yields 1 real finding per ${fmt(best.cost_per_supported)} alerts; ${toolShort(worst.tool)} needs ${fmt(worst.cost_per_supported)}`,
+    cases: (name, n) => `Most common false-positive cause: ${name.charAt(0).toLowerCase() + name.slice(1)} (${fmt(n)} alerts)`,
+    trust: (same, runs, sample) => `${same} / ${runs} replication runs match the original exactly; ${fmt(sample)} alerts go to human review`,
+    verdicts: (rows) => rows.map((r) => `${toolShort(r.tool)}: ${conclVerdictTag(r)[1].toLowerCase()}`).join(" · "),
+    rate: "Usefulness", supportedOf: (s, n) => `${s} of ${fmt(n)} hold up`, costUnit: "alerts per real finding",
+    families: "Case families (by alerts)",
+  },
+};
+const D = () => DECK_TEXT[LANG] || DECK_TEXT.zh;
+
+// Larger type for the projector.
+function deckLayout(extra = {}) {
+  const base = plotLayout(extra);
+  base.font = { ...base.font, size: 15 };
+  ["xaxis", "yaxis"].forEach((axis) => {
+    base[axis].tickfont = { ...base[axis].tickfont, size: Math.max(13, (base[axis].tickfont || {}).size || 0) };
+  });
+  return base;
+}
+
+const deckBox = (label, inner, legend = "") => `<section class="box s-box">
+  <header class="box-head"><span class="box-label">${label}</span>${legend ? `<span class="chart-legend">${legend}</span>` : ""}</header>
+  <div class="s-box-body">${inner}</div></section>`;
+const legendHtml = (items) => items.map(([label, cls, color]) => `<span class="lg"><i class="sw ${cls || ""}"${color ? ` style="background:${color}"` : ""}></i>${esc(label)}</span>`).join("");
+const outcomeLegendHtml = () => legendHtml(OUTCOMES.map((o) => [outcomeText(o), `sw-${o}`]));
+const byPrecision = () => [...SUMMARY.tools].sort((a, b) => b.precision - a.precision);
+
+function deckSlides() {
+  const rows = SUMMARY.tools;
+  const v = DASH.verdict;
+  const rep = RELIABILITY.replication;
+  const rev = RELIABILITY.review;
+  const domains = new Set(LIBS.map((l) => DOMAIN[l.name]).filter(Boolean)).size;
+  const worst = [...rows].sort((a, b) => a.precision - b.precision)[0];
+  const cheap = [...rows].sort((a, b) => a.cost_per_supported - b.cost_per_supported)[0];
+  const dear = [...rows].sort((a, b) => b.cost_per_supported - a.cost_per_supported)[0];
+  const topFalse = [...SPECIAL_CASES.cases].filter((c) => c.outcome === "false_positive").sort((a, b) => b.count - a.count)[0];
+
+  const rateCallouts = byPrecision().map((r) => `<div class="s-callout" style="--tool:${TOOL_COLOR[r.tool]}">
+      <div class="s-callout-head"><span class="tool-dot"></span>${esc(toolShort(r.tool))}</div>
+      <div class="s-callout-v">${r.precision}<small>%</small></div>
+      <div class="s-callout-s">${esc(D().supportedOf(r.supported, r.total))}</div>
+    </div>`).join("");
+
+  return [
+    { stage: 1, page: "overview", kicker: "COMP5355 · Project 17", title: esc(t("title")), sub: esc(t("ov_hero_p")),
+      body: () => `<div class="s-split">${deckBox(`<span class="fig-no">FIG.1</span>${esc(t("ov_hero_chart"))}`, '<div class="s-chart" id="deck-chart"></div>', outcomeLegendHtml())}
+        <div class="s-callouts"><div class="s-callouts-label">${esc(D().finding)} · ${esc(D().rate)}</div>${rateCallouts}</div></div>`,
+      draw: () => drawVerdictBars("deck-chart", v, false) },
+
+    { stage: 1, page: "overview", kicker: t("tab_overview"), title: esc(D().scope({ libs: LIBS.length, tools: TOOLS.length, scans: MATRIX.length, alerts: sumCandidatesAll() })),
+      body: () => `<div class="s-kpis">${[[t("ov_kpi_libs"), LIBS.length], [t("ov_kpi_tools"), TOOLS.length], [t("ov_kpi_scans"), MATRIX.length], [t("ov_kpi_alerts"), sumCandidatesAll()]]
+          .map(([l, n], i) => `<div class="box s-kpi${i === 3 ? " is-key" : ""}"><div class="l">${esc(l)}</div><div class="v">${fmt(n)}</div></div>`).join("")}</div>
+        <ul class="s-checks">${["ov_point1", "ov_point2", "ov_point3"].map((k) => `<li class="box"><span class="tick"></span>${esc(t(k))}</li>`).join("")}</ul>` },
+
+    { stage: 2, page: "libs", kicker: t("tab_libs"), title: esc(D().libs(LIBS.length, domains)),
+      body: () => `<div class="s-libs">${LIBS.map((l) => {
+          const m = MATRIX.filter((x) => x.project_id === l.id);
+          const c = (k) => m.find((x) => x.tool_key === k)?.candidates || 0;
+          return `<div class="box s-lib"><div class="s-lib-head"><b>${esc(l.name)}</b><span class="mono">${esc(l.version)}</span></div>
+            <span class="tag">${esc(DOMAIN[l.name] || "")}</span>
+            <div class="s-lib-n"><span class="mono">${fmt(sumCandidates(l.id))}</span><small>${esc(t("card_alerts"))}</small></div>
+            <span class="mini-stack">${["FF", "CP", "CC"].map((k, i) => c(k) ? `<i style="flex:${c(k)};background:${TOOL_COLOR[TOOLS[i]]}"></i>` : "").join("")}</span></div>`;
+        }).join("")}</div><div class="s-legend">${legendHtml(TOOLS.map((tool) => [toolShort(tool), "", TOOL_COLOR[tool]]))}</div>` },
+
+    { stage: 2, page: "tools", kicker: t("tab_tools"), title: esc(D().tools), sub: esc(t("tools_p")),
+      body: () => `<div class="s-tools">${toolDescriptions().map((tool, i) => `<section class="box s-tool" style="--tool:${TOOL_COLOR[TOOLS[i]]}">
+          <header><span class="tool-dot"></span><b>${esc(tool.n)}</b></header>
+          <div class="s-tool-method"><span>${esc(tool.t)}</span><span class="depth">${[0, 1, 2].map((k) => `<i class="${k <= i ? "on" : ""}"></i>`).join("")}</span></div>
+          <p>${esc(tool.how)}</p></section>`).join("")}</div>` },
+
+    { stage: 3, page: "run", kicker: t("tab_run"), title: esc(D().process), sub: esc(t("flow_p")),
+      body: () => `<div class="pipeline s-pipeline">${I18N[LANG].flow_steps.map(([id, title, detail]) => `<div class="pipe-step">
+          <div class="pipe-head"><span class="pipe-id">${esc(id)}</span><strong>${esc(title)}</strong></div><p>${esc(detail)}</p></div>`).join('<div class="pipe-arrow" aria-hidden="true"></div>')}</div>
+        <div><button class="primary s-action" id="deck-replay" type="button">▶ ${esc(t("deck_replay"))}</button></div>`,
+      draw: () => $("deck-replay").addEventListener("click", () => { switchTab("run"); replayRun(); }) },
+
+    { stage: 4, page: "dash", kicker: t("tab_dash"), title: esc(D().verdict(worst)),
+      body: () => `<div class="s-split">${deckBox(esc(t("chart_verdict")), '<div class="s-chart" id="deck-chart"></div>', outcomeLegendHtml())}
+        <div class="s-callouts"><div class="s-callouts-label">${esc(D().rate)}</div>${rateCallouts}</div></div>`,
+      draw: () => drawVerdictBars("deck-chart", v, true) },
+
+    { stage: 4, page: "conclusion", kicker: t("tab_conclusion"), title: esc(D().cost(cheap, dear)),
+      body: () => `<div class="s-split">${deckBox(esc(t("concl_col_cost_per_hit")), '<div class="s-chart" id="deck-chart"></div>')}
+        <div class="s-callouts"><div class="s-callouts-label">${esc(t("concl_col_total_time"))}</div>${rows.map((r) => `<div class="s-callout" style="--tool:${TOOL_COLOR[r.tool]}">
+          <div class="s-callout-head"><span class="tool-dot"></span>${esc(toolShort(r.tool))}</div>
+          <div class="s-callout-v">${fmt(r.total_wall_seconds)}<small>s</small></div></div>`).join("")}</div></div>`,
+      draw: () => {
+        const order = [...rows].sort((a, b) => a.cost_per_supported - b.cost_per_supported).reverse();
+        Plotly.newPlot("deck-chart", [{
+          type: "bar", orientation: "h", y: order.map((r) => toolShort(r.tool)), x: order.map((r) => r.cost_per_supported),
+          marker: { color: order.map((r) => TOOL_COLOR[r.tool]) }, text: order.map((r) => `${fmt(r.cost_per_supported)} ${D().costUnit}`),
+          textposition: "outside", cliponaxis: false, textfont: { family: DS.mono, size: 15, color: DS.ink },
+          hovertemplate: "%{y}: %{x}<extra></extra>",
+        }], deckLayout({ bargap: 0.45, margin: { t: 10, r: 220, b: 36, l: 10 }, yaxis: { ...CATEGORY_AXIS, tickfont: { family: DS.sans, size: 16, color: DS.ink } } }), PLOT_CFG);
+      } },
+
+    { stage: 4, page: "cases", kicker: t("tab_cases"), title: esc(D().cases(caseFamilyTitle(topFalse.family), topFalse.count)),
+      body: () => deckBox(esc(D().families), '<div class="s-chart s-chart-tall" id="deck-chart"></div>', outcomeLegendHtml()),
+      draw: () => {
+        const fam = [...SPECIAL_CASES.cases].sort((a, b) => a.count - b.count);
+        Plotly.newPlot("deck-chart", [{
+          type: "bar", orientation: "h", y: fam.map((_, i) => i), x: fam.map((c) => c.count),
+          marker: { color: fam.map((c) => c.outcome === "false_positive" ? "#c3c9d2" : DS.outcome[c.outcome]) },
+          text: fam.map((c) => c.count), textposition: "outside", cliponaxis: false, textfont: { family: DS.mono, size: 12, color: DS.muted },
+          customdata: fam.map((c) => caseFamilyTitle(c.family)), hovertemplate: "%{customdata}: %{x}<extra></extra>",
+        }], deckLayout({ bargap: 0.25, margin: { t: 6, r: 40, b: 30, l: 10 },
+          yaxis: { showgrid: false, linecolor: "rgba(0,0,0,0)", tickvals: fam.map((_, i) => i), ticktext: fam.map((c) => caseFamilyTitle(c.family)), tickfont: { family: DS.sans, size: 13, color: DS.ink }, ticksuffix: "  " } }), PLOT_CFG);
+      } },
+
+    { stage: 5, page: "reliability", kicker: t("tab_reliability"), title: esc(D().trust(rep.alert_groups_identical, rep.runs_compared, rev.sample_size)),
+      body: () => `<div class="pipeline pipeline-4 s-pipeline">${[1, 2, 3, 4].map((n) => `<div class="pipe-step">
+          <div class="pipe-head"><span class="pipe-id">${n}</span><strong>${esc(t(`rel_step${n}`))}</strong></div><p>${esc(t(`rel_step${n}_d`))}</p></div>`).join('<div class="pipe-arrow" aria-hidden="true"></div>')}</div>
+        <div class="rel-groups s-groups">${[...rev.exhaustive_groups, ...rev.sampled_groups].map((group) => {
+          const o = GROUP_OUTCOME[group.group] || "false_positive";
+          const pct = group.population ? 100 * group.sampled / group.population : 0;
+          return `<div class="rel-group"><div class="rel-group-head"><span><i class="sw sw-${o}"></i>${esc(outcomeText(o))}</span><span class="mono">${fmt(group.sampled)} / ${fmt(group.population)}</span></div>
+            <div class="rel-group-bar"><i class="fill-${o}" style="width:${pct}%"></i></div></div>`;
+        }).join("")}</div>` },
+
+    { stage: 5, page: "conclusion", kicker: t("tab_conclusion"), title: esc(D().verdicts(byPrecision())),
+      body: () => `<div class="s-tools">${byPrecision().map((r) => {
+          const [tagClass, tagText] = conclVerdictTag(r);
+          return `<section class="box s-tool s-verdict" style="--tool:${TOOL_COLOR[r.tool]}">
+            <header><span class="tool-dot"></span><b>${esc(r.tool)}</b><span class="concl-verdict-tag ${tagClass}">${esc(tagText)}</span></header>
+            <div class="s-verdict-grid">
+              <div><div class="l">${esc(t("concl_col_accuracy"))}</div><div class="v is-key">${r.precision}%</div></div>
+              <div><div class="l">${esc(t("concl_col_volume"))}</div><div class="v">${fmt(r.total)}</div></div>
+              <div><div class="l">${esc(t("concl_col_total_time"))}</div><div class="v">${fmt(r.total_wall_seconds)}<small>s</small></div></div>
+              <div><div class="l">${esc(t("concl_col_coverage"))}</div><div class="v">${fmt(SUMMARY.coverage[r.tool])}<small>/${fmt(SUMMARY.project_count)}</small></div></div>
+            </div></section>`;
+        }).join("")}</div>` },
+
+    { stage: 5, page: "conclusion", kicker: t("tab_conclusion"), title: esc(t("concl_scenario_title")),
+      body: () => `<div class="concl-scenarios s-scenarios">${$("concl-scenarios").innerHTML}</div>` },
+  ];
+}
+
+// Verdict bars per tool: absolute counts (overview figure) or shares (dashboard view).
+function drawVerdictBars(target, v, share) {
+  const tools = [...TOOLS].reverse();
+  const total = (tool) => OUTCOMES.reduce((a, o) => a + v[tool][o], 0);
+  Plotly.newPlot(target, OUTCOMES.map((o) => ({
+    type: "bar", orientation: "h", name: outcomeText(o), y: tools.map(toolShort),
+    x: tools.map((tool) => share ? 100 * v[tool][o] / total(tool) : v[tool][o]), customdata: tools.map((tool) => v[tool][o]),
+    marker: outcomeMarker(o), texttemplate: share ? "%{x:.1f}%" : "", textposition: "inside", insidetextanchor: "middle", textangle: 0,
+    textfont: { family: DS.mono, size: 14, color: o === "supported" ? "#fff" : DS.ink },
+    hovertemplate: `%{y} · ${outcomeText(o)}: %{customdata}<extra></extra>`,
+  })), deckLayout({
+    barmode: "stack", bargap: 0.42, uniformtext: { mode: "hide", minsize: 12 }, margin: { t: 6, r: share ? 16 : 70, b: 34, l: 10 },
+    xaxis: share ? { range: [0, 100], ticksuffix: "%" } : {}, yaxis: { ...CATEGORY_AXIS, tickfont: { family: DS.sans, size: 16, color: DS.ink } },
+    annotations: share ? [] : tools.map((tool) => ({ x: total(tool), y: toolShort(tool), xanchor: "left", xshift: 8, showarrow: false, text: `<b>${fmt(total(tool))}</b>`, font: { family: DS.mono, size: 16, color: DS.ink } })),
+  }), PLOT_CFG);
+}
+
+function renderSlide() {
+  if (!SUMMARY || !DASH || !RELIABILITY || !SPECIAL_CASES) {
+    $("deck-slide").innerHTML = `<div class="empty">${esc(t("running"))}</div>`;
+    return;
+  }
+  const slides = deckSlides();
+  SLIDE = Math.min(Math.max(SLIDE, 0), slides.length - 1);
+  const slide = slides[SLIDE];
+  const pageTab = document.querySelector(`.tab[data-tab="${slide.page}"]`);
+  $("deck-slide").innerHTML = `<article class="slide">
+    <header class="slide-head"><span class="stage-tag"><span class="stage-tag-no">0${slide.stage}</span>${esc(t(`stage_${slide.stage}`))}</span><span class="slide-kicker">${esc(slide.kicker)}</span></header>
+    <h2 class="slide-title">${slide.title}</h2>
+    ${slide.sub ? `<p class="slide-sub">${slide.sub}</p>` : ""}
+    <div class="slide-body">${slide.body()}</div>
+    <button class="slide-explore" type="button" data-tab="${slide.page}">${esc(t("deck_explore"))} · ${esc(t(pageTab.dataset.i18n))} →</button>
+  </article>`;
+  $("deck-slide").querySelector(".slide-explore").addEventListener("click", (event) => switchTab(event.currentTarget.dataset.tab));
+  setNavState(slide.page);
+  $("deck-count").textContent = `${String(SLIDE + 1).padStart(2, "0")} / ${String(slides.length).padStart(2, "0")}`;
+  $("deck-bar").style.width = `${100 * (SLIDE + 1) / slides.length}%`;
+  $("deck-prev").disabled = SLIDE === 0;
+  $("deck-next").disabled = SLIDE === slides.length - 1;
+  if (slide.draw) requestAnimationFrame(slide.draw);
+}
+
+function deckGo(index) {
+  SLIDE = index;
+  renderSlide();
+}
+
+function deckJumpToStage(stage) {
+  const index = deckSlides().findIndex((s) => s.stage === stage);
+  if (index >= 0) deckGo(index);
+}
+
+// Returns false when no slide covers the page, so the caller opens the page itself.
+function deckJumpToPage(page) {
+  const index = deckSlides().findIndex((s) => s.page === page);
+  if (index < 0) return false;
+  deckGo(index);
+  return true;
+}
+
+function deckKey(event) {
+  const next = ["ArrowRight", "ArrowDown", "PageDown", " "].includes(event.key);
+  const prev = ["ArrowLeft", "ArrowUp", "PageUp"].includes(event.key);
+  if (next || prev) {
+    event.preventDefault();
+    deckGo(SLIDE + (next ? 1 : -1));
+  } else if (event.key === "Escape" && !document.fullscreenElement) {
+    exitDeck();
+  } else if (event.key === "f" || event.key === "F") {
+    toggleFullscreen();
+  }
+}
+
+function toggleFullscreen() {
+  if (document.fullscreenElement) document.exitFullscreen();
+  else document.documentElement.requestFullscreen?.();
+}
+
+function setModeLabel() {
+  $("mode-label").dataset.i18n = PRESENTING ? "mode_explore" : "mode_present";
+  $("mode-label").textContent = t($("mode-label").dataset.i18n);
+}
+
+function enterDeck() {
+  const page = document.querySelector(".panel.active")?.id;
+  PRESENTING = true;
+  document.body.classList.add("mode-present");
+  $("deck").hidden = false;
+  updateRail();
+  setModeLabel();
+  // Start from the slide for the page being viewed (or the first slide).
+  SLIDE = SUMMARY && DASH && RELIABILITY && SPECIAL_CASES ? Math.max(0, deckSlides().findIndex((s) => s.page === page)) : 0;
+  renderSlide();
+}
+
+function exitDeck() {
+  PRESENTING = false;
+  document.body.classList.remove("mode-present");
+  $("deck").hidden = true;
+  if (document.fullscreenElement) document.exitFullscreen();
+  updateRail();
+  setModeLabel();
+  setNavState(document.querySelector(".panel.active")?.id || "overview");
+  window.dispatchEvent(new Event("resize"));
+}
+
+$("deck-prev").addEventListener("click", () => deckGo(SLIDE - 1));
+$("deck-next").addEventListener("click", () => deckGo(SLIDE + 1));
+$("deck-exit").addEventListener("click", exitDeck);
+$("deck-full").addEventListener("click", toggleFullscreen);
+
+// ---------- page navigation ----------
+// Pages in presentation order; the footer of each page links to its neighbours, and the
+// arrow keys page through them during a talk.
+const PAGE_ORDER = ["overview", "libs", "tools", "run", "dash", "cases", "conclusion", "reliability"];
+
+function renderPageNav() {
+  PAGE_ORDER.forEach((id, index) => {
+    const panel = $(id);
+    let nav = panel.querySelector(":scope > .page-nav");
+    if (!nav) {
+      nav = document.createElement("nav");
+      nav.className = "page-nav";
+      panel.appendChild(nav);
+    }
+    const link = (j, dir) => {
+      if (j < 0 || j >= PAGE_ORDER.length) return "<span></span>";
+      const tab = document.querySelector(`.tab[data-tab="${PAGE_ORDER[j]}"]`);
+      const stage = tab.closest(".stage").dataset.stage;
+      return `<button class="page-link page-${dir}" data-tab="${PAGE_ORDER[j]}">
+        <span class="page-link-k">${dir === "prev" ? `← ${esc(t("page_prev"))}` : `${esc(t("page_next"))} →`}</span>
+        <span class="page-link-t"><span class="stage-tag-no">0${stage}</span>${esc(t(tab.dataset.i18n))}</span>
+      </button>`;
+    };
+    nav.innerHTML = link(index - 1, "prev") + link(index + 1, "next");
+    nav.querySelectorAll(".page-link").forEach((button) => button.addEventListener("click", () => switchTab(button.dataset.tab)));
+  });
+}
+
+document.addEventListener("keydown", (event) => {
+  if (event.altKey || event.ctrlKey || event.metaKey) return;
+  if (event.target.closest("input, select, textarea")) return;
+  if (PRESENTING) return deckKey(event);
+  if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+  const current = PAGE_ORDER.indexOf(document.querySelector(".panel.active")?.id);
+  const next = current + (event.key === "ArrowRight" ? 1 : -1);
+  if (next >= 0 && next < PAGE_ORDER.length) switchTab(PAGE_ORDER[next]);
+});
 
 // ---------- boot ----------
 (async function boot() {
   try {
     applyStaticText();
+    renderPageNav();
+    updateRail();
     await loadLibs();
     setupRun();
     await loadDashboard();
@@ -1248,6 +1834,7 @@ function renderReliability() {
     await loadReliability();
     observeCaseFilterPanel();
     syncCaseStickyOffsets();
+    if (location.hash === "#present") enterDeck();
   } catch (err) {
     document.body.insertAdjacentHTML("afterbegin", `<div style="padding:12px;background:#fee;color:#900">${esc(t("load_failed"))}: ${esc(err.message)}</div>`);
   }

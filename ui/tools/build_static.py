@@ -2,7 +2,7 @@
 
 Every read-only API response is written to a JSON file, and the front end switches to
 reading those files (window.P17_STATIC). Live runs need a server with Docker and are
-disabled in the static version.
+disabled in the static version; the recorded runs can still be replayed.
 
     python ui/tools/build_static.py            writes ui/dist/
     python ui/tools/build_static.py --out DIR
@@ -41,6 +41,13 @@ def main():
     write(api / "special-cases.json", server.special_cases())
     for lib in server.libraries():
         write(api / "library-detail" / f"{lib['id']}.json", server.library_detail(lib["id"]))
+    # Recorded replication runs for the replay on the live-run page.
+    for lib in server.libraries():
+        for tool in sorted(server.TOOL_KEYS):
+            try:
+                write(api / "replay" / f"{lib['id']}-{tool}.json", server.replay(lib["id"], tool))
+            except server.HTTPException:
+                pass
     # All alerts with full detail in one file; the front end filters it in the browser.
     write(api / "candidates.json", server.candidates())
 

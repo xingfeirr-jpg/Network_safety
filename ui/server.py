@@ -10,6 +10,7 @@ Endpoints
   POST /api/runs                     start one live run (library, tool)
   GET  /api/runs/{id}/events         Server-Sent Events: progress lines and final result
   GET  /api/runs/{id}                final result as JSON
+  GET  /api/replay/{library}/{tool}  recorded replication run, replayed step by step in the UI
 """
 import asyncio
 import json
@@ -394,6 +395,17 @@ def finalize(run_id):
         reference_count=len(reference), replicated_count=len(alerts),
         matches_reference=len(alerts) == len(reference),
     )
+
+
+@app.get("/api/replay/{library}/{tool}")
+def replay(library: str, tool: str):
+    """Recorded output of one replication run (prepared by tools/sync_data.py)."""
+    if library not in LIBRARY_IDS or tool not in TOOL_KEYS:
+        raise HTTPException(400, "unknown library or tool")
+    path = cfg.DATA / "replay" / f"{library}-{tool}.json"
+    if not path.is_file():
+        raise HTTPException(404, "no recorded run for this library and tool")
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 @app.get("/api/runs/{run_id}")
